@@ -1,0 +1,1793 @@
+[
+  {
+    "pergunta": "A CMDB Administrator wants to use the CMDB and CSDM Data Foundations Dashboard.Where can the Administrator obtain the dashboard?",
+    "alternativas": [
+      {
+        "texto": "It is a free application on the ServiceNow Store.",
+        "correta": true,
+        "explicacao": "The correct choice. The CMDB and CSDM Data Foundations Dashboard is indeed a free application that can be accessed and downloaded from the ServiceNow Store. It provides valuable insights and analytics for CMDB and CSDM data management."
+      },
+      {
+        "texto": "It is active by default.",
+        "correta": false,
+        "explicacao": "The CMDB and CSDM Data Foundations Dashboard is not active by default in ServiceNow instances. The administrator needs to specifically obtain and install this dashboard from the ServiceNow Store to access its features and functionalities."
+      },
+      {
+        "texto": "It is a paid application on the ServiceNow Store.",
+        "correta": false,
+        "explicacao": "While there are paid applications available on the ServiceNow Store, the CMDB and CSDM Data Foundations Dashboard is actually a free application that can be obtained from the ServiceNow Store. It is not necessary to pay for this dashboard."
+      },
+      {
+        "texto": "It is a free application on the ServiceNow Innovation Lab.",
+        "correta": false,
+        "explicacao": "The ServiceNow Innovation Lab may offer various free applications, but the CMDB and CSDM Data Foundations Dashboard is not specifically available there. It is recommended to check the ServiceNow Store for this dashboard."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator would like to minimize stale CIs in the CMDB.Wich CMDB Health Dashboard scorecard display this information?",
+    "alternativas": [
+      {
+        "texto": "Correctness",
+        "correta": true,
+        "explicacao": "The Correctness scorecard on the CMDB Health Dashboard is the most relevant display for the CMDB Administrator looking to minimize stale CIs. This scorecard typically shows the percentage of CIs that have accurate and up-to-date information, helping to identify and address any stale or outdated CIs in the CMDB."
+      },
+      {
+        "texto": "Completeness",
+        "correta": false,
+        "explicacao": "The Completeness scorecard on the CMDB Health Dashboard typically focuses on the percentage of CIs that have all required attributes and relationships filled out. While important for overall data quality, this scorecard does not specifically address the issue of minimizing stale CIs in the CMDB."
+      },
+      {
+        "texto": "Complience",
+        "correta": false,
+        "explicacao": "The Compliance scorecard on the CMDB Health Dashboard usually focuses on the adherence of CIs to defined policies, standards, and regulations. While important for overall governance and compliance, this scorecard may not directly address the specific goal of minimizing stale CIs in the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "Which ServiceNow solutions automatically create relationships between CI Applications that are part of an Application Service?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Discovery",
+        "correta": true,
+        "explicacao": "Discovery is a solution in ServiceNow that automatically creates relationships between CI Applications that are part of an Application Service. It helps in discovering and mapping out the infrastructure and services within an organization."
+      },
+      {
+        "texto": "Event Management",
+        "correta": false,
+        "explicacao": "Event Management is not a solution that automatically creates relationships between CI Applications that are part of an Application Service. It is focused on monitoring and managing events and incidents within the IT environment."
+      },
+      {
+        "texto": "Service Mapping",
+        "correta": true,
+        "explicacao": "Service Mapping is a solution in ServiceNow that automatically creates relationships between CI Applications that are part of an Application Service. It helps in mapping out the dependencies and relationships between different components of an application."
+      },
+      {
+        "texto": "IntegrationHub ETL",
+        "correta": false,
+        "explicacao": "IntegrationHub ETL is not a solution that automatically creates relationships between CI Applications that are part of an Application Service. It is primarily used for integrating data between different systems and applications."
+      },
+      {
+        "texto": "Data Manager",
+        "correta": false,
+        "explicacao": "Data Manager is not a solution that automatically creates relationships between CI Applications that are part of an Application Service. It is primarily used for managing and manipulating data within the ServiceNow platform."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager working in the CMDB Workspace wants to see how CIs are connected to each other.Which tool can be used?",
+    "alternativas": [
+      {
+        "texto": "Unified Map",
+        "correta": true,
+        "explicacao": "Unified Map is the correct tool for the Configuration Manager to use when wanting to see how CIs are connected to each other in the CMDB Workspace. This tool provides a comprehensive and unified view of the relationships between CIs, allowing for easy visualization and understanding of the connections."
+      },
+      {
+        "texto": "Business Service Map",
+        "correta": false,
+        "explicacao": "Business Service Map is not the appropriate tool for visualizing how CIs are connected to each other in the CMDB Workspace. This tool is typically used to map out the relationships and dependencies between business services and the underlying infrastructure components, rather than focusing on the connections between individual CIs."
+      },
+      {
+        "texto": "Relationship Map",
+        "correta": false,
+        "explicacao": "Relationship Map is not the correct tool for visualizing how CIs are connected to each other in the CMDB Workspace. This tool is typically used to display relationships between different entities or records in a graphical format, but it may not specifically focus on CIs and their connections."
+      }
+    ]
+  },
+  {
+    "pergunta": "Using existing baseline Data Manager policies, what condition must a CI meet before it can be archived or deleted?",
+    "alternativas": [
+      {
+        "texto": "Be retired and in end of life",
+        "correta": true,
+        "explicacao": "For a CI to be archived or deleted, it must be retired and at the end of its life cycle. This condition ensures that the CI is no longer needed or in use, making it safe to remove from the system without impacting operations."
+      },
+      {
+        "texto": "Be marked as inactive",
+        "correta": false,
+        "explicacao": "Being marked as inactive does not necessarily mean that a CI is ready to be archived or deleted. Inactive status may indicate that the CI is not currently in use, but it does not confirm that it is retired or at the end of its life cycle, which are the key conditions for archiving or deletion."
+      },
+      {
+        "texto": "Be marked as critical",
+        "correta": false,
+        "explicacao": "Being marked as critical does not determine whether a CI is ready to be archived or deleted. Criticality may indicate the importance of a CI, but it does not address whether the CI has reached the end of its life cycle and is ready for archiving or deletion."
+      },
+      {
+        "texto": "Be fully operational and in use",
+        "correta": false,
+        "explicacao": "A CI being fully operational and in use does not align with the condition required for archiving or deletion. In fact, if a CI is actively in use, it should not be archived or deleted as it is still contributing to the organization's operations."
+      }
+    ]
+  },
+  {
+    "pergunta": "Product to its description.A. ServiceNow DiscoveryB. Service Graph ConnectorsC. Service MappingD. Agent Client Collector (ACC)1. Automatically identifies devices and applications in the network, populating the CMDB with accurate and up-to-date information2. Facilitates integration between ServiceNow and external systems to import and synchronize data3. Complete topology of the services and shows how they are supported by underlying infrastructure and applications4. Provides real-time visibility into endpoint configurations, populating the CMDB with accurate and up-to-date information",
+    "alternativas": [
+      {
+        "texto": "A. ServiceNow Discovery → 1. Automatically identifies devices and applications in the network, populating the CMDB with accurate and up-to-date information\n\nB. Service Graph Connectors → 2. Facilitates integration between ServiceNow and external systems to import and synchronize data\n\nC. Service Mapping → 3. Complete topology of the services and shows how they are supported by underlying infrastructure and applications\n\nD. Agent Client Collector (ACC) → 4. Provides real-time visibility into endpoint configurations, populating the CMDB with accurate and up-to-date information",
+        "correta": true
+      },
+      {
+        "texto": "A. ServiceNow Discovery -> 4. Provides real-time visibility into endpoint configurations, populating the CMDB with accurate and up-to-date information\n\nB. Service Graph Connectors -> 3. Complete topology of the services and shows how they are supported by underlying infrastructure and applications\n\nC. Service Mapping -> 2. Facilitates integration between ServiceNow and external systems to import and synchronize data\n\nD. Agent Client Collector (ACC) -> 1. Automatically identifies devices and applications in the network, populating the CMDB with accurate and up-to-date information",
+        "correta": false
+      },
+      {
+        "texto": "A. ServiceNow Discovery -> 3. Complete topology of the services and shows how they are supported by underlying infrastructure and applications\n\nB. Service Graph Connectors -> 1. Automatically identifies devices and applications in the network, populating the CMDB with accurate and up-to-date information\n\nC. Service Mapping -> 4. Provides real-time visibility into endpoint configurations, populating the CMDB with accurate and up-to-date information\n\nD. Agent Client Collector (ACC) -> 2. Facilitates integration between ServiceNow and external systems to import and synchronize data",
+        "correta": false
+      },
+      {
+        "texto": "A. ServiceNow Discovery -> 2. Facilitates integration between ServiceNow and external systems to import and synchronize data\n\nB. Service Graph Connectors -> 3. Complete topology of the services and shows how they are supported by underlying infrastructure and applications\n\nC. Service Mapping -> 1. Automatically identifies devices and applications in the network, populating the CMDB with accurate and up-to-date information\n\nD. Agent Client Collector (ACC) ->4. Provides real-time visibility into endpoint configurations, populating the CMDB with accurate and up-to-date information",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "pergunta": "A Business Relationship Manager in an organization wants to implement Service Portfolio Management (SPM) and to present offerings to business consumers.Which CSDM Domain does this align with?",
+    "alternativas": [
+      {
+        "texto": "Service Consumption (Sell/Consume)",
+        "correta": true,
+        "explicacao": "The Service Consumption (Sell/Consume) domain is directly related to presenting offerings to business consumers and managing the consumption of services within the organization. Implementing Service Portfolio Management (SPM) aligns with this domain as it involves offering services to business consumers and ensuring their effective consumption."
+      },
+      {
+        "texto": "Build and Integration (Build)",
+        "correta": false,
+        "explicacao": "The Build and Integration (Build) domain focuses on the technical implementation and integration of services within the organization. It is more concerned with the development and deployment of services rather than presenting offerings to business consumers, making it not directly aligned with the implementation of Service Portfolio Management (SPM)."
+      },
+      {
+        "texto": "Design and Planning (Design)",
+        "correta": false,
+        "explicacao": "The Design and Planning (Design) domain is primarily focused on the design and planning of services within the organization. While designing services is an important aspect of implementing Service Portfolio Management (SPM), the main goal of SPM is to present offerings to business consumers, which aligns more closely with the Service Consumption domain."
+      },
+      {
+        "texto": "Service Delivery",
+        "correta": false,
+        "explicacao": "The Service Delivery domain is concerned with the operational delivery and management of services within the organization. While service delivery is a key component of Service Portfolio Management (SPM), the primary focus of SPM is on presenting offerings to business consumers, which is better aligned with the Service Consumption domain."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Manager wants to start adding CSDM design and planning (design) domain components into the CMDB.Who is involved in this exercise?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Application Owner",
+        "correta": true,
+        "explicacao": "The Application Owner is responsible for the overall management and governance of an application. They are directly involved in the design and planning of CSDM components as they have a deep understanding of the application's requirements and functionality."
+      },
+      {
+        "texto": "Enterprise Architect",
+        "correta": true,
+        "explicacao": "The Enterprise Architect is a key stakeholder in the design and planning of CSDM components in the CMDB. They have a holistic view of the organization's IT landscape and can provide valuable insights into how the CSDM components should be structured to align with the organization's overall architecture."
+      },
+      {
+        "texto": "Application Service Owner",
+        "correta": false,
+        "explicacao": "The Application Service Owner is responsible for managing the services provided by an application. While they may be involved in the implementation and operation of the CMDB, they are not typically directly involved in the design and planning of CSDM components."
+      },
+      {
+        "texto": "Business Relationship Manager",
+        "correta": false,
+        "explicacao": "The Business Relationship Manager focuses on maintaining positive relationships between IT and business stakeholders. While they may be involved in discussions around the CMDB and its alignment with business needs, they are not typically directly involved in the technical design and planning of CSDM components."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager responsible for a specific region wants to use the CMDB Health Dashboard to improve the data quality of the CMDB for that region. The Configuration Manager only sees the overall score and grouped by CI Class.How can the Configuration Manager get a score for regionally relevant CIs?",
+    "alternativas": [
+      {
+        "texto": "Create CMDB groups with type, health, by region",
+        "correta": true,
+        "explicacao": "Creating CMDB groups with type, health, by region allows the Configuration Manager to categorize CIs based on their region, type, and health status. This enables the manager to easily access and analyze the data quality of regionally relevant CIs and obtain a score specifically for those CIs."
+      },
+      {
+        "texto": "Customize the CMDB Health Dashboard scheduled jobs to group the results by region",
+        "correta": false,
+        "explicacao": "Customizing the CMDB Health Dashboard scheduled jobs to group the results by region may help in organizing the data, but it does not specifically provide a score for regionally relevant CIs. This approach focuses on how the data is presented rather than how the scores are calculated for specific regions."
+      },
+      {
+        "texto": "On the CMDB health settings, activate the option, Group scores by region",
+        "correta": false,
+        "explicacao": "Activating the option to group scores by region in the CMDB health settings can help in visually grouping the scores based on regions. However, this setting alone does not ensure that the Configuration Manager will receive a score specifically for regionally relevant CIs. It may help in organizing the data but does not guarantee accurate region-specific scores."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager needs to ingest third-party CIs into the CMDB.Which method minimizes the risk of technical debt?",
+    "alternativas": [
+      {
+        "texto": "Table API",
+        "correta": false,
+        "explicacao": "Using the Table API to ingest third-party CIs into the CMDB may lead to technical debt as it involves direct manipulation of tables and records, which can result in data inconsistencies and potential issues with data integrity over time. This method does not provide a structured approach to managing data integration and may require manual intervention to maintain data quality."
+      },
+      {
+        "texto": "Vendor-provided integration",
+        "correta": false,
+        "explicacao": "Relying on a vendor-provided integration to ingest third-party CIs into the CMDB may introduce technical debt if the integration is not well-maintained or does not align with the organization's data model and governance standards. Vendor-provided integrations may lack flexibility and customization options, leading to potential data quality issues and dependencies on external vendors for updates and maintenance."
+      },
+      {
+        "texto": "Import Sets and Transform Maps",
+        "correta": false,
+        "explicacao": "Import Sets and Transform Maps offer a manual approach to data integration, which can introduce technical debt if not properly managed. While Import Sets allow for bulk data imports, they may require manual data mapping and transformation, increasing the risk of errors and inconsistencies. Transform Maps help in mapping data fields between source and target tables, but they may not provide the same level of automation and standardization as the Service Graph Connector."
+      },
+      {
+        "texto": "Service Graph Connector",
+        "correta": true,
+        "explicacao": "Using the Service Graph Connector to ingest third-party CIs into the CMDB is the recommended method to minimize the risk of technical debt. The Service Graph Connector provides a standardized approach to data integration, mapping, and transformation, ensuring data consistency and alignment with the CMDB schema. It automates the data ingestion process, reducing manual errors and streamlining data management practices."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager is implementing end to end service modeling and wants to get help on status and playbooks for improving the quality.What does the Configuration Manager reference to obtain guidance?",
+    "alternativas": [
+      {
+        "texto": "CSDM Data Foundation Dashboard",
+        "correta": true,
+        "explicacao": "The CSDM Data Foundation Dashboard, which stands for Common Service Data Model, is the correct reference for the Configuration Manager to obtain guidance on end-to-end service modeling and playbooks for improving quality. It provides a comprehensive view of service data and processes."
+      },
+      {
+        "texto": "CMDB Workspace",
+        "correta": false,
+        "explicacao": "The CMDB Workspace is a tool for managing CMDB data and configurations but does not offer guidance on end-to-end service modeling, status, and playbooks for quality improvement."
+      },
+      {
+        "texto": "CMDB Data Foundation Dashboard",
+        "correta": false,
+        "explicacao": "The CMDB Data Foundation Dashboard provides insights and metrics related to the configuration management database (CMDB) data, but it does not specifically offer guidance on end-to-end service modeling, status, and playbooks for improving quality."
+      },
+      {
+        "texto": "Service Mapping Data Foundation Dashboard",
+        "correta": false,
+        "explicacao": "The Service Mapping Data Foundation Dashboard focuses on visualizing and mapping service dependencies and relationships within the IT infrastructure. While it is valuable for understanding service mapping, it does not specifically offer guidance on end-to-end service modeling and playbooks for quality improvement."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator is asked to clean up the CMDB duplicates.What is the preferred way to manage this task?",
+    "alternativas": [
+      {
+        "texto": "The de-duplication task module",
+        "correta": false,
+        "explicacao": "The de-duplication task module is not a standard feature in ServiceNow for managing CMDB duplicates. It is important to use the correct tools and modules provided by ServiceNow to ensure efficient and accurate management of CMDB data."
+      },
+      {
+        "texto": "My Tasks in the Application Navigator",
+        "correta": false,
+        "explicacao": "My Tasks in the Application Navigator is a feature in ServiceNow that allows users to view and manage their assigned tasks. While it may be used to track progress on various tasks, it is not specifically designed for managing CMDB duplicates or performing de-duplication tasks."
+      },
+      {
+        "texto": "The de-duplication dashboard on the CMDB workspace",
+        "correta": true,
+        "explicacao": "The de-duplication dashboard on the CMDB workspace is the preferred way to manage the task of cleaning up CMDB duplicates. This dashboard provides a centralized and comprehensive view of duplicate records within the CMDB, allowing the CMDB Administrator to easily identify, review, and resolve duplicate entries. It offers specific functionalities and tools tailored for de-duplication tasks, making it the most suitable option for this particular task."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager is reviewing the life cycle of CIs to ensure data accuracy, consistency, and relevance. The manager reviews the legacy status values and their equivalent CSDM life cycle stage and life cycle stage status values.Where are these reviewed?",
+    "alternativas": [
+      {
+        "texto": "Life cycle choice list",
+        "correta": false,
+        "explicacao": "The life cycle choice list is a predefined set of options that represent the different stages or statuses in the life cycle of a CI. While this choice list is crucial for defining and selecting the appropriate life cycle stage or status for a CI, it does not specifically address the mapping between legacy status values and CSDM life cycle stages."
+      },
+      {
+        "texto": "Life cycle properties",
+        "correta": false,
+        "explicacao": "Life cycle properties typically refer to the specific attributes or characteristics of a CI's life cycle, such as its current stage, status, or transition rules. While these properties are important for managing the life cycle of CIs, they do not directly relate to the mapping between legacy status values and CSDM life cycle stages."
+      },
+      {
+        "texto": "Life cycle mappings",
+        "correta": true,
+        "explicacao": "Life cycle mappings are the correct option for reviewing the legacy status values and their equivalent CSDM life cycle stage and status values. These mappings provide a clear connection between the old legacy status values and the corresponding stages in the CSDM life cycle model, ensuring data accuracy, consistency, and relevance throughout the life cycle of CIs."
+      }
+    ]
+  },
+  {
+    "pergunta": "The Incident Process Owner asks which classes of CSDM are used on the Incident form.Which classes are appropriate?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Service Offering",
+        "correta": true,
+        "explicacao": "Service Offering class in CSDM is used on the Incident form in ServiceNow to define the services offered by the IT organization. It helps in categorizing and managing incident requests related to specific services provided by the IT department."
+      },
+      {
+        "texto": "Application Service",
+        "correta": true,
+        "explicacao": "Application Service class in CSDM is used on the Incident form in ServiceNow to represent the IT services that are delivered to end-users. It helps in identifying and managing incident requests related to specific application services utilized by the organization."
+      },
+      {
+        "texto": "Service Portfolio",
+        "correta": false,
+        "explicacao": "Service Portfolio class in CSDM is not directly related to the Incident form in ServiceNow. It is more focused on managing the overall portfolio of services offered by the IT organization, rather than specific incident management processes."
+      },
+      {
+        "texto": "Business Application",
+        "correta": false,
+        "explicacao": "Business Application class in CSDM is not directly related to the Incident form in ServiceNow. It is more focused on mapping business applications and their relationships within the organization, rather than specific incident management processes."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Architect instends to buiild a CMDB guidance.Wich CMDB will the architect use to build CSDM sell/cosume domain?",
+    "alternativas": [
+      {
+        "texto": "Business Capability, Information Object, Business Application",
+        "correta": false,
+        "explicacao": "Business Capability, Information Object, and Business Application are not the appropriate CMDB elements for building the CSDM sell/consume domain. While they may be relevant for other aspects of CMDB management, they do not align with the specific requirements of the sell/consume domain in the CSDM."
+      },
+      {
+        "texto": "Business Service Offering, Business Service",
+        "correta": true,
+        "explicacao": "The architect will use Business Service Offering and Business Service to build the CSDM sell/consume domain. These CMDB elements are specifically designed to represent business services and offerings, making them the correct choice for this purpose."
+      },
+      {
+        "texto": "Application Service, Technology Management Service (Technical Service), Technology Management Offering (Technical Service Offering)",
+        "correta": false,
+        "explicacao": "Application Service, Technology Management Service (Technical Service), and Technology Management Offering (Technical Service Offering) are not the correct CMDB elements for building the CSDM sell/consume domain. These elements are more focused on technical services and offerings, rather than the business services and offerings required for the sell/consume domain in the CSDM."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator needs to configure a new application identification rule that considers the potential for the same application installed more than once on the same server.Which is the best choice of a criterion attribute?",
+    "alternativas": [
+      {
+        "texto": "Configuration File Name",
+        "correta": false,
+        "explicacao": "Configuration File Name may not be the best criterion attribute for identifying multiple instances of the same application on a server, as different instances of the same application may have the same file name. This could lead to inaccurate identification and potential conflicts."
+      },
+      {
+        "texto": "Port",
+        "correta": false,
+        "explicacao": "Port may not be the most effective criterion attribute for identifying multiple instances of the same application on a server, as different instances of the same application can potentially use the same port number. This could lead to misidentification and confusion in the CMDB."
+      },
+      {
+        "texto": "Class",
+        "correta": false,
+        "explicacao": "Class may not be the most suitable criterion attribute for identifying multiple instances of the same application on a server, as it may not provide specific information about the application's installation location or configuration."
+      },
+      {
+        "texto": "Configuration File Path",
+        "correta": true,
+        "explicacao": "Configuration File Path is the best choice for a criterion attribute in this scenario because it provides a unique path to each instance of the application on the server. By considering the file path, the CMDB Administrator can accurately identify and differentiate between multiple installations of the same application."
+      },
+      {
+        "texto": "Version",
+        "correta": false,
+        "explicacao": "Version may not be the ideal criterion attribute for identifying multiple instances of the same application on a server, as different versions of the same application can coexist on a server. Using version alone may not accurately differentiate between multiple installations of the same application."
+      }
+    ]
+  },
+  {
+    "pergunta": "The CMDB Administrator has been asked to establish Configuration Management with a functional CMDB.Which factor is most critical for successfully operationalizing the CMDB in ServiceNow?",
+    "alternativas": [
+      {
+        "texto": "Allowing IT teams to modify CMDB records as needed to promote flexibility in data management.",
+        "correta": false,
+        "explicacao": "Allowing IT teams to modify CMDB records as needed may introduce risks to data integrity and consistency. Unrestricted modifications can lead to data discrepancies, inaccuracies, and potential conflicts within the CMDB. Implementing strict change management processes and controls is crucial to maintain the reliability and trustworthiness of the CMDB in ServiceNow."
+      },
+      {
+        "texto": "Establishing clear governance and continuously monitoring CMDB health.",
+        "correta": true,
+        "explicacao": "Establishing clear governance and continuously monitoring CMDB health is critical for successfully operationalizing the CMDB in ServiceNow. Governance ensures that the CMDB is managed effectively, data quality is maintained, and compliance with organizational policies and standards is upheld. Continuous monitoring helps identify and address any issues or discrepancies in the CMDB, ensuring its accuracy and reliability."
+      },
+      {
+        "texto": "Populating the CMDB with as much data as possible to ensure a comprehensive inventory of CIs.",
+        "correta": false,
+        "explicacao": "Populating the CMDB with as much data as possible may seem beneficial for ensuring a comprehensive inventory of Configuration Items (CIs). However, quality is more important than quantity when it comes to CMDB data. It is essential to focus on accurate and relevant data to avoid clutter and maintain the integrity of the CMDB."
+      },
+      {
+        "texto": "Relying on automated discovery tools to maintain and update CMDB records.",
+        "correta": false,
+        "explicacao": "While automated discovery tools can be helpful in maintaining and updating CMDB records, relying solely on them may not be sufficient for successfully operationalizing the CMDB in ServiceNow. Manual oversight and validation are still necessary to ensure the accuracy and completeness of the CMDB data."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Configuration Manager intends to implement CMDB Data Manager delete and archive policies for all server records in the New York datacenter.In which lifecycle state would servers be affected by these new policies?",
+    "alternativas": [
+      {
+        "texto": "Inventory - Available",
+        "correta": false,
+        "explicacao": "The Inventory - Available lifecycle state is where servers are actively in use and available for deployment. Implementing delete and archive policies for servers in this state may not be appropriate, as these servers are still part of the active inventory and not yet ready for retirement."
+      },
+      {
+        "texto": "In any lifecycle state",
+        "correta": false,
+        "explicacao": "Implementing CMDB Data Manager delete and archive policies for all server records in the New York datacenter would likely target servers in specific lifecycle states, rather than affecting servers in any lifecycle state. It is important to focus on servers that are at the end of their lifecycle and ready for deletion or archival, rather than applying policies to servers in all states."
+      },
+      {
+        "texto": "End of Life - Retired",
+        "correta": true,
+        "explicacao": "The End of Life - Retired lifecycle state is where servers are typically marked for deletion or archival in the CMDB. Implementing CMDB Data Manager delete and archive policies for all server records in the New York datacenter would affect servers in this state, as they are no longer in active use and are ready to be retired."
+      },
+      {
+        "texto": "Missing - Stolen",
+        "correta": false,
+        "explicacao": "The Missing - Stolen lifecycle state is not typically associated with servers that are targeted for deletion or archival in the CMDB. This state is more relevant to servers that have been reported as missing or stolen, rather than those being retired or archived."
+      }
+    ]
+  },
+  {
+    "pergunta": "User endpoint devices are imported into the CMDB and populate the 'Assigned to' [assigned_to] field on the Computer [cmdb_ci_computer] CI. The Asset team puts in a request for the Configuration Analysts to populate the 'Assigned to' field on the related Asset.What action does a Configuration Analyst take to achieve this in an automated way?",
+    "alternativas": [
+      {
+        "texto": "Hide the 'Assigned to' field on the asset record and create a new field that dot walks to the related CI to get the 'Assigned to' value.",
+        "correta": false,
+        "explicacao": "Hiding the 'Assigned to' field on the asset record and creating a new field that dot walks to the related CI to get the 'Assigned to' value is a workaround that adds complexity to the data model. This approach may lead to data inconsistency and confusion for users who need to access and update the 'Assigned to' information on the asset."
+      },
+      {
+        "texto": "Use the Asset-CI Field Mapping module to create a new rule to replicate the 'Assigned to' value between the asset and associated CI.",
+        "correta": true,
+        "explicacao": "Using the Asset-CI Field Mapping module allows Configuration Analysts to create a rule that automatically replicates the 'Assigned to' value from the Computer CI to the related Asset. This automation ensures that the 'Assigned to' field on the asset is always in sync with the associated CI, reducing manual effort and ensuring data accuracy."
+      },
+      {
+        "texto": "Configure a business rule on the computer table to use a script to populate the 'Assigned to' field on the asset based on insert or update in the computer class 'Assigned to' field.",
+        "correta": false,
+        "explicacao": "Configuring a business rule on the computer table to populate the 'Assigned to' field on the asset based on insert or update events in the computer class can be a manual and error-prone process. This method may require constant monitoring and maintenance to ensure data consistency between the CI and the asset."
+      }
+    ]
+  },
+  {
+    "pergunta": "An organization is using CMDB Query Builder to find all application services with a database that has incidents and all infrastructure in those application services.Which steps does the organization take to build this query?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Add a non-CMDB table to the query",
+        "correta": false,
+        "explicacao": "Adding a non-CMDB table to the query is not necessary to achieve the goal of finding all application services with a database that has incidents and all infrastructure in those application services. The query can be constructed using CMDB and Service Mapping queries."
+      },
+      {
+        "texto": "Use a Service Mapping Query to include non-CMDB tables like the Incident table",
+        "correta": false,
+        "explicacao": "Using a Service Mapping Query to include non-CMDB tables like the Incident table is not directly related to the goal of finding all application services with a database that has incidents and all infrastructure in those application services. Service Mapping queries are typically used to map dependencies and relationships between services."
+      },
+      {
+        "texto": "Use a CMDB Query to include application services and their related infrastructure",
+        "correta": true,
+        "explicacao": "Using a CMDB Query to include application services and their related infrastructure is a crucial step in building the query to find all application services with a database that has incidents and all infrastructure in those application services. This step allows for the identification of application services and their associated infrastructure within the CMDB."
+      },
+      {
+        "texto": "Use a Service Mapping Query to find all incidents related to the database",
+        "correta": true,
+        "explicacao": "Using a Service Mapping Query to find all incidents related to the database is a valid step in building the query to find all application services with a database that has incidents and all infrastructure in those application services. This step helps in identifying incidents related to the database within the context of the application services."
+      }
+    ]
+  },
+  {
+    "pergunta": "An Enterprise Architect needs to help the CMDB owner understand the benefits od CSDM.A. FoundationB. Design and PlanningC. Service ConsumptionD. Service Delivery1. Understand CIs related to business application and related capital, identify redundancies, monitor costs, and make better investment around roadmap2. Understand technical services, technical service offerings, service support, and all relationships to underlying technology CIs3. Understand business services and ownership, cost, scope of what to the business/consumer and request access to the business servic4. Use the base system tables when implementing the CSDM to determine highest value from ServiceNow products and the Now Platform",
+    "alternativas": [
+      {
+        "texto": "A. Foundation -> 1. Understand CIs related to business application and related capital, identify redundancies, monitor costs, and make better investment around roadmap\n\nB. Design and Planning -> 2. Understand technical services, technical service offerings, service support\n\nC. Service Consumption -> 3. Understand business services and ownership, cost, scope of what to the business/consumer and request access to the business services\n\nD. Service Delivery -> 4. Use the base system tables when implementing the CSDM to determine highest value from ServiceNow products and the Now Platform",
+        "correta": false
+      },
+      {
+        "texto": "A. Foundation -> 2. Understand technical services, technical service offerings\n\nB. Design and Planning -> 3. Understand business services and ownership, cost, scope of what to the business/consumer and request access to the business services\n\nC. Service Consumption -> 4. Use the base system tables when implementing the CSDM to determine highest value from ServiceNow products and the Now Platform\n\nD. Service Delivery -> 1. Understand CIs related to business application and related capital, identify redundancies, monitor costs, and make better investment around roadmap",
+        "correta": false
+      },
+      {
+        "texto": "A. Foundation -> 4. Use the base system tables when implementing the CSDM to determine highest value from ServiceNow products and the Now Platform\n\nB. Design and Planning ->  3. Understand business services and ownership, cost, scope of what to the business/consumer and request access to the business services\n\nC. Service Consumption ->  2. Understand technical services, technical service offerings\n\nD. Service Delivery -> 1. Understand CIs related to business application and related capital, identify redundancies, monitor costs, and make better investment around roadmap",
+        "correta": false
+      },
+      {
+        "texto": "A. Foundation → 4. Use the base system tables when implementing the CSDM to determine highest value from ServiceNow products and the Now Platform\nB. Design and Planning → 1. Understand CIs related to business application and related capital, identify redundancies, monitor costs, and make better investment around roadmap\n\nC. Service Consumption → 3. Understand business services and ownership, cost, scope of what to the business/consumer and request access to the business services\n\nD. Service Delivery → 2. Understand technical services, technical service offerings,",
+        "correta": true
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator seeks to understand the available tools for preventing, addressing, and remediating duplicate CIs.A. De-Duplication TasksB. CMDB Health Dashboard Correctness ScorecardC. De-Duplication TemplatesD. Certification TaskE. Duplicate CI Remediator1. Can be assigned to groups for resolving duplicate CIs2. Offers insight into duplicate CIs within the CMDB3. Offers a solution to resolve de-duplication tasks in bulk4. Provides a wizard to resolve de-duplication tasks individually",
+    "alternativas": [
+      {
+        "texto": "A. De-Duplication Tasks → 4. Provides a wizard to resolve de-duplication tasks individually\n\nB. CMDB Health Dashboard Correctness Scorecard → 1. Can be assigned to groups for resolving duplicate CIs\n\nC. De-Duplication Templates → 3. Offers a solution to resolve de-duplication tasks in bulk\n\nE. Duplicate CI Remediators → 2. Offers insight into duplicate CIs within the CMDB",
+        "correta": false
+      },
+      {
+        "texto": "A. De-Duplication Tasks → 1. Can be assigned to groups for resolving duplicate CIs\n\nB. CMDB Health Dashboard Correctness Scorecard → 2. Offers insight into duplicate CIs within the CMDB\n\nC. De-Duplication Templates → 3. Offers a solution to resolve de-duplication tasks in bulk\n\nE. Duplicate CI Remediators → 4. Provides a wizard to resolve de-duplication tasks individuall",
+        "correta": true
+      },
+      {
+        "texto": "A. De-Duplication Tasks → 2. Offers insight into duplicate CIs within the CMDB\n\nB. CMDB Health Dashboard Correctness Scorecard → 3. Offers a solution to resolve de-duplication tasks in bulk\n\nC. De-Duplication Templates → 1. Can be assigned to groups for resolving duplicate CIs\n\nE. Duplicate CI Remediators → 4. Provides a wizard to resolve de-duplication tasks individually",
+        "correta": false
+      },
+      {
+        "texto": "A. De-Duplication Tasks → 3. Offers a solution to resolve de-duplication tasks in bulk\n\nB. CMDB Health Dashboard Correctness Scorecard →  1. Can be assigned to groups for resolving duplicate CIs\n\nC. De-Duplication Templates → 2. Offers insight into duplicate CIs within the CMDB\n\nE. Duplicate CI Remediators → 4. Provides a wizard to resolve de-duplication tasks individually",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator wants to ensure all short-lived CIs that have not been discovered in the past week are removed.After retiring the CI records, which recommended action does the CMDB Administrator take?",
+    "alternativas": [
+      {
+        "texto": "Create a business rule",
+        "correta": false,
+        "explicacao": "Creating a business rule is not the recommended action for the CMDB Administrator to address the issue of removing short-lived CIs. Business rules are typically used to enforce data consistency, validation, or automation of specific actions based on predefined conditions. In this case, a delete policy would be more suitable for identifying and removing outdated CI records from the CMDB."
+      },
+      {
+        "texto": "Create a delete policy",
+        "correta": true,
+        "explicacao": "Creating a delete policy is the recommended action for the CMDB Administrator to ensure that all short-lived CIs that have not been discovered in the past week are removed. A delete policy allows the administrator to define specific criteria for identifying and deleting CI records that meet the specified conditions, helping to maintain the accuracy and cleanliness of the CMDB."
+      },
+      {
+        "texto": "Create a scheduled job",
+        "correta": false,
+        "explicacao": "Creating a scheduled job is not the most appropriate action for the CMDB Administrator in this scenario. While scheduled jobs can automate tasks at specified intervals, they may not be as effective as a delete policy in identifying and removing short-lived CIs that have not been discovered in the past week. Scheduled jobs are better suited for recurring maintenance tasks or data processing operations."
+      }
+    ]
+  },
+  {
+    "pergunta": "Using CI Class Manager, the Tomcat identification rule has the following criterion attributes configured:ClassInstall DirectoryWhich identifier entry configuration option must be checked to attempt a match using the Application identification rule if no match is found using the Tomcat identification rule?",
+    "alternativas": [
+      {
+        "texto": "Applies to",
+        "correta": false,
+        "explicacao": "The \"Applies to\" option in the identifier entry configuration is used to specify the scope or context in which the identification rule applies. It does not directly relate to attempting a match using the Application identification rule if no match is found using the Tomcat identification rule."
+      },
+      {
+        "texto": "Allow fallback to parent's rules",
+        "correta": true,
+        "explicacao": "The \"Allow fallback to parent's rules\" option in the identifier entry configuration allows the system to try parent rules if no match is found using the current rule. This option is relevant in the context of attempting a match using the Application identification rule after the Tomcat identification rule fails to find a match."
+      },
+      {
+        "texto": "Criterion attributes",
+        "correta": false,
+        "explicacao": "The \"Criterion attributes\" option in the identifier entry configuration refers to the specific attributes or criteria used in the identification rule. It does not determine the behavior of attempting a match using the Application identification rule if no match is found using the Tomcat identification rule."
+      },
+      {
+        "texto": "Independent",
+        "correta": false,
+        "explicacao": "The \"Independent\" option in the identifier entry configuration indicates that the identification rule should be evaluated independently of other rules. It does not address the scenario of attempting a match using the Application identification rule if no match is found using the Tomcat identification rule."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Data Owner has request better insight on the different data source that make up the CMDB data set. The Platform Owner Knows that the new Service Graph Connector Central plugin is just what is needed.After installing the plugin, what workspace will have the new Service Graph Connector Central tab avaliable?",
+    "alternativas": [
+      {
+        "texto": "CMDB Workspace",
+        "correta": true,
+        "explicacao": "The CMDB Workspace is the correct workspace to find the new Service Graph Connector Central tab after installing the plugin. This workspace is specifically designed for managing and analyzing the Configuration Management Database (CMDB) data, which includes information from various data sources. The Service Graph Connector Central tab will provide better insight into the different data sources that contribute to the CMDB data set."
+      },
+      {
+        "texto": "Service Graph Connector Workspace",
+        "correta": false,
+        "explicacao": "The Service Graph Connector Workspace is not the correct workspace to find the new Service Graph Connector Central tab. This workspace is typically used for managing and configuring the Service Graph Connector itself, not for accessing the data sources that make up the CMDB data set."
+      },
+      {
+        "texto": "Discovery Admin Workspace",
+        "correta": false,
+        "explicacao": "The Discovery Admin Workspace is not the correct workspace to find the new Service Graph Connector Central tab. This workspace is typically used for managing and configuring discovery processes and tools within ServiceNow, not for accessing or analyzing the data sources that make up the CMDB data set."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator wants to leverage the CMDB Data Foundations Dashboard.What are benefits of using this application?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Has a framework to create custom metrics for the CMDB",
+        "correta": false,
+        "explicacao": "The CMDB Data Foundations Dashboard does not have a framework to create custom metrics for the CMDB. This choice is incorrect as it does not align with the purpose and functionality of the application."
+      },
+      {
+        "texto": "Checks that important data is valid and properly configured",
+        "correta": true,
+        "explicacao": "The CMDB Data Foundations Dashboard checks that important data is valid and properly configured, which is a key benefit of using this application. This helps ensure the accuracy and reliability of the CMDB data."
+      },
+      {
+        "texto": "Uses automation to remediate potential risks",
+        "correta": false,
+        "explicacao": "The CMDB Data Foundations Dashboard does not use automation to remediate potential risks. This choice is incorrect as the application focuses more on providing insights and tools for manual remediation rather than automated remediation processes."
+      },
+      {
+        "texto": "Provides playbooks to assist in the remediation of potential risks",
+        "correta": true,
+        "explicacao": "The CMDB Data Foundations Dashboard provides playbooks to assist in the remediation of potential risks, which is another significant benefit of using this application. These playbooks can help guide administrators in addressing and resolving issues within the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Management team wants to confirm that all servers in the CMDB are correctly associated with their location.Which CMDB Data Manager policy type does the team create?",
+    "alternativas": [
+      {
+        "texto": "Certification",
+        "correta": true,
+        "explicacao": "The Certification policy type is used to validate the accuracy and completeness of CI data in the CMDB by performing regular checks and reviews. This type of policy is suitable for ensuring that all servers are correctly associated with their location in the CMDB."
+      },
+      {
+        "texto": "Attestation",
+        "correta": false,
+        "explicacao": "The Attestation policy type is used to verify the accuracy and completeness of CI data in the CMDB by requesting confirmation from designated users. While it involves validation, it is not specifically focused on confirming the association of servers with their location."
+      },
+      {
+        "texto": "Delete",
+        "correta": false,
+        "explicacao": "The Delete policy type is used to permanently remove a CI from the CMDB. It is not suitable for confirming the correct association of servers with their location, as it involves removing data rather than validating it."
+      },
+      {
+        "texto": "Retire",
+        "correta": false,
+        "explicacao": "The Retire policy type is used to mark a configuration item (CI) as retired in the CMDB, indicating that it is no longer in use. It is not relevant to confirming the correct association of servers with their location in the CMDB."
+      },
+      {
+        "texto": "Archive",
+        "correta": false,
+        "explicacao": "The Archive policy type is used to move inactive or historical CIs to a separate archive table in the CMDB. It is not designed for confirming the correct association of servers with their location in the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "An organization needs to maintain non-discoverable attributes, such as warranty expiration dates, for hardware CIs. These attributes are not updated by automated discovery tools.What method ensures these attributes are accurately maintained for all CIs?",
+    "alternativas": [
+      {
+        "texto": "Use the CMDB Reconciliation Engine to update the attributes",
+        "correta": false,
+        "explicacao": "Using the CMDB Reconciliation Engine is typically used for reconciling data discrepancies and ensuring data accuracy between different data sources. While it can be used to update attributes, it may not be the most suitable method for maintaining non-discoverable attributes that are not updated by automated discovery tools."
+      },
+      {
+        "texto": "Use a scheduled data import to update the attributes from an external source",
+        "correta": true,
+        "explicacao": "Using a scheduled data import allows the organization to regularly update the non-discoverable attributes from an external source, such as a database or spreadsheet. This method ensures that the attributes are accurately maintained for all CIs without relying on automated discovery tools."
+      },
+      {
+        "texto": "Create a new CI class specifically for non-discoverable attributes",
+        "correta": false,
+        "explicacao": "Creating a new CI class specifically for non-discoverable attributes may not be the most efficient solution as it adds complexity to the CMDB structure. It is more practical to update the existing CIs with the necessary attributes rather than creating a separate class for them."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator changes the query for the SCCM Service Graph Connector.What is the impact of this change?",
+    "alternativas": [
+      {
+        "texto": "Any updates for the SCCM Service Graph Connector will be skipped during the upgrade.",
+        "correta": false,
+        "explicacao": "This choice is incorrect because updating the query for the SCCM Service Graph Connector does not impact the upgrade process itself. The updates for the connector will not be automatically skipped during an upgrade; they will need to be reviewed and potentially adjusted to work with any changes made during the upgrade process."
+      },
+      {
+        "texto": "The Data Source for the SCCM Service Graph Connector will be marked as Inactive.",
+        "correta": false,
+        "explicacao": "This choice is incorrect because changing the query for the SCCM Service Graph Connector does not automatically mark the Data Source as Inactive. The status of the Data Source is typically determined by the connection status and configuration, not by the query itself."
+      },
+      {
+        "texto": "Any Scheduled Jobs for the SCCM Service Graph Connector will need to be configured.",
+        "correta": true,
+        "explicacao": "This choice is correct because when the query for the SCCM Service Graph Connector is changed, any Scheduled Jobs associated with the connector will need to be reconfigured to align with the new query. This ensures that the connector continues to function properly and fetch the required data based on the updated query."
+      }
+    ]
+  },
+  {
+    "pergunta": "How is the CMDB aligned to business processes?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Enhances decision-making and operational efficiency across the organization.",
+        "correta": true,
+        "explicacao": "Enhancing decision-making and operational efficiency across the organization is a key aspect of aligning the CMDB to business processes. By providing accurate and up-to-date information on configuration items and their relationships, the CMDB can support better decision-making and streamline operational processes."
+      },
+      {
+        "texto": "Provides a centralized view of configuration items and their relationships.",
+        "correta": true,
+        "explicacao": "Providing a centralized view of configuration items and their relationships is crucial for aligning the CMDB to business processes. By having a comprehensive understanding of how different configuration items are related and interact with each other, organizations can better map out and optimize their business processes for improved efficiency and effectiveness."
+      },
+      {
+        "texto": "Extends service delivery management to all enterprise departments.",
+        "correta": false,
+        "explicacao": "Extending service delivery management to all enterprise departments is a broad goal of CMDB implementation, but it does not directly align the CMDB to specific business processes. It focuses more on the overall service delivery within the organization rather than the alignment with specific business processes."
+      },
+      {
+        "texto": "Enables the CFO/CIO to track software licenses.",
+        "correta": false,
+        "explicacao": "Enabling the CFO/CIO to track software licenses is an important function of the CMDB, but it is more related to asset management and compliance rather than directly aligning the CMDB to specific business processes. While tracking software licenses is essential for financial and compliance purposes, it does not necessarily align the CMDB to business processes."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator is beginning the journey of populating the CMDB and needs to verify that any data which is no longer useful/applicable is removed.Which governance management tool will accomplish this?",
+    "alternativas": [
+      {
+        "texto": "CMDB Health Dashboard",
+        "correta": false,
+        "explicacao": "The CMDB Health Dashboard is a tool that monitors the health and integrity of the CMDB data, highlighting any discrepancies or issues. While it is essential for maintaining data quality, it does not have the functionality to actively remove outdated or irrelevant data from the CMDB."
+      },
+      {
+        "texto": "CMDB and CSDM Data Foundations Dashboard",
+        "correta": false,
+        "explicacao": "The CMDB and CSDM Data Foundations Dashboard provides insights into the data structure and relationships within the CMDB based on the Common Service Data Model (CSDM). While it helps in understanding the data foundations, it does not directly handle the removal of obsolete data from the CMDB."
+      },
+      {
+        "texto": "CMDB Data Manager",
+        "correta": true,
+        "explicacao": "CMDB Data Manager is the correct choice as it is specifically designed to manage and maintain the data within the CMDB. It includes features for data cleanup, data normalization, and data reconciliation, making it the appropriate tool for verifying and removing any data that is no longer useful or applicable."
+      },
+      {
+        "texto": "CI Class Manager",
+        "correta": false,
+        "explicacao": "CI Class Manager is a tool used for managing configuration item classes and their attributes within the CMDB. While it helps in organizing and defining CI classes, it does not specifically address the removal of outdated or irrelevant data from the CMDB."
+      },
+      {
+        "texto": "De-duplication Templates",
+        "correta": false,
+        "explicacao": "De-duplication Templates are used to identify and merge duplicate records within the CMDB, reducing redundancy and improving data accuracy. While de-duplication is important for data quality, it does not directly address the task of removing data that is no longer relevant or useful in the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "Where does a user with the appropriate role(s) review and manage the generated tasks after configuring CMDB Data Manager policies?",
+    "alternativas": [
+      {
+        "texto": "CMDB Health Dashboard > Duplicate CIs tab",
+        "correta": false,
+        "explicacao": "The CMDB Health Dashboard's Duplicate CIs tab is not the correct location for reviewing and managing tasks after configuring CMDB Data Manager policies. This tab specifically focuses on identifying and managing duplicate configuration items (CIs) in the CMDB, rather than tasks generated from policy configurations."
+      },
+      {
+        "texto": "CMDB Workspace > My Work tab",
+        "correta": true,
+        "explicacao": "The CMDB Workspace's My Work tab is the correct location for a user with the appropriate role(s) to review and manage the tasks generated after configuring CMDB Data Manager policies. This tab provides a personalized view of the tasks assigned to the user, allowing for efficient task management and tracking."
+      },
+      {
+        "texto": "CMDB Health Dashboard > Audit tab",
+        "correta": false,
+        "explicacao": "The CMDB Health Dashboard's Audit tab is not the correct location for reviewing and managing tasks after configuring CMDB Data Manager policies. The Audit tab is typically used for tracking and monitoring changes made to configuration items (CIs) in the CMDB, rather than managing tasks generated from policy configurations."
+      },
+      {
+        "texto": "CMDB Workspace > Management tab",
+        "correta": false,
+        "explicacao": "The CMDB Workspace's Management tab is not the appropriate location for reviewing and managing tasks after configuring CMDB Data Manager policies. The Management tab typically focuses on broader CMDB management functions, such as configuration item (CI) classes, relationships, and attributes."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator wants to educate the team on the various actions that can be performed within the CMDB Workspace.What actions can be initiated from the CMDB Workspace?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Remediate duplicate CI records",
+        "correta": true,
+        "explicacao": "Remediating duplicate CI records is an action that can be initiated from the CMDB Workspace. This action helps in maintaining data quality within the CMDB by identifying and resolving duplicate configuration items."
+      },
+      {
+        "texto": "Create a CMDB Data Manager certification policy",
+        "correta": true,
+        "explicacao": "Creating a CMDB Data Manager certification policy can be initiated from the CMDB Workspace. This action allows the CMDB Administrator to define policies for managing data in the CMDB, ensuring data accuracy and integrity."
+      },
+      {
+        "texto": "Execute ServiceNow Discovery",
+        "correta": false,
+        "explicacao": "Executing ServiceNow Discovery is not an action that can be initiated from the CMDB Workspace. ServiceNow Discovery is a separate process used to discover and map IT infrastructure and services in the organization."
+      },
+      {
+        "texto": "Create a new CMDB class",
+        "correta": false,
+        "explicacao": "Creating a new CMDB class is not an action that can be initiated from the CMDB Workspace. Creating a new CMDB class involves defining new configuration item types and relationships, which is typically done through the ServiceNow platform configuration tools."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator uses the CMDB Data Foundations Dashboard to gain insights into the CMDB. The results display low scores for several metrics.Which actions can the CMDB Administrator take to improve the CMDB Health? (Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Use the Remediation Playbooks linked beside each metric",
+        "correta": true,
+        "explicacao": "Using the Remediation Playbooks linked beside each metric can provide specific guidance on how to address the issues causing low scores. This can help the CMDB Administrator take targeted actions to improve the health of the CMDB."
+      },
+      {
+        "texto": "Focus on metric(s) with Critical and High priorities",
+        "correta": true,
+        "explicacao": "Focusing on metric(s) with Critical and High priorities is essential as these metrics indicate areas that require immediate attention and have a significant impact on the overall health of the CMDB. By prioritizing these metrics, the CMDB Administrator can address the most critical issues first."
+      },
+      {
+        "texto": "Adjust the metrics using exclusion rules to improve the scores",
+        "correta": false,
+        "explicacao": "Adjusting the metrics using exclusion rules to improve the scores may not be the most effective approach. It is important to address the underlying issues causing low scores rather than manipulating the metrics artificially. Using exclusion rules may not reflect the true health of the CMDB and could lead to inaccurate insights."
+      },
+      {
+        "texto": "Remove non-operational and retired CIs",
+        "correta": false,
+        "explicacao": "Removing non-operational and retired CIs may help clean up the CMDB data, but it may not directly improve the health metrics displayed on the CMDB Data Foundations Dashboard. While this action can contribute to data cleanliness, it may not address the specific issues highlighted by the low scores."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator needs to set up CMDB 360/Multisource CMDB.A. Enables logging for CMDB 360B. Enables capturing CMDB 360 data for CIs from CMDB classesC. Enables CMDB 360D. Enables capturing CMDB 360 data for CIs from non-CMDB classesE. Maximum number of CIs that can be included in a CMDB 360 recompute operation1. glide.identification_engine.multisource_enabled2. glide.identification_engine.multisource_cmdb_ci_enabled3. glide.cmdb.logger.source.cmdb_multisource4. glide.identification_engine.multisource.recompute.max.ci.limit",
+    "alternativas": [
+      {
+        "texto": "A. Enables logging for CMDB 360 -> 4. glide.identification_engine.multisource.recompute.max.ci.limit\n\nB. Enables capturing CMDB 360 data for CIs from CMDB classes -> 1. glide.identification_engine.multisource_enabled\n\nC. Enables CMDB 360 -> 3. glide.cmdb.logger.source.cmdb_multisource\n\nD. Enables capturing CMDB 360 data for CIs from non-CMDB classes ->  2. glide.identification_engine.multisource_cmdb_ci_enabled",
+        "correta": false
+      },
+      {
+        "texto": "A. Enables logging for CMDB 360 → 3. glide.cmdb.logger.source.cmdb_multisource\nB. Enables capturing CMDB 360 data for CIs from CMDB classes → 2. glide.identification_engine.multisource_cmdb_ci_enabled\nC. Enables CMDB 360 → 1. glide.identification_engine.multisource_enabled\n\nE. Maximum number of CIs that can be included in a CMDB 360 recompute operation → 4. glide.identification_engine.multisource.recompute.max.ci.limit",
+        "correta": true
+      },
+      {
+        "texto": "A. Enables logging for CMDB 360 ->  1. glide.identification_engine.multisource_enabled\n\nB. Enables capturing CMDB 360 data for CIs from CMDB classes -> 2. glide.identification_engine.multisource_cmdb_ci_enabled\n\nD. Enables capturing CMDB 360 data for CIs from non-CMDB classes -> 3. glide.cmdb.logger.source.cmdb_multisource\n\nE. Maximum number of CIs that can be included in a CMDB 360 recompute operation ->4. glide.identification_engine.multisource.recompute.max.ci.limit",
+        "correta": false
+      },
+      {
+        "texto": "B. Enables capturing CMDB 360 data for CIs from CMDB classes -> 2. glide.identification_engine.multisource_cmdb_ci_enabled\n\nC. Enables CMDB 360 ->4. glide.identification_engine.multisource.recompute.max.ci.limit\n\nD. Enables capturing CMDB 360 data for CIs from non-CMDB classes -> 1. glide.identification_engine.multisource_enabled\n\nE. Maximum number of CIs that can be included in a CMDB 360 recompute operation ->3. glide.cmdb.logger.source.cmdb_multisource",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator group aims to establish a process for receiving task notifications when the Support Group or Managed By Group fields are not populated for operational Linux servers stored in the CMDB.Which ServiceNow modules can be leveraged to configure recommended fields and generate task records in cases where these fields are missing for Linux servers in the CMDB?",
+    "alternativas": [
+      {
+        "texto": "Dynamic CI groups and CMDB groups",
+        "correta": false,
+        "explicacao": "Dynamic CI groups and CMDB groups are not the modules used to configure recommended fields or generate task records in cases where fields are missing for Linux servers in the CMDB. Dynamic CI groups are used for grouping configuration items dynamically, while CMDB groups are used for organizing configuration items based on common characteristics."
+      },
+      {
+        "texto": "Technical Service Offerings and Dynamic CI groups",
+        "correta": false,
+        "explicacao": "Technical Service Offerings and Dynamic CI groups are not directly related to configuring fields or generating task records in the CMDB. Technical Service Offerings are used to define services provided by IT departments, while Dynamic CI groups are used to group configuration items dynamically based on specified criteria."
+      },
+      {
+        "texto": "CI Class Manager and Health Preferences",
+        "correta": true,
+        "explicacao": "CI Class Manager and Health Preferences are the modules that can be leveraged to configure recommended fields and generate task records in cases where fields are missing for Linux servers in the CMDB. CI Class Manager allows for defining and managing configuration item classes, while Health Preferences can be used to set up rules and conditions for generating tasks based on missing fields in the CMDB."
+      },
+      {
+        "texto": "CMDB Workspace and Scheduled Jobs",
+        "correta": false,
+        "explicacao": "CMDB Workspace and Scheduled Jobs are not the modules typically used to configure fields or generate task records in the CMDB. CMDB Workspace is used for managing configuration items and relationships, while Scheduled Jobs are used to automate tasks at specified intervals."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Platform Owner is building the governance team to support the CSDM.A. Design DomainB. Foundation DomainC. Portfolio DomainD. Technical Domain1. Service Owner(s), Platform Owner2. Technology Service Owner(s), Application Service Owner(s), Platform Owner3. Enterprise Architect(s), Platform Owner4. Enterprise Architect(s), Data Steward(s), Process Owner(s), Platform Owner",
+    "alternativas": [
+      {
+        "texto": "A. Design Domain -> 4. Enterprise Architect(s), Data Steward(s), Process Owner(s), Platform Owner\n\nB. Foundation Domain -> 1. Service Owner(s), Platform Owner\n\nC. Portfolio Domain -> 3. Enterprise Architect(s), Platform Owner\n\nD. Technical Domain -> 2. Technology Service Owner(s), Application Service Owner(s), Platform Owner",
+        "correta": false
+      },
+      {
+        "texto": "A. Design Domain ->  1. Service Owner(s), Platform Owner\n\nB. Foundation Domain -> 2. Technology Service Owner(s), Application Service Owner(s), Platform Owner\n\nC. Portfolio Domain -> 3. Enterprise Architect(s), Platform Owner\n\nD. Technical Domain -> 4. Enterprise Architect(s), Data Steward(s), Process Owner(s), Platform Owner",
+        "correta": false
+      },
+      {
+        "texto": "A. Design Domain -> 2. Technology Service Owner(s), Application Service Owner(s), Platform Owner\n\nB. Foundation Domain ->  3. Enterprise Architect(s), Platform Owner\n\nC. Portfolio Domain -> 1. Service Owner(s), Platform Owner\n\nD. Technical Domain -> 4. Enterprise Architect(s), Data Steward(s), Process Owner(s), Platform Owner",
+        "correta": false
+      },
+      {
+        "texto": "A. Design Domain -> 3. Enterprise Architect(s), Platform Owner\n\nB. Foundation Domain -> 4. Enterprise Architect(s), Data Steward(s), Process Owner(s), Platform Owner\n\nC. Portfolio Domain -> 1. Service Owner(s), Platform Owner\n\nD. Technical Domain -> 2. Technology Service Owner(s), Application Service Owner(s), Platform Owner",
+        "correta": true
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator needs the fastest time to value solution for effectively ingesting, managing, and maintaining CIs and relationships.Which management tool will accomplish this to import Windows computer data from SCCM?",
+    "alternativas": [
+      {
+        "texto": "IntegrationHub ETL connection to SCCM using Robust Transform Engine (RTE)",
+        "correta": false,
+        "explicacao": "Using IntegrationHub ETL connection with the Robust Transform Engine (RTE) to connect to SCCM may involve additional complexity and setup time compared to the SCCM Service Graph Connector. This method may not offer the fastest solution for the CMDB Administrator's need for effectively managing and maintaining CIs and relationships."
+      },
+      {
+        "texto": "Import set using JDBC data source connection to SCCM using transform maps",
+        "correta": false,
+        "explicacao": "Importing Windows computer data from SCCM using JDBC data source connection and transform maps can be a time-consuming process as it involves mapping data fields and setting up the connection. This method may not provide the fastest time to value solution for ingesting and managing CIs and relationships efficiently."
+      },
+      {
+        "texto": "SCCM Service Graph Connector",
+        "correta": true,
+        "explicacao": "The SCCM Service Graph Connector is designed to efficiently import Windows computer data from SCCM and establish relationships between CIs in the CMDB. This tool provides a fast time to value solution for ingesting, managing, and maintaining CIs and relationships, making it the correct choice for the CMDB Administrator's requirements."
+      },
+      {
+        "texto": "SCCM Usage Metering Spoke",
+        "correta": false,
+        "explicacao": "The SCCM Usage Metering Spoke is not specifically designed for importing Windows computer data from SCCM. It focuses on tracking software usage and license compliance within SCCM, rather than managing CIs and relationships. Therefore, it may not be the fastest solution for the CMDB Administrator's needs."
+      }
+    ]
+  },
+  {
+    "pergunta": "A company wants to track regulatory compliance. ServiceNow has an artifact type called an information object as part of the CSDM framework.What is the purpose of an information object?",
+    "alternativas": [
+      {
+        "texto": "It describes the logical data to the Business Applications.",
+        "correta": true,
+        "explicacao": "The purpose of an information object in ServiceNow's CSDM framework is to describe the logical data related to Business Applications. It helps in tracking regulatory compliance by defining and managing the data structures and relationships within the organization's applications."
+      },
+      {
+        "texto": "It describes data in general on a group of Configuration Items.",
+        "correta": false,
+        "explicacao": "An information object in ServiceNow's CSDM framework is not specifically designed to describe data on a group of Configuration Items. It is more focused on logical data related to Business Applications, making this choice incorrect."
+      },
+      {
+        "texto": "It describes data exchanged between an API interface and an Application.",
+        "correta": false,
+        "explicacao": "Describing data exchanged between an API interface and an Application is not the primary purpose of an information object in ServiceNow's CSDM framework. While data exchange is important, the main focus of an information object is on defining and managing logical data related to Business Applications."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Management Process Owner needs to configure Data Manager for policy tasks to be correctly assigned and aligned with the group attribute assigned to a class in CI Class Manager.Which is the recommended field to be used for a policy task assignment?",
+    "alternativas": [
+      {
+        "texto": "Managed by group",
+        "correta": true,
+        "explicacao": "The Managed by group field is the recommended field for policy task assignment in Data Manager. This field allows tasks to be correctly assigned and aligned with the group attribute assigned to a class in CI Class Manager, ensuring proper management and alignment of policies."
+      },
+      {
+        "texto": "Change group",
+        "correta": false,
+        "explicacao": "The Change group field is typically used for assigning tasks related to change management processes. While it may be related to policy tasks in some contexts, it is not the recommended field specifically for policy task assignment in Data Manager."
+      },
+      {
+        "texto": "Support group",
+        "correta": false,
+        "explicacao": "The Support group field is typically used for assigning tasks related to support or incident management processes. It is not specifically designed for policy task assignments in the context of Data Manager configuration."
+      },
+      {
+        "texto": "Approval group",
+        "correta": false,
+        "explicacao": "The Approval group field is typically used for assigning approval tasks related to changes or requests. It is not specifically designed for policy task assignments in the context of Data Manager configuration."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator is asked to create a query using the CMDB Query Builder that displays all operational CIs belonging to a specific application service.Which steps provide the desired outcome?",
+    "alternativas": [
+      {
+        "texto": "1.Add the Application Service and Configuration Item classes to the canvas.\n\n2.Configure the relationship between the classes.\n\n3.Add the Operational Status and Name fields as columns.\n\n4.Run the query",
+        "correta": false,
+        "explicacao": "This choice is incorrect because it includes adding the Operational Status and Name fields as columns, which is not explicitly required in the question. While adding these fields may provide additional information, the primary goal is to display operational CIs belonging to a specific application service, which can be achieved by focusing on the classes and relationships."
+      },
+      {
+        "texto": "1.Add the Application Service and Configuration Item classes to the canvas.\n\n2.Configure the relationship between the classes.\n\n3.Define a filter for the application service name and the operational status of the configuration items.\n\n4.Run the query.",
+        "correta": true,
+        "explicacao": "This choice is correct as it focuses on adding the Application Service and Configuration Item classes, which are essential for querying operational CIs related to a specific application service. By configuring the relationship between these classes and defining filters for the application service name and operational status, the query will accurately display the desired outcome."
+      },
+      {
+        "texto": "1.Add the Business Application, Application Service, and Configuration Item classes to the canvas.\n\n2.Define a filter for the application service name and the operational status of the configuration items.\n\n3.Configure the relationship between the classes.\n\n4.Run the query.",
+        "correta": false,
+        "explicacao": "This choice is incorrect because it includes the Business Application class, which is not necessary for the query that specifically targets operational CIs belonging to a specific application service. The filter for the application service name and operational status is correctly defined, but the unnecessary class inclusion may lead to inaccurate results."
+      }
+    ]
+  },
+  {
+      "pergunta": "An organization is updating the CMDB to include new asset types like IoT devices. Relevant CI classes need to be added and outdated ones need to be removed from the Principal Class filter to ensure accurate display in ITSM processes.Which roles are needed to add or remove classes?(Choose 2)",
+      "alternativas": [
+          {
+              "texto": "sn_csdm_admin",
+              "correta": false,
+              "explicacao": "The sn_csdm_admin role is related to the ServiceNow Common Service Data Model (CSDM) and focuses on managing CIs and relationships within the CSDM framework. While this role is important for data modeling and management, it is not directly related to adding or removing CI classes from the Principal Class filter."
+          },
+          {
+              "texto": "personalize_dictionary",
+              "correta": true,
+              "explicacao": "The personalize_dictionary role is required to add or remove CI classes from the Principal Class filter in the CMDB. This role grants users the ability to personalize dictionary entries, including CI classes, to ensure accurate display in ITSM processes."
+          },
+          {
+              "texto": "cmdb_query_builder",
+              "correta": false,
+              "explicacao": "The cmdb_query_builder role allows users to build and execute queries in the CMDB, but it does not provide the necessary permissions to add or remove CI classes from the Principal Class filter."
+          },
+          {
+              "texto": "sn_cmdb_admin",
+              "correta": true,
+              "explicacao": "The sn_cmdb_admin role is specifically designed to provide administrative access to the CMDB in ServiceNow. Users with this role have the necessary permissions to add or remove CI classes from the Principal Class filter, ensuring accurate display of asset types like IoT devices in ITSM processes."
+          }
+      ]
+  },
+  {
+    "pergunta": "An Asset Manager wants to ensure that Asset records and CI records are kept synchronized automatically.How does the Manager do this? (Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Ensure that the business rule to update Asset fields on change on the CI table is active.",
+        "correta": true,
+        "explicacao": "Activating the business rule to update Asset fields on change on the CI table is a valid method to automatically synchronize Asset and CI records. By enabling this business rule, any changes made to CI records will automatically reflect in the corresponding Asset records, ensuring synchronization."
+      },
+      {
+        "texto": "Ensure that scheduled jobs are run during off-business hours to ensure that sync happens.",
+        "correta": false,
+        "explicacao": "Running scheduled jobs during off-business hours may help with general maintenance tasks, but it is not a direct method to automatically synchronize Asset and CI records. Scheduled jobs are typically used for tasks that need to be performed at specific intervals, rather than real-time synchronization."
+      },
+      {
+        "texto": "Ensure that the business rule to update CI fields on change on the asset table is active.",
+        "correta": true,
+        "explicacao": "Activating the business rule to update CI fields on change on the Asset table is another valid method to automatically synchronize Asset and CI records. This business rule ensures that any changes made to Asset records will be reflected in the corresponding CI records, maintaining synchronization between the two types of records."
+      },
+      {
+        "texto": "Ensure one-to-one physical mapping between Asset and CI.",
+        "correta": false,
+        "explicacao": "Ensuring one-to-one physical mapping between Asset and CI is not a method to automatically keep Asset and CI records synchronized. This approach focuses on the relationship between the two types of records rather than the synchronization process itself."
+      }
+    ]
+  },
+  {
+    "pergunta": "The Server [cmdb_ci_server] class uses a dynamic reconciliation rule of lowest value for the Disk Space (GB) field, while the Windows Server [cmdb_ci_win_server] class uses a dynamic reconciliation rule of most reported for the Disk Space (GB) field.Given the following data sources that populate Windows Server data into the CMDB 360/Multisource CMDB:Data Source Disk Space (GB)Tivoli 75ServiceNow 75LANDesk 50Altiris 80Which value would be added to the CMDB for the Disk Space (GB) field of a Windows Server [cmdb_ci_win_server] record?",
+    "alternativas": [
+      {
+        "texto": "50",
+        "correta": false,
+        "explicacao": "The dynamic reconciliation rule of 'most reported' for the Disk Space (GB) field in the Windows Server class means that the value reported by the data source with the highest value will be added to the CMDB. In this case, Altiris reports 80 GB, which is the highest value among all data sources, so 80 would be added to the CMDB for the Disk Space (GB) field of a Windows Server record."
+      },
+      {
+        "texto": "75",
+        "correta": true,
+        "explicacao": "The dynamic reconciliation rule of 'most reported' for the Disk Space (GB) field in the Windows Server class means that the value reported by the data source with the highest value will be added to the CMDB. In this case, both Tivoli and ServiceNow report 75 GB, which is the highest value among all data sources, so 75 would be added to the CMDB for the Disk Space (GB) field of a Windows Server record."
+      },
+      {
+        "texto": "80",
+        "correta": false,
+        "explicacao": "The dynamic reconciliation rule of 'most reported' for the Disk Space (GB) field in the Windows Server class means that the value reported by the data source with the highest value will be added to the CMDB. In this case, Altiris reports 80 GB, which is the highest value among all data sources, so 80 would be added to the CMDB for the Disk Space (GB) field of a Windows Server record."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB CI Class Owner responsible for the Windows Servers needs to manage the Windows Server class.Which CI Class Manager feature will help the CI Class Owner streamline this task?",
+    "alternativas": [
+      {
+        "texto": "Pinned Classes",
+        "correta": true,
+        "explicacao": "Pinned Classes feature allows the CI Class Owner to prioritize and easily access the Windows Server class, making it easier to manage and streamline the task of managing this specific class."
+      },
+      {
+        "texto": "Search CI Classes",
+        "correta": false,
+        "explicacao": "Searching CI classes allows users to find specific CI classes quickly, but it does not directly help the CI Class Owner streamline the task of managing the Windows Server class."
+      },
+      {
+        "texto": "CI Favorites",
+        "correta": false,
+        "explicacao": "CI Favorites feature allows users to mark specific CI classes as favorites for quick access, but it does not specifically help the CI Class Owner streamline the task of managing the Windows Server class."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator wants to leverage dynamic reconciliation rules.Which feature must be enabled?",
+    "alternativas": [
+      {
+        "texto": "CMDB Data Manager",
+        "correta": false,
+        "explicacao": "CMDB Data Manager is responsible for managing the data within the CMDB but does not directly enable dynamic reconciliation rules. It focuses on data quality, integrity, and consistency rather than the automation of reconciliation processes."
+      },
+      {
+        "texto": "CMDB Workspace",
+        "correta": false,
+        "explicacao": "CMDB Workspace provides a collaborative environment for managing CMDB data but does not specifically enable dynamic reconciliation rules. It focuses on data organization and visibility rather than the automation of reconciliation processes."
+      },
+      {
+        "texto": "CMDB 360/Multisource CMDB",
+        "correta": true,
+        "explicacao": "CMDB 360/Multisource CMDB is the correct choice as it enables the use of dynamic reconciliation rules in the CMDB. This feature allows the CMDB Administrator to define rules that automatically reconcile data from multiple sources, ensuring data accuracy and consistency across the CMDB."
+      },
+      {
+        "texto": "Reconciliation Rules",
+        "correta": false,
+        "explicacao": "Reconciliation Rules alone are not enough to leverage dynamic reconciliation rules in the CMDB. While they play a crucial role in defining how data is reconciled and updated in the CMDB, they need to be supported by another feature to enable dynamic reconciliation rules."
+      }
+    ]
+  },
+  {
+    "pergunta": "Which shows the most complete list of policy types that are provided by the CMDB Data Manager?",
+    "alternativas": [
+      {
+        "texto": "Archive and Delete",
+        "correta": false,
+        "explicacao": "This choice is incorrect as it only includes two policy types, Archive and Delete, which are not the complete list of policy types provided by the CMDB Data Manager. It is missing Retire, Attestation, and Certification policy types."
+      },
+      {
+        "texto": "Delete, Attestation, Retire and Certification",
+        "correta": false,
+        "explicacao": "This choice is incorrect as it includes Delete, Attestation, Retire, and Certification policy types, but it is missing the Archive policy type. The most complete list of policy types provided by the CMDB Data Manager includes Retire, Archive, Attestation, Certification, and Delete."
+      },
+      {
+        "texto": "Retire, Archive, Attestation, Certification and Delete",
+        "correta": true,
+        "explicacao": "This choice is correct as it includes all the policy types provided by the CMDB Data Manager, which are Retire, Archive, Attestation, Certification, and Delete. Each of these policy types serves a specific purpose in managing data within the CMDB."
+      },
+      {
+        "texto": "Attestation, Retire and Certification",
+        "correta": false,
+        "explicacao": "This choice is incorrect as it only includes Attestation, Retire, and Certification policy types, missing the Archive and Delete policy types. The most complete list of policy types provided by the CMDB Data Manager includes Retire, Archive, Attestation, Certification, and Delete."
+      }
+    ]
+  },
+  {
+    "pergunta": "Where can a CMDB 360/Multisource CMDB Saved Query be viewed and created in the CMDB Workspace?",
+    "alternativas": [
+      {
+        "texto": "Saved queries window on the CMDB 360 tab",
+        "correta": true,
+        "explicacao": "The Saved queries window on the CMDB 360 tab is the correct location where CMDB 360/Multisource CMDB Saved Queries can be viewed and created. This window allows users to save and manage queries for easy access and reuse, enhancing efficiency in data retrieval and analysis within the CMDB workspace."
+      },
+      {
+        "texto": "Coverage window on the CMDB 360 tab",
+        "correta": false,
+        "explicacao": "The Coverage window on the CMDB 360 tab displays information related to the coverage and completeness of data in the CMDB, but it is not the location where CMDB 360/Multisource CMDB Saved Queries can be viewed or created. It is more related to data quality and completeness metrics."
+      },
+      {
+        "texto": "Saved queries window on the Insights tab",
+        "correta": false,
+        "explicacao": "The Saved queries window on the Insights tab is not the correct location for viewing or creating CMDB 360/Multisource CMDB Saved Queries. The Insights tab typically focuses on providing data analytics and visualization tools for gaining insights from CMDB data, rather than managing saved queries for data retrieval."
+      },
+      {
+        "texto": "CMDB Query Builder",
+        "correta": false,
+        "explicacao": "The CMDB Query Builder is used to create and customize queries in the CMDB workspace, but it is not specifically where CMDB 360/Multisource CMDB Saved Queries are viewed or created. It is more focused on building custom queries for specific data retrieval needs."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Service Owner needs to view related items, such as Active Incidents and Planned Changes, directly on the home node of the Unified Map.Which work area would allow the Service Owner to meet this goal?",
+    "alternativas": [
+      {
+        "texto": "Content controls",
+        "correta": false,
+        "explicacao": "Content Controls in ServiceNow are used to manage the layout and content of forms and pages within the platform. They do not provide direct access to related items like Active Incidents and Planned Changes on the home node of the Unified Map."
+      },
+      {
+        "texto": "Map",
+        "correta": false,
+        "explicacao": "The Map in ServiceNow is used to visualize geographical data or locations within the platform. It is not typically used to display related items like Active Incidents and Planned Changes directly on the home node of the Unified Map."
+      },
+      {
+        "texto": "Contextual side panel",
+        "correta": true,
+        "explicacao": "The Contextual Side Panel in ServiceNow is designed to display related information and items based on the context of the current record or node. In this case, the Service Owner can use the Contextual Side Panel to view related items like Active Incidents and Planned Changes directly on the home node of the Unified Map, making it the correct choice for meeting the goal."
+      },
+      {
+        "texto": "Tool box",
+        "correta": false,
+        "explicacao": "The Tool Box in ServiceNow is typically used for accessing various tools and functions within the platform, such as creating new records or accessing reports. It does not provide direct access to related items like Active Incidents and Planned Changes on the home node of the Unified Map."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator is using the Duplicate CI Remediator to address a de-duplication task. On the first tab of the wizard, the Main CI is selected.Which attributes are used to identify the Main CI?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Newest Created",
+        "correta": false,
+        "explicacao": "The \"Newest Created\" attribute is not used to identify the Main CI in the Duplicate CI Remediator tool. The tool typically selects the oldest CI as the Main CI, so the creation date is not based on the newest CI."
+      },
+      {
+        "texto": "Least Related Items",
+        "correta": false,
+        "explicacao": "The \"Least Related Items\" attribute is not used to identify the Main CI in the Duplicate CI Remediator tool. The tool focuses on identifying the CI with the most related items to ensure accurate de-duplication, so the least related items attribute is not relevant in this context."
+      },
+      {
+        "texto": "Most Related Items",
+        "correta": true,
+        "explicacao": "The \"Most Related Items\" attribute is used to identify the Main CI in the Duplicate CI Remediator tool. This attribute helps in determining which CI has the most relationships with other items, making it a key factor in selecting the Main CI for the de-duplication task."
+      },
+      {
+        "texto": "Oldest Created",
+        "correta": true,
+        "explicacao": "The \"Oldest Created\" attribute is used to identify the Main CI in the Duplicate CI Remediator tool. This attribute helps in determining which CI was created first, allowing the system to select the oldest CI as the Main CI for the de-duplication task."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Manager needs information on how to correctly establish relationships between Infrastructure CIs, Technology Management Offerings (Technical Service Offerings), and Application Services within the CMDB.Which CSDM domain would provide this information?",
+    "alternativas": [
+      {
+        "texto": "Foundation",
+        "correta": false,
+        "explicacao": "The Foundation domain provides the basic principles and structure of the Configuration Management Database (CMDB) but does not specifically cover the establishment of relationships between Infrastructure CIs, Technology Management Offerings, and Application Services."
+      },
+      {
+        "texto": "Design and Planning (Design)",
+        "correta": false,
+        "explicacao": "The Design and Planning (Design) domain focuses on the design and planning of services and processes within the CMDB. While it may involve establishing relationships, it does not specifically address the relationships between Infrastructure CIs, Technology Management Offerings, and Application Services."
+      },
+      {
+        "texto": "Service Consumption (Sell / Consume)",
+        "correta": false,
+        "explicacao": "The Service Consumption (Sell / Consume) domain deals with the consumption and utilization of services within the CMDB. It does not specifically provide information on how to establish relationships between Infrastructure CIs, Technology Management Offerings, and Application Services."
+      },
+      {
+        "texto": "Service Delivery (Manage Technical Services)",
+        "correta": true,
+        "explicacao": "The Service Delivery (Manage Technical Services) domain specifically deals with managing technical services, including establishing relationships between Infrastructure CIs, Technology Management Offerings, and Application Services within the CMDB. It provides the necessary information on how to correctly establish these relationships."
+      },
+      {
+        "texto": "Build and Integration (Build)",
+        "correta": false,
+        "explicacao": "The Build and Integration (Build) domain focuses on the technical aspects of building and integrating Configuration Items (CIs) within the CMDB. It does not specifically address the establishment of relationships between Infrastructure CIs, Technology Management Offerings, and Application Services."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator needs to prevent duplicate CI creation from import sets that load data into the CMDB from vendor shipment files containing CI information.How can the Administrator do this?",
+    "alternativas": [
+      {
+        "texto": "Set the coalesce on two mappings within the transform map",
+        "correta": false,
+        "explicacao": "Setting the coalesce on two mappings within the transform map can help merge duplicate records based on specified criteria during the import process. While this method can help in handling duplicate CIs, it may not completely prevent the creation of duplicate CIs from import sets. It focuses more on merging existing duplicate records rather than preventing their creation."
+      },
+      {
+        "texto": "Create comparison rules in the IRE",
+        "correta": false,
+        "explicacao": "Creating comparison rules in the IRE (Identification and Reconciliation Engine) can help identify and prevent duplicate CI creation during the import process. However, this method alone may not be sufficient to completely prevent duplicate CI creation as it depends on the accuracy and effectiveness of the comparison rules set up in the IRE."
+      },
+      {
+        "texto": "Use the CMDBTransformUtil API in the transform script",
+        "correta": true,
+        "explicacao": "Using the CMDBTransformUtil API in the transform script allows the Administrator to programmatically check for existing CIs before creating new ones during the import process. This API provides more control and flexibility in preventing duplicate CI creation compared to other methods, making it the correct choice in this scenario."
+      },
+      {
+        "texto": "Set the system property to utilize the IRE within transform maps",
+        "correta": false,
+        "explicacao": "Setting the system property to utilize the IRE within transform maps can help leverage the capabilities of the IRE in identifying and reconciling duplicate CIs. However, this method may not directly prevent duplicate CI creation during the import process as it primarily focuses on utilizing the IRE within transform maps for data reconciliation."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator needs to set a CI Class as a Principal Class.Which CI Class Manager tab would need to be accessed?",
+    "alternativas": [
+      {
+        "texto": "Health > Attributes",
+        "correta": false,
+        "explicacao": "The Health > Attributes tab in the CI Class Manager is not related to setting a CI Class as a Principal Class. This tab is typically used to define health attributes for configuration items and is not directly related to the configuration of Principal Classes."
+      },
+      {
+        "texto": "Class Info > Attributes",
+        "correta": false,
+        "explicacao": "The Class Info > Attributes tab in the CI Class Manager is not specifically related to setting a CI Class as a Principal Class. This tab is typically used to define attributes for the CI Class, such as name, data type, and default value, but it does not directly involve the configuration of Principal Classes."
+      },
+      {
+        "texto": "Class Info > Basic Info",
+        "correta": true,
+        "explicacao": "The Class Info > Basic Info tab in the CI Class Manager is where the CI Class Administrator would need to access to set a CI Class as a Principal Class. This tab contains essential information about the CI Class, including its name, description, and whether it is a Principal Class or not."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB CI Class Owner has been asked to change the icon for the UNIX Server class.Which CI Class Manager tab can the owner use to change the icon for the class?",
+    "alternativas": [
+      {
+        "texto": "Suggested Relationships",
+        "correta": false,
+        "explicacao": "The Suggested Relationships tab is used to define relationships between different CI classes. It does not provide the option to change the icon for a specific class, as its primary function is to manage relationships and dependencies."
+      },
+      {
+        "texto": "CI List",
+        "correta": false,
+        "explicacao": "The CI List tab displays a list of all CIs within the class, allowing for easy navigation and management of individual configuration items. It does not offer the functionality to change the icon associated with the class itself."
+      },
+      {
+        "texto": "Basic Info",
+        "correta": true,
+        "explicacao": "The Basic Info tab is where the CMDB CI Class Owner can make changes to fundamental information about the class, including the icon associated with it. This tab allows for customization of the class details, such as name, description, and icon."
+      },
+      {
+        "texto": "Attributes",
+        "correta": false,
+        "explicacao": "The Attributes tab is where the CMDB CI Class Owner can define the attributes and properties of the class. While this tab is essential for specifying the characteristics of the class, it does not provide the option to modify the icon associated with it."
+      }
+    ]
+  },
+  {
+    "pergunta": "The CMDB Configuration Management team wants to manage de-duplication tasks generated from data ingested into the CMDB via the Identification and Reconciliation Engine (IRE).In which area of the CMDB Workspace can they locate these de-duplication tasks?",
+    "alternativas": [
+      {
+        "texto": "Total status tile under the My Work tab",
+        "correta": false,
+        "explicacao": "The Total status tile under the My Work tab provides an overview of all the tasks and activities assigned to the user. It does not specifically focus on de-duplication tasks generated from data ingested into the CMDB via the IRE."
+      },
+      {
+        "texto": "CMDB feature adoption tile under the Insights tab",
+        "correta": false,
+        "explicacao": "The CMDB feature adoption tile under the Insights tab is designed to track the adoption and usage of CMDB features within the organization. It does not specifically display de-duplication tasks generated from data ingested into the CMDB via the IRE."
+      },
+      {
+        "texto": "Important actions tile under the Home tab",
+        "correta": true,
+        "explicacao": "The Important actions tile under the Home tab is where the CMDB Configuration Management team can locate de-duplication tasks generated from data ingested into the CMDB via the IRE. This area highlights critical tasks that require immediate attention and action, making it the appropriate location to manage de-duplication tasks effectively."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator, viewing the CMDB Data Foundations Dashboard, notices the Unique Locations Result percentage low.What is the recommended process from the associated playbook to correct this issue?",
+    "alternativas": [
+      {
+        "texto": "Review both locations, update CIs with the correct location and delete the duplicate location",
+        "correta": true,
+        "explicacao": "Reviewing both locations, updating the CIs with the correct location, and deleting the duplicate location is the recommended process to correct the issue of low Unique Locations Result percentage. This ensures that the CMDB data is accurate, up-to-date, and free from duplicates."
+      },
+      {
+        "texto": "Keep both locations as either can be used as a valid alternate location",
+        "correta": false,
+        "explicacao": "Keeping both locations as valid alternate locations may result in confusion and data redundancy within the CMDB. It is recommended to review and update the CIs with the correct location to maintain data integrity and consistency."
+      },
+      {
+        "texto": "Use the Duplicate CI Remediator to merge the duplicate location records",
+        "correta": false,
+        "explicacao": "Using the Duplicate CI Remediator to merge the duplicate location records may not be the most efficient solution for correcting the issue. It is more effective to manually review and update the locations to ensure that the CMDB data is accurate and reflects the correct information."
+      },
+      {
+        "texto": "Retain the location that matches the organization's standard naming convention, and delete the duplicate without further validation",
+        "correta": false,
+        "explicacao": "Retaining the location that matches the organization's standard naming convention and deleting the duplicate without further validation may lead to inconsistencies in the CMDB data. It is important to review and update the locations to ensure accuracy and alignment with the organization's standards."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CSDM Data Manager needs metrics on the alignment of product models, locations, and business units with best practices.Which tab in the CSDM Data Foundations Dashboard provides this information?",
+    "alternativas": [
+      {
+        "texto": "Walk",
+        "correta": false,
+        "explicacao": "The Walk tab in the CSDM Data Foundations Dashboard may represent a stage in the data management process but is unlikely to specifically offer metrics on the alignment of product models, locations, and business units with best practices."
+      },
+      {
+        "texto": "Fly",
+        "correta": false,
+        "explicacao": "The Fly tab in the CSDM Data Foundations Dashboard may represent a more advanced or strategic level of data management but is less likely to provide specific metrics on the alignment of product models, locations, and business units with best practices."
+      },
+      {
+        "texto": "Foundation",
+        "correta": true,
+        "explicacao": "The Foundation tab in the CSDM Data Foundations Dashboard is likely to provide metrics and insights on the foundational aspects of the data model, including the alignment of product models, locations, and business units with best practices. This tab is the most appropriate choice for the required information."
+      },
+      {
+        "texto": "Crawl",
+        "correta": false,
+        "explicacao": "The Crawl tab in the CSDM Data Foundations Dashboard may focus on initial data collection or discovery processes. It is less likely to provide detailed metrics on the alignment of product models, locations, and business units with best practices."
+      },
+      {
+        "texto": "Run",
+        "correta": false,
+        "explicacao": "The Run tab in the CSDM Data Foundations Dashboard typically provides information related to the execution and status of data processes or workflows. It does not specifically focus on metrics related to the alignment of product models, locations, and business units with best practices."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager wants to explore ServiceNow CMDB 360 saved queries to see if the reports can assist with managing of CMDB data.What insights are gained from CMDB 360 queries?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Duplicate configuration items from different data sources",
+        "correta": false,
+        "explicacao": "Duplicate configuration items from different data sources can reveal redundancies or inconsistencies in the CMDB, which may require deduplication efforts to maintain data integrity. However, this is not specifically mentioned as one of the insights gained from CMDB 360 queries in this scenario."
+      },
+      {
+        "texto": "Unique CIs created from different data sources",
+        "correta": false,
+        "explicacao": "Unique CIs created from different data sources can provide insights into the diversity and variety of configuration items present in the CMDB, helping the Configuration Manager understand the scope and complexity of the environment."
+      },
+      {
+        "texto": "Different attribute values from different data sources",
+        "correta": true,
+        "explicacao": "Different attribute values from different data sources can indicate discrepancies or conflicts in the information stored in the CMDB, enabling the Configuration Manager to address data quality issues and ensure data accuracy."
+      },
+      {
+        "texto": "Gaps in attribute data from different data sources",
+        "correta": true,
+        "explicacao": "Gaps in attribute data from different data sources can highlight inconsistencies or missing information in the CMDB, allowing the Configuration Manager to identify areas that require attention or data reconciliation."
+      },
+      {
+        "texto": "Orphan CIs created from different data sources",
+        "correta": false,
+        "explicacao": "Orphan CIs created from different data sources refer to configuration items that are not associated with any other items in the CMDB. While this can be a valuable insight, it is not directly related to the information gained from CMDB 360 queries in this context."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Manager needs to enable a CMDB Data Manager policy to remove records from a CI Class while retaining the ability to restore them within a specified period.Which policy type should the Configuration Manager create?",
+    "alternativas": [
+      {
+        "texto": "Archive",
+        "correta": true,
+        "explicacao": "Archive policies are designed to remove records from a CI Class while retaining the ability to restore them within a specified period. This type of policy allows Configuration Managers to maintain historical data and easily restore records if needed, making it the correct choice for the scenario described."
+      },
+      {
+        "texto": "Delete",
+        "correta": false,
+        "explicacao": "Delete policies are used to permanently remove records from the CMDB. They do not provide the ability to restore the deleted records within a specified period, which is a requirement in this scenario."
+      },
+      {
+        "texto": "Retire",
+        "correta": false,
+        "explicacao": "Retire policies are used to mark CIs as retired in the CMDB, indicating that they are no longer in use. While this may involve removing them from active use, it does not provide the ability to restore the records within a specified period as required in this case."
+      },
+      {
+        "texto": "Certification",
+        "correta": false,
+        "explicacao": "Certification policies are used to validate and verify the accuracy and completeness of CI data in the CMDB. They are not designed for removing records from a CI Class while retaining the ability to restore them within a specified period."
+      }
+    ]
+  },
+  {
+    "pergunta": "An organization utilizes multiple data sources to update its CMDB, each assigned a different priority level. A high-priority data source is scheduled to update server records weekly. However, due to an integration issue, the high-priority data source stops updating the records.Which configuration can be used to allow a lower-priority data source to update records after a specified period of inactivity from the higher-priority source?",
+    "alternativas": [
+      {
+        "texto": "Identification Rules",
+        "correta": false,
+        "explicacao": "Identification Rules are used to identify and match data from different sources to create or update CI records in the CMDB. While important for data accuracy, they do not specifically address the situation where a lower-priority data source needs to update records due to inactivity from a higher-priority source."
+      },
+      {
+        "texto": "Reconciliation Rules",
+        "correta": false,
+        "explicacao": "Reconciliation Rules are used to reconcile data from different sources and resolve conflicts in the CMDB. While they play a crucial role in maintaining data integrity, they do not directly address the scenario of enabling a lower-priority data source to update records after a specified period of inactivity from a higher-priority source."
+      },
+      {
+        "texto": "Health Inclusion Rules",
+        "correta": false,
+        "explicacao": "Health Inclusion Rules are used to determine which data should be included in the CMDB based on health status or other criteria. They do not address the scenario of allowing a lower-priority data source to update records in the absence of updates from a higher-priority source."
+      },
+      {
+        "texto": "Data Refresh Rules",
+        "correta": true,
+        "explicacao": "Data Refresh Rules can be configured to define conditions under which data from a lower-priority source can update records in the CMDB after a specified period of inactivity from a higher-priority source. This allows for automatic data updates when the primary data source fails to update records as expected."
+      }
+    ]
+  },
+  {
+    "pergunta": "The ITSM Manager wants to use Technology Management Offerings (Technical Service Offerings) to populate the support group of associated CIs.What CSDM stage would this be completed in?",
+    "alternativas": [
+      {
+        "texto": "Crawl",
+        "correta": false,
+        "explicacao": "The Crawl stage in CSDM focuses on gathering data and information about the organization's IT assets and services. It involves identifying and discovering the existing technology landscape, but it does not involve the implementation or utilization of Technology Management Offerings to populate support groups."
+      },
+      {
+        "texto": "Run",
+        "correta": false,
+        "explicacao": "The Run stage in CSDM involves the operational management of IT services and assets. While it may involve using Technology Management Offerings to support ongoing operations, it is not the stage where the initial setup and configuration of these offerings would take place."
+      },
+      {
+        "texto": "Foundation",
+        "correta": false,
+        "explicacao": "The Foundation stage in CSDM focuses on establishing the basic framework and structure for managing IT services and assets. While Technology Management Offerings may be part of this foundational setup, the specific task of populating support groups for associated CIs would typically occur in the Walk stage, where more detailed configuration and implementation take place."
+      },
+      {
+        "texto": "Walk",
+        "correta": true,
+        "explicacao": "The Walk stage in CSDM is where the implementation and configuration of Technology Management Offerings, such as Technical Service Offerings, would typically take place. This stage involves setting up processes and tools to manage IT services effectively, including populating support groups for associated CIs."
+      },
+      {
+        "texto": "Fly",
+        "correta": false,
+        "explicacao": "The Fly stage in CSDM represents the optimization and transformation of IT services and assets to align with business goals and objectives. While Technology Management Offerings may play a role in this stage, the primary focus is on strategic alignment and continuous improvement, rather than the initial setup of support groups for CIs."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator notices that CIs do not have a support group.How can the support group be automatically populated and maintained on the CI record?",
+    "alternativas": [
+      {
+        "texto": "Technology Management Service Offering (Technical Service Offering)",
+        "correta": true,
+        "explicacao": "Technology Management Service Offering (Technical Service Offering) is the correct choice as it is responsible for defining and managing the services provided by the technology management function. This includes defining support groups and their relationships to CIs, ensuring that the support group information is automatically populated and maintained on the CI records."
+      },
+      {
+        "texto": "Dynamic CI group",
+        "correta": false,
+        "explicacao": "Dynamic CI group is not directly related to automatically populating and maintaining support groups on CI records. It is more focused on dynamically grouping CIs based on certain criteria or rules, rather than specifically managing support groups."
+      },
+      {
+        "texto": "CI Class Manager",
+        "correta": false,
+        "explicacao": "CI Class Manager is not typically used for automatically populating and maintaining support groups on CI records. It is more focused on managing CI classes and their attributes within the CMDB, rather than support group assignments."
+      },
+      {
+        "texto": "Technology Management Service (Technical Service)",
+        "correta": false,
+        "explicacao": "Technology Management Service (Technical Service) is not primarily responsible for automatically populating and maintaining support groups on CI records. It is more focused on managing technical services and their relationships within the CMDB, rather than support group assignments."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB team has noticed that some hardware CIs are missing the serial number information, making it difficult to maintain data accuracy. The team needs a structured approach to identify and address these gaps.Which accomplishes this task?",
+    "alternativas": [
+      {
+        "texto": "Service Graph Connectors",
+        "correta": false,
+        "explicacao": "Service Graph Connectors are used to establish relationships and connections between different data sources and systems within the ServiceNow platform. While they can help integrate and synchronize data, they do not provide a structured approach to identifying and addressing specific data gaps like missing serial number information for hardware CIs in the CMDB."
+      },
+      {
+        "texto": "CI Class Manager",
+        "correta": false,
+        "explicacao": "The CI Class Manager is a tool used to define and manage configuration item (CI) classes within the CMDB. While it can help organize and categorize CIs, it does not specifically address the task of identifying and addressing missing serial number information for hardware CIs."
+      },
+      {
+        "texto": "CMDB Data Foundation Playbook",
+        "correta": true,
+        "explicacao": "The CMDB Data Foundation Playbook provides a structured approach to managing CMDB data, including identifying and addressing data gaps such as missing serial number information for hardware CIs. It outlines best practices, processes, and guidelines for maintaining data accuracy and integrity within the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "A global enterprise integrates data from multiple discovery sources such as ServiceNow Discovery, SCCM, AWS, and manual uploads to populate its CMDB. However, each discovery source categorizes the same CIs differently, leading to duplicate records and inconsistencies across the system. As a result, the CMDB team is struggling with data accuracy and standardization.What actions does the CMDB team take to resolve the issue?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Create a custom script to manually adjust incoming data before storing it in the CMDB",
+        "correta": false,
+        "explicacao": "Creating a custom script to manually adjust incoming data before storing it in the CMDB may provide a temporary solution, but it is not a sustainable approach for resolving the underlying issue of duplicate records and inconsistencies. Implementing standardized CI classes and attributes, along with identification and reconciliation rules, is a more effective long-term solution."
+      },
+      {
+        "texto": "Implement and use identification and reconciliation rules to avoid duplicates and standardize CI classification",
+        "correta": true,
+        "explicacao": "Implementing and using identification and reconciliation rules is essential for avoiding duplicates and standardizing CI classification. These rules help the CMDB team identify and resolve duplicate records, ensuring that only accurate and standardized data is stored in the CMDB."
+      },
+      {
+        "texto": "Allow each discovery source to define its own CI class, even if it results in inconsistencies",
+        "correta": false,
+        "explicacao": "Allowing each discovery source to define its own CI class, even if it results in inconsistencies, will only exacerbate the problem of duplicate records and inconsistencies in the CMDB. Standardizing CI classes and attributes across all sources is essential for data accuracy and consistency."
+      },
+      {
+        "texto": "Use CI Class Manager to establish standardized CI classes and attributes across all discovery sources",
+        "correta": true,
+        "explicacao": "Using CI Class Manager to establish standardized CI classes and attributes across all discovery sources is a crucial step in resolving the issue of duplicate records and inconsistencies. By ensuring that all discovery sources categorize CIs in a consistent manner, the CMDB team can improve data accuracy and standardization."
+      }
+    ]
+  },
+  {
+    "pergunta": "How does a CMDB Administrator use the ServiceNow Platform to ensure the data quality associated with CIs in the CMDB?",
+    "alternativas": [
+      {
+        "texto": "CMDB Workspace",
+        "correta": true,
+        "explicacao": "CMDB Workspace is a workspace within the ServiceNow platform that allows users to view and manage configuration items (CIs) in the CMDB. While it provides a user interface for working with CIs, it does not directly address how a CMDB Administrator can ensure data quality associated with CIs in the CMDB."
+      },
+      {
+        "texto": "Data Quality Scheduled Job",
+        "correta": false,
+        "explicacao": "Data Quality Scheduled Job is a feature in the ServiceNow platform that allows administrators to schedule automated tasks to improve data quality. A CMDB Administrator can use Data Quality Scheduled Jobs to run data quality checks, validations, and clean-up routines on CIs in the CMDB, ensuring that the data is accurate and up-to-date."
+      },
+      {
+        "texto": "CMDB Audit Business Rule",
+        "correta": false,
+        "explicacao": "CMDB Audit Business Rule is not specifically designed to ensure data quality associated with CIs in the CMDB. While it may help in auditing and tracking changes to CIs, it does not directly address the proactive measures needed to maintain data quality within the CMDB."
+      },
+      {
+        "texto": "Data Quality Business Rule",
+        "correta": false,
+        "explicacao": "Data Quality Business Rule is not directly related to ensuring data quality associated with CIs in the CMDB. It is typically used to enforce data quality standards and rules within the ServiceNow platform, but it may not specifically address the data quality of CIs in the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "A Configuration Management team needs to prevent duplicate server records to avoid confusion among users. Server records are identified when they are processed via the Identification and Reconciliation Engine (IRE) using the configured identification rules.Where would these rules be configured?",
+    "alternativas": [
+      {
+        "texto": "CMDB Health Dashboard",
+        "correta": false,
+        "explicacao": "The CMDB Health Dashboard is used to monitor the health and status of Configuration Management Database (CMDB) data, such as data quality, compliance, and completeness. It does not involve configuring identification rules for preventing duplicate server records."
+      },
+      {
+        "texto": "CMDB Data Manager",
+        "correta": false,
+        "explicacao": "The CMDB Data Manager is responsible for managing the data within the CMDB, such as importing, exporting, and manipulating CI data. While important for overall data management, it is not the specific tool for configuring identification rules to prevent duplicate server records."
+      },
+      {
+        "texto": "CMDB CI Class Manager",
+        "correta": true,
+        "explicacao": "The CMDB CI Class Manager is where configuration management teams can configure identification rules for the Identification and Reconciliation Engine (IRE) to prevent duplicate server records. This tool allows for defining how server records are uniquely identified and reconciled within the CMDB."
+      },
+      {
+        "texto": "CMDB Workspace",
+        "correta": false,
+        "explicacao": "The CMDB Workspace is a user interface where users can view and manage Configuration Items (CIs) within the CMDB. While it provides a workspace for CI management, it is not the place where identification rules for preventing duplicate server records are configured."
+      }
+    ]
+  },
+  {
+    "pergunta": "A ServiceNow Administrator wants to implement Service Graph Connectors to provide integrations to many third-party solutions that the companywants integrated into the CMDB.Which categories of connectors are available to the Administrator?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Observability",
+        "correta": true,
+        "explicacao": "Observability connectors are available to the ServiceNow Administrator for integrating third-party solutions into the CMDB. These connectors help in monitoring and managing the performance and health of integrated systems within the CMDB."
+      },
+      {
+        "texto": "Workflow Automation",
+        "correta": false,
+        "explicacao": "Workflow Automation connectors are not available for the Service Graph Connectors in ServiceNow. These connectors are not related to integrating third-party solutions into the CMDB."
+      },
+      {
+        "texto": "DevOps",
+        "correta": false,
+        "explicacao": "DevOps connectors are not available for the Service Graph Connectors in ServiceNow. These connectors are not specifically designed for integrating third-party solutions into the CMDB."
+      },
+      {
+        "texto": "Cloud",
+        "correta": true,
+        "explicacao": "Cloud connectors are available to the ServiceNow Administrator for integrating third-party solutions into the CMDB. These connectors facilitate the integration of cloud-based services and resources into the CMDB."
+      }
+    ]
+  },
+  {
+    "pergunta": "The CMDB Health Dashboard is based on three Key Performance Indicators (KPIs): Correctness, Compliance, and Completeness. Each KPI includes several sub-metrics.A. AuditB. StabilityC. RequiredD. CertifyE. SuggestedF. Orphan1. Completeness2. Compliance3. Correctness",
+    "alternativas": [
+      {
+        "texto": "A. Audit -> 2. Compliance\n\nD. Certify -> 1. Completeness\nE. Suggested -> 3.Correctness",
+        "correta": false
+      },
+      {
+        "texto": "A. Audit → 2. Compliance\nC. Required → 1. Completeness\n\nF. Orphan → 3.Correctness",
+        "correta": true
+      },
+      {
+        "texto": "D. Certify -> 3.Correctness\n\nE. Suggested -> 2. Compliance\n\nF. Orphan -> 1. Completeness",
+        "correta": false
+      },
+      {
+        "texto": "C. Required -> 1. Completeness\n\nD. Certify ->  3.Correctness\n\nE. Suggested -> 2. Compliance",
+        "correta": false
+      }
+    ]
+  },
+  {
+    "pergunta": "Which are CMDB Data Manager end of life policy types? (Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Lost",
+        "correta": false,
+        "explicacao": "The \"Lost\" end of life policy type is not a standard policy type in CMDB Data Manager. It does not represent a valid option for managing configuration items that have reached the end of their life cycle."
+      },
+      {
+        "texto": "Decommission",
+        "correta": false,
+        "explicacao": "The \"Decommission\" end of life policy type is not a standard policy type in CMDB Data Manager. While decommissioning is a common practice for retiring assets, it is not specifically defined as an end of life policy type in this context."
+      },
+      {
+        "texto": "Retire",
+        "correta": true,
+        "explicacao": "The \"Retire\" end of life policy type in CMDB Data Manager indicates that the configuration item has reached the end of its useful life and should be removed from the active CMDB. This policy type helps in managing outdated or obsolete items in the CMDB."
+      },
+      {
+        "texto": "Archive",
+        "correta": true,
+        "explicacao": "The \"Archive\" end of life policy type in CMDB Data Manager indicates that the configuration item has been moved to an archive state for historical reference or compliance purposes. This policy type helps in maintaining a record of retired items without cluttering the active CMDB."
+      },
+      {
+        "texto": "Disposed",
+        "correta": false,
+        "explicacao": "The \"Disposed\" end of life policy type is not a standard policy type in CMDB Data Manager. Disposal of assets is an important aspect of asset management, but it is not typically categorized as an end of life policy type in CMDB Data Manager."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator is working in the CI Class Manager on the Basic Info tab.How can the class be set as a Principal Class?",
+    "alternativas": [
+      {
+        "texto": "Check the Principal Class check box",
+        "correta": true,
+        "explicacao": "Checking the Principal Class checkbox is the correct way to set a class as a Principal Class in the CI Class Manager on the Basic Info tab. This action directly marks the class as a Principal Class within the ServiceNow platform."
+      },
+      {
+        "texto": "Click the Principal Class UI Action button",
+        "correta": false,
+        "explicacao": "Clicking the Principal Class UI Action button is not the correct way to set a class as a Principal Class in the CI Class Manager. The correct action is to check the Principal Class checkbox to designate the class as a Principal Class."
+      },
+      {
+        "texto": "Select 'Yes' from the Principal Class choice list",
+        "correta": false,
+        "explicacao": "Selecting 'Yes' from the Principal Class choice list is not the correct method to set a class as a Principal Class in the CI Class Manager. The correct action is to check the Principal Class checkbox to indicate that the class should be treated as a Principal Class within the ServiceNow platform."
+      }
+    ]
+  },
+  {
+    "pergunta": "What is the value of using the CMDB in security operations?(Choose 2)",
+    "alternativas": [
+      {
+        "texto": "Identifies the IT infrastructure with a vulnerability",
+        "correta": true,
+        "explicacao": "Using the CMDB in security operations helps in identifying the IT infrastructure with vulnerabilities by maintaining a detailed inventory of configuration items and their attributes. This information can be used to prioritize and address vulnerabilities in the IT environment effectively."
+      },
+      {
+        "texto": "Allows security team to assess and remediate an incident",
+        "correta": true,
+        "explicacao": "Using the CMDB in security operations allows the security team to assess and remediate an incident by providing a centralized repository of configuration items and their relationships. This helps in understanding the impact of security incidents on the IT infrastructure and taking appropriate actions to mitigate risks."
+      },
+      {
+        "texto": "Enables audits and attestations across CIs",
+        "correta": false,
+        "explicacao": "The CMDB enables audits and attestations across configuration items (CIs) by providing a comprehensive view of the IT infrastructure. This helps in ensuring compliance with security policies, regulations, and standards by tracking the configuration and relationships of CIs."
+      },
+      {
+        "texto": "Auto-resolves a vulnerability",
+        "correta": false,
+        "explicacao": "Auto-resolving a vulnerability is not a direct value of using the CMDB in security operations. While the CMDB can provide information about vulnerabilities in the IT infrastructure, the actual remediation and resolution of vulnerabilities typically require additional tools and processes."
+      }
+    ]
+  },
+  {
+    "pergunta": "A CMDB Administrator has installed a Service Graph Connector (SGC), and then made customizations to the mappings.Which is a consequence of this action?",
+    "alternativas": [
+      {
+        "texto": "The customization will prevent the SGC from executing without an approval record attached to the affected mapping record.",
+        "correta": false,
+        "explicacao": "The customization of mappings in a Service Graph Connector (SGC) does not necessarily require an approval record to be attached for the SGC to execute. Customizations may impact the functionality of the SGC, but they do not inherently prevent it from executing. Approval records are typically used for other purposes within the ServiceNow platform."
+      },
+      {
+        "texto": "Fields populated by a customization will have a special tag associated with them in the CMDB.",
+        "correta": false,
+        "explicacao": "Fields populated by customizations in a Service Graph Connector (SGC) may not necessarily have a special tag associated with them in the CMDB. While customizations can impact the data and fields within the CMDB, the presence of a special tag is not a standard consequence of making custom mappings in the SGC."
+      },
+      {
+        "texto": "The customized mappings are not supported by ServiceNow, and the customer is responsible for supporting their own customized SGC.",
+        "correta": true,
+        "explicacao": "Customizations made to the mappings in a Service Graph Connector (SGC) are not supported by ServiceNow. This means that the customer who made the customizations is responsible for supporting and maintaining their own customized SGC. ServiceNow will not provide support for any issues that arise from these customizations."
+      }
+    ]
+  },
+  {
+    "pergunta": "A retail organization needs to ensure that incidents affecting customer-facing services are resolved quickly to reduce potential revenue loss.Which CSDM attribute is used to prioritize these services?",
+    "alternativas": [
+      {
+        "texto": "Business Criticality in the Service Offering",
+        "correta": true,
+        "explicacao": "Business Criticality in the Service Offering attribute is used to prioritize services based on their importance to the business. This attribute helps identify and prioritize customer-facing services that are critical for revenue generation, ensuring that incidents affecting these services are resolved quickly to minimize revenue loss."
+      },
+      {
+        "texto": "Affected CIs in the Incident record",
+        "correta": false,
+        "explicacao": "The Affected CIs in the Incident record help identify which configuration items are impacted by an incident. While this information is crucial for incident resolution, it does not directly determine the priority of services based on business criticality."
+      },
+      {
+        "texto": "Assignment Group on the CI record",
+        "correta": false,
+        "explicacao": "The Assignment Group on the CI record is used to assign specific groups responsible for managing and resolving incidents related to configuration items. While it is important for incident management, it is not directly related to prioritizing services based on business impact or criticality."
+      },
+      {
+        "texto": "Service classification in the Technical Service",
+        "correta": false,
+        "explicacao": "The Service classification in the Technical Service provides information about the type and category of services offered. While this attribute is essential for service management, it does not specifically address the prioritization of services based on business criticality."
+      }
+    ]
+  },
+  {
+    "pergunta": "The CMDB Administrator group seeks to filter specific CI classes that display on the CMDB Health Dashboard. This ensures that only relevant data is displayed, excluding items that are not ready for management.Which feature can the group utilize to achieve this goal?",
+    "alternativas": [
+      {
+        "texto": "Data Refresh Rules",
+        "correta": false,
+        "explicacao": "Data Refresh Rules are not directly related to filtering specific CI classes on the CMDB Health Dashboard. These rules are typically used to define how and when data is updated or refreshed in the CMDB, ensuring that the information remains current and accurate. While important for data management, they do not serve the purpose of filtering CI classes for display on the dashboard."
+      },
+      {
+        "texto": "Reconciliation Rules",
+        "correta": false,
+        "explicacao": "Reconciliation Rules are used to identify and resolve discrepancies or conflicts between different data sources in the CMDB. These rules help in ensuring data consistency and accuracy by reconciling conflicting information. However, they are not specifically designed to filter specific CI classes on the CMDB Health Dashboard."
+      },
+      {
+        "texto": "Health Inclusion Rules",
+        "correta": true,
+        "explicacao": "Health Inclusion Rules allow the CMDB Administrator group to filter specific CI classes that are displayed on the CMDB Health Dashboard. By using these rules, the group can ensure that only relevant data is shown on the dashboard, excluding items that are not ready for management. This feature helps in maintaining the accuracy and relevance of the information presented on the dashboard."
+      },
+      {
+        "texto": "Identification Rules",
+        "correta": false,
+        "explicacao": "Identification Rules are used to define how CIs are identified and classified in the CMDB. These rules help in ensuring that each CI is uniquely identified and categorized correctly. While important for data classification and identification, they do not directly assist in filtering specific CI classes on the CMDB Health Dashboard."
+      }
+    ]
+  },
+  {
+    "pergunta": "The Change Management team in an organization wants to implement a Change across multiple CIs at the same time.Which field on the Change Request form needs to be populated with a dynamic CI group?",
+    "alternativas": [
+      {
+        "texto": "Configuration Item",
+        "correta": true,
+        "explicacao": "The Configuration Item (CI) field on the Change Request form needs to be populated with a dynamic CI group because it allows the Change Management team to implement a Change across multiple CIs simultaneously. By selecting a dynamic CI group in this field, the team can ensure that the Change is applied to all relevant CIs within the group, streamlining the change implementation process."
+      },
+      {
+        "texto": "Service Offering",
+        "correta": false,
+        "explicacao": "The Service Offering field on the Change Request form is also not the correct field to populate with a dynamic CI group for implementing a Change across multiple CIs. The Service Offering field typically refers to the specific service or service package provided by the organization, rather than the individual CIs that need to be updated as part of the Change. Therefore, selecting a dynamic CI group in the Service Offering field would not facilitate the simultaneous implementation of a Change across multiple CIs."
+      },
+      {
+        "texto": "Business Service",
+        "correta": false,
+        "explicacao": "The Business Service field on the Change Request form is not the correct field to populate with a dynamic CI group for implementing a Change across multiple CIs. The Business Service field typically refers to the specific service or business function impacted by the Change, rather than the individual CIs that need to be updated. Therefore, selecting a dynamic CI group in the Business Service field would not achieve the desired outcome of implementing a Change across multiple CIs."
+      }
+    ]
+  }
+]

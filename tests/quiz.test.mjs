@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createAttempt,isCorrect,scoreAttempt,shuffle} from '../quiz.js';
+const files=['questoes-1-corrigida (1).json','questoes-2-corrigida-v2 (1).json','questoes-3-corrigida-v2 (1).json'];
+const questions=(await Promise.all(files.map(async(file,f)=>(JSON.parse(await readFile(new URL('../'+file,import.meta.url),'utf8'))).map((q,i)=>({...q,id:`${f+1}-${i+1}`}))))).flat();
+test('all 205 source questions have valid answers',()=>{assert.equal(questions.length,205);for(const q of questions){assert.ok(q.pergunta);assert.ok(q.alternativas.length>1);assert.ok(q.alternativas.some(a=>a.correta));}});
+test('100 simulations contain exactly 75 unique questions and preserve every option',()=>{for(let n=0;n<100;n++){const a=createAttempt(questions,'user');assert.equal(a.state.ids.length,75);assert.equal(new Set(a.state.ids).size,75);for(const id of a.state.ids){const q=questions.find(q=>q.id===id);assert.deepEqual([...a.state.orders[id]].sort((a,b)=>a-b),q.alternativas.map((_,i)=>i));}}});
+test('multiple choice needs all and only the correct options',()=>{const q={alternativas:[{correta:true},{correta:false},{correta:true}]};assert.ok(isCorrect(q,[2,0]));assert.equal(isCorrect(q,[0]),false);assert.equal(isCorrect(q,[0,1,2]),false);assert.equal(isCorrect(q,[]),false);});
+test('blank attempt scores zero; correct attempt scores 75 even with shuffled options',()=>{const a=createAttempt(questions,'user'),map=Object.fromEntries(questions.map(q=>[q.id,q]));assert.equal(scoreAttempt(a,map),0);for(const id of a.state.ids)a.state.answers[id]=map[id].alternativas.flatMap((v,i)=>v.correta?[i]:[]);assert.equal(scoreAttempt(a,map),75);});
+test('shuffle leaves original array intact',()=>{const input=[1,2,3,4];const output=shuffle(input,()=>0);assert.deepEqual(input,[1,2,3,4]);assert.notDeepEqual(output,input);assert.deepEqual([...output].sort(),input);});
