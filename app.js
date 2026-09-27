@@ -1,3 +1,5 @@
+import { createStudy, studyProgress } from './study.js';
+import { renderStudy } from './study-view.js';
 import { config } from './config.js';
 import { createAttempt, isCorrect, scoreAttempt } from './quiz.js';
 
@@ -5,6 +7,7 @@ const app = document.querySelector('#app');
 const logout = document.querySelector('#logout');
 const files = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json'];
 let questions = [], byId = {}, client, user, attempts = [], active, busy = false, authMode = 'login';
+let studies = [], studyError = null;
 let saveQueue = Promise.resolve(), saveError = null;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = value => new Date(value).toLocaleString('pt-BR', {dateStyle:'short',timeStyle:'short'});
@@ -52,7 +55,9 @@ async function loadDashboard() {
     }
     const {data,error}=await client.from('attempts').select('*').order('started_at',{ascending:false});
     if(error) throw error;
-    attempts=data; saveError=null; renderDashboard();
+    attempts=data; saveError=null;
+    await loadStudies();
+    renderDashboard();
   } catch(error) {
     app.innerHTML='<div class="card"><h2>Não conseguimos carregar seu progresso</h2><p>Verifique a conexão e se o banco de dados foi configurado. Seu progresso pendente neste navegador será preservado.</p><button id="retry" class="primary">Tentar novamente</button></div>';
     on('#retry','click',loadDashboard); fail(error);
@@ -64,6 +69,8 @@ function renderDashboard() {
   const done=attempts.filter(a=>a.finished_at), ongoing=attempts.find(a=>!a.finished_at);
   const average=done.length?Math.round(done.reduce((s,a)=>s+pct(a),0)/done.length):0;
   app.innerHTML=`<div class="welcome"><div><span class="eyebrow">Seu espaço de aprendizado</span><h1>Pequenos passos. Grandes conquistas.</h1><p class="muted">Bom ter você por aqui, ${esc(user.email.split('@')[0])}. Vamos praticar?</p></div><span class="tag">● CIS-DF · Data Foundations</span></div><section class="hero"><span class="eyebrow">${ongoing?'Continue de onde parou':'Um novo desafio a cada tentativa'}</span><h2>Seu próximo simulado<br>começa aqui.</h2><p>75 questões sorteadas, alternativas embaralhadas e espaço para aprender com cada resposta.</p><button id="start" class="primary">${ongoing?'Continuar simulado':'Começar simulado'} <span aria-hidden="true">↗</span></button><div class="hero-decoration"><strong>75</strong><small>QUESTÕES / SIMULADO</small></div></section><div class="stats"><div class="stat"><span>Simulados concluídos</span><strong>${done.length.toString().padStart(2,'0')}</strong><small>Cada tentativa é um avanço</small></div><div class="stat"><span>Aproveitamento médio</span><strong>${average}%</strong><small>De todos os seus simulados</small></div><div class="stat"><span>Melhor resultado</span><strong>${done.length?Math.max(...done.map(pct)):0}%</strong><small>Seu recorde pessoal</small></div></div><div class="section-head"><h2>Sua trajetória</h2><p>${questions.length} questões disponíveis para praticar</p></div><section class="card">${done.length?done.map((a,i)=>`<div class="history-row"><span class="score">${pct(a)}%</span><div class="date">Simulado ${done.length-i}<small>${date(a.finished_at)} · ${a.score}/${a.total} acertos</small></div><button class="quiet" data-review="${esc(a.id)}">Revisar →</button></div>`).join(''):'<div class="empty"><b>Uma página em branco. Muitas possibilidades.</b>Conclua seu primeiro simulado para ver sua evolução aqui.</div>'}</section>`;
+  document.querySelector('.hero').insertAdjacentHTML('afterend', '<section id="study-dashboard"></section>');
+  renderStudyDashboard();
   on('#start','click',async()=>{
     if(busy) return; busy=true; clearMessage();
     try {
@@ -75,13 +82,54 @@ function renderDashboard() {
   document.querySelectorAll('[data-review]').forEach(el=>el.addEventListener('click',()=>renderResult(attempts.find(a=>a.id===el.dataset.review))));
 }
 
+function studyCacheKey() { return `cis-df-study-pending-${user.id}`; }
+
+async function loadStudies() {
+  studyError = null; studies = [];
+  try {
+    const pending = JSON.parse(localStorage.getItem(studyCacheKey()) || 'null');
+    if (pending && pending.user_id === user.id) {
+      const {error} = await client.from('study_sessions').upsert(pending);
+      if (error) throw error;
+      localStorage.removeItem(studyCacheKey());
+    }
+    const {data,error} = await client.from('study_sessions').select('*').order('started_at',{ascending:false});
+    if (error) throw error;
+    studies = data;
+  } catch(error) { studyError = error; }
+}
+
+function openStudy() {
+  renderStudy({app, attempt:active, byId, save:persist, back:loadDashboard, report:fail});
+}
+
+function renderStudyDashboard() {
+  const container = document.querySelector('#study-dashboard');
+  const ongoing = studies.find(a=>!a.finished_at), done = studies.filter(a=>a.finished_at);
+  container.innerHTML = `<div class="card study-entry"><div><span class="eyebrow">Novo · Modo de estudo</span><h2>Aprenda uma questão por vez.</h2><p class="muted">Todas as ${questions.length} questões em ordem aleatória. Correção e explicações na hora, com seus acertos acompanhados ao vivo.</p></div><button id="study-start" class="primary" ${studyError?'disabled':''}>${ongoing?'Continuar estudo':'Começar estudo'} →</button></div>${studyError?`<div class="notice">${studyError.code==='PGRST205'?'O modo de estudo aguarda a criação da tabela de resultados pelo administrador. Os simulados continuam disponíveis.':'Não foi possível carregar os estudos. Verifique sua conexão e tente novamente.'} <button id="study-retry" class="quiet">Tentar carregar estudos</button></div>`:''}${done.length?`<div class="section-head"><h2>Histórico de estudos</h2><p>Separado dos resultados dos simulados</p></div><div class="card">${done.map(a=>{const p=studyProgress(a,byId);return `<div class="history-row"><span class="score">${p.accuracy}%</span><div class="date">Modo de estudo · ${p.correct}/${p.answered} acertos nas respondidas<small>${date(a.finished_at)} · ${p.answered}/${a.total} questões confirmadas</small></div><button class="quiet" data-study-review="${esc(a.id)}">Ver estudo →</button></div>`;}).join('')}</div>`:''}`;
+  on('#study-retry','click',async()=>{await loadStudies();renderStudyDashboard();});
+  on('#study-start','click',async()=>{
+    if (busy) return; busy=true; clearMessage();
+    try {
+      active=ongoing || createStudy(questions,user.id);
+      if(!ongoing){await persist();studies.unshift(active);}
+      openStudy();
+    } catch(error){fail(error);} finally{busy=false;}
+  });
+  container.querySelectorAll('[data-study-review]').forEach(el=>el.addEventListener('click',()=>{
+    active=studies.find(a=>a.id===el.dataset.studyReview);openStudy();
+  }));
+}
+
 function persist() {
   const snapshot=JSON.parse(JSON.stringify(active));
-  try {localStorage.setItem(cacheKey(),JSON.stringify(snapshot));} catch(error) {message('O navegador não permitiu salvar uma cópia local. Mantenha a conexão ativa.');}
+  const storageKey = snapshot.state.mode === 'study' ? studyCacheKey() : cacheKey();
+  const table = snapshot.state.mode === 'study' ? 'study_sessions' : 'attempts';
+  try {localStorage.setItem(storageKey,JSON.stringify(snapshot));} catch(error) {message('O navegador não permitiu salvar uma cópia local. Mantenha a conexão ativa.');}
   const pending=saveQueue.then(async()=>{
-    const {error}=await client.from('attempts').upsert(snapshot);
+    const {error}=await client.from(table).upsert(snapshot);
     if(error) throw error;
-    if(localStorage.getItem(cacheKey())===JSON.stringify(snapshot)) localStorage.removeItem(cacheKey());
+    if(localStorage.getItem(storageKey)===JSON.stringify(snapshot)) localStorage.removeItem(storageKey);
     saveError=null;
   });
   saveQueue=pending.catch(error=>{saveError=error;message('Sem sincronização. Suas respostas estão neste navegador; tente salvar novamente antes de sair.');});

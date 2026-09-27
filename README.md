@@ -1,5 +1,15 @@
 # CIS DF · Sala de estudos
 
+## Modo de estudo
+
+Além do simulado de 75 questões, o modo de estudo usa todas as questões disponíveis (atualmente 205) em ordem aleatória, sem repetição. Ao selecionar e confirmar as alternativas, a correção e as explicações aparecem imediatamente. A resposta confirmada fica travada e só é contabilizada uma vez; seleções ainda não confirmadas são rascunhos.
+
+O painel mostra acertos, erros, questões restantes e aproveitamento entre respostas confirmadas. É possível pausar, retomar e encerrar antecipadamente; o resultado distingue questões não respondidas de erros. O histórico dos estudos é separado dos simulados.
+
+**Ativação em projeto existente ou novo:** execute `migrations/001-study-sessions.sql` no SQL Editor do Supabase. O script pode ser repetido e cria uma tabela separada com RLS por usuário; não modifica `attempts` nem resultados antigos. Sem essa tabela, somente o novo modo fica indisponível. As cópias locais de gravações pendentes também são separadas por modo e usuário.
+
+Execute `npm test` para validar os dois modos. O banco de questões e o cálculo no cliente continuam sendo destinados a estudo pessoal.
+
 Site responsivo de preparação para CIS Data Foundations, sem etapa de build. Usa os três JSONs originais (205 questões) com 75 perguntas sorteadas sem reposição por tentativa e alternativas embaralhadas. Uma questão pode reaparecer em outro simulado.
 
 Inclui login/cadastro por e-mail e senha, recuperação de senha, progresso sincronizado por conta, retomada, histórico, média, melhor resultado e revisão com explicações. Questões com múltiplas respostas exigem o conjunto exato de alternativas corretas; questões em branco contam como erro. O texto e o gabarito originais foram preservados.
