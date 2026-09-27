@@ -101,6 +101,7 @@ async function loadStudies() {
 
 function openStudy() {
   renderStudy({app, attempt:active, byId, save:persist, back:loadDashboard, report:fail});
+  window.scrollTo({top:0});
 }
 
 function renderStudyDashboard() {
