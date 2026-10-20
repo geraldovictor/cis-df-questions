@@ -1,6 +1,6 @@
 import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
-import { config } from './config.js';
+import { createLocalClient } from './local-client.js';
 import { createAttempt, isCorrect, scoreAttempt } from './quiz.js';
 
 const app = document.querySelector('#app');
@@ -21,7 +21,7 @@ function cacheKey() { return `cis-df-pending-${user.id}`; }
 function renderAuth() {
   active = null; logout.hidden = true;
   const configured = Boolean(client);
-  app.innerHTML = `<section class="auth"><div class="auth-intro"><span class="eyebrow">Seu próximo capítulo começa aqui</span><h1>Mais prática.<br>Mais confiança.<br>Seu próximo nível.</h1><p>Prepare-se para a certificação CIS Data Foundations no seu ritmo. Resolva questões, entenda cada resposta e acompanhe sua evolução.</p><div class="auth-points"><div><strong>${questions.length}</strong>questões para explorar</div><div><strong>75</strong>por simulado</div><div><strong>100%</strong>no seu ritmo</div></div></div><div class="card"><span class="eyebrow">Bem-vindo à sua sala de estudos</span><h2>${authMode === 'signup' ? 'Crie sua conta' : 'Vamos continuar?'}</h2><p class="muted">Entre para salvar seu progresso e seus resultados.</p>${!configured ? '<div class="notice">O login está aguardando a configuração do serviço de contas pelo administrador. Assim que for conectado, você poderá criar sua conta e começar.</div>' : ''}<form id="auth-form"><label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required ${!configured?'disabled':''}></label><label class="field">Senha<input name="password" type="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" minlength="8" placeholder="Pelo menos 8 caracteres" required ${!configured?'disabled':''}></label><button class="primary wide" ${!configured?'disabled':''}>${authMode === 'signup'?'Criar minha conta':'Entrar na minha conta'} →</button></form><p class="auth-switch">${authMode === 'signup'?'Já tem uma conta?':'Primeira vez por aqui?'} <button id="toggle-auth" class="quiet">${authMode === 'signup'?'Entrar':'Criar conta'}</button></p>${configured?'<button id="recover" class="quiet wide">Esqueci minha senha</button>':''}</div></section>`;
+  app.innerHTML = `<section class="auth"><div class="auth-intro"><span class="eyebrow">Seu próximo capítulo começa aqui</span><h1>Mais prática.<br>Mais confiança.<br>Seu próximo nível.</h1><p>Prepare-se para a certificação CIS Data Foundations no seu ritmo. Resolva questões, entenda cada resposta e acompanhe sua evolução.</p><div class="auth-points"><div><strong>${questions.length}</strong>questões para explorar</div><div><strong>75</strong>por simulado</div><div><strong>100%</strong>no seu ritmo</div></div></div><div class="card"><span class="eyebrow">Bem-vindo à sua sala de estudos</span><h2>${authMode === 'signup' ? 'Crie sua conta' : 'Vamos continuar?'}</h2><p class="muted">Entre para salvar seu progresso e seus resultados.</p>${!configured ? '<div class="notice">O login está aguardando a configuração do serviço de contas pelo administrador. Assim que for conectado, você poderá criar sua conta e começar.</div>' : ''}<form id="auth-form"><label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required ${!configured?'disabled':''}></label><label class="field">Senha<input name="password" type="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" minlength="8" placeholder="Pelo menos 8 caracteres" required ${!configured?'disabled':''}></label><button class="primary wide" ${!configured?'disabled':''}>${authMode === 'signup'?'Criar minha conta':'Entrar na minha conta'} →</button></form><p class="auth-switch">${authMode === 'signup'?'Já tem uma conta?':'Primeira vez por aqui?'} <button id="toggle-auth" class="quiet">${authMode === 'signup'?'Entrar':'Criar conta'}</button></p><p class="muted">Progresso salvo no banco deste servidor. No primeiro acesso, sua conta e histórico existentes são migrados automaticamente.</p></div></section>`;
   on('#toggle-auth','click',()=>{authMode=authMode==='login'?'signup':'login';clearMessage();renderAuth();});
   on('#auth-form','submit',async event=>{
     event.preventDefault(); if(busy) return; busy=true; clearMessage();
@@ -29,17 +29,11 @@ function renderAuth() {
     const data = new FormData(event.currentTarget);
     try {
       const credentials = {email: data.get('email').trim(), password: data.get('password')};
-      const result = authMode === 'signup' ? await client.auth.signUp({...credentials, options:{emailRedirectTo:location.origin+location.pathname}}) : await client.auth.signInWithPassword(credentials);
+      const result = authMode === 'signup' ? await client.auth.signUp(credentials) : await client.auth.signInWithPassword(credentials);
       if(result.error) throw result.error;
-      if(!result.data.session) message('Conta criada! Confira seu e-mail para confirmar o cadastro antes de entrar.');
     } catch(error) { fail(error); } finally {busy=false;button.disabled=false;}
   });
-  on('#recover','click',async()=>{
-    const email=document.querySelector('[name=email]');
-    if(!email.value || !email.reportValidity()) {message('Preencha seu e-mail para receber o link de recuperação.');return;}
-    const {error}=await client.auth.resetPasswordForEmail(email.value.trim(),{redirectTo:location.origin+location.pathname});
-    if(error) fail(error); else message('Se houver uma conta com esse e-mail, você receberá um link para redefinir a senha.');
-  });
+
 }
 
 async function loadDashboard() {
@@ -107,7 +101,7 @@ function openStudy() {
 function renderStudyDashboard() {
   const container = document.querySelector('#study-dashboard');
   const ongoing = studies.find(a=>!a.finished_at), done = studies.filter(a=>a.finished_at);
-  container.innerHTML = `<div class="card study-entry"><div><span class="eyebrow">Novo · Modo de estudo</span><h2>Aprenda uma questão por vez.</h2><p class="muted">Todas as ${questions.length} questões em ordem aleatória. Correção e explicações na hora, com seus acertos acompanhados ao vivo.</p></div><button id="study-start" class="primary" ${studyError?'disabled':''}>${ongoing?'Continuar estudo':'Começar estudo'} →</button></div>${studyError?`<div class="notice">${studyError.code==='PGRST205'?'O modo de estudo aguarda a criação da tabela de resultados pelo administrador. Os simulados continuam disponíveis.':'Não foi possível carregar os estudos. Verifique sua conexão e tente novamente.'} <button id="study-retry" class="quiet">Tentar carregar estudos</button></div>`:''}${done.length?`<div class="section-head"><h2>Histórico de estudos</h2><p>Separado dos resultados dos simulados</p></div><div class="card">${done.map(a=>{const p=studyProgress(a,byId);return `<div class="history-row"><span class="score">${p.accuracy}%</span><div class="date">Modo de estudo · ${p.correct}/${p.answered} acertos nas respondidas<small>${date(a.finished_at)} · ${p.answered}/${a.total} questões confirmadas</small></div><button class="quiet" data-study-review="${esc(a.id)}">Ver estudo →</button></div>`;}).join('')}</div>`:''}`;
+  container.innerHTML = `<div class="card study-entry"><div><span class="eyebrow">Novo · Modo de estudo</span><h2>Aprenda uma questão por vez.</h2><p class="muted">Todas as ${questions.length} questões em ordem aleatória. Correção e explicações na hora, com seus acertos acompanhados ao vivo.</p></div><button id="study-start" class="primary" ${studyError?'disabled':''}>${ongoing?'Continuar estudo':'Começar estudo'} →</button></div>${studyError?`<div class="notice">${'Não foi possível carregar os estudos. Verifique o servidor e tente novamente.'} <button id="study-retry" class="quiet">Tentar carregar estudos</button></div>`:''}${done.length?`<div class="section-head"><h2>Histórico de estudos</h2><p>Separado dos resultados dos simulados</p></div><div class="card">${done.map(a=>{const p=studyProgress(a,byId);return `<div class="history-row"><span class="score">${p.accuracy}%</span><div class="date">Modo de estudo · ${p.correct}/${p.answered} acertos nas respondidas<small>${date(a.finished_at)} · ${p.answered}/${a.total} questões confirmadas</small></div><button class="quiet" data-study-review="${esc(a.id)}">Ver estudo →</button></div>`;}).join('')}</div>`:''}`;
   on('#study-retry','click',async()=>{await loadStudies();renderStudyDashboard();});
   on('#study-start','click',async()=>{
     if (busy) return; busy=true; clearMessage();
@@ -179,11 +173,6 @@ function renderResult(attempt) {
   review(); on('#only-errors','change',review); on('#dashboard','click',loadDashboard);
 }
 
-function renderRecovery() {
-  app.innerHTML='<section class="card"><h1>Crie uma nova senha</h1><form id="new-password"><label class="field">Nova senha<input name="password" type="password" minlength="8" autocomplete="new-password" required></label><button class="primary">Salvar senha</button></form></section>';
-  on('#new-password','submit',async event=>{event.preventDefault();const button=event.currentTarget.querySelector('button');button.disabled=true;const {error}=await client.auth.updateUser({password:new FormData(event.currentTarget).get('password')});if(error){fail(error);button.disabled=false;}else{message('Senha atualizada.');loadDashboard();}});
-}
-
 logout.addEventListener('click',async()=>{
   try {
     if(active&&!active.finished_at) await persist();
@@ -197,13 +186,9 @@ try {
   const sets=await Promise.all(files.map(async file=>{const response=await fetch(new URL(file,import.meta.url));if(!response.ok) throw new Error('Não foi possível carregar o banco de questões.');return response.json();}));
   questions=sets.flatMap((set,fileIndex)=>set.map((q,i)=>({...q,id:`${fileIndex+1}-${i+1}`})));
   byId=Object.fromEntries(questions.map(q=>[q.id,q]));
-  if(config.supabaseUrl && config.supabaseKey) {
-    const {createClient}=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
-    client=createClient(config.supabaseUrl,config.supabaseKey);
-    client.auth.onAuthStateChange((event,session)=>{
-      if(event==='PASSWORD_RECOVERY'){user=session.user;setTimeout(renderRecovery,0);return;}
-      if(session && (!user || event==='INITIAL_SESSION')){user=session.user;setTimeout(loadDashboard,0);}
-      else if(!session){user=null;setTimeout(renderAuth,0);}
-    });
-  } else renderAuth();
+  client=createLocalClient();
+  client.auth.onAuthStateChange((event,session)=>{
+    if(session && (!user || event==='INITIAL_SESSION')){user=session.user;setTimeout(loadDashboard,0);}
+    else if(!session){user=null;setTimeout(renderAuth,0);}
+  });
 } catch(error) {app.innerHTML='<div class="card"><h1>Não foi possível abrir a sala de estudos</h1><p>Verifique sua conexão e recarregue a página.</p><button class="primary" onclick="location.reload()">Recarregar</button></div>';fail(error);}

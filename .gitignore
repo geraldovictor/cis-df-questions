@@ -2,3 +2,5 @@
 .env.*
 node_modules/
 test-results/
+data/
+backups/
