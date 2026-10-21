@@ -40,6 +40,6 @@ Documentação: [Supabase Auth](https://supabase.com/docs/guides/auth), [Row Lev
 
 ## Revisão diária em áudio
 
-O painel inclui Ouvir questões com 205 gravações em inglês: pergunta e todas as alternativas corretas. Há seleção de questão, reprodução contínua, repetição, velocidade e download. A última questão escolhida é lembrada neste navegador. Os WAVs só são carregados quando utilizados.
+O painel inclui Ouvir questões com 205 gravações em inglês: pergunta e todas as alternativas corretas. Há seleção de questão, reprodução contínua, repetição, velocidade e download. A última questão escolhida é lembrada neste navegador. Os MP3s usam a voz neural en-US-AndrewMultilingualNeural e só são carregados quando utilizados.
 
-Para regenerar os arquivos no Windows, execute generate-audio.ps1 com System.Speech e a voz Microsoft Zira Desktop instalada. Os IDs seguem a ordem dos três JSONs; regenere os áudios se alterar as perguntas ou respostas.
+Para regenerar os arquivos, instale requirements-audio.txt em um ambiente Python e execute python generate-audio.py. A geração usa o serviço online de voz da Microsoft via edge-tts; os arquivos prontos são servidos pelo próprio site. Os IDs seguem a ordem dos três JSONs; regenere os áudios se alterar as perguntas ou respostas.

@@ -9,11 +9,11 @@ export function renderAudioStudy(root, questions) {
     index = next;
     select.value = String(index);
     const q = questions[index];
-    player.src = new URL(`./audio/${q.id}.wav`, import.meta.url).href;
+    player.src = new URL(`./audio/${q.id}.mp3`, import.meta.url).href;
     player.playbackRate = Number(find('#audio-speed').value);
     find('#audio-transcript').textContent = `${q.pergunta} — Correct answer: ${q.alternativas.filter(a=>a.correta).map(a=>a.texto).join('; ')}`;
     find('#audio-download').href = player.src;
-    find('#audio-download').download = `cis-df-${q.id}.wav`;
+    find('#audio-download').download = `cis-df-${q.id}.mp3`;
     find('#audio-prev').disabled = index === 0;
     find('#audio-next').disabled = index === questions.length - 1;
     find('#audio-status').textContent = `Questão ${index+1} de ${questions.length}`;
