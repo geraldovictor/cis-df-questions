@@ -1,5 +1,6 @@
 import { renderAudioStudy } from './audio-study.js';
 import { renderFlashcards } from './flashcards.js';
+import { GUEST_ID, readLocalProgress, saveLocalAttempt, prepareOffline, renderOfflineTools } from './offline.js';
 import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
 import { config } from './config.js';
@@ -11,6 +12,9 @@ const files = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).jso
 let questions = [], byId = {}, client, user, attempts = [], active, busy = false, authMode = 'login';
 let studies = [], studyError = null;
 let saveQueue = Promise.resolve(), saveError = null;
+let offlineMode = false, accountLoading = false;
+const offlinePreparation = prepareOffline();
+offlinePreparation.catch(()=>{});
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date = value => new Date(value).toLocaleString('pt-BR', {dateStyle:'short',timeStyle:'short'});
 const pct = attempt => Math.round(attempt.score / attempt.total * 100);
@@ -24,6 +28,9 @@ function renderAuth() {
   active = null; logout.hidden = true;
   const configured = Boolean(client);
   app.innerHTML = `<section class="auth"><div class="auth-intro"><span class="eyebrow">Seu próximo capítulo começa aqui</span><h1>Mais prática.<br>Mais confiança.<br>Seu próximo nível.</h1><p>Prepare-se para a certificação CIS Data Foundations no seu ritmo. Resolva questões, entenda cada resposta e acompanhe sua evolução.</p><div class="auth-points"><div><strong>${questions.length}</strong>questões para explorar</div><div><strong>75</strong>por simulado</div><div><strong>100%</strong>no seu ritmo</div></div></div><div class="card"><span class="eyebrow">Bem-vindo à sua sala de estudos</span><h2>${authMode === 'signup' ? 'Crie sua conta' : 'Vamos continuar?'}</h2><p class="muted">Entre para salvar seu progresso e seus resultados.</p>${!configured ? '<div class="notice">O login está aguardando a configuração do serviço de contas pelo administrador. Assim que for conectado, você poderá criar sua conta e começar.</div>' : ''}<form id="auth-form"><label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required ${!configured?'disabled':''}></label><label class="field">Senha<input name="password" type="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" minlength="8" placeholder="Pelo menos 8 caracteres" required ${!configured?'disabled':''}></label><button class="primary wide" ${!configured?'disabled':''}>${authMode === 'signup'?'Criar minha conta':'Entrar na minha conta'} →</button></form><p class="auth-switch">${authMode === 'signup'?'Já tem uma conta?':'Primeira vez por aqui?'} <button id="toggle-auth" class="quiet">${authMode === 'signup'?'Entrar':'Criar conta'}</button></p>${configured?'<button id="recover" class="quiet wide">Esqueci minha senha</button>':''}</div></section>`;
+  document.querySelector('.auth .card').insertAdjacentHTML('afterbegin', '<button id="enter-offline" class="secondary wide" type="button">Estudar offline · Sem login →</button><div id="offline-info"></div>');
+  renderOfflineTools(document.querySelector('#offline-info'), questions, offlinePreparation);
+  on('#enter-offline','click',enterOffline);
   on('#toggle-auth','click',()=>{authMode=authMode==='login'?'signup':'login';clearMessage();renderAuth();});
   on('#auth-form','submit',async event=>{
     event.preventDefault(); if(busy) return; busy=true; clearMessage();
@@ -45,22 +52,34 @@ function renderAuth() {
 }
 
 async function loadDashboard() {
+  const owner = user;
   app.innerHTML='<p class="loading">Carregando seu progresso…</p>';
   logout.hidden=false;
+  logout.textContent = offlineMode ? 'Voltar ao login' : 'Sair';
   try {
+    if (offlineMode) {
+      const local = readLocalProgress();
+      attempts = local.attempts; studies = local.studies; studyError = null; saveError = null;
+      renderDashboard(); return;
+    }
     // Retry a locally preserved write before replacing it with server data.
-    const pending=JSON.parse(localStorage.getItem(cacheKey()) || 'null');
+    const pendingKey=cacheKey();
+    const pending=JSON.parse(localStorage.getItem(pendingKey) || 'null');
     if(pending && pending.user_id===user.id) {
       const {error}=await client.from('attempts').upsert(pending);
       if(error) throw error;
-      localStorage.removeItem(cacheKey());
+      if (user !== owner) return;
+      localStorage.removeItem(pendingKey);
     }
     const {data,error}=await client.from('attempts').select('*').order('started_at',{ascending:false});
+    if (user !== owner) return;
     if(error) throw error;
     attempts=data; saveError=null;
     await loadStudies();
+    if (user !== owner) return;
     renderDashboard();
   } catch(error) {
+    if (user !== owner) return;
     app.innerHTML='<div class="card"><h2>Não conseguimos carregar seu progresso</h2><p>Verifique a conexão e se o banco de dados foi configurado. Seu progresso pendente neste navegador será preservado.</p><button id="retry" class="primary">Tentar novamente</button></div>';
     on('#retry','click',loadDashboard); fail(error);
   }
@@ -77,6 +96,11 @@ function renderDashboard() {
   renderAudioStudy(document.querySelector('#audio-dashboard'), questions);
   document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
   renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id);
+  if (offlineMode) {
+    document.querySelector('.welcome .muted').textContent = 'Modo offline · Seu progresso está salvo somente neste navegador.';
+    app.insertAdjacentHTML('afterbegin', '<div id="offline-dashboard"></div>');
+    renderOfflineTools(document.querySelector('#offline-dashboard'), questions, offlinePreparation);
+  }
   on('#start','click',async()=>{
     if(busy) return; busy=true; clearMessage();
     try {
@@ -91,18 +115,23 @@ function renderDashboard() {
 function studyCacheKey() { return `cis-df-study-pending-${user.id}`; }
 
 async function loadStudies() {
+  const owner = user;
   studyError = null; studies = [];
+  if (offlineMode) { studies = readLocalProgress().studies; return; }
   try {
-    const pending = JSON.parse(localStorage.getItem(studyCacheKey()) || 'null');
+    const pendingKey=studyCacheKey();
+    const pending = JSON.parse(localStorage.getItem(pendingKey) || 'null');
     if (pending && pending.user_id === user.id) {
       const {error} = await client.from('study_sessions').upsert(pending);
       if (error) throw error;
-      localStorage.removeItem(studyCacheKey());
+      if (user !== owner) return;
+      localStorage.removeItem(pendingKey);
     }
     const {data,error} = await client.from('study_sessions').select('*').order('started_at',{ascending:false});
+    if (user !== owner) return;
     if (error) throw error;
     studies = data;
-  } catch(error) { studyError = error; }
+  } catch(error) { if (user === owner) studyError = error; }
 }
 
 function openStudy() {
@@ -130,6 +159,10 @@ function renderStudyDashboard() {
 
 function persist() {
   const snapshot=JSON.parse(JSON.stringify(active));
+  if (offlineMode) {
+    try { saveLocalAttempt(snapshot); saveError=null; return Promise.resolve(); }
+    catch(error) { saveError=error; message('Não foi possível salvar neste navegador. Verifique o espaço disponível e as permissões de armazenamento.'); return Promise.reject(error); }
+  }
   const storageKey = snapshot.state.mode === 'study' ? studyCacheKey() : cacheKey();
   const table = snapshot.state.mode === 'study' ? 'study_sessions' : 'attempts';
   try {localStorage.setItem(storageKey,JSON.stringify(snapshot));} catch(error) {message('O navegador não permitiu salvar uma cópia local. Mantenha a conexão ativa.');}
@@ -194,6 +227,11 @@ logout.addEventListener('click',async()=>{
   try {
     if(active&&!active.finished_at) await persist();
     await saveQueue; if(saveError) throw saveError;
+    if (offlineMode) {
+      localStorage.removeItem('cis-df-offline-mode');
+      offlineMode=false; user=null; active=null; attempts=[]; studies=[];
+      clearMessage(); renderAuth(); initializeAccount(); return;
+    }
     const {error}=await client.auth.signOut(); if(error) throw error;
     user=null; attempts=[];clearMessage();renderAuth();
   } catch(error){fail(error);}
@@ -203,13 +241,41 @@ try {
   const sets=await Promise.all(files.map(async file=>{const response=await fetch(new URL(file,import.meta.url));if(!response.ok) throw new Error('Não foi possível carregar o banco de questões.');return response.json();}));
   questions=sets.flatMap((set,fileIndex)=>set.map((q,i)=>({...q,id:`${fileIndex+1}-${i+1}`})));
   byId=Object.fromEntries(questions.map(q=>[q.id,q]));
-  if(config.supabaseUrl && config.supabaseKey) {
-    const {createClient}=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
-    client=createClient(config.supabaseUrl,config.supabaseKey);
-    client.auth.onAuthStateChange((event,session)=>{
-      if(event==='PASSWORD_RECOVERY'){user=session.user;setTimeout(renderRecovery,0);return;}
-      if(session && (!user || event==='INITIAL_SESSION')){user=session.user;setTimeout(loadDashboard,0);}
-      else if(!session){user=null;setTimeout(renderAuth,0);}
-    });
-  } else renderAuth();
+  let useOffline = !navigator.onLine;
+  try { useOffline ||= localStorage.getItem('cis-df-offline-mode') === 'true'; } catch {}
+  if (useOffline) enterOffline();
+  else { renderAuth(); initializeAccount(); }
 } catch(error) {app.innerHTML='<div class="card"><h1>Não foi possível abrir a sala de estudos</h1><p>Verifique sua conexão e recarregue a página.</p><button class="primary" onclick="location.reload()">Recarregar</button></div>';fail(error);}
+
+function enterOffline() {
+  try {
+    readLocalProgress();
+    localStorage.setItem('cis-df-offline-mode', 'true');
+    offlineMode=true; user={id:GUEST_ID,email:'offline@local'}; active=null;
+    clearMessage(); loadDashboard();
+  } catch(error) { if (!offlineMode) renderAuth(); fail(error); }
+}
+
+async function initializeAccount() {
+  if (accountLoading || offlineMode || !config.supabaseUrl || !config.supabaseKey) return;
+  accountLoading=true;
+  try {
+    if (!client) {
+      const {createClient}=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+      client=createClient(config.supabaseUrl,config.supabaseKey);
+      client.auth.onAuthStateChange((event,session)=>setTimeout(()=>{
+        if (offlineMode) return;
+        if(event==='PASSWORD_RECOVERY'){user=session.user;renderRecovery();return;}
+        if(session && (!user || event==='INITIAL_SESSION')){user=session.user;loadDashboard();}
+        else if(!session){user=null;renderAuth();}
+      },0));
+      if (!offlineMode) renderAuth();
+    } else {
+      const {data,error}=await client.auth.getSession();
+      if (error) throw error;
+      if (!offlineMode && data.session) {user=data.session.user;loadDashboard();}
+    }
+  } catch(error) {
+    if (!offlineMode) {renderAuth(); message('Login indisponível no momento. Você pode usar “Estudar offline” sem conta.');}
+  } finally {accountLoading=false;}
+}

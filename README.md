@@ -47,3 +47,15 @@ Para regenerar os arquivos, instale requirements-audio.txt em um ambiente Python
 ## Flashcards
 
 No painel, abra Flashcards para revisar as 205 perguntas. Revele a resposta para ver todas as alternativas corretas, suas explicações e ouvir o áudio neural. Marque Já sei ou Quero revisar; filtre o baralho para revisar apenas os cartões marcados, ou embaralhe todas as questões. As marcações e o último cartão são salvos neste navegador por conta, sem sincronização com outros dispositivos.
+
+## Modo offline sem login
+
+Na tela inicial, use Estudar offline · Sem login. O site salva automaticamente os arquivos e as 205 questões no navegador. Aguarde a indicação de que o site está pronto antes de desconectar. Depois, o mesmo endereço abre sem internet e o modo local é retomado, sem depender do login ou do Supabase.
+
+Simulados, estudos, histórico e flashcards funcionam no modo local. O progresso fica no armazenamento persistente deste navegador, separado dos resultados da conta, e não é enviado ao servidor. Limpar os dados do site ou usar outro navegador/dispositivo não preserva esses resultados. O navegador precisa permitir armazenamento local e service workers (HTTPS ou localhost).
+
+Para ouvir sem internet, clique em Salvar áudios para ouvir offline enquanto estiver conectado. O download mostra o progresso e aproveita os arquivos já salvos em uma nova tentativa. Os áudios são opcionais; questões e flashcards não dependem desse download.
+
+Manutenção: ao alterar os arquivos listados em sw.js, incremente SHELL_CACHE para atualizar o conjunto offline de forma consistente. O cache de áudio é separado. Não inclua chamadas de autenticação ou resultados da conta no cache do service worker.
+
+Validação: npm test inclui a persistência local e sua separação dos dados da conta. O teste opcional tests/offline-browser.mjs usa playwright-core (PLAYWRIGHT_PATH aponta para seu index.mjs e BROWSER_PATH opcionalmente para Chrome/Edge). Ele serve o projeto em localhost e verifica recarregamento sem rede, retomada dos modos, download dos 205 áudios, reprodução parcial e separação da conta.

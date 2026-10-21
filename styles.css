@@ -21,3 +21,7 @@ main>.study-metrics{position:sticky;top:8px;z-index:2;box-shadow:0 3px 12px #153
 .flashcard-answer p { white-space: pre-line; }
 .flashcard-answer audio { width: 100%; margin-top: 12px; }
 @media(max-width:600px) { .flashcard-face { padding: 16px; } .flashcard-face h3 { font-size: 17px; } .flashcard-tools > button { flex: 1 1 auto; } }
+
+.audio-study .field { min-width: 0; }
+#audio-question { width: 100%; min-width: 0; }
+.offline-notice p { margin: 10px 0; }
