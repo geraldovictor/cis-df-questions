@@ -1,4 +1,5 @@
 import { renderAudioStudy } from './audio-study.js';
+import { renderFlashcards } from './flashcards.js';
 import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
 import { config } from './config.js';
@@ -74,6 +75,8 @@ function renderDashboard() {
   renderStudyDashboard();
   document.querySelector('#study-dashboard').insertAdjacentHTML('afterend', '<div id="audio-dashboard"></div>');
   renderAudioStudy(document.querySelector('#audio-dashboard'), questions);
+  document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
+  renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id);
   on('#start','click',async()=>{
     if(busy) return; busy=true; clearMessage();
     try {

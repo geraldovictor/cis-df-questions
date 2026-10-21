@@ -8,3 +8,16 @@ main>.study-metrics{position:sticky;top:8px;z-index:2;box-shadow:0 3px 12px #153
 .audio-study select { max-width: 100%; padding: 10px; font: inherit; }
 .audio-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin: 12px 0; }
 #audio-transcript { line-height: 1.6; }
+
+.flashcards { margin: 24px 0; }
+.flashcards summary { cursor: pointer; }
+.flashcards summary h2 { display: inline-block; margin: 8px 16px; }
+.flashcards summary .muted { display: block; margin-top: 8px; }
+.flashcard-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 16px 0; }
+.flashcard-tools select { padding: 10px; max-width: 100%; font: inherit; border: 1px solid var(--line); border-radius: 8px; }
+.flashcard-face { background: #fafbf7; border: 1px solid var(--line); border-radius: 14px; padding: 24px; overflow-wrap: anywhere; }
+.flashcard-face h3 { font-size: 20px; line-height: 1.7; white-space: pre-line; }
+.flashcard-answer { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 20px; }
+.flashcard-answer p { white-space: pre-line; }
+.flashcard-answer audio { width: 100%; margin-top: 12px; }
+@media(max-width:600px) { .flashcard-face { padding: 16px; } .flashcard-face h3 { font-size: 17px; } .flashcard-tools > button { flex: 1 1 auto; } }

@@ -43,3 +43,7 @@ Documentação: [Supabase Auth](https://supabase.com/docs/guides/auth), [Row Lev
 O painel inclui Ouvir questões com 205 gravações em inglês: pergunta e todas as alternativas corretas. Há seleção de questão, reprodução contínua, repetição, velocidade e download. A última questão escolhida é lembrada neste navegador. Os MP3s usam a voz neural en-US-AndrewMultilingualNeural e só são carregados quando utilizados.
 
 Para regenerar os arquivos, instale requirements-audio.txt em um ambiente Python e execute python generate-audio.py. A geração usa o serviço online de voz da Microsoft via edge-tts; os arquivos prontos são servidos pelo próprio site. Os IDs seguem a ordem dos três JSONs; regenere os áudios se alterar as perguntas ou respostas.
+
+## Flashcards
+
+No painel, abra Flashcards para revisar as 205 perguntas. Revele a resposta para ver todas as alternativas corretas, suas explicações e ouvir o áudio neural. Marque Já sei ou Quero revisar; filtre o baralho para revisar apenas os cartões marcados, ou embaralhe todas as questões. As marcações e o último cartão são salvos neste navegador por conta, sem sincronização com outros dispositivos.
