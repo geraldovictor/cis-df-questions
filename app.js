@@ -1,3 +1,4 @@
+import { renderAudioStudy } from './audio-study.js';
 import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
 import { config } from './config.js';
@@ -71,6 +72,8 @@ function renderDashboard() {
   app.innerHTML=`<div class="welcome"><div><span class="eyebrow">Seu espaço de aprendizado</span><h1>Pequenos passos. Grandes conquistas.</h1><p class="muted">Bom ter você por aqui, ${esc(user.email.split('@')[0])}. Vamos praticar?</p></div><span class="tag">● CIS-DF · Data Foundations</span></div><section class="hero"><span class="eyebrow">${ongoing?'Continue de onde parou':'Um novo desafio a cada tentativa'}</span><h2>Seu próximo simulado<br>começa aqui.</h2><p>75 questões sorteadas, alternativas embaralhadas e espaço para aprender com cada resposta.</p><button id="start" class="primary">${ongoing?'Continuar simulado':'Começar simulado'} <span aria-hidden="true">↗</span></button><div class="hero-decoration"><strong>75</strong><small>QUESTÕES / SIMULADO</small></div></section><div class="stats"><div class="stat"><span>Simulados concluídos</span><strong>${done.length.toString().padStart(2,'0')}</strong><small>Cada tentativa é um avanço</small></div><div class="stat"><span>Aproveitamento médio</span><strong>${average}%</strong><small>De todos os seus simulados</small></div><div class="stat"><span>Melhor resultado</span><strong>${done.length?Math.max(...done.map(pct)):0}%</strong><small>Seu recorde pessoal</small></div></div><div class="section-head"><h2>Sua trajetória</h2><p>${questions.length} questões disponíveis para praticar</p></div><section class="card">${done.length?done.map((a,i)=>`<div class="history-row"><span class="score">${pct(a)}%</span><div class="date">Simulado ${done.length-i}<small>${date(a.finished_at)} · ${a.score}/${a.total} acertos</small></div><button class="quiet" data-review="${esc(a.id)}">Revisar →</button></div>`).join(''):'<div class="empty"><b>Uma página em branco. Muitas possibilidades.</b>Conclua seu primeiro simulado para ver sua evolução aqui.</div>'}</section>`;
   document.querySelector('.hero').insertAdjacentHTML('afterend', '<section id="study-dashboard"></section>');
   renderStudyDashboard();
+  document.querySelector('#study-dashboard').insertAdjacentHTML('afterend', '<div id="audio-dashboard"></div>');
+  renderAudioStudy(document.querySelector('#audio-dashboard'), questions);
   on('#start','click',async()=>{
     if(busy) return; busy=true; clearMessage();
     try {

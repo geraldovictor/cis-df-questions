@@ -37,3 +37,9 @@ Checklist após configurar o Supabase: cadastrar e confirmar um e-mail; entrar; 
 O site é uma ferramenta pessoal de estudo, sem vínculo oficial com ServiceNow. Os JSONs e gabaritos são arquivos estáticos acessíveis publicamente se o site for público. O login protege os resultados pessoais no banco, não o banco de questões. A pontuação é calculada no cliente e não deve ser usada para avaliações certificadas.
 
 Documentação: [Supabase Auth](https://supabase.com/docs/guides/auth), [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security), [GitHub Pages](https://docs.github.com/en/pages/quickstart).
+
+## Revisão diária em áudio
+
+O painel inclui Ouvir questões com 205 gravações em inglês: pergunta e todas as alternativas corretas. Há seleção de questão, reprodução contínua, repetição, velocidade e download. A última questão escolhida é lembrada neste navegador. Os WAVs só são carregados quando utilizados.
+
+Para regenerar os arquivos no Windows, execute generate-audio.ps1 com System.Speech e a voz Microsoft Zira Desktop instalada. Os IDs seguem a ordem dos três JSONs; regenere os áudios se alterar as perguntas ou respostas.
