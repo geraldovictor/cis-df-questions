@@ -4,11 +4,23 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#153e36"><meta name="description" content="Pratique para CIS Data Foundations com simulados de 75 questões e acompanhe sua evolução.">
   <title>CIS DF · Sala de estudos</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="CIS DF">
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="app.js"></script>
+  <script type="module" src="pwa.js"></script>
 </head>
 <body>
   <header class="header"><a class="brand" href="./"><span class="mark">df.</span><span>CIS Data Foundations<small>SUA SALA DE ESTUDOS</small></span></a><span class="header-note">Um passo mais perto da certificação.</span><button id="logout" class="quiet" hidden>Sair</button></header>
+  <aside id="install-panel" class="card pwa-install" aria-label="Instalação do aplicativo">
+    <div><strong>Instale CIS DF para estudar offline</strong><p id="install-status" class="muted" role="status">No primeiro acesso, mantenha a internet conectada enquanto o site salva as questões.</p></div>
+    <button id="install-app" class="primary" type="button" hidden>Instalar aplicativo</button>
+    <details><summary>Como instalar no meu dispositivo</summary><p><b>Android ou computador:</b> no Chrome ou Edge, abra o menu e procure “Instalar aplicativo” ou “Instalar este site como aplicativo”. Se aparecer acima, use o botão “Instalar aplicativo”.</p><p><b>iPhone ou iPad:</b> abra no Safari, toque em Compartilhar e depois em “Adicionar à Tela de Início”.</p><p>Depois de instalar, abra pelo ícone CIS DF. Os estudos começam sem login. Para ouvir sem internet, use “Salvar áudios para ouvir offline”.</p></details>
+  </aside>
   <main id="app"><p class="loading">Preparando sua sala de estudos…</p></main>
   <div id="message" role="status" aria-live="polite" hidden></div>
   <footer>Feito para praticar, entender e evoluir.<span>Material de estudo independente · ServiceNow CIS-DF</span></footer>

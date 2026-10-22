@@ -241,7 +241,7 @@ try {
   const sets=await Promise.all(files.map(async file=>{const response=await fetch(new URL(file,import.meta.url));if(!response.ok) throw new Error('Não foi possível carregar o banco de questões.');return response.json();}));
   questions=sets.flatMap((set,fileIndex)=>set.map((q,i)=>({...q,id:`${fileIndex+1}-${i+1}`})));
   byId=Object.fromEntries(questions.map(q=>[q.id,q]));
-  let useOffline = !navigator.onLine;
+  let useOffline = !navigator.onLine || new URLSearchParams(location.search).get('mode') === 'offline';
   try { useOffline ||= localStorage.getItem('cis-df-offline-mode') === 'true'; } catch {}
   if (useOffline) enterOffline();
   else { renderAuth(); initializeAccount(); }

@@ -25,3 +25,10 @@ main>.study-metrics{position:sticky;top:8px;z-index:2;box-shadow:0 3px 12px #153
 .audio-study .field { min-width: 0; }
 #audio-question { width: 100%; min-width: 0; }
 .offline-notice p { margin: 10px 0; }
+
+.pwa-install { max-width: 1112px; margin: 24px auto 0; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+.pwa-install > div { flex: 1 1 260px; }
+.pwa-install p { margin: 8px 0; }
+.pwa-install details { flex-basis: 100%; font-size: 13px; line-height: 1.7; }
+.pwa-install summary { cursor: pointer; color: var(--green); font-weight: 600; }
+@media(max-width:1160px) { .pwa-install { margin: 24px 24px 0; } }

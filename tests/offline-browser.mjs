@@ -12,7 +12,7 @@ const server=createServer(async(req,res)=>{
   try {
     const target=path===resolve(root)?resolve(root,'index.html'):path;
     const bytes=await readFile(target);
-    res.writeHead(200,{'Content-Type':({'.js':'text/javascript','.json':'application/json','.html':'text/html','.css':'text/css','.mp3':'audio/mpeg'})[extname(target)]||'application/octet-stream'});res.end(bytes);
+    res.writeHead(200,{'Content-Type':({'.js':'text/javascript','.json':'application/json','.html':'text/html','.css':'text/css','.mp3':'audio/mpeg','.webmanifest':'application/manifest+json','.png':'image/png'})[extname(target)]||'application/octet-stream'});res.end(bytes);
   } catch {res.writeHead(404).end();}
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
@@ -28,11 +28,30 @@ try {
   await page.locator('#enter-offline').click();
   await page.locator('[data-offline-status]').filter({hasText:'estão prontos'}).waitFor();
   await page.evaluate(async()=>{await navigator.serviceWorker.ready; if(!navigator.serviceWorker.controller)await new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',resolve,{once:true}));});
+  const cdp=await context.newCDPSession(page);
+  const appManifest=await cdp.send('Page.getAppManifest');
+  assert.deepEqual(appManifest.errors,[]);
+  const installability=await cdp.send('Page.getInstallabilityErrors');
+  // Isolated Playwright contexts are private windows, which cannot install apps.
+  assert.deepEqual(installability.installabilityErrors.filter(error=>error.errorId!=='in-incognito'),[]);
+  await page.evaluate(()=>{
+    const event=new Event('beforeinstallprompt',{cancelable:true});
+    event.prompt=async()=>{window.testInstallPrompted=true;};
+    event.userChoice=Promise.resolve({outcome:'dismissed'});
+    window.dispatchEvent(event);
+  });
+  await page.locator('#install-app').click();
+  assert.equal(await page.evaluate(()=>window.testInstallPrompted),true);
+  assert.equal(await page.locator('#install-app').isVisible(),false);
+  await page.evaluate(()=>window.dispatchEvent(new Event('appinstalled')));
+  assert.equal(await page.locator('#install-panel').isVisible(),false);
   await page.locator('[data-offline-audio]').click();
   await page.locator('[data-offline-audio-status]').filter({hasText:'Todos os 205'}).waitFor();
   assert.equal(await page.evaluate(async()=>(await (await caches.open('cis-df-audio-v1')).keys()).length),205);
   await context.setOffline(true);
   await page.reload(); await page.locator('#start').waitFor();
+  const offlineManifest=await page.evaluate(async()=>JSON.parse(await (await fetch('manifest.webmanifest')).text()));
+  assert.equal(offlineManifest.display,'standalone');
   const audio=await page.evaluate(async()=>{const r=await fetch('audio/1-1.mp3',{headers:{range:'bytes=10-99'}});return {status:r.status,length:(await r.arrayBuffer()).byteLength};});
   assert.deepEqual(audio,{status:206,length:90});
   await page.locator('#start').click();
@@ -92,6 +111,18 @@ try {
   await account.evaluate(()=>window.triggerAccount());
   await account.waitForTimeout(100);
   assert.match(await account.locator('.welcome .muted').textContent(),/Modo offline/);
+  await account.goto(url+'?mode=offline');
+  await account.locator('#start').waitFor();
+  assert.match(await account.locator('.welcome .muted').textContent(),/Modo offline/);
   await online.close();
-  console.log('PASS: no-login entry, offline reload, quiz/study/flashcard persistence, 205 cached audios and ranges, mobile layout, account separation and auth races');
+  const regular=await chromium.launchPersistentContext(resolve(root,`test-results/pwa-profile-${Date.now()}`),{executablePath:process.env.BROWSER_PATH||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+  try {
+    await regular.route('https://**/*',route=>route.abort());
+    const installPage=await regular.newPage();
+    await installPage.goto(url+'?mode=offline');
+    await installPage.locator('[data-offline-status]').filter({hasText:'estão prontos'}).waitFor();
+    const installCDP=await regular.newCDPSession(installPage);
+    assert.deepEqual((await installCDP.send('Page.getInstallabilityErrors')).installabilityErrors,[]);
+  } finally {await regular.close();}
+  console.log('PASS: PWA installability, install UI, offline manifest, installed start URL; offline reload, quiz/study/flashcard persistence, 205 audios, account separation');
 } finally {await browser?.close(); await new Promise(resolve=>server.close(resolve));}

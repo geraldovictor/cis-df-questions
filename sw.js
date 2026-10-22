@@ -1,6 +1,6 @@
-const SHELL_CACHE = 'cis-df-shell-v1';
+const SHELL_CACHE = 'cis-df-shell-v2';
 const AUDIO_CACHE = 'cis-df-audio-v1';
-const ASSETS = ['./', './index.html', './styles.css', './app.js', './config.js', './quiz.js', './study.js', './study-view.js', './flashcards.js', './audio-study.js', './offline.js', './questoes-1-corrigida (1).json', './questoes-2-corrigida-v2 (1).json', './questoes-3-corrigida-v2 (1).json'];
+const ASSETS = ['./', './index.html', './styles.css', './app.js', './config.js', './quiz.js', './study.js', './study-view.js', './flashcards.js', './audio-study.js', './offline.js', './pwa.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png', './icons/apple-touch-icon.png', './questoes-1-corrigida (1).json', './questoes-2-corrigida-v2 (1).json', './questoes-3-corrigida-v2 (1).json'];
 const base = self.registration.scope;
 const shellURLs = new Set(ASSETS.map(path => new URL(path, base).href));
 
