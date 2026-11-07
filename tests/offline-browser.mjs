@@ -18,6 +18,13 @@ const server=createServer(async(req,res)=>{
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const url=`http://127.0.0.1:${server.address().port}/`;
 let browser;
+async function selectAnswer(page, selector) {
+  if (await page.locator(selector).count()) { await page.locator(selector).first().check(); return; }
+  for (const target of await page.locator('[data-match-place]').all()) {
+    await page.locator('[data-match-bank] [data-match-item]').first().click();
+    await target.click();
+  }
+}
 try {
   browser=await chromium.launch({executablePath:process.env.BROWSER_PATH||'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
   const context=await browser.newContext({viewport:{width:390,height:844}});
@@ -55,7 +62,7 @@ try {
   const audio=await page.evaluate(async()=>{const r=await fetch('audio/1-1.mp3',{headers:{range:'bytes=10-99'}});return {status:r.status,length:(await r.arrayBuffer()).byteLength};});
   assert.deepEqual(audio,{status:206,length:90});
   await page.locator('#start').click();
-  await page.locator('[name=answer]').first().check();
+  await selectAnswer(page, '[name=answer]');
   await page.locator('#next').click();
   const before=await page.evaluate(()=>JSON.parse(localStorage.getItem('cis-df-offline-progress-v1')).attempts[0]);
   await page.reload(); await page.locator('#start').click();
@@ -63,7 +70,7 @@ try {
   assert.match(await page.locator('.eyebrow').first().textContent(),/Questão 2 de 75/);
   await page.locator('#back').click();
   await page.locator('#study-start').click();
-  await page.locator('[name=study-answer]').first().check();
+  await selectAnswer(page, '[name=study-answer]');
   await page.locator('#study-check').click();
   await page.reload(); await page.locator('#study-start').click();
   assert.equal(await page.locator('.study-feedback').count(),1);

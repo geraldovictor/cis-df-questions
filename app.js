@@ -5,6 +5,8 @@ import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
 import { config } from './config.js';
 import { createAttempt, isCorrect, scoreAttempt } from './quiz.js';
+import { getMatchingQuestion, isMatchingComplete } from './matching.js';
+import { renderMatching, bindMatching } from './matching-view.js';
 
 const app = document.querySelector('#app');
 const logout = document.querySelector('#logout');
@@ -178,15 +180,27 @@ function persist() {
 
 function renderQuiz() {
   const state=active.state, id=state.ids[state.cursor], q=byId[id];
+  const matching=getMatchingQuestion(q);
   const count=q.alternativas.filter(a=>a.correta).length;
-  const answered=Object.values(state.answers).filter(a=>a.length).length;
-  app.innerHTML=`<div class="quiz-heading"><button id="back" class="quiet">← Salvar e voltar</button><span class="tag">Simulado de 75 questões</span></div><div class="quiz-layout"><section class="card"><span class="eyebrow">Questão ${state.cursor+1} de ${active.total}</span><div class="progress"><span style="width:${answered/active.total*100}%"></span></div><h1 class="question-title" lang="en">${esc(q.pergunta)}</h1><p class="muted">${count>1?`Selecione ${count} alternativas.`:'Selecione uma alternativa.'}</p><div class="options">${state.orders[id].map((index,position)=>`<label class="option"><input type="${count>1?'checkbox':'radio'}" name="answer" value="${index}" ${(state.answers[id]||[]).includes(index)?'checked':''}><span lang="en"><b>${String.fromCharCode(65+position)}.</b> ${esc(q.alternativas[index].texto)}</span></label>`).join('')}</div><div class="quiz-actions"><button id="prev" class="secondary" ${state.cursor===0?'disabled':''}>← Anterior</button><button id="next" class="primary">${state.cursor===74?'Revisar e finalizar':'Próxima →'}</button></div></section><aside class="card"><h3>Seu progresso</h3><p class="muted">${answered} de 75 respondidas</p><div class="number-grid">${state.ids.map((qid,i)=>`<button aria-label="Questão ${i+1}${state.answers[qid]?.length?', respondida':''}" ${state.cursor===i?'aria-current="step"':''} class="${state.answers[qid]?.length?'answered ':''}${state.cursor===i?'active':''}" data-jump="${i}">${i+1}</button>`).join('')}</div><p class="legend">Navegue livremente entre as questões. As respostas são salvas durante a prática.</p><button id="finish" class="secondary wide">Finalizar simulado</button></aside></div>`;
+  const hasAnswer=qid=>getMatchingQuestion(byId[qid]) ? isMatchingComplete(byId[qid],state.answers[qid] || []) : Boolean(state.answers[qid]?.length);
+  const answered=state.ids.filter(hasAnswer).length;
+  const options=matching ? renderMatching(q,state.answers[id] || [],{order:state.orders[id]}) : `<div class="options">${state.orders[id].map((index,position)=>`<label class="option"><input type="${count>1?'checkbox':'radio'}" name="answer" value="${index}" ${(state.answers[id]||[]).includes(index)?'checked':''}><span lang="en"><b>${String.fromCharCode(65+position)}.</b> ${esc(q.alternativas[index].texto)}</span></label>`).join('')}</div>`;
+  app.innerHTML=`<div class="quiz-heading"><button id="back" class="quiet">← Salvar e voltar</button><span class="tag">Simulado de 75 questões</span></div><div class="quiz-layout"><section class="card"><span class="eyebrow">Questão ${state.cursor+1} de ${active.total}</span><div class="progress" id="quiz-progress"><span style="width:${answered/active.total*100}%"></span></div><h1 class="question-title" lang="en">${esc(matching?.prompt || q.pergunta)}</h1><p class="muted">${matching?'Associe os cartões às descrições.':count>1?`Selecione ${count} alternativas.`:'Selecione uma alternativa.'}</p>${options}<div class="quiz-actions"><button id="prev" class="secondary" ${state.cursor===0?'disabled':''}>← Anterior</button><button id="next" class="primary">${state.cursor===74?'Revisar e finalizar':'Próxima →'}</button></div></section><aside class="card"><h3>Seu progresso</h3><p class="muted" id="quiz-count">${answered} de 75 respondidas</p><div class="number-grid">${state.ids.map((qid,i)=>`<button aria-label="Questão ${i+1}${hasAnswer(qid)?', respondida':''}" ${state.cursor===i?'aria-current="step"':''} class="${hasAnswer(qid)?'answered ':''}${state.cursor===i?'active':''}" data-jump="${i}">${i+1}</button>`).join('')}</div><p class="legend">Navegue livremente entre as questões. As respostas são salvas durante a prática.</p><button id="finish" class="secondary wide">Finalizar simulado</button></aside></div>`;
   document.querySelectorAll('[name=answer]').forEach(input=>input.addEventListener('change',()=>{
     state.answers[id]=Array.from(document.querySelectorAll('[name=answer]:checked'),el=>Number(el.value));
     const selectedValue=input.value;
     persist().catch(()=>{}); renderQuiz();
     document.querySelector(`[name=answer][value="${selectedValue}"]`)?.focus();
   }));
+  if (matching) bindMatching(app.querySelector('.matching'),q,state.answers[id] || [],{order:state.orders[id],onChange:answer=>{
+    state.answers[id]=answer; persist().catch(()=>{});
+    const total=state.ids.filter(hasAnswer).length;
+    app.querySelector('#quiz-count').textContent=`${total} de 75 respondidas`;
+    app.querySelector('#quiz-progress span').style.width=`${total/active.total*100}%`;
+    const jump=app.querySelector(`[data-jump="${state.cursor}"]`);
+    jump.classList.toggle('answered',hasAnswer(id));
+    jump.setAttribute('aria-label',`Questão ${state.cursor+1}${hasAnswer(id)?', respondida':''}`);
+  }});
   const go=index=>{state.cursor=index;persist().catch(()=>{});renderQuiz();window.scrollTo({top:0});};
   on('#prev','click',()=>go(state.cursor-1));
   on('#next','click',()=>state.cursor===74?confirmFinish():go(state.cursor+1));
@@ -196,8 +210,8 @@ function renderQuiz() {
 }
 
 function confirmFinish() {
-  const answered=Object.values(active.state.answers).filter(a=>a.length).length;
-  app.innerHTML=`<section class="card result-banner"><span class="eyebrow">Uma pausa para conferir</span><h1>Pronto para ver seu resultado?</h1><p>Você respondeu ${answered} de 75 questões.${answered<75?` As ${75-answered} questões em branco contarão como erro.`:''}<br>Depois de finalizar, você poderá revisar todas as respostas e explicações.</p><div class="quiz-actions"><button id="resume" class="secondary">Voltar às questões</button><button id="confirm" class="primary">Finalizar e ver resultado</button></div></section>`;
+  const answered=active.state.ids.filter(id=>getMatchingQuestion(byId[id]) ? isMatchingComplete(byId[id],active.state.answers[id] || []) : Boolean(active.state.answers[id]?.length)).length;
+  app.innerHTML=`<section class="card result-banner"><span class="eyebrow">Uma pausa para conferir</span><h1>Pronto para ver seu resultado?</h1><p>Você respondeu ${answered} de 75 questões.${answered<75?` As ${75-answered} questões em branco ou incompletas contarão como erro.`:''}<br>Depois de finalizar, você poderá revisar todas as respostas e explicações.</p><div class="quiz-actions"><button id="resume" class="secondary">Voltar às questões</button><button id="confirm" class="primary">Finalizar e ver resultado</button></div></section>`;
   on('#resume','click',renderQuiz);
   on('#confirm','click',async event=>{
     if(busy) return; busy=true; event.currentTarget.disabled=true;
@@ -212,7 +226,7 @@ function renderResult(attempt) {
     document.querySelector('#reviews').innerHTML=attempt.state.ids.map((id,i)=>{
       const q=byId[id], selected=attempt.state.answers[id]||[], correct=isCorrect(q,selected);
       if(document.querySelector('#only-errors').checked && correct) return '';
-      return `<details class="card review-item"><summary><span>${correct?'✓ Acertou':'○ '+(selected.length?'Revisar':'Em branco')} · Questão ${i+1}</span><br><span lang="en">${esc(q.pergunta)}</span></summary><div class="options">${attempt.state.orders[id].map(index=>{const a=q.alternativas[index];return `<div class="option ${a.correta?'correct':selected.includes(index)?'wrong':''}"><span><b>${a.correta?'✓ Correta':selected.includes(index)?'✕ Sua resposta':'Alternativa'}${a.correta&&selected.includes(index)?' · Sua resposta':''}</b><br><span lang="en">${esc(a.texto)}</span><span class="explanation" lang="en">${esc(a.explicacao)}</span></span></div>`;}).join('')}</div></details>`;
+      return `<details class="card review-item"><summary><span>${correct?'✓ Acertou':'○ '+(selected.length?'Revisar':'Em branco')} · Questão ${i+1}</span><br><span lang="en">${esc(getMatchingQuestion(q)?.prompt || q.pergunta)}</span></summary>${getMatchingQuestion(q) ? renderMatching(q,selected,{reveal:true,disabled:true,order:attempt.state.orders[id]}) : `<div class="options">${attempt.state.orders[id].map(index=>{const a=q.alternativas[index];return `<div class="option ${a.correta?'correct':selected.includes(index)?'wrong':''}"><span><b>${a.correta?'✓ Correta':selected.includes(index)?'✕ Sua resposta':'Alternativa'}${a.correta&&selected.includes(index)?' · Sua resposta':''}</b><br><span lang="en">${esc(a.texto)}</span><span class="explanation" lang="en">${esc(a.explicacao)}</span></span></div>`;}).join('')}</div>`}</details>`;
     }).join('') || '<div class="card empty">Nenhum erro neste simulado. Ótimo trabalho!</div>';
   };
   review(); on('#only-errors','change',review); on('#dashboard','click',loadDashboard);

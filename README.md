@@ -32,6 +32,10 @@ Em Settings → Pages, selecione **Deploy from a branch**, branch `main`, pasta 
 
 Sirva esta pasta por HTTP (por exemplo `npx serve .`). O JavaScript usa módulos nativos e não precisa de compilação. Com Node.js 20 ou superior, execute `node --test tests/quiz.test.mjs`.
 
+As dez questões de associação (com `->` ou `→`) usam cartões de arrastar nos simulados e no modo de estudo. Arraste pela alça ou selecione um cartão e toque/clique na descrição; o teclado também funciona com Enter e Espaço. Alguns cartões sobram. Complete todos os destinos antes de confirmar no estudo; cada questão exige todas as associações corretas para valer um acerto. As respostas antigas continuam compatíveis. Os pares são salvos e retomados também offline.
+
+`npm test` verifica o gabarito, os distratores e a compatibilidade das associações. Para validar arraste com mouse e toque, teclado, troca/remoção, correção, retomada offline e layout móvel, execute `node tests/matching-browser.mjs` com `PLAYWRIGHT_PATH` apontando para o `index.mjs` do `playwright-core` e, opcionalmente, `BROWSER_PATH` para Chrome/Edge.
+
 Checklist após configurar o Supabase: cadastrar e confirmar um e-mail; entrar; responder uma questão simples e uma múltipla; recarregar e retomar; finalizar; revisar; sair; entrar com uma segunda conta e confirmar que o histórico da primeira não aparece; testar recuperação de senha e falha de rede.
 
 O site é uma ferramenta pessoal de estudo, sem vínculo oficial com ServiceNow. Os JSONs e gabaritos são arquivos estáticos acessíveis publicamente se o site for público. O login protege os resultados pessoais no banco, não o banco de questões. A pontuação é calculada no cliente e não deve ser usada para avaliações certificadas.

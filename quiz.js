@@ -1,3 +1,5 @@
+import { getMatchingQuestion, getMatchingAssignments, isMatchingComplete } from './matching.js';
+
 export function shuffle(items, random = Math.random) {
   const result = [...items];
   for (let i = result.length - 1; i > 0; i--) {
@@ -18,6 +20,12 @@ export function createAttempt(questions, userId) {
 }
 
 export function isCorrect(question, selected = []) {
+  const matching = getMatchingQuestion(question);
+  if (matching && selected.some(value => typeof value !== 'number')) {
+    if (!isMatchingComplete(question, selected)) return false;
+    const assignments = getMatchingAssignments(question, selected);
+    return matching.targets.every(target => assignments[target.id] === matching.solution[target.id]);
+  }
   const expected = question.alternativas.flatMap((a, i) => a.correta ? [i] : []);
   return selected.length === expected.length && expected.every(i => selected.includes(i));
 }

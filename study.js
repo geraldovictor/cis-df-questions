@@ -1,4 +1,5 @@
 import { shuffle, isCorrect } from './quiz.js';
+import { getMatchingQuestion, isMatchingComplete } from './matching.js';
 
 export function createStudy(questions, userId) {
   if (!questions.length) throw new Error('Não há questões disponíveis.');
@@ -14,9 +15,13 @@ export function createStudy(questions, userId) {
 
 export function confirmStudyAnswer(attempt, question, selected) {
   if (attempt.finished_at || attempt.state.confirmed[question.id]) return false;
+  const matching = getMatchingQuestion(question);
   const required = question.alternativas.filter(a => a.correta).length;
-  if (selected.length !== required || new Set(selected).size !== required ||
-      selected.some(i => !Number.isInteger(i) || !question.alternativas[i])) {
+  if (matching && !isMatchingComplete(question, selected)) {
+    throw new Error('Complete todas as associações antes de confirmar.');
+  }
+  if (!matching && (selected.length !== required || new Set(selected).size !== required ||
+      selected.some(i => !Number.isInteger(i) || !question.alternativas[i]))) {
     throw new Error(`Selecione ${required} alternativa(s) antes de confirmar.`);
   }
   attempt.state.answers[question.id] = [...selected];
