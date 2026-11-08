@@ -56,6 +56,16 @@ Para regenerar os arquivos, instale requirements-audio.txt em um ambiente Python
 
 No painel, abra Flashcards para revisar as 205 perguntas. Revele a resposta para ver todas as alternativas corretas, suas explicações e ouvir o áudio neural. Marque Já sei ou Quero revisar; filtre o baralho para revisar apenas os cartões marcados, ou embaralhe todas as questões. As marcações e o último cartão são salvos neste navegador por conta, sem sincronização com outros dispositivos.
 
+## Decoreba
+
+No painel, use **Abrir decoreba**. As 205 questões têm dicas individuais em português: uma pista para reconhecer o cenário, um macete e a conexão com os termos do gabarito. As técnicas incluem frases, siglas, imagens mentais, sequências e contrastes. As associações mostram todos os pares corretos, e as questões de múltipla escolha mostram todas as respostas corretas. As letras das alternativas não são usadas para memorizar.
+
+Em **Aprender macetes**, leia a dica e tente falar a resposta antes de conferir. Em **Testar memória**, o macete e a resposta ficam escondidos até você revelar. Marque **Decorei** ou **Ainda confundo** para avançar e montar sua revisão. Há busca por palavras, filtros, escolha de questão e embaralhamento. O enunciado original e os áudios existentes continuam disponíveis.
+
+As marcações, a ordem, o modo e a última questão ficam no navegador, separados por conta e pelo modo sem login. O modo funciona offline depois que o site estiver preparado. O progresso de decoreba é separado dos flashcards, estudos e simulados. Dicas com inconsistências conhecidas no banco exibem uma observação específica junto ao macete.
+
+O conteúdo fica em `memory-aids.json`, com uma entrada por ID estável. Cada entrada inclui os índices corretos e uma assinatura do enunciado/contexto/respostas, calculada por `memorySourceKey` em `memorization.js`. Quando o banco mudar, revise a dica e atualize esses dados; o carregamento recusa dicas incompletas ou incompatíveis. `npm test` valida cobertura e persistência; `node tests/memorization-browser.mjs` verifica os fluxos no navegador com as mesmas variáveis `PLAYWRIGHT_PATH` e `BROWSER_PATH` dos outros testes.
+
 ## Modo offline sem login
 
 Na tela inicial, use Estudar offline · Sem login. O site salva automaticamente os arquivos e as 205 questões no navegador. Aguarde a indicação de que o site está pronto antes de desconectar. Depois, o mesmo endereço abre sem internet e o modo local é retomado, sem depender do login ou do Supabase.

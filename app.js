@@ -1,5 +1,6 @@
 import { renderAudioStudy } from './audio-study.js';
 import { renderFlashcards } from './flashcards.js';
+import { renderMemorization } from './memorization.js';
 import { GUEST_ID, readLocalProgress, saveLocalAttempt, prepareOffline, renderOfflineTools } from './offline.js';
 import { createStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
@@ -16,6 +17,7 @@ let questions = [], byId = {}, client, user, attempts = [], active, busy = false
 let studies = [], studyError = null;
 let saveQueue = Promise.resolve(), saveError = null;
 let offlineMode = false, accountLoading = false;
+let memoryAidsPromise;
 const offlinePreparation = prepareOffline();
 offlinePreparation.catch(()=>{});
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -99,6 +101,8 @@ function renderDashboard() {
   renderAudioStudy(document.querySelector('#audio-dashboard'), questions);
   document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
   renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id);
+  document.querySelector('#flashcards-dashboard').insertAdjacentHTML('beforebegin', '<section id="memory-dashboard"></section>');
+  renderMemoryDashboard();
   if (offlineMode) {
     document.querySelector('.welcome .muted').textContent = 'Modo offline · Seu progresso está salvo somente neste navegador.';
     app.insertAdjacentHTML('afterbegin', '<div id="offline-dashboard"></div>');
@@ -116,6 +120,25 @@ function renderDashboard() {
 }
 
 function studyCacheKey() { return `cis-df-study-pending-${user.id}`; }
+
+function renderMemoryDashboard() {
+  document.querySelector('#memory-dashboard').innerHTML = `<div class="card memory-entry"><div><span class="eyebrow">Novo · Decoreba</span><h2>Uma pista. Uma resposta na memória.</h2><p>${questions.length} macetes em português, um para cada questão. Aprenda a associação, teste sua memória e separe o que ainda confunde.</p></div><button type="button" id="memory-start" class="primary">Abrir decoreba →</button></div>`;
+  on('#memory-start','click',async event=>{
+    const button=event.currentTarget, owner=user;
+    button.disabled=true; button.textContent='Carregando macetes…'; clearMessage();
+    try {
+      memoryAidsPromise ||= fetch(new URL('./memory-aids.json',import.meta.url)).then(response=>{
+        if (!response.ok) throw new Error('Não foi possível carregar os macetes. Verifique a conexão e tente novamente.');
+        return response.json();
+      }).catch(error=>{memoryAidsPromise=null;throw error;});
+      const aids=await memoryAidsPromise;
+      if (user !== owner || !button.isConnected) return;
+      renderMemorization({app,questions,aids,userId:owner.id,back:loadDashboard});
+      window.scrollTo({top:0});
+    } catch(error) {if (user === owner && button.isConnected) {memoryAidsPromise=null;fail(error);}}
+    finally {if(button.isConnected){button.disabled=false;button.textContent='Abrir decoreba →';}}
+  });
+}
 
 async function loadStudies() {
   const owner = user;

@@ -1,0 +1,2110 @@
+{
+  "1-1": {
+    "gatilho": "Onde obter o Data Foundations Dashboard",
+    "macete": "Dashboard na vitrine: Store, grátis, é só adquirir.",
+    "conexao": "Associe a vitrine à ServiceNow Store: o dashboard é um aplicativo gratuito disponível nela.",
+    "tecnica": "Frase",
+    "respostas": [
+      0
+    ],
+    "assinatura": "2c09b1de"
+  },
+  "1-2": {
+    "gatilho": "CIs stale e qualidade dos registros",
+    "macete": "Stale ficou velho; o registro precisa ficar correto.",
+    "conexao": "Ligue CIs desatualizados ao scorecard Correctness do CMDB Health Dashboard.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "527c4d5c"
+  },
+  "1-3": {
+    "gatilho": "Relações automáticas entre aplicações de um Application Service",
+    "macete": "Discovery descobre; Service Mapping desenha as ligações.",
+    "conexao": "A dupla deste enunciado é Discovery e Service Mapping: memorize os dois nomes quando a pista for relações automáticas entre aplicações.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "6cdb5340"
+  },
+  "1-4": {
+    "gatilho": "Ver como os CIs se conectam no Workspace",
+    "macete": "Conexão se enxerga no mapa unificado.",
+    "conexao": "Para visualizar conexões entre CIs, associe a imagem de uma rede inteira ao Unified Map.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d62ce685"
+  },
+  "1-5": {
+    "gatilho": "Condição para arquivar ou apagar com políticas baseline",
+    "macete": "Antes da gaveta ou da lixeira: aposentadoria e fim de vida.",
+    "conexao": "A gaveta representa archive e a lixeira delete; ambas apontam, neste cenário, para retired e end of life.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b0176465"
+  },
+  "1-6": {
+    "gatilho": "Associar Discovery, Connectors, Mapping e ACC",
+    "macete": "Discovery encontra; Connector importa; Mapping mostra a topologia; ACC acompanha o endpoint.",
+    "conexao": "Discovery identifica dispositivos e aplicações na rede; Service Graph Connectors importam e sincronizam dados externos; Service Mapping mostra a topologia do serviço; Agent Client Collector (ACC) dá visibilidade das configurações dos endpoints em tempo real.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "2f9021bc"
+  },
+  "1-7": {
+    "gatilho": "Ofertas de SPM para consumidores de negócio",
+    "macete": "Quem compra e consome entra em Consumption.",
+    "conexao": "Apresentar offerings aos business consumers aponta para Service Consumption (Sell/Consume).",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f3e48a92"
+  },
+  "1-8": {
+    "gatilho": "Pessoas envolvidas em Design and Planning",
+    "macete": "Para desenhar a aplicação: seu dono e o arquiteto.",
+    "conexao": "A dupla é Application Owner e Enterprise Architect; associe o projeto da aplicação à conversa entre proprietário e arquiteto.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "cb750772"
+  },
+  "1-9": {
+    "gatilho": "Medir a saúde dos CIs de uma região",
+    "macete": "Saúde regional precisa de um grupo regional de saúde.",
+    "conexao": "Crie CMDB groups com type Health e recorte por região, em vez de ficar apenas no score global ou por classe.",
+    "tecnica": "Frase",
+    "respostas": [
+      0
+    ],
+    "assinatura": "eca7b69f"
+  },
+  "1-10": {
+    "gatilho": "Ingestão de terceiros com menor dívida técnica",
+    "macete": "Conector pronto, menos dívida na conta.",
+    "conexao": "A pista de reduzir technical debt na integração de CIs externos aponta para Service Graph Connector.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "b1bacf1d"
+  },
+  "1-11": {
+    "gatilho": "Orientação para modelagem de serviços end to end",
+    "macete": "Para seguir o modelo CSDM, leve o mapa de fundação e seus playbooks.",
+    "conexao": "Status e playbooks de qualidade no contexto de modelagem de serviços apontam para CSDM Data Foundation Dashboard.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9fddaf29"
+  },
+  "1-12": {
+    "gatilho": "Limpar duplicados da CMDB",
+    "macete": "Duplicado tem um balcão próprio: de-duplication no Workspace.",
+    "conexao": "Associe a limpeza preferencial de duplicados ao de-duplication dashboard no CMDB Workspace.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "b2da55fb"
+  },
+  "1-13": {
+    "gatilho": "Comparar status legado com estágio e status do ciclo de vida",
+    "macete": "Legado atravessa a ponte chamada mapping.",
+    "conexao": "A ponte entre legacy status e os valores de CSDM life cycle stage e stage status é Life cycle mappings.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d7766012"
+  },
+  "1-14": {
+    "gatilho": "Classes usadas no formulário de Incident",
+    "macete": "No incidente, lembre do serviço em funcionamento e da oferta.",
+    "conexao": "Guarde a dupla Application Service e Service Offering para as classes pedidas neste enunciado.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "2a00a2e4"
+  },
+  "1-15": {
+    "gatilho": "Classes do domínio Sell/Consume",
+    "macete": "Na venda ao negócio: Business Service com sua Business Service Offering.",
+    "conexao": "O domínio sell/consume usa Business Service e Business Service Offering; o par mantém o serviço junto da oferta ao consumidor.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "0128b8c7"
+  },
+  "1-16": {
+    "gatilho": "Mesma aplicação instalada mais de uma vez no servidor",
+    "macete": "Mesmo programa, outra porta de casa: o caminho do arquivo.",
+    "conexao": "Configuration File Path diferencia as instalações no cenário; memorize o caminho do arquivo de configuração, não apenas o nome da aplicação.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a52df1f7"
+  },
+  "1-17": {
+    "gatilho": "Fator crítico para operacionalizar a CMDB",
+    "macete": "Governar sempre, medir a saúde sempre.",
+    "conexao": "A resposta combina estabelecer governança clara com monitoramento contínuo da CMDB Health; memorize os dois hábitos juntos.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "62161ce1"
+  },
+  "1-18": {
+    "gatilho": "Servidores afetados por políticas de archive e delete",
+    "macete": "Servidor sai de cena em End of Life — Retired.",
+    "conexao": "Para o estado de ciclo de vida perguntado, associe as políticas de arquivamento e exclusão a End of Life - Retired.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "097413a7"
+  },
+  "1-19": {
+    "gatilho": "Copiar Assigned to do computador para o Asset",
+    "macete": "Do CI ao Asset, o valor atravessa uma ponte de campos.",
+    "conexao": "A ponte é o módulo Asset-CI Field Mapping: uma regra replica Assigned to entre o asset e o CI associado.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3a21821c"
+  },
+  "1-20": {
+    "gatilho": "Query Builder: serviço, infraestrutura e incidentes do banco",
+    "macete": "Duas consultas, dois recortes: estrutura na CMDB; incidentes no Service Mapping.",
+    "conexao": "Conforme o gabarito deste banco, use CMDB Query para application services e infraestrutura relacionada, e Service Mapping Query para incidentes relacionados ao database.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2,
+      3
+    ],
+    "observacao": "A associação de Service Mapping Query aos incidentes é a indicada pelo gabarito deste banco. Use este macete como referência deste item; essa associação merece revisão técnica antes de ser tratada como regra geral.",
+    "assinatura": "98d64e32"
+  },
+  "1-21": {
+    "gatilho": "Benefícios dos quatro domínios CSDM",
+    "macete": "Fundação põe as tabelas; Design planeja investimentos; Consumption atende o negócio; Delivery sustenta a técnica.",
+    "conexao": "Foundation corresponde às tabelas base; Design and Planning, às aplicações, capital, redundâncias e roadmap; Service Consumption, aos serviços de negócio e acesso; Service Delivery, aos serviços técnicos e suas ofertas.",
+    "tecnica": "Sequência",
+    "respostas": [
+      3
+    ],
+    "assinatura": "70410d75"
+  },
+  "1-22": {
+    "gatilho": "Ferramentas para resolver duplicados",
+    "macete": "Task distribui; scorecard mostra; template faz em lote; remediator guia um por um.",
+    "conexao": "De-Duplication Tasks são atribuídas a grupos; Correctness Scorecard mostra duplicados; De-Duplication Templates resolvem tarefas em lote; Duplicate CI Remediator oferece o wizard individual.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "1a9d11e5"
+  },
+  "1-23": {
+    "gatilho": "Remover CIs de curta duração depois de aposentá-los",
+    "macete": "Já aposentou? Agora a política é delete.",
+    "conexao": "Neste fluxo, os CI records já foram retired; a próxima ação recomendada para removê-los é Create a delete policy.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "5be9d759"
+  },
+  "1-24": {
+    "gatilho": "Tomcat sem correspondência deve tentar a regra de Application",
+    "macete": "Se a regra do filho falhar, peça ajuda ao pai.",
+    "conexao": "Marque Allow fallback to parent’s rules para tentar a identificação da classe pai quando a regra de Tomcat não encontrar correspondência.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "7a7e4b93"
+  },
+  "1-25": {
+    "gatilho": "Onde aparece Service Graph Connector Central",
+    "macete": "A central dos conectores trabalha no CMDB Workspace.",
+    "conexao": "Depois da instalação do plugin, a nova aba Service Graph Connector Central aparece no CMDB Workspace.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "2ca6e040"
+  },
+  "1-26": {
+    "gatilho": "Benefícios do CMDB Data Foundations Dashboard",
+    "macete": "O painel confere e o playbook conserta.",
+    "conexao": "Memorize as duas funções: verificar dados importantes válidos e bem configurados, e oferecer playbooks para remediar possíveis riscos.",
+    "tecnica": "Frase",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "deff937a"
+  },
+  "1-27": {
+    "gatilho": "Confirmar se servidores têm a localização correta",
+    "macete": "Local certo precisa de certificado.",
+    "conexao": "A política pedida para confirmar a associação correta entre servidores e localização é Certification.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ed2108ad"
+  },
+  "1-28": {
+    "gatilho": "Manter atributos que Discovery não descobre",
+    "macete": "O que a descoberta não vê, a importação agendada traz.",
+    "conexao": "Para atributos como warranty expiration, associe a manutenção a um scheduled data import vindo de fonte externa.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "fb904336"
+  },
+  "1-29": {
+    "gatilho": "Alterar a query do SCCM Service Graph Connector",
+    "macete": "Mudou a pergunta do conector? Reconfira a agenda.",
+    "conexao": "A mudança na query exige configurar os Scheduled Jobs do SCCM Service Graph Connector.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1a6f5814"
+  },
+  "1-30": {
+    "gatilho": "Como a CMDB se alinha aos processos de negócio",
+    "macete": "Ver junto para decidir melhor.",
+    "conexao": "A visão centralizada dos CIs e relações ajuda decisões e eficiência operacional: memorize o meio, visão central, junto do benefício, decidir e operar melhor.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "74046396"
+  },
+  "1-31": {
+    "gatilho": "Remover dados que já não são úteis",
+    "macete": "Faxina dos dados tem gerente: Data Manager.",
+    "conexao": "O CMDB Data Manager é a ferramenta de governança para gerir a retirada de dados sem utilidade ou aplicabilidade.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "367bd3ac"
+  },
+  "1-32": {
+    "gatilho": "Onde gerenciar tarefas geradas por políticas",
+    "macete": "Minha tarefa mora em My Work.",
+    "conexao": "No CMDB Workspace, a aba My Work é o destino para revisar e gerenciar as tarefas geradas pelas políticas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b21961ea"
+  },
+  "1-33": {
+    "gatilho": "Ações iniciadas pelo CMDB Workspace",
+    "macete": "No Workspace, tire a cópia e peça o certificado.",
+    "conexao": "As duas ações do gabarito são remediar duplicate CI records e criar uma CMDB Data Manager certification policy.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "3aeaf723"
+  },
+  "1-34": {
+    "gatilho": "Melhorar métricas baixas no Data Foundations Dashboard",
+    "macete": "Pegue o playbook ao lado e ataque primeiro o vermelho mais forte.",
+    "conexao": "Use os Remediation Playbooks ligados a cada métrica e priorize as métricas Critical e High.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "e9c857bf"
+  },
+  "1-35": {
+    "gatilho": "Propriedades de CMDB 360 e Multisource",
+    "macete": "logger registra; cmdb_ci captura; enabled liga; max.ci.limit limita.",
+    "conexao": "Logging usa glide.cmdb.logger.source.cmdb_multisource; captura de classes CMDB usa glide.identification_engine.multisource_cmdb_ci_enabled; habilitar CMDB 360 usa glide.identification_engine.multisource_enabled; limite de recompute usa glide.identification_engine.multisource.recompute.max.ci.limit.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f89bbbb7"
+  },
+  "1-36": {
+    "gatilho": "Campos recomendados ausentes devem gerar tarefas",
+    "macete": "Class Manager escolhe o campo; Health Preferences cuida da saúde.",
+    "conexao": "A dupla a memorizar para configurar recommended fields e gerar tarefas por ausência é CI Class Manager e Health Preferences.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "964a8464"
+  },
+  "1-37": {
+    "gatilho": "Pessoas da governança em cada domínio CSDM",
+    "macete": "Platform em todos: Design arquiteta, Foundation reúne, Portfolio tem dono do serviço, Technical tem dois donos técnicos.",
+    "conexao": "Design reúne Enterprise Architect e Platform Owner; Foundation acrescenta Data Steward e Process Owner a esses dois; Portfolio reúne Service Owner e Platform Owner; Technical reúne Technology Service Owner, Application Service Owner e Platform Owner.",
+    "tecnica": "Sequência",
+    "respostas": [
+      3
+    ],
+    "assinatura": "90ca56e5"
+  },
+  "1-38": {
+    "gatilho": "Importar Windows do SCCM com rápido retorno",
+    "macete": "SCCM de um lado, SCCM Connector do outro: encaixe pronto.",
+    "conexao": "Para fastest time to value nesse cenário, memorize SCCM Service Graph Connector.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "dcd607c0"
+  },
+  "1-39": {
+    "gatilho": "Significado de information object no CSDM",
+    "macete": "Objeto de informação é o retrato lógico do dado da aplicação.",
+    "conexao": "Information object descreve os dados lógicos associados às Business Applications, conforme a resposta do banco.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7fba246c"
+  },
+  "1-40": {
+    "gatilho": "Campo recomendado para atribuir tarefas de políticas",
+    "macete": "Quem gerencia o CI recebe o trabalho: Managed by group.",
+    "conexao": "Para a atribuição de policy tasks alinhada ao grupo da classe, memorize Managed by group.",
+    "tecnica": "Frase",
+    "respostas": [
+      0
+    ],
+    "assinatura": "e406dbda"
+  },
+  "1-41": {
+    "gatilho": "Query Builder: CIs operacionais de um Application Service",
+    "macete": "Coloque, conecte, filtre, execute.",
+    "conexao": "Adicione Application Service e Configuration Item ao canvas; configure a relação; filtre pelo nome do serviço e operational status dos CIs; depois execute a query.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b0c4516e"
+  },
+  "1-42": {
+    "gatilho": "Papéis para alterar o filtro Principal Class",
+    "macete": "Para mexer na classe principal: dicionário e administrador da CMDB.",
+    "conexao": "A dupla de roles é personalize_dictionary e sn_cmdb_admin; memorize o dicionário junto do administrador.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "6578369f"
+  },
+  "1-43": {
+    "gatilho": "Sincronização automática entre Asset e CI",
+    "macete": "Ponte de mão dupla precisa de duas regras ligadas.",
+    "conexao": "Mantenha ativa a business rule que atualiza Asset ao mudar o CI e também a que atualiza CI ao mudar o Asset.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "ab2e3762"
+  },
+  "1-44": {
+    "gatilho": "Windows usa most reported para Disk Space",
+    "macete": "No Windows vence o coro: 75 é dito duas vezes.",
+    "conexao": "A classe Windows Server usa most reported; Tivoli e ServiceNow reportam 75. Por isso, guarde 75, em vez do menor valor 50 da regra apresentada para Server.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1
+    ],
+    "assinatura": "c93d9481"
+  },
+  "1-45": {
+    "gatilho": "Acessar com facilidade a classe Windows Server",
+    "macete": "Prenda a classe no mural: Pinned Classes.",
+    "conexao": "Associe o alfinete à opção Pinned Classes do CI Class Manager, para a classe que o owner gerencia com frequência.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7c7d3c22"
+  },
+  "1-46": {
+    "gatilho": "Pré-requisito de dynamic reconciliation",
+    "macete": "Para reconciliar dinamicamente, abra a visão 360 das fontes.",
+    "conexao": "Dynamic reconciliation rules exigem CMDB 360/Multisource CMDB habilitado.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "430f4c47"
+  },
+  "1-47": {
+    "gatilho": "Lista completa de políticas do Data Manager",
+    "macete": "Retira, arquiva, atesta, certifica e deleta.",
+    "conexao": "Recite os cinco tipos em inglês: Retire, Archive, Attestation, Certification e Delete. A frase ajuda a lembrar todos, inclusive os dois de confirmação.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3f2a85bb"
+  },
+  "1-48": {
+    "gatilho": "Onde criar e ver saved queries do CMDB 360",
+    "macete": "Consulta 360 guardada fica na janela Saved queries da aba 360.",
+    "conexao": "No CMDB Workspace, procure Saved queries window dentro da aba CMDB 360.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "89059db6"
+  },
+  "1-49": {
+    "gatilho": "Incidents e Changes no nó inicial do Unified Map",
+    "macete": "O contexto chega pela lateral do mapa.",
+    "conexao": "Para ver Active Incidents e Planned Changes no home node, associe a lateral ao Contextual side panel.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "14f413d0"
+  },
+  "1-50": {
+    "gatilho": "Como reconhecer o Main CI no Duplicate CI Remediator",
+    "macete": "Principal é o veterano bem relacionado.",
+    "conexao": "Veterano lembra Oldest Created; bem relacionado lembra Most Related Items. São os dois atributos pedidos para identificar o Main CI.",
+    "tecnica": "Frase",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "90cad932"
+  },
+  "1-51": {
+    "gatilho": "Relações entre infraestrutura, ofertas técnicas e Application Services",
+    "macete": "Quem entrega o serviço sustenta a parte técnica.",
+    "conexao": "A modelagem dessas ligações pertence a Service Delivery (Manage Technical Services).",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f58c4882"
+  },
+  "1-52": {
+    "gatilho": "Evitar duplicados ao carregar import sets",
+    "macete": "Na transformação para CMDB, use o utilitário da CMDB.",
+    "conexao": "O nome a memorizar é CMDBTransformUtil API, usada no transform script para esse cenário de import sets.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "5df793fa"
+  },
+  "1-53": {
+    "gatilho": "Aba para definir uma classe como Principal",
+    "macete": "Principal começa pelo básico da classe.",
+    "conexao": "No CI Class Manager, siga Class Info > Basic Info para definir a Principal Class.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a9ef90d0"
+  },
+  "1-54": {
+    "gatilho": "Aba para mudar o ícone da classe UNIX",
+    "macete": "A carinha da classe está nas informações básicas.",
+    "conexao": "Associe o ícone à identidade básica da classe: a aba correta é Basic Info.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6d4ad430"
+  },
+  "1-55": {
+    "gatilho": "Onde ficam tarefas de de-duplication no Workspace",
+    "macete": "Duplicado importante bate à porta de casa.",
+    "conexao": "Casa lembra Home tab; importante lembra Important actions tile, onde localizar as tarefas no cenário apresentado.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1e2a449d"
+  },
+  "1-56": {
+    "gatilho": "Corrigir Unique Locations Result baixo",
+    "macete": "Compare os endereços, corrija os CIs, retire a localização repetida.",
+    "conexao": "O playbook manda revisar as duas locations, atualizar os CIs com a location correta e apagar a location duplicada, nessa sequência.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6247cdb0"
+  },
+  "1-57": {
+    "gatilho": "Métricas de product models, locations e business units",
+    "macete": "Produto, lugar e unidade são a fundação da casa.",
+    "conexao": "Esse conjunto de dados básicos aponta para a aba Foundation do CSDM Data Foundations Dashboard.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "11a12351"
+  },
+  "1-58": {
+    "gatilho": "O que mostram queries do CMDB 360",
+    "macete": "360 compara diferenças e encontra buracos.",
+    "conexao": "Lembre das duas visões por fonte: different attribute values e gaps in attribute data.",
+    "tecnica": "Frase",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "2c88f7e7"
+  },
+  "1-59": {
+    "gatilho": "Remover registros mantendo possibilidade de restauração",
+    "macete": "Archive é a gaveta; Delete é a lixeira.",
+    "conexao": "A pista decisiva é poder restaurar dentro de um período: escolha Archive.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d010f715"
+  },
+  "1-60": {
+    "gatilho": "Fonte prioritária parou de atualizar por um período",
+    "macete": "A fonte principal esfriou? Refresh libera a próxima.",
+    "conexao": "Data Refresh Rules permitem que uma fonte de menor prioridade atualize depois do período configurado sem atualização da fonte prioritária.",
+    "tecnica": "Frase",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3180328f"
+  },
+  "1-61": {
+    "gatilho": "Estágio CSDM que usa oferta técnica para suporte dos CIs",
+    "macete": "O suporte caminha com a oferta: Walk.",
+    "conexao": "A ligação entre Technology Management Offerings e o support group dos CIs, neste enunciado, pertence ao estágio Walk.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "757955d5"
+  },
+  "1-62": {
+    "gatilho": "Popular e manter support group automaticamente",
+    "macete": "O suporte do CI vem no pacote da oferta técnica.",
+    "conexao": "Memorize Technology Management Service Offering (Technical Service Offering) como a resposta para popular e manter o support group nesse cenário.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "33e8e19f"
+  },
+  "1-63": {
+    "gatilho": "Abordagem estruturada para lacunas de serial number",
+    "macete": "Serial sumiu? Siga o roteiro da fundação.",
+    "conexao": "O roteiro é o CMDB Data Foundation Playbook, usado aqui para identificar e tratar lacunas.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "272857ac"
+  },
+  "1-64": {
+    "gatilho": "Fontes classificam os mesmos CIs de formas diferentes",
+    "macete": "Identifique e reconcilie; padronize a classe no Class Manager.",
+    "conexao": "Memorize as duas ações: identification and reconciliation rules para evitar duplicados e padronizar identificação, e CI Class Manager para uniformizar classes e atributos entre fontes.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "0b259e56"
+  },
+  "1-65": {
+    "gatilho": "Ambiente para cuidar da qualidade dos CIs",
+    "macete": "A oficina da qualidade é o Workspace da CMDB.",
+    "conexao": "A pergunta pede o ambiente da plataforma: associe o trabalho de qualidade ao CMDB Workspace.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d73b3689"
+  },
+  "1-66": {
+    "gatilho": "Onde configurar identification rules dos servidores",
+    "macete": "A identidade da classe é configurada no gerente da classe.",
+    "conexao": "O local pedido é CMDB CI Class Manager; associe identification rules à configuração da CI class.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "121db000"
+  },
+  "1-67": {
+    "gatilho": "Categorias de Service Graph Connectors",
+    "macete": "Conectores olham o observável e sobem à nuvem.",
+    "conexao": "Observável lembra Observability; nuvem lembra Cloud. Guarde as duas categorias pedidas no banco.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "e9b96c2f"
+  },
+  "1-68": {
+    "gatilho": "Relacionar submétricas aos três KPIs de saúde",
+    "macete": "Auditoria confere conformidade; obrigatório completa; órfão pede correção.",
+    "conexao": "Audit corresponde a Compliance; Required, a Completeness; Orphan, a Correctness. A frase liga o sentido de cada submétrica ao KPI correto do exercício.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b6877140"
+  },
+  "1-69": {
+    "gatilho": "Políticas de fim de vida no Data Manager",
+    "macete": "Fim de vida: aposente e arquive.",
+    "conexao": "Para esta pergunta de duas políticas, memorize Retire e Archive.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "e63e29df"
+  },
+  "1-70": {
+    "gatilho": "Marcar Principal Class dentro de Basic Info",
+    "macete": "Na ficha Basic Info, imagine um grande ✓ na caixa Principal Class.",
+    "conexao": "A ação pedida na aba Basic Info é selecionar a caixa Principal Class.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a1f8a965"
+  },
+  "1-71": {
+    "gatilho": "Valor da CMDB nas operações de segurança",
+    "macete": "Veja onde está a falha; aja no incidente.",
+    "conexao": "As duas contribuições são identificar a infraestrutura com vulnerabilidade e permitir que a equipe de segurança avalie e remedie o incidente.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "bbf9ac80"
+  },
+  "1-72": {
+    "gatilho": "Consequência de personalizar mappings de um SGC",
+    "macete": "Customizou o encaixe, assumiu o suporte.",
+    "conexao": "Mappings customizados deixam de ser suportados pela ServiceNow nesse cenário; o cliente fica responsável pelo suporte de seu SGC customizado.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7db490ca"
+  },
+  "1-73": {
+    "gatilho": "Priorizar serviços que afetam clientes e receita",
+    "macete": "Quanto pesa no negócio? Business Criticality da oferta.",
+    "conexao": "Atributo pedido: Business Criticality na Service Offering. Associe a perda de receita ao peso de negócio da oferta.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8079a7f8"
+  },
+  "1-74": {
+    "gatilho": "Escolher classes que entram no Health Dashboard",
+    "macete": "Na porta da saúde, a lista é de inclusão.",
+    "conexao": "Health Inclusion Rules definem quais classes entram na avaliação relevante do CMDB Health Dashboard.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "73744ffa"
+  },
+  "1-75": {
+    "gatilho": "Dynamic CI Group no Change Request",
+    "macete": "Mudança em grupo entra pela porta Configuration Item.",
+    "conexao": "Preencha o campo Configuration Item do Change Request com o dynamic CI group, conforme este cenário.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "0394393b"
+  },
+  "2-1": {
+    "gatilho": "ServiceNow 100, Altiris 200 e SCCM 300",
+    "macete": "Neste cartão: SN entra sem reescrever o vizinho; SCCM também entra.",
+    "conexao": "O gabarito deste cenário permite inserir novos Windows Server tanto com ServiceNow quanto com SCCM; também afirma que ServiceNow não atualiza registros criados por Altiris ou SCCM. Memorize essas condições do cartão sem transformar os números em uma regra universal sobre atualização.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0,
+      3
+    ],
+    "observacao": "O gabarito deste banco afirma que ServiceNow não atualiza registros criados por Altiris/SCCM, embora a tabela apresentada mostre ServiceNow com a maior prioridade. Confirme as condições de reconciliação antes de aplicar esse macete fora deste cartão.",
+    "assinatura": "9caf6eac"
+  },
+  "2-2": {
+    "gatilho": "Serviços sem dono voltam a aparecer",
+    "macete": "Sem dono, sem cadastro: Owned by obrigatório.",
+    "conexao": "Associe a prevenção da recorrência a Make the field Owned by mandatory. Tornar o dono obrigatório impede repetir o mesmo tipo de lacuna.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "07829fe5"
+  },
+  "2-3": {
+    "gatilho": "Qual relógio mede Staleness?",
+    "macete": "Poeira no registro? Olhe quando ele foi UPDATED.",
+    "conexao": "O relógio da métrica usa Updated (sys_updated_on). A imagem de poeira lembra a última atualização do registro.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3815300a"
+  },
+  "2-4": {
+    "gatilho": "Só classes relevantes nos formulários",
+    "macete": "No palco do Incident, só entra a classe PRINCIPAL.",
+    "conexao": "A catraca dos formulários aponta para a marca Principal Class no CI Class Manager. A palavra principal lembra quais classes aparecem como opção.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "978ecd02"
+  },
+  "2-5": {
+    "gatilho": "Event Management precisa de CMDB confiável",
+    "macete": "Alerta ganha endereço e consequência.",
+    "conexao": "Endereço lembra Binding of alerts to specific CIs; consequência lembra que Mapped services mostram o business impact do alerta. Guarde os dois benefícios juntos.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "6e1d231e"
+  },
+  "2-6": {
+    "gatilho": "Por que usar CMDB 360/Multisource?",
+    "macete": "360 graus: um atributo visto por várias câmeras.",
+    "conexao": "As câmeras representam multiple data sources. CMDB 360 ajuda a identificar os atributos de CI vindos dessas fontes.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f7e7d635"
+  },
+  "2-7": {
+    "gatilho": "Duplicata: IP novo e relação importante",
+    "macete": "Fique com o corpo descoberto e transplante o vínculo.",
+    "conexao": "O corpo é o discovered CI com IP atualizado; o vínculo é a relationship do CI importado manualmente. Retain o descoberto e merge a relação.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f7541558"
+  },
+  "2-8": {
+    "gatilho": "Deficiências na CMDB e Remediation Playbooks",
+    "macete": "Playbook é oficina: diagnostica e conserta.",
+    "conexao": "Diagnosticar lembra analyze; consertar lembra fix issues. O macete retém as duas ações da alternativa correta.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ffeae1ae"
+  },
+  "2-9": {
+    "gatilho": "Trocar status legado por life cycle",
+    "macete": "Para mudar de estrada, ajuste o MAPA.",
+    "conexao": "O mapa é Life Cycle Mapping [life_cycle_mapping]. Associe a transição entre estados legados e life cycle à tabela que mapeia essa correspondência.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f5ac354e"
+  },
+  "2-10": {
+    "gatilho": "Onde abrir Unified Map?",
+    "macete": "O mapa mora na mesa de trabalho da CMDB.",
+    "conexao": "A mesa de trabalho corresponde ao CMDB Workspace. Esse é o local pedido para acessar Unified Map.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cce47051"
+  },
+  "2-11": {
+    "gatilho": "Business Applications e dados PII",
+    "macete": "Se o assunto é informação, guarde num Information Object.",
+    "conexao": "O objeto é o recipiente mental para os tipos de dados, inclusive Personally Identifiable Information. A classe do gabarito é Information Object.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "39389dfa"
+  },
+  "2-12": {
+    "gatilho": "Campos importantes estão vazios",
+    "macete": "Faltou preencher? Falta COMPLETAR.",
+    "conexao": "Completar conduz a Completeness, o scorecard que acompanha CIs e classes com dados-chave ausentes.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "da2126eb"
+  },
+  "2-13": {
+    "gatilho": "Benefício do Data Foundation Dashboard",
+    "macete": "Painel é bússola: métrica orienta decisão.",
+    "conexao": "A bússola liga key health-related metrics a make decisions. Esse é o benefício apontado no gabarito.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "255cb191"
+  },
+  "2-14": {
+    "gatilho": "Alinhamento de Technical Services e Offerings",
+    "macete": "O técnico aprende a ANDAR: Walk.",
+    "conexao": "Para este cartão, associe Technology Management Services e suas Offerings à aba Walk do CSDM Data Foundation Dashboard.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "a109afb3"
+  },
+  "2-15": {
+    "gatilho": "Tarefas para confirmar que o CI existe",
+    "macete": "ATTENDANCE do equipamento: Attestation faz a chamada.",
+    "conexao": "Como numa chamada de presença, Attestation cria e atribui tarefas para validar a existência dos CIs.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "444488cc"
+  },
+  "2-16": {
+    "gatilho": "Import Sets + Transform Maps precisam passar pelo IRE",
+    "macete": "Antes de transformar, passe na portaria: onBefore.",
+    "conexao": "A portaria anterior à transformação representa o script onBefore. É o tipo pedido para encaminhar o processamento pelo IRE.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "98629a65"
+  },
+  "2-17": {
+    "gatilho": "Business Service Offerings dependem de Application Services",
+    "macete": "A oferta de negócio já corre com a aplicação: Run.",
+    "conexao": "A relação entre Business Service Offerings e Application Services é associada à etapa Run neste exercício.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6c138f52"
+  },
+  "2-18": {
+    "gatilho": "Auditoria de aplicação com PII e PCI",
+    "macete": "Para auditar, leve o aplicativo e a caixa dos dados.",
+    "conexao": "O aplicativo é Business Applications; a caixa que representa a informação é Information Objects. As duas classes formam a resposta.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d6e3d0a6"
+  },
+  "2-19": {
+    "gatilho": "Seis métricas do CMDB Health",
+    "macete": "Audit compara; Duplicate repete; Orphan fica só; Recommended ajuda; Required exige; Stale envelhece.",
+    "conexao": "Audit compara valores a um template; Duplicate repete o mesmo ativo; Orphan perde relações; Recommended apoia a qualidade; Required é necessário para criar ou atualizar; Stale deixa de ser atualizado. Cada verbo prende uma descrição ao seu nome.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d81317ba"
+  },
+  "2-20": {
+    "gatilho": "Documentos dentro de um Playbook",
+    "macete": "Primeiro veja o problema, depois abra o problema.",
+    "conexao": "Ver de cima lembra Problem Overview; abrir para entender lembra Problem Analysis. São os dois documentos pedidos.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "9ecc2c5c"
+  },
+  "2-21": {
+    "gatilho": "Filtro OS contém Server OU Linux",
+    "macete": "A peneira aceita SERVER e LINUX escritos no nome.",
+    "conexao": "Windows Server 2022 Datacenter contém Server; Linux CentOS contém Linux. O OR permite passar por qualquer uma dessas duas condições.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "382c666a"
+  },
+  "2-22": {
+    "gatilho": "Configuração conforme recommended practice",
+    "macete": "A fundação tem o painel do projeto.",
+    "conexao": "Associe recommended practice de configuração ao CMDB Data Foundation Dashboard. A imagem do painel na fundação distingue o recurso solicitado.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d517c644"
+  },
+  "2-23": {
+    "gatilho": "Quem envia tarefas para My Work?",
+    "macete": "O Manager distribui o trabalho.",
+    "conexao": "CMDB Data Manager é a ferramenta que gera as tarefas recebidas pelos class owners no My Work do CMDB Workspace.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "57b2be55"
+  },
+  "2-24": {
+    "gatilho": "Application, Business Application, Process e Business Service",
+    "macete": "Business Application é projeto; Application Service é entrega. Processo é base; Business Service é consumo.",
+    "conexao": "Business Application fica em Design and Planning; Business Process em Foundation; Application Service em Service Delivery; Business Service em Sell / Consume. A frase liga cada verbo a um domínio.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "ea816226"
+  },
+  "2-25": {
+    "gatilho": "Escolher método de mapear serviços",
+    "macete": "Pequeno filtra; nuvem conecta; crítico desce; sob medida etiqueta.",
+    "conexao": "Nas associações deste cartão: Dynamic CI Group usa filtros e queries para serviços pequenos; Connection Suggestion fica com cloud/container/machine; Top-down com mission-critical e patterns; Tag-Based com custom-built e fingerprinting. Use a frase para lembrar o gabarito apresentado.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "observacao": "As associações entre Connection Suggestion, Tag-Based, cloud e fingerprinting merecem conferência técnica: o gabarito deste banco pode ter invertido esses dois métodos. O macete apenas reproduz as associações fornecidas.",
+    "assinatura": "816d7d4a"
+  },
+  "2-26": {
+    "gatilho": "Onde configurar identificação de uma classe?",
+    "macete": "Dois balcões de identidade: Class Manager e CI Identifiers.",
+    "conexao": "Guarde o par CI Class Manager + CI Identifiers module. Ambos são os locais pedidos para consultar e configurar as regras existentes.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "e44e00e4"
+  },
+  "2-27": {
+    "gatilho": "Enterprise Architect quer acompanhar capabilities",
+    "macete": "Capacidade nasce no desenho: Design and Planning.",
+    "conexao": "O desenho arquitetural serve de ponte para Design and Planning (Design), domínio CSDM 5 escolhido para capabilities neste cartão.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "9ce98fe3"
+  },
+  "2-28": {
+    "gatilho": "Criar uma classe para sensor IoT",
+    "macete": "Antes de inventar, consulte a loja; depois escolha a família.",
+    "conexao": "Consultar a loja lembra instalar ou atualizar CMDB CI Class Models e verificar se a classe existe. Escolher a família lembra criar a classe sob um parent apropriado.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "71a883a7"
+  },
+  "2-29": {
+    "gatilho": "Depois de Enable Life Cycle Sync",
+    "macete": "Ligou o Sync? Resolva o que o relatório apitou.",
+    "conexao": "O apito é o Discrepancy Report. A próxima ação é resolver os incomplete field mappings que ele identifica.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0113fcc1"
+  },
+  "2-30": {
+    "gatilho": "Quando usar Agent Client Collector?",
+    "macete": "Agente acompanha quem vive trancado ou aparece de vez em quando.",
+    "conexao": "Trancado lembra devices in secure environments; de vez em quando lembra devices that intermittently connect to the network. São os dois casos de ACC pedidos.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "613961ce"
+  },
+  "2-31": {
+    "gatilho": "Valor do pilar de governança",
+    "macete": "Governar é enxergar e comandar para servir melhor.",
+    "conexao": "Enxergar e comandar lembra Gain visibility and control; servir melhor lembra Enhanced Service Management operations. A frase amarra os dois benefícios.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "7a0441e2"
+  },
+  "2-32": {
+    "gatilho": "Quais dados entram na análise do CMDB 360?",
+    "macete": "Para ver em 360, primeiro passe pelo IRE.",
+    "conexao": "Imagine uma catraca IRE na entrada do observatório. O CI data precisa passar pelo IRE para o CMDB 360 reportar e analisar esses dados.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "fc43c030"
+  },
+  "2-33": {
+    "gatilho": "Benefícios de CSDM para Change",
+    "macete": "Antes da mudança, veja a onda e escolha a rota.",
+    "conexao": "A onda representa impact of the change on services; a rota representa route the change dynamically. Guarde impacto e roteamento juntos.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "544f8d58"
+  },
+  "2-34": {
+    "gatilho": "Prazo padrão de Staleness",
+    "macete": "Sessenta sem mexer: o registro fica stale.",
+    "conexao": "Neste cartão, o número-chave é 60 days. A frase associa a duração padrão à falta de atualização.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cd7a1746"
+  },
+  "2-35": {
+    "gatilho": "Revisar field-to-field mappings de um Connector",
+    "macete": "Para ver cada campo, abra a bancada ETL.",
+    "conexao": "A bancada de mapeamento é IntegrationHub ETL. Associe field-to-field mappings de uma importação via Service Graph Connector a esse recurso.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "edf489e0"
+  },
+  "2-36": {
+    "gatilho": "CI selecionado no Change com change group configurado",
+    "macete": "O grupo de mudança entrega a tarefa ao Assignment Group.",
+    "conexao": "O destino no formulário Change Request é Assignment Group. A imagem da entrega evita confundir o grupo de referência com o campo que recebe a atribuição.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "17a21ec2"
+  },
+  "2-37": {
+    "gatilho": "Confirmar presença real de todos os servidores",
+    "macete": "Servidor em chamada responde: Attestation!",
+    "conexao": "O objetivo é confirmar existência no data center. Isso conduz à política Attestation.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6261706a"
+  },
+  "2-38": {
+    "gatilho": "Classe nova precisa integrar a estrutura da CMDB",
+    "macete": "A classe nasce no cartório e ganha sobrenome do pai.",
+    "conexao": "O cartório é CI Class Manager; o sobrenome é table inheritance de um parent relevante. As duas partes pertencem à ação correta.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a2126842"
+  },
+  "2-39": {
+    "gatilho": "Server vira Linux ou Windows Server",
+    "macete": "Ganhou especialidade? Ganhou Upgrade.",
+    "conexao": "Passar de Server genérico para Linux Server ou Windows Server mais específico é Class Upgrade no cenário apresentado.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1
+    ],
+    "assinatura": "12b1a211"
+  },
+  "2-40": {
+    "gatilho": "Data center: conferir se os servidores existem",
+    "macete": "Existência pede atestado: Attestation.",
+    "conexao": "Relacione confirmar que todos os servidores existem à política Attestation do CMDB Data Manager.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "40b7264b"
+  },
+  "2-41": {
+    "gatilho": "Tarefas permitem atualizar campos do CI",
+    "macete": "CERTificar é corrigir o CERTificado.",
+    "conexao": "A imagem de revisar campos num certificado lembra Certification. É a política cujas tarefas permitem à pessoa atribuída atualizar os campos do CI.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "ed331171"
+  },
+  "2-42": {
+    "gatilho": "Onde marcar Principal Classes?",
+    "macete": "Principal mora no cartão básico da classe.",
+    "conexao": "O cartão básico é a aba Basic Info do CI Class Manager. Nela, marque o checkbox Principal Class.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "12ea1731"
+  },
+  "2-43": {
+    "gatilho": "Paciente, dado regulado e Business Application",
+    "macete": "A ficha é um Information Object; consulte o dono antes de ligá-la ao aplicativo.",
+    "conexao": "Crie um Information Object para representar a informação e relacione-o à Business Application após consultar o Application owner. A ficha e o vínculo lembram as duas partes da ação.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "95b6023e"
+  },
+  "2-44": {
+    "gatilho": "Responsável por qualidade e discrepâncias dos CIs",
+    "macete": "Quem gerencia a configuração arruma a ficha.",
+    "conexao": "A pessoa que cuida de precisão, completude e resolução de discrepâncias é o Configuration Manager no gabarito deste cartão.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "19a9a97e"
+  },
+  "2-45": {
+    "gatilho": "Valores de negócio da CMDB",
+    "macete": "CMDB dá resistência ao serviço e fluidez à mudança.",
+    "conexao": "Resistência lembra Strengthening operational resiliency; fluidez lembra Streamlining incident and change management. São os dois valores solicitados.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "3941e86d"
+  },
+  "2-46": {
+    "gatilho": "Resolver muitas duplicatas semelhantes",
+    "macete": "Duplicata em lote pede molde.",
+    "conexao": "O molde é uma de-duplication template: crie e execute o template para remediar tarefas semelhantes em massa.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e01fda3c"
+  },
+  "2-47": {
+    "gatilho": "Unified Map: incidentes e problemas do CI",
+    "macete": "O que está ligado ao CI fica em Related items.",
+    "conexao": "Imagine o CI no centro e os tickets presos ao redor. O painel Related items mostra os incidentes e problemas ativos relacionados.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a66064b4"
+  },
+  "2-48": {
+    "gatilho": "Item de catálogo para agendar tomografia",
+    "macete": "O médico consome o catálogo.",
+    "conexao": "O ato de pedir ou agendar pelo catálogo conduz a Service Consumption (Sell/Consume). Esse é o domínio pedido para o catalog item.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "bf90be96"
+  },
+  "2-49": {
+    "gatilho": "Prefixo de tabelas CMDB customizadas",
+    "macete": "U de usuário, CMDB de base, CI de item: u_cmdb_ci.",
+    "conexao": "Monte mentalmente o prefixo exato u_cmdb_ci. A ordem dos três blocos ajuda a não trocar a convenção de nomes.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2
+    ],
+    "assinatura": "2dfa8645"
+  },
+  "2-50": {
+    "gatilho": "Nome coincide; só o IP coincide",
+    "macete": "Nome tem crachá; IP sozinho está fora da lista.",
+    "conexao": "No cenário válido apresentado, o name identifica CI1 e leva ao update. ip_address não é critério nas entradas mostradas; sem correspondência pelos critérios configurados, CI2 leva ao insert.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b18e2b4c"
+  },
+  "2-51": {
+    "gatilho": "Por que usar playbooks do dashboard?",
+    "macete": "Playbook mostra o remédio e a onda abaixo.",
+    "conexao": "Remédio lembra remediation options para melhorar métricas ruins; onda abaixo lembra downstream impacts dessas métricas. As duas imagens cobrem os benefícios escolhidos.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "73ecb16b"
+  },
+  "2-52": {
+    "gatilho": "Server passa para Windows Server pelo IRE",
+    "macete": "Mais específico, mais especialista: Class Upgrade.",
+    "conexao": "Windows Server especializa a classe Server. Memorize esse movimento como Class Upgrade.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1
+    ],
+    "assinatura": "83bb4ce1"
+  },
+  "2-53": {
+    "gatilho": "O que faz IntegrationHub ETL?",
+    "macete": "ETL traz o terceiro pela porta IRE.",
+    "conexao": "O terceiro lembra third-party data, que pode ir para CMDB ou non-CMDB tables; a porta lembra que o ETL usa IRE para processar e integrar os dados.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "f2fb45d6"
+  },
+  "2-54": {
+    "gatilho": "Stakeholders para CSDM Crawl",
+    "macete": "Para engatinhar com aplicações, chame os dois donos.",
+    "conexao": "Os dois donos são Application Owner e Application Service Owner. O par é a resposta para a etapa Crawl.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d01d150c"
+  },
+  "2-55": {
+    "gatilho": "Selecionar CI preenche qual campo de atribuição?",
+    "macete": "Selecionou o CI, caiu na caixa de ASSIGNMENT.",
+    "conexao": "O campo automaticamente preenchido pedido no Incident é Assignment group. Associe o grupo do CI ao destino de atribuição do ticket.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1db34a56"
+  },
+  "2-56": {
+    "gatilho": "Query: databases de Seattle mais seus incidentes",
+    "macete": "Seattle fica no nó; Incident entra pela porta Non-CMDB.",
+    "conexao": "Aplique location = Seattle ao database node e adicione a tabela Incident da lista Non-CMDB Tables ao canvas. A frase preserva as duas ações de construção da consulta.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "7bf3eb6c"
+  },
+  "2-57": {
+    "gatilho": "Manter o volume da CMDB administrável",
+    "macete": "Prateleira cheia? Archive Policies arrumam o arquivo.",
+    "conexao": "A imagem da prateleira de arquivo liga controle de volume às Archive Policies.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d6149cab"
+  },
+  "2-58": {
+    "gatilho": "Central de atributos, regras e relações de classes",
+    "macete": "A ficha completa da classe fica no Class Manager.",
+    "conexao": "CI Class Manager reúne os detalhes pedidos: atributos, regras IRE e relações sugeridas. Visualize um fichário organizado por classe.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "822a44dd"
+  },
+  "2-59": {
+    "gatilho": "SCCM com menor tempo até obter valor",
+    "macete": "Conectar pronto vale antes: Service Graph Connectors.",
+    "conexao": "Associe a ingestão de Microsoft SCCM e fastest time to value aos Service Graph Connectors. A tomada pronta é a imagem para reconhecer a alternativa.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "706b571d"
+  },
+  "2-60": {
+    "gatilho": "Sistemas que monitoram linha de produção",
+    "macete": "A linha precisa de entrega técnica: Service Delivery.",
+    "conexao": "No cenário CSDM 5 de monitoramento da produção, o domínio é Service Delivery (Manage Technical). A imagem do serviço técnico mantendo a linha ajuda a recordar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "75919c38"
+  },
+  "2-61": {
+    "gatilho": "Ordem de implantação do CSDM",
+    "macete": "Firme o chão, engatinhe, ande, corra e voe.",
+    "conexao": "Chão é Foundation; engatinhar é Crawl; andar é Walk; correr é Run; voar é Fly. Preserve exatamente essa sequência de implantação.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "dece9589"
+  },
+  "2-62": {
+    "gatilho": "Muitos Hardware sem serial number",
+    "macete": "Campo sem série? Siga o roteiro de conserto.",
+    "conexao": "O roteiro estruturado é CMDB Data Foundations Dashboard Playbooks. A imagem de uma bancada seguindo instruções lembra troubleshooting e resolução do problema.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3a817771"
+  },
+  "2-63": {
+    "gatilho": "Onde criar, publicar e gerir políticas?",
+    "macete": "Política se gerencia na aba Management do Workspace.",
+    "conexao": "Una o lugar CMDB Workspace à aba Management. É o ponto de acesso pedido para operações de lifecycle por políticas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "2e8b0308"
+  },
+  "2-64": {
+    "gatilho": "Linux sem atualização há seis meses",
+    "macete": "Seis meses parado vai para o arquivo.",
+    "conexao": "A ação recomendada neste cartão é Create an archive policy. A imagem de um servidor parado sendo arquivado fixa o tipo da política.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "fbcc07ef"
+  },
+  "2-65": {
+    "gatilho": "Unified Map tem recursos adicionais",
+    "macete": "No mapa unificado, filtre a vista e regule os andares.",
+    "conexao": "Filtrar a vista lembra map nodes filtered by user preferences; regular andares lembra modificar number of levels displayed. São as duas capacidades pedidas.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "92003778"
+  },
+  "2-66": {
+    "gatilho": "Métodos para formar CMDB groups",
+    "macete": "Grupo nasce de consulta guardada ou codificada.",
+    "conexao": "Consulta guardada é Saved queries; codificada é Encoded queries. Guarde o par, sem trocar por outros mecanismos de agrupamento.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "b90fc7c3"
+  },
+  "2-67": {
+    "gatilho": "Grupos sincronizados por Offerings e dynamic CI groups",
+    "macete": "Neste cartão, a oferta manda a dupla C-S: Change e Support.",
+    "conexao": "C-S prende Change group e Support group como os dois valores automaticamente sincronizados neste cenário.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "e6e698e2",
+    "observacao": "Esta questão usa Change group e Support group. A questão 3-33 do mesmo banco descreve um cenário semelhante e usa Support Group e Managed by Group. Os gabaritos divergem; este macete representa a escolha deste cartão."
+  },
+  "2-68": {
+    "gatilho": "Métricas para monitorar no Foundation Dashboard",
+    "macete": "Noventa na janela, IRE na catraca.",
+    "conexao": "A janela contém active CIs updated in the last 90 days; a catraca contém CIs processed by the IRE. Essas são as duas populações de métricas indicadas.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "22f15ee0"
+  },
+  "2-69": {
+    "gatilho": "Health scores não aparecem sozinhos",
+    "macete": "Sem despertador ligado, a saúde não é medida.",
+    "conexao": "O despertador representa scheduled jobs. Os jobs do CMDB Health Dashboard precisam estar activated para gerar os scores.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "0d8a4aef"
+  },
+  "2-70": {
+    "gatilho": "Para que servem as Inclusion Rules no IRE?",
+    "macete": "Na identificação, a lista de convidados reduz a festa.",
+    "conexao": "A lista de convidados simboliza narrow the scope of CIs included in the identification process, como indicado no gabarito deste cartão.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "observacao": "O enunciado menciona Health Inclusions Rules, mas a resposta fala do escopo de identificação do IRE. Confirme se a questão pretendia tratar de Identification Inclusion Rules; são contextos que não devem ser confundidos.",
+    "assinatura": "feb764e7"
+  },
+  "2-71": {
+    "gatilho": "Classe e Offering dão Managed by Group diferentes",
+    "macete": "Neste encontro, a oferta chama Windows Support.",
+    "conexao": "O gabarito escolhe Windows Support, valor Managed by Group da Technical Service Offering, diante de Enterprise IT Services configurado na classe. Prenda a resposta ao cenário com esses dois valores.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0
+    ],
+    "assinatura": "431d6d42"
+  },
+  "2-72": {
+    "gatilho": "Application, Business e Technical Services",
+    "macete": "App é pilha; Business fala ao usuário; Technical sustenta o dono.",
+    "conexao": "Application Service representa o deployed system ou application stack; Business Service é publicado a Business Users e sustenta business capabilities; Technology Management Service é publicado a Service Owners e sustenta business ou application Services.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8cafacc4"
+  },
+  "2-73": {
+    "gatilho": "Quem cria relações automaticamente?",
+    "macete": "Discovery descobre os fios; Service Mapping desenha as ligações.",
+    "conexao": "A dupla da resposta é Discovery e Service Mapping. A imagem dos fios sendo encontrados e desenhados fixa as duas soluções.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "560d3970"
+  },
+  "2-74": {
+    "gatilho": "Task assignment por User Group Field",
+    "macete": "Para a tarefa, chame quem SUPORTA e quem GERENCIA.",
+    "conexao": "Suportar lembra Support Group; gerenciar lembra Managed By Group. Esses são os dois user groups padrão pedidos na política do CMDB Data Manager.",
+    "tecnica": "Frase",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "57e27831"
+  },
+  "2-75": {
+    "gatilho": "Ativar CMDB 360/Multisource CMDB",
+    "macete": "Multifonte acende quando multisource fica enabled.",
+    "conexao": "Guarde o nome exato glide.identification_engine.multisource_enabled. A sequência identification_engine → multisource → enabled é o caminho da propriedade correta.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b867b427"
+  },
+  "3-1": {
+    "gatilho": "Script transform customizado durante um upgrade",
+    "macete": "Customizou? O upgrade pula a sua peça.",
+    "conexao": "Imagine o upgrade desviando de uma peça pintada por você: ele cria uma skipped change e mantém a definição customizada do script transform.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c65386c3"
+  },
+  "3-2": {
+    "gatilho": "Importar dados sem contornar o IRE",
+    "macete": "IntegrationHub ETL é a entrada com catraca IRE.",
+    "conexao": "Visualize a importação passando por uma catraca antes de entrar na CMDB. IntegrationHub ETL é a opção do gabarito para importar utilizando Identification and Reconciliation.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e6effa25"
+  },
+  "3-3": {
+    "gatilho": "Duplicatas: IP atual no descoberto e relação correta no manual",
+    "macete": "Corpo descoberto, laço manual.",
+    "conexao": "Mantenha o CI de Discovery como o corpo com IP atualizado. Traga para ele o laço, isto é, a relação correta do CI importado manualmente.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f4d38f99"
+  },
+  "3-4": {
+    "gatilho": "Regra largest value na classe Server",
+    "macete": "O Server grandão leva a RAM grandona: 8.192.",
+    "conexao": "O CI perguntado é Server, cuja regra é largest value. Escolha 8.192 MB; a regra most reported de Windows Server pertence a outro caso.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0
+    ],
+    "assinatura": "858b954e"
+  },
+  "3-5": {
+    "gatilho": "Produtos que complementam Incident Management",
+    "macete": "Discovery detalha; Hardware cuida; Risk mede; Portfolio conta a história.",
+    "conexao": "Discovery fornece detalhes operacionais; Hardware Asset Management traz ações de ativos; Risk Management fornece risco de TI e financeiro; Service Portfolio Management traz o ciclo de vida dos serviços.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d4a0653c"
+  },
+  "3-6": {
+    "gatilho": "Criar serviços e offerings de forma simplificada",
+    "macete": "Serviços em construção? Chame o Service Builder.",
+    "conexao": "Associe Builder a um construtor: é a ferramenta indicada para montar Business Services, Technology Management Services e seus offerings de forma mais direta.",
+    "tecnica": "Associação",
+    "respostas": [
+      4
+    ],
+    "assinatura": "fb86aaee"
+  },
+  "3-7": {
+    "gatilho": "Associação entre ferramentas de ingestão e descrições",
+    "macete": "Mapa importa; agente coleta; terceiro conecta; pré-pronto descobre.",
+    "conexao": "Neste gabarito: transform maps lembra Import Sets; agent-based lembra Agent Client Collector; third-party integrations lembra Service Graph Connector; pre-built store fica associado a ServiceNow Discovery.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "observacao": "A associação de pre-built store com ServiceNow Discovery é a escolha do gabarito fornecido e merece revisão técnica. Use esta dica para reconhecer o cartão, sem generalizar esse par como descrição oficial do produto.",
+    "assinatura": "87b11134"
+  },
+  "3-8": {
+    "gatilho": "Campos e tabela do ciclo de vida",
+    "macete": "Stage é andar; status é sala; mapping é mapa; object é molde.",
+    "conexao": "life_cycle_stage representa o nível geral; life_cycle_stage_status detalha o subnível. life_cycle_mapping converte valores legados, enquanto life_cycle_object usa o tipo de CI para determinar os estados disponíveis.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ba693e97"
+  },
+  "3-9": {
+    "gatilho": "CIs operacionais no campo de Incident ou Change",
+    "macete": "No chamado entram o grupo vivo e o serviço rodando.",
+    "conexao": "Grupo vivo lembra Dynamic CI Group; serviço rodando lembra Application Service. São as duas alternativas operacionais selecionadas pelo gabarito.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "7184a0f8"
+  },
+  "3-10": {
+    "gatilho": "Três pilares de uma data foundation",
+    "macete": "Entra, ganha ordem, vira visão: Ingest, Govern, Insight.",
+    "conexao": "Imagine os dados entrando por Ingest, sendo organizados por Govern e tornando-se entendimento com Insight. A sequência guarda os três pilares.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "3c16cd56"
+  },
+  "3-11": {
+    "gatilho": "Campo de grupo preenchido automaticamente no Incident",
+    "macete": "O chamado chegou: a quem vamos atribuir? Assignment group.",
+    "conexao": "A palavra atribuir aponta para Assignment. Mesmo com a história envolvendo Change, o campo solicitado no formulário de Incident é Assignment group.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "1f27e592"
+  },
+  "3-12": {
+    "gatilho": "Filtros do Unified Map",
+    "macete": "Para limpar o mapa, escolha o tipo e o peso do negócio.",
+    "conexao": "Tipo corresponde a CI type; peso do negócio corresponde a Business criticality. Guarde esses dois filtros para retirar informação irrelevante do mapa.",
+    "tecnica": "Frase",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "10634820"
+  },
+  "3-13": {
+    "gatilho": "Classe customizada com pouca dívida técnica",
+    "macete": "Procure um modelo pronto; se precisar crescer, cresça de um pai.",
+    "conexao": "Modelo pronto lembra instalar ou atualizar CMDB CI Class Models para encontrar uma classe adequada. Crescer de um pai lembra estender uma classe existente para acomodar os atributos customizados.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "ca3b6e4c"
+  },
+  "3-14": {
+    "gatilho": "Quem inicia e define requisitos de um pedido de infraestrutura",
+    "macete": "Infraestrutura tem dono técnico.",
+    "conexao": "Ligue o pedido de upgrade de infraestrutura aos Technology Service Owners, responsáveis pelos serviços tecnológicos envolvidos e por seus requisitos.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "9dbba13d"
+  },
+  "3-15": {
+    "gatilho": "Dois problemas de qualidade no CMDB Health",
+    "macete": "CMDB saudável não gosta de cópia nem de poeira.",
+    "conexao": "Cópia lembra Duplicate CIs; poeira acumulada lembra Stale CIs. São as duas áreas de qualidade pedidas pelas alternativas desta questão.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "08593a9e"
+  },
+  "3-16": {
+    "gatilho": "Reconciliação sem CMDB 360 habilitado",
+    "macete": "Sem visão 360, a regra IRE segue.",
+    "conexao": "Não prenda a execução de reconciliation rules à habilitação de CMDB 360. O gabarito diz que as regras do IRE podem usar discovery sources mesmo sem esse recurso habilitado.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "490e4043"
+  },
+  "3-17": {
+    "gatilho": "Orphan avalia menos servidores que Duplicate",
+    "macete": "Menos gente na avaliação? Houve filtro na entrada.",
+    "conexao": "A diferença entre 60.000 e 50.000 avaliados aponta para uma Health Inclusion rule específica da métrica Orphan na classe Server.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "77c86602"
+  },
+  "3-18": {
+    "gatilho": "Pilha de aplicação implantada e suas dependências",
+    "macete": "Pilha em ação vira Application Service auto.",
+    "conexao": "Imagine a pilha já rodando com seus componentes conectados. Essa representação lógica é Application Service, na tabela cmdb_ci_service_auto.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a8ce1f53"
+  },
+  "3-19": {
+    "gatilho": "Diferença entre Attestation e Data Certification",
+    "macete": "Atestar é presença; certificar é conferência.",
+    "conexao": "Attestation confirma que o CI ainda existe, como uma chamada de presença. Data Certification confere atributos específicos, como uma inspeção dos dados da ficha.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c4a984b0"
+  },
+  "3-20": {
+    "gatilho": "Version participa da identificação e o Apache muda de versão",
+    "macete": "Versão na identidade: mudou a versão, nasceu outra identidade.",
+    "conexao": "Nesta regra, Version faz parte dos Criterion attributes junto de Class e Configuration file. A versão nova deixa de corresponder à combinação anterior, e o gabarito indica um novo Apache Web Server CI.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e6b1b4e9"
+  },
+  "3-21": {
+    "gatilho": "Atributos criados especificamente para uma classe",
+    "macete": "A etiqueta nova mora na gaveta Added.",
+    "conexao": "Added significa acrescentado. Associe essa aba aos atributos adicionados à própria classe Windows Server, que é o recorte pedido na pergunta.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7b89185a"
+  },
+  "3-22": {
+    "gatilho": "Designar Principal Classes para campos de referência",
+    "macete": "Quem gerencia as classes escolhe as principais.",
+    "conexao": "A palavra classes leva ao CI Class Manager. É nele que o administrador designa as Principal Classes usadas no cenário da pergunta.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3a97cb44"
+  },
+  "3-23": {
+    "gatilho": "Melhorar a qualidade dos dados relacionados ao CSDM",
+    "macete": "Problema na fundação do CSDM? Olhe o painel da obra.",
+    "conexao": "Fundação mais painel forma o nome CSDM Data Foundations Dashboard, a ferramenta apontada para observar e melhorar essa qualidade de dados.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d6f0b589"
+  },
+  "3-24": {
+    "gatilho": "Várias fontes autorizadas disputam os mesmos atributos",
+    "macete": "Muitas vozes, uma fila: a prioridade decide quem fala.",
+    "conexao": "A fila representa a prioridade de cada data source nas reconciliation rules. Ela permite determinar qual fonte terá precedência como fonte de verdade para a classe ou os atributos.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e7d5e937"
+  },
+  "3-25": {
+    "gatilho": "Mudança de datacenter e consequências para o negócio",
+    "macete": "Mudou o datacenter? Siga os fios até o negócio.",
+    "conexao": "Os fios são os relacionamentos do Application Service mapping. Segui-los ajuda a entender o business impact dos CIs antes da mudança.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e0e5c639"
+  },
+  "3-26": {
+    "gatilho": "Local para fazer Natural Language Queries",
+    "macete": "Converse com a CMDB na sua mesa de trabalho.",
+    "conexao": "Mesa de trabalho lembra Workspace. Para Natural Language Queries, guarde o endereço CMDB Workspace.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "9372f75b"
+  },
+  "3-27": {
+    "gatilho": "Remediar Services Have Owners Identified",
+    "macete": "Dê dono ao dado: conserte hoje e governe amanhã.",
+    "conexao": "Conserte aponta para Fix Data; governe aponta para Govern Data. Esses dois remediation plays são o par cobrado pelo playbook de serviços com owners identificados.",
+    "tecnica": "Frase",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "17d78220"
+  },
+  "3-28": {
+    "gatilho": "Cardinalidade entre Application Server e Application",
+    "macete": "Muitos palcos, muitas peças.",
+    "conexao": "Imagine vários servidores como palcos e várias aplicações como peças: um lado não fica limitado a um único elemento do outro. O relacionamento do gabarito é Many-to-many.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "0d1a18fa"
+  },
+  "3-29": {
+    "gatilho": "Roles mínimas para adicionar uma classe customizada",
+    "macete": "Classe nova pede administrador e dicionário.",
+    "conexao": "Administrador lembra sn_cmdb_admin; dicionário lembra personalize_dictionary. A imagem é de alguém autorizado a administrar a CMDB e a personalizar sua definição de dados.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "8bc2b6c6"
+  },
+  "3-30": {
+    "gatilho": "Domínio de business applications, information objects e capabilities",
+    "macete": "Antes da entrega, desenhe aplicações, informações e capacidades.",
+    "conexao": "Desenhar antes de entregar remete a Design & Planning. Coloque Business Applications, Information Objects e Business Capabilities nessa prancheta mental.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b42a679e"
+  },
+  "3-31": {
+    "gatilho": "Consequências de não seguir o CSDM",
+    "macete": "Fora do modelo: dívida agora, incompatibilidade amanhã.",
+    "conexao": "Dívida agora guarda Increased technical debt. Incompatibilidade amanhã guarda Incompatibility with future ServiceNow products; são as duas consequências selecionadas no banco.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "87d14809"
+  },
+  "3-32": {
+    "gatilho": "Faltam serial numbers e é preciso um roteiro de correção",
+    "macete": "Serial sumiu? Abra o roteiro das fundações.",
+    "conexao": "Roteiro lembra Playbooks, e fundações lembra CMDB Data Foundations Dashboard. Junte os nomes para lembrar as orientações estruturadas de remediação pedidas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d0b75869"
+  },
+  "3-33": {
+    "gatilho": "Grupos sincronizados de offering para membros de Dynamic CI Group",
+    "macete": "A oferta suporta e gerencia o grupo dinâmico.",
+    "conexao": "Neste gabarito, suporta guarda Support Group e gerencia guarda Managed by Group: memorize os dois termos para este cenário.",
+    "tecnica": "Frase",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "faf8e26a",
+    "observacao": "Este cartão usa Support Group e Managed by Group. A questão 2-67 do mesmo banco descreve um cenário semelhante e usa Change group e Support group. Os gabaritos divergem; confirme a regra aplicável antes de generalizar."
+  },
+  "3-34": {
+    "gatilho": "Associar papéis da equipe de Configuration Management",
+    "macete": "Analista observa; Process Owner comanda; Admin cuida; Produto acompanha.",
+    "conexao": "Neste gabarito, CI Analyst fica com leitura; CMDB Process Owner com o maior privilégio; Configuration Manager/CMDB Admin com tabelas, registros e tarefas; Service of Product Owner com o portfólio e seu ciclo de vida.",
+    "tecnica": "Frase",
+    "respostas": [
+      1
+    ],
+    "observacao": "Os pares reproduzem o gabarito fornecido, inclusive a associação de maior privilégio a CMDB Process Owner. Esta dica não deve ser usada como matriz oficial de permissões.",
+    "assinatura": "30907dac"
+  },
+  "3-35": {
+    "gatilho": "Visualizar a adoção do CSDM e suas boas práticas",
+    "macete": "CSDM ganha uma janela para enxergar suas fundações.",
+    "conexao": "Janela visual lembra Dashboard; fundações lembra Data Foundations. O nome completo a reconhecer é CSDM Data Foundations Dashboard.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      4
+    ],
+    "assinatura": "9cfa0c22"
+  },
+  "3-36": {
+    "gatilho": "Política que cria tarefas para validar a existência dos CIs",
+    "macete": "Para saber se ainda está lá, faça a chamada: Attestation.",
+    "conexao": "Imagine uma chamada de presença dos CIs. A política de Attestation automatiza as tarefas para confirmar sua existência.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7f40a265"
+  },
+  "3-37": {
+    "gatilho": "Contexto de negócio para priorizar vulnerabilidades e incidentes de segurança",
+    "macete": "O risco técnico ganha peso pela ponte até a aplicação de negócio.",
+    "conexao": "A ponte liga Application Services a Business Applications. Lembre do Get Well Playbook Application Services with Business Application Relationships para trazer esse contexto ao risco.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "5148d440"
+  },
+  "3-38": {
+    "gatilho": "Descobrir quais usuários foram afetados por um incidente",
+    "macete": "Quem sentiu? Pergunte em qual departamento e em qual lugar.",
+    "conexao": "Departamento e lugar apontam para Service Offerings by Department or Location, os dados que conectam o serviço aos públicos afetados no cenário do hospital.",
+    "tecnica": "Frase",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1cea19fa"
+  },
+  "3-39": {
+    "gatilho": "Relacionamento entre aplicação e servidor",
+    "macete": "A aplicação corre; o servidor é o chão.",
+    "conexao": "Leia a relação a partir da aplicação: Application Runs on Server. O par de relacionamento a reconhecer é Runs on::Runs.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "4f47c3ca"
+  },
+  "3-40": {
+    "gatilho": "Scorecard de Duplicate, Orphan e Stale",
+    "macete": "DOS pede correção: Duplicate, Orphan, Stale.",
+    "conexao": "As iniciais DOS juntam as três métricas pedidas. A palavra correção aponta para o scorecard Correctness no CMDB Health Dashboard.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0
+    ],
+    "assinatura": "332c3bfe"
+  },
+  "3-41": {
+    "gatilho": "Finalidade do CMDB Data Manager e retenção",
+    "macete": "Prazo de retenção venceu? O Manager arquiva ou apaga.",
+    "conexao": "A imagem do calendário lembra retention policies. O resultado associado ao CMDB Data Manager é automatizar archival e deletion conforme essas políticas.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "011f29cf"
+  },
+  "3-42": {
+    "gatilho": "Use case com information objects e ciclo de vida de ativos",
+    "macete": "A ficha do ativo conta sua vida dentro da aplicação de negócio.",
+    "conexao": "Para este cartão, ficha lembra information objects. Associe-os ao Asset Management team buscando asset life cycle compliancy no contexto de Business Application.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d28d74ad"
+  },
+  "3-43": {
+    "gatilho": "Domínio CSDM associado ao enterprise architect",
+    "macete": "Arquiteto começa pela prancheta e pelo plano.",
+    "conexao": "Prancheta lembra Design e plano lembra Planning. O domínio a marcar para enterprise architect é Design & Planning.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      4
+    ],
+    "assinatura": "ad402a7d"
+  },
+  "3-44": {
+    "gatilho": "Workspace único para portfólios, serviços, offerings e produtos",
+    "macete": "Um portfólio digital inteiro sobre uma única mesa.",
+    "conexao": "Mesa única lembra o unified workspace; portfólio digital aponta diretamente para Digital Portfolio Management, cobrindo a gestão coletiva ao longo do ciclo de vida.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "0c3eddf9"
+  },
+  "3-45": {
+    "gatilho": "Dois tipos de política do CMDB Data Manager",
+    "macete": "AR: Archive guarda; Retire aposenta.",
+    "conexao": "Guarde o par AR para as alternativas desta questão: Archive e Retire. A imagem é de uma pasta de arquivo ao lado de uma placa de aposentadoria.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "eea58c97"
+  },
+  "3-46": {
+    "gatilho": "Instâncias de serviço implantadas e componentes descobríveis",
+    "macete": "Já foi entregue e está implantado? Mora no Delivery.",
+    "conexao": "Entregue traduz Delivery. As deployed service instances e seus componentes relacionados e discoverable apontam para Service Delivery.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "c0bf7301"
+  },
+  "3-47": {
+    "gatilho": "Dois Dynamic Rule Types entre as alternativas",
+    "macete": "Escute a maioria e procure o menor número.",
+    "conexao": "Maioria lembra Most Reported; menor número lembra Smallest Value. São os dois nomes selecionados pelo gabarito entre as opções desta pergunta.",
+    "tecnica": "Frase",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "bb20fc8a"
+  },
+  "3-48": {
+    "gatilho": "Campos recomendados para o ciclo de vida de um CI",
+    "macete": "A vida tem dois S: Stage e Status.",
+    "conexao": "Stage guarda a etapa geral e Stage status o estado dentro dela. O par completo é Life cycle stage and stage status.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ca70a1da"
+  },
+  "3-49": {
+    "gatilho": "Grupo que preenche Assignment group em Incident e Change",
+    "macete": "Incidente pede suporte; mudança pede mudança.",
+    "conexao": "No Incident, Support group do CI preenche Assignment group. No Change Request, é Change group do CI que preenche Assignment group.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "223c2c83"
+  },
+  "3-50": {
+    "gatilho": "Domínio CSDM do Customer Service Management",
+    "macete": "Cliente consome serviço: Customer vai para Consumption.",
+    "conexao": "A palavra Customer remete ao consumidor do serviço. Associe Customer Service Management ao domínio Service Consumption.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "41e3cda9"
+  },
+  "3-51": {
+    "gatilho": "Benefícios do CMDB Data Foundations Dashboard",
+    "macete": "Filme da saúde e pistas para agir.",
+    "conexao": "Filme lembra monitorar a CMDB health ao longo do tempo. Pistas para agir lembra actionable insights para melhorar data quality e completeness.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "705e9a35"
+  },
+  "3-52": {
+    "gatilho": "Configurar Compliance para servidores sem o patch mais recente",
+    "macete": "Certifique, filtre e agende: CFA.",
+    "conexao": "Certifique aponta para Certification Policies; filtre para Data Filters; agende para Scheduled Jobs. O trio faz a checagem de compliance seguir os critérios e a programação definidos.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f120742a"
+  },
+  "3-53": {
+    "gatilho": "De onde configurar e sincronizar Managed by group",
+    "macete": "O dono se espalha pela oferta ou pela classe.",
+    "conexao": "Oferta lembra Technology Management Offerings; classe lembra CI Class Manager. São os dois caminhos apontados para configurar e sincronizar Managed by group.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "6785bf3c"
+  },
+  "3-54": {
+    "gatilho": "Ferramenta indicada no banco para relacionar service instance e offerings",
+    "macete": "Neste cartão, o gerente das classes faz as ligações.",
+    "conexao": "Gerente das classes traduz CI Class Manager, a resposta fornecida por este banco para ligar application service/service instance aos offerings ou à business application.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "observacao": "A pergunta fala em relacionar instâncias, mas o gabarito aponta CI Class Manager. O macete registra essa escolha do banco; confirme o contexto antes de generalizá-la para outros fluxos de relacionamento.",
+    "assinatura": "c5560dad"
+  },
+  "3-55": {
+    "gatilho": "Campo da política que aproveita ownership do CI Class Manager",
+    "macete": "Quem gerencia o grupo? Managed By Group.",
+    "conexao": "Ligue ownership à pergunta gerenciado por quem. Na política do CMDB Data Manager, o campo do gabarito é Managed By Group.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "2a31cd10"
+  }
+}
