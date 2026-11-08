@@ -1,3 +1,5 @@
+import { questionAudioPath } from './question-content.js';
+
 export const GUEST_ID = 'offline-guest';
 export const LOCAL_PROGRESS_KEY = 'cis-df-offline-progress-v1';
 export const AUDIO_CACHE = 'cis-df-audio-v1';
@@ -45,7 +47,7 @@ export function renderOfflineTools(root, questions, preparation) {
   const button = root.querySelector('[data-offline-audio]');
   if ('caches' in window) caches.open(AUDIO_CACHE).then(async cache => {
     const saved = new Set((await cache.keys()).map(request => request.url));
-    const count = questions.filter(q => saved.has(new URL(`./audio/${q.id}.mp3`, import.meta.url).href)).length;
+    const count = questions.filter(q => saved.has(new URL(questionAudioPath(q), import.meta.url).href)).length;
     if (count && !downloading) root.querySelector('[data-offline-audio-status]').textContent = `${count} de ${questions.length} áudios disponíveis offline.`;
   }).catch(()=>{});
   button.onclick = async () => {
@@ -59,7 +61,7 @@ export function renderOfflineTools(root, questions, preparation) {
       const results = await Promise.allSettled(Array.from({length:3}, async () => {
         while (!stopped && cursor < questions.length) {
           const q = questions[cursor++];
-          const url = new URL(`./audio/${q.id}.mp3`, import.meta.url).href;
+          const url = new URL(questionAudioPath(q), import.meta.url).href;
           try { if (!await cache.match(url)) await cache.add(new Request(url, {cache:'reload'})); }
           catch(error) { stopped=true; throw error; }
           status.textContent = `${++completed} de ${questions.length} áudios salvos…`;

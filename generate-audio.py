@@ -13,7 +13,16 @@ VOICE = 'en-US-AndrewMultilingualNeural'
 
 def narration(question):
     answers = [a['texto'] for a in question['alternativas'] if a['correta']]
-    text = question['pergunta'].strip()
+    context = question.get('contexto') or {}
+    parts = [context.get('introducao', '')]
+    table = context.get('tabela') or {}
+    if table:
+        parts.append(table.get('titulo', ''))
+        for row in table.get('linhas', []):
+            parts.append('. '.join(f'{column}: {value}' for column, value in zip(table.get('colunas', []), row)) + '.')
+    parts.extend(context.get('paragrafos', []))
+    parts.append(question['pergunta'])
+    text = '\n\n'.join(part.strip() for part in parts if part.strip())
     text = re.sub(r'(?<=[a-z])\.(?=[A-Z])', '. ', text)
     if text[-1:] not in '.?!':
         text += '.'

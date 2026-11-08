@@ -1188,27 +1188,45 @@
     ]
   },
   {
-    "pergunta": "Hardware (serial_number) 200Hardware (name) 300Network Adapter (mac_address, name) 400Two new CI records are imported into the hardware class of the CMDB:CI1: The name of this CI record matches the name of an existing CI record in the CMDB.CI2: The IP address of this CI record matches the IP address of an existing CI record in the CMDB.Which is correct based on the identification rule and the imported CI records?",
+    "pergunta": "Based only on the identifier entries and matches shown, what happens to CI1 and CI2?",
+    "contexto": {
+      "introducao": "The Hardware identification rule contains the following identifier entries. Entries are evaluated in priority order, starting with the lowest number.",
+      "tabela": {
+        "titulo": "Hardware identification rule — identifier entries",
+        "colunas": ["Search on table", "Criterion attributes", "Priority"],
+        "linhas": [
+          ["Hardware", "serial_number", "200"],
+          ["Hardware", "name", "300"],
+          ["Network Adapter", "mac_address, name", "400"]
+        ]
+      },
+      "paragrafos": [
+        "Two new CI records are imported into the Hardware class of the CMDB:",
+        "CI1: Only its name matches an existing CI.",
+        "CI2: Only its IP address matches an existing CI."
+      ]
+    },
+    "audio_version": 2,
     "alternativas": [
       {
-        "texto": "CI1 will be inserted as new record and CI2 will be updated with matching record.",
+        "texto": "CI1: Insert a new record.\nCI2: Update the existing record.",
         "correta": false,
-        "explicacao": "CI1 will not be inserted as a new record because the name matches an existing record in the CMDB, so it will be updated with the matching record. CI2, on the other hand, will be inserted as a new record because the identification rule is based on IP address, and there is no existing record with the same IP address."
+        "explicacao": "The outcomes are reversed. CI1 matches the Hardware name criterion (priority 300), so the existing record is updated. CI2 matches only an IP address, which is not a criterion in the entries shown, so a new record is inserted."
       },
       {
-        "texto": "CI1 will be updated with matching record and CI2 will be inserted as new record.",
+        "texto": "CI1: Update the existing record.\nCI2: Insert a new record.",
         "correta": true,
-        "explicacao": "CI1 will be updated with the matching record because the name of the CI matches an existing record in the CMDB. CI2 will be inserted as a new record since the identification rule is based on IP address, and there is no existing record with the same IP address."
+        "explicacao": "CI1 matches the Hardware name criterion (priority 300), so the existing record is updated. CI2 matches only an IP address. The entries shown use serial_number, name, and mac_address/name; they do not use ip_address. With no match on these configured criteria, CI2 is inserted as a new record."
       },
       {
-        "texto": "CI1 and CI2 both will be updated with matching records.",
+        "texto": "CI1: Update the existing record.\nCI2: Update the existing record.",
         "correta": false,
-        "explicacao": "CI1 will be updated with the matching record because the name of the CI matches an existing record in the CMDB. However, CI2 will not be updated with a matching record as the identification rule is based on IP address, not name."
+        "explicacao": "Only CI1 is identified by the configured name criterion. A matching IP address alone does not identify CI2 under the entries shown, so CI2 is inserted rather than updated."
       },
       {
-        "texto": "CI1 and CI2 both will be inserted as new records.",
+        "texto": "CI1: Insert a new record.\nCI2: Insert a new record.",
         "correta": false,
-        "explicacao": "CI1 will not be inserted as a new record because the name matches an existing record in the CMDB, so it will be updated with the matching record. CI2 will also be inserted as a new record because the identification rule is based on IP address, and there is no existing record with the same IP address."
+        "explicacao": "CI2 is inserted because its IP-address match does not satisfy any configured criterion shown. CI1 is not inserted: its name matches an existing Hardware CI, so that existing record is updated."
       }
     ]
   },

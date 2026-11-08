@@ -19,7 +19,12 @@ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const url=`http://127.0.0.1:${server.address().port}/`;
 let browser;
 async function selectAnswer(page, selector) {
-  if (await page.locator(selector).count()) { await page.locator(selector).first().check(); return; }
+  if (await page.locator(selector).count()) {
+    const instructions = await page.locator('.quiz-layout > section > p.muted').textContent();
+    const required = Number(/Selecione (\d+) alternativas/.exec(instructions)?.[1] || 1);
+    for (let i = 0; i < required; i++) await page.locator(selector).nth(i).check();
+    return;
+  }
   for (const target of await page.locator('[data-match-place]').all()) {
     await page.locator('[data-match-bank] [data-match-item]').first().click();
     await target.click();

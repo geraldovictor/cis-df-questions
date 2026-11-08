@@ -36,6 +36,10 @@ As 14 questões de associação (com `->`, `→`, `=>` ou `⇒`) usam cartões d
 
 `npm test` verifica o gabarito, os distratores e a compatibilidade das associações. Para validar arraste com mouse e toque, teclado, troca/remoção, correção, retomada offline e layout móvel, execute `node tests/matching-browser.mjs` com `PLAYWRIGHT_PATH` apontando para o `index.mjs` do `playwright-core` e, opcionalmente, `BROWSER_PATH` para Chrome/Edge.
 
+A questão de identificação de Hardware (`2-50`) inclui contexto estruturado e uma tabela com as prioridades 200, 300 e 400. O contexto também aparece nas revisões, flashcards e transcrição. As alternativas separam os resultados de CI1 e CI2; o gabarito continua com o mesmo índice, preservando respostas salvas. A revisão técnica usa a [documentação de regras de identificação](https://www.servicenow.com/docs/r/servicenow-platform/configuration-management-database-cmdb/t_CreateCIIdentificationRule.html) e os [fundamentos do IRE](https://hi.service-now.com/kb?id=kb_article_view&sysparm_article=KB1064718): os atributos configurados determinam a correspondência; um IP coincidente sozinho não satisfaz os critérios desse exercício.
+
+`node tests/identification-browser.mjs` usa as mesmas variáveis de navegador para verificar a tabela, as alternativas, a correção, a retomada offline e a apresentação móvel. Quando uma gravação for refeita, incremente `audio_version` nessa questão: o download offline reaproveita as demais gravações e busca a versão atualizada.
+
 Checklist após configurar o Supabase: cadastrar e confirmar um e-mail; entrar; responder uma questão simples e uma múltipla; recarregar e retomar; finalizar; revisar; sair; entrar com uma segunda conta e confirmar que o histórico da primeira não aparece; testar recuperação de senha e falha de rede.
 
 O site é uma ferramenta pessoal de estudo, sem vínculo oficial com ServiceNow. Os JSONs e gabaritos são arquivos estáticos acessíveis publicamente se o site for público. O login protege os resultados pessoais no banco, não o banco de questões. A pontuação é calculada no cliente e não deve ser usada para avaliações certificadas.
