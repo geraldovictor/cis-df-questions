@@ -2,7 +2,7 @@ const matchingQuestions = new WeakMap();
 
 function parsePairs(text) {
   const lines = String(text ?? '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
-  const pairs = lines.map(line => /^([A-Z])\.\s*(.*?)\s*(?:->|→)\s*(\d+)\.\s*(.*)$/.exec(line));
+  const pairs = lines.map(line => /^([A-Z])\.\s*(.*?)\s*(?:->|=>|→|⇒)\s*(\d+)(?:\.|\s+[-–—])\s*(.*)$/.exec(line));
   if (pairs.length < 2 || pairs.some(pair => !pair)) return null;
   return pairs.map(pair => ({item: pair[1], target: pair[3]}));
 }
@@ -15,12 +15,13 @@ function parseMatchingQuestion(question) {
 
   const text = String(question.pergunta ?? '');
   const itemStart = text.search(/A\.\s*/);
-  const targetOffset = itemStart < 0 ? -1 : text.slice(itemStart).search(/1\.\s*/);
+  const targetOffset = itemStart < 0 ? -1 : text.slice(itemStart).search(/1(?:\.\s*|\s+[-–—]\s*)/);
   if (targetOffset < 0) return null;
   const targetStart = itemStart + targetOffset;
-  const items = [...text.slice(itemStart, targetStart).matchAll(/([A-Z])\.\s*([\s\S]*?)(?=[A-Z]\.\s*|$)/g)]
+  const itemText = text.slice(itemStart, targetStart).replace(/Some options may not apply\.\s*$/i, '').trim();
+  const items = [...itemText.matchAll(/([A-Z])\.\s*([\s\S]*?)(?=[A-Z]\.\s*|$)/g)]
     .map(match => ({id: match[1], text: match[2].trim()}));
-  const targets = [...text.slice(targetStart).matchAll(/(\d+)\.\s*([\s\S]*?)(?=\d+\.\s*|$)/g)]
+  const targets = [...text.slice(targetStart).matchAll(/(\d+)(?:\.\s*|\s+[-–—]\s*)([\s\S]*?)(?=\d+(?:\.\s*|\s+[-–—]\s*)|$)/g)]
     .map(match => ({id: match[1], text: match[2].trim()}));
   if (items.length < 2 || targets.length < 2 || items.some(item => !item.text) || targets.some(target => !target.text) ||
       new Set(items.map(item => item.id)).size !== items.length || new Set(targets.map(target => target.id)).size !== targets.length ||

@@ -132,6 +132,32 @@ try {
   assert.match(await page.locator('.result-banner').textContent(), /1 acertos/);
   await page.locator('#study-reviews details').first().locator('summary').click();
   assert.equal(await page.locator('#study-reviews details').first().locator('.matching-target.is-wrong').count(), 1);
+
+  // Keep every source arrow format in the interactive flow, including saved choices.
+  const formats = await page.evaluate(async () => {
+    const { createStudy } = await import('./study.js');
+    const { getMatchingQuestion } = await import('./matching.js');
+    const files = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json'];
+    const sets = await Promise.all(files.map(file => fetch(file).then(response => response.json())));
+    const bank = sets.flatMap((set, f) => set.map((q, i) => ({ ...q, id: `${f + 1}-${i + 1}` })));
+    const ids = ['3-34', '3-5', '3-7', '3-8', '2-72'];
+    const study = createStudy(bank, 'offline-guest');
+    study.state.ids = [...ids, ...study.state.ids.filter(id => !ids.includes(id))];
+    study.state.answers['3-34'] = [1];
+    localStorage.setItem('cis-df-offline-progress-v1', JSON.stringify({ attempts: [], studies: [study] }));
+    return ids.map(id => getMatchingQuestion(bank.find(q => q.id === id)));
+  });
+  await page.reload(); await page.locator('#study-start').click();
+  assert.equal(await page.locator('[data-match-target] [data-match-item]').count(), 4);
+  for (const model of formats) {
+    assert.equal(await page.locator('[name=study-answer]').count(), 0);
+    assert.equal(await page.locator('[data-match-target]').count(), model.targets.length);
+    await answer(page, model.solution);
+    await page.locator('#study-check').click();
+    assert.match(await page.locator('.study-feedback').textContent(), /Você acertou/);
+    assert.equal(await page.locator('.matching-target.is-correct').count(), model.targets.length);
+    await page.locator('#study-next').click();
+  }
   await context.close();
 
   const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
@@ -159,5 +185,5 @@ try {
   await phone.screenshot({ path: resolve(root, 'test-results/matching-mobile.png'), fullPage: true });
   await mobile.close();
   assert.deepEqual(errors, []);
-  console.log('PASS: mouse drag, keyboard/touch selection, swap/remove, draft reload, legacy choice UI, scoring/review, study confirmation/locking, distractors, offline reload and mobile layout');
+  console.log('PASS: all source arrow formats, reported CMDB team question, saved choices, mouse/touch/keyboard, swap/remove, scoring/review, study locking, offline reload and mobile layout');
 } finally { await browser?.close(); await new Promise(done => server.close(done)); }

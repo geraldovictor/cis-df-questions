@@ -13,8 +13,8 @@ const matchingQuestions = questions.filter(getMatchingQuestion);
 const tokens = (question, assignments = getMatchingQuestion(question).solution) =>
   Object.entries(assignments).map(([target, item]) => `match:${target}:${item}`);
 
-test('all ten association questions parse their complete source lists and original answer keys', () => {
-  assert.deepEqual(matchingQuestions.map(question => question.id), ['1-6', '1-21', '1-22', '1-35', '1-37', '1-68', '2-19', '2-24', '2-25', '2-72']);
+test('all fourteen association questions parse their complete source lists and original answer keys', () => {
+  assert.deepEqual(matchingQuestions.map(question => question.id), ['1-6', '1-21', '1-22', '1-35', '1-37', '1-68', '2-19', '2-24', '2-25', '2-72', '3-5', '3-7', '3-8', '3-34']);
   for (const question of matchingQuestions) {
     const matching = getMatchingQuestion(question);
     assert.ok(matching.prompt);
@@ -35,6 +35,39 @@ test('all ten association questions parse their complete source lists and origin
   assert.equal(getMatchingQuestion(questions.find(question => question.id === '2-25')).prompt, 'Match each item to its description.');
 });
 
+test('CMDB team question exposes four draggable roles and retains its source answer key', () => {
+  const question = questions.find(question => question.id === '3-34');
+  const matching = getMatchingQuestion(question);
+  assert.equal(matching.prompt, 'A new ServiceNow customer is assembling a Configuration Management team to support their CMDB.');
+  assert.deepEqual(matching.items.map(item => item.text), ['CI Analyst', 'CMDB Process Owner', 'Configuration Manager/CMDB Admin', 'Service of Product Owner']);
+  assert.equal(matching.targets.length, 4);
+  assert.deepEqual(matching.solution, {1: 'A', 2: 'D', 3: 'C', 4: 'B'});
+  assert.ok(isCorrect(question, ['match:1:A', 'match:2:D', 'match:3:C', 'match:4:B']));
+  assert.equal(isCorrect(question, ['match:1:A', 'match:2:B', 'match:3:C', 'match:4:D']), false);
+  assert.deepEqual(getMatchingAssignments(question, [1]), matching.solution);
+});
+
+test('all supported arrow and target-list separators parse the same associations', () => {
+  const source = questions.find(question => question.id === '3-34');
+  for (const arrow of ['->', '→', '=>', '⇒']) {
+    for (const separator of ['. ', ' - ']) {
+      const question = {
+        ...source,
+        pergunta: source.pergunta.replace(/(\d)\.\s*/g, `$1${separator}`),
+        alternativas: source.alternativas.map(option => ({...option, texto: option.texto.replaceAll('=>', arrow)}))
+      };
+      assert.deepEqual(getMatchingQuestion(question)?.solution, {1: 'A', 2: 'D', 3: 'C', 4: 'B'}, `${arrow} / ${separator}`);
+      assert.ok(isCorrect(question, tokens(question)));
+      assert.ok(isMatchingComplete(question, [1]));
+    }
+  }
+  const importTools = getMatchingQuestion(questions.find(question => question.id === '3-7'));
+  assert.equal(importTools.items.length, 5);
+  assert.equal(importTools.items.find(item => item.id === 'E').text, 'Pre-built store integration solutions that require minimal customization');
+  assert.deepEqual(importTools.targets.map(target => target.text), ['Agent Client Collector', 'Import Sets', 'Service Graph Connector', 'ServiceNow Discovery']);
+  assert.deepEqual(importTools.solution, {1: 'B', 2: 'A', 3: 'D', 4: 'E'});
+});
+
 test('complete wrong assignments score zero; partial, duplicate, and invalid answers cannot be confirmed', () => {
   const question = matchingQuestions[0], correct = tokens(question);
   const wrong = ['match:1:B', 'match:2:A', 'match:3:C', 'match:4:D'];
@@ -52,11 +85,12 @@ test('complete wrong assignments score zero; partial, duplicate, and invalid ans
 });
 
 test('legacy numeric answers keep their original grade and restore their visible assignments', () => {
+  const duplicateTargetOptions = new Set(['3-5:0', '3-8:3']);
   for (const question of matchingQuestions) {
     question.alternativas.forEach((option, index) => {
       assert.equal(isCorrect(question, [index]), option.correta);
       assert.ok(Object.keys(getMatchingAssignments(question, [index])).length > 0);
-      assert.equal(isMatchingComplete(question, [index]), true);
+      assert.equal(isMatchingComplete(question, [index]), !duplicateTargetOptions.has(`${question.id}:${index}`));
     });
     const index = question.alternativas.findIndex(option => option.correta);
     assert.deepEqual(getMatchingAssignments(question, [index]), getMatchingQuestion(question).solution);
@@ -69,7 +103,7 @@ test('association answers survive JSON persistence, contribute one point and loc
   const simulation = createAttempt(questions, 'test');
   simulation.state.ids = matchingQuestions.map(question => question.id);
   for (const question of matchingQuestions) simulation.state.answers[question.id] = tokens(question);
-  assert.equal(scoreAttempt(JSON.parse(JSON.stringify(simulation)), byId), 10);
+  assert.equal(scoreAttempt(JSON.parse(JSON.stringify(simulation)), byId), 14);
   const question = matchingQuestions[0], selected = tokens(question), study = createStudy([question], 'test');
   assert.ok(confirmStudyAnswer(study, question, selected));
   selected.pop();
