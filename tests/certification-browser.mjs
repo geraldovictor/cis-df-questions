@@ -13,7 +13,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75, audio: 'audio/' },
   { id: 'cis-em', count: 116, examSize: 30, audio: 'audio/cis-em/' },
-  { id: 'cis-cad', count: 150, examSize: 60, audio: 'audio/cis-cad/' }
+  { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' }
 ];
 const server = createServer(async (req, res) => {
   const path = resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://localhost').pathname));
@@ -214,6 +214,85 @@ async function assertAccountIsolation(browser) {
   await context.close();
 }
 
+async function assertCadSupplement(browser) {
+  const course = courses.find(item => item.id === 'cis-cad');
+  const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
+  const added = questions.find(question => question.id === 'cad-srNSvJT2oarIvswoZGsi');
+  const original = questions.filter(question => question.id !== added.id), lastOriginal = original.at(-1);
+  assert.equal(original.length, 150);
+  const quiz = createAttempt(original, 'offline-guest', course.id), study = createStudy(original, 'offline-guest', course.id);
+  quiz.state.cursor = 2; study.state.cursor = 3;
+  quiz.state.answers[quiz.state.ids[0]] = [0];
+  const progress = { attempts: [quiz], studies: [study] };
+  const knownId = original[0].id;
+  const context = await browser.newContext({ viewport: { width: 1280, height: 960 } });
+  await context.route('https://**/*', route => route.abort());
+  await context.addInitScript(({ progress, knownId, ids, lastId }) => {
+    if (localStorage.getItem('__supplementSeeded')) return;
+    localStorage.setItem('__supplementSeeded', 'true');
+    localStorage.setItem('cis-cad-offline-progress-v1', JSON.stringify(progress));
+    localStorage.setItem('cis-cad-flashcards-offline-guest', JSON.stringify({ marks: { [knownId]: 'known' }, currentId: lastId }));
+    localStorage.setItem('cis-cad-memory-v1-offline-guest', JSON.stringify({ marks: { [knownId]: 'known' }, order: ids, currentId: lastId, mode: 'learn', filter: 'all' }));
+  }, { progress, knownId, ids: original.map(question => question.id), lastId: lastOriginal.id });
+  const page = await context.newPage();
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto(`${url}?cert=cis-cad&mode=offline`);
+  await page.locator('#start').waitFor();
+  assert.deepEqual(await saved(page, progressKey(course.id)), progress);
+  assert.equal(await page.locator('#audio-question option').count(), 151);
+  await page.locator('#start').click();
+  assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 3 de 60/);
+  await page.locator('#back').click();
+  assert.deepEqual((await saved(page, progressKey(course.id))).attempts[0], quiz);
+  await page.locator('#study-start').click();
+  assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 4 de 150/);
+  await page.locator('#study-finish').click();
+  await page.locator('#study-confirm-finish').click();
+  await page.locator('#study-back').click();
+  await page.locator('#study-start').click();
+  const expanded = (await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at);
+  assert.equal(expanded.total, 151);
+  assert.ok(expanded.state.ids.includes(added.id));
+  await page.locator(`[data-study-jump="${expanded.state.ids.indexOf(added.id)}"]`).click();
+  assert.equal(await page.locator('.question-title').textContent(), added.pergunta);
+  await answerCorrectly(page, course, 'study');
+  await page.locator('#study-check').click();
+  assert.match(await page.locator('.study-feedback').textContent(), /Você acertou/);
+  await page.locator('#study-back').click();
+  await page.locator('.flashcards > summary').click();
+  assert.equal(await page.locator('.flashcard-face h3').textContent(), lastOriginal.pergunta);
+  assert.match(await page.locator('[data-fc-stats]').textContent(), /1 já sei/);
+  await page.locator('[data-fc-next]').click();
+  assert.equal(await page.locator('.flashcard-face h3').textContent(), added.pergunta);
+  await page.locator('[data-fc-flip]').click();
+  assert.ok((await page.locator('.flashcard-answer').textContent()).includes('Can create, Can update, and Can delete'));
+  await page.locator('[data-fc-rate="known"]').click();
+  assert.equal((await saved(page, flashKey(course.id))).marks[knownId], 'known');
+  assert.equal((await saved(page, flashKey(course.id))).marks[added.id], 'known');
+  await page.locator('#memory-start').click();
+  await page.locator('[data-memory-jump]').waitFor();
+  assert.equal(await page.locator('[data-memory-jump] option').count(), 151);
+  assert.equal(await page.locator('[data-memory-jump]').inputValue(), lastOriginal.id);
+  await page.locator('[data-memory-jump]').selectOption(added.id);
+  await page.locator('[data-memory-reveal]').click();
+  assert.ok((await page.locator('.memory-answer').textContent()).includes('Can create, Can update, and Can delete'));
+  await page.locator('[data-memory-rate="known"]').click();
+  const memory = await saved(page, memoryKey(course.id));
+  assert.equal(memory.marks[knownId], 'known');
+  assert.equal(memory.marks[added.id], 'known');
+  assert.equal(memory.order.at(-1), added.id);
+  await page.locator('[data-memory-back]').click();
+  await page.locator('#audio-question').selectOption(String(questions.indexOf(added)));
+  assert.ok((await page.locator('#question-audio').getAttribute('src')).endsWith(`/audio/cis-cad/${added.id}.mp3`));
+  await downloadCourseAudio(page, course);
+  await context.setOffline(true);
+  await page.reload();
+  await page.locator('#start').waitFor();
+  assert.ok((await page.locator('#question-audio').getAttribute('src')).endsWith(`/audio/cis-cad/${added.id}.mp3`));
+  await assertOfflineAudio(page, course);
+  await context.close();
+}
+
 async function assertHotspotAnswerVisibility(browser) {
   const course = courses.find(item => item.id === 'cis-em');
   const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
@@ -400,8 +479,9 @@ try {
   await context.close();
   await assertAccountIsolation(browser);
   await assertHotspotAnswerVisibility(browser);
+  await assertCadSupplement(browser);
   assert.deepEqual(errors, []);
-  console.log('PASS: CIS-DF/CIS-EM/CAD banks, navigation, independent quiz/study/history/flashcard/memory progress, 266 new cached recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation and hotspot answer-image reveal');
+  console.log('PASS: CIS-DF/CIS-EM/CAD banks, navigation, independent quiz/study/history/flashcard/memory progress, 267 cached EM/CAD recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation and hotspot answer-image reveal');
 } finally {
   await browser?.close();
   await new Promise(done => server.close(done));

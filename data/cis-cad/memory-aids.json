@@ -1558,5 +1558,15 @@
     ],
     "assinatura": "cfcdcd8f",
     "observacao": "O trecho de código contém delimitadores de comentário incompletos no arquivo original. O código e o gabarito foram preservados."
+  },
+  "cad-srNSvJT2oarIvswoZGsi": {
+    "gatilho": "Can read desmarcado em Application Access",
+    "macete": "Sem leitura, o trio de escrita fica indisponível: create, update e delete.",
+    "conexao": "A pergunta pede quais campos ficam indisponíveis quando Can read não está selecionado. Associe a dependência de leitura ao conjunto completo do gabarito: Can create, Can update, and Can delete.",
+    "tecnica": "Associação em trio",
+    "respostas": [
+      1
+    ],
+    "assinatura": "bd02eb8b"
   }
 }

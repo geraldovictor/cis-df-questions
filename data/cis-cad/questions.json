@@ -4492,5 +4492,41 @@
     "source_id": "QST0001018",
     "source_type": "simple_choice",
     "observacao": "O trecho de código contém delimitadores de comentário incompletos no arquivo original. O código e o gabarito foram preservados."
+  },
+  {
+    "id": "cad-srNSvJT2oarIvswoZGsi",
+    "certification": "cis-cad",
+    "pergunta": "Which Application Access configuration field(s) are NOT available if the Can read configuration field is NOT selected?",
+    "alternativas": [
+      {
+        "texto": "All access to this table via web services",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can create, Can update, and Can delete",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can read does not affect the availability of other Application Access fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Allow configuration",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "srNSvJT2oarIvswoZGsi",
+    "source_type": "simple_choice",
+    "fonte": {
+      "id": "srNSvJT2oarIvswoZGsi",
+      "numero": 5,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/72024-exam-cad-topic-1-question-5-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B"
+    }
   }
 ]

@@ -1,0 +1,2291 @@
+{
+  "certification": "cis-cad",
+  "imported_at": "2026-11-15",
+  "source": {
+    "exam": "CAD",
+    "provider": "ServiceNow",
+    "repository": "https://github.com/thatonecodes/examtopics-data",
+    "retrieved_at_utc": "2026-11-15T02:35:34.375951+00:00",
+    "records_supplied": 146
+  },
+  "previous_total": 150,
+  "previous_questions_sha256": "d1f9dffd3d852fe9fa49a69944f417daa3215360f6780d0748b046e85685b5f0",
+  "previous_memory_aids_sha256": "4f97b831741f581eb48cd3c64eb2620499c56f4d0c8442ea4e82cf885baf046b",
+  "policy": "Acrescentar somente questões ausentes. Preservar os registros e gabaritos existentes, inclusive quando a fonte suplementar apresenta respostas diferentes. Imagens e listas expandidas foram comparadas por cenário.",
+  "decisions": [
+    {
+      "source_id": "S5F8JR1kRLdp6wcimJGI",
+      "source_number": 1,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/82736-exam-cad-topic-1-question-1-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001001",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "a, b, and c"
+      ],
+      "existing_correct_answers": [
+        "a, b, and c"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "MUwot5AmDy43dZrGs5AW",
+      "source_number": 2,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/82737-exam-cad-topic-1-question-2-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001002",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "a, b and c"
+      ],
+      "existing_correct_answers": [
+        "a, b andc"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "yyW6AYgbnMIAtB06qqLz",
+      "source_number": 3,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/66877-exam-cad-topic-1-question-3-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001003",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Examine the Application Files Related List in the application to be published"
+      ],
+      "existing_correct_answers": [
+        "Open the list of Update Sets for the instance"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "kGlEjdCHSF1X7VW0iL3W",
+      "source_number": 4,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/71307-exam-cad-topic-1-question-4-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001004",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.log()"
+      ],
+      "existing_correct_answers": [
+        "gs.log()"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "srNSvJT2oarIvswoZGsi",
+      "source_number": 5,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/72024-exam-cad-topic-1-question-5-discussion/",
+      "action": "added",
+      "added_id": "cad-srNSvJT2oarIvswoZGsi",
+      "original_question": "Which Application Access configuration field(s) are NOT available if the Can read configuration field is NOT selected?",
+      "original_choices": {
+        "B": "Can create, Can update, and Can delete",
+        "A": "All access to this table via web services",
+        "D": "Allow configuration",
+        "C": "Can read does not affect the availability of other Application Access fields"
+      },
+      "original_answer": "B",
+      "original_answer_ET": "B"
+    },
+    {
+      "source_id": "xw0QvmsV1ymIts2A8IjD",
+      "source_number": 6,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90874-exam-cad-topic-1-question-6-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001006",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Outbound Email"
+      ],
+      "existing_correct_answers": [
+        "Outbound Email"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "Wjanms5dqGufpcJC5mf5",
+      "source_number": 7,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/82740-exam-cad-topic-1-question-7-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001007",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Table"
+      ],
+      "existing_correct_answers": [
+        "Table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "DL1Y3Lr1Cgtx4eILb0Y9",
+      "source_number": 8,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73888-exam-cad-topic-1-question-8-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001008",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "A Weight value of zero means that no email should be sent"
+      ],
+      "existing_correct_answers": [
+        "A Weight value of zero means that no email should be sent"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "fJuPD1yFTgO6pS31HPga",
+      "source_number": 9,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/77307-exam-cad-topic-1-question-9-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001009",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "previous"
+      ],
+      "existing_correct_answers": [
+        "previous"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "Q0IxY93CRskr4HAKZqDd",
+      "source_number": 10,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64109-exam-cad-topic-1-question-10-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001010",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Automated Test Framework",
+        "Flow Designer"
+      ],
+      "existing_correct_answers": [
+        "Delegated Development",
+        "Flow Designer"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "fSqSvSy88xFxImvarzLn",
+      "source_number": 11,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/74912-exam-cad-topic-1-question-11-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001011",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Form choice"
+      ],
+      "existing_correct_answers": [
+        "Form choice"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "UtUmrRPY4pTL4Y6JlLxN",
+      "source_number": 12,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/82745-exam-cad-topic-1-question-12-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001012",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Test a flow with rollback"
+      ],
+      "existing_correct_answers": [
+        "Test a flow with rollback"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "VQ7UTMJhXK5IzjWWPZcs",
+      "source_number": 13,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64112-exam-cad-topic-1-question-13-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001013",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Can be a graphical representation of data.",
+        "Can be run on demand by authorized users.",
+        "Can be scheduled to be run and distributed by email."
+      ],
+      "existing_correct_answers": [
+        "Any user can see any report shared with them.",
+        "Can be a graphical representation of data.",
+        "Can be run on demand by authorized users."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "CIcPyXAEiksSnSzeM1Aj",
+      "source_number": 14,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/78197-exam-cad-topic-1-question-14-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001014",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Assessment, List of Records, Separator, Timeline Page"
+      ],
+      "existing_correct_answers": [
+        "Assessment, List of Records, Separator, Timeline Page"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "b3N1PPmzyko2LOFmvMYr",
+      "source_number": 15,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/87480-exam-cad-topic-1-question-15-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001015",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Out of scope applications can create Business Rules for the table"
+      ],
+      "existing_correct_answers": [
+        "Out of scope applications can create Business Rules for the table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "nxCBCfqQu4VgRtMzOje2",
+      "source_number": 16,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/102949-exam-cad-topic-1-question-16-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001016",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "child table"
+      ],
+      "existing_correct_answers": [
+        "child table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "WkxEwEQ6Ltt4HNfjcn4r",
+      "source_number": 17,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64113-exam-cad-topic-1-question-17-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001017",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "A UI Policy's Actions execute before the UI Policy's Scripts"
+      ],
+      "existing_correct_answers": [
+        "A UI Policy's Scripts execute before the UI Policy's Actions"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "LCGeW0VPCSZrgeFQXx63",
+      "source_number": 18,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64114-exam-cad-topic-1-question-18-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001018",
+      "comparison": "reviewed-same-scenario",
+      "reason": "Mesmo template executeRule apresentado como imagem em vez de código no enunciado.",
+      "source_correct_answers": [
+        "Self-invoking"
+      ],
+      "existing_correct_answers": [
+        "Scoped"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "cT38DWRCnLR3NJfNxpRS",
+      "source_number": 19,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/61951-exam-cad-topic-1-question-19-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001019",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "g_user.hasRoleExactly('catalog_admin')"
+      ],
+      "existing_correct_answers": [
+        "g_user.hasRoleOnly('catalog_admin')"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "dOjEuoupn2vQ166Lzu9o",
+      "source_number": 20,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/102859-exam-cad-topic-1-question-20-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001020",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Identify the table"
+      ],
+      "existing_correct_answers": [
+        "Identify the table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "duDypH49tzd6PI1rV10P",
+      "source_number": 21,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90725-exam-cad-topic-1-question-21-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001021",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "source_control",
+        "admin"
+      ],
+      "existing_correct_answers": [
+        "source_control",
+        "admin"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "71AQQ8oCtBnCo0uCrWUn",
+      "source_number": 22,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/61952-exam-cad-topic-1-question-22-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001022",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "${event.<property name>}"
+      ],
+      "existing_correct_answers": [
+        "${<property name>.getDisplayValue()}"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "HUpKT03tHmVbSqRLMF8F",
+      "source_number": 23,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64115-exam-cad-topic-1-question-23-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001023",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The Protection Policy is applied only if the application is downloaded from the ServiceNow App Store"
+      ],
+      "existing_correct_answers": [
+        "The Protection policy option can only be enabled by a user with the admin role"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "WjZO2Y2wNLcrfu0KIhAI",
+      "source_number": 24,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/92618-exam-cad-topic-1-question-24-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001024",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Can be used in Client Scripts, UI Policies, and UI Actions"
+      ],
+      "existing_correct_answers": [
+        "Can be used in Client Scripts, UI Policies, and Ul Actions"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "nyT3KrznktHmB9YzsRxW",
+      "source_number": 25,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64116-exam-cad-topic-1-question-25-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001025",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Users with the module role but without access to the application menu access the module"
+      ],
+      "existing_correct_answers": [
+        "Users with access to the application menu can see the module even if they don't have the module role"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "KfOSTuUNfCeXMg5lA2f8",
+      "source_number": 26,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/107786-exam-cad-topic-1-question-26-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001026",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Transform Map"
+      ],
+      "existing_correct_answers": [
+        "Transform Map"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "ya1k5yZFLaTDjCnyMs7u",
+      "source_number": 27,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/107928-exam-cad-topic-1-question-27-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001027",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The URI of the data to be accessed, queried, or modified"
+      ],
+      "existing_correct_answers": [
+        "The URI of the data to be accessed, queried, or modified"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "Pt0pyBNMogaEhj8G8CpL",
+      "source_number": 28,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64117-exam-cad-topic-1-question-28-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001028",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "From the most specific match to the most generic match"
+      ],
+      "existing_correct_answers": [
+        "Only for matches on the current table"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "bE271AsuauAE7wf5KLGo",
+      "source_number": 29,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64118-exam-cad-topic-1-question-29-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001029",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.hasRole('admin')"
+      ],
+      "existing_correct_answers": [
+        "g_form.hasRole('admin')"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "w7Md5DNBr74XJtMFge9c",
+      "source_number": 30,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108176-exam-cad-topic-1-question-30-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001030",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Requires ג€as-isג€ use of low-level programming libraries"
+      ],
+      "existing_correct_answers": [
+        "Requires \"as-is\" use of low-level programming libraries"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "T0zDZ7LrY9zaFG2t0vbc",
+      "source_number": 31,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64119-exam-cad-topic-1-question-31-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001031",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Administrators can grant non-admin users the ability to develop global applications."
+      ],
+      "existing_correct_answers": [
+        "Administrators can specify which application file types the developer can access."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "mKSkoD3FOkcCHreQaZy8",
+      "source_number": 32,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/121051-exam-cad-topic-1-question-32-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001032",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create sample code for sending REST requests to ServiceNow"
+      ],
+      "existing_correct_answers": [
+        "Create sample code for sending REST requests to ServiceNow"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "tMIWI4AvA4RTY5jSNWoO",
+      "source_number": 33,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64120-exam-cad-topic-1-question-33-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001033",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Applications downloaded from 3 party ServiceNow application developers cannot have naming conflicts rd"
+      ],
+      "existing_correct_answers": [
+        "Developers can choose the prefix for a scope's namespace"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "NzK7q8XHyaVkfpFEyCXe",
+      "source_number": 34,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64121-exam-cad-topic-1-question-34-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001034",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Only artifacts in the table's application can read from the table"
+      ],
+      "existing_correct_answers": [
+        "All application scopes can read from the table"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "HrTb81gIijwdXyeWNXi8",
+      "source_number": 35,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64122-exam-cad-topic-1-question-35-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001035",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Provide a way of tracking the user who developed an application"
+      ],
+      "existing_correct_answers": [
+        "Provide controls for how scripts from another scope can alter tables in a scoped application"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "yABNrsHQSSi0B13XvUGl",
+      "source_number": 36,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/110068-exam-cad-topic-1-question-36-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001036",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Business problem, data input/output, users/stakeholders, and process steps"
+      ],
+      "existing_correct_answers": [
+        "Business problem, data input/output, users/stakeholders, and process steps"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "cvLDyN2umM9WoQrzJwz8",
+      "source_number": 37,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64123-exam-cad-topic-1-question-37-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001037",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "You must script and configure all required behaviors"
+      ],
+      "existing_correct_answers": [
+        "The new table inherits the functionality built into the parent table"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "BZgUkinPexWxHwA5zzR5",
+      "source_number": 38,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90728-exam-cad-topic-1-question-38-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001038",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Script Includes"
+      ],
+      "existing_correct_answers": [
+        "Script Includes"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "CEFegHuwmu0mfIOzSNoE",
+      "source_number": 39,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64417-exam-cad-topic-1-question-39-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001039",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "current and email"
+      ],
+      "existing_correct_answers": [
+        "current and event"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "XxnrJJguiled4YKeG9V6",
+      "source_number": 40,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64125-exam-cad-topic-1-question-40-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001040",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "GlideUser object (g_user)"
+      ],
+      "existing_correct_answers": [
+        "current and previous objects"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "DtmIWlUShFIgfcA6EEXY",
+      "source_number": 41,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/118523-exam-cad-topic-1-question-41-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001041",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Extend and add functionality"
+      ],
+      "existing_correct_answers": [
+        "Extend and add functionality"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "3WEpwgXx48XEVrPIW2KC",
+      "source_number": 42,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/77514-exam-cad-topic-1-question-42-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001042",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "As many as the application design requires"
+      ],
+      "existing_correct_answers": [
+        "As many as the application design requires"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "r1meTbJNxoRPVxnnXYFl",
+      "source_number": 43,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/107699-exam-cad-topic-1-question-43-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001043",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Stash"
+      ],
+      "existing_correct_answers": [
+        "Stash"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "ATCaZKZ1tDaWRRkVx96s",
+      "source_number": 44,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/111990-exam-cad-topic-1-question-44-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001044",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "producer.variablename"
+      ],
+      "existing_correct_answers": [
+        "producer.variablename"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "k3XIaYA5GhEuShK2ZtRK",
+      "source_number": 45,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64105-exam-cad-topic-1-question-45-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001045",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "g_form.addInfoMessage()"
+      ],
+      "existing_correct_answers": [
+        "g_form.showFieldMsg()"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "DZCo9CAWtOuaqYTQHr5O",
+      "source_number": 46,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73174-exam-cad-topic-1-question-46-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001046",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Spoke"
+      ],
+      "existing_correct_answers": [
+        "Spoke"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "bXT4fwZJKn62A2J5xgCx",
+      "source_number": 47,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/64126-exam-cad-topic-1-question-47-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001047",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The functionality within an application menu such as opening a page in the content frame or a separate tab or window"
+      ],
+      "existing_correct_answers": [
+        "A way of helping users quickly access information and services by filtering the items in the Application Navigator"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "ZqyOiXu6SNO6Q7VpELCu",
+      "source_number": 48,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/68154-exam-cad-topic-1-question-48-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001048",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create Branch"
+      ],
+      "existing_correct_answers": [
+        "Edit Repository Configurations"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "G8PXQDlHhacgyI0B38BB",
+      "source_number": 49,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/130612-exam-cad-topic-1-question-49-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001049",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Application name"
+      ],
+      "existing_correct_answers": [
+        "Application name"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "xdIZ2Qh3hcud6YDhK58l",
+      "source_number": 50,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/66604-exam-cad-topic-1-question-50-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001050",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Bar Chart and Pie Chart"
+      ],
+      "existing_correct_answers": [
+        "Bar Chart"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "T5c4B6mRI8L9qeJrHG0J",
+      "source_number": 51,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73087-exam-cad-topic-1-question-51-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001051",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.log()"
+      ],
+      "existing_correct_answers": [
+        "gs.log()"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "XDO7fb6ZnECdfff2Dohy",
+      "source_number": 52,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/92619-exam-cad-topic-1-question-52-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001052",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Display a list of all records from the table"
+      ],
+      "existing_correct_answers": [
+        "Display a list of all records from the table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "ZcU1F2FhFScmfSPgT0gf",
+      "source_number": 53,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70396-exam-cad-topic-1-question-53-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001053",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Set the Accessible from field value to This application scope only"
+      ],
+      "existing_correct_answers": [
+        "You must create Access Controls to prevent all other application scopes from creating configuration records on an application's data tables rather than using Application Access"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "uVxc2Cg0QxInS1h6l0zg",
+      "source_number": 54,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70395-exam-cad-topic-1-question-54-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001054",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "a, b, and c"
+      ],
+      "existing_correct_answers": [
+        "bandc"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "iv2bdjEOxQlAXsN5Qhi2",
+      "source_number": 55,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70394-exam-cad-topic-1-question-55-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001055",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "table.id will grant access to a specific record on the table"
+      ],
+      "existing_correct_answers": [
+        "table.*will grant access to every field in a record"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "ZJdn3xXLdL1EQhxqv4N9",
+      "source_number": 56,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/122940-exam-cad-topic-1-question-56-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001056",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.hasRole() and current.isNewRecord()"
+      ],
+      "existing_correct_answers": [
+        "gs.hasRole() and current.isNewRecord()"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "7r6XCldniQcYZSd7aDkc",
+      "source_number": 57,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/107702-exam-cad-topic-1-question-57-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001057",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Catalog Client Scripts and Catalog UI Policies"
+      ],
+      "existing_correct_answers": [
+        "Catalog Client Scripts and Catalog UI Policies"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "VsZDRJRbmQjievWDiP79",
+      "source_number": 58,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108151-exam-cad-topic-1-question-58-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001058",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Consumer"
+      ],
+      "existing_correct_answers": [
+        "Consumer"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "v67u8daIHftzq9Hi8uae",
+      "source_number": 59,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70397-exam-cad-topic-1-question-59-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001059",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Open the table in the Table records and select the Add to Service Catalog Related Link"
+      ],
+      "existing_correct_answers": [
+        "Create a Catalog Category, open the category, and select the Add New Record Producer button"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "oYjFmxuDmHgrhRCMGQx7",
+      "source_number": 60,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70398-exam-cad-topic-1-question-60-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001060",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "GlideSystem and GlideRecord"
+      ],
+      "existing_correct_answers": [
+        "GlideRecord and current"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "fF27r3L3fUHxIh32ucD8",
+      "source_number": 61,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70399-exam-cad-topic-1-question-61-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001061",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "No, inherited fields cannot be deleted from a child table"
+      ],
+      "existing_correct_answers": [
+        "Yes, select the red X in the left-most column in the table definition"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "7Z7ghDwxZhMbaNllgmXf",
+      "source_number": 62,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70400-exam-cad-topic-1-question-62-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001062",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Choose an application to edit and set the Application Scope"
+      ],
+      "existing_correct_answers": [
+        "Select an application to run"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "0OHYd83oyXBi8FOXDqhY",
+      "source_number": 63,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73399-exam-cad-topic-1-question-63-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001063",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "ServiceNow artifacts comprising an application"
+      ],
+      "existing_correct_answers": [
+        "XML exports of an application's Update Set"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "KfjoXlhmIjyGJEAURXcc",
+      "source_number": 64,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108150-exam-cad-topic-1-question-64-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001064",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Every Module must be associated with a table"
+      ],
+      "existing_correct_answers": [
+        "Every Module must be associated with a table"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "YeXLKk5gQsgPMKFUgZqF",
+      "source_number": 65,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91076-exam-cad-topic-1-question-65-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001065",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Schema map"
+      ],
+      "existing_correct_answers": [
+        "Schema map"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "CuY7xx9VSgmZ7e8hfXes",
+      "source_number": 66,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91077-exam-cad-topic-1-question-66-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001066",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "All custom application scope and the Global scope appear in the Application Picker"
+      ],
+      "existing_correct_answers": [
+        "All custom application scope and the Global scope appear in the Application Picker"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "U8pcsy3naFYOEWtp46kJ",
+      "source_number": 67,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91078-exam-cad-topic-1-question-67-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001067",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Mobile"
+      ],
+      "existing_correct_answers": [
+        "Mobile"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "y0qepJvIxMQxqS5iSmZz",
+      "source_number": 68,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/87125-exam-cad-topic-1-question-68-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001068",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "g_form.showFieldMsg()"
+      ],
+      "existing_correct_answers": [
+        "g_form.showFieldMsg()"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "PG3uKr0YrocjJ55H4FHm",
+      "source_number": 69,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/93502-exam-cad-topic-1-question-69-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001069",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Set field values and add message"
+      ],
+      "existing_correct_answers": [
+        "Set field values and add message"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "xcfWXmrF0gHYJmYGjVa6",
+      "source_number": 70,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108149-exam-cad-topic-1-question-70-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001070",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "GlideDateTime"
+      ],
+      "existing_correct_answers": [
+        "GlideDateTime"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "AcOL9eAglEEZsRSAagoz",
+      "source_number": 71,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108148-exam-cad-topic-1-question-71-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001071",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Write a script in the Record Producer's Script field: producer.redirect = \"<URL>\";"
+      ],
+      "existing_correct_answers": [
+        "Write a script in the Record Producer's Script field: producer.redirect = \"<URL>\";"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "pr8UuUOPwn47H9ymIJmf",
+      "source_number": 72,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70401-exam-cad-topic-1-question-72-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001072",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Each field prompts the user with a question rather than a field label.",
+        "You can script behaviors of fields in the user interface.",
+        "Graphics can be included on the user interface."
+      ],
+      "existing_correct_answers": [
+        "Each field prompts the user with a question rather than a field label.",
+        "They must be scripted.",
+        "You can script behaviors of fields in the user interface."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "oBBxpIeeO6RiRK6P2wKc",
+      "source_number": 73,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108147-exam-cad-topic-1-question-73-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001073",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.info()"
+      ],
+      "existing_correct_answers": [
+        "gs.info()"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "qtFlnDyxHwdXr8veEmA4",
+      "source_number": 74,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70402-exam-cad-topic-1-question-74-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001074",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Business Rule",
+        "Script Actions",
+        "Scheduled Jobs"
+      ],
+      "existing_correct_answers": [
+        "Business Rule",
+        "UI Policies",
+        "Script Actions"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "6Fwj8wakAW6MYFxr9VhL",
+      "source_number": 75,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73540-exam-cad-topic-1-question-75-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001075",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Classic"
+      ],
+      "existing_correct_answers": [
+        "Lists"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "fSnjtcoEcpVMZYwogfWC",
+      "source_number": 76,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70403-exam-cad-topic-1-question-76-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001076",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create, Delete, Read, Write"
+      ],
+      "existing_correct_answers": [
+        "Insert, Delete, Query, Update"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "1AsGTqjWUm34ERbAlR84",
+      "source_number": 77,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108146-exam-cad-topic-1-question-77-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001077",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The method returns true if the currently logged in user has the x_my_app_user role or the admin role"
+      ],
+      "existing_correct_answers": [
+        "The method returns true if the currently logged in user has the x_my_app_user role or the admin role"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "FTxPATXIwppsQIO2RZ9T",
+      "source_number": 78,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/102847-exam-cad-topic-1-question-78-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001078",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Query"
+      ],
+      "existing_correct_answers": [
+        "Query"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "N3cY6ZXv45lJxIPKEtGo",
+      "source_number": 79,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70404-exam-cad-topic-1-question-79-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001079",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The user performing the query via web services must have the correct permissions to access the table's records"
+      ],
+      "existing_correct_answers": [
+        "Even when not selected, users with the correct permissions can use web services to access the table's records"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "YpqZ8GndRql2wRLGoJbI",
+      "source_number": 80,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/65700-exam-cad-topic-1-question-80-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001080",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The user has one of the roles specified in the Required roles related list.",
+        "Scripts configured in the Access Control must evaluate to true.",
+        "Conditions configured in the Access Control must evaluate to true."
+      ],
+      "existing_correct_answers": [
+        "Scripts configured in the Access Control must evaluate to true.",
+        "Conditions configured in the Access Control must evaluate to true.",
+        "The user must be granted access through a business rule."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "VSDCZz2kdKp8V1yC7Ic9",
+      "source_number": 81,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/97747-exam-cad-topic-1-question-81-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001081",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "It is generated from a workflow version, executes activities, and follows transitions"
+      ],
+      "existing_correct_answers": [
+        "It is generated from a workflow version, executes activities, and follows transitions"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "KBYSdwrEYFQErn0wy2Mj",
+      "source_number": 82,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/124893-exam-cad-topic-1-question-82-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001082",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Application Properties allow a developer or admin to make changes to an application's behavior without modifying application artifacts"
+      ],
+      "existing_correct_answers": [
+        "Application Properties allow a developer or admin to make changes to an application's behavior without modifying application artifacts"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "uGRlF4aXJOW4Kl6NIO0K",
+      "source_number": 83,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70405-exam-cad-topic-1-question-83-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001083",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "The application needs to run a client-side script at the same time every day"
+      ],
+      "existing_correct_answers": [
+        "The application needs to run a clean up script on the last day of every month"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "sH2565wr1JRvtEBo3WCF",
+      "source_number": 84,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73401-exam-cad-topic-1-question-84-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001084",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "previous"
+      ],
+      "existing_correct_answers": [
+        "previous"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "UyQ60wHN74LttQpTsJ8f",
+      "source_number": 85,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73402-exam-cad-topic-1-question-85-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001085",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Watermark"
+      ],
+      "existing_correct_answers": [
+        "Watermark"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "YmzCE1XpnhAHzNZphICA",
+      "source_number": 86,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/73400-exam-cad-topic-1-question-86-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001086",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Active must be true.",
+        "The value in the Notification field must be set to enabled.",
+        "The Email field must have a value."
+      ],
+      "existing_correct_answers": [
+        "Active must be true.",
+        "The user must not be locked out.",
+        "The Email field must have a value."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "2AFNByD1j63EoYc3ZUnn",
+      "source_number": 87,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/111148-exam-cad-topic-1-question-87-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001087",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Methods used to allow applications to connect to other software applications over a network"
+      ],
+      "existing_correct_answers": [
+        "Methods used to allow applications to connect to other software applications over a network"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "b6kTzuI2IW7U9ww2SSVu",
+      "source_number": 88,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/107167-exam-cad-topic-1-question-88-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001088",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "COPY"
+      ],
+      "existing_correct_answers": [
+        "COPY"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "VVy5hcjIEhutprdMyCiH",
+      "source_number": 89,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/70406-exam-cad-topic-1-question-89-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001089",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Table A's records are added to the application record using the Create Application Files context menu item"
+      ],
+      "existing_correct_answers": [
+        "Table A is active and extends the Task table"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "JrEKhA7g1whLwzLX2Jzm",
+      "source_number": 90,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90873-exam-cad-topic-1-question-90-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001090",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Link an application to source control through a MID Server."
+      ],
+      "existing_correct_answers": [
+        "Link an application to source control through a MID Server."
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "IyfqJGjvqbjhea5htGNa",
+      "source_number": 91,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108108-exam-cad-topic-1-question-91-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001091",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Marketplace for free and paid certified ServiceNow applications and integrations"
+      ],
+      "existing_correct_answers": [
+        "Marketplace for free and paid certified ServiceNow applications and integrations"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "mySfbnlllR8BgtzHlkuT",
+      "source_number": 92,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/125047-exam-cad-topic-1-question-92-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001092",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Inherit the parent’s fields"
+      ],
+      "existing_correct_answers": [
+        "Inherit the parent's fields"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "JL3I4OVqCgLuMDCaejs9",
+      "source_number": 93,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/89679-exam-cad-topic-1-question-93-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001093",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create table from template"
+      ],
+      "existing_correct_answers": [
+        "Upload spreadsheet"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "l9tAOI6TIuKBnSw7X8DZ",
+      "source_number": 94,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/89683-exam-cad-topic-1-question-94-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001094",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Database and backend"
+      ],
+      "existing_correct_answers": [
+        "User access"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "DZoPz1NNHB98besCcU94",
+      "source_number": 95,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108106-exam-cad-topic-1-question-95-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001095",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Guided Application Creator"
+      ],
+      "existing_correct_answers": [
+        "Guided Application Creator"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "fF7SJQxHnuzK3zoKOpFf",
+      "source_number": 96,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108105-exam-cad-topic-1-question-96-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001096",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "To reduce risk at code collisions",
+        "To enable installation and uninstallation of an application"
+      ],
+      "existing_correct_answers": [
+        "To reduce risk at code collisions",
+        "To enable installation and uninstallation of an application"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "EDeCsLBZ4Xfox2fWGowa",
+      "source_number": 97,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/89582-exam-cad-topic-1-question-97-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001097",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form."
+      ],
+      "existing_correct_answers": [
+        "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button."
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "dnw6G2RriBVOJiBHYTBC",
+      "source_number": 98,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/89689-exam-cad-topic-1-question-98-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001098",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Restricted caller access records"
+      ],
+      "existing_correct_answers": [
+        "Cross-scope access records"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "oLbq6Ew3zRNo8D843BXv",
+      "source_number": 99,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108104-exam-cad-topic-1-question-99-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001099",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create a user"
+      ],
+      "existing_correct_answers": [
+        "Create a user"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "LOq6RAWx8EfMQ5vaXPph",
+      "source_number": 100,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91079-exam-cad-topic-1-question-100-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001100",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "com.glide.sn-guided-app-creator"
+      ],
+      "existing_correct_answers": [
+        "com.glide.sn-guided-app-creator"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "u9vuAt25z9X5tT2XI2rZ",
+      "source_number": 101,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108103-exam-cad-topic-1-question-101-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001101",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "All of the above"
+      ],
+      "existing_correct_answers": [
+        "All of the above"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "CnlzzpiBNlQ799kevg5D",
+      "source_number": 102,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90958-exam-cad-topic-1-question-102-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001102",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Selecting an application from the Application Picker sets the Application Scope"
+      ],
+      "existing_correct_answers": [
+        "Selecting an application from the Application Picker sets the Application Scope"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "yIQEsO4Ourt2f4jQq4uI",
+      "source_number": 103,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91523-exam-cad-topic-1-question-103-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001103",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Search code",
+        "Push to external source control"
+      ],
+      "existing_correct_answers": [
+        "Merge branches",
+        "Search code"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "e0GcDmwpdOkRXUCxWzvK",
+      "source_number": 104,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90960-exam-cad-topic-1-question-104-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001104",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Parent class",
+        "Base class"
+      ],
+      "existing_correct_answers": [
+        "Child class",
+        "Base class"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "8PUOew9jg2y24kjjJqF2",
+      "source_number": 105,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108101-exam-cad-topic-1-question-105-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001105",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "User-defined non-inherited fields can be deleted"
+      ],
+      "existing_correct_answers": [
+        "User-defined non-inherited fields can be deleted"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "xq3ioDAtzClQVR49h27u",
+      "source_number": 106,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/98368-exam-cad-topic-1-question-106-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001106",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "To fulfill a specific use case on internal processes",
+        "To create a custom integration for a 3rd party system"
+      ],
+      "existing_correct_answers": [
+        "To fulfill a specific use case on internal processes",
+        "To create a custom integration for a 3rd party system"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "D1WQF66zDuqESsmPEciR",
+      "source_number": 107,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90961-exam-cad-topic-1-question-107-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001107",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Upload and turn a spreadsheet into a custom table",
+        "Extend a table",
+        "Create a custom table"
+      ],
+      "existing_correct_answers": [
+        "Upload and turn a spreadsheet into a custom table",
+        "Use the Now Experience Table Creator",
+        "Extend a table"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "fBhxhthy6sXf3IWLR4GE",
+      "source_number": 108,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90963-exam-cad-topic-1-question-108-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001108",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Use the Date data type to enter the date and time of day"
+      ],
+      "existing_correct_answers": [
+        "Use the Date data type to enter the date and time of day"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "4Dm1FXZpFp6FVKBm6Dge",
+      "source_number": 109,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91080-exam-cad-topic-1-question-109-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001109",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Schema map"
+      ],
+      "existing_correct_answers": [
+        "Schema map"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "IDb79kEpaV037TBe3cXP",
+      "source_number": 110,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108097-exam-cad-topic-1-question-110-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001110",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "GlideRecord"
+      ],
+      "existing_correct_answers": [
+        "GlideRecord"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "RyiAK2RrTtmzEZ2jQk6R",
+      "source_number": 111,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108096-exam-cad-topic-1-question-111-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001111",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Sections"
+      ],
+      "existing_correct_answers": [
+        "Sections"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "SlapZsTED6ufH4xUr0PO",
+      "source_number": 112,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90964-exam-cad-topic-1-question-112-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001112",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Annotations"
+      ],
+      "existing_correct_answers": [
+        "A populated read-only field"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "mk52HltqsxUpgZ08eosL",
+      "source_number": 113,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90965-exam-cad-topic-1-question-113-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001113",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "query()",
+        "_query()",
+        "get("
+      ],
+      "existing_correct_answers": [
+        "query()",
+        "_query()",
+        "get("
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "45R57QsOdEbLOmAkPj1Y",
+      "source_number": 114,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108095-exam-cad-topic-1-question-114-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001114",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "g_form"
+      ],
+      "existing_correct_answers": [
+        "g_form"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "zxZyO7eLQW8Rs58mkNRS",
+      "source_number": 115,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90628-exam-cad-topic-1-question-115-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001115",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.getUserID()"
+      ],
+      "existing_correct_answers": [
+        "gs.getUserSysID()"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "zI53vpZJBkKkGab1mgGa",
+      "source_number": 116,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90629-exam-cad-topic-1-question-116-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001116",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Roles, Conditions, Script"
+      ],
+      "existing_correct_answers": [
+        "Script, Conditions, Roles"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "ykspNNc9PJp9cKIWX5O0",
+      "source_number": 117,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108094-exam-cad-topic-1-question-117-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001117",
+      "comparison": "reviewed-same-scenario",
+      "reason": "Mesma lista de ACLs, conferida na imagem; cenário distinto da questão 118.",
+      "source_correct_answers": [
+        "field3 only"
+      ],
+      "existing_correct_answers": [
+        "field3 only"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "4M0kQan2YOvQSEYXMaxN",
+      "source_number": 118,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90966-exam-cad-topic-1-question-118-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001118",
+      "comparison": "reviewed-same-scenario",
+      "reason": "Mesma lista de ACLs, conferida na imagem; cenário distinto da questão 117.",
+      "source_correct_answers": [
+        "All fields except field3"
+      ],
+      "existing_correct_answers": [
+        "filed1 and field3"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "L6FIIyrpSDJEfTub6msr",
+      "source_number": 119,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90637-exam-cad-topic-1-question-119-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001119",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Caller Permission"
+      ],
+      "existing_correct_answers": [
+        "None"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "3svrXqsVa79qfxtXHFtJ",
+      "source_number": 120,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90639-exam-cad-topic-1-question-120-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001120",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "gs.getProperty()"
+      ],
+      "existing_correct_answers": [
+        "gs.getAppProperty()"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "CduzpDM6AkjFlPTgRrBp",
+      "source_number": 121,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/92050-exam-cad-topic-1-question-121-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001121",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "URL (from Arguments)"
+      ],
+      "existing_correct_answers": [
+        "URL (from Arguments)"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "CoHedcX9VC3n7y06JS7z",
+      "source_number": 122,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90801-exam-cad-topic-1-question-122-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001122",
+      "comparison": "reviewed-same-scenario",
+      "reason": "Mesmo enunciado sobre gs.eventQueue, com a lista de itens expandida no complemento.",
+      "source_correct_answers": [
+        "a and d"
+      ],
+      "existing_correct_answers": [
+        "Email Notification"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "jvDgM0J1BUPUD6312MXm",
+      "source_number": 123,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/98213-exam-cad-topic-1-question-123-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001123",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "System Logs > Emails"
+      ],
+      "existing_correct_answers": [
+        "System Logs > Emails"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "nQuuOim3Lb3jGGxUXgmf",
+      "source_number": 124,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90972-exam-cad-topic-1-question-124-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001124",
+      "comparison": "reviewed-same-scenario",
+      "reason": "Mesmo enunciado sobre Script Include, com a lista de benefícios expandida no complemento.",
+      "source_correct_answers": [
+        "b, c, and d"
+      ],
+      "existing_correct_answers": [
+        "a, b, and d"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "UBZrUn3tZgrrHCTAnCal",
+      "source_number": 125,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/103450-exam-cad-topic-1-question-125-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001125",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Call a flow from another flow or subflow"
+      ],
+      "existing_correct_answers": [
+        "Test a flow using the \"Run as\" feature"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "gLlHMtzWKjwThrufyCRY",
+      "source_number": 126,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108092-exam-cad-topic-1-question-126-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001126",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "To determine if a record matches an existing record or is a new record"
+      ],
+      "existing_correct_answers": [
+        "To determine if a record matches an existing record or is a new record"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "C2w4ZhKkr14NqlQ51TaB",
+      "source_number": 127,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/108091-exam-cad-topic-1-question-127-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001127",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "${variable_name}"
+      ],
+      "existing_correct_answers": [
+        "${variable_name}"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "6lI3bi52QZKMWNdVEdBw",
+      "source_number": 128,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/90973-exam-cad-topic-1-question-128-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001128",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Select the Copy button on the application record"
+      ],
+      "existing_correct_answers": [
+        "Download and install an application from the ServiceNow Share web site"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "kgXzYdqbHmguyiS9NwhC",
+      "source_number": 129,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/92063-exam-cad-topic-1-question-129-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001129",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Form field values"
+      ],
+      "existing_correct_answers": [
+        "Form field values"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "R86IPaMfW5vN3Dfk9LM7",
+      "source_number": 130,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/143609-exam-cad-topic-1-question-130-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001130",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "a, b, and d"
+      ],
+      "existing_correct_answers": [
+        "a, b, and d"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "A8y8hwzfaj81heDb9s6i",
+      "source_number": 131,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/91633-exam-cad-topic-1-question-131-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001131",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Choice data type",
+        "Integer data type",
+        "Array.Boolean data type"
+      ],
+      "existing_correct_answers": [
+        "Array.Reference data type",
+        "Integer data type",
+        "Freedom data type"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "ukEdXSpyBZFd4IkcJ3AW",
+      "source_number": 132,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/134155-exam-cad-topic-1-question-132-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001132",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Default access controls are automatically created"
+      ],
+      "existing_correct_answers": [
+        "Default access controls are automatically created"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "MNwlVXfyBJSmaLpYG876",
+      "source_number": 133,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/137269-exam-cad-topic-1-question-133-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001133",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Create a new table on the platform",
+        "Upload an existing spreadsheet",
+        "Use an existing table on the platform"
+      ],
+      "existing_correct_answers": [
+        "Create a new table on the platform",
+        "Upload an existing spreadsheet",
+        "Use an existing table on the platform"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "IAkKMu95LHUDWtZZyHid",
+      "source_number": 134,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/137271-exam-cad-topic-1-question-134-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001134",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "A table containing a record for every Event known to the ServiceNow system which allows ServiceNow to react when Events are generated"
+      ],
+      "existing_correct_answers": [
+        "A table containing a record for every Event known to the ServiceNow system which allows ServiceNow to react when Events are generated"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "YGs8U5UlOW0TGbHUobTg",
+      "source_number": 135,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/144760-exam-cad-topic-1-question-135-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001135",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Email Notification",
+        "Script Action"
+      ],
+      "existing_correct_answers": [
+        "Email Notification",
+        "Script Action"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "40YsDgJOPIyzQSd9RqKX",
+      "source_number": 136,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/141055-exam-cad-topic-1-question-136-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001136",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "No, it’s not possible"
+      ],
+      "existing_correct_answers": [
+        "Yes, it's possible"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "unZXk88oDFPJlv5So83g",
+      "source_number": 137,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/134156-exam-cad-topic-1-question-137-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001137",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Used to push information from the server to the client",
+        "Does not exist on the mobile platform"
+      ],
+      "existing_correct_answers": [
+        "Used to push information from the server to the client",
+        "Does not exist on the mobile platform"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "2K0PzP5CCPBNE6TtfBaL",
+      "source_number": 138,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/143726-exam-cad-topic-1-question-138-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001138",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Forms and Form Fields"
+      ],
+      "existing_correct_answers": [
+        "Forms and Form Fields"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "WR9xNhnUjxVG8rGjTf4R",
+      "source_number": 139,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/141226-exam-cad-topic-1-question-139-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001139",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Active must be true.",
+        "The Email field must have a valid value."
+      ],
+      "existing_correct_answers": [
+        "Active must be true.",
+        "The Email field must have a valid value."
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "T0q5ofhkiPU26cCkcCTw",
+      "source_number": 140,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/147002-exam-cad-topic-1-question-140-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001140",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Spoke"
+      ],
+      "existing_correct_answers": [
+        "Spoke"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "AcjnzGPsUmwNG1JYdyk6",
+      "source_number": 141,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/144813-exam-cad-topic-1-question-141-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001141",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "It needs workflow to manage processes.",
+        "It requires reporting capabilities.",
+        "It uses forms extensively to interact with data."
+      ],
+      "existing_correct_answers": [
+        "It needs workflow to manage processes.",
+        "It requires reporting capabilities.",
+        "It uses forms extensively to interact with data."
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "3hKDtLVaVLFZnnBTm5eR",
+      "source_number": 142,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/144848-exam-cad-topic-1-question-142-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001142",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Publish to an application repository",
+        "Publish to the ServiceNow Store",
+        "Publish to an Update Set"
+      ],
+      "existing_correct_answers": [
+        "Publish to an application repository",
+        "Publish to the ServiceNow Store",
+        "Publish to an Update Set"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "bo3Yq4lSJhDNMdKGMYi9",
+      "source_number": 143,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/134772-exam-cad-topic-1-question-143-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001143",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Password",
+        "User name",
+        "URL"
+      ],
+      "existing_correct_answers": [
+        "URI",
+        "Password",
+        "User name"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "E683JUWUOZjHBiYDirVZ",
+      "source_number": 148,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/154409-exam-cad-topic-1-question-148-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001148",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Application Admin"
+      ],
+      "existing_correct_answers": [
+        "Application Admin"
+      ],
+      "different_answer_text": false
+    },
+    {
+      "source_id": "G9t5BSuqe0ceAyJFoHBy",
+      "source_number": 150,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/133292-exam-cad-topic-1-question-150-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001150",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Integer",
+        "Choice",
+        "String"
+      ],
+      "existing_correct_answers": [
+        "Integer",
+        "Array.Reference",
+        "String"
+      ],
+      "different_answer_text": true
+    },
+    {
+      "source_id": "QBSojQfre4Upw1QMgtv2",
+      "source_number": 151,
+      "source_url": "https://www.examtopics.com/discussions/servicenow/view/133290-exam-cad-topic-1-question-151-discussion/",
+      "action": "duplicate",
+      "existing_id": "cad-QST0001151",
+      "comparison": "normalized-question-text",
+      "source_correct_answers": [
+        "Add stages to a flow.",
+        "Test a flow using the “Run as” feature.",
+        "Run a flow from a Catalog item."
+      ],
+      "existing_correct_answers": [
+        "Add stages to a flow.",
+        "Call a flow from another flow or subflow.",
+        "Test a flow using the \"Run as\" feature."
+      ],
+      "different_answer_text": true
+    }
+  ],
+  "added_total": 1,
+  "duplicate_total": 145,
+  "answer_text_differences_total": 63,
+  "resulting_total": 151
+}
