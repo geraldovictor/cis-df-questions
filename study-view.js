@@ -2,7 +2,7 @@ import { confirmStudyAnswer, studyProgress } from './study.js';
 import { isCorrect } from './quiz.js';
 import { getMatchingQuestion } from './matching.js';
 import { renderMatching, bindMatching } from './matching-view.js';
-import { renderQuestionContext } from './question-content.js';
+import { renderQuestionContext, renderAnswerImages } from './question-content.js';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -16,7 +16,7 @@ export function renderStudy({ app, attempt, byId, save, back, report }) {
   const bind = (selector, event, action) => app.querySelector(selector)?.addEventListener(event, action);
   const metrics = `<div class="study-metrics" aria-live="polite"><span><b>${result.correct}</b> acertos</span><span><b>${result.wrong}</b> erros</span><span><b>${result.accuracy}%</b> de acerto nas respondidas</span></div>`;
   const options = (question, qid, reveal) => {
-    if (getMatchingQuestion(question)) return renderMatching(question, (!attempt.finished_at || state.confirmed[qid]) ? state.answers[qid] || [] : [], {reveal,disabled:reveal,order:state.orders[qid]});
+    if (getMatchingQuestion(question)) return renderMatching(question, (!attempt.finished_at || state.confirmed[qid]) ? state.answers[qid] || [] : [], {reveal,disabled:reveal,order:state.orders[qid]}) + (reveal ? renderAnswerImages(question) : '');
     return state.orders[qid].map((index, position) => {
     const a = question.alternativas[index], checked = (!attempt.finished_at || state.confirmed[qid]) && (state.answers[qid] || []).includes(index);
     return `<label class="option ${reveal ? a.correta ? 'correct' : checked ? 'wrong' : '' : ''}">${attempt.finished_at ? '' : `<input type="${question.alternativas.filter(a=>a.correta).length>1?'checkbox':'radio'}" name="study-answer" value="${index}" ${checked?'checked':''} ${reveal?'disabled':''}>`}<span><span lang="en"><b>${String.fromCharCode(65+position)}.</b> ${esc(a.texto)}</span>${reveal?`<span class="explanation"><b>${a.correta?'✓ Correta':''}${checked?' · Sua resposta':''}</b><span lang="en"> ${esc(a.explicacao)}</span></span>`:''}</span></label>`;

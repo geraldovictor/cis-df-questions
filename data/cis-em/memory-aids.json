@@ -1,0 +1,1198 @@
+{
+  "em-xpqJrU6aWbo64wGLgKGW": {
+    "gatilho": "Workflow na regra de alerta",
+    "macete": "A ação resolve: procure a Actions tab.",
+    "conexao": "O cenário pede onde indicar um workflow numa alert management rule; ligue a execução à guia Actions.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "287d633b"
+  },
+  "em-B19yisN82McLTDrzWqX3": {
+    "gatilho": "Sistemas do MID Server",
+    "macete": "O MID entra na dupla Windows Server + Linux.",
+    "conexao": "A questão pede dois sistemas. Memorize Microsoft Windows Server e Linux System juntos, com Server no nome do Windows.",
+    "tecnica": "Dupla",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "6906f6ab"
+  },
+  "em-LA7FxltXax5SalJvP2zk": {
+    "gatilho": "JavaScript para buscar eventos",
+    "macete": "Um script puxa a fonte: customized pull connector.",
+    "conexao": "Ao ler JavaScript com recuperação de eventos de uma fonte, recorde o customized pull connector do gabarito.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "89f2c040"
+  },
+  "em-zTEjoNTa0qXM4i3zoFN9": {
+    "gatilho": "Fontes permitidas no OI",
+    "macete": "A fonte pede permissão em Metric Type Actions.",
+    "conexao": "Para reconhecer monitoring sources autorizadas a comunicar com a instância no OI, guarde o nome Metric Type Actions.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "c3078ee5"
+  },
+  "em-WW4VRXbAsz7yd0pkqvhR": {
+    "gatilho": "Composição da prioridade",
+    "macete": "Categoria na balança: category × relative weight.",
+    "conexao": "A pista é composição de Alert Priority score. O par do gabarito é categoria do alerta e seu peso relativo.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d7c74695"
+  },
+  "em-XCgBZuJMlObwJme17WqN": {
+    "gatilho": "Deduplicação de eventos",
+    "macete": "Uma chave para não duplicar: Message_key.",
+    "conexao": "O enunciado usa de-duplication; associe diretamente esse termo ao atributo Message_key.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "92018538"
+  },
+  "em-bLrxSfMQ9Grm27L0rG9s": {
+    "gatilho": "Insights Explorer e ponto verde",
+    "macete": "No painel quente, o sinal é baixo: hottest CI + low probability.",
+    "conexao": "Para a captura de win-ces882ierw, memorize a combinação do gabarito: lista de hottest CIs e baixa probabilidade de anomalias.",
+    "tecnica": "Contraste",
+    "respostas": [
+      1
+    ],
+    "assinatura": "bc2d326c"
+  },
+  "em-NISIR0sEpQyihD3jSZwA": {
+    "gatilho": "Intervalo dos conectores",
+    "macete": "O conector conta 120: Every 120 seconds.",
+    "conexao": "A questão pede o intervalo padrão de collection/polling de todos os event connectors; guarde 120 segundos.",
+    "tecnica": "Número",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8739b868"
+  },
+  "em-1GfBMXXKxPRAgkNLsk8S": {
+    "gatilho": "Rastrear a event rule criadora",
+    "macete": "A trilha tem duas pistas: Alert Activity + Event Processing Notes.",
+    "conexao": "Para descobrir qual event rule criou um alerta, lembre das duas áreas indicadas no gabarito, e não de atributos do alerta.",
+    "tecnica": "Dupla",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "ff77c034"
+  },
+  "em-mfUCzR48hkKkUyXgzJKU": {
+    "gatilho": "Workflow e tarefas por template",
+    "macete": "Regra que age no alerta: Alert management rules.",
+    "conexao": "Disparar workflow ou gerar tarefas por templates aponta para Alert management rules neste banco.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e9dddc43"
+  },
+  "em-kChcD44nANKpPjagA7K2": {
+    "gatilho": "Estados válidos de alerta",
+    "macete": "Abre, reabre, oscila, fecha: Open, Reopen, Flapping, Closed.",
+    "conexao": "Recite os quatro estados como uma pequena história do alerta; mantenha os nomes em inglês para reconhecer a alternativa.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "853364ba"
+  },
+  "em-ZOzASY0FHOB5Ls0tN72C": {
+    "gatilho": "Módulo de tarefas automáticas",
+    "macete": "Tarefa automática nasce em Alert management rules.",
+    "conexao": "Quando o enunciado pergunta pelo módulo de configuração da criação automática de tarefas, associe a Alert management rules.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1e2f24e1"
+  },
+  "em-qzpvJzZcCN3tgWIFmBu7": {
+    "gatilho": "OI push com Basic authentication",
+    "macete": "Basic lembra senha: password no MID Web Server Context.",
+    "conexao": "O cenário já informa Basic authentication e ausência de dados; o gabarito aponta senha inválida no MID Web Server Context.",
+    "tecnica": "Cenário",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e99624b7"
+  },
+  "em-0IrVChQ76HiLYaJYzhto": {
+    "gatilho": "Atributos externos do evento",
+    "macete": "A bagagem extra vai em Additional Information.",
+    "conexao": "Quando a tabela de eventos recebe atributos externos do sistema monitorado, guarde o campo Additional Information.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a29e00fc"
+  },
+  "em-B5WSYmL4pPJtr3gaQVBT": {
+    "gatilho": "Alert Console por padrão",
+    "macete": "Console: Primary + Open + quatro severidades, fora de Maintenance.",
+    "conexao": "Junte os filtros do gabarito: Primary, Open, Critical/Major/Minor/Warning e ausência de Maintenance mode.",
+    "tecnica": "Conjunto",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3da35ba2"
+  },
+  "em-jcBdiw2sJ5WyeIHWggkk": {
+    "gatilho": "Boas práticas iniciais de EM",
+    "macete": "Filtre na fonte, conheça o normal, comece pelo crítico.",
+    "conexao": "Os três itens fornecidos são filtrar na origem, criar baseline do estado normal e inicialmente ignorar não críticos, expandindo depois.",
+    "tecnica": "Trio",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "6d64939d"
+  },
+  "em-oe2hpAgdNiERpdXGOyas": {
+    "gatilho": "Fechar alerta por evento equivalente",
+    "macete": "Mesma Message Key, Severity 0 na event rule.",
+    "conexao": "A pista é evento recebido com matching message key e fechamento automático. Prenda o zero à event rule.",
+    "tecnica": "Número",
+    "respostas": [
+      0
+    ],
+    "assinatura": "44c5dbaf"
+  },
+  "em-WlH2aBKtbdpRXiXJh9Gu": {
+    "gatilho": "Incidente resolvido e alerta aberto",
+    "macete": "Quem fecha precisa do papel: evt_mgmt_user.",
+    "conexao": "Neste cenário com a propriedade de fechamento já configurada, o gabarito atribui a falha à ausência de evt_mgmt_user.",
+    "tecnica": "Cenário",
+    "respostas": [
+      0
+    ],
+    "assinatura": "cfafebd6"
+  },
+  "em-o0LQUosgxOk70Mb3O1nu": {
+    "gatilho": "Definição de CMDB e CIs",
+    "macete": "CMDB dinâmica: itens e relações na mesma lista.",
+    "conexao": "O gabarito principal seleciona a descrição de CMDB como lista dinâmica de CIs e relacionamentos. A origem diverge na quantidade de respostas; veja a observação.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d0ae225b",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET BD. A correção usa a resposta principal fornecida, sem validação técnica independente. O enunciado pede duas respostas, mas a resposta principal fornecida seleciona somente uma. A resposta ET seleciona duas. O banco preserva a resposta principal."
+  },
+  "em-PKn6vH2rVOAkbxSpXJGp": {
+    "gatilho": "Explorar classes da CMDB",
+    "macete": "Classe, tabela e CI se encontram no CI Class Manager.",
+    "conexao": "Para um local central de hierarquia de classes, definições de tabelas e CIs, memorize CI Class Manager.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      4
+    ],
+    "assinatura": "ab7c313a"
+  },
+  "em-T2g7r4aBANzEGhmkOy2E": {
+    "gatilho": "Cluster de quatro com influência 60%",
+    "macete": "Quatro a sessenta: três críticos.",
+    "conexao": "O caso do cluster de quatro nós usa influência de 60%; o gabarito pede três membros em Critical.",
+    "tecnica": "Número",
+    "respostas": [
+      2
+    ],
+    "assinatura": "b160255b"
+  },
+  "em-6HAXF1caPVZapUmb0tqD": {
+    "gatilho": "Promoção MetricOne e anomalias ausentes",
+    "macete": "MetricOne 9.5: a origem marca Anomaly B.",
+    "conexao": "O arquivo só traz a regra MetricOne, CPU_Util e Minimal Score 9.5; os exemplos das anomalias estão ausentes. Use este cartão apenas para reconhecer o gabarito fornecido.",
+    "tecnica": "Observação de origem",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f0ae0f56",
+    "observacao": "O conteúdo das alternativas Anomaly A e Anomaly B não foi incluído no arquivo de origem. A imagem mostra a regra, mas não os exemplos das anomalias. Os espaços vazios foram identificados explicitamente; o gabarito B fornecido foi preservado."
+  },
+  "em-vMPYPcWcmiMmKARnJC7N": {
+    "gatilho": "Binding padrão pelo Node",
+    "macete": "Nome completo e endereços: CI name, FQDN, IP ou MAC.",
+    "conexao": "O trio do gabarito agrupa CI name, Fully qualified domain name e IP or MAC address ao procurar o Node na CMDB.",
+    "tecnica": "Conjunto",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f15fa047"
+  },
+  "em-myd5bMCKo42HQ26bicGS": {
+    "gatilho": "Porta de saída do MID",
+    "macete": "MID sai seguro pelo 443.",
+    "conexao": "A questão pede somente a porta outbound do MID Server; fixe o número 443.",
+    "tecnica": "Número",
+    "respostas": [
+      2
+    ],
+    "assinatura": "47c95cc8"
+  },
+  "em-ym8TjGKjLPDvJHuEB7vX": {
+    "gatilho": "Ordem de event rules",
+    "macete": "Todas sobem a escada: menor Order até maior.",
+    "conexao": "Quando várias event rules se aplicam, o gabarito seleciona todas em ordem crescente de Order of execution.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2
+    ],
+    "assinatura": "9533fb5e"
+  },
+  "em-L1qmEriZpHiQBd6mzNHB": {
+    "gatilho": "Quantidade de event rules",
+    "macete": "Poucas regras, foco claro: as few as possible.",
+    "conexao": "O enunciado pede best practice de criação de event rules; o gabarito principal escolhe a menor quantidade possível.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2
+    ],
+    "assinatura": "93c9f28b",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-yxfJN2y7TW5hIX1NvKrH": {
+    "gatilho": "Severity vazia no processamento",
+    "macete": "Sem Severity, sinal de Error.",
+    "conexao": "Associe o campo Severity em branco ao estado Error do evento, conforme o gabarito fornecido.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ed672b17"
+  },
+  "em-iAGp7NbeeimkSNoN97nF": {
+    "gatilho": "Depois de criar um connector",
+    "macete": "Teste e ligue: Test + Activate.",
+    "conexao": "Os dois passos posteriores à criação de uma connector instance são Test the connector e Activate the connector.",
+    "tecnica": "Dupla",
+    "respostas": [
+      3,
+      4
+    ],
+    "assinatura": "8f478ee6"
+  },
+  "em-h7QMqFU7dwosjHfm0lrU": {
+    "gatilho": "Valor adicional do Event Management",
+    "macete": "Serviço e CI no centro; ciclo completo e registro único.",
+    "conexao": "O conjunto fornecido reúne correlação a CIs/serviços, relação alerta-incidente, plataforma centrada no negócio e a alternativa sobre MID Servers. A última opção contém texto misturado na origem.",
+    "tecnica": "Conjunto",
+    "respostas": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "assinatura": "e2735b00",
+    "observacao": "A alternativa sobre MID Servers contém texto de outra pergunta misturado na origem. O texto e o gabarito foram preservados; não há explicação fornecida para esclarecer essa opção."
+  },
+  "em-6poSPfcTOBjsy7UYQpK0": {
+    "gatilho": "Trocar Source na saída do alerta",
+    "macete": "Mude a saída em Transform and Compose Alert Output.",
+    "conexao": "O evento diz Trap e o alerta mostra Oracle EM; a pista é alterar o valor produzido na saída da event rule.",
+    "tecnica": "Cenário",
+    "respostas": [
+      0
+    ],
+    "assinatura": "5912ba7e"
+  },
+  "em-FAVPEgUPU4kwDqBx0yWW": {
+    "gatilho": "Cópias de checks em políticas",
+    "macete": "Check copiado vira check instance.",
+    "conexao": "Ao ver cópias de checks incluídas em Agent Client Collector policies, guarde Check instances.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      4
+    ],
+    "assinatura": "540475dc"
+  },
+  "em-39H2yN1G785z2b9KUL3r": {
+    "gatilho": "Frequência baseline dos conectores",
+    "macete": "O conector baseline volta a cada 2 minutos.",
+    "conexao": "Este enunciado pede retrieval por baseline event connectors; associe a Every 2 minutes.",
+    "tecnica": "Número",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d6f1e508"
+  },
+  "em-ZolsrXIfajYfJp940WFr": {
+    "gatilho": "Vários eventos para um alerta",
+    "macete": "Vários eventos, uma Message_key.",
+    "conexao": "A pergunta usa correlate multiple events to one alert; memorize Message_key como a chave desse agrupamento.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "0d5a9ffd"
+  },
+  "em-bWf9QUcYOdayLcMQRdFE": {
+    "gatilho": "Consolidar eventos",
+    "macete": "Um alerta consolidado tem uma Message Key.",
+    "conexao": "Para consolidate events into a single alert, o atributo do gabarito é Message Key.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3220ae68"
+  },
+  "em-7KmYdUNF4MjymiT4kmzL": {
+    "gatilho": "Igualdade para deduplicação",
+    "macete": "Para não duplicar, a Message Key deve casar exatamente.",
+    "conexao": "O enunciado destaca exactly the same; a igualdade exigida recai na Message Key.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "70000b0c"
+  },
+  "em-k0fKPE6Pmm6nsD0rd3My": {
+    "gatilho": "Coleta padrão de event data",
+    "macete": "Baseline coleta em dupla: Every 2 minutes.",
+    "conexao": "Associe default configuration using baseline connectors ao intervalo de dois minutos.",
+    "tecnica": "Número",
+    "respostas": [
+      1
+    ],
+    "assinatura": "8111370b"
+  },
+  "em-n5s1vPFYn8WQKHcXgujg": {
+    "gatilho": "ITOM Health neste enunciado",
+    "macete": "Health em dupla: Event Management + Operational Intelligence.",
+    "conexao": "Esta pergunta usa a formulação ITOM Health product e seu gabarito traz Event Management e Operational Intelligence; há uma variante no banco.",
+    "tecnica": "Dupla",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1a7b1f55"
+  },
+  "em-28CWdl4O4qKOBLLDlA43": {
+    "gatilho": "Benefício preditivo de EM e OI",
+    "macete": "Aprender antes da queda: machine learning prevê outages.",
+    "conexao": "O benefício selecionado é avisar proativamente sobre possíveis interrupções usando métodos preditivos de machine learning.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "fde2b969"
+  },
+  "em-a72O94zcrGuUplaPIsCL": {
+    "gatilho": "O nome MID",
+    "macete": "MID: Management, Instrumentation, Discovery.",
+    "conexao": "Expanda o acrônimo exatamente para Management, Instrumentation, and Discovery, os três termos presentes na alternativa correta.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0
+    ],
+    "assinatura": "433f60fb"
+  },
+  "em-3qAKvwxjXe5o5TB9I8g1": {
+    "gatilho": "Frequência de processamento",
+    "macete": "Dentro da instância, o relógio marca 5 seconds.",
+    "conexao": "O enunciado fala de events get processed em ServiceNow, não de coleta do conector; o gabarito é Every 5 seconds.",
+    "tecnica": "Contraste",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c4ceddf1"
+  },
+  "em-pnlfDAabITwqsGkRmMKx": {
+    "gatilho": "Sequência de processamento do evento",
+    "macete": "Fonte filtra o limiar, define severidade e encontra a chave.",
+    "conexao": "A imagem-resposta fixa a sequência Source → Filter → Threshold → Severity → Message Key. Associe cada pergunta da imagem a sua posição de 1 a 5.",
+    "tecnica": "Sequência",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6f37e2f2",
+    "observacao": "O HOTSPOT original não possui alternativas textuais nem gabarito textual. A associação interativa e sua correção foram transcritas das imagens fornecidas, sem acrescentar distratores."
+  },
+  "em-HOZMDiVwwd2yYYXfbd88": {
+    "gatilho": "Acesso inválido ao Alert Intelligence",
+    "macete": "O intruso é Alerts Console no application navigator.",
+    "conexao": "A pergunta pede o método que NÃO é válido; guarde exatamente The application navigator Alerts Console menu item.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1197a3eb"
+  },
+  "em-LklTVmJIGlBUionuU4tm": {
+    "gatilho": "Top incidents do CI do alerta",
+    "macete": "Para enxergar os principais incidentes, Alert Insights.",
+    "conexao": "Quando a pergunta combina top incidents, CI e alert, o local selecionado é Alert Insights.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ddf4bffd"
+  },
+  "em-AmFHPswrvbs5BEr41Lh3": {
+    "gatilho": "Framework do ACC",
+    "macete": "O ACC tem Sensu.",
+    "conexao": "A pista é adotar e estender monitoring checks da comunidade. O framework no gabarito chama-se Sensu.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "ebcc323e"
+  },
+  "em-mCYJo8g1Hu435an7929n": {
+    "gatilho": "Comparar três Priority scores",
+    "macete": "Entre milhões, 4406020.001 vai primeiro.",
+    "conexao": "Compare os valores completos apresentados: o gabarito escolhe o alerta com score 4406020.001.",
+    "tecnica": "Número",
+    "respostas": [
+      1
+    ],
+    "assinatura": "22d1effa"
+  },
+  "em-KA7JwDPGA3UfrqHxJS49": {
+    "gatilho": "Quais eventos viram alertas",
+    "macete": "Se pede ação, merece alerta: necessitate action.",
+    "conexao": "A recomendação selecionada é promover apenas eventos que exigem ação, resumida por Only events that necessitate action.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "0c4a0820"
+  },
+  "em-LHDiNFrwd4F6TyjCrIt6": {
+    "gatilho": "Single system of record",
+    "macete": "Uma base comum: same data model and code base.",
+    "conexao": "A pergunta procura o que unifica as aplicações e os dados; ligue single system of record ao mesmo modelo de dados e código.",
+    "tecnica": "Dupla",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3162af12"
+  },
+  "em-TgqT3VZWZONp2crifjy4": {
+    "gatilho": "Eventos atrasados em rede grande",
+    "macete": "Jobs Ready e mais processadores.",
+    "conexao": "Os dois ajustes do gabarito são deixar os process events jobs em Ready e adicionar event processor jobs.",
+    "tecnica": "Dupla",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "c555330c"
+  },
+  "em-WbtlvI10rz0dI6ykxJQS": {
+    "gatilho": "Valor que fecha automaticamente",
+    "macete": "Nesta pergunta, feche com Resolution State of Closing.",
+    "conexao": "Guarde a expressão exata do gabarito fornecido para este enunciado: Resolution State of Closing. Não troque pelo texto de outra pergunta sobre Severity.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2
+    ],
+    "assinatura": "5d13adef"
+  },
+  "em-sAaRrbpjMhQ39u8NI3kt": {
+    "gatilho": "Cluster de três com influência 70%",
+    "macete": "Três nós, limiar setenta: o serviço fica Clear.",
+    "conexao": "A captura mostra Application Cluster Member com Influence 70 Percent; o resultado de saúde selecionado pelo banco é Clear.",
+    "tecnica": "Cenário",
+    "respostas": [
+      5
+    ],
+    "assinatura": "843f5cb1"
+  },
+  "em-N6xoJd3ZJx5BOkR6UhHn": {
+    "gatilho": "OI antes da interrupção",
+    "macete": "Antes da queda, OI enxerga Anomalies.",
+    "conexao": "O termo pedido é o que Operational Intelligence identifica proativamente: Anomalies.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      4
+    ],
+    "assinatura": "ed338d1f"
+  },
+  "em-Q6mx1z5FRh1bTUrGO7lm": {
+    "gatilho": "Funções da ECC Queue",
+    "macete": "ECC conecta, guarda probes e entrega jobs ao MID.",
+    "conexao": "Os três itens do gabarito são ponto de conexão instância-MID, registros de probes para a rede do cliente e jobs do MID Server.",
+    "tecnica": "Trio",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "19a9cd25"
+  },
+  "em-sbgzrdKTksZfZ7ZSqs56": {
+    "gatilho": "Regex para webserver3.domain.com",
+    "macete": "Espaço antes do servidor, três blocos com ponto.",
+    "conexao": "A expressão correta no banco é .*\\s(\\w+\\.\\w+\\.\\w+).*; guarde o espaço antes do grupo e os três blocos separados por pontos.",
+    "tecnica": "Estrutura",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a80750e7"
+  },
+  "em-UdPnB8g1IHmdJiBBaQMT": {
+    "gatilho": "Normalizar valores do evento",
+    "macete": "Campo da origem para campo padrão: Event field mapping.",
+    "conexao": "A pista é normalizing data de source system para valores padrão de Event Management; o recurso é Event field mapping.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "3a1e213e"
+  },
+  "em-WLM4qcrxd0aCEBwYWYSG": {
+    "gatilho": "Binding para non-host CI",
+    "macete": "Para um não host, retire Node.",
+    "conexao": "O enunciado pede qual atributo remover em Transform and Compose ao fazer binding de non-host CI; o gabarito é Node.",
+    "tecnica": "Contraste",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6e34a166"
+  },
+  "em-pOoUaDfXg3pWEPiVUamg": {
+    "gatilho": "Quando aparece anomaly alert",
+    "macete": "O modelo passa do limite: statistical model threshold breached.",
+    "conexao": "O gabarito principal deste enunciado é o rompimento do limiar do modelo estatístico; a fonte mantém outra resposta ET, indicada na observação.",
+    "tecnica": "Cenário",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8c32dcef",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET B. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-jdpg5tiNGWoqHMWBtM1w": {
+    "gatilho": "Ações de alert management",
+    "macete": "Dois remédios e uma abertura: subflows, workflows, applications.",
+    "conexao": "Os três itens selecionados são Execute remediation subflows, Execute remediation workflows e Launch applications.",
+    "tecnica": "Trio",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "2f291842"
+  },
+  "em-sntbw4DGELpcI5GXcPze": {
+    "gatilho": "E-mail cria eventos",
+    "macete": "E-mail que entra chama Inbound actions.",
+    "conexao": "Para processar incoming email e criar events, associe o recurso Inbound actions.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "92f74350"
+  },
+  "em-Ll0qTEL1jx2pgrXlgf9Z": {
+    "gatilho": "PowerShell grava eventos por URI",
+    "macete": "Duas portas de API: global/em/jsonv2 e now/table/em_event.",
+    "conexao": "O gabarito seleciona os caminhos /api/global/em/jsonv2 e /api/now/table/em_event na URL da instância.",
+    "tecnica": "Dupla",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "f2a6e738"
+  },
+  "em-lu6aEpQjhJCwCVMjUvsO": {
+    "gatilho": "Ordem de alert management rules",
+    "macete": "As regras de alerta sobem: menor Order para maior.",
+    "conexao": "Quando mais de uma alert management rule corresponde, o gabarito principal manda executar todas em ordem crescente.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2
+    ],
+    "assinatura": "4ad5c170",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET С. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-4qKGNi3IYahA52Wdzm5t": {
+    "gatilho": "Como os alertas são processados",
+    "macete": "Regras de alerta, regras de evento e jobs agendados.",
+    "conexao": "O trio fornecido para alerts are processed é Alert management rules, Event rules e Scheduled jobs.",
+    "tecnica": "Trio",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "de62dda8"
+  },
+  "em-FITiVebGKWPLTtF0njcp": {
+    "gatilho": "Comandos individuais do ACC",
+    "macete": "No conjunto deste banco: Events, Checks e Metrics.",
+    "conexao": "O enunciado pede três e o gabarito fornecido marca Events, Checks e Metrics. Memorize os três termos sem substituir pelo que parece intuitivo.",
+    "tecnica": "Trio",
+    "respostas": [
+      0,
+      1,
+      4
+    ],
+    "assinatura": "34572096"
+  },
+  "em-1uN2cmOCgG5kZkMxXiuX": {
+    "gatilho": "Base de licenciamento EM",
+    "macete": "A conta acompanha unique nodes que enviam eventos.",
+    "conexao": "O gabarito principal usa número de unique nodes capazes de enviar eventos à instância; a origem também guarda uma resposta ET divergente.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8e2e636a",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-dPHci9qI4sPyTE2YwMFV": {
+    "gatilho": "Atributo ausente causa Error",
+    "macete": "Severity faz falta e o evento fica Error.",
+    "conexao": "O campo ausente pedido nesta formulação é Severity, o mesmo termo a manter na memória.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      4
+    ],
+    "assinatura": "fedb5365"
+  },
+  "em-73j93DYuMujd7RRA1VHe": {
+    "gatilho": "Política ACC modificada",
+    "macete": "Mudou a policy? Republish.",
+    "conexao": "As alterações de Agent Client Collector policies passam a valer após The policy is republished, conforme a resposta fornecida.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "327517e8"
+  },
+  "em-FRpXtgeiuhci8dS4kqjJ": {
+    "gatilho": "AMB no MID Server",
+    "macete": "AMB mantém a pergunta viva na ECC Queue.",
+    "conexao": "A ação do gabarito é consultar continuamente a External Communication Channel queue por persistent query.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "83edf961"
+  },
+  "em-kZ4irDU7dIsGGdGqpEoE": {
+    "gatilho": "Definição de Event Management",
+    "macete": "Ocorrência anormal: monitorar, detectar e escalar exceções.",
+    "conexao": "A definição selecionada acompanha abnormal occurrences na infraestrutura, operação normal e detecção/escalonamento de exception conditions.",
+    "tecnica": "Sequência",
+    "respostas": [
+      2
+    ],
+    "assinatura": "dd2641ec"
+  },
+  "em-kC7G7ime8eeEb9fqJ4z3": {
+    "gatilho": "Criar tarefa de um alerta",
+    "macete": "Do alerta para a tarefa: Alert Management.",
+    "conexao": "O módulo pedido quando uma task é criada a partir de um alert é Alert Management.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "ec47708e"
+  },
+  "em-XUZ9tDmaJ58T16VRq7TH": {
+    "gatilho": "Parsing preferido em Transform/Compose",
+    "macete": "Para recortar texto, Regex.",
+    "conexao": "A pergunta pede o método preferido de parsing na etapa Transform/Compose da event rule; recorde Regex.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "8483df0f"
+  },
+  "em-Pab4CNIgUZcxYotoFR0N": {
+    "gatilho": "Push de métricas OI",
+    "macete": "Push pede Web: MID Web Server além do MID Server.",
+    "conexao": "No cenário de coleta por push, a opção selecionada acrescenta MID Web Server ao MID Server.",
+    "tecnica": "Dupla",
+    "respostas": [
+      1
+    ],
+    "assinatura": "60144993"
+  },
+  "em-hgIZ3Rpw3Hec8z1Xbe4k": {
+    "gatilho": "JavaScript apropriado em EM",
+    "macete": "Código personalizado na ação do subflow.",
+    "conexao": "Este enunciado escolhe To create a custom action within a subflow como caso adequado para escrever JavaScript.",
+    "tecnica": "Cenário",
+    "respostas": [
+      1
+    ],
+    "assinatura": "617dc8b4"
+  },
+  "em-XMKfDEhCcGbwj3hRix8X": {
+    "gatilho": "Agrupamento dinâmico de CIs",
+    "macete": "Critério técnico, technical service.",
+    "conexao": "A definição fala de dynamic grouping de CIs por critérios e filtered CI classes; o nome do gabarito é technical service.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b7ff94dd"
+  },
+  "em-LLxKfgtBtqQ0pUVJBi3E": {
+    "gatilho": "Dois campos para CI binding",
+    "macete": "Node e sua bagagem: Additional Information.",
+    "conexao": "Os dois campos escolhidos para CI matching são Additional Information e Node; guarde-os juntos.",
+    "tecnica": "Dupla",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "adb7ce49"
+  },
+  "em-ABHrOsQrJ4x1uEtRcM7O": {
+    "gatilho": "Três eixos de saúde da CMDB",
+    "macete": "CMDB saudável tem três Cs: Correctness, Completeness, Compliance.",
+    "conexao": "A pergunta pede as áreas do CMDB Health Dashboard. Recite os três nomes em inglês, sem incluir os outros Cs das alternativas.",
+    "tecnica": "Sigla",
+    "respostas": [
+      0,
+      1,
+      5
+    ],
+    "assinatura": "dc62866c"
+  },
+  "em-GmkqGZvAKqKMOsSHjJJj": {
+    "gatilho": "Formato de additional_info",
+    "macete": "Informação adicional veste JSON.",
+    "conexao": "Quando a origem envia dados ao additional_info, o formato selecionado é JSON.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "5a33a2a2"
+  },
+  "em-epaw9uXmwtzSFlWozaB7": {
+    "gatilho": "Impedir geração de alerta",
+    "macete": "O filtro deixa o evento de fora: Event filter.",
+    "conexao": "Para ignore events e prevent alert generation na configuração da event rule, associe a etapa Event filter.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "507f677b"
+  },
+  "em-cCqYlHuRcTqj93PgT2hk": {
+    "gatilho": "Abre e fecha repetidamente",
+    "macete": "A asa bate: Flapping.",
+    "conexao": "O alerta que muda várias vezes entre Open e Closed no intervalo definido recebe o nome Flapping.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3194fa1a"
+  },
+  "em-3xEy8EfR1C5M23quGifJ": {
+    "gatilho": "Qualidade contínua da CMDB",
+    "macete": "Identifique, reconcilie e relacione.",
+    "conexao": "O conjunto correto exige well-defined Identification, Reconciliation, and Relationship rules para manter qualidade ao longo do tempo.",
+    "tecnica": "Trio",
+    "respostas": [
+      3
+    ],
+    "assinatura": "14635950"
+  },
+  "em-4bAe1PFMJQ7K7HpG1Ycq": {
+    "gatilho": "Estado inválido de alerta",
+    "macete": "Processed ficou no lugar errado.",
+    "conexao": "O enunciado pede invalid state for an alert; o termo selecionado é Processed.",
+    "tecnica": "Contraste",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e5413f93"
+  },
+  "em-uTpReWS1w3Rsced5zDm5": {
+    "gatilho": "Incidente fecha o alerta",
+    "macete": "A frase da propriedade é incident_closes_alert.",
+    "conexao": "Para fechar o alerta após resolver o incidente, memorize evt_mgmt.incident_closes_alert com o sentido da ação da esquerda para a direita.",
+    "tecnica": "Estrutura",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6d21ae7c"
+  },
+  "em-ev8YCy6OnEB1WgJfbDhe": {
+    "gatilho": "Tabela para impacted services",
+    "macete": "Serviço e CI associados: svc_ci_assoc.",
+    "conexao": "O nome da tabela fornecida para calcular impacted services dos alertas é svc_ci_assoc.",
+    "tecnica": "Sigla",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e6ad72b0"
+  },
+  "em-69LijwQvFoqsescmHZ5u": {
+    "gatilho": "Notificação de ocorrência notável",
+    "macete": "A ferramenta notificou: é um event.",
+    "conexao": "Nesta definição curta, monitoring tool notification of a notable occurrence corresponde a event.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d59c10cd"
+  },
+  "em-0Q3UUbSnOemGjatOTWXE": {
+    "gatilho": "Message Key gerada por concatenação",
+    "macete": "Source, Type, Node, Resource, Metric Name.",
+    "conexao": "A chave ausente é construída com cinco campos nesta ordem no gabarito. Recite a lista completa sem trocar por DNS ou Additional info.",
+    "tecnica": "Sequência",
+    "respostas": [
+      1
+    ],
+    "assinatura": "0edc1927"
+  },
+  "em-cpdrzmvxx7toJg6ntaC0": {
+    "gatilho": "Cinco Apache com influência 45",
+    "macete": "Cinco nós a quarenta e cinco: três afetados.",
+    "conexao": "O caso da aplicação com cinco nós Apache e influência 45 seleciona três impacted nodes.",
+    "tecnica": "Número",
+    "respostas": [
+      3
+    ],
+    "assinatura": "7ffc5440"
+  },
+  "em-s1HA8Ri469DpLASViVjy": {
+    "gatilho": "Serviço ausente do Workspace",
+    "macete": "Para aparecer, confira operational.",
+    "conexao": "Neste cenário o motivo selecionado é The service is not set to operational; ligue a ausência visual ao estado operacional.",
+    "tecnica": "Cenário",
+    "respostas": [
+      1
+    ],
+    "assinatura": "4781a119"
+  },
+  "em-0srrsMeBB47mJZcE43PI": {
+    "gatilho": "Implantação rápida de EM e OI",
+    "macete": "Para começar guiado: Guided setup.",
+    "conexao": "O recurso selecionado como auxílio à implementação rápida chama-se Guided setup.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3497f009"
+  },
+  "em-nxqHX4X8lVjo2iMlrpib": {
+    "gatilho": "Modelo comum de serviços",
+    "macete": "Definição compartilhada: Common service data model.",
+    "conexao": "A descrição de definições de serviços padrão e compartilhadas para reporting aponta a Common service data model.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c1eee5f1"
+  },
+  "em-84Ktgqdw9cktAX8igFNp": {
+    "gatilho": "Notificação da ferramenta, outra versão",
+    "macete": "Notável notificação: event, de novo.",
+    "conexao": "Esta variante também define event como a notificação de uma ocorrência notável emitida por ferramenta de monitoração.",
+    "tecnica": "Associação",
+    "respostas": [
+      4
+    ],
+    "assinatura": "d59c10cd"
+  },
+  "em-uKJ0d5Mt2Sfq41xug9MB": {
+    "gatilho": "Reduzir latência de recebimento",
+    "macete": "Olhe o balde: bucket em em_event maior que zero.",
+    "conexao": "A opção selecionada para reduzir latency é verificar que o campo bucket da tabela em_event é > 0.",
+    "tecnica": "Número",
+    "respostas": [
+      0
+    ],
+    "assinatura": "096a6829"
+  },
+  "em-mSMat9eZXEx5MSbSIQUC": {
+    "gatilho": "Polling padrão em segundos",
+    "macete": "O relógio da fonte marca 120 seconds.",
+    "conexao": "A pergunta pede default polling time para coletar eventos da fonte; guarde 120 segundos.",
+    "tecnica": "Número",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c8d11aec"
+  },
+  "em-trE1s7K2YjbJnFa5k7bE": {
+    "gatilho": "Escalar processamento em redes grandes",
+    "macete": "Mais nós e mais jobs.",
+    "conexao": "O par do gabarito é Enable multi-node processing e aumentar a quantidade de scheduled jobs que processam eventos.",
+    "tecnica": "Dupla",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "e14a15c7"
+  },
+  "em-Sf2y9IillU4QqQr2KJIu": {
+    "gatilho": "Exceção no Operator Workspace",
+    "macete": "O grupo excluído é Correlation groups.",
+    "conexao": "O enunciado pede o que o operator workspace não mostra; o item selecionado é Correlation groups.",
+    "tecnica": "Contraste",
+    "respostas": [
+      3
+    ],
+    "assinatura": "15943ea7"
+  },
+  "em-xLXerEqX5sNVsg9E5SI0": {
+    "gatilho": "Extrair nodename em event rule",
+    "macete": "Nome no texto? Regex statement.",
+    "conexao": "Ao ler parse a nodename out of raw event data em event rule, associe a Regex statement.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      3
+    ],
+    "assinatura": "cdf7fd86"
+  },
+  "em-ZsJPoU9pUqsc5xyWrhY9": {
+    "gatilho": "Eventos não casam com alertas",
+    "macete": "Refaça a chave do encontro: Message Key.",
+    "conexao": "Para alterar o modo de correspondência entre events e alerts, o campo selecionado é Message Key.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      1
+    ],
+    "assinatura": "efcf79d2"
+  },
+  "em-EsvVCnyHPptYuOKtQyWP": {
+    "gatilho": "Campos do default Message Key",
+    "macete": "Source, type, node, resource e metric name.",
+    "conexao": "Nesta formulação do valor default, memorize os mesmos cinco campos sem incluir source instance ou event time.",
+    "tecnica": "Conjunto",
+    "respostas": [
+      0
+    ],
+    "assinatura": "e2cf62ce"
+  },
+  "em-bRxnQpggq5y16JP2DOPl": {
+    "gatilho": "Estado Error durante processamento",
+    "macete": "Sem Severity, não passa.",
+    "conexao": "Quando o processamento termina em Error por um valor não definido, o gabarito aponta Severity.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0ac7164d"
+  },
+  "em-M6RUl8305JysVE4tJgYu": {
+    "gatilho": "Node na etapa de CI binding",
+    "macete": "Node procura CI Name, FQDN, IP e MAC Address.",
+    "conexao": "Guarde o conjunto de nomes e endereços exatamente como aparece no gabarito desta versão da pergunta.",
+    "tecnica": "Conjunto",
+    "respostas": [
+      3
+    ],
+    "assinatura": "916d3cd9"
+  },
+  "em-S2GGD8QO07yTgboShar0": {
+    "gatilho": "Prioridade na lista de alertas",
+    "macete": "O primeiro da lista é Alert0010003, com 7306.",
+    "conexao": "A tabela da captura mostra Alert0010003 em Major e Priority 7306. O gabarito o escolhe antes dos alertas Critical de score 400.",
+    "tecnica": "Número",
+    "respostas": [
+      1
+    ],
+    "assinatura": "5eb30a5a"
+  },
+  "em-mSkAIohNX4eroUggSlbJ": {
+    "gatilho": "Papel mínimo para ver alertas",
+    "macete": "Para ver, evt_mgmt_user.",
+    "conexao": "A pergunta é minimum role needed to view alerts; o nome selecionado é evt_mgmt_user.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "acf5bd53"
+  },
+  "em-kkN3ErNI3gUsWPBhChp7": {
+    "gatilho": "Fechamento de alertas ociosos",
+    "macete": "Uma semana sem ação: After 7 days.",
+    "conexao": "O período padrão de fechamento de idle alerts neste banco é sete dias.",
+    "tecnica": "Número",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b4d55626"
+  },
+  "em-sjNCrRo1Es4zSIKpFXR2": {
+    "gatilho": "Binding de alerta à aplicação",
+    "macete": "A aplicação encontra sua identidade nas CI identification rules.",
+    "conexao": "Para correctly bind an alert to an application, associe a resposta CI identification rules.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "799b4ca7"
+  },
+  "em-rBd2pEqoGKlTo8CCzSGE": {
+    "gatilho": "Busca Ask Jeeves a partir do alerta",
+    "macete": "Buscar abre aplicação: Launch Applications.",
+    "conexao": "A quick response rule que abre uma busca sobre a descrição é configurada em Launch Applications no gabarito principal.",
+    "tecnica": "Cenário",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b30d1aae",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-nsi2dcHCgMOCE7KyHejq": {
+    "gatilho": "Onde está Priority Breakdown",
+    "macete": "Mais detalhes, More Information.",
+    "conexao": "O local selecionado para Priority Breakdown do alerta é a seção More Information.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c6823b4a"
+  },
+  "em-CmSxKPGQFafM4CnD2IPw": {
+    "gatilho": "Feedback de agrupamento automático",
+    "macete": "A voz do operador fica no dropdown do alert group.",
+    "conexao": "A resposta principal aponta Dropdown box on the alert group record. A origem possui divergência de gabarito, mantida na observação.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      4
+    ],
+    "assinatura": "2a98f34b",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal E; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-Q6UXcA8UvSyzCrRdbzaK": {
+    "gatilho": "Nenhum agrupamento acontece",
+    "macete": "A chave geral desligada: grouping property false.",
+    "conexao": "Se CMDB, automated e text based grouping falham juntos, a opção selecionada é a propriedade de alert correlation que habilita grouping estar false.",
+    "tecnica": "Cenário",
+    "respostas": [
+      4
+    ],
+    "assinatura": "8414be2c"
+  },
+  "em-60T5kmOHzufJg4t6hknd": {
+    "gatilho": "JSON suportado em additional info",
+    "macete": "CPU entre aspas, valor também: {\"CPU\":\"100\"}.",
+    "conexao": "A alternativa fornecida como string JSON suportada é {\"CPU\":\"100\"}; guarde a estrutura exata de chave e valor em texto.",
+    "tecnica": "Estrutura",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f3442145"
+  },
+  "em-MEIPf6s41T2QuHmziwvN": {
+    "gatilho": "SNMP traps viram eventos",
+    "macete": "Para escutar trap, MID SNMP trap listener.",
+    "conexao": "O componente a habilitar no MID Server para receber essas notificações é MID SNMP trap listener.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c9bb058e"
+  },
+  "em-Xbphp6KsK2AeUM5oso7w": {
+    "gatilho": "ACC pausa a coleta",
+    "macete": "CPU do agente acima do threshold: pausa.",
+    "conexao": "A condição escolhida para self-monitoring pausar data collection é o uso de CPU do host pelo agente exceder um limiar.",
+    "tecnica": "Cenário",
+    "respostas": [
+      4
+    ],
+    "assinatura": "f29a4a8c"
+  },
+  "em-phynvxzOjtyyJCPjybzz": {
+    "gatilho": "ACC monitora application service",
+    "macete": "Para a aplicação, um proxy agent.",
+    "conexao": "A opção do gabarito principal para application service monitoring pelo Agent Client Collector é A proxy agent.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "839c51c7",
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET B -. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  "em-user-provided-5f81bbfca684d4f25e6a558f60d34ee4": {
+    "gatilho": "Papel para criar Technical Service",
+    "macete": "Criar serviço técnico pede evt_mgmt_admin.",
+    "conexao": "Nesta questão suplementar o papel fornecido para criar uma Technical Service é evt_mgmt_admin.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      0
+    ],
+    "assinatura": "dc4a8f35"
+  },
+  "em-user-provided-1c541e3b4182c13a7e0fac9c5956e535": {
+    "gatilho": "Link view na express list",
+    "macete": "O link desenha grupos por tags.",
+    "conexao": "A função selecionada de link view em Service Operations Workspace é visualizar tag-based alert groups.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      3
+    ],
+    "assinatura": "8b85ae9c"
+  },
+  "em-user-provided-05732cbd7de02ccbc61c9e82fba87548": {
+    "gatilho": "Mapa com CIs e alertas em tempo real",
+    "macete": "Tudo unido no Unified service map.",
+    "conexao": "A ferramenta descrita com relações CI-alerta, atualizações em tempo real e caminhos de impacto é Unified service map.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "bfac870b"
+  },
+  "em-user-provided-3dba897efd241fa96922af78fe1b87ac": {
+    "gatilho": "Aprovar execução de remediação",
+    "macete": "A aprovação fica na approvals related list da regra.",
+    "conexao": "A questão suplementar fornece In the alert management rule's approvals related list como local de configuração dos pedidos de aprovação.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3e9f1d7c"
+  },
+  "em-user-provided-82a54852d2a4f7addc5c841096736044": {
+    "gatilho": "Investigar transações da instância",
+    "macete": "Para a história do sistema, System log module.",
+    "conexao": "O local selecionado para encontrar e solucionar problemas de transactions e events da instância é System log module.",
+    "tecnica": "Palavra-chave",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f5c384f5"
+  },
+  "em-user-provided-0a2aac5daa65dc98919a78ad2551d5c0": {
+    "gatilho": "Quando ações da regra se aplicam",
+    "macete": "O filtro decide quem entra na ação.",
+    "conexao": "O que determina se as ações de uma alert management rule se aplicam ao alerta é The alert management rule's filter.",
+    "tecnica": "Imagem mental",
+    "respostas": [
+      2
+    ],
+    "assinatura": "068931c3"
+  },
+  "em-user-provided-299ef58b64147f7bfc7215167afa0154": {
+    "gatilho": "ITOM Health na variante de três",
+    "macete": "Health em trio: Event Management, Health Log Analytics, Agent Client Collector.",
+    "conexao": "Esta variante suplementar pede três aplicações e fornece esse trio. Mantenha separado do enunciado antigo que pede a composição em dois produtos.",
+    "tecnica": "Trio",
+    "respostas": [
+      1,
+      2,
+      5
+    ],
+    "assinatura": "048efae9",
+    "observacao": "Esta questão é uma variante suplementar da questão de origem 37, com outra formulação e outro conjunto de respostas. Os dois registros e seus gabaritos foram mantidos separadamente."
+  }
+}

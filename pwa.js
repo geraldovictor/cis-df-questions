@@ -34,7 +34,7 @@ button.addEventListener('click', async () => {
     await prompt.prompt();
     const choice = await prompt.userChoice;
     status.textContent = choice.outcome === 'accepted'
-      ? 'Instalação solicitada. Depois, abra CIS DF pelo ícone no seu dispositivo.'
+      ? 'Instalação solicitada. Depois, abra Certificações pelo ícone no seu dispositivo.'
       : 'Você pode instalar depois pelo menu do navegador.';
   } catch {
     status.textContent = 'Use as instruções abaixo para instalar pelo menu do navegador.';

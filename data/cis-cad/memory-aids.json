@@ -1,0 +1,1562 @@
+{
+  "cad-QST0001015": {
+    "gatilho": "Allow configuration e Business Rules fora do escopo",
+    "macete": "Configuration abre a porta: Business Rules podem vir de outro scope.",
+    "conexao": "Associe a pista “Allow configuration e Business Rules fora do escopo” aos termos do gabarito fornecido: Out of scope applications can create Business Rules for the table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ca210fec"
+  },
+  "cad-QST0001124": {
+    "gatilho": "Benefícios de concentrar lógica em Script Include",
+    "macete": "Lista de benefícios incompleta: guarde a pista e confira a observação antes de decorar.",
+    "conexao": "Associe a pista “Benefícios de concentrar lógica em Script Include” aos termos do gabarito fornecido: a, b, and d. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "3aa18fd4",
+    "observacao": "O arquivo combina textos de alternativas e menciona uma lista de benefícios que não está completa no enunciado. O gabarito foi preservado; não é possível reconstruir todos os itens com segurança."
+  },
+  "cad-QST0001077": {
+    "gatilho": "g_user.hasRole com usuário ou admin",
+    "macete": "Role pedida ou passe de admin: os dois aparecem nesta resposta.",
+    "conexao": "Associe a pista “g_user.hasRole com usuário ou admin” aos termos do gabarito fornecido: The method returns true if the currently logged in user has the x_my_app_user role or the admin role. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a1f594c5"
+  },
+  "cad-QST0001041": {
+    "gatilho": "Para que usar JavaScript no desenvolvimento de aplicações",
+    "macete": "JavaScript estende: Extend and add functionality.",
+    "conexao": "Associe a pista “Para que usar JavaScript no desenvolvimento de aplicações” aos termos do gabarito fornecido: Extend and add functionality. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "5bfa8741",
+    "observacao": "O enunciado termina com caracteres residuais no arquivo original. O texto e o gabarito foram preservados."
+  },
+  "cad-QST0001127": {
+    "gatilho": "Variável em uma SOAP Message",
+    "macete": "SOAP leva a variável embrulhada: dólar, chaves e nome.",
+    "conexao": "Associe a pista “Variável em uma SOAP Message” aos termos do gabarito fornecido: ${variable_name}. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "09f5ace8"
+  },
+  "cad-QST0001030": {
+    "gatilho": "Quando a aplicação não combina com ServiceNow",
+    "macete": "Biblioteca de baixo nível usada as-is é a pista de incompatibilidade.",
+    "conexao": "Associe a pista “Quando a aplicação não combina com ServiceNow” aos termos do gabarito fornecido: Requires \"as-is\" use of low-level programming libraries. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "41e32669"
+  },
+  "cad-QST0001022": {
+    "gatilho": "Referenciar propriedade do evento em notificação",
+    "macete": "Propriedade na vitrine: getDisplayValue é o termo marcado neste banco.",
+    "conexao": "Associe a pista “Referenciar propriedade do evento em notificação” aos termos do gabarito fornecido: ${<property name>.getDisplayValue()}. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ebf2b74e"
+  },
+  "cad-QST0001125": {
+    "gatilho": "Funcionalidade que o enunciado exclui do Flow Designer",
+    "macete": "A pista Run as vem com aviso: este item e outro do banco divergem.",
+    "conexao": "Associe a pista “Funcionalidade que o enunciado exclui do Flow Designer” aos termos do gabarito fornecido: Test a flow using the \"Run as\" feature. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "70af2d21",
+    "observacao": "Neste mesmo banco, QST0001151 inclui Test a flow using the \"Run as\" feature entre as funcionalidades, enquanto esta questão a marca como não sendo uma funcionalidade. Os dois gabaritos originais foram mantidos."
+  },
+  "cad-QST0001151": {
+    "gatilho": "Três funcionalidades do Flow Designer no gabarito",
+    "macete": "Estágios, chamada de flow e Run as: trio fornecido, com divergência sinalizada.",
+    "conexao": "Associe a pista “Três funcionalidades do Flow Designer no gabarito” aos termos do gabarito fornecido: Add stages to a flow. • Call a flow from another flow or subflow. • Test a flow using the \"Run as\" feature.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "238e1643",
+    "observacao": "Neste mesmo banco, QST0001125 marca Test a flow using the \"Run as\" feature como não sendo uma funcionalidade. Os dois gabaritos originais foram mantidos."
+  },
+  "cad-QST0001019": {
+    "gatilho": "Role catalog_admin sem outros casos",
+    "macete": "Somente a role: lembre do termo Only na resposta fornecida.",
+    "conexao": "Associe a pista “Role catalog_admin sem outros casos” aos termos do gabarito fornecido: g_user.hasRoleOnly('catalog_admin'). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "40ca5aa0"
+  },
+  "cad-QST0001029": {
+    "gatilho": "Business Rule verificando a role admin",
+    "macete": "O banco ligou admin a g_form.hasRole; confira o gabarito original com cautela.",
+    "conexao": "Associe a pista “Business Rule verificando a role admin” aos termos do gabarito fornecido: g_form.hasRole('admin'). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "59675376"
+  },
+  "cad-QST0001136": {
+    "gatilho": "Possibilidade de mudar o escopo da aplicação",
+    "macete": "Mudança de scope: a resposta fornecida começa com Yes.",
+    "conexao": "Associe a pista “Possibilidade de mudar o escopo da aplicação” aos termos do gabarito fornecido: Yes, it's possible. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "297f25a6"
+  },
+  "cad-QST0001097": {
+    "gatilho": "Afirmação excluída sobre Form Designer",
+    "macete": "Neste item negativo, o X de Delete é a pista marcada.",
+    "conexao": "Associe a pista “Afirmação excluída sobre Form Designer” aos termos do gabarito fornecido: To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "b367110d"
+  },
+  "cad-QST0001092": {
+    "gatilho": "Campos de tabelas que estendem outra tabela",
+    "macete": "A filha recebe os campos da mãe: Inherit the parent's fields.",
+    "conexao": "Associe a pista “Campos de tabelas que estendem outra tabela” aos termos do gabarito fornecido: Inherit the parent's fields. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e89d4d6e",
+    "observacao": "QST0001037 marca a herança de funcionalidade como afirmação que não se aplica; aqui o banco afirma a herança de campos. Confira a distinção de campos e funcionalidade ao revisar esses gabaritos."
+  },
+  "cad-QST0001001": {
+    "gatilho": "Três operações de campos no Form Designer",
+    "macete": "Arrastar existente, criar pelo tipo e remover pelo X: trio deste gabarito.",
+    "conexao": "Associe a pista “Três operações de campos no Form Designer” aos termos do gabarito fornecido: a, b, and c. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a780e91a"
+  },
+  "cad-QST0001128": {
+    "gatilho": "Forma de instalação que a questão exclui",
+    "macete": "Share fica de fora na resposta fornecida para instalação.",
+    "conexao": "Associe a pista “Forma de instalação que a questão exclui” aos termos do gabarito fornecido: Download and install an application from the ServiceNow Share web site. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0e055e14"
+  },
+  "cad-QST0001132": {
+    "gatilho": "Criação automática no Guided Application Creator",
+    "macete": "Criador guiado chega com Default access controls.",
+    "conexao": "Associe a pista “Criação automática no Guided Application Creator” aos termos do gabarito fornecido: Default access controls are automatically created. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "2ca9fa7c"
+  },
+  "cad-QST0001140": {
+    "gatilho": "Aplicação de escopo com flow actions",
+    "macete": "A roda de ações tem um raio: Spoke.",
+    "conexao": "Associe a pista “Aplicação de escopo com flow actions” aos termos do gabarito fornecido: Spoke. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b2b57c05"
+  },
+  "cad-QST0001144": {
+    "gatilho": "Endpoint de REST Message",
+    "macete": "Endpoint aponta para o dado: URI do que acessar, consultar ou modificar.",
+    "conexao": "Associe a pista “Endpoint de REST Message” aos termos do gabarito fornecido: Tne URI of the data to be accessed, queried, or modified. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "9dee25df"
+  },
+  "cad-QST0001148": {
+    "gatilho": "Outra role típica além da role de usuário da aplicação",
+    "macete": "Usuário usa; Application Admin aparece como a outra role.",
+    "conexao": "Associe a pista “Outra role típica além da role de usuário da aplicação” aos termos do gabarito fornecido: Application Admin. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "136a6eb0"
+  },
+  "cad-QST0001131": {
+    "gatilho": "Tipos de variáveis complexas do Flow Designer",
+    "macete": "Array.Reference, Integer e Freedom: trio literal deste arquivo, com aviso.",
+    "conexao": "Associe a pista “Tipos de variáveis complexas do Flow Designer” aos termos do gabarito fornecido: Array.Reference data type • Integer data type • Freedom data type. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "6bf41ec0",
+    "observacao": "QST0001150 apresenta uma lista diferente de tipos suportados de variáveis do Flow Designer. Os gabaritos distintos do arquivo foram preservados."
+  },
+  "cad-QST0001135": {
+    "gatilho": "Duas respostas a gs.eventQueue",
+    "macete": "Evento toca duas campainhas: Email Notification e Script Action.",
+    "conexao": "Associe a pista “Duas respostas a gs.eventQueue” aos termos do gabarito fornecido: Email Notification • Script Action. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "701c8705"
+  },
+  "cad-QST0001139": {
+    "gatilho": "Duas verificações de usuário ao depurar e-mail",
+    "macete": "Para este par: usuário Active e Email válido.",
+    "conexao": "Associe a pista “Duas verificações de usuário ao depurar e-mail” aos termos do gabarito fornecido: Active must be true. • The Email field must have a valid value.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "8da096f9"
+  },
+  "cad-QST0001143": {
+    "gatilho": "Três dados para vincular aplicação ao Git",
+    "macete": "Endereço URI, Password e User name: endereço e credenciais.",
+    "conexao": "Associe a pista “Três dados para vincular aplicação ao Git” aos termos do gabarito fornecido: URI • Password • User name. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3,
+      4
+    ],
+    "assinatura": "bdbbaff6"
+  },
+  "cad-QST0001147": {
+    "gatilho": "Dois objetos de script do cliente",
+    "macete": "Cliente vê usuário e formulário: g_user e g_form.",
+    "conexao": "Associe a pista “Dois objetos de script do cliente” aos termos do gabarito fornecido: g_user • g_form. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      4
+    ],
+    "assinatura": "28003b29"
+  },
+  "cad-QST0001126": {
+    "gatilho": "Coalesce durante importação",
+    "macete": "Coalesce pergunta: já existe ou é novo?",
+    "conexao": "Associe a pista “Coalesce durante importação” aos termos do gabarito fornecido: To determine if a record matches an existing record or is a new record. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d6bed7f0"
+  },
+  "cad-QST0001130": {
+    "gatilho": "Razões para criar aplicações na plataforma",
+    "macete": "Substituir o antigo, ampliar a entrega e ampliar o valor.",
+    "conexao": "Associe a pista “Razões para criar aplicações na plataforma” aos termos do gabarito fornecido: a, b, and d. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "007e06ea"
+  },
+  "cad-QST0001134": {
+    "gatilho": "O que é Event Registry",
+    "macete": "Registry é o cadastro: tabela com um registro por evento conhecido.",
+    "conexao": "Associe a pista “O que é Event Registry” aos termos do gabarito fornecido: A table containing a record for every Event known to the ServiceNow system which allows ServiceNow to react when Events are generated. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3afc4295"
+  },
+  "cad-QST0001138": {
+    "gatilho": "O que scripts do cliente gerenciam",
+    "macete": "Cliente enxerga Forms and Form Fields.",
+    "conexao": "Associe a pista “O que scripts do cliente gerenciam” aos termos do gabarito fornecido: Forms and Form Fields. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "ab2db0b6"
+  },
+  "cad-QST0001142": {
+    "gatilho": "Três destinos de publicação da aplicação",
+    "macete": "Publicação tem três prateleiras: repository, Store e Update Set.",
+    "conexao": "Associe a pista “Três destinos de publicação da aplicação” aos termos do gabarito fornecido: Publish to an application repository • Publish to the ServiceNow Store • Publish to an Update Set. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "80ffb99c"
+  },
+  "cad-QST0001146": {
+    "gatilho": "Plano de desenvolvimento com quantidade divergente",
+    "macete": "Problema, passos e pessoas: três marcadas, apesar do pedido de quatro.",
+    "conexao": "Associe a pista “Plano de desenvolvimento com quantidade divergente” aos termos do gabarito fornecido: Business problem • Process steps • Users/stakeholders. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "b7e0344b",
+    "observacao": "O enunciado pede quatro respostas, mas o arquivo marca apenas três. A alternativa final também contém um item G incorporado ao texto. A correção usa somente as três respostas fornecidas, sem inventar uma quarta."
+  },
+  "cad-QST0001150": {
+    "gatilho": "Integer, Array.Reference e String no Flow Designer",
+    "macete": "Inteiro, referência em array e texto: o trio desta versão.",
+    "conexao": "Associe a pista “Integer, Array.Reference e String no Flow Designer” aos termos do gabarito fornecido: Integer • Array.Reference • String. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      4
+    ],
+    "assinatura": "a2cfe060",
+    "observacao": "QST0001131 apresenta uma lista diferente de tipos suportados de variáveis do Flow Designer. Os gabaritos distintos do arquivo foram preservados."
+  },
+  "cad-QST0001129": {
+    "gatilho": "Componente excluído do Custom UI no ATF",
+    "macete": "Custom UI: este gabarito deixa Form field values de fora.",
+    "conexao": "Associe a pista “Componente excluído do Custom UI no ATF” aos termos do gabarito fornecido: Form field values. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "52114f1d"
+  },
+  "cad-QST0001133": {
+    "gatilho": "Três maneiras de definir tabelas no GAC",
+    "macete": "Criar, subir planilha ou usar existente: três portas para a tabela.",
+    "conexao": "Associe a pista “Três maneiras de definir tabelas no GAC” aos termos do gabarito fornecido: Create a new table on the platform • Upload an existing spreadsheet • Use an existing table on the platform. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "cfef0187",
+    "observacao": "QST0001093 marca Upload spreadsheet como não sendo uma opção no Guided Application Creator. Os gabaritos originais foram mantidos."
+  },
+  "cad-QST0001137": {
+    "gatilho": "Duas características de g_scratchpad",
+    "macete": "Scratchpad empurra servidor para cliente; a segunda pista é a ausência no mobile.",
+    "conexao": "Associe a pista “Duas características de g_scratchpad” aos termos do gabarito fornecido: Used to push information from the server to the client • Does not exist on the mobile platform. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "cee76df4"
+  },
+  "cad-QST0001141": {
+    "gatilho": "Três necessidades que combinam com a plataforma",
+    "macete": "Processo, relatório e formulário: workflow, reporting e forms.",
+    "conexao": "Associe a pista “Três necessidades que combinam com a plataforma” aos termos do gabarito fornecido: It needs workflow to manage processes. • It requires reporting capabilities. • It uses forms extensively to interact with data.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "ef2c5a1e"
+  },
+  "cad-QST0001145": {
+    "gatilho": "Scripts e políticas para Record Producers",
+    "macete": "Producer usa catálogo: Catalog Client Scripts e Catalog UI Policies.",
+    "conexao": "Associe a pista “Scripts e políticas para Record Producers” aos termos do gabarito fornecido: Catalog Client Scripts • Catalog UI Policies. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "79c498d7"
+  },
+  "cad-QST0001149": {
+    "gatilho": "Relação entre campos de Import Set e tabela existente",
+    "macete": "Do campo de origem ao destino, o mapa é Transform Map.",
+    "conexao": "Associe a pista “Relação entre campos de Import Set e tabela existente” aos termos do gabarito fornecido: Transform Map. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "5ece896c"
+  },
+  "cad-QST0001096": {
+    "gatilho": "Dois benefícios de aplicação privada com scope",
+    "macete": "Scope separa colisões e permite instalar ou desinstalar.",
+    "conexao": "Associe a pista “Dois benefícios de aplicação privada com scope” aos termos do gabarito fornecido: To reduce risk at code collisions • To enable installation and uninstallation of an application. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "7aa805e4"
+  },
+  "cad-QST0001021": {
+    "gatilho": "Roles de acesso Às operações de source control",
+    "macete": "Duas chaves do repositório: source_control e admin.",
+    "conexao": "Associe a pista “Roles de acesso Às operações de source control” aos termos do gabarito fornecido: source_control • admin. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "884b45c6"
+  },
+  "cad-QST0001025": {
+    "gatilho": "Override application menu roles no módulo",
+    "macete": "Neste gabarito, o menu dá visibilidade ao módulo sem a role dele.",
+    "conexao": "Associe a pista “Override application menu roles no módulo” aos termos do gabarito fornecido: Users with access to the application menu can see the module even if they don't have the module role. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "69e03e74"
+  },
+  "cad-QST0001095": {
+    "gatilho": "Interface guiada do início do desenvolvimento",
+    "macete": "Começo com guia pede Guided Application Creator.",
+    "conexao": "Associe a pista “Interface guiada do início do desenvolvimento” aos termos do gabarito fornecido: Guided Application Creator. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "4c849bc9"
+  },
+  "cad-QST0001099": {
+    "gatilho": "Passo de ATF que cria usuário com roles e grupos",
+    "macete": "Precisou criar usuário para o teste? Create a user.",
+    "conexao": "Associe a pista “Passo de ATF que cria usuário com roles e grupos” aos termos do gabarito fornecido: Create a user. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "34c93091"
+  },
+  "cad-QST0001024": {
+    "gatilho": "Onde usar os métodos de GlideUser",
+    "macete": "g_user aparece no trio cliente: Client Scripts, UI Policies e UI Actions.",
+    "conexao": "Associe a pista “Onde usar os métodos de GlideUser” aos termos do gabarito fornecido: Can be used in Client Scripts, UI Policies, and Ul Actions. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6d785719"
+  },
+  "cad-QST0001094": {
+    "gatilho": "O que scripts do servidor gerenciam neste banco",
+    "macete": "Servidor foi associado a User access no gabarito fornecido.",
+    "conexao": "Associe a pista “O que scripts do servidor gerenciam neste banco” aos termos do gabarito fornecido: User access. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "499513ec"
+  },
+  "cad-QST0001098": {
+    "gatilho": "Registros para acompanhar pedidos entre scopes",
+    "macete": "Acesso atravessou scope? Cross-scope access records.",
+    "conexao": "Associe a pista “Registros para acompanhar pedidos entre scopes” aos termos do gabarito fornecido: Cross-scope access records. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "0c0c9367"
+  },
+  "cad-QST0001100": {
+    "gatilho": "Plugin do Guided Application Creator",
+    "macete": "Nome do plugin acompanha o criador: com.glide.sn-guided-app-creator.",
+    "conexao": "Associe a pista “Plugin do Guided Application Creator” aos termos do gabarito fornecido: com.glide.sn-guided-app-creator. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "6a776dda"
+  },
+  "cad-QST0001023": {
+    "gatilho": "Script Include com Protection Policy Protected",
+    "macete": "Protected foi associado à habilitação por admin neste arquivo.",
+    "conexao": "Associe a pista “Script Include com Protection Policy Protected” aos termos do gabarito fornecido: The Protection policy option can only be enabled by a user with the admin role. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "1cf4aebe"
+  },
+  "cad-QST0001026": {
+    "gatilho": "Mapa entre campos da importação e da tabela de destino",
+    "macete": "Importação troca campos pelo Transform Map.",
+    "conexao": "Associe a pista “Mapa entre campos da importação e da tabela de destino” aos termos do gabarito fornecido: Transform Map. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "df91e96b"
+  },
+  "cad-QST0001123": {
+    "gatilho": "Verificar se um e-mail foi enviado por evento",
+    "macete": "Procure o envelope no log: System Logs > Emails.",
+    "conexao": "Associe a pista “Verificar se um e-mail foi enviado por evento” aos termos do gabarito fornecido: System Logs > Emails. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "1329c6c8"
+  },
+  "cad-QST0001122": {
+    "gatilho": "Resposta a evento em questão com opções misturadas",
+    "macete": "Evento e envelope: Email Notification é a resposta marcada nesta versão.",
+    "conexao": "Associe a pista “Resposta a evento em questão com opções misturadas” aos termos do gabarito fornecido: Email Notification. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a8dcbacf",
+    "observacao": "O arquivo traz combinações de letras e marcadores de alternativas misturados no texto da primeira opção. O texto e a resposta marcada foram preservados."
+  },
+  "cad-QST0001104": {
+    "gatilho": "Duas classificações de Task no arquivo",
+    "macete": "O par fornecido é Child class com Base class; memorize com revisão crítica.",
+    "conexao": "Associe a pista “Duas classificações de Task no arquivo” aos termos do gabarito fornecido: Child class • Base class. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "933be8c2"
+  },
+  "cad-QST0001108": {
+    "gatilho": "Uso de tipo de campo considerado incorreto",
+    "macete": "Date com hora do dia é o uso que este item pede para excluir.",
+    "conexao": "Associe a pista “Uso de tipo de campo considerado incorreto” aos termos do gabarito fornecido: Use the Date data type to enter the date and time of day. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "075b1085"
+  },
+  "cad-QST0001112": {
+    "gatilho": "Boa prática para instruções no formulário",
+    "macete": "Instrução preenchida e só leitura: populated read-only field neste banco.",
+    "conexao": "Associe a pista “Boa prática para instruções no formulário” aos termos do gabarito fornecido: A populated read-only field. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "78078ae5"
+  },
+  "cad-QST0001116": {
+    "gatilho": "Ordem de avaliação de ACL no gabarito fornecido",
+    "macete": "O banco pede a sequência Script, Conditions, Roles.",
+    "conexao": "Associe a pista “Ordem de avaliação de ACL no gabarito fornecido” aos termos do gabarito fornecido: Script, Conditions, Roles. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c99384b6"
+  },
+  "cad-QST0001120": {
+    "gatilho": "Método para ler Application Property",
+    "macete": "A pista App está no nome marcado: gs.getAppProperty().",
+    "conexao": "Associe a pista “Método para ler Application Property” aos termos do gabarito fornecido: gs.getAppProperty(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "71895e40"
+  },
+  "cad-QST0001103": {
+    "gatilho": "Duas funcionalidades disponíveis em Studio",
+    "macete": "No Studio deste item: Merge branches e Search code.",
+    "conexao": "Associe a pista “Duas funcionalidades disponíveis em Studio” aos termos do gabarito fornecido: Merge branches • Search code. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "53555e95"
+  },
+  "cad-QST0001107": {
+    "gatilho": "Três maneiras de criar tabela",
+    "macete": "Planilha, Now Experience Table Creator e Extend a table.",
+    "conexao": "Associe a pista “Três maneiras de criar tabela” aos termos do gabarito fornecido: Upload and turn a spreadsheet into a custom table • Use the Now Experience Table Creator • Extend a table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "ad0c7db0"
+  },
+  "cad-QST0001111": {
+    "gatilho": "Organizar campos em um formulário",
+    "macete": "Campos em grupos pedem Sections.",
+    "conexao": "Associe a pista “Organizar campos em um formulário” aos termos do gabarito fornecido: Sections. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ecae7d73"
+  },
+  "cad-QST0001115": {
+    "gatilho": "Obter sys_id do usuário em Business Rule",
+    "macete": "User mais SysID: gs.getUserSysID() é o texto fornecido.",
+    "conexao": "Associe a pista “Obter sys_id do usuário em Business Rule” aos termos do gabarito fornecido: gs.getUserSysID(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d112d3ec"
+  },
+  "cad-QST0001119": {
+    "gatilho": "Opção de caller access que a questão exclui",
+    "macete": "A opção marcada é None: o termo de ausência.",
+    "conexao": "Associe a pista “Opção de caller access que a questão exclui” aos termos do gabarito fornecido: None. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0b802183"
+  },
+  "cad-QST0001102": {
+    "gatilho": "Selecionar aplicação no Application Picker",
+    "macete": "Escolheu aplicação no Picker, definiu Application Scope nesta versão.",
+    "conexao": "Associe a pista “Selecionar aplicação no Application Picker” aos termos do gabarito fornecido: Selecting an application from the Application Picker sets the Application Scope. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "fc1791fa",
+    "observacao": "QST0001062 marca Select an application to run para o propósito do Application Picker. As formulações e os gabaritos originais foram mantidos."
+  },
+  "cad-QST0001106": {
+    "gatilho": "Dois motivos para construir app customizado",
+    "macete": "Processo interno específico e integração externa: use case e custom integration.",
+    "conexao": "Associe a pista “Dois motivos para construir app customizado” aos termos do gabarito fornecido: To fulfill a specific use case on internal processes • To create a custom integration for a 3rd party system. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "78834893"
+  },
+  "cad-QST0001110": {
+    "gatilho": "Classe excluída das APIs de cliente com scope",
+    "macete": "A classe marcada fora do cliente é GlideRecord.",
+    "conexao": "Associe a pista “Classe excluída das APIs de cliente com scope” aos termos do gabarito fornecido: GlideRecord. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "9b378eaf"
+  },
+  "cad-QST0001114": {
+    "gatilho": "Objeto GlideForm do lado cliente",
+    "macete": "Formulário abrevia em g_form.",
+    "conexao": "Associe a pista “Objeto GlideForm do lado cliente” aos termos do gabarito fornecido: g_form. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "469ce966"
+  },
+  "cad-QST0001118": {
+    "gatilho": "Leitura de campos com table.None e ACL em field3",
+    "macete": "O arquivo marca o par field1 e field3, com a grafia original filed1.",
+    "conexao": "Associe a pista “Leitura de campos com table.None e ACL em field3” aos termos do gabarito fornecido: filed1 and field3. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "acc47909"
+  },
+  "cad-QST0001101": {
+    "gatilho": "Fontes externas de dados para aplicação",
+    "macete": "Planilha, serviço web e CSV se juntam em All of the above.",
+    "conexao": "Associe a pista “Fontes externas de dados para aplicação” aos termos do gabarito fornecido: All of the above. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "7103e364"
+  },
+  "cad-QST0001105": {
+    "gatilho": "Campos que podem ser apagados",
+    "macete": "Definido pelo usuário e não herdado: dupla da exclusão neste item.",
+    "conexao": "Associe a pista “Campos que podem ser apagados” aos termos do gabarito fornecido: User-defined non-inherited fields can be deleted. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3899a79c",
+    "observacao": "QST0001061 marca como possível excluir campos herdados; este item seleciona campos definidos pelo usuário e não herdados. Os gabaritos originais foram preservados."
+  },
+  "cad-QST0001109": {
+    "gatilho": "Item que não faz parte do Form Designer",
+    "macete": "Mapa de tabelas fica fora deste designer: Schema map.",
+    "conexao": "Associe a pista “Item que não faz parte do Form Designer” aos termos do gabarito fornecido: Schema map. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "9e1adb95"
+  },
+  "cad-QST0001113": {
+    "gatilho": "Três métodos de GlideRecord que executam consulta",
+    "macete": "Query com e sem sublinhado, mais get incompleto no arquivo.",
+    "conexao": "Associe a pista “Três métodos de GlideRecord que executam consulta” aos termos do gabarito fornecido: query() • _query() • get(. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "96a41999",
+    "observacao": "O método get( aparece incompleto na alternativa original. A opção e o gabarito foram preservados sem completar o código."
+  },
+  "cad-QST0001117": {
+    "gatilho": "ACL table.None, wildcard e permissão em field3",
+    "macete": "Neste cenário com permissão específica, a pista é field3 only.",
+    "conexao": "Associe a pista “ACL table.None, wildcard e permissão em field3” aos termos do gabarito fornecido: field3 only. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "95316e7e"
+  },
+  "cad-QST0001121": {
+    "gatilho": "Link de módulo para Application Properties",
+    "macete": "Página de propriedades vai por URL (from Arguments).",
+    "conexao": "Associe a pista “Link de módulo para Application Properties” aos termos do gabarito fornecido: URL (from Arguments). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "04ea7038"
+  },
+  "cad-QST0001056": {
+    "gatilho": "Métodos Úteis em scripts de Access Control",
+    "macete": "Role no gs, registro novo no current: hasRole e isNewRecord.",
+    "conexao": "Associe a pista “Métodos Úteis em scripts de Access Control” aos termos do gabarito fornecido: gs.hasRole() and current.isNewRecord(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "18176d6c"
+  },
+  "cad-QST0001060": {
+    "gatilho": "Objetos em Scheduled Script Execution",
+    "macete": "O par fornecido une GlideRecord a current.",
+    "conexao": "Associe a pista “Objetos em Scheduled Script Execution” aos termos do gabarito fornecido: GlideRecord and current. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c9a38014"
+  },
+  "cad-QST0001064": {
+    "gatilho": "Afirmação sobre módulos que não é verdadeira",
+    "macete": "A palavra Every e a associação obrigatória a table são a pista excluída.",
+    "conexao": "Associe a pista “Afirmação sobre módulos que não é verdadeira” aos termos do gabarito fornecido: Every Module must be associated with a table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "7cfa259e"
+  },
+  "cad-QST0001068": {
+    "gatilho": "Feedback do cliente direcionado a um campo",
+    "macete": "Mensagem no campo tem Field no método: g_form.showFieldMsg().",
+    "conexao": "Associe a pista “Feedback do cliente direcionado a um campo” aos termos do gabarito fornecido: g_form.showFieldMsg(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "199ed16f"
+  },
+  "cad-QST0001072": {
+    "gatilho": "Três características do Record Producer",
+    "macete": "Perguntas, script obrigatório e comportamento de campos: trio marcado neste banco.",
+    "conexao": "Associe a pista “Três características do Record Producer” aos termos do gabarito fornecido: Each field prompts the user with a question rather than a field label. • They must be scripted. • You can script behaviors of fields in the user interface.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "496d6ec2"
+  },
+  "cad-QST0001076": {
+    "gatilho": "Quatro controles de acesso criados para tabela privada",
+    "macete": "A sequência marcada é Insert, Delete, Query, Update.",
+    "conexao": "Associe a pista “Quatro controles de acesso criados para tabela privada” aos termos do gabarito fornecido: Insert, Delete, Query, Update. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "283c690a"
+  },
+  "cad-QST0001080": {
+    "gatilho": "Três condições de aprovação de Access Control no banco",
+    "macete": "Scripts, Conditions e acesso por business rule são as três marcações fornecidas.",
+    "conexao": "Associe a pista “Três condições de aprovação de Access Control no banco” aos termos do gabarito fornecido: Scripts configured in the Access Control must evaluate to true. • Conditions configured in the Access Control must evaluate to true. • The user must be granted access through a business rule.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "bd632e58"
+  },
+  "cad-QST0001084": {
+    "gatilho": "Objeto indisponível em Script Action",
+    "macete": "Ação de evento deixa previous de fora.",
+    "conexao": "Associe a pista “Objeto indisponível em Script Action” aos termos do gabarito fornecido: previous. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "41440d35"
+  },
+  "cad-QST0001088": {
+    "gatilho": "Método que não pertence à REST API",
+    "macete": "COPY é o verbo que este enunciado exclui.",
+    "conexao": "Associe a pista “Método que não pertence à REST API” aos termos do gabarito fornecido: COPY. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "bc9c5951"
+  },
+  "cad-QST0001028": {
+    "gatilho": "Busca e avaliação de Access Controls no arquivo",
+    "macete": "O banco restringe a resposta à current table.",
+    "conexao": "Associe a pista “Busca e avaliação de Access Controls no arquivo” aos termos do gabarito fornecido: Only for matches on the current table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1fdd5e29"
+  },
+  "cad-QST0001032": {
+    "gatilho": "Uso do REST API Explorer",
+    "macete": "Explorer entrega exemplo: sample code para requisições à ServiceNow.",
+    "conexao": "Associe a pista “Uso do REST API Explorer” aos termos do gabarito fornecido: Create sample code for sending REST requests to ServiceNow. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "392975ba"
+  },
+  "cad-QST0001036": {
+    "gatilho": "O que documentar no processo de negócio da aplicação",
+    "macete": "Problema, entrada e saída, pessoas e passos: quatro peças do plano.",
+    "conexao": "Associe a pista “O que documentar no processo de negócio da aplicação” aos termos do gabarito fornecido: Business problem, data input/output, users/stakeholders, and process steps. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "89a5cd8e"
+  },
+  "cad-QST0001040": {
+    "gatilho": "Objeto marcado como API de cliente nesta fonte",
+    "macete": "Este arquivo seleciona current and previous objects; confira o gabarito original.",
+    "conexao": "Associe a pista “Objeto marcado como API de cliente nesta fonte” aos termos do gabarito fornecido: current and previous objects. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "504f5c0b"
+  },
+  "cad-QST0001044": {
+    "gatilho": "Acessar valores de Record Producer no script",
+    "macete": "Produtor aponta para variável: producer.variablename.",
+    "conexao": "Associe a pista “Acessar valores de Record Producer no script” aos termos do gabarito fornecido: producer.variablename. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f69a572b"
+  },
+  "cad-QST0001048": {
+    "gatilho": "Operação de source control em Studio e Git",
+    "macete": "Configuração dos dois lados: Edit Repository Configurations.",
+    "conexao": "Associe a pista “Operação de source control em Studio e Git” aos termos do gabarito fornecido: Edit Repository Configurations. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "aee4b052"
+  },
+  "cad-QST0001052": {
+    "gatilho": "Comportamento do módulo criado junto com a tabela",
+    "macete": "Módulo novo abre a lista: all records from the table.",
+    "conexao": "Associe a pista “Comportamento do módulo criado junto com a tabela” aos termos do gabarito fornecido: Display a list of all records from the table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "9c4bde48"
+  },
+  "cad-QST0001055": {
+    "gatilho": "Afirmação excluída em ACL sem condição nem script",
+    "macete": "O asterisco de table.* é a pista marcada como não verdadeira neste item.",
+    "conexao": "Associe a pista “Afirmação excluída em ACL sem condição nem script” aos termos do gabarito fornecido: table.*will grant access to every field in a record. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b607bbbb"
+  },
+  "cad-QST0001059": {
+    "gatilho": "Forma mais rápida de criar Record Producer no banco",
+    "macete": "Categoria primeiro; botão Add New Record Producer depois.",
+    "conexao": "Associe a pista “Forma mais rápida de criar Record Producer no banco” aos termos do gabarito fornecido: Create a Catalog Category, open the category, and select the Add New Record Producer button. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7d3f399a"
+  },
+  "cad-QST0001063": {
+    "gatilho": "Definição de Application Files no gabarito",
+    "macete": "Este banco relaciona Application Files a XML exports do Update Set.",
+    "conexao": "Associe a pista “Definição de Application Files no gabarito” aos termos do gabarito fornecido: XML exports of an application's Update Set. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "01de0a9a"
+  },
+  "cad-QST0001067": {
+    "gatilho": "Experiência de usuário no Guided Application Creator",
+    "macete": "Criador guiado, experiência no bolso: Mobile.",
+    "conexao": "Associe a pista “Experiência de usuário no Guided Application Creator” aos termos do gabarito fornecido: Mobile. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cb276d00"
+  },
+  "cad-QST0001071": {
+    "gatilho": "Página depois de enviar um Record Producer",
+    "macete": "Redireção pertence ao produtor: producer.redirect = URL.",
+    "conexao": "Associe a pista “Página depois de enviar um Record Producer” aos termos do gabarito fornecido: Write a script in the Record Producer's Script field: producer.redirect = \"<URL>\";. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "560bb6c8"
+  },
+  "cad-QST0001075": {
+    "gatilho": "Formato UX para listas e formulários no banco",
+    "macete": "A resposta fornecida conserva a palavra Lists.",
+    "conexao": "Associe a pista “Formato UX para listas e formulários no banco” aos termos do gabarito fornecido: Lists. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "42a0e751"
+  },
+  "cad-QST0001079": {
+    "gatilho": "Allow access via web services no arquivo",
+    "macete": "A opção marcada diz even when not selected; revise o texto literal.",
+    "conexao": "Associe a pista “Allow access via web services no arquivo” aos termos do gabarito fornecido: Even when not selected, users with the correct permissions can use web services to access the table's records. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b1734229"
+  },
+  "cad-QST0001083": {
+    "gatilho": "Exemplo que a questão exclui de Scheduled Job",
+    "macete": "Neste banco, limpeza no Último dia do mês é o cenário marcado para excluir.",
+    "conexao": "Associe a pista “Exemplo que a questão exclui de Scheduled Job” aos termos do gabarito fornecido: The application needs to run a clean up script on the last day of every month. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "8087208f"
+  },
+  "cad-QST0001087": {
+    "gatilho": "O que são web services",
+    "macete": "Serviços web fazem ponte entre aplicações pela rede.",
+    "conexao": "Associe a pista “O que são web services” aos termos do gabarito fornecido: Methods used to allow applications to connect to other software applications over a network. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "66485d7a"
+  },
+  "cad-QST0001091": {
+    "gatilho": "O que é ServiceNow Store",
+    "macete": "Store é mercado: aplicações e integrações certificadas, grátis ou pagas.",
+    "conexao": "Associe a pista “O que é ServiceNow Store” aos termos do gabarito fornecido: Marketplace for free and paid certified ServiceNow applications and integrations. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "42dff7aa"
+  },
+  "cad-QST0001027": {
+    "gatilho": "Endpoint na configuração de REST Message",
+    "macete": "Ponto final da chamada é URI dos dados a acessar, consultar ou modificar.",
+    "conexao": "Associe a pista “Endpoint na configuração de REST Message” aos termos do gabarito fornecido: The URI of the data to be accessed, queried, or modified. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "dce2f3da"
+  },
+  "cad-QST0001031": {
+    "gatilho": "Afirmação incorreta de Delegated Development",
+    "macete": "Neste item negativo, a pista marcada é escolher application file types.",
+    "conexao": "Associe a pista “Afirmação incorreta de Delegated Development” aos termos do gabarito fornecido: Administrators can specify which application file types the developer can access.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "65546c9a"
+  },
+  "cad-QST0001035": {
+    "gatilho": "Propósito que a questão exclui de application scoping",
+    "macete": "Este gabarito exclui os controles para scripts de outro scope alterarem tabelas.",
+    "conexao": "Associe a pista “Propósito que a questão exclui de application scoping” aos termos do gabarito fornecido: Provide controls for how scripts from another scope can alter tables in a scoped application. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "20c9bbcb"
+  },
+  "cad-QST0001039": {
+    "gatilho": "Objetos em Inbound Action no gabarito",
+    "macete": "O par marcado é current e event; guarde como resposta desta fonte.",
+    "conexao": "Associe a pista “Objetos em Inbound Action no gabarito” aos termos do gabarito fornecido: current and event. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "5976a512"
+  },
+  "cad-QST0001043": {
+    "gatilho": "Guardar alterações locais para aplicar depois",
+    "macete": "Mudanças na gaveta: Stash.",
+    "conexao": "Associe a pista “Guardar alterações locais para aplicar depois” aos termos do gabarito fornecido: Stash. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "91c92017"
+  },
+  "cad-QST0001047": {
+    "gatilho": "Definição de Module no arquivo",
+    "macete": "Módulo foi ligado ao acesso rápido pelo filtro do Application Navigator.",
+    "conexao": "Associe a pista “Definição de Module no arquivo” aos termos do gabarito fornecido: A way of helping users quickly access information and services by filtering the items in the Application Navigator. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d970d2d8"
+  },
+  "cad-QST0001051": {
+    "gatilho": "Log indisponível em script de scope privado",
+    "macete": "O método excluído neste item é gs.log().",
+    "conexao": "Associe a pista “Log indisponível em script de scope privado” aos termos do gabarito fornecido: gs.log(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "41ee2365"
+  },
+  "cad-QST0001054": {
+    "gatilho": "Benefícios de estender Task com opções recuperadas",
+    "macete": "Campos existentes e lógica herdada: par da opção recuperada do texto.",
+    "conexao": "Associe a pista “Benefícios de estender Task com opções recuperadas” aos termos do gabarito fornecido: bandc. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e29daceb",
+    "observacao": "As alternativas B e C estavam incorporadas ao texto da alternativa A. Os marcadores explícitos B. e C. foram separados para recuperar a opção indicada pelo gabarito; o conteúdo bruto foi preservado no relatório de importação."
+  },
+  "cad-QST0001058": {
+    "gatilho": "Papel da instância que pede dados ao web service",
+    "macete": "Quem pede consome: Consumer.",
+    "conexao": "Associe a pista “Papel da instância que pede dados ao web service” aos termos do gabarito fornecido: Consumer. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "5a6a9cf8"
+  },
+  "cad-QST0001062": {
+    "gatilho": "Propósito do Application Picker no arquivo",
+    "macete": "Nesta versão, Picker escolhe aplicação para executar: run.",
+    "conexao": "Associe a pista “Propósito do Application Picker no arquivo” aos termos do gabarito fornecido: Select an application to run. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "4ba2c9fb",
+    "observacao": "QST0001102 relaciona o Application Picker à definição do Application Scope; esta questão marca Select an application to run. As formulações e os gabaritos originais foram mantidos."
+  },
+  "cad-QST0001066": {
+    "gatilho": "Quais escopos aparecem no Application Picker",
+    "macete": "Customizados mais Global: os dois grupos do Picker.",
+    "conexao": "Associe a pista “Quais escopos aparecem no Application Picker” aos termos do gabarito fornecido: All custom application scope and the Global scope appear in the Application Picker. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f1b770b5"
+  },
+  "cad-QST0001070": {
+    "gatilho": "Datas em script de servidor com scope privado",
+    "macete": "Data e hora no nome: GlideDateTime.",
+    "conexao": "Associe a pista “Datas em script de servidor com scope privado” aos termos do gabarito fornecido: GlideDateTime. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "dff67155"
+  },
+  "cad-QST0001074": {
+    "gatilho": "Três tipos executados no servidor segundo a fonte",
+    "macete": "Business Rule, UI Policies e Script Actions: trio original marcado.",
+    "conexao": "Associe a pista “Três tipos executados no servidor segundo a fonte” aos termos do gabarito fornecido: Business Rule • UI Policies • Script Actions. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "d9359068"
+  },
+  "cad-QST0001078": {
+    "gatilho": "Operação não controlável com Application Access",
+    "macete": "A operação excluída no gabarito é Query.",
+    "conexao": "Associe a pista “Operação não controlável com Application Access” aos termos do gabarito fornecido: Query. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "efd29664"
+  },
+  "cad-QST0001082": {
+    "gatilho": "Vantagem de página Application Properties",
+    "macete": "Mudar comportamento pela propriedade, sem alterar artifacts.",
+    "conexao": "Associe a pista “Vantagem de página Application Properties” aos termos do gabarito fornecido: Application Properties allow a developer or admin to make changes to an application's behavior without modifying application artifacts. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7df57eca"
+  },
+  "cad-QST0001086": {
+    "gatilho": "Três verificações de usuário para e-mail",
+    "macete": "Ativo, não bloqueado e Email preenchido: trio desta versão.",
+    "conexao": "Associe a pista “Três verificações de usuário para e-mail” aos termos do gabarito fornecido: Active must be true. • The user must not be locked out. • The Email field must have a value.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3,
+      4
+    ],
+    "assinatura": "47f3358c"
+  },
+  "cad-QST0001090": {
+    "gatilho": "Vincular Git atrás de firewall",
+    "macete": "A ponte do firewall é o MID Server.",
+    "conexao": "Associe a pista “Vincular Git atrás de firewall” aos termos do gabarito fornecido: Link an application to source control through a MID Server.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "9634513c"
+  },
+  "cad-QST0001034": {
+    "gatilho": "Comportamento padrão de tabela em aplicação privada",
+    "macete": "Neste item, a leitura está aberta a All application scopes.",
+    "conexao": "Associe a pista “Comportamento padrão de tabela em aplicação privada” aos termos do gabarito fornecido: All application scopes can read from the table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "3cd6c283"
+  },
+  "cad-QST0001038": {
+    "gatilho": "O que Field Watcher não depura",
+    "macete": "O observador de campos deixa Script Includes de fora.",
+    "conexao": "Associe a pista “O que Field Watcher não depura” aos termos do gabarito fornecido: Script Includes. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b40506ef"
+  },
+  "cad-QST0001042": {
+    "gatilho": "Quantidade de menus em uma aplicação",
+    "macete": "Menus acompanham o desenho: as many as the design requires.",
+    "conexao": "Associe a pista “Quantidade de menus em uma aplicação” aos termos do gabarito fornecido: As many as the application design requires. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d2eb5b8e"
+  },
+  "cad-QST0001046": {
+    "gatilho": "Nome da aplicação com conteúdo dedicado de Flow Designer",
+    "macete": "Conteúdo dedicado roda no Spoke.",
+    "conexao": "Associe a pista “Nome da aplicação com conteúdo dedicado de Flow Designer” aos termos do gabarito fornecido: Spoke. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b9087ea0"
+  },
+  "cad-QST0001050": {
+    "gatilho": "Relatório criado ao clicar no cabeçalho da coluna",
+    "macete": "No cabeçalho, este gabarito oferece Bar Chart.",
+    "conexao": "Associe a pista “Relatório criado ao clicar no cabeçalho da coluna” aos termos do gabarito fornecido: Bar Chart. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e972d531"
+  },
+  "cad-QST0001057": {
+    "gatilho": "Scripts do cliente para Record Producer",
+    "macete": "Par de catálogo: Catalog Client Scripts e Catalog UI Policies.",
+    "conexao": "Associe a pista “Scripts do cliente para Record Producer” aos termos do gabarito fornecido: Catalog Client Scripts and Catalog UI Policies. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "4998eceb"
+  },
+  "cad-QST0001061": {
+    "gatilho": "Exclusão de campos herdados no gabarito fornecido",
+    "macete": "O arquivo marca Yes e red X; compare com o aviso de herança.",
+    "conexao": "Associe a pista “Exclusão de campos herdados no gabarito fornecido” aos termos do gabarito fornecido: Yes, select the red X in the left-most column in the table definition. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "fb195bc2",
+    "observacao": "QST0001105 afirma que podem ser excluídos campos definidos pelo usuário que não são herdados e contrapõe campos herdados; este item marca a exclusão de herdados como possível. Os gabaritos originais foram preservados."
+  },
+  "cad-QST0001065": {
+    "gatilho": "Visual gráfico das relações entre tabelas",
+    "macete": "Esquema de relações desenhado: Schema map.",
+    "conexao": "Associe a pista “Visual gráfico das relações entre tabelas” aos termos do gabarito fornecido: Schema map. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "62930714"
+  },
+  "cad-QST0001069": {
+    "gatilho": "Ações de Business Rule sem script",
+    "macete": "Sem script: valores de campo e mensagem, segundo o par marcado.",
+    "conexao": "Associe a pista “Ações de Business Rule sem script” aos termos do gabarito fornecido: Set field values and add message. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1af79a29"
+  },
+  "cad-QST0001073": {
+    "gatilho": "Método de log disponível para aplicação com scope",
+    "macete": "Informação no log: gs.info().",
+    "conexao": "Associe a pista “Método de log disponível para aplicação com scope” aos termos do gabarito fornecido: gs.info(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3ddd4e03"
+  },
+  "cad-QST0001081": {
+    "gatilho": "O que é workflow context",
+    "macete": "Da versão nasce a execução: atividades e transições.",
+    "conexao": "Associe a pista “O que é workflow context” aos termos do gabarito fornecido: It is generated from a workflow version, executes activities, and follows transitions. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b8de6d98"
+  },
+  "cad-QST0001085": {
+    "gatilho": "Associar e-mail recebido a registro existente",
+    "macete": "A marca d'água encontra o registro: Watermark.",
+    "conexao": "Associe a pista “Associar e-mail recebido a registro existente” aos termos do gabarito fornecido: Watermark. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "480254e1"
+  },
+  "cad-QST0001089": {
+    "gatilho": "Incluir registros da Table A ao instalar MyApp no banco",
+    "macete": "Neste arquivo, a pista marcada é tabela active que extends Task.",
+    "conexao": "Associe a pista “Incluir registros da Table A ao instalar MyApp no banco” aos termos do gabarito fornecido: Table A is active and extends the Task table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "073247e2"
+  },
+  "cad-QST0001093": {
+    "gatilho": "Opção de criação de tabela excluída do GAC",
+    "macete": "Upload spreadsheet está excluído aqui, mas outro item diverge.",
+    "conexao": "Associe a pista “Opção de criação de tabela excluída do GAC” aos termos do gabarito fornecido: Upload spreadsheet. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "7c77b058",
+    "observacao": "QST0001133 inclui Upload an existing spreadsheet como forma de definir tabelas no Guided Application Creator; esta questão marca Upload spreadsheet como não sendo uma opção. Os gabaritos originais foram mantidos."
+  },
+  "cad-QST0001033": {
+    "gatilho": "Afirmação sobre Application Scope no arquivo",
+    "macete": "Namespace tem prefixo: este item diz que developers podem escolhê-lo.",
+    "conexao": "Associe a pista “Afirmação sobre Application Scope no arquivo” aos termos do gabarito fornecido: Developers can choose the prefix for a scope's namespace. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "bd526e0c"
+  },
+  "cad-QST0001037": {
+    "gatilho": "O que não se aplica ao estender tabela nesta fonte",
+    "macete": "A frase excluída fala em herdar functionality; revise o contraste com fields.",
+    "conexao": "Associe a pista “O que não se aplica ao estender tabela nesta fonte” aos termos do gabarito fornecido: The new table inherits the functionality built into the parent table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "9cca0111"
+  },
+  "cad-QST0001045": {
+    "gatilho": "Mensagem azul no topo do formulário segundo o banco",
+    "macete": "A resposta marcada usa g_form.showFieldMsg(); preserve a pista desta fonte.",
+    "conexao": "Associe a pista “Mensagem azul no topo do formulário segundo o banco” aos termos do gabarito fornecido: g_form.showFieldMsg(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "93c903c0"
+  },
+  "cad-QST0001049": {
+    "gatilho": "Dado que não é necessário para vincular Git",
+    "macete": "Git pede acesso, mas este item dispensa Application name.",
+    "conexao": "Associe a pista “Dado que não é necessário para vincular Git” aos termos do gabarito fornecido: Application name. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a2f50ffd"
+  },
+  "cad-QST0001053": {
+    "gatilho": "Impedir configuração por outros scopes no arquivo",
+    "macete": "A resposta fornecida manda usar Access Controls em vez de Application Access.",
+    "conexao": "Associe a pista “Impedir configuração por outros scopes no arquivo” aos termos do gabarito fornecido: You must create Access Controls to prevent all other application scopes from creating configuration records on an application's data tables rather than using Application Access. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b5bb0e5b"
+  },
+  "cad-QST0001009": {
+    "gatilho": "Objeto ausente em Display Business Rule",
+    "macete": "Na exibição, a pista de ausência é previous.",
+    "conexao": "Associe a pista “Objeto ausente em Display Business Rule” aos termos do gabarito fornecido: previous. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9316944a"
+  },
+  "cad-QST0001013": {
+    "gatilho": "Três afirmações sobre relatórios no banco",
+    "macete": "Compartilhado, gráfico e sob demanda: as três marcações fornecidas.",
+    "conexao": "Associe a pista “Três afirmações sobre relatórios no banco” aos termos do gabarito fornecido: Any user can see any report shared with them. • Can be a graphical representation of data. • Can be run on demand by authorized users.. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "b662321f"
+  },
+  "cad-QST0001004": {
+    "gatilho": "Estratégia que não depura script de cliente",
+    "macete": "gs.log() é o intruso do cliente neste item.",
+    "conexao": "Associe a pista “Estratégia que não depura script de cliente” aos termos do gabarito fornecido: gs.log(). A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "0b07d53f"
+  },
+  "cad-QST0001008": {
+    "gatilho": "Afirmação falsa sobre Weight em notificação",
+    "macete": "Zero igual a nenhum e-mail é a frase excluída neste gabarito.",
+    "conexao": "Associe a pista “Afirmação falsa sobre Weight em notificação” aos termos do gabarito fornecido: A Weight value of zero means that no email should be sent. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3af00e16"
+  },
+  "cad-QST0001012": {
+    "gatilho": "Funcionalidade que Flow Designer não suporta neste item",
+    "macete": "Rollback é a palavra da opção excluída.",
+    "conexao": "Associe a pista “Funcionalidade que Flow Designer não suporta neste item” aos termos do gabarito fornecido: Test a flow with rollback. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "24e80a53"
+  },
+  "cad-QST0001003": {
+    "gatilho": "Ver artefatos antes de publicar segundo o arquivo",
+    "macete": "O banco aponta para a lista de Update Sets da instância.",
+    "conexao": "Associe a pista “Ver artefatos antes de publicar segundo o arquivo” aos termos do gabarito fornecido: Open the list of Update Sets for the instance. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cc211c71"
+  },
+  "cad-QST0001007": {
+    "gatilho": "Arquivo com acesso entre scopes ativado por padrão",
+    "macete": "O tipo marcado é Table.",
+    "conexao": "Associe a pista “Arquivo com acesso entre scopes ativado por padrão” aos termos do gabarito fornecido: Table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d932a1dd"
+  },
+  "cad-QST0001011": {
+    "gatilho": "Tipo que não é UI Action",
+    "macete": "Form choice é o tipo excluído.",
+    "conexao": "Associe a pista “Tipo que não é UI Action” aos termos do gabarito fornecido: Form choice. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "976684e4"
+  },
+  "cad-QST0001002": {
+    "gatilho": "Configuração de Email Notification",
+    "macete": "Quem recebe, conteúdo e quando enviar: trio da notificação.",
+    "conexao": "Associe a pista “Configuração de Email Notification” aos termos do gabarito fornecido: a, b andc. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "42fb05cb",
+    "observacao": "A alternativa B contém um marcador C. incorporado ao texto; o arquivo não fornece uma chave C separada. As opções e o gabarito originais foram preservados."
+  },
+  "cad-QST0001006": {
+    "gatilho": "Tipo que não dispara Flow Designer",
+    "macete": "Outbound Email fica fora dos gatilhos neste item.",
+    "conexao": "Associe a pista “Tipo que não dispara Flow Designer” aos termos do gabarito fornecido: Outbound Email. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7a5f9f0f"
+  },
+  "cad-QST0001010": {
+    "gatilho": "Duas funcionalidades de aplicações Global",
+    "macete": "Delegated Development e Flow Designer: dupla marcada para Global.",
+    "conexao": "Associe a pista “Duas funcionalidades de aplicações Global” aos termos do gabarito fornecido: Delegated Development • Flow Designer. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "6715816d"
+  },
+  "cad-QST0001014": {
+    "gatilho": "Lista de Link types de módulos",
+    "macete": "Assessment, lista, Separator e Timeline Page formam o conjunto marcado.",
+    "conexao": "Associe a pista “Lista de Link types de módulos” aos termos do gabarito fornecido: Assessment, List of Records, Separator, Timeline Page. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "43ace171"
+  },
+  "cad-QST0001017": {
+    "gatilho": "Ordem de execução de UI Policy no gabarito",
+    "macete": "Scripts antes de Actions: sequência literal desta fonte.",
+    "conexao": "Associe a pista “Ordem de execução de UI Policy no gabarito” aos termos do gabarito fornecido: A UI Policy's Scripts execute before the UI Policy's Actions. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "bb9f529e"
+  },
+  "cad-QST0001016": {
+    "gatilho": "Alteração de label em tabela filha no Form Designer",
+    "macete": "Rótulo alterado na filha fica na child table.",
+    "conexao": "Associe a pista “Alteração de label em tabela filha no Form Designer” aos termos do gabarito fornecido: child table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "08e3862d"
+  },
+  "cad-QST0001020": {
+    "gatilho": "Etapa excluída da estratégia de Utils Script Include",
+    "macete": "Utils não escolhe tabela: Identify the table é o passo excluído.",
+    "conexao": "Associe a pista “Etapa excluída da estratégia de Utils Script Include” aos termos do gabarito fornecido: Identify the table. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c366cf14"
+  },
+  "cad-QST0001018": {
+    "gatilho": "Tipo da função executeRule no arquivo fornecido",
+    "macete": "O banco escolheu Scoped para esse template; confira o código incompleto no aviso.",
+    "conexao": "Associe a pista “Tipo da função executeRule no arquivo fornecido” aos termos do gabarito fornecido: Scoped. A combinação deve ser lembrada pelo conteúdo, pois as alternativas são embaralhadas.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cfcdcd8f",
+    "observacao": "O trecho de código contém delimitadores de comentário incompletos no arquivo original. O código e o gabarito foram preservados."
+  }
+}

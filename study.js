@@ -1,13 +1,14 @@
 import { shuffle, isCorrect } from './quiz.js';
 import { getMatchingQuestion, isMatchingComplete } from './matching.js';
+import { DEFAULT_CERTIFICATION } from './certification.js';
 
-export function createStudy(questions, userId) {
+export function createStudy(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
   if (!questions.length) throw new Error('Não há questões disponíveis.');
   const chosen = shuffle(questions);
   return {
     id: crypto.randomUUID(), user_id: userId, started_at: new Date().toISOString(),
     finished_at: null, score: null, total: chosen.length,
-    state: { mode: 'study', ids: chosen.map(q => q.id),
+    state: { mode: 'study', certification: certificationId, ids: chosen.map(q => q.id),
       orders: Object.fromEntries(chosen.map(q => [q.id, shuffle(q.alternativas.map((_, i) => i))])),
       answers: {}, confirmed: {}, cursor: 0 }
   };

@@ -1,11 +1,12 @@
 import { questionAudioPath } from './question-content.js';
+import { DEFAULT_CERTIFICATION, certificationStorageKey, getRecordCertification } from './certification.js';
 
 export const GUEST_ID = 'offline-guest';
-export const LOCAL_PROGRESS_KEY = 'cis-df-offline-progress-v1';
+export const LOCAL_PROGRESS_KEY = certificationStorageKey('offline-progress-v1');
 export const AUDIO_CACHE = 'cis-df-audio-v1';
 
-export function readLocalProgress(storage = localStorage) {
-  const data = JSON.parse(storage.getItem(LOCAL_PROGRESS_KEY) || '{"attempts":[],"studies":[]}');
+export function readLocalProgress(storage = localStorage, certificationId = DEFAULT_CERTIFICATION) {
+  const data = JSON.parse(storage.getItem(certificationStorageKey('offline-progress-v1', certificationId)) || '{"attempts":[],"studies":[]}');
   if (!data || !Array.isArray(data.attempts) || !Array.isArray(data.studies)) {
     throw new Error('Não foi possível ler o progresso offline salvo neste navegador.');
   }
@@ -14,12 +15,13 @@ export function readLocalProgress(storage = localStorage) {
 
 export function saveLocalAttempt(attempt, storage = localStorage) {
   if (attempt.user_id !== GUEST_ID) throw new Error('Este resultado não pertence ao modo offline.');
-  const data = readLocalProgress(storage);
+  const certificationId = getRecordCertification(attempt);
+  const data = readLocalProgress(storage, certificationId);
   const list = attempt.state.mode === 'study' ? data.studies : data.attempts;
   const index = list.findIndex(item => item.id === attempt.id);
   const snapshot = JSON.parse(JSON.stringify(attempt));
   if (index < 0) list.unshift(snapshot); else list[index] = snapshot;
-  storage.setItem(LOCAL_PROGRESS_KEY, JSON.stringify(data));
+  storage.setItem(certificationStorageKey('offline-progress-v1', certificationId), JSON.stringify(data));
 }
 
 export async function prepareOffline() {

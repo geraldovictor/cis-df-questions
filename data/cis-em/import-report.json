@@ -1,0 +1,127 @@
+{
+  "certificacao": "CIS-EM",
+  "total": 116,
+  "questoes_originais_cache": 109,
+  "questoes_suplementares": 7,
+  "explicacoes_fornecidas": 0,
+  "respostas_validadas_independentemente": false,
+  "criterio_correcao": "Supplied primary answer, unchanged; the image-only HOTSPOT uses its supplied answer image.",
+  "observacao_geral": "Original cache answers are unchanged. Supplemental answers are copied from the user-provided file. Answers were not independently verified; provenance is retained per supplemental record.",
+  "gabaritos_divergentes_colecao": [
+    19,
+    26,
+    56,
+    60,
+    63,
+    102,
+    104,
+    109
+  ],
+  "imagens": [
+    "data/cis-em/images/image4.png",
+    "data/cis-em/images/image10.png",
+    "data/cis-em/images/image18.png",
+    "data/cis-em/images/image19.png",
+    "data/cis-em/images/image21.png",
+    "data/cis-em/images/image31.png"
+  ],
+  "adaptacoes": [
+    {
+      "id": "em-6HAXF1caPVZapUmb0tqD",
+      "tipo": "missing_option_content",
+      "opcoes_originais": {
+        "A": "",
+        "B": ""
+      },
+      "acao": "Explicit missing-content labels; supplied answer retained."
+    },
+    {
+      "id": "em-pnlfDAabITwqsGkRmMKx",
+      "tipo": "image_hotspot_to_matching",
+      "enunciado_original": "HOTSPOT -\nIn what sequence are events processed?\n//IMG//",
+      "imagem_pergunta": "https://img.examtopics.com/cis-em/image18.png",
+      "imagem_resposta": "https://img.examtopics.com/cis-em/image19.png",
+      "mapeamento_transcrito": {
+        "Source": 1,
+        "Message key": 5,
+        "Filter": 2,
+        "Threshold": 3,
+        "Severity": 4
+      }
+    }
+  ],
+  "avisos": [
+    {
+      "id": "em-o0LQUosgxOk70Mb3O1nu",
+      "colecao": 19,
+      "numero_origem": 19,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET BD. A correção usa a resposta principal fornecida, sem validação técnica independente. O enunciado pede duas respostas, mas a resposta principal fornecida seleciona somente uma. A resposta ET seleciona duas. O banco preserva a resposta principal."
+    },
+    {
+      "id": "em-6HAXF1caPVZapUmb0tqD",
+      "colecao": 22,
+      "numero_origem": 22,
+      "observacao": "O conteúdo das alternativas Anomaly A e Anomaly B não foi incluído no arquivo de origem. A imagem mostra a regra, mas não os exemplos das anomalias. Os espaços vazios foram identificados explicitamente; o gabarito B fornecido foi preservado."
+    },
+    {
+      "id": "em-L1qmEriZpHiQBd6mzNHB",
+      "colecao": 26,
+      "numero_origem": 26,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-h7QMqFU7dwosjHfm0lrU",
+      "colecao": 29,
+      "numero_origem": 29,
+      "observacao": "A alternativa sobre MID Servers contém texto de outra pergunta misturado na origem. O texto e o gabarito foram preservados; não há explicação fornecida para esclarecer essa opção."
+    },
+    {
+      "id": "em-pnlfDAabITwqsGkRmMKx",
+      "colecao": 41,
+      "numero_origem": 41,
+      "observacao": "O HOTSPOT original não possui alternativas textuais nem gabarito textual. A associação interativa e sua correção foram transcritas das imagens fornecidas, sem acrescentar distratores."
+    },
+    {
+      "id": "em-pOoUaDfXg3pWEPiVUamg",
+      "colecao": 56,
+      "numero_origem": 56,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET B. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-lu6aEpQjhJCwCVMjUvsO",
+      "colecao": 60,
+      "numero_origem": 60,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET С. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-1uN2cmOCgG5kZkMxXiuX",
+      "colecao": 63,
+      "numero_origem": 63,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-rBd2pEqoGKlTo8CCzSGE",
+      "colecao": 102,
+      "numero_origem": 102,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-CmSxKPGQFafM4CnD2IPw",
+      "colecao": 104,
+      "numero_origem": 104,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal E; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-phynvxzOjtyyJCPjybzz",
+      "colecao": 109,
+      "numero_origem": 109,
+      "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET B -. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    },
+    {
+      "id": "em-user-provided-299ef58b64147f7bfc7215167afa0154",
+      "colecao": 116,
+      "numero_origem": 44,
+      "observacao": "Esta questão é uma variante suplementar da questão de origem 37, com outra formulação e outro conjunto de respostas. Os dois registros e seus gabaritos foram mantidos separadamente."
+    }
+  ]
+}

@@ -8,11 +8,23 @@ import { config } from './config.js';
 import { createAttempt, isCorrect, scoreAttempt } from './quiz.js';
 import { getMatchingQuestion, isMatchingComplete } from './matching.js';
 import { renderMatching, bindMatching } from './matching-view.js';
-import { renderQuestionContext } from './question-content.js';
+import { renderQuestionContext, renderAnswerImages } from './question-content.js';
+import { DEFAULT_CERTIFICATION, certifications, getCertification, certificationStorageKey, getRecordCertification, loadQuestionBank } from './certification.js';
 
 const app = document.querySelector('#app');
 const logout = document.querySelector('#logout');
-const files = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json'];
+const selectionKey = 'cis-study-certification';
+let selectedId = new URLSearchParams(location.search).get('cert');
+try { selectedId ||= localStorage.getItem(selectionKey); } catch {}
+const certification = getCertification(certifications.some(item => item.id === selectedId) ? selectedId : DEFAULT_CERTIFICATION);
+try { localStorage.setItem(selectionKey, certification.id); } catch {}
+document.title = `${certification.label} · Sala de estudos`;
+const certificationNav = document.querySelector('#certifications');
+certificationNav.innerHTML = certifications.map(item => {
+  const url = new URL(location.href);
+  url.searchParams.set('cert', item.id);
+  return `<a href="${url.pathname + url.search}" data-certification="${item.id}" ${item.id === certification.id ? 'aria-current="page"' : ''}><b>${item.label}</b><span>${item.name}</span></a>`;
+}).join('');
 let questions = [], byId = {}, client, user, attempts = [], active, busy = false, authMode = 'login';
 let studies = [], studyError = null;
 let saveQueue = Promise.resolve(), saveError = null;
@@ -27,12 +39,26 @@ function message(text) { const el = document.querySelector('#message'); el.textC
 function clearMessage() { document.querySelector('#message').hidden = true; }
 function fail(error) { console.error(error); message(error.message || 'Não foi possível concluir. Tente novamente.'); }
 function on(selector, event, handler) { document.querySelector(selector)?.addEventListener(event, handler); }
-function cacheKey() { return `cis-df-pending-${user.id}`; }
+function cacheKey() { return certificationStorageKey('pending', certification.id, user.id); }
+
+certificationNav.addEventListener('click', async event => {
+  const link = event.target.closest('[data-certification]');
+  if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  if (link.dataset.certification === certification.id || busy) return;
+  busy = true;
+  try {
+    if (active && !active.finished_at) await persist();
+    await saveQueue;
+    if (saveError) throw saveError;
+    location.assign(link.href);
+  } catch (error) { fail(error); busy = false; }
+});
 
 function renderAuth() {
   active = null; logout.hidden = true;
   const configured = Boolean(client);
-  app.innerHTML = `<section class="auth"><div class="auth-intro"><span class="eyebrow">Seu próximo capítulo começa aqui</span><h1>Mais prática.<br>Mais confiança.<br>Seu próximo nível.</h1><p>Prepare-se para a certificação CIS Data Foundations no seu ritmo. Resolva questões, entenda cada resposta e acompanhe sua evolução.</p><div class="auth-points"><div><strong>${questions.length}</strong>questões para explorar</div><div><strong>75</strong>por simulado</div><div><strong>100%</strong>no seu ritmo</div></div></div><div class="card"><span class="eyebrow">Bem-vindo à sua sala de estudos</span><h2>${authMode === 'signup' ? 'Crie sua conta' : 'Vamos continuar?'}</h2><p class="muted">Entre para salvar seu progresso e seus resultados.</p>${!configured ? '<div class="notice">O login está aguardando a configuração do serviço de contas pelo administrador. Assim que for conectado, você poderá criar sua conta e começar.</div>' : ''}<form id="auth-form"><label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required ${!configured?'disabled':''}></label><label class="field">Senha<input name="password" type="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" minlength="8" placeholder="Pelo menos 8 caracteres" required ${!configured?'disabled':''}></label><button class="primary wide" ${!configured?'disabled':''}>${authMode === 'signup'?'Criar minha conta':'Entrar na minha conta'} →</button></form><p class="auth-switch">${authMode === 'signup'?'Já tem uma conta?':'Primeira vez por aqui?'} <button id="toggle-auth" class="quiet">${authMode === 'signup'?'Entrar':'Criar conta'}</button></p>${configured?'<button id="recover" class="quiet wide">Esqueci minha senha</button>':''}</div></section>`;
+  app.innerHTML = `<section class="auth"><div class="auth-intro"><span class="eyebrow">Seu próximo capítulo começa aqui</span><h1>Mais prática.<br>Mais confiança.<br>Seu próximo nível.</h1><p>Prepare-se para a certificação ${certification.label} · ${certification.name} no seu ritmo. Resolva questões, entenda cada resposta e acompanhe sua evolução.</p><div class="auth-points"><div><strong>${questions.length}</strong>questões para explorar</div><div><strong>${certification.examSize}</strong>por simulado</div><div><strong>100%</strong>no seu ritmo</div></div></div><div class="card"><span class="eyebrow">Bem-vindo à sua sala de estudos</span><h2>${authMode === 'signup' ? 'Crie sua conta' : 'Vamos continuar?'}</h2><p class="muted">Entre para salvar seu progresso e seus resultados.</p>${!configured ? '<div class="notice">O login está aguardando a configuração do serviço de contas pelo administrador. Assim que for conectado, você poderá criar sua conta e começar.</div>' : ''}<form id="auth-form"><label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required ${!configured?'disabled':''}></label><label class="field">Senha<input name="password" type="password" autocomplete="${authMode === 'signup' ? 'new-password' : 'current-password'}" minlength="8" placeholder="Pelo menos 8 caracteres" required ${!configured?'disabled':''}></label><button class="primary wide" ${!configured?'disabled':''}>${authMode === 'signup'?'Criar minha conta':'Entrar na minha conta'} →</button></form><p class="auth-switch">${authMode === 'signup'?'Já tem uma conta?':'Primeira vez por aqui?'} <button id="toggle-auth" class="quiet">${authMode === 'signup'?'Entrar':'Criar conta'}</button></p>${configured?'<button id="recover" class="quiet wide">Esqueci minha senha</button>':''}</div></section>`;
   document.querySelector('.auth .card').insertAdjacentHTML('afterbegin', '<button id="enter-offline" class="secondary wide" type="button">Estudar offline · Sem login →</button><div id="offline-info"></div>');
   renderOfflineTools(document.querySelector('#offline-info'), questions, offlinePreparation);
   on('#enter-offline','click',enterOffline);
@@ -63,14 +89,14 @@ async function loadDashboard() {
   logout.textContent = offlineMode ? 'Voltar ao login' : 'Sair';
   try {
     if (offlineMode) {
-      const local = readLocalProgress();
+      const local = readLocalProgress(undefined, certification.id);
       attempts = local.attempts; studies = local.studies; studyError = null; saveError = null;
       renderDashboard(); return;
     }
     // Retry a locally preserved write before replacing it with server data.
     const pendingKey=cacheKey();
     const pending=JSON.parse(localStorage.getItem(pendingKey) || 'null');
-    if(pending && pending.user_id===user.id) {
+    if(pending && pending.user_id===user.id && getRecordCertification(pending)===certification.id) {
       const {error}=await client.from('attempts').upsert(pending);
       if(error) throw error;
       if (user !== owner) return;
@@ -79,7 +105,7 @@ async function loadDashboard() {
     const {data,error}=await client.from('attempts').select('*').order('started_at',{ascending:false});
     if (user !== owner) return;
     if(error) throw error;
-    attempts=data; saveError=null;
+    attempts=data.filter(attempt => getRecordCertification(attempt)===certification.id); saveError=null;
     await loadStudies();
     if (user !== owner) return;
     renderDashboard();
@@ -93,14 +119,18 @@ async function loadDashboard() {
 function renderDashboard() {
   active=null;
   const done=attempts.filter(a=>a.finished_at), ongoing=attempts.find(a=>!a.finished_at);
+  const simulationSize = ongoing?.total || certification.examSize;
   const average=done.length?Math.round(done.reduce((s,a)=>s+pct(a),0)/done.length):0;
-  app.innerHTML=`<div class="welcome"><div><span class="eyebrow">Seu espaço de aprendizado</span><h1>Pequenos passos. Grandes conquistas.</h1><p class="muted">Bom ter você por aqui, ${esc(user.email.split('@')[0])}. Vamos praticar?</p></div><span class="tag">● CIS-DF · Data Foundations</span></div><section class="hero"><span class="eyebrow">${ongoing?'Continue de onde parou':'Um novo desafio a cada tentativa'}</span><h2>Seu próximo simulado<br>começa aqui.</h2><p>75 questões sorteadas, alternativas embaralhadas e espaço para aprender com cada resposta.</p><button id="start" class="primary">${ongoing?'Continuar simulado':'Começar simulado'} <span aria-hidden="true">↗</span></button><div class="hero-decoration"><strong>75</strong><small>QUESTÕES / SIMULADO</small></div></section><div class="stats"><div class="stat"><span>Simulados concluídos</span><strong>${done.length.toString().padStart(2,'0')}</strong><small>Cada tentativa é um avanço</small></div><div class="stat"><span>Aproveitamento médio</span><strong>${average}%</strong><small>De todos os seus simulados</small></div><div class="stat"><span>Melhor resultado</span><strong>${done.length?Math.max(...done.map(pct)):0}%</strong><small>Seu recorde pessoal</small></div></div><div class="section-head"><h2>Sua trajetória</h2><p>${questions.length} questões disponíveis para praticar</p></div><section class="card">${done.length?done.map((a,i)=>`<div class="history-row"><span class="score">${pct(a)}%</span><div class="date">Simulado ${done.length-i}<small>${date(a.finished_at)} · ${a.score}/${a.total} acertos</small></div><button class="quiet" data-review="${esc(a.id)}">Revisar →</button></div>`).join(''):'<div class="empty"><b>Uma página em branco. Muitas possibilidades.</b>Conclua seu primeiro simulado para ver sua evolução aqui.</div>'}</section>`;
+  app.innerHTML=`<div class="welcome"><div><span class="eyebrow">Seu espaço de aprendizado</span><h1>Pequenos passos. Grandes conquistas.</h1><p class="muted">Bom ter você por aqui, ${esc(user.email.split('@')[0])}. Vamos praticar?</p></div><span class="tag">● ${certification.label} · ${certification.name}</span></div><section class="hero"><span class="eyebrow">${ongoing?'Continue de onde parou':'Um novo desafio a cada tentativa'}</span><h2>Seu próximo simulado<br>começa aqui.</h2><p>${simulationSize} questões sorteadas, alternativas embaralhadas e espaço para aprender com cada resposta.</p><button id="start" class="primary">${ongoing?'Continuar simulado':'Começar simulado'} <span aria-hidden="true">↗</span></button><div class="hero-decoration"><strong>${simulationSize}</strong><small>QUESTÕES / SIMULADO</small></div></section><div class="stats"><div class="stat"><span>Simulados concluídos</span><strong>${done.length.toString().padStart(2,'0')}</strong><small>Cada tentativa é um avanço</small></div><div class="stat"><span>Aproveitamento médio</span><strong>${average}%</strong><small>De todos os seus simulados</small></div><div class="stat"><span>Melhor resultado</span><strong>${done.length?Math.max(...done.map(pct)):0}%</strong><small>Seu recorde pessoal</small></div></div><div class="section-head"><h2>Sua trajetória</h2><p>${questions.length} questões disponíveis para praticar</p></div><section class="card">${done.length?done.map((a,i)=>`<div class="history-row"><span class="score">${pct(a)}%</span><div class="date">Simulado ${done.length-i}<small>${date(a.finished_at)} · ${a.score}/${a.total} acertos</small></div><button class="quiet" data-review="${esc(a.id)}">Revisar →</button></div>`).join(''):'<div class="empty"><b>Uma página em branco. Muitas possibilidades.</b>Conclua seu primeiro simulado para ver sua evolução aqui.</div>'}</section>`;
+  if (certification.blueprint) document.querySelector('.hero').insertAdjacentHTML('afterend', renderBlueprint());
+  const sourceWarnings = questions.filter(question => question.observacao).length;
+  if (sourceWarnings) document.querySelector('.welcome').insertAdjacentHTML('afterend', `<p class="bank-note">${sourceWarnings} questões deste banco têm observações sobre o material enviado. Elas aparecem junto ao enunciado; o gabarito fornecido foi preservado.</p>`);
   document.querySelector('.hero').insertAdjacentHTML('afterend', '<section id="study-dashboard"></section>');
   renderStudyDashboard();
   document.querySelector('#study-dashboard').insertAdjacentHTML('afterend', '<div id="audio-dashboard"></div>');
-  renderAudioStudy(document.querySelector('#audio-dashboard'), questions);
+  renderAudioStudy(document.querySelector('#audio-dashboard'), questions, certification.id);
   document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
-  renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id);
+  renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id, certification.id);
   document.querySelector('#flashcards-dashboard').insertAdjacentHTML('beforebegin', '<section id="memory-dashboard"></section>');
   renderMemoryDashboard();
   if (offlineMode) {
@@ -111,7 +141,7 @@ function renderDashboard() {
   on('#start','click',async()=>{
     if(busy) return; busy=true; clearMessage();
     try {
-      active=ongoing || createAttempt(questions,user.id);
+      active=ongoing || createAttempt(questions,user.id,certification.id);
       if(!ongoing) { await persist(); attempts.unshift(active); }
       renderQuiz();
     } catch(error){fail(error);} finally{busy=false;}
@@ -119,7 +149,12 @@ function renderDashboard() {
   document.querySelectorAll('[data-review]').forEach(el=>el.addEventListener('click',()=>renderResult(attempts.find(a=>a.id===el.dataset.review))));
 }
 
-function studyCacheKey() { return `cis-df-study-pending-${user.id}`; }
+function renderBlueprint() {
+  const blueprint = certification.blueprint;
+  return `<details class="card blueprint"><summary>Blueprint oficial · ${certification.label} · ${certification.examSize} questões</summary><p>${blueprint.durationMinutes} minutos de prova · Atualizado em ${blueprint.updated} · Consultado em 14/11/2026.</p><table><caption>Domínios da prova oficial</caption><thead><tr><th scope="col">Domínio</th><th scope="col">Peso</th></tr></thead><tbody>${blueprint.domains.map(([name, weight]) => `<tr><td lang="en">${esc(name)}</td><td>${weight}%</td></tr>`).join('')}</tbody></table><p class="muted">Os percentuais descrevem a prova oficial. Este simulado sorteia questões do banco disponível.</p><a href="${esc(blueprint.url)}" target="_blank" rel="noopener noreferrer">Consultar blueprint na ServiceNow ↗</a></details>`;
+}
+
+function studyCacheKey() { return certificationStorageKey('study-pending', certification.id, user.id); }
 
 function renderMemoryDashboard() {
   document.querySelector('#memory-dashboard').innerHTML = `<div class="card memory-entry"><div><span class="eyebrow">Novo · Decoreba</span><h2>Uma pista. Uma resposta na memória.</h2><p>${questions.length} macetes em português, um para cada questão. Aprenda a associação, teste sua memória e separe o que ainda confunde.</p></div><button type="button" id="memory-start" class="primary">Abrir decoreba →</button></div>`;
@@ -127,13 +162,13 @@ function renderMemoryDashboard() {
     const button=event.currentTarget, owner=user;
     button.disabled=true; button.textContent='Carregando macetes…'; clearMessage();
     try {
-      memoryAidsPromise ||= fetch(new URL('./memory-aids.json',import.meta.url)).then(response=>{
+      memoryAidsPromise ||= fetch(new URL(certification.memoryAids,import.meta.url)).then(response=>{
         if (!response.ok) throw new Error('Não foi possível carregar os macetes. Verifique a conexão e tente novamente.');
         return response.json();
       }).catch(error=>{memoryAidsPromise=null;throw error;});
       const aids=await memoryAidsPromise;
       if (user !== owner || !button.isConnected) return;
-      renderMemorization({app,questions,aids,userId:owner.id,back:loadDashboard});
+      renderMemorization({app,questions,aids,userId:owner.id,certificationId:certification.id,back:loadDashboard});
       window.scrollTo({top:0});
     } catch(error) {if (user === owner && button.isConnected) {memoryAidsPromise=null;fail(error);}}
     finally {if(button.isConnected){button.disabled=false;button.textContent='Abrir decoreba →';}}
@@ -143,11 +178,11 @@ function renderMemoryDashboard() {
 async function loadStudies() {
   const owner = user;
   studyError = null; studies = [];
-  if (offlineMode) { studies = readLocalProgress().studies; return; }
+  if (offlineMode) { studies = readLocalProgress(undefined,certification.id).studies; return; }
   try {
     const pendingKey=studyCacheKey();
     const pending = JSON.parse(localStorage.getItem(pendingKey) || 'null');
-    if (pending && pending.user_id === user.id) {
+    if (pending && pending.user_id === user.id && getRecordCertification(pending)===certification.id) {
       const {error} = await client.from('study_sessions').upsert(pending);
       if (error) throw error;
       if (user !== owner) return;
@@ -156,7 +191,7 @@ async function loadStudies() {
     const {data,error} = await client.from('study_sessions').select('*').order('started_at',{ascending:false});
     if (user !== owner) return;
     if (error) throw error;
-    studies = data;
+    studies = data.filter(attempt => getRecordCertification(attempt)===certification.id);
   } catch(error) { if (user === owner) studyError = error; }
 }
 
@@ -173,7 +208,7 @@ function renderStudyDashboard() {
   on('#study-start','click',async()=>{
     if (busy) return; busy=true; clearMessage();
     try {
-      active=ongoing || createStudy(questions,user.id);
+      active=ongoing || createStudy(questions,user.id,certification.id);
       if(!ongoing){await persist();studies.unshift(active);}
       openStudy();
     } catch(error){fail(error);} finally{busy=false;}
@@ -209,7 +244,7 @@ function renderQuiz() {
   const hasAnswer=qid=>getMatchingQuestion(byId[qid]) ? isMatchingComplete(byId[qid],state.answers[qid] || []) : Boolean(state.answers[qid]?.length);
   const answered=state.ids.filter(hasAnswer).length;
   const options=matching ? renderMatching(q,state.answers[id] || [],{order:state.orders[id]}) : `<div class="options">${state.orders[id].map((index,position)=>`<label class="option"><input type="${count>1?'checkbox':'radio'}" name="answer" value="${index}" ${(state.answers[id]||[]).includes(index)?'checked':''}><span lang="en"><b>${String.fromCharCode(65+position)}.</b> ${esc(q.alternativas[index].texto)}</span></label>`).join('')}</div>`;
-  app.innerHTML=`<div class="quiz-heading"><button id="back" class="quiet">← Salvar e voltar</button><span class="tag">Simulado de 75 questões</span></div><div class="quiz-layout"><section class="card"><span class="eyebrow">Questão ${state.cursor+1} de ${active.total}</span><div class="progress" id="quiz-progress"><span style="width:${answered/active.total*100}%"></span></div>${renderQuestionContext(q)}<h1 class="question-title" lang="en">${esc(matching?.prompt || q.pergunta)}</h1><p class="muted">${matching?'Associe os cartões às descrições.':count>1?`Selecione ${count} alternativas.`:'Selecione uma alternativa.'}</p>${options}<div class="quiz-actions"><button id="prev" class="secondary" ${state.cursor===0?'disabled':''}>← Anterior</button><button id="next" class="primary">${state.cursor===74?'Revisar e finalizar':'Próxima →'}</button></div></section><aside class="card"><h3>Seu progresso</h3><p class="muted" id="quiz-count">${answered} de 75 respondidas</p><div class="number-grid">${state.ids.map((qid,i)=>`<button aria-label="Questão ${i+1}${hasAnswer(qid)?', respondida':''}" ${state.cursor===i?'aria-current="step"':''} class="${hasAnswer(qid)?'answered ':''}${state.cursor===i?'active':''}" data-jump="${i}">${i+1}</button>`).join('')}</div><p class="legend">Navegue livremente entre as questões. As respostas são salvas durante a prática.</p><button id="finish" class="secondary wide">Finalizar simulado</button></aside></div>`;
+  app.innerHTML=`<div class="quiz-heading"><button id="back" class="quiet">← Salvar e voltar</button><span class="tag">Simulado de ${active.total} questões</span></div><div class="quiz-layout"><section class="card"><span class="eyebrow">Questão ${state.cursor+1} de ${active.total}</span><div class="progress" id="quiz-progress"><span style="width:${answered/active.total*100}%"></span></div>${renderQuestionContext(q)}<h1 class="question-title" lang="en">${esc(matching?.prompt || q.pergunta)}</h1><p class="muted">${matching?'Associe os cartões às descrições.':count>1?`Selecione ${count} alternativas.`:'Selecione uma alternativa.'}</p>${options}<div class="quiz-actions"><button id="prev" class="secondary" ${state.cursor===0?'disabled':''}>← Anterior</button><button id="next" class="primary">${state.cursor===active.total-1?'Revisar e finalizar':'Próxima →'}</button></div></section><aside class="card"><h3>Seu progresso</h3><p class="muted" id="quiz-count">${answered} de ${active.total} respondidas</p><div class="number-grid">${state.ids.map((qid,i)=>`<button aria-label="Questão ${i+1}${hasAnswer(qid)?', respondida':''}" ${state.cursor===i?'aria-current="step"':''} class="${hasAnswer(qid)?'answered ':''}${state.cursor===i?'active':''}" data-jump="${i}">${i+1}</button>`).join('')}</div><p class="legend">Navegue livremente entre as questões. As respostas são salvas durante a prática.</p><button id="finish" class="secondary wide">Finalizar simulado</button></aside></div>`;
   document.querySelectorAll('[name=answer]').forEach(input=>input.addEventListener('change',()=>{
     state.answers[id]=Array.from(document.querySelectorAll('[name=answer]:checked'),el=>Number(el.value));
     const selectedValue=input.value;
@@ -219,7 +254,7 @@ function renderQuiz() {
   if (matching) bindMatching(app.querySelector('.matching'),q,state.answers[id] || [],{order:state.orders[id],onChange:answer=>{
     state.answers[id]=answer; persist().catch(()=>{});
     const total=state.ids.filter(hasAnswer).length;
-    app.querySelector('#quiz-count').textContent=`${total} de 75 respondidas`;
+    app.querySelector('#quiz-count').textContent=`${total} de ${active.total} respondidas`;
     app.querySelector('#quiz-progress span').style.width=`${total/active.total*100}%`;
     const jump=app.querySelector(`[data-jump="${state.cursor}"]`);
     jump.classList.toggle('answered',hasAnswer(id));
@@ -227,7 +262,7 @@ function renderQuiz() {
   }});
   const go=index=>{state.cursor=index;persist().catch(()=>{});renderQuiz();window.scrollTo({top:0});};
   on('#prev','click',()=>go(state.cursor-1));
-  on('#next','click',()=>state.cursor===74?confirmFinish():go(state.cursor+1));
+  on('#next','click',()=>state.cursor===active.total-1?confirmFinish():go(state.cursor+1));
   document.querySelectorAll('[data-jump]').forEach(el=>el.addEventListener('click',()=>go(Number(el.dataset.jump))));
   on('#finish','click',confirmFinish);
   on('#back','click',async()=>{try{await persist();clearMessage();renderDashboard();}catch(error){fail(error);}});
@@ -235,7 +270,7 @@ function renderQuiz() {
 
 function confirmFinish() {
   const answered=active.state.ids.filter(id=>getMatchingQuestion(byId[id]) ? isMatchingComplete(byId[id],active.state.answers[id] || []) : Boolean(active.state.answers[id]?.length)).length;
-  app.innerHTML=`<section class="card result-banner"><span class="eyebrow">Uma pausa para conferir</span><h1>Pronto para ver seu resultado?</h1><p>Você respondeu ${answered} de 75 questões.${answered<75?` As ${75-answered} questões em branco ou incompletas contarão como erro.`:''}<br>Depois de finalizar, você poderá revisar todas as respostas e explicações.</p><div class="quiz-actions"><button id="resume" class="secondary">Voltar às questões</button><button id="confirm" class="primary">Finalizar e ver resultado</button></div></section>`;
+  app.innerHTML=`<section class="card result-banner"><span class="eyebrow">Uma pausa para conferir</span><h1>Pronto para ver seu resultado?</h1><p>Você respondeu ${answered} de ${active.total} questões.${answered<active.total?` As ${active.total-answered} questões em branco ou incompletas contarão como erro.`:''}<br>Depois de finalizar, você poderá revisar todas as respostas e explicações.</p><div class="quiz-actions"><button id="resume" class="secondary">Voltar às questões</button><button id="confirm" class="primary">Finalizar e ver resultado</button></div></section>`;
   on('#resume','click',renderQuiz);
   on('#confirm','click',async event=>{
     if(busy) return; busy=true; event.currentTarget.disabled=true;
@@ -250,7 +285,7 @@ function renderResult(attempt) {
     document.querySelector('#reviews').innerHTML=attempt.state.ids.map((id,i)=>{
       const q=byId[id], selected=attempt.state.answers[id]||[], correct=isCorrect(q,selected);
       if(document.querySelector('#only-errors').checked && correct) return '';
-      return `<details class="card review-item"><summary><span>${correct?'✓ Acertou':'○ '+(selected.length?'Revisar':'Em branco')} · Questão ${i+1}</span><br><span lang="en">${esc(getMatchingQuestion(q)?.prompt || q.pergunta)}</span></summary>${renderQuestionContext(q)}${getMatchingQuestion(q) ? renderMatching(q,selected,{reveal:true,disabled:true,order:attempt.state.orders[id]}) : `<div class="options">${attempt.state.orders[id].map(index=>{const a=q.alternativas[index];return `<div class="option ${a.correta?'correct':selected.includes(index)?'wrong':''}"><span><b>${a.correta?'✓ Correta':selected.includes(index)?'✕ Sua resposta':'Alternativa'}${a.correta&&selected.includes(index)?' · Sua resposta':''}</b><br><span lang="en">${esc(a.texto)}</span><span class="explanation" lang="en">${esc(a.explicacao)}</span></span></div>`;}).join('')}</div>`}</details>`;
+      return `<details class="card review-item"><summary><span>${correct?'✓ Acertou':'○ '+(selected.length?'Revisar':'Em branco')} · Questão ${i+1}</span><br><span lang="en">${esc(getMatchingQuestion(q)?.prompt || q.pergunta)}</span></summary>${renderQuestionContext(q)}${renderAnswerImages(q)}${getMatchingQuestion(q) ? renderMatching(q,selected,{reveal:true,disabled:true,order:attempt.state.orders[id]}) : `<div class="options">${attempt.state.orders[id].map(index=>{const a=q.alternativas[index];return `<div class="option ${a.correta?'correct':selected.includes(index)?'wrong':''}"><span><b>${a.correta?'✓ Correta':selected.includes(index)?'✕ Sua resposta':'Alternativa'}${a.correta&&selected.includes(index)?' · Sua resposta':''}</b><br><span lang="en">${esc(a.texto)}</span><span class="explanation" lang="en">${esc(a.explicacao)}</span></span></div>`;}).join('')}</div>`}</details>`;
     }).join('') || '<div class="card empty">Nenhum erro neste simulado. Ótimo trabalho!</div>';
   };
   review(); on('#only-errors','change',review); on('#dashboard','click',loadDashboard);
@@ -276,8 +311,7 @@ logout.addEventListener('click',async()=>{
 });
 
 try {
-  const sets=await Promise.all(files.map(async file=>{const response=await fetch(new URL(file,import.meta.url));if(!response.ok) throw new Error('Não foi possível carregar o banco de questões.');return response.json();}));
-  questions=sets.flatMap((set,fileIndex)=>set.map((q,i)=>({...q,id:`${fileIndex+1}-${i+1}`})));
+  questions=await loadQuestionBank(certification.id);
   byId=Object.fromEntries(questions.map(q=>[q.id,q]));
   let useOffline = !navigator.onLine || new URLSearchParams(location.search).get('mode') === 'offline';
   try { useOffline ||= localStorage.getItem('cis-df-offline-mode') === 'true'; } catch {}
@@ -287,7 +321,7 @@ try {
 
 function enterOffline() {
   try {
-    readLocalProgress();
+    readLocalProgress(undefined,certification.id);
     localStorage.setItem('cis-df-offline-mode', 'true');
     offlineMode=true; user={id:GUEST_ID,email:'offline@local'}; active=null;
     clearMessage(); loadDashboard();

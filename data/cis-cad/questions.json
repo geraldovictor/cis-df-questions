@@ -1,0 +1,4496 @@
+[
+  {
+    "id": "cad-QST0001015",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for a table with the 'Allow configuration' Application Access option selected?",
+    "alternativas": [
+      {
+        "texto": "Only the in scope application's scripts can create Business Rules for the table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Any user with the application's user role can modify the application's scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Out of scope applications can create Business Rules for the table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Out of scope applications can add new tables to the scoped application",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001015",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001124",
+    "certification": "cis-cad",
+    "pergunta": "What are the benefits of storing the majority of an Application's server-side script logic in a Script Include?",
+    "alternativas": [
+      {
+        "texto": "a, b, and d",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, c, and d C.b,c, andd",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The script logic can be hidden when the Application is installed from the ServiceNow Store. d. For some changes to application logic there is only one place to make edits.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "a,b, andc",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001124",
+    "source_type": "simple_choice",
+    "observacao": "O arquivo combina textos de alternativas e menciona uma lista de benefícios que não está completa no enunciado. O gabarito foi preservado; não é possível reconstruir todos os itens com segurança."
+  },
+  {
+    "id": "cad-QST0001077",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for this script fragment? g_user.hasRole('x_my_app_user');",
+    "alternativas": [
+      {
+        "texto": "There is no g_user.hasRole() method",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The method returns false only if the currently logged in user has the x_my_app_user role",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The method returns true only if the currently logged in user has the x_my_app_user role",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The method returns true if the currently logged in user has the x_my_app_user role or the admin role",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001077",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001041",
+    "certification": "cis-cad",
+    "pergunta": "Application developers configure ServiceNow using industry standard JavaScript to'|",
+    "alternativas": [
+      {
+        "texto": "Enable the right-click to edit the context menus on applications in the navigator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Extend and add functionality",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Customize the organization's company logo and banner text",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Configure the outgoing email display name",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001041",
+    "source_type": "simple_choice",
+    "observacao": "O enunciado termina com caracteres residuais no arquivo original. O texto e o gabarito foram preservados."
+  },
+  {
+    "id": "cad-QST0001127",
+    "certification": "cis-cad",
+    "pergunta": "If you create a SOAP Message what syntax indicates a variable to pass when the function is called?",
+    "alternativas": [
+      {
+        "texto": "current.variable_name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "${variable_name}",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "< variable_name >.do?WSDL",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "< variable_name >",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001127",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001030",
+    "certification": "cis-cad",
+    "pergunta": "From the list below, identify one reason an application might NOT be a good fit with ServiceNow. The application:",
+    "alternativas": [
+      {
+        "texto": "Needs workflow to manage processes",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Requires \"as-is\" use of low-level programming libraries",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Requires reporting capabilities",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Uses forms extensively to interact with data",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001030",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001022",
+    "certification": "cis-cad",
+    "pergunta": "When configuring the content of an Email Notification, which syntax should be used to reference the properties of an event triggering the Notification?",
+    "alternativas": [
+      {
+        "texto": "${event.<property name>}",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "${current.<property name>}",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "${<property name>.getDisplayValue()}",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "${gs.<property name>}",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001022",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001125",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is NOT a Flow Designer feature?",
+    "alternativas": [
+      {
+        "texto": "Runa flow from a Catalog item",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Call a flow from another flow or subflow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Add stages to a flow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Test a flow using the \"Run as\" feature",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001125",
+    "source_type": "simple_choice",
+    "observacao": "Neste mesmo banco, QST0001151 inclui Test a flow using the \"Run as\" feature entre as funcionalidades, enquanto esta questão a marca como não sendo uma funcionalidade. Os dois gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001151",
+    "certification": "cis-cad",
+    "pergunta": "What are the features of Flow Designer? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Add stages to a flow.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Call a flow from another flow or subflow.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Test a flow using the \"Run as\" feature.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Support Java Scripting code to test conditions that trigger the flow.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Run a flow from a Catalog item.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Perform form field data validation at client side.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001151",
+    "source_type": "multiple_choice",
+    "observacao": "Neste mesmo banco, QST0001125 marca Test a flow using the \"Run as\" feature como não sendo uma funcionalidade. Os dois gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001019",
+    "certification": "cis-cad",
+    "pergunta": "Which method call returns true only if the currently logged in user has the catalog_admin role and in no other case?",
+    "alternativas": [
+      {
+        "texto": "g_user.hasRole('catalog_admin')",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_user.hasRoleExactly('catalog_admin')",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_user.hasRoleOnly('catalog_admin')",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_user.hasRoleFromList('catalog_admin')",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001019",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001029",
+    "certification": "cis-cad",
+    "pergunta": "In a Business Rule, which one of the following returns true if the currently logged in user has the admin role?",
+    "alternativas": [
+      {
+        "texto": "g_form.hasRoleExactly('admin')",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.hasRole('admin')",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.hasRole('admin')",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.hasRoleExactly('admin')",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001029",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001136",
+    "certification": "cis-cad",
+    "pergunta": "Is it possible to change an application's scope?",
+    "alternativas": [
+      {
+        "texto": "No, it's not possible",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes, it's possible",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes, but only from global scope to private scope",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes, but only from private scope to global scope",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001136",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001097",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following statements is NOT true for the Form Designer?",
+    "alternativas": [
+      {
+        "texto": "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001097",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001092",
+    "certification": "cis-cad",
+    "pergunta": "Tables that extend a table do what?",
+    "alternativas": [
+      {
+        "texto": "Automatically update the application scope",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Do not inherit the parent's fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Sometimes inherit the parent's fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Inherit the parent's fields",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001092",
+    "source_type": "simple_choice",
+    "observacao": "QST0001037 marca a herança de funcionalidade como afirmação que não se aplica; aqui o banco afirma a herança de campos. Confira a distinção de campos e funcionalidade ao revisar esses gabaritos."
+  },
+  {
+    "id": "cad-QST0001001",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following statements is true for the Form Designer? a) To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form. b) To create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field. c) To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button. d) To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form.",
+    "alternativas": [
+      {
+        "texto": "a,b,c, and d",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "b,c, and d",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, and d",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, and c",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001001",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001128",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is NOT a way to install an application on a ServiceNow instance?",
+    "alternativas": [
+      {
+        "texto": "Install an application from the Application Repository",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Select the Copy button on the application record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Download and install an application from the ServiceNow Share web site",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Download and install a third-party application from the ServiceNow Store",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001128",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001132",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following statements is true about Guided Application Creator?",
+    "alternativas": [
+      {
+        "texto": "The global scope option is turned on by default",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Default access controls are automatically created",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The welcome screen appears every time a new application is created",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A scoped application user role is automatically created",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001132",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001140",
+    "certification": "cis-cad",
+    "pergunta": "When crafting a scoped application that contains flow actions, what is the application called?",
+    "alternativas": [
+      {
+        "texto": "Action",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Spoke",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Bundle",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flow",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001140",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001144",
+    "certification": "cis-cad",
+    "pergunta": "What is the Endpoint when configuring a REST Message?",
+    "alternativas": [
+      {
+        "texto": "The URI of the WebServer",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The command to the REST script to stop execution",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Tne URI of the data to be accessed, queried, or modified",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The provider response indicates there is no data to send back",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001144",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001148",
+    "certification": "cis-cad",
+    "pergunta": "When creating application tables, a user role is automatically added to the table record. Which other role does an application typically have?",
+    "alternativas": [
+      {
+        "texto": "Application Super User",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application Fulfiller",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application Admin",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application Manager",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001148",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001131",
+    "certification": "cis-cad",
+    "pergunta": "Flow Designer supports variable data types to store record data and complex data. Which of the following are supported variable data types? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Choice data type",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Array.Reference data type",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Integer data type",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Freedom data type",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Array.Boolean data type",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Label data type",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001131",
+    "source_type": "multiple_choice",
+    "observacao": "QST0001150 apresenta uma lista diferente de tipos suportados de variáveis do Flow Designer. Os gabaritos distintos do arquivo foram preservados."
+  },
+  {
+    "id": "cad-QST0001135",
+    "certification": "cis-cad",
+    "pergunta": "Identify the ways an application can respond to an Event generated by the gs.eventQueue() method: (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Client Script",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Email Notification",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scheduled Script Execution (Scheduled Job)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script Action",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "UI Policy",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001135",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001139",
+    "certification": "cis-cad",
+    "pergunta": "When debugging Email Notifications, what must you check on a user record? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Active must be true.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Email field must have a valid value.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The user must not be locked out.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The First name and Last name fields must have values.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Delegation must be enabled.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001139",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001143",
+    "certification": "cis-cad",
+    "pergunta": "What is required to link a ServiceNow application to a Git repository? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "URI",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ACL",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Password",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "User name",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "URL",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001143",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001147",
+    "certification": "cis-cad",
+    "pergunta": "Which objects are used as part of the client-side scripting API? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "gs",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current ana previous",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_user",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "workflow.scratchpad",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001147",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001126",
+    "certification": "cis-cad",
+    "pergunta": "What is the purpose of the coalesce field when importing data?",
+    "alternativas": [
+      {
+        "texto": "If a match is not found, the existing record is updated",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To determine if a record matches an existing record or is a new record",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To identify and merge duplicate records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "When a match is found, a new record is inserted",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001126",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001130",
+    "certification": "cis-cad",
+    "pergunta": "Why create Applications in ServiceNow? a) To replace outdated, inadequate, custom business applications and processes b) To extend service delivery and management to all enterprise departments c) To allow users full access to all ServiceNow tables, records, and fields d) To extend the value of ServiceNow",
+    "alternativas": [
+      {
+        "texto": "a, b, and d",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, c, and d",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "a,b, andc",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "b, c, and d",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001130",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001134",
+    "certification": "cis-cad",
+    "pergunta": "What is the Event Registry?",
+    "alternativas": [
+      {
+        "texto": "A Workflow which is launched every time an Event is generated; used to debug Events",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Event Log which lists all Events that have been generated",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The method used in server side scripts to generate Events and pass parameters",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A table containing a record for every Event known to the ServiceNow system which allows ServiceNow to react when Events are generated",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001134",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001138",
+    "certification": "cis-cad",
+    "pergunta": "Client-side scripts manage what?",
+    "alternativas": [
+      {
+        "texto": "User access",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Database and backend",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Playbook access",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Forms and Form Fields",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001138",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001142",
+    "certification": "cis-cad",
+    "pergunta": "Once an application is ready to share, which of the following methods of publishing are supported by ServiceNow? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Publish to an application repository",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Publish to a local drive",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Publish to the ServiceNow Store",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Publish to an Update Set",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Publish to a spreadsheet",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Publish to a local USB device",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001142",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001146",
+    "certification": "cis-cad",
+    "pergunta": "Which business requirements and process(es) should be documented as part of the application development plan? (Choose four.)",
+    "alternativas": [
+      {
+        "texto": "Available licenses",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business problem",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Process steps",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Users/stakeholders",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Database capacity",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Project schedule G. Data input/output",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001146",
+    "source_type": "multiple_choice",
+    "observacao": "O enunciado pede quatro respostas, mas o arquivo marca apenas três. A alternativa final também contém um item G incorporado ao texto. A correção usa somente as três respostas fornecidas, sem inventar uma quarta."
+  },
+  {
+    "id": "cad-QST0001150",
+    "certification": "cis-cad",
+    "pergunta": "What data types of Flow Designer variables are supported to store record data and complex data? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Label data type",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Integer",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Array.Reference",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Choice",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "String",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001150",
+    "source_type": "multiple_choice",
+    "observacao": "QST0001131 apresenta uma lista diferente de tipos suportados de variáveis do Flow Designer. Os gabaritos distintos do arquivo foram preservados."
+  },
+  {
+    "id": "cad-QST0001129",
+    "certification": "cis-cad",
+    "pergunta": "Using Custom UI test step in Automated Test Framework, which of the following is NOT a testable page component?",
+    "alternativas": [
+      {
+        "texto": "Buttons",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ul controls",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ul pages",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Form field values",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001129",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001133",
+    "certification": "cis-cad",
+    "pergunta": "What are the ways to designate data tables when using Guided Application Creator (GAC)? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Upload an existing PDF",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a new table on the platform",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use a freeform database",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Upload an existing spreadsheet",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use an existing table on the platform",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Upload an existing word processing document",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001133",
+    "source_type": "multiple_choice",
+    "observacao": "QST0001093 marca Upload spreadsheet como não sendo uma opção no Guided Application Creator. Os gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001137",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is true about g_scratchpad? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Used to push information from the server to the client",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Does not exist on the mobile platform",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Has constructors and methods",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Has default properties passed by client-side scripts",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001137",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001141",
+    "certification": "cis-cad",
+    "pergunta": "Which are reasons an application could be developed on the ServiceNow platform? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "It needs workflow to manage processes.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It requires reporting capabilities.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It uses forms extensively to interact with data.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It requires low-level programming libraries.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It uses multimedia features.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001141",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001145",
+    "certification": "cis-cad",
+    "pergunta": "Which client-side scripts apply to Record Producers? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Fix Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Catalog Client Scripts",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "UI Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Catalog UI Policies",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Record Producer Polices",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001145",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001149",
+    "certification": "cis-cad",
+    "pergunta": "Which determines the relationships between field in an Import Set table to field in an existing ServiceNow table?",
+    "alternativas": [
+      {
+        "texto": "Data Sources",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Schema Map Relationship Builder",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business Service Management Map",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Transform Map",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001149",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001096",
+    "certification": "cis-cad",
+    "pergunta": "What are some benefits of developing private, scoped applications? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "To avoid using a code repository like GitHub or GitLab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To reduce risk at code collisions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To enable installation and uninstallation of an application",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To replicate ServiceNow functions a private scope",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001096",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001021",
+    "certification": "cis-cad",
+    "pergunta": "Which roles grant access to source control repository operations such as importing applications from source control, or linking an application to source control? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "source_control",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "source_control_admin",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "admin",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "git_admin",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001021",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001025",
+    "certification": "cis-cad",
+    "pergunta": "When configuring a module, what does the Override application menu roles configuration option do?",
+    "alternativas": [
+      {
+        "texto": "Users with the module role but without access to the application menu access the module",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Self-Service users can access the module even though they do not have roles",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Admin is given access to the module even if Access Controls would ordinarily prevent access",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Users with access to the application menu can see the module even if they don't have the module role",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001025",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001095",
+    "certification": "cis-cad",
+    "pergunta": "What intuitive development interface guides users through the initial application development process?",
+    "alternativas": [
+      {
+        "texto": "Guided Tour Designer",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Guided Application Creator",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow Studio",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flow Designer",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001095",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001099",
+    "certification": "cis-cad",
+    "pergunta": "Which ATF Test step allows you to create a user with speeded roles and groups for the test?",
+    "alternativas": [
+      {
+        "texto": "Create a group",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Impersonation",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a user",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a role",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001099",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001024",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for GlideUser (g_user) methods?",
+    "alternativas": [
+      {
+        "texto": "Can be used in Client Scripts and UI Policies only",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be used in Business Rules only",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be used in Client Scripts, UI Policies, and Ul Actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be used in Business Rules, and Scripts Includes",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001024",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001094",
+    "certification": "cis-cad",
+    "pergunta": "Server-side scripts manage what?",
+    "alternativas": [
+      {
+        "texto": "Database and backend",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Playbook access",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "User access",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Forms and Fields",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001094",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001098",
+    "certification": "cis-cad",
+    "pergunta": "What records are used to track cross-scope applications or scripts that request access to an application, application resource, or event?",
+    "alternativas": [
+      {
+        "texto": "Restricted caller access records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Caller tracking records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Access control level records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Cross-scope access records",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001098",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001100",
+    "certification": "cis-cad",
+    "pergunta": "What plugin enables the Guided Application Creator?",
+    "alternativas": [
+      {
+        "texto": "com.glide.sn-guided-app-creator",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "com.glide.service_creator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "com.glide.snc.apps_creator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "com.snc.apps_creator_template",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001100",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001023",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for a Script Include with a Protection Policy value of Protected?",
+    "alternativas": [
+      {
+        "texto": "Any user with the protected_edit role can see and edit the Script Include",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Protection policy option can only be enabled by a user with the admin role",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Protection Policy is applied only if the glide.app.apply_protection system property value is true",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Protection Policy is applied only if the application is downloaded from the ServiceNow App Store",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001023",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001026",
+    "certification": "cis-cad",
+    "pergunta": "Which platform feature can be used to determine the relationships between field in an Import Set table to field in an existing ServiceNow table?",
+    "alternativas": [
+      {
+        "texto": "Business Service Management Map",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Data Sources",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Transform Map",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Cl Relationship Builder",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001026",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001123",
+    "certification": "cis-cad",
+    "pergunta": "When troubleshooting and debugging notifications, where do you navigate to see if an email was sent m response to an event?",
+    "alternativas": [
+      {
+        "texto": "System Logs > Events",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "System Logs > Emails",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "System Logs > Push Notifications",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "System Logs > ICE Logs",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001123",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001122",
+    "certification": "cis-cad",
+    "pergunta": "Identify the way(s) an application can respond to an Event generated by the gs.eventQueue() method.",
+    "alternativas": [
+      {
+        "texto": "bandc B.c C.aandd D.aandc",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scheduled Script Execution (Scheduled Job)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "UI Policy",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Email Notification",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001122",
+    "source_type": "simple_choice",
+    "observacao": "O arquivo traz combinações de letras e marcadores de alternativas misturados no texto da primeira opção. O texto e a resposta marcada foram preservados."
+  },
+  {
+    "id": "cad-QST0001104",
+    "certification": "cis-cad",
+    "pergunta": "The Task table is an example of which of the following? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Parent class",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Legacy class",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Child class",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Base class",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001104",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001108",
+    "certification": "cis-cad",
+    "pergunta": "When selecting a data type for a field that will be displayed on a form, which of the following statements is NOT correct?",
+    "alternativas": [
+      {
+        "texto": "Use the String data type tor a free-form text field",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use the Phone Number data type to automate phone number data validation",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use the Choice data type to limit options in a field",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use the Date data type to enter the date and time of day",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001108",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001112",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is a good practice for adding instructions to a form?",
+    "alternativas": [
+      {
+        "texto": "Related links to wiki pages",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A Context Menu UI Action",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Annotations",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A populated read-only field",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001112",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001116",
+    "certification": "cis-cad",
+    "pergunta": "Access Control debug information identifies whether each element of an Access Control granted or denied access. The elements appear in the debug information in the order of evaluation. In which order are the elements of an Access Control evaluated?",
+    "alternativas": [
+      {
+        "texto": "Conditions, Roles, Script",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Conditions, Script, Roles",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Roles, Conditions, Script",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script, Conditions, Roles",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001116",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001120",
+    "certification": "cis-cad",
+    "pergunta": "Which method is used to retrieve Application Property values in a script?",
+    "alternativas": [
+      {
+        "texto": "gs.getProperty()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.getAppProperty()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.getProperty()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.getAppProperty()",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001120",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001103",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is an available feature in Studio? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Push to update set",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Merge branches",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Search code",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Push to external source control",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001103",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001107",
+    "certification": "cis-cad",
+    "pergunta": "What are three ServiceNow table creation methods? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Using legacy Workflows",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Upload and turn a spreadsheet into a custom table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Using Flow Designer",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use the Now Experience Table Creator",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Extend a table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a custom table",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001107",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001111",
+    "certification": "cis-cad",
+    "pergunta": "When designing and creating a form what do you create to organize fields on a form?",
+    "alternativas": [
+      {
+        "texto": "Buttons",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Tabs",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Sections",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Related lists",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001111",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001115",
+    "certification": "cis-cad",
+    "pergunta": "In a Business Rule, which one of the following returns the sys_id of the currently logged in user?",
+    "alternativas": [
+      {
+        "texto": "g_form.getUserID()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.getUserSysID()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.getUserlD()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.getUserSysID()",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001115",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001119",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is NOT a caller access field option?",
+    "alternativas": [
+      {
+        "texto": "Caller Tracking",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Caller Restriction",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "None",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Caller Permission",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001119",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001102",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for the Application Picker and Application Scope?",
+    "alternativas": [
+      {
+        "texto": "Global is a reserved application which does not appear in the Application Picker",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Selecting an application from the Application Picker does not set the Application Scope",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Selecting an application from the Application Picker sets the Application Scope",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Selecting Global in the Application Picker sets the Application Scope to Incident",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001102",
+    "source_type": "simple_choice",
+    "observacao": "QST0001062 marca Select an application to run para o propósito do Application Picker. As formulações e os gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001106",
+    "certification": "cis-cad",
+    "pergunta": "Why would you build a custom app? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "To avoid using a code repository like GitHub or GitLab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To replace ServiceNow base tables",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To fulfill a specific use case on internal processes",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To create a custom integration for a 3rd party system",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001106",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001110",
+    "certification": "cis-cad",
+    "pergunta": "Which class is NOT part of the Client side scoped APIs?",
+    "alternativas": [
+      {
+        "texto": "GlideDialogWindow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideAjax",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideRecord",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideForm",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001110",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001114",
+    "certification": "cis-cad",
+    "pergunta": "What is the GlideForm Client-side scripting object?",
+    "alternativas": [
+      {
+        "texto": "sn.form",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.form",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs_form",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001114",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001118",
+    "certification": "cis-cad",
+    "pergunta": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table: table. None read Access Control for users with the admin and itil roles table.field3 read Access Control for users with the admin role Which field or fields can a user with the itil role read?",
+    "alternativas": [
+      {
+        "texto": "field3 only",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "filed1 and field3",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All fields except field3",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001118",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001101",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following can be an external data source for a ServiceNow application?",
+    "alternativas": [
+      {
+        "texto": "Microsoft Excel File",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Data provided by a public web service using SOAP or REST",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CSV file",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All of the above",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001101",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001105",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is true about deleting fields from a table?",
+    "alternativas": [
+      {
+        "texto": "Table records are deleted when a field is deleted",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "User-defined non-inherited fields can be deleted",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Any field on a table can be deleted",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Inherited fields can be deleted",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001105",
+    "source_type": "simple_choice",
+    "observacao": "QST0001061 marca como possível excluir campos herdados; este item seleciona campos definidos pelo usuário e não herdados. Os gabaritos originais foram preservados."
+  },
+  {
+    "id": "cad-QST0001109",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT part of the Form Designer?",
+    "alternativas": [
+      {
+        "texto": "Page header",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Schema map",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Field navigator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Form layout",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001109",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001113",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following GlideRecord methods run a query against a database table? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "_get()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "runQuery()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "query()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "_query()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "get(",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001113",
+    "source_type": "multiple_choice",
+    "observacao": "O método get( aparece incompleto na alternativa original. A opção e o gabarito foram preservados sem completar o código."
+  },
+  {
+    "id": "cad-QST0001117",
+    "certification": "cis-cad",
+    "pergunta": "Assume a table called table exists and contains 3 fields: field1, field2, field3. Examine the Access Control list for table: table.None read Access Control for users with the admin and itil roles table.\" read Access Control for users with the admin role table. field3 read Access Control for users with the itil role Which field or fields can a user with the itil role read?",
+    "alternativas": [
+      {
+        "texto": "All fields except field3",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "field1, field2, and field3",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "fleld1 and field3",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "field3 only",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001117",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001121",
+    "certification": "cis-cad",
+    "pergunta": "What Module Link type is used to access an Application Properties page?",
+    "alternativas": [
+      {
+        "texto": "Single Record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "HTML (from Arguments)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "URL (from Arguments)",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script (from Arguments)",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001121",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001056",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following methods are useful in Access Control scripts?",
+    "alternativas": [
+      {
+        "texto": "g_user.hasRole() and current.isNewRecord()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.hasRole() and current.isNewRecord()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_user.hasRole() and current.isNew()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.hasRole() and current.isNew()",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001056",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001060",
+    "certification": "cis-cad",
+    "pergunta": "Which objects can you use in a Scheduled Script Execution (Scheduled Job) script?",
+    "alternativas": [
+      {
+        "texto": "GlideRecord and current",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideUser and GlideRecord",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideSystem and GlideRecord",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideSystem and current",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001060",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001064",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT true for Modules?",
+    "alternativas": [
+      {
+        "texto": "Modules open content pages",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Access to Modules is controlled with roles",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every Module must be part of an Application Menu",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every Module must be associated with a table",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001064",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001068",
+    "certification": "cis-cad",
+    "pergunta": "When writing a Client Script to provide feedback targeted at a specific field, which method should be used?",
+    "alternativas": [
+      {
+        "texto": "g_form.showInfoMessage()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.showFieldMsg()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.addinfoMessage()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.addFieldMsg()",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001068",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001072",
+    "certification": "cis-cad",
+    "pergunta": "Identify characteristic(s) of a Record Producer. (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "All records created using this strategy are inserted into the Requested Item [sc_req_item] table.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Each field prompts the user with a question rather than a field label.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "They must be scripted.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "You can script behaviors of fields in the user interface.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Graphics can be included on the user interface.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001072",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001076",
+    "certification": "cis-cad",
+    "pergunta": "When creating a table in a privately-scoped application, which four Access Controls are created for the table?",
+    "alternativas": [
+      {
+        "texto": "Insert, Delete, Query, Write",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create, Delete, Read, Write",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create, Delete, Read, Update",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Insert, Delete, Query, Update",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001076",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001080",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following statements must evaluate to true for a user to pass an Access Control? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "The user has one of the roles specified in the Required roles related list.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scripts configured in the Access Control must evaluate to true.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Other matching Access Controls for the records evaluate to true.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Conditions configured in the Access Control must evaluate to true.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The user must be granted access through a business rule.",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001080",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001084",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following objects CANNOT be used in a Script Action script?",
+    "alternativas": [
+      {
+        "texto": "previous",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideRecord",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "event",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001084",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001088",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following methods is NOT part of the ServiceNow REST API?",
+    "alternativas": [
+      {
+        "texto": "COPY",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GET",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "DELETE",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "POST",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001088",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001028",
+    "certification": "cis-cad",
+    "pergunta": "When evaluating Access Controls, ServiceNow searches and evaluates:",
+    "alternativas": [
+      {
+        "texto": "Only for matches on the current table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only for matches on the current field",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "From the most specific match to the most generic match",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "From the most generic match to the most specific match",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001028",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001032",
+    "certification": "cis-cad",
+    "pergunta": "One of the uses of the ServiceNow REST API Explorer is:",
+    "alternativas": [
+      {
+        "texto": "Practice using REST to interact with public data providers",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Find resources on the web for learning about REST",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Convert SOAP Message functions to REST methods",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create sample code for sending REST requests to ServiceNow",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001032",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001036",
+    "certification": "cis-cad",
+    "pergunta": "It is best practice to define the business requirements and the process(es) an application will manage as part of the application development plan. What are some of the considerations to document as part of the business process?",
+    "alternativas": [
+      {
+        "texto": "Business problem, data input/output, users/stakeholders, and process steps",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business problem, data input/output, project schedule, and process steps",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business problem, data input/output, users/stakeholders, and database capacity",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business problem, users/stakeholders, available licenses, and database capacity",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001036",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001040",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is part of the client-side scripting API?",
+    "alternativas": [
+      {
+        "texto": "workflow.scratchpad",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideUser object (g_user)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current and previous objects",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideSystem object (gs)",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001040",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001044",
+    "certification": "cis-cad",
+    "pergunta": "What syntax is used in a Record Producer script to access values from Record Producer form fields?",
+    "alternativas": [
+      {
+        "texto": "producer.field_name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "producer.variablename",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "current.variable_name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current.field_name",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001044",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001048",
+    "certification": "cis-cad",
+    "pergunta": "Which source control operation is available from BOTH Studio and the Git Repository?",
+    "alternativas": [
+      {
+        "texto": "Create Branch",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Apply Remote Changes",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Stash Local Changes",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Edit Repository Configurations",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001048",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001052",
+    "certification": "cis-cad",
+    "pergunta": "If the Create module field is selected when creating a table, what is the new module's default behavior?",
+    "alternativas": [
+      {
+        "texto": "Open an empty form so new records can be created",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open a link to a wiki article with instructions on how to customize the behavior of the new module",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Display an empty homepage for the application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Display a list of all records from the table",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001052",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001055",
+    "certification": "cis-cad",
+    "pergunta": "When configuring an Access Control which has no condition or script, which one of the following statements is NOT true?",
+    "alternativas": [
+      {
+        "texto": "table.*will grant access to every field in a record",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "table.None will grant access to every record on the table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "table.field will grant access to a specific field in a record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "table.id will grant access to a specific record on the table",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001055",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001059",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is the fastest way to create and configure a Record Producer?",
+    "alternativas": [
+      {
+        "texto": "Create a Catalog Category, open the category, and select the Add New Record Producer button",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use the Record Producer module then add and configure all variables manually",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open the table in the Table records and select the Add to Service Catalog Related Link",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open the table's form, right-click on the form header, and select the Create Record Producer menu item",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001059",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001063",
+    "certification": "cis-cad",
+    "pergunta": "What are Application Files in a ServiceNow application?",
+    "alternativas": [
+      {
+        "texto": "An XML export of an application's table records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CSV files containing data imported into an application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow artifacts comprising an application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "XML exports of an application's Update Set",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001063",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001067",
+    "certification": "cis-cad",
+    "pergunta": "When creating an application through the Guided Application Creator, which of the following is a user experience option?",
+    "alternativas": [
+      {
+        "texto": "Portal",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Mobile",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Self-service",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Workspace",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001067",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001071",
+    "certification": "cis-cad",
+    "pergunta": "Application developers can specify which ServiceNow page a user sees after submitting a new record using the Record Producer UI. How is the page specified?",
+    "alternativas": [
+      {
+        "texto": "Create an application property to store the URL",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Configure the page in the Module that opens the Record Producer UI",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Write an after Business Rule script for the Record Producer's table: window.redirect = \"<URL>\";",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Write a script in the Record Producer's Script field: producer.redirect = \"<URL>\";",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001071",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001075",
+    "certification": "cis-cad",
+    "pergunta": "What is the best UX format to use for lists and forms?",
+    "alternativas": [
+      {
+        "texto": "Forms",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Lists",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Standard",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Classic",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001075",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001079",
+    "certification": "cis-cad",
+    "pergunta": "For Application Access there is a configuration option called Allow access to this table via web services. Which one of the following statements is true when this option is selected?",
+    "alternativas": [
+      {
+        "texto": "This option restricts the ability to delete records via web services but records can always be read",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Even when not selected, users with the correct permissions can use web services to access the table's records",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "This option restricts access only to SOAP web services but does not apply to REST",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The user performing the query via web services must have the correct permissions to access the table's records",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001079",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001083",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
+    "alternativas": [
+      {
+        "texto": "The application needs to send weekly email reminders to requestors for all records on a table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The application needs to run a clean up script on the last day of every month",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The application needs to query the database every day to look for unassigned records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The application needs to run a client-side script at the same time every day",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001083",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001087",
+    "certification": "cis-cad",
+    "pergunta": "What are web services?",
+    "alternativas": [
+      {
+        "texto": "Methods used to create and maintain U| Pages",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Methods used to allow applications to connect to other software applications over a network",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Methods used to discover a wide variety of systems and applications",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "They provide a customer-facing view of available service and product offerings provided by departments within the organization",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001087",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001091",
+    "certification": "cis-cad",
+    "pergunta": "What is the ServiceNow store?",
+    "alternativas": [
+      {
+        "texto": "Downloadable content ServiceNow script archive",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alternate name for the ServiceNow Developer Share site",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The source for ServiceNow Community created developer content",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Marketplace for free and paid certified ServiceNow applications and integrations",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001091",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001027",
+    "certification": "cis-cad",
+    "pergunta": "When configuring a REST Message, the Endpoint is:",
+    "alternativas": [
+      {
+        "texto": "The commands to the REST script to stop execution",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The URI of the data to be accessed, queried, or modified",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Information about the format of the returned data",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The response from the provider indicating there is no data to send back",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001027",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001031",
+    "certification": "cis-cad",
+    "pergunta": "Identify the incorrect statement about Delegated Development in ServiceNow.",
+    "alternativas": [
+      {
+        "texto": "Administrators can grant non-admin users the ability to develop global applications.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Administrators can specify which application file types the developer can access.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Administrators can grant the developer access to script fields.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Administrators can grant the developer access to security records.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001031",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001035",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT a purpose of application scoping?",
+    "alternativas": [
+      {
+        "texto": "Provide a relationship between application artifacts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Provide a way of tracking the user who developed an application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Provide a namespace (prefix and scope name) to prevent cross application name collisions",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Provide controls for how scripts from another scope can alter tables in a scoped application",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001035",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001039",
+    "certification": "cis-cad",
+    "pergunta": "Which objects can be used in Inbound Action scripts?",
+    "alternativas": [
+      {
+        "texto": "current and previous",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current and email",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current and event",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "current and producer",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001039",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001043",
+    "certification": "cis-cad",
+    "pergunta": "The source control operation used to store local changes on an instance for later application is called a(n) <blank>.",
+    "alternativas": [
+      {
+        "texto": "Branch",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Tag",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Stash",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Update set",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001043",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001047",
+    "certification": "cis-cad",
+    "pergunta": "What is a Module?",
+    "alternativas": [
+      {
+        "texto": "The functionality within an application menu such as opening a page in the content frame or a separate tab or window",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A group of menus, or pages, providing related information and functionality to end-users",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A way of helping users quickly access information and services by filtering the items in the Application Navigator",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "A web-based way of providing software to end-users",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001047",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001051",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT a method used for logging messages in a server-side script for a privately-scoped application?",
+    "alternativas": [
+      {
+        "texto": "gs.log()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.error()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.warn()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.debug()",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001051",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001054",
+    "certification": "cis-cad",
+    "pergunta": "What are some of the benefits of extending an existing table such as the Task table when creating a new application? a) You can repurpose existing fields by simply changing the label. b) Use existing fields with no modifications. c) Existing logic from the parent table will be automatically applied to the new table. d) All of the parent table records are copied to the new table.",
+    "alternativas": [
+      {
+        "texto": "a, b,c, and d",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "aandb",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "bandc",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, andc",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001054",
+    "source_type": "simple_choice",
+    "observacao": "As alternativas B e C estavam incorporadas ao texto da alternativa A. Os marcadores explícitos B. e C. foram separados para recuperar a opção indicada pelo gabarito; o conteúdo bruto foi preservado no relatório de importação."
+  },
+  {
+    "id": "cad-QST0001058",
+    "certification": "cis-cad",
+    "pergunta": "When a ServiceNow instance requests information from a web service, ServiceNow is the web service:",
+    "alternativas": [
+      {
+        "texto": "Publisher",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Specialist",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Provider",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Consumer",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001058",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001062",
+    "certification": "cis-cad",
+    "pergunta": "What is the purpose of the Application Picker?",
+    "alternativas": [
+      {
+        "texto": "Select an application to run",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Select an application as a favorite in the Application Navigator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Choose an application to edit and set the Application Scope",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Choose an application to download and install",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001062",
+    "source_type": "simple_choice",
+    "observacao": "QST0001102 relaciona o Application Picker à definição do Application Scope; esta questão marca Select an application to run. As formulações e os gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001066",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true for the Application Picker?",
+    "alternativas": [
+      {
+        "texto": "All custom application scope and the Global scope appear in the Application Picker",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All applications in ServiceNow, including baseline applications like Incident, appear in the Application Picker",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only custom applications appear in the Application Picker",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only downloaded applications appear in the Application Picker",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001066",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001070",
+    "certification": "cis-cad",
+    "pergunta": "Which server-side object provides methods for working with dates when writing a script in a privately scoped application?",
+    "alternativas": [
+      {
+        "texto": "GlideDateTime",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideRecord",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideSystem",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001070",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001074",
+    "certification": "cis-cad",
+    "pergunta": "Which script types execute on the server? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Business Rule",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Client Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "UI Policies",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script Actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scheduled Jobs",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001074",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001078",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following database operations cannot be controlled with Application Access?",
+    "alternativas": [
+      {
+        "texto": "Query",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Update",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Delete",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001078",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001082",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is a benefit of creating an Application Properties page for each application you develop?",
+    "alternativas": [
+      {
+        "texto": "Application Properties allow a developer to override the application properties inherited from ServiceNow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An Application Properties page is a good landing page for an application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application Properties allow a developer or admin to make changes to an application's behavior without modifying application artifacts",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application users know to go to the Application Properties page to change the appearance of an application",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001082",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001086",
+    "certification": "cis-cad",
+    "pergunta": "When debugging Email Notifications, what must you check on a user record? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Active must be true.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The First name and Last name fields must have values.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The value in the Notification field must be set to enabled.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The user must not be locked out.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Email field must have a value.",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001086",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001090",
+    "certification": "cis-cad",
+    "pergunta": "How can an application link to a repository behind a firewall?",
+    "alternativas": [
+      {
+        "texto": "This option is not supported.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Link an application to source control through a MID Server.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Link an application to source control through an access token.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Link an application to source control with multi-factor authentication.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001090",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001034",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is the baseline behavior of a table in a privately-scoped application?",
+    "alternativas": [
+      {
+        "texto": "The table and its data are not accessible using web services",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Any Business Rule can read, write, delete, and update from the table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only artifacts in the table's application can read from the table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All application scopes can read from the table",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001034",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001038",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following CANNOT be debugged using the Field Watcher?",
+    "alternativas": [
+      {
+        "texto": "Business Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script Includes",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Client Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Access Controls",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001038",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001042",
+    "certification": "cis-cad",
+    "pergunta": "How many applications menus can an application have?",
+    "alternativas": [
+      {
+        "texto": "3, one for an application's user modules, one for an application's administrator modules, and one for the ServiceNow administrator's modules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "As many as the application design requires",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "2, one for an application's user modules and one for an application's administrator modules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "1, which is used for all application modules",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001042",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001046",
+    "certification": "cis-cad",
+    "pergunta": "A scoped application containing Flow Designer content dedicated to a particular application is called a(n):",
+    "alternativas": [
+      {
+        "texto": "Spoke",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Bundle",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Action",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flow",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001046",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001050",
+    "certification": "cis-cad",
+    "pergunta": "Which Report Type(s) can be created by right-clicking on a column header in a table's list?",
+    "alternativas": [
+      {
+        "texto": "Bar Chart, Pie Chart, Histogram, and Line",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Bar Chart",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Bar Chart, Pie Chart, and Histogram",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Bar Chart and Pie Chart",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001050",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001057",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following client-side scripts apply to Record Producers?",
+    "alternativas": [
+      {
+        "texto": "Catalog Client Scripts and Catalog UI Policies",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ul Scripts and UI Actions",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ul Scripts and Record Producer Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Client Scripts and UI Policies",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001057",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001061",
+    "certification": "cis-cad",
+    "pergunta": "Can inherited fields be deleted from a table?",
+    "alternativas": [
+      {
+        "texto": "Yes, select the red X in the left-most column in the table definition",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes, but only if they are text fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes, but only if there has never been any saved field data",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "No, inherited fields cannot be deleted from a child table",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001061",
+    "source_type": "simple_choice",
+    "observacao": "QST0001105 afirma que podem ser excluídos campos definidos pelo usuário que não são herdados e contrapõe campos herdados; este item marca a exclusão de herdados como possível. Os gabaritos originais foram preservados."
+  },
+  {
+    "id": "cad-QST0001065",
+    "certification": "cis-cad",
+    "pergunta": "A graphical view of relationships among tables is a <blank>.",
+    "alternativas": [
+      {
+        "texto": "Schema map",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Dependency view",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Graphical User Interface",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Map source report",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001065",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001069",
+    "certification": "cis-cad",
+    "pergunta": "Which actions can a Business Rule take without scripting?",
+    "alternativas": [
+      {
+        "texto": "Set field values and write to the system log",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set field values and generate an event",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set field values and add message",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set field values and query the database",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001069",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001073",
+    "certification": "cis-cad",
+    "pergunta": "Which server-side API debug log method is available for scoped applications?",
+    "alternativas": [
+      {
+        "texto": "gs.log()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.info()",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.debuglog()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.print()",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001073",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001081",
+    "certification": "cis-cad",
+    "pergunta": "What is a workflow context?",
+    "alternativas": [
+      {
+        "texto": "The table for which a workflow is defined plus any conditions such as \"Active is true\"",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It is generated from a workflow version, executes activities, and follows transitions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The business reason or process for which a workflow is designed",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It is a checked out workflow which is being edited",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001081",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001085",
+    "certification": "cis-cad",
+    "pergunta": "How does ServiceNow match inbound email to existing records?",
+    "alternativas": [
+      {
+        "texto": "Watermark",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Record link",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Subject line",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "sys_id",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001085",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001089",
+    "certification": "cis-cad",
+    "pergunta": "You are developing the MyApp application that has a table, Table A. When the MyApp application is installed on an instance, you want Table A's records to be installed as part of the application. Table A's records will be installed when:",
+    "alternativas": [
+      {
+        "texto": "Table A is active and extends the Task table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Table A's records are added to the application record using the Create Application Files context menu item",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Table A has an automatic number counter for new records",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Table A is not included in the System Clone > Exclude Tables list",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001089",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001093",
+    "certification": "cis-cad",
+    "pergunta": "When creating an application through the Guided Application Creator, which of the following is NOT an option for creating a table?",
+    "alternativas": [
+      {
+        "texto": "Create table from template",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create table from scratch",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Extend a table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Upload spreadsheet",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001093",
+    "source_type": "simple_choice",
+    "observacao": "QST0001133 inclui Upload an existing spreadsheet como forma de definir tabelas no Guided Application Creator; esta questão marca Upload spreadsheet como não sendo uma opção. Os gabaritos originais foram mantidos."
+  },
+  {
+    "id": "cad-QST0001033",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true regarding Application Scope?",
+    "alternativas": [
+      {
+        "texto": "All applications are automatically part of the Global scope",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Applications downloaded from 3 party ServiceNow application developers cannot have naming conflicts rd",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Any developer can edit any application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Developers can choose the prefix for a scope's namespace",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001033",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001037",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following statements does NOT apply when extending an existing table?",
+    "alternativas": [
+      {
+        "texto": "The parent table's Access Controls are evaluated when determining access to the new table's records and fields",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The new table inherits the functionality built into the parent table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The new table inherits all of the fields from the parent table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "You must script and configure all required behaviors",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001037",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001045",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following methods prints a message on a blue background to the top of the current form by default?",
+    "alternativas": [
+      {
+        "texto": "g_form.addinfoMsg()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.addinfoMessage()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.showFieldMessage()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_form.showFieldMsg()",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001045",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001049",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT required to link a ServiceNow application to a Git repository?",
+    "alternativas": [
+      {
+        "texto": "Password",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "URL",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "User name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application name",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001049",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001053",
+    "certification": "cis-cad",
+    "pergunta": "How must Application Access be configured to prevent all other private application scopes from creating configuration records on an application's data tables?",
+    "alternativas": [
+      {
+        "texto": "You must create Access Controls to prevent all other application scopes from creating configuration records on an application's data tables rather than using Application Access",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set the Accessible from field value to All application scopes and de-select the Can create option",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set the Accessible from field value to This application scope only and de-select the Allow access to this table via web services option",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set the Accessible from field value to This application scope only",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001053",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001009",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following objects does a Display Business Rule NOT have access to?",
+    "alternativas": [
+      {
+        "texto": "previous",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "GlideSystem",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "g_scratchpad",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "current",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001009",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001013",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following are true for reports in ServiceNow? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Any user can see any report shared with them.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be a graphical representation of data.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All users can generate reports on any table.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be run on demand by authorized users.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Can be scheduled to be run and distributed by email.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001013",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001004",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT a debugging strategy for client-side scripts?",
+    "alternativas": [
+      {
+        "texto": "g_form.addinfoMessage()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Field Watcher",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "jslog()",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "gs.log()",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001004",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001008",
+    "certification": "cis-cad",
+    "pergunta": "In an Email Notification, which one of the following is NOT true for the Weight field?",
+    "alternativas": [
+      {
+        "texto": "Only Notifications with the highest weight for the same record and recipients are sent",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A Weight value of zero means that no email should be sent",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Weight value defaults to zero",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A Weight value of zero means the Notification is always sent when the Notification's When to send criteria is met",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001008",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001012",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is NOT supported by Flow Designer?",
+    "alternativas": [
+      {
+        "texto": "Call a subflow from a flow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Test a flow with rollback",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Use Delegated Developer",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Run a flow from a MetricBase Trigger",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001012",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001003",
+    "certification": "cis-cad",
+    "pergunta": "To see what scripts, reports, and other application artifacts will be in a published application:",
+    "alternativas": [
+      {
+        "texto": "Enter the name of the Application in the Global search field",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open the list of Update Sets for the instance",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Examine the Application Files Related List in the application to be published",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open the artifact records individually to verify the value in the Application field",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001003",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001007",
+    "certification": "cis-cad",
+    "pergunta": "When creating new application files in a scoped application, cross scope access is turned on by default in which of the following?",
+    "alternativas": [
+      {
+        "texto": "REST messages",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script Include",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Workflow",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001007",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001011",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is NOT a UI Action type?",
+    "alternativas": [
+      {
+        "texto": "List choice",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Form button",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "List banner button",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Form choice",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001011",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001002",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following are configured in an Email Notification? a) Who will receive the notification. b) What content will be in the notification. c) When to send the notification. d) How to send the notification.",
+    "alternativas": [
+      {
+        "texto": "a, b andc",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "a, b, and d C.b,candd",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "a,c and d",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001002",
+    "source_type": "simple_choice",
+    "observacao": "A alternativa B contém um marcador C. incorporado ao texto; o arquivo não fornece uma chave C separada. As opções e o gabarito originais foram preservados."
+  },
+  {
+    "id": "cad-QST0001006",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following is NOT a trigger type in Flow Designer?",
+    "alternativas": [
+      {
+        "texto": "Outbound Email",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Schedule",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001006",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001010",
+    "certification": "cis-cad",
+    "pergunta": "Which of the following features are available to Global applications? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Automated Test Framework",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source Control",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Delegated Development",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flow Designer",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001010",
+    "source_type": "multiple_choice"
+  },
+  {
+    "id": "cad-QST0001014",
+    "certification": "cis-cad",
+    "pergunta": "Modules must have a Link type. Which one of the following is a list of Link types?",
+    "alternativas": [
+      {
+        "texto": "List of Records, Separator, Catalog Type, Roles",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Assessment, List of Records, Separator, Timeline Page",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "List of Records, Content Page, Order, URL (from arguments:)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Assessment, List of Records, Content Page, Roles",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001014",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001017",
+    "certification": "cis-cad",
+    "pergunta": "Which one of the following is true?",
+    "alternativas": [
+      {
+        "texto": "A UI Policy's Actions execute before the UI Policy's Scripts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The execution order for a UI Policy's Scripts and Actions is determined at runtime",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A UI Policy's Scripts execute before the UI Policy's Actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "A UI Policy's Actions and Scripts execute at the same time",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001017",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001016",
+    "certification": "cis-cad",
+    "pergunta": "When working in the Form Designer, configuring the label of a field in a child table changes the label on which table(s)?",
+    "alternativas": [
+      {
+        "texto": "base table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "child table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "parent table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "all tables",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001016",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001020",
+    "certification": "cis-cad",
+    "pergunta": "There is a basic strategy when creating a Utils Script Include. Identify the step that does not belong.",
+    "alternativas": [
+      {
+        "texto": "Identify the table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Script the function(s)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a class",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a prototype object from the new class",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001020",
+    "source_type": "simple_choice"
+  },
+  {
+    "id": "cad-QST0001018",
+    "certification": "cis-cad",
+    "pergunta": "Here is the Business Rule script template: (function executeRule (current, previous */null when async*/) { }) (current, previous); This type of JavaScript function is known as:",
+    "alternativas": [
+      {
+        "texto": "Constructor",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scoped",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Anonymous",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Self-invoking",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "source_id": "QST0001018",
+    "source_type": "simple_choice",
+    "observacao": "O trecho de código contém delimitadores de comentário incompletos no arquivo original. O código e o gabarito foram preservados."
+  }
+]

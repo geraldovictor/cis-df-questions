@@ -4,9 +4,11 @@ create table public.attempts (
   user_id uuid not null references auth.users(id) on delete cascade,
   started_at timestamptz not null default now(),
   finished_at timestamptz,
-  score integer check (score between 0 and 75),
-  total integer not null default 75 check (total = 75),
+  score integer,
+  total integer not null default 75,
   state jsonb not null,
+  constraint attempts_total_check check (total in (30, 60, 75)),
+  constraint attempts_score_check check (score >= 0 and score <= total),
   constraint valid_completion check (
     (finished_at is null and score is null) or
     (finished_at is not null and score is not null)

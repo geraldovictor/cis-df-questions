@@ -1,13 +1,13 @@
 """Generate neural English recordings. Install: pip install -r requirements-audio.txt."""
+import argparse
 import asyncio
 import json
 import re
 from pathlib import Path
 
-import edge_tts
-
 ROOT = Path(__file__).resolve().parent
 FILES = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json']
+CERTIFICATIONS = ('cis-df', 'cis-em', 'cis-cad')
 VOICE = 'en-US-AndrewMultilingualNeural'
 
 
@@ -35,11 +35,30 @@ def narration(question):
     return text
 
 
-async def main():
-    folder = ROOT / 'audio'
-    folder.mkdir(exist_ok=True)
+def question_bank(certification):
+    if certification == 'cis-df':
+        return [(f'{f}-{i}', question)
+                for f, filename in enumerate(FILES, 1)
+                for i, question in enumerate(json.loads((ROOT / filename).read_text(encoding='utf-8')), 1)]
+    source = ROOT / 'data' / certification / 'questions.json'
+    questions = json.loads(source.read_text(encoding='utf-8'))
+    if not isinstance(questions, list):
+        raise ValueError(f'Question bank must be an array: {source}')
+    identifiers = [question.get('id') for question in questions]
+    if (any(not isinstance(identifier, str) or not identifier or identifier in ('.', '..') or
+            '/' in identifier or '\\' in identifier for identifier in identifiers) or
+            len(identifiers) != len(set(identifiers))):
+        raise ValueError(f'Question bank needs unique, stable IDs: {source}')
+    if any(question.get('certification', certification) != certification for question in questions):
+        raise ValueError(f'Question bank contains another certification: {source}')
+    return list(zip(identifiers, questions))
+
+
+async def main(certification='cis-df'):
+    import edge_tts
+
     semaphore = asyncio.Semaphore(16)
-    async def generate(identifier, question):
+    async def generate(folder, identifier, question):
         async with semaphore:
             target = folder / f'{identifier}.mp3'
             if target.exists() and target.stat().st_size > 1000:
@@ -59,12 +78,18 @@ async def main():
                         raise
                     await asyncio.sleep(2 ** (attempt + 1))
     tasks = []
-    for f, filename in enumerate(FILES, 1):
-        for i, question in enumerate(json.loads((ROOT / filename).read_text(encoding='utf-8')), 1):
-            tasks.append(generate(f'{f}-{i}', question))
+    for selected in CERTIFICATIONS if certification == 'all' else (certification,):
+        bank = question_bank(selected)
+        folder = ROOT / 'audio' if selected == 'cis-df' else ROOT / 'audio' / selected
+        folder.mkdir(parents=True, exist_ok=True)
+        if not bank:
+            print(f'{selected}: awaiting questions; no recordings generated.', flush=True)
+        tasks.extend(generate(folder, identifier, question) for identifier, question in bank)
     await asyncio.gather(*tasks)
     print(f'Complete: {len(tasks)} neural recordings, voice {VOICE}', flush=True)
 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description='Generate neural English recordings for a certification.')
+    parser.add_argument('--certification', choices=(*CERTIFICATIONS, 'all'), default='cis-df')
+    asyncio.run(main(parser.parse_args().certification))

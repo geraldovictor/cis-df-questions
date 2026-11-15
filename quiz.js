@@ -1,4 +1,5 @@
 import { getMatchingQuestion, getMatchingAssignments, isMatchingComplete } from './matching.js';
+import { DEFAULT_CERTIFICATION, getCertification } from './certification.js';
 
 export function shuffle(items, random = Math.random) {
   const result = [...items];
@@ -9,13 +10,14 @@ export function shuffle(items, random = Math.random) {
   return result;
 }
 
-export function createAttempt(questions, userId) {
-  if (questions.length < 75) throw new Error('São necessárias pelo menos 75 questões.');
-  const chosen = shuffle(questions).slice(0, 75);
+export function createAttempt(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
+  const total = getCertification(certificationId).examSize;
+  if (questions.length < total) throw new Error(`São necessárias pelo menos ${total} questões.`);
+  const chosen = shuffle(questions).slice(0, total);
   return {
     id: crypto.randomUUID(), user_id: userId, started_at: new Date().toISOString(),
-    finished_at: null, score: null, total: 75,
-    state: { ids: chosen.map(q => q.id), orders: Object.fromEntries(chosen.map(q => [q.id, shuffle(q.alternativas.map((_, i) => i))])), answers: {}, cursor: 0 }
+    finished_at: null, score: null, total,
+    state: { certification: certificationId, ids: chosen.map(q => q.id), orders: Object.fromEntries(chosen.map(q => [q.id, shuffle(q.alternativas.map((_, i) => i))])), answers: {}, cursor: 0 }
   };
 }
 

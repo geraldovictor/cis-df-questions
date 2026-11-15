@@ -1,0 +1,4748 @@
+[
+  {
+    "id": "em-xpqJrU6aWbo64wGLgKGW",
+    "certification": "cis-em",
+    "pergunta": "When creating an alert management rule, where would you specify a workflow to resolve a given condition?",
+    "alternativas": [
+      {
+        "texto": "From the Remediation tab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "From the Actions tab",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "From the Launcher tab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the Related Links section",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "xpqJrU6aWbo64wGLgKGW",
+      "numero": 1,
+      "colecao": 1,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/89832-exam-cis-em-topic-1-question-1-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-B19yisN82McLTDrzWqX3",
+    "certification": "cis-em",
+    "pergunta": "What types of system can a MID Server install on? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "OpenVMS System",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Microsoft Windows Server",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Linux System",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Microsoft Windows Desktop",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Any system inside the customer firewall",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Mac OS X System",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "B19yisN82McLTDrzWqX3",
+      "numero": 2,
+      "colecao": 2,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/96775-exam-cis-em-topic-1-question-2-discussion/",
+      "resposta": "BC",
+      "resposta_ET": "BC",
+      "respostas_comunidade": [
+        "BC (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-LA7FxltXax5SalJvP2zk",
+    "certification": "cis-em",
+    "pergunta": "What would be the primary use case for creating Javascripts in Event Management?",
+    "alternativas": [
+      {
+        "texto": "To create a customized pull connector to retrieve events on behalf of an event source",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To automatically populate the Configuration Management Database (CMDB)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To parse a nodename out of your raw event data in an event rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To run as part of a remediation workflow for IT alerts that fail to execute",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "LA7FxltXax5SalJvP2zk",
+      "numero": 3,
+      "colecao": 3,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/134381-exam-cis-em-topic-1-question-3-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-zTEjoNTa0qXM4i3zoFN9",
+    "certification": "cis-em",
+    "pergunta": "What would you use to define the monitoring sources allowed to communicate with the ServiceNow instance for Operational Intelligence?",
+    "alternativas": [
+      {
+        "texto": "Metric Registration",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric Config Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric Type Actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric to CI",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "zTEjoNTa0qXM4i3zoFN9",
+      "numero": 4,
+      "colecao": 4,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/96778-exam-cis-em-topic-1-question-4-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-WW4VRXbAsz7yd0pkqvhR",
+    "certification": "cis-em",
+    "pergunta": "The value of the Alert Priority score is a composite of what?",
+    "alternativas": [
+      {
+        "texto": "The value of the alert’s category and its relative weight",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The value of the alert’s category and its Priority Group",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The value of the alert’s Severity and its Priority Group",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The value of the alert’s Severity and its relative weight",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "WW4VRXbAsz7yd0pkqvhR",
+      "numero": 5,
+      "colecao": 5,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/96779-exam-cis-em-topic-1-question-5-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-XCgBZuJMlObwJme17WqN",
+    "certification": "cis-em",
+    "pergunta": "Which attribute is responsible for de-duplication?",
+    "alternativas": [
+      {
+        "texto": "Metric_name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message_key",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Short_description",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Additional_info",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "XCgBZuJMlObwJme17WqN",
+      "numero": 6,
+      "colecao": 6,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97157-exam-cis-em-topic-1-question-6-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-bLrxSfMQ9Grm27L0rG9s",
+    "certification": "cis-em",
+    "pergunta": "How would you interpret the following data in the Operational Intelligence Insights Explorer?",
+    "alternativas": [
+      {
+        "texto": "win-ces882ierw is one of your hottest Configuration Items (CIs) that is currently experiencing a high probability of anomalies and should be checked immediately",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "win-ces882ierw is one of your hottest Configuration Items (CIs), but is currently experiencing a low probability of anomalies",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "win-ces882ierw is one of your customized list of monitored Configuration Items (CIs) that is currently experiencing a high probability of anomalies and should be checked immediately",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "win-ces882ierw is one of your customized list of monitored Configuration Items (CIs), but is currently experiencing a low probability of anomalies",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image4.png",
+          "alt": "Operational Intelligence Insights Explorer. The first gauge tab is selected. A Windows Server named win-ces882ierw has a green status indicator."
+        }
+      ],
+      "paragrafos": [
+        "Image transcript: Insights Explorer has the first gauge tab selected. The Windows Server win-ces882ierw is listed with a green status indicator."
+      ]
+    },
+    "fonte": {
+      "id": "bLrxSfMQ9Grm27L0rG9s",
+      "numero": 7,
+      "colecao": 7,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/104548-exam-cis-em-topic-1-question-7-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ],
+      "enunciado_original": "How would you interpret the following data in the Operational Intelligence Insights Explorer?\n//IMG//"
+    }
+  },
+  {
+    "id": "em-NISIR0sEpQyihD3jSZwA",
+    "certification": "cis-em",
+    "pergunta": "What is the default collection/polling interval applied to all event connectors?",
+    "alternativas": [
+      {
+        "texto": "Every 120 seconds",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 5 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 40 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 60 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 10 seconds",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "NISIR0sEpQyihD3jSZwA",
+      "numero": 8,
+      "colecao": 8,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97158-exam-cis-em-topic-1-question-8-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (89%)",
+        "11%"
+      ]
+    }
+  },
+  {
+    "id": "em-1GfBMXXKxPRAgkNLsk8S",
+    "certification": "cis-em",
+    "pergunta": "Where can you look to determine what event rule created an alert? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Alert Activity",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Additional Information",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Processing Notes",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Message Key",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Source",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "1GfBMXXKxPRAgkNLsk8S",
+      "numero": 9,
+      "colecao": 9,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/108125-exam-cis-em-topic-1-question-9-discussion/",
+      "resposta": "AC",
+      "resposta_ET": "AC",
+      "respostas_comunidade": [
+        "AC (75%)",
+        "C (25%)"
+      ]
+    }
+  },
+  {
+    "id": "em-mfUCzR48hkKkUyXgzJKU",
+    "certification": "cis-em",
+    "pergunta": "What feature would you use to trigger a workflow or automatically generate tasks via templates?",
+    "alternativas": [
+      {
+        "texto": "Event rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Task rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert management rules",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert correlation rules",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "mfUCzR48hkKkUyXgzJKU",
+      "numero": 10,
+      "colecao": 10,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97159-exam-cis-em-topic-1-question-10-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-kChcD44nANKpPjagA7K2",
+    "certification": "cis-em",
+    "pergunta": "What are the valid states an alert can be in during its lifecycle?",
+    "alternativas": [
+      {
+        "texto": "Open, Reopen, Flapping, Closed",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "New, Updating, Waiting, Complete",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open, Updating, Swinging, Closed",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Open, Warning, Flapping, Clear",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "kChcD44nANKpPjagA7K2",
+      "numero": 11,
+      "colecao": 11,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97160-exam-cis-em-topic-1-question-11-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-ZOzASY0FHOB5Ls0tN72C",
+    "certification": "cis-em",
+    "pergunta": "What Event Management module allows for configuration of automatic task creation?",
+    "alternativas": [
+      {
+        "texto": "Alert management rules",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Task rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert correlation rules",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ZOzASY0FHOB5Ls0tN72C",
+      "numero": 12,
+      "colecao": 12,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97161-exam-cis-em-topic-1-question-12-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-qzpvJzZcCN3tgWIFmBu7",
+    "certification": "cis-em",
+    "pergunta": "You have a system configured with a MID Web Server using Basic authentication to enable Operational Management Intelligence (OI) to push raw metric data to the MID Server. No data is getting through to the MID Server.\nWhat is the most likely cause of the issue?",
+    "alternativas": [
+      {
+        "texto": "The MID Web Server needs to be Restarted",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The MID Web Server needs to be Started",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An invalid secret key is being passed in the header information of the URL for the REST request",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An invalid password is set in the MID Web Server Context",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "qzpvJzZcCN3tgWIFmBu7",
+      "numero": 13,
+      "colecao": 13,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97252-exam-cis-em-topic-1-question-13-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-0IrVChQ76HiLYaJYzhto",
+    "certification": "cis-em",
+    "pergunta": "In the event table, which field maps the external attributes from the target system?",
+    "alternativas": [
+      {
+        "texto": "Resource",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Description",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Additional Information",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "0IrVChQ76HiLYaJYzhto",
+      "numero": 14,
+      "colecao": 14,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97253-exam-cis-em-topic-1-question-14-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (79%)",
+        "C (21%)"
+      ]
+    }
+  },
+  {
+    "id": "em-B5WSYmL4pPJtr3gaQVBT",
+    "certification": "cis-em",
+    "pergunta": "By default, the Alert Console displays what type of alerts?",
+    "alternativas": [
+      {
+        "texto": "All Primary, Open alerts and anomaly alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All Primary and Secondary Open alerts and anomaly alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All Primary alerts with a Severity of Critical, Major, Minor, Warning that are not in Maintenance mode",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All Primary, Open alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All Primary and Secondary Open alerts with a Severity of Critical, Major, Minor, and Warning that are not in Maintenance mode",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "B5WSYmL4pPJtr3gaQVBT",
+      "numero": 15,
+      "colecao": 15,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97254-exam-cis-em-topic-1-question-15-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-jcBdiw2sJ5WyeIHWggkk",
+    "certification": "cis-em",
+    "pergunta": "Which are recommended best practices for Event Management? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Filter out events on ServiceNow Instance for easier consolidation and aggregation.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Promote all events to alerts during initial implementation until you fully understand which should be ignored.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Filter out events at source rather than in the ServiceNow instance.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Base-line “normal-state” events to filter out background noise.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ignore all non-critical events during initial implementation to streamline processing; add alerts over time as time and resources allow.",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "jcBdiw2sJ5WyeIHWggkk",
+      "numero": 16,
+      "colecao": 16,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97255-exam-cis-em-topic-1-question-16-discussion/",
+      "resposta": "CDE",
+      "resposta_ET": "CDE",
+      "respostas_comunidade": [
+        "CDE (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-oe2hpAgdNiERpdXGOyas",
+    "certification": "cis-em",
+    "pergunta": "For an incoming event with a matching message key, what allows an existing alert to be automatically closed?",
+    "alternativas": [
+      {
+        "texto": "In the event rule, set the Severity to 0",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the alert rule, set the Severity to 0",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the alert rule, set the Severity to -1",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the event rule, set the Severity to -1",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "oe2hpAgdNiERpdXGOyas",
+      "numero": 17,
+      "colecao": 17,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97256-exam-cis-em-topic-1-question-17-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-WlH2aBKtbdpRXiXJh9Gu",
+    "certification": "cis-em",
+    "pergunta": "A support agent resolves an incident associated with an alert, but the alert does automatically close even though the evt_mgmt.incident_closes_alert property is set appropriately to close the alert.\nWhat is the most likely cause of this issue?",
+    "alternativas": [
+      {
+        "texto": "The support agent does not have the evt_mgmt_user role.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The support agent only has the evt_mgmt_admin role.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The support agent has the evt_mgmt_operator role, but not the evt_mgmt_user role.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The support agent has the evt_mgmt_user role, but not the evt_mgmt_operator role.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "WlH2aBKtbdpRXiXJh9Gu",
+      "numero": 18,
+      "colecao": 18,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97257-exam-cis-em-topic-1-question-18-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (80%)",
+        "10%",
+        "10%"
+      ]
+    }
+  },
+  {
+    "id": "em-o0LQUosgxOk70Mb3O1nu",
+    "certification": "cis-em",
+    "pergunta": "What are the two most accurate statements regarding the ServiceNow CMDB (configuration management database) and CIs (configuration items)?",
+    "alternativas": [
+      {
+        "texto": "The CMDB is a series of tables that contain only key hardware components located in critical paths within your platform that must be managed.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The CMDB is a dynamic list that tracks both the CIs within your platform and the relationship between those items.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All CIs stored in the CMDB must have an assigned IP address within your infrastructure.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A CI is any component within your infrastructure that needs to be managed in order to deliver Services.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "o0LQUosgxOk70Mb3O1nu",
+      "numero": 19,
+      "colecao": 19,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97258-exam-cis-em-topic-1-question-19-discussion/",
+      "resposta": "B",
+      "resposta_ET": "BD",
+      "respostas_comunidade": [
+        "B (50%)",
+        "BD (50%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET BD. A correção usa a resposta principal fornecida, sem validação técnica independente. O enunciado pede duas respostas, mas a resposta principal fornecida seleciona somente uma. A resposta ET seleciona duas. O banco preserva a resposta principal."
+  },
+  {
+    "id": "em-PKn6vH2rVOAkbxSpXJGp",
+    "certification": "cis-em",
+    "pergunta": "What would you use as a central location to explore the CMDB class hierarchy, CI table definitions, and CIs?",
+    "alternativas": [
+      {
+        "texto": "CI Remediations",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI Relation Types",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI Identifiers",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Process to CI Type Mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI Class Manager",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "PKn6vH2rVOAkbxSpXJGp",
+      "numero": 20,
+      "colecao": 20,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97259-exam-cis-em-topic-1-question-20-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-T2g7r4aBANzEGhmkOy2E",
+    "certification": "cis-em",
+    "pergunta": "A four node cluster makes up the components (CIs) of a Business Service. The impact influence for the cluster is set to 60%.\nHow many members of the cluster must be in a Critical state in order for the Business Service to display as Critical in the Impact Tree?",
+    "alternativas": [
+      {
+        "texto": "1",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "2",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "3",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "4",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "T2g7r4aBANzEGhmkOy2E",
+      "numero": 21,
+      "colecao": 21,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97260-exam-cis-em-topic-1-question-21-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (83%)",
+        "B (17%)"
+      ]
+    }
+  },
+  {
+    "id": "em-6HAXF1caPVZapUmb0tqD",
+    "certification": "cis-em",
+    "pergunta": "Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?",
+    "alternativas": [
+      {
+        "texto": "Anomaly A — content absent from the supplied file.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Anomaly B — content absent from the supplied file.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Both anomaly A and anomaly B",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Neither anomaly A or anomaly B",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image10.png",
+          "alt": "Alert promotion rule MetricOne, Active selected, Promotion Type MetricName, Minimal Score 9.5, Source MetricOne, MetricName CPU_Util."
+        }
+      ],
+      "paragrafos": [
+        "Image transcript: Alert promotion rule MetricOne. Active is selected. Promotion Type: MetricName. Minimal Score: 9.5. Source: MetricOne. MetricName: CPU_Util."
+      ]
+    },
+    "fonte": {
+      "id": "6HAXF1caPVZapUmb0tqD",
+      "numero": 22,
+      "colecao": 22,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97261-exam-cis-em-topic-1-question-22-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ],
+      "enunciado_original": "Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?\n//IMG//"
+    },
+    "observacao": "O conteúdo das alternativas Anomaly A e Anomaly B não foi incluído no arquivo de origem. A imagem mostra a regra, mas não os exemplos das anomalias. Os espaços vazios foram identificados explicitamente; o gabarito B fornecido foi preservado."
+  },
+  {
+    "id": "em-vMPYPcWcmiMmKARnJC7N",
+    "certification": "cis-em",
+    "pergunta": "By default, Event Management tries to bind an alert to CI (configuration item), by matching the node name in the event to which three items in the CMDB (configuration management database)?",
+    "alternativas": [
+      {
+        "texto": "CI name, Fully qualified domain name, IP or MAC address",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI name, Webserver name, IP or MAC address",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI name, Fully qualified domain name, SSH public host keys",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "System class name, Fully qualified domain name, IP or MAC address",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "vMPYPcWcmiMmKARnJC7N",
+      "numero": 23,
+      "colecao": 23,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97262-exam-cis-em-topic-1-question-23-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-myd5bMCKo42HQ26bicGS",
+    "certification": "cis-em",
+    "pergunta": "The MID Server requires an outbound connection on which port?",
+    "alternativas": [
+      {
+        "texto": "445",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "161",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "443",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "143",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "myd5bMCKo42HQ26bicGS",
+      "numero": 24,
+      "colecao": 24,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97264-exam-cis-em-topic-1-question-24-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": []
+    }
+  },
+  {
+    "id": "em-ym8TjGKjLPDvJHuEB7vX",
+    "certification": "cis-em",
+    "pergunta": "If more than one event rule applies to a particular event or metric, which of the event rules will run based upon the Order of execution number?",
+    "alternativas": [
+      {
+        "texto": "Only the event rule with the highest Order of execution number will run.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only the event rule with the lowest Order of execution number will run.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All event rules will run, from the lowest to the highest Order of execution numbers.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All event rules will run, from the highest to the lowest Order of execution numbers.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ym8TjGKjLPDvJHuEB7vX",
+      "numero": 25,
+      "colecao": 25,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97266-exam-cis-em-topic-1-question-25-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (75%)",
+        "B (25%)"
+      ]
+    }
+  },
+  {
+    "id": "em-L1qmEriZpHiQBd6mzNHB",
+    "certification": "cis-em",
+    "pergunta": "When creating event rules, is it best practice to create:",
+    "alternativas": [
+      {
+        "texto": "Two rules for every event",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "As many rules as possible",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "As few rules as possible",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "One rule for every event",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "L1qmEriZpHiQBd6mzNHB",
+      "numero": 26,
+      "colecao": 26,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/99133-exam-cis-em-topic-1-question-26-discussion/",
+      "resposta": "C",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "C (67%)",
+        "D (33%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-yxfJN2y7TW5hIX1NvKrH",
+    "certification": "cis-em",
+    "pergunta": "During processing of the event and if the event Severity is blank, the state of the event is set to:",
+    "alternativas": [
+      {
+        "texto": "Ready",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ignored",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Error",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Processing",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "yxfJN2y7TW5hIX1NvKrH",
+      "numero": 27,
+      "colecao": 27,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97267-exam-cis-em-topic-1-question-27-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-iAGp7NbeeimkSNoN97nF",
+    "certification": "cis-em",
+    "pergunta": "What two key steps must be performed after creating a new connector instance? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Assign a MID Server to the connector",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Enter credentials for the connector",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Debug the connector",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Test the connector",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Activate the connector",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "iAGp7NbeeimkSNoN97nF",
+      "numero": 28,
+      "colecao": 28,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97268-exam-cis-em-topic-1-question-28-discussion/",
+      "resposta": "DE",
+      "resposta_ET": "DE",
+      "respostas_comunidade": [
+        "DE (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-h7QMqFU7dwosjHfm0lrU",
+    "certification": "cis-em",
+    "pergunta": "A customer informs you that they already have monitoring and event management tools.\nWhich of the following describes the extra value that ServiceNow Event Management provides? (Choose four.)",
+    "alternativas": [
+      {
+        "texto": "ServiceNow Event Management Alerts, Incidents, Problems, and changes are automatically correlated with CIs and Business Services that can be visualized in Business Service maps.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow Event Management manages relationships between alerts and related incidents to maintain an end-to-end event management lifecycle.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow Event Management provides a business-centric platform and single system of record for service monitoring and remediation results, to better control and manage performance and availability.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow Event Management provides state-of-the-art performance monitoring capabilities across a wide array of different types of infrastructures.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow Event Management utilizes the power of MID Servers provide important functions in your ITOM Health deployment. What does MID stand for? A. Management, Instrumentation. and Discovery B. Messaging. Integration, and Data C. Monitoring. Insight. and Domain D. Maintenance, Information, and Distribution with leading monitoring systems to automatically create actionable alerts.",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "h7QMqFU7dwosjHfm0lrU",
+      "numero": 29,
+      "colecao": 29,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97269-exam-cis-em-topic-1-question-29-discussion/",
+      "resposta": "ABCE",
+      "resposta_ET": "ABCE",
+      "respostas_comunidade": []
+    },
+    "observacao": "A alternativa sobre MID Servers contém texto de outra pergunta misturado na origem. O texto e o gabarito foram preservados; não há explicação fornecida para esclarecer essa opção."
+  },
+  {
+    "id": "em-6poSPfcTOBjsy7UYQpK0",
+    "certification": "cis-em",
+    "pergunta": "You have an event with a Source of ‘Trap from Enterprise 111’, but the alert created for this event shows a Source of ‘Oracle EM’. If you want to change what this is set to, where in the event rule would you do this?",
+    "alternativas": [
+      {
+        "texto": "Transform and Compose Alert Output lab",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event rule info tab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI Binding tab",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Filter tab",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "6poSPfcTOBjsy7UYQpK0",
+      "numero": 30,
+      "colecao": 30,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/88323-exam-cis-em-topic-1-question-30-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-FAVPEgUPU4kwDqBx0yWW",
+    "certification": "cis-em",
+    "pergunta": "Copies of checks that have been included in Agent Client Collector policies are known as what?",
+    "alternativas": [
+      {
+        "texto": "Check definitions",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Check models",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Check clones",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Check mirrors",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Check instances",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "FAVPEgUPU4kwDqBx0yWW",
+      "numero": 31,
+      "colecao": 31,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97271-exam-cis-em-topic-1-question-31-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (63%)",
+        "A (38%)"
+      ]
+    }
+  },
+  {
+    "id": "em-39H2yN1G785z2b9KUL3r",
+    "certification": "cis-em",
+    "pergunta": "How often do baseline event connectors retrieve events?",
+    "alternativas": [
+      {
+        "texto": "Every 30 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 2 minutes",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 10 minutes",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 1 minute",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 5 minutes",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "39H2yN1G785z2b9KUL3r",
+      "numero": 32,
+      "colecao": 32,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97272-exam-cis-em-topic-1-question-32-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-ZolsrXIfajYfJp940WFr",
+    "certification": "cis-em",
+    "pergunta": "Which attribute correlates multiple events to one alert?",
+    "alternativas": [
+      {
+        "texto": "Additional_info",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message_key",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric_name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Short_description",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ZolsrXIfajYfJp940WFr",
+      "numero": 33,
+      "colecao": 33,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97273-exam-cis-em-topic-1-question-33-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-bWf9QUcYOdayLcMQRdFE",
+    "certification": "cis-em",
+    "pergunta": "What attribute is used to consolidate events into a single alert?",
+    "alternativas": [
+      {
+        "texto": "Event Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message Key",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Priority",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Severity",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "bWf9QUcYOdayLcMQRdFE",
+      "numero": 34,
+      "colecao": 34,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97274-exam-cis-em-topic-1-question-34-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-7KmYdUNF4MjymiT4kmzL",
+    "certification": "cis-em",
+    "pergunta": "Which attribute within an event needs to be exactly the same to allow for deduplication?",
+    "alternativas": [
+      {
+        "texto": "Metric Name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message Key",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Type & Node",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Description",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Correlation ID",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "7KmYdUNF4MjymiT4kmzL",
+      "numero": 35,
+      "colecao": 35,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97275-exam-cis-em-topic-1-question-35-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-k0fKPE6Pmm6nsD0rd3My",
+    "certification": "cis-em",
+    "pergunta": "In default configuration using baseline connectors, how often is event data collected from event sources?",
+    "alternativas": [
+      {
+        "texto": "Once every minute",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 2 minutes",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Twice every minute",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every 5 minutes",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "k0fKPE6Pmm6nsD0rd3My",
+      "numero": 36,
+      "colecao": 36,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97277-exam-cis-em-topic-1-question-36-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-n5s1vPFYn8WQKHcXgujg",
+    "certification": "cis-em",
+    "pergunta": "What applications are included in the ITOM Health product?",
+    "alternativas": [
+      {
+        "texto": "Event Management and Operational Intelligence",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ITOM Visibility",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Discovery and Service Mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Cloud Management",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "n5s1vPFYn8WQKHcXgujg",
+      "numero": 37,
+      "colecao": 37,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97279-exam-cis-em-topic-1-question-37-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-28CWdl4O4qKOBLLDlA43",
+    "certification": "cis-em",
+    "pergunta": "What is one of the main benefits of using Event Management and Operational Intelligence?",
+    "alternativas": [
+      {
+        "texto": "To improve service availability by helping IT staff pinpoint service issue causes and evaluate the impact of planned changes.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To increase service agility and produce fast, predictable results by automating manual, routine, error-prone tasks.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To rapidly configure and launch secure, agentless discovery of hardware and software resources and their relationships.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To proactively warn against possible service outages using a range of advanced predictive machine learning methods.",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "28CWdl4O4qKOBLLDlA43",
+      "numero": 38,
+      "colecao": 38,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97280-exam-cis-em-topic-1-question-38-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-a72O94zcrGuUplaPIsCL",
+    "certification": "cis-em",
+    "pergunta": "MID Servers provide important functions in your ITOM Health deployment.\nWhat does MID stand for?",
+    "alternativas": [
+      {
+        "texto": "Management, Instrumentation, and Discovery",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Messaging, Integration, and Data",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Monitoring, Insight, and Domain",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Maintenance, Information, and Distribution",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "a72O94zcrGuUplaPIsCL",
+      "numero": 39,
+      "colecao": 39,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97281-exam-cis-em-topic-1-question-39-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-3qAKvwxjXe5o5TB9I8g1",
+    "certification": "cis-em",
+    "pergunta": "Out-of-the-box, how often do the events get processed in ServiceNow?",
+    "alternativas": [
+      {
+        "texto": "Every 5 seconds",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every minute via a scheduled job",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "As soon as the event record is inserted via a business rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Depends on connectors used",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "3qAKvwxjXe5o5TB9I8g1",
+      "numero": 40,
+      "colecao": 40,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97282-exam-cis-em-topic-1-question-40-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-pnlfDAabITwqsGkRmMKx",
+    "certification": "cis-em",
+    "pergunta": "HOTSPOT -\nIn what sequence are events processed?\n\nA. Does the event Source match the event rule?\nB. Does the event message key match an existing alert?\nC. Is the event filtered out?\nD. Is there a matching threshold?\nE. Is a severity defined?\n1. Processing step 1\n2. Processing step 2\n3. Processing step 3\n4. Processing step 4\n5. Processing step 5",
+    "alternativas": [
+      {
+        "texto": "A. Does the event Source match the event rule? -> 1. Processing step 1\nB. Does the event message key match an existing alert? -> 5. Processing step 5\nC. Is the event filtered out? -> 2. Processing step 2\nD. Is there a matching threshold? -> 3. Processing step 3\nE. Is a severity defined? -> 4. Processing step 4",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image18.png",
+          "alt": "Five event-processing checks, each with a selector from 1 to 5. The checks concern event Source, message key, filtering, threshold and severity."
+        }
+      ],
+      "paragrafos": [
+        "Image transcript: assign a unique processing position from 1 to 5 to each check: Does the event Source match the event rule? Does the event message key match an existing alert? Is the event filtered out? Is there a matching threshold? Is a severity defined?"
+      ]
+    },
+    "tipo": "matching",
+    "fonte": {
+      "id": "pnlfDAabITwqsGkRmMKx",
+      "numero": 41,
+      "colecao": 41,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97283-exam-cis-em-topic-1-question-41-discussion/",
+      "resposta": "",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "enunciado_original": "HOTSPOT -\nIn what sequence are events processed?\n//IMG//",
+      "imagens_resposta": [
+        "data/cis-em/images/image19.png"
+      ]
+    },
+    "observacao": "O HOTSPOT original não possui alternativas textuais nem gabarito textual. A associação interativa e sua correção foram transcritas das imagens fornecidas, sem acrescentar distratores."
+  },
+  {
+    "id": "em-HOZMDiVwwd2yYYXfbd88",
+    "certification": "cis-em",
+    "pergunta": "Which is not a valid method for accessing alert intelligence?",
+    "alternativas": [
+      {
+        "texto": "In the right-click menu of an alert list, select Open in Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "By appending/workspace to your instance URL",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The application navigator Alerts Console menu item",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The application navigator Alert Intelligence menu item",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Within an open alert record, click the Open in Workspace button",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Select the Lists tab in operator workspace",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "HOZMDiVwwd2yYYXfbd88",
+      "numero": 42,
+      "colecao": 42,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97284-exam-cis-em-topic-1-question-42-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (50%)",
+        "B (50%)"
+      ]
+    }
+  },
+  {
+    "id": "em-LklTVmJIGlBUionuU4tm",
+    "certification": "cis-em",
+    "pergunta": "To determine the top incidents for the CI associated with an alert, where is the best place to look?",
+    "alternativas": [
+      {
+        "texto": "Alert Insights",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Incident List View",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CMDB Health Dashboard",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Management Overview page",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "LklTVmJIGlBUionuU4tm",
+      "numero": 43,
+      "colecao": 43,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97285-exam-cis-em-topic-1-question-43-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-AmFHPswrvbs5BEr41Lh3",
+    "certification": "cis-em",
+    "pergunta": "Agent Client Collector is built on what framework that enables you to adopt and extend monitoring checks from the community?",
+    "alternativas": [
+      {
+        "texto": "Icinga",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Sensu",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "SolarWinds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Nagios",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Zabbix",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "AmFHPswrvbs5BEr41Lh3",
+      "numero": 44,
+      "colecao": 44,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97286-exam-cis-em-topic-1-question-44-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-mCYJo8g1Hu435an7929n",
+    "certification": "cis-em",
+    "pergunta": "Based on the information shown, which of the following three alerts should be processed first?",
+    "alternativas": [
+      {
+        "texto": "The Alert Priority score 3106020.001 was calculated according to the following factors, ordered by their respective priority (2018-06-01 19:34:01 GMT) Category (Score, Weight)\n1. Business services – (3.0, 1000000)\n2. Severity – (1.0, 100000)\n3. CI type – (60.0, 100)\n4. Role – (2.0, 10)\n5. Secondary – (0)\n6. State – (1.0, 0.001)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Alert Priority score 4406020.001 was calculated according to the following factors, ordered by their respective priority (2018-05-31 20:04:47 GMT) Category (Score, Weight)\n1. Business services – (4.0, 1000000.0)\n2. Severity – (4.0, 100000.0)\n3. CI type – (60.0, 100.0)\n4. Role – (2.0, 10.0)\n5. Secondary – (0)\n6. State – (1.0, 0.001)",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The Alert Priority score 3306020.001 was calculated according to the following factors, ordered by their respective priority (2018-05-31 19:56:54 GMT) Category (Score, Weight)\n1. Business services – (3.0, 1000000.0)\n2. Severity – (3.0, 100000.0)\n3. CI type – (60.0, 100.0)\n4. Role – (2.0, 10.0)\n5. Secondary – (0)\n6. State – (1.0, 0.001)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "They should be processed in the order in which they were received.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "mCYJo8g1Hu435an7929n",
+      "numero": 45,
+      "colecao": 45,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97287-exam-cis-em-topic-1-question-45-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-KA7JwDPGA3UfrqHxJS49",
+    "certification": "cis-em",
+    "pergunta": "Applying recommended Event Management best practice guidelines, which of the following events should generate an alert?",
+    "alternativas": [
+      {
+        "texto": "Every event should generate an alert so you have the opportunity to resolve them all.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only events that necessitate action should generate an alert.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only the most critical events on every CI in the CMDB should generate an alert.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Every event on every critical CI in the CMDB should generate an alert.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "KA7JwDPGA3UfrqHxJS49",
+      "numero": 46,
+      "colecao": 46,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97288-exam-cis-em-topic-1-question-46-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-LHDiNFrwd4F6TyjCrIt6",
+    "certification": "cis-em",
+    "pergunta": "What makes all ServiceNow metrics, tasks, services, configuration items, assets, people, locations, and information a single system of record for IT and business processes?",
+    "alternativas": [
+      {
+        "texto": "ServiceNow is installed within your datacenter providing you complete control",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All applications are built on the Oracle database standard, providing uniformity across products",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All applications that are built by ServiceNow utilize the same data model and code base",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow runs on supported Windows servers and is managed through Windows Update",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A single table houses all data elements within ServiceNow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "ServiceNow utilizes the AWS MariaDB cloud database structure, providing a single system of record",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "LHDiNFrwd4F6TyjCrIt6",
+      "numero": 47,
+      "colecao": 47,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/88324-exam-cis-em-topic-1-question-47-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-TgqT3VZWZONp2crifjy4",
+    "certification": "cis-em",
+    "pergunta": "You have a very large networking environment and have noticed that your event notifications are either not being triggered or are delayed.\nWhat are best options to try to resolve this issue? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Ensure all Event Management – process events jobs are set to a Ready state",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Verify that the Bucket field in the event table is set to zero (0)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Add additional event processor jobs",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ensure multi-node event processing is disabled",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "TgqT3VZWZONp2crifjy4",
+      "numero": 48,
+      "colecao": 48,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/139897-exam-cis-em-topic-1-question-48-discussion/",
+      "resposta": "AC",
+      "resposta_ET": "AC",
+      "respostas_comunidade": [
+        "AC (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-WbtlvI10rz0dI6ykxJQS",
+    "certification": "cis-em",
+    "pergunta": "What event value will auto close an alert?",
+    "alternativas": [
+      {
+        "texto": "Severity of -1/OK",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Type of Clear",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Resolution State of Closing",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Resolution State of Clear",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Severity of 0/Clear",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "WbtlvI10rz0dI6ykxJQS",
+      "numero": 49,
+      "colecao": 49,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97289-exam-cis-em-topic-1-question-49-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (67%)",
+        "E (33%)"
+      ]
+    }
+  },
+  {
+    "id": "em-sAaRrbpjMhQ39u8NI3kt",
+    "certification": "cis-em",
+    "pergunta": "Given the following Impact settings and Alerts in a three node cluster that makes up the components of a Business Service, what is the overall service health of this Business Service?",
+    "alternativas": [
+      {
+        "texto": "Critical",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Error",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Major",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Minor",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Warning",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Clear",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image21.png",
+          "alt": "A cluster has three Tomcat nodes, two with yellow indicators and one with a neutral indicator. Application Cluster Member impact on Business Service is 70 Percent. Application Impact is 100 Percent."
+        }
+      ],
+      "paragrafos": [
+        "Image transcript: three Tomcat nodes; two have yellow state indicators and one has a neutral indicator. Application Cluster Member: Impact On Business Service; Influence 70; Influence Units Percent. Application Impact: Business Service; Influence 100; Influence Units Percent."
+      ]
+    },
+    "fonte": {
+      "id": "sAaRrbpjMhQ39u8NI3kt",
+      "numero": 50,
+      "colecao": 50,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/109859-exam-cis-em-topic-1-question-50-discussion/",
+      "resposta": "F",
+      "resposta_ET": "F",
+      "respostas_comunidade": [
+        "F (100%)"
+      ],
+      "enunciado_original": "Given the following Impact settings and Alerts in a three node cluster that makes up the components of a Business Service, what is the overall service health of this Business Service?\n//IMG//"
+    }
+  },
+  {
+    "id": "em-N6xoJd3ZJx5BOkR6UhHn",
+    "certification": "cis-em",
+    "pergunta": "What does Operational Intelligence proactively identify before they cause service outages?",
+    "alternativas": [
+      {
+        "texto": "Missing CMDB data",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Defects",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert correlations",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Orphaned CIs",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Anomalies",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "N6xoJd3ZJx5BOkR6UhHn",
+      "numero": 51,
+      "colecao": 51,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97290-exam-cis-em-topic-1-question-51-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-Q6mx1z5FRh1bTUrGO7lm",
+    "certification": "cis-em",
+    "pergunta": "What is the function of the External Communication Channel (ECC) Queue? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "It is a connection point between a ServiceNow instance and the MID Server.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It contains probe records to be executed on the customer’s network.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It holds jobs that the MID Server needs to perform.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It is a connection point between a hardware CI on a customer’s network and the MID Server.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It contains records of CIs that the ServiceNow admin has submitted for entry into the CMDB.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Q6mx1z5FRh1bTUrGO7lm",
+      "numero": 52,
+      "colecao": 52,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97291-exam-cis-em-topic-1-question-52-discussion/",
+      "resposta": "ABC",
+      "resposta_ET": "ABC",
+      "respostas_comunidade": [
+        "ABC (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-sbgzrdKTksZfZ7ZSqs56",
+    "certification": "cis-em",
+    "pergunta": "The correct regex to capture the name of the server in “the server webserver3.domain.com is down” would be:",
+    "alternativas": [
+      {
+        "texto": ".*(\\w+\\.\\w+\\.\\w+).*",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The server (.*)\\s.*",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": ".*\\s(\\w+\\.\\w+\\.\\w+).*",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "the server (.*).*",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "sbgzrdKTksZfZ7ZSqs56",
+      "numero": 53,
+      "colecao": 53,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97292-exam-cis-em-topic-1-question-53-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (83%)",
+        "B (17%)"
+      ]
+    }
+  },
+  {
+    "id": "em-UdPnB8g1IHmdJiBBaQMT",
+    "certification": "cis-em",
+    "pergunta": "What is the recommended approach to normalizing data from a source system to the default values in Event Management?",
+    "alternativas": [
+      {
+        "texto": "Event field mapping",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Transform maps",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert management rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business rules",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "UdPnB8g1IHmdJiBBaQMT",
+      "numero": 54,
+      "colecao": 54,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97293-exam-cis-em-topic-1-question-54-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-WLM4qcrxd0aCEBwYWYSG",
+    "certification": "cis-em",
+    "pergunta": "You have an event that needs to be bound to a non-host CI.\nWhich attribute needs to be removed from the Transform and Compose tab?",
+    "alternativas": [
+      {
+        "texto": "Source Instance",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric Name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Node",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Resource",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "WLM4qcrxd0aCEBwYWYSG",
+      "numero": 55,
+      "colecao": 55,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97294-exam-cis-em-topic-1-question-55-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-pOoUaDfXg3pWEPiVUamg",
+    "certification": "cis-em",
+    "pergunta": "When are anomaly alerts generated by Operational Intelligence displayed in alert intelligence?",
+    "alternativas": [
+      {
+        "texto": "When the statistical model threshold is breached",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "When they are promoted to IT alerts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "When it is manually promoted in insights explorer",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "When the anomaly score is greater than 100",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "pOoUaDfXg3pWEPiVUamg",
+      "numero": 56,
+      "colecao": 56,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/139900-exam-cis-em-topic-1-question-56-discussion/",
+      "resposta": "A",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET B. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-jdpg5tiNGWoqHMWBtM1w",
+    "certification": "cis-em",
+    "pergunta": "What are the possible actions available in alert management? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Execute remediation subflows",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Execute remediation workflows",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Launch applications",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Evaluate business rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a service catalog request",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "jdpg5tiNGWoqHMWBtM1w",
+      "numero": 57,
+      "colecao": 57,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97295-exam-cis-em-topic-1-question-57-discussion/",
+      "resposta": "ABC",
+      "resposta_ET": "ABC",
+      "respostas_comunidade": [
+        "ABC (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-sntbw4DGELpcI5GXcPze",
+    "certification": "cis-em",
+    "pergunta": "What ServiceNow feature would you configure to process incoming email to create events?",
+    "alternativas": [
+      {
+        "texto": "Transforms",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Inbound actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event processing jobs",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Filter",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event field mapping",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "sntbw4DGELpcI5GXcPze",
+      "numero": 58,
+      "colecao": 58,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97296-exam-cis-em-topic-1-question-58-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-Ll0qTEL1jx2pgrXlgf9Z",
+    "certification": "cis-em",
+    "pergunta": "Within a PowerShell script, which two URI’s could you use to log events directly to the ServiceNow event table? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "https://[Your_ServiceNow_instance_URL]/rest_api/now/my_tables/em_event",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "https://[Your_ServiceNow_instance_URL]/api/global/em/jsonv2",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "https://[Your_ServiceNow_instance_URL]/api/now/table/em_event",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "https://[Your_ServiceNow_instance_URL]/api/table/em_event",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "https://[Your_ServiceNow_instance_URL]/rest_api/now/table/em_event",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Ll0qTEL1jx2pgrXlgf9Z",
+      "numero": 59,
+      "colecao": 59,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97297-exam-cis-em-topic-1-question-59-discussion/",
+      "resposta": "BC",
+      "resposta_ET": "BC",
+      "respostas_comunidade": [
+        "BC (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-lu6aEpQjhJCwCVMjUvsO",
+    "certification": "cis-em",
+    "pergunta": "If more than one alert management rule applies to a particular alert, which of the rules will run based upon the Order of execution field?",
+    "alternativas": [
+      {
+        "texto": "Only the alert management rule with the highest Order of execution number will run.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only the alert management rule with the lowest Order of execution number will run.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "All alert management rules will run, from the lowest to the highest Order of execution numbers.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "All alert management rules will run, from the highest to the lowest Order of execution numbers.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "lu6aEpQjhJCwCVMjUvsO",
+      "numero": 60,
+      "colecao": 60,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97298-exam-cis-em-topic-1-question-60-discussion/",
+      "resposta": "C",
+      "resposta_ET": "С",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET С. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-4qKGNi3IYahA52Wdzm5t",
+    "certification": "cis-em",
+    "pergunta": "Alerts are processed using which of the following? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Alert management rules",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event action rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event rules",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scheduled jobs",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Java and Groovy scripts",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "4qKGNi3IYahA52Wdzm5t",
+      "numero": 61,
+      "colecao": 61,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97299-exam-cis-em-topic-1-question-61-discussion/",
+      "resposta": "ACD",
+      "resposta_ET": "ACD",
+      "respostas_comunidade": [
+        "ACD (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-FITiVebGKWPLTtF0njcp",
+    "certification": "cis-em",
+    "pergunta": "The individual commands that the Agent Client Collector executes on the host are known as what? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Events",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Checks",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Parameters",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Policies",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metrics",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Scripts",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "FITiVebGKWPLTtF0njcp",
+      "numero": 62,
+      "colecao": 62,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/122361-exam-cis-em-topic-1-question-62-discussion/",
+      "resposta": "ABE",
+      "resposta_ET": "ABE",
+      "respostas_comunidade": [
+        "ABE (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-1uN2cmOCgG5kZkMxXiuX",
+    "certification": "cis-em",
+    "pergunta": "What is Event Management licensing based on?",
+    "alternativas": [
+      {
+        "texto": "The number of unique nodes that can send events to the instance",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The number of connectors and listeners it will collect data from",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The number of connectors it will collect data from",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The number of CIs in the CMDB that it will be monitoring",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "1uN2cmOCgG5kZkMxXiuX",
+      "numero": 63,
+      "colecao": 63,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/122362-exam-cis-em-topic-1-question-63-discussion/",
+      "resposta": "A",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "A (67%)",
+        "D (33%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET D. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-dPHci9qI4sPyTE2YwMFV",
+    "certification": "cis-em",
+    "pergunta": "What missing attribute would cause an event to have a state of Error?",
+    "alternativas": [
+      {
+        "texto": "Metric Name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Classification",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Node",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Severity",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "dPHci9qI4sPyTE2YwMFV",
+      "numero": 64,
+      "colecao": 64,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97300-exam-cis-em-topic-1-question-64-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-73j93DYuMujd7RRA1VHe",
+    "certification": "cis-em",
+    "pergunta": "Modified Agent Client Collector policies do not take effect until what action is taken?",
+    "alternativas": [
+      {
+        "texto": "The check is tested on an existing agent/host",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The policy is republished",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Agents re-run the discovery policy",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "MID server synchronization is initiated",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Agents are restarted",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "73j93DYuMujd7RRA1VHe",
+      "numero": 65,
+      "colecao": 65,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97301-exam-cis-em-topic-1-question-65-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-FRpXtgeiuhci8dS4kqjJ",
+    "certification": "cis-em",
+    "pergunta": "What does the Asynchronous Messaging Bus (AMB) channel do on the MID Server?",
+    "alternativas": [
+      {
+        "texto": "Opens an inbound connection to the MID Server",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Allows Web Server transactions to be passed to ServiceNow",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Sends heartbeat information to the ServiceNow instance to ensure MID is communicating",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Continually queries the External Communication Channel (ECC) queue via a persistent query",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "FRpXtgeiuhci8dS4kqjJ",
+      "numero": 66,
+      "colecao": 66,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97302-exam-cis-em-topic-1-question-66-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-kZ4irDU7dIsGGdGqpEoE",
+    "certification": "cis-em",
+    "pergunta": "Within the ServiceNow IT Operations Management solution set, which statement most accurately describes what Event Management is?",
+    "alternativas": [
+      {
+        "texto": "The process responsible for defining, analyzing, planning, measuring, and improving all aspects of the availability of IT services",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The process responsible for ensuring the capacity of IT Services and IT infrastructure is able to deliver agreed upon service level targets in a cost-effective manner",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The process responsible for monitoring all abnormal occurrences throughout the IT infrastructure, allowing for normal operations, and detecting and escalating exception conditions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The process responsible for recovery action and planning through machine learning",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "kZ4irDU7dIsGGdGqpEoE",
+      "numero": 67,
+      "colecao": 67,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97303-exam-cis-em-topic-1-question-67-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-kC7G7ime8eeEb9fqJ4z3",
+    "certification": "cis-em",
+    "pergunta": "When creating a task from an alert what Event Management Module would be used?",
+    "alternativas": [
+      {
+        "texto": "Event Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Correlation Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Task Management",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Management",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "kC7G7ime8eeEb9fqJ4z3",
+      "numero": 68,
+      "colecao": 68,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97304-exam-cis-em-topic-1-question-68-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-XUZ9tDmaJ58T16VRq7TH",
+    "certification": "cis-em",
+    "pergunta": "What is the preferred method of parsing in the Transform/Compose step of an event rule?",
+    "alternativas": [
+      {
+        "texto": "Python",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Regex",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "sed/awk",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "JavaScript",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "XUZ9tDmaJ58T16VRq7TH",
+      "numero": 69,
+      "colecao": 69,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97305-exam-cis-em-topic-1-question-69-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-Pab4CNIgUZcxYotoFR0N",
+    "certification": "cis-em",
+    "pergunta": "What are the server requirements to allow Operational Intelligence to successfully collect operational metric data via a push?",
+    "alternativas": [
+      {
+        "texto": "This requires a minimum of three MID Servers - two for Event Management and one additional MID Server dedicated for use by Operational Intelligence (OI).",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "This requires a MID Web Server in addition to the MID Server.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Nothing additional is required; this is handled by the MID Server.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "This requires a minimum of two MID Servers - one for Event Management and one additional MID Server dedicated for use by Operational Intelligence (OI).",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Pab4CNIgUZcxYotoFR0N",
+      "numero": 70,
+      "colecao": 70,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97306-exam-cis-em-topic-1-question-70-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-hgIZ3Rpw3Hec8z1Xbe4k",
+    "certification": "cis-em",
+    "pergunta": "What would be an appropriate use case for having to write JavaScript in Event Management?",
+    "alternativas": [
+      {
+        "texto": "To change the value of the message key",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To create a custom action within a subflow",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "To parse a node name out of your raw event data in an event rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To automatically create an incident",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "hgIZ3Rpw3Hec8z1Xbe4k",
+      "numero": 71,
+      "colecao": 71,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97307-exam-cis-em-topic-1-question-71-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-XMKfDEhCcGbwj3hRix8X",
+    "certification": "cis-em",
+    "pergunta": "A dynamic grouping of CIs based upon common criteria (filtered CI classes) that can be visualized in operator workspace is called?",
+    "alternativas": [
+      {
+        "texto": "A business service",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A technical service",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "An application service",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A manual service",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A scoped service",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "XMKfDEhCcGbwj3hRix8X",
+      "numero": 72,
+      "colecao": 72,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97308-exam-cis-em-topic-1-question-72-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (70%)",
+        "C (30%)"
+      ]
+    }
+  },
+  {
+    "id": "em-LLxKfgtBtqQ0pUVJBi3E",
+    "certification": "cis-em",
+    "pergunta": "During CI binding, CI matching is done using which two fields? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Message Key",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Additional Information",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Node",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "LLxKfgtBtqQ0pUVJBi3E",
+      "numero": 73,
+      "colecao": 73,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97309-exam-cis-em-topic-1-question-73-discussion/",
+      "resposta": "BD",
+      "resposta_ET": "BD",
+      "respostas_comunidade": [
+        "BD (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-ABHrOsQrJ4x1uEtRcM7O",
+    "certification": "cis-em",
+    "pergunta": "What three areas of data quality does the CMDB Health Dashboard focus on? (Choose three.)",
+    "alternativas": [
+      {
+        "texto": "Correctness",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Completeness",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Configuration",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Conciseness",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Conformity",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Compliance",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ABHrOsQrJ4x1uEtRcM7O",
+      "numero": 74,
+      "colecao": 74,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97310-exam-cis-em-topic-1-question-74-discussion/",
+      "resposta": "ABF",
+      "resposta_ET": "ABF",
+      "respostas_comunidade": [
+        "ABF (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-GmkqGZvAKqKMOsSHjJJj",
+    "certification": "cis-em",
+    "pergunta": "When sending data from the monitoring source to the additional_info field, what format is supported?",
+    "alternativas": [
+      {
+        "texto": "XML",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "JSON",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "YAML",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Comma separated",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "GmkqGZvAKqKMOsSHjJJj",
+      "numero": 75,
+      "colecao": 75,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97311-exam-cis-em-topic-1-question-75-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-epaw9uXmwtzSFlWozaB7",
+    "certification": "cis-em",
+    "pergunta": "Which step in the event rule configuration process enables you to ignore events and prevent alert generation?",
+    "alternativas": [
+      {
+        "texto": "Transform and compose alert output",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event filter",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event options",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Threshold",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "epaw9uXmwtzSFlWozaB7",
+      "numero": 76,
+      "colecao": 76,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97312-exam-cis-em-topic-1-question-76-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-cCqYlHuRcTqj93PgT2hk",
+    "certification": "cis-em",
+    "pergunta": "What is an alert called that moves from an open to a closed state multiple times within a designated time-frame?",
+    "alternativas": [
+      {
+        "texto": "Fluctuating",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Swinging",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flipping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Flapping",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "cCqYlHuRcTqj93PgT2hk",
+      "numero": 77,
+      "colecao": 77,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97313-exam-cis-em-topic-1-question-77-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-3xEy8EfR1C5M23quGifJ",
+    "certification": "cis-em",
+    "pergunta": "How would you ensure the quality of data in your Configuration Management Database (CMDB) over time?",
+    "alternativas": [
+      {
+        "texto": "Manually inventorying configuration items in the CMDB and eliminating duplicate configuration items (CIs)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Only use the ServiceNow Discovery application to populate your CMDB",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Using only scripts to automatically monitor for and remediate duplicate configuration items (CIs)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Having well-defined Identification, Reconciliation, and Relationship rules",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "3xEy8EfR1C5M23quGifJ",
+      "numero": 78,
+      "colecao": 78,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97314-exam-cis-em-topic-1-question-78-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-4bAe1PFMJQ7K7HpG1Ycq",
+    "certification": "cis-em",
+    "pergunta": "Which is an invalid state for an alert?",
+    "alternativas": [
+      {
+        "texto": "Flapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Closed",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Reopen",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Processed",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "4bAe1PFMJQ7K7HpG1Ycq",
+      "numero": 79,
+      "colecao": 79,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97315-exam-cis-em-topic-1-question-79-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-uTpReWS1w3Rsced5zDm5",
+    "certification": "cis-em",
+    "pergunta": "A support agent resolves an incident associated with an alert. What is the best method to close the alert?",
+    "alternativas": [
+      {
+        "texto": "Set the evt_mgmt.incident_closes_alert",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Set the evt_mgmt.alert_closes_incident",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Switch over to the alert form and close the alert manually",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a business rule on the alert table to match the associated Incident with its respective alert",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Create a business rule on the incident table",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "uTpReWS1w3Rsced5zDm5",
+      "numero": 80,
+      "colecao": 80,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97316-exam-cis-em-topic-1-question-80-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-ev8YCy6OnEB1WgJfbDhe",
+    "certification": "cis-em",
+    "pergunta": "Impacted services for alerts are calculated using data from which table?",
+    "alternativas": [
+      {
+        "texto": "cmdb_ci_hardware",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "em_impacted_svc",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "cmdb_ci_rei",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "svc_ci_assoc",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ev8YCy6OnEB1WgJfbDhe",
+      "numero": 81,
+      "colecao": 81,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97317-exam-cis-em-topic-1-question-81-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-69LijwQvFoqsescmHZ5u",
+    "certification": "cis-em",
+    "pergunta": "A monitoring tool notification of a notable occurrence is known as what?",
+    "alternativas": [
+      {
+        "texto": "An alert",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An event",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "A metric",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An alarm",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "69LijwQvFoqsescmHZ5u",
+      "numero": 82,
+      "colecao": 82,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/122538-exam-cis-em-topic-1-question-82-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-0Q3UUbSnOemGjatOTWXE",
+    "certification": "cis-em",
+    "pergunta": "If a Message Key is not provided, which fields are concatenated to make our own?",
+    "alternativas": [
+      {
+        "texto": "Source, DNS, Node, Additional info, Metric Name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, Type, Node, Resource, Metric Name",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, Type, DNS, Additional info, Metric Name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, Source Instance, Node, Type, Resource",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "0Q3UUbSnOemGjatOTWXE",
+      "numero": 83,
+      "colecao": 83,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97318-exam-cis-em-topic-1-question-83-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-cpdrzmvxx7toJg6ntaC0",
+    "certification": "cis-em",
+    "pergunta": "A load balanced web application has a cluster of 5 Apache nodes. When considering impact calculation with application cluster member rule influence set to 45, how many impacted nodes within that cluster would cause the overall application service to have a degradation of service?",
+    "alternativas": [
+      {
+        "texto": "5",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "1",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "2",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "3",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "4",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "cpdrzmvxx7toJg6ntaC0",
+      "numero": 84,
+      "colecao": 84,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/117264-exam-cis-em-topic-1-question-84-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-s1HA8Ri469DpLASViVjy",
+    "certification": "cis-em",
+    "pergunta": "A Service is not viewable in Operator Workspace. What could be the issue?",
+    "alternativas": [
+      {
+        "texto": "The service is a manual service",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The service is not set to operational",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The service was created through Service Mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The service is a technical service",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "s1HA8Ri469DpLASViVjy",
+      "numero": 85,
+      "colecao": 85,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/141076-exam-cis-em-topic-1-question-85-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-0srrsMeBB47mJZcE43PI",
+    "certification": "cis-em",
+    "pergunta": "What ServiceNow feature is an aid to rapid implementation of your Event Management and Operational Intelligence features?",
+    "alternativas": [
+      {
+        "texto": "Deployment wizard",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Step-by-step guide",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Checklist application",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Guided setup",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "0srrsMeBB47mJZcE43PI",
+      "numero": 86,
+      "colecao": 86,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97319-exam-cis-em-topic-1-question-86-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-nxqHX4X8lVjo2iMlrpib",
+    "certification": "cis-em",
+    "pergunta": "The ServiceNow standard and shared set of service-related definitions that enable and support true service level reporting is known as what?",
+    "alternativas": [
+      {
+        "texto": "Service level data model",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Business service data model",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application service data model",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Common service data model",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "nxqHX4X8lVjo2iMlrpib",
+      "numero": 87,
+      "colecao": 87,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97320-exam-cis-em-topic-1-question-87-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-84Ktgqdw9cktAX8igFNp",
+    "certification": "cis-em",
+    "pergunta": "A monitoring tool notification of a notable occurrence is known as what?",
+    "alternativas": [
+      {
+        "texto": "An alarm",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An alert",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An incident",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A notice",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An event",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "A metric",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "84Ktgqdw9cktAX8igFNp",
+      "numero": 88,
+      "colecao": 88,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97321-exam-cis-em-topic-1-question-88-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-uKJ0d5Mt2Sfq41xug9MB",
+    "certification": "cis-em",
+    "pergunta": "Which is the best option to reduce latency issues when receiving events?",
+    "alternativas": [
+      {
+        "texto": "Verify bucket field in em_event table > 0",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Verify event_processor_job_count = 2",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Verify event_processor_job_count = 0",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Verify event_processor_enable_multi_node = 2",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "uKJ0d5Mt2Sfq41xug9MB",
+      "numero": 89,
+      "colecao": 89,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97322-exam-cis-em-topic-1-question-89-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (92%)",
+        "8%"
+      ]
+    }
+  },
+  {
+    "id": "em-mSMat9eZXEx5MSbSIQUC",
+    "certification": "cis-em",
+    "pergunta": "The default polling time to collect events from an event source is:",
+    "alternativas": [
+      {
+        "texto": "5 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "30 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "60 seconds",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "120 seconds",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "mSMat9eZXEx5MSbSIQUC",
+      "numero": 90,
+      "colecao": 90,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97323-exam-cis-em-topic-1-question-90-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-trE1s7K2YjbJnFa5k7bE",
+    "certification": "cis-em",
+    "pergunta": "Which two methods can be used to improve the processing of events in large network environments? (Choose two.)",
+    "alternativas": [
+      {
+        "texto": "Enable multi-node processing",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Increase the source polling interval",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ensure the bucket value in the event table is greater than 0",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Increase the number of scheduled jobs processing events",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "trE1s7K2YjbJnFa5k7bE",
+      "numero": 91,
+      "colecao": 91,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97324-exam-cis-em-topic-1-question-91-discussion/",
+      "resposta": "AD",
+      "resposta_ET": "AD",
+      "respostas_comunidade": [
+        "AD (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-Sf2y9IillU4QqQr2KJIu",
+    "certification": "cis-em",
+    "pergunta": "The Event Management operator workspace can display all of the following except?",
+    "alternativas": [
+      {
+        "texto": "Alert groups",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Manual application services",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Discovered application services from Service Mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Correlation groups",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Technical services",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Sf2y9IillU4QqQr2KJIu",
+      "numero": 92,
+      "colecao": 92,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/122537-exam-cis-em-topic-1-question-92-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-xLXerEqX5sNVsg9E5SI0",
+    "certification": "cis-em",
+    "pergunta": "Within an event rule, how would you parse a nodename out of your raw event data?",
+    "alternativas": [
+      {
+        "texto": "JavaScript",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Groovy script",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "PowerShell script",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Regex statement",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "xLXerEqX5sNVsg9E5SI0",
+      "numero": 93,
+      "colecao": 93,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97325-exam-cis-em-topic-1-question-93-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-ZsJPoU9pUqsc5xyWrhY9",
+    "certification": "cis-em",
+    "pergunta": "If events are not matching to alerts as you would like, what field should be changed?",
+    "alternativas": [
+      {
+        "texto": "Resource",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message Key",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Node",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric Name",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "ZsJPoU9pUqsc5xyWrhY9",
+      "numero": 94,
+      "colecao": 94,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97326-exam-cis-em-topic-1-question-94-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-EsvVCnyHPptYuOKtQyWP",
+    "certification": "cis-em",
+    "pergunta": "If the Message Key is not populated, the default value is created from which fields?",
+    "alternativas": [
+      {
+        "texto": "Source, type. node, resource, and metric name",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, source instance, node, and resource",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, type. node, and metric name",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, source instance, node, and type",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source, type. node, resource, and time of event",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "EsvVCnyHPptYuOKtQyWP",
+      "numero": 95,
+      "colecao": 95,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97327-exam-cis-em-topic-1-question-95-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-bRxnQpggq5y16JP2DOPl",
+    "certification": "cis-em",
+    "pergunta": "Processing on an event will create a state of error if what value is not set?",
+    "alternativas": [
+      {
+        "texto": "Node",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Severity",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Message Key",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Resource",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "bRxnQpggq5y16JP2DOPl",
+      "numero": 96,
+      "colecao": 96,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97328-exam-cis-em-topic-1-question-96-discussion/",
+      "resposta": "C",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "C (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-M6RUl8305JysVE4tJgYu",
+    "certification": "cis-em",
+    "pergunta": "When performing CI Binding, what fields does Event Management match to the Node?",
+    "alternativas": [
+      {
+        "texto": "CI Name, DNS, IP, MAC Address",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "System class name, FQDN, IP or MAC address",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI name, FQDN, SSH public host keys",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI Name, FQDN, IP, MAC Address",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "M6RUl8305JysVE4tJgYu",
+      "numero": 97,
+      "colecao": 97,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97329-exam-cis-em-topic-1-question-97-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-S2GGD8QO07yTgboShar0",
+    "certification": "cis-em",
+    "pergunta": "Applying recommended Event Management best practice guidelines, which of the following alerts should be processed first?",
+    "alternativas": [
+      {
+        "texto": "Alert00l0042",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert0010003",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert00l0075",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert00l0074",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image31.png",
+          "alt": "Alert list sorted by Priority descending: Alert0010003, Major, 7306; Alert0010042, Critical, 400; Alert0010075, Critical, 400; Alert0010074, Major, 300."
+        }
+      ],
+      "tabela": {
+        "titulo": "Alert priority from the supplied image",
+        "colunas": [
+          "Number",
+          "Severity",
+          "Priority"
+        ],
+        "linhas": [
+          [
+            "Alert0010003",
+            "Major",
+            "7306"
+          ],
+          [
+            "Alert0010042",
+            "Critical",
+            "400"
+          ],
+          [
+            "Alert0010075",
+            "Critical",
+            "400"
+          ],
+          [
+            "Alert0010074",
+            "Major",
+            "300"
+          ]
+        ]
+      }
+    },
+    "fonte": {
+      "id": "S2GGD8QO07yTgboShar0",
+      "numero": 98,
+      "colecao": 98,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97330-exam-cis-em-topic-1-question-98-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ],
+      "enunciado_original": "Applying recommended Event Management best practice guidelines, which of the following alerts should be processed first?\n//IMG//"
+    }
+  },
+  {
+    "id": "em-mSkAIohNX4eroUggSlbJ",
+    "certification": "cis-em",
+    "pergunta": "What is the minimum role needed to view alerts?",
+    "alternativas": [
+      {
+        "texto": "alert_operator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "evt_mgmt_user",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "evt_mgmt_operator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "alert_user",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "mSkAIohNX4eroUggSlbJ",
+      "numero": 99,
+      "colecao": 99,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97331-exam-cis-em-topic-1-question-99-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-kkN3ErNI3gUsWPBhChp7",
+    "certification": "cis-em",
+    "pergunta": "By default, when are idle alerts are closed?",
+    "alternativas": [
+      {
+        "texto": "After 7 days",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "After 14 days",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "After 30 days",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Never",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "kkN3ErNI3gUsWPBhChp7",
+      "numero": 100,
+      "colecao": 100,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97332-exam-cis-em-topic-1-question-100-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-sjNCrRo1Es4zSIKpFXR2",
+    "certification": "cis-em",
+    "pergunta": "What is used to correctly bind an alert to an application?",
+    "alternativas": [
+      {
+        "texto": "Correlation rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Workflows",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Classifiers",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "CI identification rules",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "sjNCrRo1Es4zSIKpFXR2",
+      "numero": 101,
+      "colecao": 101,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97333-exam-cis-em-topic-1-question-101-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-rBd2pEqoGKlTo8CCzSGE",
+    "certification": "cis-em",
+    "pergunta": "If you wanted to create a quick response alert rule to open an Ask Jeeves search on the description of the alert, where would it configured?",
+    "alternativas": [
+      {
+        "texto": "Launch Applications",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Remediation Workflows",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Remediation SubFlows",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Operator Workspace",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "rBd2pEqoGKlTo8CCzSGE",
+      "numero": 102,
+      "colecao": 102,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97334-exam-cis-em-topic-1-question-102-discussion/",
+      "resposta": "A",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal A; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-nsi2dcHCgMOCE7KyHejq",
+    "certification": "cis-em",
+    "pergunta": "Where would you find the Priority Breakdown for an Alert?",
+    "alternativas": [
+      {
+        "texto": "Under the More Information section",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Under the Activities section",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Under the History section",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Under the CI Problems section",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "nsi2dcHCgMOCE7KyHejq",
+      "numero": 103,
+      "colecao": 103,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97335-exam-cis-em-topic-1-question-103-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-CmSxKPGQFafM4CnD2IPw",
+    "certification": "cis-em",
+    "pergunta": "Where does an operator give feedback on an automated alert grouping?",
+    "alternativas": [
+      {
+        "texto": "Feedback attribute on the virtual alert record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Feedback attribute on the child alert record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Feedback attribute on the event record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Feedback attribute on the alert record",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Dropdown box on the alert group record",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "CmSxKPGQFafM4CnD2IPw",
+      "numero": 104,
+      "colecao": 104,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97336-exam-cis-em-topic-1-question-104-discussion/",
+      "resposta": "E",
+      "resposta_ET": "C",
+      "respostas_comunidade": [
+        "E (50%)",
+        "D (50%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal E; resposta ET C. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-Q6UXcA8UvSyzCrRdbzaK",
+    "certification": "cis-em",
+    "pergunta": "In your environment, no alert CMDB, automated, or text based grouping is occurring. What is most likely the problem?",
+    "alternativas": [
+      {
+        "texto": "No correlation rules have been defined",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "No event management rules have been defined",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Application services are not operational",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "No CMDB is configured",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The alert correlation property that enables grouping is set to false",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Q6UXcA8UvSyzCrRdbzaK",
+      "numero": 105,
+      "colecao": 105,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97337-exam-cis-em-topic-1-question-105-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (75%)",
+        "A (25%)"
+      ]
+    }
+  },
+  {
+    "id": "em-60T5kmOHzufJg4t6hknd",
+    "certification": "cis-em",
+    "pergunta": "The additional information field is a JSON string that gives more information about an event. An example of a supported JSON string is:",
+    "alternativas": [
+      {
+        "texto": "{\"CPU\":100}",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "{\"CPU\":100,’Status\":3}",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "{\"CPU\":\"100\",\"Status\":3}",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "{\"CPU\":\"100\"}",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "60T5kmOHzufJg4t6hknd",
+      "numero": 106,
+      "colecao": 106,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/122530-exam-cis-em-topic-1-question-106-discussion/",
+      "resposta": "D",
+      "resposta_ET": "D",
+      "respostas_comunidade": [
+        "D (75%)",
+        "C (25%)"
+      ]
+    }
+  },
+  {
+    "id": "em-MEIPf6s41T2QuHmziwvN",
+    "certification": "cis-em",
+    "pergunta": "In order for SNMP trap notifications to appear in ServiceNow as events, what option must be enabled in the required MID server?",
+    "alternativas": [
+      {
+        "texto": "MID SNMP trap listener",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "SNMP event manager module for MID",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event collector MID server extension",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "SNMP agent for MID",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "MEIPf6s41T2QuHmziwvN",
+      "numero": 107,
+      "colecao": 107,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97338-exam-cis-em-topic-1-question-107-discussion/",
+      "resposta": "A",
+      "resposta_ET": "A",
+      "respostas_comunidade": [
+        "A (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-Xbphp6KsK2AeUM5oso7w",
+    "certification": "cis-em",
+    "pergunta": "What event will cause Agent Client Collector self-monitoring to pause data collection?",
+    "alternativas": [
+      {
+        "texto": "Communication with the MID server is lost",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The amount of host memory being used by the agent exceeds a threshold",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Communication with the ServiceNow instance is lost",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The amount of host disk space used by the agent exceeds a threshold",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The amount of host CPU being utilized by the agent exceeds a threshold",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "Xbphp6KsK2AeUM5oso7w",
+      "numero": 108,
+      "colecao": 108,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97339-exam-cis-em-topic-1-question-108-discussion/",
+      "resposta": "E",
+      "resposta_ET": "E",
+      "respostas_comunidade": [
+        "E (100%)"
+      ]
+    }
+  },
+  {
+    "id": "em-phynvxzOjtyyJCPjybzz",
+    "certification": "cis-em",
+    "pergunta": "Agent Client Collector can perform application service monitoring by configuring what option?",
+    "alternativas": [
+      {
+        "texto": "An alert management rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A proxy agent",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "A distributed cluster",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "An event rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "A REST API",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "phynvxzOjtyyJCPjybzz",
+      "numero": 109,
+      "colecao": 109,
+      "url": "https://www.examtopics.com/discussions/servicenow/view/97340-exam-cis-em-topic-1-question-109-discussion/",
+      "resposta": "B",
+      "resposta_ET": "B -",
+      "respostas_comunidade": [
+        "B (100%)"
+      ]
+    },
+    "observacao": "O arquivo contém gabaritos divergentes: resposta principal B; resposta ET B -. A correção usa a resposta principal fornecida, sem validação técnica independente."
+  },
+  {
+    "id": "em-user-provided-5f81bbfca684d4f25e6a558f60d34ee4",
+    "certification": "cis-em",
+    "pergunta": "What role is required to create a Technical Service?",
+    "alternativas": [
+      {
+        "texto": "evt_mgmt_admin",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "evt_mgmt_integration",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "evt_mgmt_user",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "evt_mgmt_operator",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:5f81bbfca684d4f25e6a558f60d34ee4",
+      "numero": 14,
+      "colecao": 110,
+      "url": null,
+      "resposta": "A",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-1c541e3b4182c13a7e0fac9c5956e535",
+    "certification": "cis-em",
+    "pergunta": "What is the primary function of the link view feature in the Service Operations Workspace express list?",
+    "alternativas": [
+      {
+        "texto": "To update the CMDB dependency map",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To manage user permissions across teams",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To automatically generate incidents from linked alerts",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "To visualize tag-based alert groups",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:1c541e3b4182c13a7e0fac9c5956e535",
+      "numero": 17,
+      "colecao": 111,
+      "url": null,
+      "resposta": "D",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-05732cbd7de02ccbc61c9e82fba87548",
+    "certification": "cis-em",
+    "pergunta": "In Service Operations Workspace, what tool shows relationships between configuration items and alerts with real-time updates and detailed impact paths?",
+    "alternativas": [
+      {
+        "texto": "CMDB identification and reconciliation engine (IRE)",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Unified service map",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "CMDB class manager",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Dependency view map",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:05732cbd7de02ccbc61c9e82fba87548",
+      "numero": 25,
+      "colecao": 112,
+      "url": null,
+      "resposta": "B",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-3dba897efd241fa96922af78fe1b87ac",
+    "certification": "cis-em",
+    "pergunta": "Where are approval requests for execution of alert remediation tasks configured?",
+    "alternativas": [
+      {
+        "texto": "In Service Operations Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the alert management rule's playbook",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the alert management rule's approvals related list",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "In the Flow Designer remediation subflow",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:3dba897efd241fa96922af78fe1b87ac",
+      "numero": 37,
+      "colecao": 113,
+      "url": null,
+      "resposta": "C",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-82a54852d2a4f7addc5c841096736044",
+    "certification": "cis-em",
+    "pergunta": "Where would you look to find and troubleshoot transactions and events that occur on your ServiceNow instance?",
+    "alternativas": [
+      {
+        "texto": "em_event table",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "System log module",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "State management logs module",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Mangement dashboard",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:82a54852d2a4f7addc5c841096736044",
+      "numero": 39,
+      "colecao": 114,
+      "url": null,
+      "resposta": "B",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-0a2aac5daa65dc98919a78ad2551d5c0",
+    "certification": "cis-em",
+    "pergunta": "What determines if an alert management rule's actions apply to an alert?",
+    "alternativas": [
+      {
+        "texto": "The alert management rule's field mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The alert's bound configuration item",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "The alert management rule's filter",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The message key",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:0a2aac5daa65dc98919a78ad2551d5c0",
+      "numero": 40,
+      "colecao": 115,
+      "url": null,
+      "resposta": "C",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-299ef58b64147f7bfc7215167afa0154",
+    "certification": "cis-em",
+    "pergunta": "What applications are included in the ITOM Health solution? Choose 3 answers",
+    "alternativas": [
+      {
+        "texto": "Discovery",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Management",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Health Log Analytics",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Cloud Provisioning and Governance",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Service Mapping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Agent Client Collector",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:299ef58b64147f7bfc7215167afa0154",
+      "numero": 44,
+      "colecao": 116,
+      "url": null,
+      "resposta": "BCF",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "variant",
+      "variante_de_colecao": 37
+    },
+    "observacao": "Esta questão é uma variante suplementar da questão de origem 37, com outra formulação e outro conjunto de respostas. Os dois registros e seus gabaritos foram mantidos separadamente."
+  }
+]
