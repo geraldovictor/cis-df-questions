@@ -1194,5 +1194,29 @@
     ],
     "assinatura": "048efae9",
     "observacao": "Esta questão é uma variante suplementar da questão de origem 37, com outra formulação e outro conjunto de respostas. Os dois registros e seus gabaritos foram mantidos separadamente."
+  },
+  "em-user-provided-126-alert-automation": {
+    "gatilho": "Automação de alertas no Service Operations Workspace",
+    "macete": "Automação simplifica: criar e gerenciar regras de eventos e alertas.",
+    "conexao": "Associe alert automation a simplified experience. O gabarito enviado destaca a criação e o gerenciamento de event and alert related rules, reunidos numa experiência simplificada.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "de080b77"
+  },
+  "em-user-provided-127-pull-connector": {
+    "gatilho": "Conector PULL com MID Server e visibilidade do monitoramento",
+    "macete": "PULL em quatro: intervalo, endereço do alvo, MID validado e credencial do monitoramento.",
+    "conexao": "Lembre os quatro itens do gabarito enviado: Polling interval; Internal IP address and port do target system; active and validated MID Server; access credentials do monitoring system. Guarde o conjunto completo.",
+    "tecnica": "Lista de quatro",
+    "observacao": "O enunciado enviado usa “M.0 Server”, enquanto as alternativas usam “MID Server”. Essa grafia e os demais textos do material foram preservados, assim como o gabarito fornecido.",
+    "respostas": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "assinatura": "0fed789f"
   }
 }

@@ -1,18 +1,24 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { getMatchingQuestion } from '../matching.js';
 import { isCorrect } from '../quiz.js';
 import { validateMemoryAids } from '../memorization.js';
+import { questionAudioPath } from '../question-content.js';
 
 const root = new URL('../', import.meta.url);
 const questions = JSON.parse(await readFile(new URL('data/cis-em/questions.json', root), 'utf8'));
 const aids = JSON.parse(await readFile(new URL('data/cis-em/memory-aids.json', root), 'utf8'));
 const report = JSON.parse(await readFile(new URL('data/cis-em/import-report.json', root), 'utf8'));
+const supplemental = JSON.parse(await readFile(new URL('data/cis-em/supplemental-import-report.json', root), 'utf8'));
+const previousQuestionsHash = 'ff8434b804a62f16a6e930afcc6ef0a58ba40d1226e1b47bb2aa5182c5e656b2';
+const previousMemoryHash = '4e5e2197c47a3e15dd953b7b895bb1f599c5335605e9f6aaa16b53406c06febd';
+const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
-test('EM retains all 116 unique records and the supplied primary multiple-choice answers', () => {
-  assert.equal(questions.length, 116);
-  assert.equal(new Set(questions.map(q => q.id)).size, 116);
+test('EM retains all 118 unique records and the supplied primary multiple-choice answers', () => {
+  assert.equal(questions.length, 118);
+  assert.equal(new Set(questions.map(q => q.id)).size, 118);
   for (const q of questions) {
     assert.equal(q.certification, 'cis-em');
     assert.ok(q.id.startsWith('em-'));
@@ -24,7 +30,71 @@ test('EM retains all 116 unique records and the supplied primary multiple-choice
     assert.ok(isCorrect(q, expected), q.id);
     assert.equal(isCorrect(q, []), false, q.id);
   }
-  assert.equal(questions.filter(q => q.fonte.tipo === 'user_provided').length, 7);
+  assert.equal(questions.filter(q => q.fonte.tipo === 'user_provided').length, 9);
+});
+
+test('appending user questions 126 and 127 preserves all previous questions and memory aids', () => {
+  assert.equal(supplemental.previous_total, 116);
+  assert.equal(supplemental.added_total, 2);
+  assert.equal(supplemental.resulting_total, 118);
+  assert.equal(supplemental.previous_questions_sha256, previousQuestionsHash);
+  assert.equal(supplemental.previous_memory_aids_sha256, previousMemoryHash);
+  const previousQuestions = questions.slice(0, 116);
+  const previousIds = new Set(previousQuestions.map(q => q.id));
+  const previousAids = Object.fromEntries(Object.entries(aids).filter(([id]) => previousIds.has(id)));
+  assert.equal(hash(previousQuestions), previousQuestionsHash);
+  assert.equal(hash(previousAids), previousMemoryHash);
+  assert.deepEqual(questions.slice(116).map(q => q.id), [
+    'em-user-provided-126-alert-automation',
+    'em-user-provided-127-pull-connector'
+  ]);
+});
+
+test('both appended questions preserve the supplied wording, options and answer sets', () => {
+  assert.equal(supplemental.entries.length, 2);
+  assert.deepEqual(supplemental.entries.map(entry => entry.number), [126, 127]);
+  assert.deepEqual(supplemental.entries.map(entry => entry.answer), [['A'], ['A', 'B', 'C', 'F']]);
+  for (const entry of supplemental.entries) {
+    const q = questions.find(question => question.id === entry.id);
+    assert.ok(q, entry.id);
+    assert.equal(q.pergunta, entry.question);
+    const letters = Object.keys(entry.options).sort();
+    assert.deepEqual(q.alternativas.map(option => option.texto), letters.map(letter => entry.options[letter]));
+    assert.deepEqual(q.alternativas.flatMap((option, index) => option.correta ? [letters[index]] : []), entry.answer);
+    assert.equal(q.fonte.resposta, entry.answer.join(''));
+    assert.equal(q.fonte.numero, entry.number);
+    assert.equal(q.fonte.tipo, 'user_provided');
+  }
+  const connector = questions.find(q => q.id === 'em-user-provided-127-pull-connector');
+  assert.match(connector.observacao, /nota[çc][ãa]o|grafia|origem|original/i);
+  assert.ok(connector.pergunta.includes('M.0 Server'));
+  assert.ok(connector.alternativas[3].texto.includes('credentials la '));
+  assert.ok(connector.alternativas[5].texto.includes('credentials lo '));
+});
+
+test('the pull-connector question requires all four supplied answers and rejects omissions and extras', () => {
+  const connector = questions.find(q => q.id === 'em-user-provided-127-pull-connector');
+  assert.equal(connector.alternativas.length, 6);
+  const correct = [0, 1, 2, 5];
+  assert.ok(isCorrect(connector, correct));
+  assert.ok(isCorrect(connector, [...correct].reverse()));
+  assert.equal(isCorrect(connector, []), false);
+  for (const omitted of correct) assert.equal(isCorrect(connector, correct.filter(index => index !== omitted)), false);
+  for (const extra of [3, 4]) assert.equal(isCorrect(connector, [...correct, extra]), false);
+  const automation = questions.find(q => q.id === 'em-user-provided-126-alert-automation');
+  assert.ok(isCorrect(automation, [0]));
+  assert.equal(isCorrect(automation, []), false);
+  assert.equal(isCorrect(automation, [0, 1]), false);
+});
+
+test('both appended questions have current memory aids and playable-size MP3 assets', async () => {
+  const added = questions.slice(116);
+  assert.equal(validateMemoryAids(aids, added), aids);
+  for (const q of added) {
+    const bytes = await readFile(new URL(questionAudioPath(q), root));
+    assert.ok(bytes.length > 1000, q.id);
+    assert.ok(bytes.subarray(0, 3).toString() === 'ID3' || (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0), q.id);
+  }
 });
 
 test('the image-only processing sequence uses every supplied position without invented distractors', () => {

@@ -12,7 +12,7 @@ const { chromium } = await import(pathToFileURL(resolve(process.env.PLAYWRIGHT_P
 const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75, audio: 'audio/' },
-  { id: 'cis-em', count: 116, examSize: 30, audio: 'audio/cis-em/' },
+  { id: 'cis-em', count: 118, examSize: 30, audio: 'audio/cis-em/' },
   { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' }
 ];
 const server = createServer(async (req, res) => {
@@ -293,6 +293,112 @@ async function assertCadSupplement(browser) {
   await context.close();
 }
 
+async function assertEmSupplements(browser) {
+  const course = courses.find(item => item.id === 'cis-em');
+  const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
+  const addedIds = ['em-user-provided-126-alert-automation', 'em-user-provided-127-pull-connector'];
+  const added = addedIds.map(id => questions.find(question => question.id === id));
+  assert.ok(added.every(Boolean), 'Both supplied EM questions must be available');
+  const original = questions.filter(question => !addedIds.includes(question.id));
+  assert.equal(original.length, 116);
+  const originalIds = original.map(question => question.id), knownId = original[0].id, lastOriginal = original.at(-1);
+  const quiz = createAttempt(original, 'offline-guest', course.id), study = createStudy(original, 'offline-guest', course.id);
+  quiz.state.cursor = 2; study.state.cursor = 3;
+  quiz.state.answers[quiz.state.ids[0]] = [0];
+  const progress = { attempts: [quiz], studies: [study] };
+  const context = await browser.newContext({ viewport: { width: 1280, height: 960 } });
+  await context.route('https://**/*', route => route.abort());
+  await context.addInitScript(({ progress, knownId, originalIds, lastId }) => {
+    if (localStorage.getItem('__emSupplementSeeded')) return;
+    localStorage.setItem('__emSupplementSeeded', 'true');
+    localStorage.setItem('cis-em-offline-progress-v1', JSON.stringify(progress));
+    localStorage.setItem('cis-em-flashcards-offline-guest', JSON.stringify({ marks: { [knownId]: 'known' }, currentId: lastId }));
+    localStorage.setItem('cis-em-memory-v1-offline-guest', JSON.stringify({ marks: { [knownId]: 'known' }, order: originalIds, currentId: lastId, mode: 'learn', filter: 'all' }));
+  }, { progress, knownId, originalIds, lastId: lastOriginal.id });
+  const page = await context.newPage();
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto(`${url}?cert=cis-em&mode=offline`);
+  await page.locator('#start').waitFor();
+  assert.deepEqual(await saved(page, progressKey(course.id)), progress);
+  assert.equal(await page.locator('#audio-question option').count(), 118);
+  await page.locator('#start').click();
+  assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 3 de 30/);
+  await page.locator('#back').click();
+  assert.deepEqual((await saved(page, progressKey(course.id))).attempts[0], quiz);
+  await page.locator('#study-start').click();
+  assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 4 de 116/);
+  assert.equal(await page.locator('[data-study-jump]').count(), 116);
+  assert.deepEqual((await saved(page, progressKey(course.id))).studies[0], study);
+  await page.locator('#study-finish').click();
+  await page.locator('#study-confirm-finish').click();
+  await page.locator('#study-back').click();
+  assert.equal((await saved(page, progressKey(course.id))).studies[0].total, 116);
+  await page.locator('#study-start').click();
+  const expanded = (await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at);
+  assert.equal(expanded.total, 118);
+  assert.ok(addedIds.every(id => expanded.state.ids.includes(id)));
+  const answers = [[0], [0, 1, 2, 5]];
+  for (const [index, question] of added.entries()) {
+    await page.locator(`[data-study-jump="${expanded.state.ids.indexOf(question.id)}"]`).click();
+    assert.equal(await page.locator('.question-title').textContent(), question.pergunta);
+    if (index === 1) assert.equal(await page.locator('[name="study-answer"][type="checkbox"]').count(), 6);
+    for (const answer of answers[index]) await page.locator(`[name="study-answer"][value="${answer}"]`).check();
+    assert.equal(await page.locator('[name="study-answer"]:checked').count(), answers[index].length);
+    await page.locator('#study-check').click();
+    assert.match(await page.locator('.study-feedback').textContent(), /Você acertou/);
+    assert.equal(await page.locator('[name="study-answer"]:enabled').count(), 0);
+    const confirmed = (await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at);
+    assert.equal(confirmed.state.confirmed[question.id], true);
+    assert.deepEqual([...confirmed.state.answers[question.id]].sort((a, b) => a - b), answers[index]);
+    assert.equal(Object.keys(confirmed.state.confirmed).length, index + 1);
+  }
+  await page.locator(`[data-study-jump="${expanded.state.ids.indexOf(addedIds[0])}"]`).click();
+  assert.equal(await page.locator('#study-check').count(), 0, 'A confirmed answer cannot be counted again');
+  assert.match(await page.locator('.study-metrics').textContent(), /2 acertos.*0 erros/s);
+  await page.locator('#study-back').click();
+  assert.equal(Object.keys((await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at).state.confirmed).length, 2);
+
+  await page.locator('.flashcards > summary').click();
+  assert.equal(await page.locator('.flashcard-face h3').textContent(), lastOriginal.pergunta);
+  for (const [index, question] of added.entries()) {
+    if (index === 0) await page.locator('[data-fc-next]').click();
+    assert.equal(await page.locator('.flashcard-face h3').textContent(), question.pergunta);
+    await page.locator('[data-fc-flip]').click();
+    for (const answer of answers[index]) assert.ok((await page.locator('.flashcard-answer').textContent()).includes(question.alternativas[answer].texto));
+    assert.ok((await page.locator('.flashcard-answer audio').getAttribute('src')).endsWith(`audio/cis-em/${question.id}.mp3`));
+    await page.locator('[data-fc-rate="known"]').click();
+  }
+  const flashcards = await saved(page, flashKey(course.id));
+  for (const id of [knownId, ...addedIds]) assert.equal(flashcards.marks[id], 'known');
+  await page.locator('#memory-start').click();
+  await page.locator('[data-memory-reveal]').waitFor();
+  await page.locator(`[data-memory-jump] option[value="${addedIds[1]}"]`).waitFor({ state: 'attached' });
+  assert.equal(await page.locator('[data-memory-jump] option').count(), 118);
+  assert.equal(await page.locator('[data-memory-jump]').inputValue(), lastOriginal.id);
+  for (const [index, question] of added.entries()) {
+    await page.locator('[data-memory-jump]').selectOption(question.id);
+    await page.locator('[data-memory-reveal]').click();
+    for (const answer of answers[index]) assert.ok((await page.locator('.memory-answer').textContent()).includes(question.alternativas[answer].texto));
+    assert.ok((await page.locator('.memory-answer audio').getAttribute('src')).endsWith(`audio/cis-em/${question.id}.mp3`));
+    await page.locator('[data-memory-rate="known"]').click();
+  }
+  const memory = await saved(page, memoryKey(course.id));
+  for (const id of [knownId, ...addedIds]) assert.equal(memory.marks[id], 'known');
+  assert.deepEqual(memory.order.slice(0, 116), originalIds);
+  assert.deepEqual(memory.order.slice(116), addedIds);
+  await page.locator('[data-memory-back]').click();
+  await downloadCourseAudio(page, course);
+  await context.setOffline(true);
+  await page.reload();
+  await page.locator('#start').waitFor();
+  for (const question of added) {
+    await page.locator('#audio-question').selectOption(String(questions.indexOf(question)));
+    assert.ok((await page.locator('#question-audio').getAttribute('src')).endsWith(`/audio/cis-em/${question.id}.mp3`));
+    await assertOfflineAudio(page, course);
+  }
+  await context.close();
+}
+
 async function assertHotspotAnswerVisibility(browser) {
   const course = courses.find(item => item.id === 'cis-em');
   const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
@@ -480,8 +586,9 @@ try {
   await assertAccountIsolation(browser);
   await assertHotspotAnswerVisibility(browser);
   await assertCadSupplement(browser);
+  await assertEmSupplements(browser);
   assert.deepEqual(errors, []);
-  console.log('PASS: CIS-DF/CIS-EM/CAD banks, navigation, independent quiz/study/history/flashcard/memory progress, 267 cached EM/CAD recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation and hotspot answer-image reveal');
+  console.log('PASS: CIS-DF/CIS-EM/CAD banks, navigation, independent quiz/study/history/flashcard/memory progress, 269 cached EM/CAD recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation, hotspot answer-image reveal and legacy progress after bank additions');
 } finally {
   await browser?.close();
   await new Promise(done => server.close(done));

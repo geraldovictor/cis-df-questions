@@ -13,7 +13,7 @@ Para executar localmente: `node scripts/question-source-watch.mjs`. A saída fic
 | Certificação | Questões | Macetes | Simulado |
 | --- | ---: | ---: | ---: |
 | CIS-DF · Data Foundations | 205 | 205 | 75 |
-| CIS-EM · Event Management | 116 | 116 | 30 |
+| CIS-EM · Event Management | 118 | 118 | 30 |
 | CAD · Application Developer | 151 | 151 | 60 |
 
 As quantidades de CIS-EM e CAD seguem os blueprints oficiais atualizados em janeiro de 2026: [CIS-EM: 30 questões e 60 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011604) e [CAD: 60 questões e 90 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498). O CIS-DF mantém o formato existente de 75 questões. As perguntas são sorteadas do banco selecionado sem reposição na mesma tentativa; o sorteio não aplica pesos por domínio do blueprint.
@@ -23,6 +23,8 @@ As três usam os mesmos recursos: login, simulados, estudo com correção imedia
 Os novos bancos e macetes ficam em `data/cis-em/` e `data/cis-cad/`; `certification.js` define as fontes. Os gabaritos enviados foram preservados. Os relatórios `import-report.json` registram a origem, adaptações e inconsistências: faltam explicações nos dois novos bancos, existem alternativas incompletas no CAD e no CIS-EM e há divergências entre gabaritos no CIS-EM. Os itens afetados têm uma observação recolhida junto ao enunciado. As seis imagens do CIS-EM são locais e ficam disponíveis offline; a sequência HOTSPOT usa associação interativa, com a imagem-resposta disponível depois da correção.
 
 O complemento CAD de 15/11/2026 contém 146 registros: uma questão nova foi acrescentada e 145 já existentes foram identificadas por enunciado e cenário, inclusive imagens e listas de itens. A importação preserva os 150 registros anteriores, seus IDs, gabaritos e macetes. O relatório `data/cis-cad/supplemental-import-report.json` registra as decisões de comparação e as diferenças encontradas entre as fontes.
+
+O complemento CIS-EM de 15/11/2026 acrescenta as questões 126 e 127 enviadas pelo usuário, sobre alert automation e configuração de conector PULL. Os gabaritos fornecidos são A e A/B/C/F. Os 116 registros e macetes anteriores foram preservados; o relatório `data/cis-em/supplemental-import-report.json` guarda os textos recebidos e as assinaturas anteriores. A questão 127 mantém a grafia “M.0 Server” do enunciado enviado, com uma observação sobre a diferença para “MID Server” nas alternativas.
 
 As tabelas armazenam `state.certification`; resultados antigos sem esse campo são tratados como CIS-DF. As políticas RLS por usuário continuam aplicáveis. **Em projetos Supabase já configurados, execute `migrations/002-certification-simulations.sql` no SQL Editor antes de sincronizar simulados CIS-EM e CAD com login.** A migração permite os totais de 30, 60 e 75 questões e limita o score ao total da tentativa; pode ser repetida e preserva os resultados existentes. Ela não é aplicada automaticamente pelo site. O modo offline funciona sem essa migração.
 

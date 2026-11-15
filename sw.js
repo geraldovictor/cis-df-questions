@@ -1,4 +1,4 @@
-const SHELL_CACHE = 'cis-df-shell-v9';
+const SHELL_CACHE = 'cis-df-shell-v10';
 const AUDIO_CACHE = 'cis-df-audio-v1';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './config.js', './quiz.js', './matching.js', './matching-view.js', './question-content.js', './memorization.js', './memory-aids.json', './study.js', './study-view.js', './flashcards.js', './audio-study.js', './offline.js', './pwa.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png', './icons/apple-touch-icon.png', './questoes-1-corrigida (1).json', './questoes-2-corrigida-v2 (1).json', './questoes-3-corrigida-v2 (1).json'];
 ASSETS.push('./certification.js', './data/cis-cad/questions.json', './data/cis-cad/memory-aids.json', './data/cis-em/questions.json', './data/cis-em/memory-aids.json',

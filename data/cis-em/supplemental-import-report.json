@@ -1,0 +1,47 @@
+{
+  "certification": "cis-em",
+  "imported_at": "2026-11-15",
+  "source": "Questões 126 e 127 enviadas pelo usuário na conversa",
+  "previous_total": 116,
+  "previous_questions_sha256": "ff8434b804a62f16a6e930afcc6ef0a58ba40d1226e1b47bb2aa5182c5e656b2",
+  "previous_memory_aids_sha256": "4e5e2197c47a3e15dd953b7b895bb1f599c5335605e9f6aaa16b53406c06febd",
+  "added_total": 2,
+  "resulting_total": 118,
+  "answers_independently_verified": false,
+  "policy": "Enunciados, alternativas e gabaritos enviados preservados. Nenhuma questão anterior ou resposta salva foi alterada.",
+  "entries": [
+    {
+      "id": "em-user-provided-126-alert-automation",
+      "number": 126,
+      "question": "What is one of the benefits of using alert automation in Service Operations Workspace?",
+      "options": {
+        "A": "It offers a simplified experience for creating and managing event and alert related rules",
+        "B": "It uses back end tables separate from those in event management rules",
+        "C": "It enables centralized administration for all alert management",
+        "D": "It does not require any knowledge of the source event collection tool"
+      },
+      "answer": [
+        "A"
+      ]
+    },
+    {
+      "id": "em-user-provided-127-pull-connector",
+      "number": 127,
+      "question": "When setting up a monitoring connector definition PULL the M.0 Server must be validated and have Line of Sight (LoS) to the monitoring system. This configuration requires what? Choose 4 answers",
+      "options": {
+        "A": "Polling interval for scheduling access to the target system",
+        "B": "Internal IP address and port for communication with the target System",
+        "C": "An active and validated MID Server",
+        "D": "Access credentials la the MID Server system",
+        "E": "Internal IP address and port for communication with the MID Server system",
+        "F": "Access credentials lo the monitoring system"
+      },
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "F"
+      ]
+    }
+  ]
+}

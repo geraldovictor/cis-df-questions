@@ -4744,5 +4744,94 @@
       "variante_de_colecao": 37
     },
     "observacao": "Esta questão é uma variante suplementar da questão de origem 37, com outra formulação e outro conjunto de respostas. Os dois registros e seus gabaritos foram mantidos separadamente."
+  },
+  {
+    "id": "em-user-provided-126-alert-automation",
+    "certification": "cis-em",
+    "pergunta": "What is one of the benefits of using alert automation in Service Operations Workspace?",
+    "alternativas": [
+      {
+        "texto": "It offers a simplified experience for creating and managing event and alert related rules",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "It uses back end tables separate from those in event management rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It enables centralized administration for all alert management",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "It does not require any knowledge of the source event collection tool",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:126-alert-automation",
+      "numero": 126,
+      "colecao": 117,
+      "url": null,
+      "resposta": "A",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    }
+  },
+  {
+    "id": "em-user-provided-127-pull-connector",
+    "certification": "cis-em",
+    "pergunta": "When setting up a monitoring connector definition PULL the M.0 Server must be validated and have Line of Sight (LoS) to the monitoring system. This configuration requires what? Choose 4 answers",
+    "alternativas": [
+      {
+        "texto": "Polling interval for scheduling access to the target system",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Internal IP address and port for communication with the target System",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "An active and validated MID Server",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Access credentials la the MID Server system",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Internal IP address and port for communication with the MID Server system",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Access credentials lo the monitoring system",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "id": "user-provided:127-pull-connector",
+      "numero": 127,
+      "colecao": 118,
+      "url": null,
+      "resposta": "ABCF",
+      "resposta_ET": "",
+      "respostas_comunidade": [],
+      "tipo": "user_provided",
+      "classificacao": "new_question",
+      "variante_de_colecao": null
+    },
+    "observacao": "O enunciado enviado usa “M.0 Server”, enquanto as alternativas usam “MID Server”. Essa grafia e os demais textos do material foram preservados, assim como o gabarito fornecido."
   }
 ]
