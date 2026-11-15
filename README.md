@@ -2,6 +2,14 @@
 
 Uma sala de estudos para **CIS-DF**, **CIS-EM** e **CAD** (identificado internamente como `cis-cad`). Use os cartões no topo para trocar de certificação. A última seleção é lembrada neste navegador; os links diretos são `?cert=cis-df`, `?cert=cis-em` e `?cert=cis-cad`.
 
+## Busca diária de fontes
+
+O workflow `Daily CAD and CIS-EM question search` consulta os catálogos públicos do ITExams e pesquisas RSS da ServiceNow Community todos os dias às **07:17 de São Paulo** (10:17 UTC), e também permite execução manual em GitHub Actions. O relatório JSON/Markdown fica no resumo e nos artefatos da execução por 30 dias. A consulta usa uma janela móvel de 12 meses para publicações, compara os enunciados públicos com os bancos existentes e registra links e impressões digitais das possíveis ausências. Imagens ou cenários semelhantes ficam para revisão.
+
+Declarações do publicador sobre questões reais são registradas como declarações da fonte. A atualização geral do catálogo é separada da data individual de publicação, que fica desconhecida quando não é informada. Falhas de acesso aparecem como pesquisa parcial; páginas restritas não são contornadas. A rotina não gera questões, não altera os bancos e não faz deploy de cópias de bancos de terceiros: a republicação automática depende de uma fonte que permita reutilizar o conteúdo. Nenhuma conexão paga, chave de IA ou computador local ligado é necessária para a busca. Agendamentos do GitHub podem sofrer atrasos e ser desativados após inatividade do repositório.
+
+Para executar localmente: `node scripts/question-source-watch.mjs`. A saída fica em `test-results/question-search/`. Um argumento `AAAA-MM-DD` fixa a data de consulta em testes; o padrão usa `America/Sao_Paulo`.
+
 | Certificação | Questões | Macetes | Simulado |
 | --- | ---: | ---: | ---: |
 | CIS-DF · Data Foundations | 205 | 205 | 75 |
