@@ -1,3 +1,4 @@
+import { buildAttemptReport, mountReport } from './reports.js';
 import { confirmStudyAnswer, studyProgress, isPracticeStudy } from './study.js';
 import { isCorrect } from './quiz.js';
 import { getMatchingQuestion } from './matching.js';
@@ -26,6 +27,8 @@ export function renderStudy({ app, attempt, byId, save, back, report }) {
   };
   if (attempt.finished_at) {
     app.innerHTML = `<button id="study-back" class="quiet">← Voltar à minha trajetória</button><section class="card result-banner"><span class="eyebrow">${modeLabel}</span><h1>${practice?'Treino concluído.':'Estudo concluído.'}</h1><strong>${result.accuracy}%</strong><p>de acerto nas ${result.answered} questões respondidas</p>${metrics}<p>${result.remaining} não respondidas · ${attempt.total} questões no total<br>${result.correct} acertos de ${attempt.total} (${Math.round(result.correct/attempt.total*100)}% ${practice?'do treino':'do banco'})</p></section><div class="section-head"><h2>${practice?'Revisão do treino':'Revisão do estudo'}</h2><label><input id="study-errors" type="checkbox"> Somente erros</label></div><div id="study-reviews"></div>`;
+    app.querySelector('.result-banner').insertAdjacentHTML('afterend','<div data-study-report></div>');
+    mountReport(app.querySelector('[data-study-report]'),attempt.state.report || buildAttemptReport(attempt,byId),byId);
     const reviews = () => {
       app.querySelector('#study-reviews').innerHTML = state.ids.map((qid, i) => {
         const question = byId[qid], answered = state.confirmed[qid];
@@ -59,8 +62,8 @@ export function renderStudy({ app, attempt, byId, save, back, report }) {
     bind('#study-resume','click',redraw);
     bind('#study-confirm-finish','click',async event=>{
       const button=event.currentTarget;button.disabled=true;
-      attempt.finished_at=new Date().toISOString();attempt.score=result.correct;
-      try {await save();redraw();} catch(error) {attempt.finished_at=null;attempt.score=null;button.disabled=false;report(error);}
+      attempt.finished_at=new Date().toISOString();attempt.score=result.correct;attempt.state.report=buildAttemptReport(attempt,byId);
+      try {await save();redraw();} catch(error) {attempt.finished_at=null;attempt.score=null;delete attempt.state.report;button.disabled=false;report(error);}
     });
   };
   bind('#study-next','click',()=>state.cursor===attempt.total-1?finish():go(state.cursor+1));

@@ -1,6 +1,7 @@
 import { shuffle } from './quiz.js';
 import { renderQuestionContext, renderAnswerImages, questionAudioPath } from './question-content.js';
 import { DEFAULT_CERTIFICATION, certificationStorageKey } from './certification.js';
+import { createReviewSession, readReviewSession, saveReviewSession, buildReviewReport, mountReviewHistory } from './reports.js';
 
 export function restoreFlashcards(raw, questions) {
   const ids = new Set(questions.map(q => q.id));
@@ -21,6 +22,28 @@ export function renderFlashcards(root, questions, userId, certificationId = DEFA
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   root.innerHTML = `<details class="card flashcards"><summary><span class="eyebrow">Memorize no seu ritmo</span><h2>Flashcards</h2><span class="muted">Pense na resposta e vire o cartão para conferir.</span></summary><p class="muted">Suas marcações ficam salvas neste navegador, separadas por conta.</p><div class="flashcard-tools"><label>Baralho <select data-fc-mode><option value="all">Todas as questões</option><option value="review">Quero revisar</option></select></label><button type="button" class="secondary" data-fc-shuffle>Embaralhar</button></div><p data-fc-stats role="status"></p><div data-fc-content></div></details>`;
   const find = selector => root.querySelector(selector);
+  const byId = Object.fromEntries(questions.map(q=>[q.id,q]));
+  let session=null;
+  try { session=readReviewSession('flashcards',userId,certificationId); } catch {}
+  if(session&&['all','review'].includes(session.deckMode)){mode=session.deckMode;find('[data-fc-mode]').value=mode;}
+  root.querySelector('.flashcards').insertAdjacentHTML('beforeend','<div class="flashcard-tools"><button type="button" class="secondary" data-fc-finish-session>Encerrar tentativa e ver relatório</button></div><p class="muted" data-fc-session-status role="status"></p><div data-fc-reports></div>');
+  function sessionStatus() {
+    find('[data-fc-finish-session]').disabled=!session||Boolean(session.finished_at)||!Object.keys(session.outcomes).length;
+    find('[data-fc-session-status]').textContent=session&&!session.finished_at?`${Object.keys(session.outcomes).length} cartões avaliados nesta tentativa. Você pode encerrar antes de concluir o baralho.`:'Uma nova tentativa começa na próxima marcação de cartão.';
+  }
+  function saveSession() {
+    sessionStatus();
+    try { saveReviewSession(session); } catch { find('[data-fc-session-status]').textContent='Não foi possível salvar a tentativa neste navegador. Encerre e baixe o relatório para guardar uma cópia.'; }
+  }
+  function finishSession() {
+    if(!session||session.finished_at||!Object.keys(session.outcomes).length)return;
+    session.finished_at=new Date().toISOString();
+    const report=buildReviewReport(session,byId);
+    saveSession();mountReviewHistory(find('[data-fc-reports]'),'flashcards',userId,certificationId,byId,report);
+  }
+  find('[data-fc-finish-session]').onclick=finishSession;
+  mountReviewHistory(find('[data-fc-reports]'),'flashcards',userId,certificationId,byId);
+  sessionStatus();
   function save() {
     try { localStorage.setItem(key, JSON.stringify({ marks, currentId })); }
     catch { find('[data-fc-stats]').textContent += ' Não foi possível salvar neste navegador.'; }
@@ -45,15 +68,20 @@ export function renderFlashcards(root, questions, userId, certificationId = DEFA
     find('[data-fc-prev]').onclick = () => move(index-1);
     find('[data-fc-next]').onclick = () => move(index+1);
     root.querySelectorAll('[data-fc-rate]').forEach(button => { button.onclick = () => {
+      if(!session||session.finished_at){session=createReviewSession('flashcards',deck,userId,certificationId);session.deckMode=mode;}
+      if(!session.ids.includes(q.id))session.ids.push(q.id);
+      session.outcomes[q.id]=button.dataset.fcRate;
       marks[q.id]=button.dataset.fcRate;
       const remaining = flashcardDeck(order, marks, mode);
       const nextIndex = mode==='review' && button.dataset.fcRate==='known' ? index : index+1;
       currentId=remaining[nextIndex % remaining.length]?.id;
       revealed=false; render(true); save();
+      saveSession();
+      if(session.ids.every(id=>session.outcomes[id]))finishSession();
     }; });
     if (focus) find('[data-fc-flip]').focus({preventScroll:true});
   }
-  find('[data-fc-mode]').onchange = event => { mode=event.target.value; revealed=false; render(); };
+  find('[data-fc-mode]').onchange = event => { finishSession(); mode=event.target.value; revealed=false; render(); };
   find('[data-fc-shuffle]').onclick = () => { order=shuffle(order); currentId=flashcardDeck(order,marks,mode)[0]?.id; revealed=false; render(); save(); };
   render();
 }

@@ -5,6 +5,7 @@ import { renderAudioStudy } from '../audio-study.js';
 import { renderOfflineTools } from '../offline.js';
 import { renderFlashcards } from '../flashcards.js';
 import { renderMemorization, memorySourceKey } from '../memorization.js';
+import { readReportHistory } from '../reports.js';
 
 // A small DOM double exercises event handlers without starting a browser.
 class Element {
@@ -14,8 +15,12 @@ class Element {
   addEventListener(name, listener) { this.listeners[name] = listener; }
   fire(name, event = {}) { return this.listeners[name]?.(event); }
   setAttribute() {}
+  insertAdjacentHTML(position,html) { this.innerHTML += html; }
+  querySelector(selector) { this.nodes ||= new Map(); if(!this.nodes.has(selector))this.nodes.set(selector,new Element()); return this.nodes.get(selector); }
+  querySelectorAll() { return []; }
+  pause() { this.paused = true; }
   focus() {}
-  play() { this.paused = false; return Promise.resolve(); }
+  play() { this.paused = false; this.fire('play'); return Promise.resolve(); }
 }
 function rootElement() {
   const root = new Element(), nodes = new Map();
@@ -44,6 +49,21 @@ async function globals(values, action) {
 const question = (id, audio) => ({ id, certification: 'cis-em', pergunta: `Question ${id}`, ...(audio === undefined ? {} : { audio_disponivel: audio }), alternativas: [{ texto: `Answer ${id}`, correta: true, explicacao: '' }, { texto: 'Other', correta: false, explicacao: '' }] });
 const bank = [question('first'), question('missing', false), question('last', true)];
 const audioKey = 'cis-em-audio-index';
+
+test('repeated audio completions stay in one session and manual ending reports each recording only once',async()=>{
+  await globals({localStorage:storage()},async()=>{
+    const root=rootElement();renderAudioStudy(root,bank,'cis-em','owner');
+    root.querySelector('#audio-repeat').checked=true;
+    root.querySelector('#audio-continuous').checked=false;
+    const player=root.querySelector('#question-audio');await player.play();
+    player.fire('ended');player.fire('ended');
+    assert.equal(root.querySelector('#audio-question').value,'0');
+    assert.equal(readReportHistory('owner','cis-em').length,0);
+    root.querySelector('[data-audio-finish-session]').onclick();
+    const reports=readReportHistory('owner','cis-em');assert.equal(reports.length,1);assert.equal(reports[0].summary.listened,1);assert.equal(reports[0].summary.total,2);
+    player.fire('ended');assert.equal(readReportHistory('owner','cis-em').length,1);
+  });
+});
 
 test('daily player skips unavailable recordings in selection, buttons and continuous playback while keeping original indices', async () => {
   await globals({ localStorage: storage({ [audioKey]: '0' }) }, async () => {

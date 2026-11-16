@@ -52,6 +52,20 @@ As tabelas armazenam `state.certification`; resultados antigos sem esse campo s�
 
 Os números de questões nos recursos abaixo variam conforme a certificação selecionada; o banco original CIS-DF contém 205.
 
+## Relatórios de tentativas
+
+Simulados, treinos com correção imediata e estudos completos geram um relatório automaticamente ao finalizar. O relatório mostra respostas registradas, acertos, erros, itens não respondidos, desempenho por domínio, prioridades de revisão e detalhes das respostas/gabaritos com o contexto textual e as explicações disponíveis. Rascunhos não confirmados no estudo ou treino permanecem não respondidos. A precisão nas respostas registradas é apresentada separadamente da cobertura total; não há indicação de aprovação oficial.
+
+Nos flashcards, **Encerrar tentativa e ver relatório** fecha a seleção atual; concluir as marcações do baralho também gera o relatório. A sessão é retomada após recarregar, com suas marcações e seleção. Alterar o filtro encerra a tentativa em andamento. Os resultados são de autoavaliação (**Já sei** e **Para revisar**), separados das marcações acumuladas de tentativas anteriores. Uma nova marcação após concluir inicia outra tentativa.
+
+No áudio, **Encerrar escuta e ver relatório** permite terminar antes do fim. Com reprodução contínua desativada, o fim de uma gravação encerra a tentativa; na sequência contínua, o fim da sequência encerra a sessão. Com repetição ativada, use o botão para encerrar. Repetir uma gravação não soma outra conclusão para o mesmo item. O relatório mede reproduções concluídas, não acertos ou compreensão. Gravações indisponíveis são excluídas da seleção. A decoreba não gera relatórios.
+
+Todos os relatórios têm **Baixar relatório** (HTML independente, utilizável offline) e **Imprimir / Salvar PDF**. As datas usam o horário de São Paulo. Os detalhes das questões são carregados na tela somente quando abertos. Se o enunciado/gabarito tiver mudado desde a tentativa, o relatório informa isso e preserva o resultado registrado.
+
+Nos modos avaliados, o relatório compacto é salvo em `state.report` nas tabelas existentes `attempts`/`study_sessions`, junto com a tentativa; o histórico de resultados permite reabri-lo. Não é necessária uma nova migração. Há também um histórico local por conta, certificação e modo. Relatórios e sessões de flashcards/áudio ficam somente neste navegador, como suas marcações atuais; podem ser reabertos no histórico de cada seção. Limpar o armazenamento remove esses relatórios locais. Falhas de armazenamento são sinalizadas, com opção de baixar a cópia exibida. Os gabaritos e os dados pessoais não são enviados a nenhum serviço de geração de relatórios.
+
+`node --test tests/reports.test.mjs` verifica totais, domínios, rascunhos, associações, isolamento, persistência e exportação. `node tests/reports-browser.mjs`, com `PLAYWRIGHT_PATH` e `BROWSER_PATH`, valida os cinco modos nas quatro certificações, descarga de HTML, tela móvel, reprodução real de áudio, offline e persistência de conta simulada; não grava em contas reais. `REPORT_SCOPE=account` restringe a verificação aos fluxos de conta.
+
 ## Modo de estudo
 
 O **Treino com correção imediata** sorteia 75 questões no CIS-DF, 30 no CIS-EM e 60 no CAD e no CIS-CSM. Cada tentativa embaralha questões e alternativas, sem repetir questões e sem cronômetro. Use **Confirmar e ver resposta** para receber a correção imediatamente; confirmar novamente não soma outro acerto. O treino pode ser pausado, retomado e encerrado antecipadamente. Seu histórico e suas gravações pendentes são separados do estudo completo e dos simulados. Novos estados usam `mode: "study"` e `variant: "practice"` na tabela existente `study_sessions`; os treinos anteriores de 60 questões continuam reconhecidos como `practice60` e podem ser retomados com seus totais originais. As chaves locais de gravação pendente foram mantidas. Não é necessária outra migração se as migrações 001 e 002 já foram aplicadas.

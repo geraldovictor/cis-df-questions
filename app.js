@@ -1,3 +1,4 @@
+import { buildAttemptReport, mountReport } from './reports.js';
 import { blueprintQuotas } from './sampling.js';
 import { renderAudioStudy } from './audio-study.js';
 import { renderFlashcards } from './flashcards.js';
@@ -131,7 +132,7 @@ function renderDashboard() {
   document.querySelector('#study-dashboard').insertAdjacentHTML('beforebegin', '<section id="practice-dashboard"></section>');
   renderPracticeDashboard();
   document.querySelector('#study-dashboard').insertAdjacentHTML('afterend', '<div id="audio-dashboard"></div>');
-  renderAudioStudy(document.querySelector('#audio-dashboard'), questions, certification.id);
+  renderAudioStudy(document.querySelector('#audio-dashboard'), questions, certification.id, user.id);
   document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
   renderFlashcards(document.querySelector('#flashcards-dashboard'), questions, user.id, certification.id);
   document.querySelector('#flashcards-dashboard').insertAdjacentHTML('beforebegin', '<section id="memory-dashboard"></section>');
@@ -319,8 +320,8 @@ function confirmFinish() {
   on('#resume','click',renderQuiz);
   on('#confirm','click',async event=>{
     if(busy) return; busy=true; event.currentTarget.disabled=true;
-    active.score=scoreAttempt(active,byId); active.finished_at=new Date().toISOString();
-    try {await persist(); clearMessage(); renderResult(active);}catch(error){active.finished_at=null;active.score=null;fail(error); document.querySelector('#confirm').disabled=false;}finally{busy=false;}
+    active.score=scoreAttempt(active,byId); active.finished_at=new Date().toISOString(); active.state.report=buildAttemptReport(active,byId);
+    try {await persist(); clearMessage(); renderResult(active);}catch(error){active.finished_at=null;active.score=null;delete active.state.report;fail(error); document.querySelector('#confirm').disabled=false;}finally{busy=false;}
   });
 }
 
@@ -333,6 +334,8 @@ function renderResult(attempt) {
       return `<details class="card review-item"><summary><span>${correct?'✓ Acertou':'○ '+(selected.length?'Revisar':'Em branco')} · Questão ${i+1}</span><br><span lang="en">${esc(getMatchingQuestion(q)?.prompt || q.pergunta)}</span></summary>${renderQuestionContext(q)}${renderAnswerImages(q)}${getMatchingQuestion(q) ? renderMatching(q,selected,{reveal:true,disabled:true,order:attempt.state.orders[id]}) : `<div class="options">${attempt.state.orders[id].map(index=>{const a=q.alternativas[index];return `<div class="option ${a.correta?'correct':selected.includes(index)?'wrong':''}"><span><b>${a.correta?'✓ Correta':selected.includes(index)?'✕ Sua resposta':'Alternativa'}${a.correta&&selected.includes(index)?' · Sua resposta':''}</b><br><span lang="en">${esc(a.texto)}</span><span class="explanation" lang="en">${esc(a.explicacao)}</span></span></div>`;}).join('')}</div>`}</details>`;
     }).join('') || '<div class="card empty">Nenhum erro neste simulado. Ótimo trabalho!</div>';
   };
+  document.querySelector('.result-banner').insertAdjacentHTML('afterend','<div id="attempt-report"></div>');
+  mountReport(document.querySelector('#attempt-report'),attempt.state.report || buildAttemptReport(attempt,byId),byId);
   review(); on('#only-errors','change',review); on('#dashboard','click',loadDashboard);
 }
 
