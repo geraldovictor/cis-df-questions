@@ -1,18 +1,22 @@
+import { domainManifest, domainSourceKey } from './question-domains.js';
 export const DEFAULT_CERTIFICATION = 'cis-df';
 
 export const certifications = Object.freeze([
   { id: 'cis-df', label: 'CIS-DF', name: 'Data Foundations', examSize: 75,
     files: ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json'],
-    memoryAids: 'memory-aids.json' },
+    memoryAids: 'memory-aids.json',
+    blueprint: { updated: 'novembro de 2025', verified: '2026-11-16', durationMinutes: 90,
+      url: 'https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0012913',
+      domains: [['Configuration',15],['Ingest',19],['Govern',35],['Insight',20],['CSDM Fundamentals',11]] } },
   { id: 'cis-em', label: 'CIS-EM', name: 'Event Management', examSize: 30,
     files: ['data/cis-em/questions.json'], memoryAids: 'data/cis-em/memory-aids.json',
-    blueprint: { updated: 'janeiro de 2026', verified: '2026-11-14', durationMinutes: 60,
+    blueprint: { updated: 'janeiro de 2026', verified: '2026-11-16', durationMinutes: 60,
       url: 'https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011604',
       domains: [['Event Management Overview', 7], ['Architecture and Discovery', 10], ['Event Configuration and Use', 27],
         ['Alerts and Tasks', 30], ['Event Sources', 16], ['Metric Intelligence', 10]] } },
   { id: 'cis-cad', label: 'CAD', name: 'Application Developer', examSize: 60,
     files: ['data/cis-cad/questions.json'], memoryAids: 'data/cis-cad/memory-aids.json',
-    blueprint: { updated: 'janeiro de 2026', verified: '2026-11-14', durationMinutes: 90,
+    blueprint: { updated: 'janeiro de 2026', verified: '2026-11-16', durationMinutes: 90,
       url: 'https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498',
       domains: [['Designing and Creating an Application', 20], ['Application User Interface', 20], ['Security and Restricting Access', 20],
         ['Application Automation', 20], ['Working with External Data', 10], ['Managing Applications', 10]] } },
@@ -66,5 +70,10 @@ export async function loadQuestionBank(certificationId = DEFAULT_CERTIFICATION, 
     ids.add(question.id);
   }
   if (!questions.length) throw new Error(`Ainda não há questões para ${certification.label}.`);
+  for (const question of questions) {
+    const entry = domainManifest.courses[certificationId]?.[question.id];
+    if (!entry || entry.signature !== domainSourceKey(question) || !Number.isInteger(entry.domain) || entry.domain < 0 || entry.domain >= certification.blueprint.domains.length) throw new Error(`Questão inválida: classificação de domínio ausente ou desatualizada (${question.id}).`);
+    question.blueprintDomain = entry.domain;
+  }
   return questions;
 }

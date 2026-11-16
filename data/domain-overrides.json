@@ -1,0 +1,960 @@
+{
+  "cis-df": {
+    "2-28": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "71a883a7"
+    },
+    "2-38": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "a2126842"
+    },
+    "2-49": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "2dfa8645"
+    },
+    "3-21": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "7b89185a"
+    },
+    "3-29": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "8bc2b6c6"
+    },
+    "3-39": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4f47c3ca"
+    },
+    "2-30": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "613961ce"
+    },
+    "2-73": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "560d3970"
+    },
+    "1-17": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "62161ce1"
+    },
+    "1-23": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "5be9d759"
+    },
+    "1-65": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d73b3689"
+    },
+    "2-57": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d6149cab"
+    },
+    "3-53": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "6785bf3c"
+    },
+    "1-4": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d62ce685"
+    },
+    "1-30": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "74046396"
+    },
+    "1-63": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "272857ac"
+    },
+    "1-71": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "bbf9ac80"
+    },
+    "2-66": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b90fc7c3"
+    },
+    "3-10": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "3c16cd56"
+    },
+    "3-18": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "a8ce1f53"
+    },
+    "1-11": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "9fddaf29"
+    },
+    "1-12": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b2da55fb"
+    },
+    "1-31": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "367bd3ac"
+    },
+    "1-36": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "964a8464"
+    },
+    "1-52": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "5df793fa"
+    },
+    "1-62": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "33e8e19f"
+    },
+    "1-75": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "0394393b"
+    },
+    "2-5": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "6e1d231e"
+    },
+    "2-15": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "444488cc"
+    },
+    "2-22": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "d517c644"
+    },
+    "2-23": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "57b2be55"
+    },
+    "2-31": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "7a0441e2"
+    },
+    "2-39": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "12b1a211"
+    },
+    "2-44": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "19a9a97e"
+    },
+    "2-46": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "e01fda3c"
+    },
+    "2-55": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "1db34a56"
+    },
+    "3-9": {
+      "domain": 4,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "7184a0f8"
+    },
+    "3-11": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "1f27e592"
+    },
+    "3-36": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "7f40a265"
+    }
+  },
+  "cis-em": {
+    "em-1uN2cmOCgG5kZkMxXiuX": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "8e2e636a"
+    },
+    "em-nxqHX4X8lVjo2iMlrpib": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "c1eee5f1"
+    },
+    "em-user-provided-5f81bbfca684d4f25e6a558f60d34ee4": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "dc4a8f35"
+    },
+    "em-udemy-631ac06bd439f6befe14": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "1b590b57"
+    },
+    "em-Q6mx1z5FRh1bTUrGO7lm": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "19a9cd25"
+    },
+    "em-XCgBZuJMlObwJme17WqN": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "92018538"
+    },
+    "em-0IrVChQ76HiLYaJYzhto": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "a29e00fc"
+    },
+    "em-jcBdiw2sJ5WyeIHWggkk": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "6d64939d"
+    },
+    "em-7KmYdUNF4MjymiT4kmzL": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "70000b0c"
+    },
+    "em-3qAKvwxjXe5o5TB9I8g1": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "c4ceddf1"
+    },
+    "em-UdPnB8g1IHmdJiBBaQMT": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "3a1e213e"
+    },
+    "em-uKJ0d5Mt2Sfq41xug9MB": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "096a6829"
+    },
+    "em-trE1s7K2YjbJnFa5k7bE": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "e14a15c7"
+    },
+    "em-user-provided-82a54852d2a4f7addc5c841096736044": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "f5c384f5"
+    },
+    "em-udemy-15e6ca755d3744a69cc5": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "63340743"
+    },
+    "em-hgIZ3Rpw3Hec8z1Xbe4k": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "617dc8b4"
+    },
+    "em-s1HA8Ri469DpLASViVjy": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4781a119"
+    },
+    "em-Sf2y9IillU4QqQr2KJIu": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "15943ea7"
+    },
+    "em-sntbw4DGELpcI5GXcPze": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "92f74350"
+    },
+    "em-zTEjoNTa0qXM4i3zoFN9": {
+      "domain": 5,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "c3078ee5"
+    },
+    "em-ZOzASY0FHOB5Ls0tN72C": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "1e2f24e1"
+    },
+    "em-B5WSYmL4pPJtr3gaQVBT": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "3da35ba2"
+    },
+    "em-PKn6vH2rVOAkbxSpXJGp": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "ab7c313a"
+    },
+    "em-h7QMqFU7dwosjHfm0lrU": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "e2735b00"
+    },
+    "em-ZolsrXIfajYfJp940WFr": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "0d5a9ffd"
+    },
+    "em-bWf9QUcYOdayLcMQRdFE": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "3220ae68"
+    },
+    "em-HOZMDiVwwd2yYYXfbd88": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "1197a3eb"
+    },
+    "em-KA7JwDPGA3UfrqHxJS49": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "0c4a0820"
+    },
+    "em-TgqT3VZWZONp2crifjy4": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "c555330c"
+    },
+    "em-WbtlvI10rz0dI6ykxJQS": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "5d13adef"
+    },
+    "em-Ll0qTEL1jx2pgrXlgf9Z": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "f2a6e738"
+    },
+    "em-4qKGNi3IYahA52Wdzm5t": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "de62dda8"
+    },
+    "em-kZ4irDU7dIsGGdGqpEoE": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "dd2641ec"
+    },
+    "em-GmkqGZvAKqKMOsSHjJJj": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "5a33a2a2"
+    },
+    "em-69LijwQvFoqsescmHZ5u": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "d59c10cd"
+    },
+    "em-84Ktgqdw9cktAX8igFNp": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "d59c10cd"
+    },
+    "em-ZsJPoU9pUqsc5xyWrhY9": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "efcf79d2"
+    },
+    "em-mSkAIohNX4eroUggSlbJ": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "acf5bd53"
+    },
+    "em-kkN3ErNI3gUsWPBhChp7": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b4d55626"
+    },
+    "em-sjNCrRo1Es4zSIKpFXR2": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "799b4ca7"
+    },
+    "em-rBd2pEqoGKlTo8CCzSGE": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b30d1aae"
+    },
+    "em-user-provided-126-alert-automation": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "de080b77"
+    },
+    "em-udemy-75ef526684ca8b7da3f1": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b2ddc60c"
+    },
+    "em-udemy-0fca46627408b59d4753": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "f179bd3c"
+    },
+    "em-udemy-c056afd14766afcd1c93": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "a992f3e9"
+    },
+    "em-udemy-358cd6dc861c76339c8d": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "1aacfd92"
+    },
+    "em-udemy-7ceffb022ef5a298d4eb": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "a309e1e1"
+    }
+  },
+  "cis-cad": {
+    "cad-QST0001136": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "297f25a6"
+    },
+    "cad-QST0001146": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b7e0344b"
+    },
+    "cad-QST0001096": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "7aa805e4"
+    },
+    "cad-QST0001095": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4c849bc9"
+    },
+    "cad-QST0001106": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "78834893"
+    },
+    "cad-QST0001042": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d2eb5b8e"
+    },
+    "cad-QST0001010": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "6715816d"
+    },
+    "cad-udemy-177291461": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "251160f1"
+    },
+    "cad-udemy-179087831": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "68f57ca4"
+    },
+    "cad-QST0001138": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "ab2db0b6"
+    },
+    "cad-QST0001137": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "cee76df4"
+    },
+    "cad-QST0001110": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "9b378eaf"
+    },
+    "cad-QST0001040": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "504f5c0b"
+    },
+    "cad-QST0001074": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d9359068"
+    },
+    "cad-QST0001013": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b662321f"
+    },
+    "cad-QST0001017": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "bb9f529e"
+    },
+    "cad-udemy-179087729": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "29b3ca86"
+    },
+    "cad-udemy-179087753": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "0fe87d45"
+    },
+    "cad-udemy-179087763": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "eb39610c"
+    },
+    "cad-udemy-179087765": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "3e670a2f"
+    },
+    "cad-udemy-179087779": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "deb2af30"
+    },
+    "cad-udemy-179087783": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "46fe5aee"
+    },
+    "cad-udemy-179087785": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "f9ed0604"
+    },
+    "cad-udemy-179087787": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4fecae15"
+    },
+    "cad-udemy-179087815": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "16fdd6cc"
+    },
+    "cad-udemy-179087835": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "e63902fc"
+    },
+    "cad-udemy-176678821": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "bc735c22"
+    },
+    "cad-QST0001035": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "20c9bbcb"
+    },
+    "cad-QST0001084": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "41440d35"
+    },
+    "cad-udemy-177291415": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "29ad0ded"
+    },
+    "cad-QST0001126": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d6bed7f0"
+    },
+    "cad-udemy-181445239": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d4d05e8b"
+    },
+    "cad-QST0001103": {
+      "domain": 5,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "53555e95"
+    },
+    "cad-QST0001090": {
+      "domain": 5,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "9634513c"
+    },
+    "cad-udemy-179087721": {
+      "domain": 5,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4a3b4fc2"
+    },
+    "cad-udemy-179087733": {
+      "domain": 5,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "2c8526cd"
+    },
+    "cad-QST0001030": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "41e32669"
+    },
+    "cad-QST0001140": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b2b57c05"
+    },
+    "cad-QST0001134": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "3afc4295"
+    },
+    "cad-QST0001094": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "499513ec"
+    },
+    "cad-QST0001087": {
+      "domain": 4,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "66485d7a"
+    },
+    "cad-QST0001039": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "5976a512"
+    },
+    "cad-QST0001051": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "41ee2365"
+    },
+    "cad-QST0001070": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "dff67155"
+    },
+    "cad-udemy-179087743": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "a50fa652"
+    },
+    "cad-udemy-179087755": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "478fc409"
+    },
+    "cad-udemy-179087769": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "b3363660"
+    },
+    "cad-udemy-179087771": {
+      "domain": 4,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "076e66f8"
+    },
+    "cad-udemy-179087833": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "3c1ca6f4"
+    }
+  },
+  "cis-csm": {
+    "csm-r4joJwCbskkBT9f8N8v1": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b7c70b1a"
+    },
+    "csm-OdtF9cgZQIYBqsF2QD6m": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "1e565d3c"
+    },
+    "csm-8pJYLlRlUjPlNpsBXeYt": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "cde31172"
+    },
+    "csm-fnYbCLPRjbd2XywUswuD": {
+      "domain": 0,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "78efb849"
+    },
+    "csm-A7m4DfyMoOgtCzwA96Uf": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "f86698a4"
+    },
+    "csm-QYk4gXlBsoKXjkT8D5KF": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b780173d"
+    },
+    "csm-PZkH9ugG4CJwmj2OtHf8": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "2f9aea4f"
+    },
+    "csm-0plrQfqfBeGyfjIvBbb9": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "1ef0690a"
+    },
+    "csm-DdcjZLFpxI2cOXa1OMG8": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "5de53413"
+    },
+    "csm-UNIWGGCMTt2yJL3VenLK": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "4dc4a86d"
+    },
+    "csm-vqealpjtV85g34cl8UBm": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "7e7ff5e5"
+    },
+    "csm-0H3a9qjtyqidIq9nvtp4": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "575caebc"
+    },
+    "csm-v5zTmC7G3KJJ13gkWL9j": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "ca87e021"
+    },
+    "csm-NtEKeA8ofZD2dytYE3qn": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "558fe8e2"
+    },
+    "csm-6KZKh9WwyIvJmNjaGUzW": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "953e8e79"
+    },
+    "csm-KggYlBVpFNqeZpYbn6HS": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "895a9e0a"
+    },
+    "csm-LytEVOdpALXhNp3KVMdW": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "bc7680e7"
+    },
+    "csm-oCfUPzvZCXQY3nwOgpo6": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d6a50fca"
+    },
+    "csm-KNbH4Gr6PBlNruIgeYmg": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d409799a"
+    },
+    "csm-cVe2IT92cvJeSnFylQwP": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "0572ef1e"
+    },
+    "csm-ZKapXAKtoaLKTHEho2rY": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "fed77173"
+    },
+    "csm-ADdB1lWEUaMDlkAQbr6W": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "b79b8d78"
+    },
+    "csm-zbmeVZFzMt4ToX3pQv5m": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "17a3ba76"
+    },
+    "csm-seeU3ND90vttouJU5tvb": {
+      "domain": 1,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "d7ae58d9"
+    },
+    "csm-JFIsldEQ5KQQBwtrwr85": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "9dbe8d33"
+    },
+    "csm-LPyrC9LCZIhhCBJ6EH0G": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "62d5163f"
+    },
+    "csm-JB2DmIYKziWmVvsIKsp7": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "bb6bdec3"
+    },
+    "csm-1bHcrEG9jZYzuvKngMbB": {
+      "domain": 2,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "e6bd0395"
+    },
+    "csm-aFrePAiRkUgQhpzU1qq2": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "e5cc9cc5"
+    },
+    "csm-76FFHIHp30TeSj33AD9g": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "019c3253"
+    },
+    "csm-F5Kbf7SvtG7ON8yVoVG4": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "51ff4410"
+    },
+    "csm-w9ZceSnksYPHfR62Q9ar": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "6f75dcc6"
+    },
+    "csm-Um3yb5zY8SnO4QgEmLb9": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "07a4af48"
+    },
+    "csm-Si3IP2nVjZJCgRvPgjvP": {
+      "domain": 3,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "de6fbcf8"
+    },
+    "csm-uAEoLiMil5AJdz53pkiW": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "9f59ef50"
+    },
+    "csm-XXEbyEpbIqKNYwIMRs3K": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "af70d8e1"
+    },
+    "csm-ytLCmF135SF3CxP7RB9a": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "7e5cc63c"
+    },
+    "csm-ZKETw4Jz0OhtguekksOU": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "6bbc2dad"
+    },
+    "csm-eyBdYP9eQh5EF7zgeC56": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "1d0caaa0"
+    },
+    "csm-RJXzZV0f0qkZ2zHM3jwc": {
+      "domain": 4,
+      "reason": "Reviewed the scenario and answer against the predominant blueprint learning objective.",
+      "signature": "2cbf9fe8"
+    },
+    "csm-XDZbkZYxMvGl54HDS4AE": {
+      "domain": 4,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "433b6f4f"
+    },
+    "csm-0ALLhbHGgXdm5ZpYHWb3": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "dcd2302d"
+    },
+    "csm-2rlfZorPi3IEbGo5JBvz": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "53c0d3b5"
+    },
+    "csm-gjaSapNbbsdty2zWzp5V": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "20d9b915"
+    },
+    "csm-wDbE95vTVUlAOvpUleH6": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "c0d4ddad"
+    },
+    "csm-y1R8vy4jRdsxSLQn3KLX": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "750983eb"
+    },
+    "csm-woufjyEXYpOMRz552nla": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "2cc2b3da"
+    },
+    "csm-osbeNxKIUUbI8LfOuGTY": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "eea557cf"
+    },
+    "csm-9m5Es8CdjFjOSLJQQ7kq": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "646716d7"
+    },
+    "csm-jtkx9uiRBVmEnFnASFlI": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "f9845bf6"
+    },
+    "csm-IC5j4Ek5TGIRupZ6MZ3L": {
+      "domain": 3,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "86c6f003"
+    },
+    "csm-sVSTYghcgY1VHHE7pkq1": {
+      "domain": 4,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "aafa8be1"
+    },
+    "csm-fdUk0qB4fLwOQaV57EsW": {
+      "domain": 1,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "54740225"
+    },
+    "csm-dBxFETjUqD2WPvkYI1TK": {
+      "domain": 2,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "c8e0810f"
+    },
+    "csm-YFgw4hmobMqQ5j0GwF06": {
+      "domain": 0,
+      "reason": "Reviewed the full scenario and correct-answer context against the predominant blueprint objective.",
+      "signature": "9c5e630e"
+    }
+  }
+}

@@ -1,23 +1,17 @@
 import { getMatchingQuestion, getMatchingAssignments, isMatchingComplete } from './matching.js';
 import { DEFAULT_CERTIFICATION, getCertification } from './certification.js';
 
-export function shuffle(items, random = Math.random) {
-  const result = [...items];
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-  return result;
-}
+import { shuffle, selectBlueprintQuestions, samplingSnapshot } from './sampling.js';
+export { shuffle };
 
 export function createAttempt(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
   const total = getCertification(certificationId).examSize;
   if (questions.length < total) throw new Error(`São necessárias pelo menos ${total} questões.`);
-  const chosen = shuffle(questions).slice(0, total);
+  const chosen = selectBlueprintQuestions(questions, total, certificationId);
   return {
     id: crypto.randomUUID(), user_id: userId, started_at: new Date().toISOString(),
     finished_at: null, score: null, total,
-    state: { certification: certificationId, ids: chosen.map(q => q.id), orders: Object.fromEntries(chosen.map(q => [q.id, shuffle(q.alternativas.map((_, i) => i))])), answers: {}, cursor: 0 }
+    state: { certification: certificationId, ...samplingSnapshot(chosen,certificationId), ids: chosen.map(q => q.id), orders: Object.fromEntries(chosen.map(q => [q.id, shuffle(q.alternativas.map((_, i) => i))])), answers: {}, cursor: 0 }
   };
 }
 

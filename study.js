@@ -1,3 +1,4 @@
+import { selectBlueprintQuestions, samplingSnapshot } from './sampling.js';
 import { shuffle, isCorrect } from './quiz.js';
 import { getMatchingQuestion, isMatchingComplete } from './matching.js';
 import { DEFAULT_CERTIFICATION, getCertification } from './certification.js';
@@ -20,8 +21,9 @@ export function createPractice(questions, userId, certificationId = questions[0]
   if (new Set(questions.map(question => question.id)).size !== questions.length) {
     throw new Error('O banco de questões contém identificadores repetidos.');
   }
-  const practice = createStudy(shuffle(questions).slice(0, total), userId, certificationId);
+  const practice = createStudy(selectBlueprintQuestions(questions, total, certificationId), userId, certificationId);
   practice.state.variant = 'practice';
+  Object.assign(practice.state,samplingSnapshot(practice.state.ids.map(id=>questions.find(q=>q.id===id)),certificationId));
   return practice;
 }
 

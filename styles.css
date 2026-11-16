@@ -90,3 +90,6 @@ main>.study-metrics{position:sticky;top:8px;z-index:2;box-shadow:0 3px 12px #153
 .practice-entry{background:#f0f5e6;border-color:#cfdfbb}.practice-entry>div{flex:1}
 .question-context{min-width:0;overflow-wrap:anywhere}
 .question-context p,.option [lang=en]{white-space:pre-wrap;overflow-wrap:anywhere}
+
+.question-domain{font-size:12px;line-height:1.5;overflow-wrap:anywhere}.blueprint table{font-size:12px}.blueprint td,.blueprint th{overflow-wrap:anywhere}
+.blueprint th:nth-child(2),.blueprint td:nth-child(2){white-space:nowrap;overflow-wrap:normal}

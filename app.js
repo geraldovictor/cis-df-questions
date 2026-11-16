@@ -1,3 +1,4 @@
+import { blueprintQuotas } from './sampling.js';
 import { renderAudioStudy } from './audio-study.js';
 import { renderFlashcards } from './flashcards.js';
 import { renderMemorization } from './memorization.js';
@@ -153,7 +154,8 @@ function renderDashboard() {
 
 function renderBlueprint() {
   const blueprint = certification.blueprint;
-  return `<details class="card blueprint"><summary>Blueprint oficial · ${certification.label} · ${certification.examSize} questões</summary><p>${blueprint.durationMinutes} minutos de prova · Atualizado em ${blueprint.updated} · Consultado em ${blueprint.verified.split('-').reverse().join('/')}.</p><table><caption>Domínios da prova oficial</caption><thead><tr><th scope="col">Domínio</th><th scope="col">Peso</th></tr></thead><tbody>${blueprint.domains.map(([name, weight]) => `<tr><td lang="en">${esc(name)}</td><td>${weight}%</td></tr>`).join('')}</tbody></table><p class="muted">Os percentuais descrevem a prova oficial. Este simulado sorteia questões do banco disponível.</p><a href="${esc(blueprint.url)}" target="_blank" rel="noopener noreferrer">Consultar blueprint na ServiceNow ↗</a></details>`;
+  const quotas = blueprintQuotas(certification.id);
+  return `<details class="card blueprint"><summary>Blueprint oficial · ${certification.label} · ${certification.examSize} questões</summary><p>${blueprint.durationMinutes} minutos de prova · Atualizado em ${blueprint.updated} · Consultado em ${blueprint.verified.split('-').reverse().join('/')}.</p><table><caption>Composição de cada novo simulado e treino</caption><thead><tr><th scope="col">Domínio</th><th scope="col">Peso</th><th scope="col">Por tentativa</th><th scope="col">No banco</th></tr></thead><tbody>${quotas.map(({domain,name,weight,count}) => `<tr><td lang="en">${esc(name)}</td><td>${weight}%</td><td>${count}</td><td>${questions.filter(q=>q.blueprintDomain===domain).length}</td></tr>`).join('')}</tbody></table><p class="muted">O sorteio segue os pesos oficiais, com arredondamento para manter o total exato. Questões e alternativas são embaralhadas. O domínio de cada questão foi atribuído pelo conteúdo; essa classificação não é fornecida pelo exame oficial. Tentativas já iniciadas mantêm sua composição.</p><a href="${esc(blueprint.url)}" target="_blank" rel="noopener noreferrer">Consultar blueprint na ServiceNow ↗</a></details>`;
 }
 
 function studyCacheKey(practice = false) { return certificationStorageKey(practice ? 'practice60-pending' : 'study-pending', certification.id, user.id); }

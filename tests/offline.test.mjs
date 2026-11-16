@@ -5,7 +5,7 @@ import { createAttempt } from '../quiz.js';
 import { createStudy } from '../study.js';
 import { readFile } from 'node:fs/promises';
 
-const questions = JSON.parse(await readFile(new URL('../questoes-1-corrigida (1).json', import.meta.url))).map((q,i)=>({...q,id:`1-${i+1}`}));
+const questions = (await Promise.all(['questoes-1-corrigida (1).json','questoes-2-corrigida-v2 (1).json','questoes-3-corrigida-v2 (1).json'].map(async(file,f)=>JSON.parse(await readFile(new URL('../'+file,import.meta.url))).map((q,i)=>({...q,id:`${f+1}-${i+1}`}))))).flat();
 function memoryStorage() {
   const data = new Map();
   return {getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)};

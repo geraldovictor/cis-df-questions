@@ -1,9 +1,11 @@
-import { DEFAULT_CERTIFICATION } from './certification.js';
+import { DEFAULT_CERTIFICATION, getCertification } from './certification.js';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 export function renderQuestionContext(question) {
-  const note = question.observacao ? `<details class="notice" lang="pt-BR"><summary>Observação do material enviado</summary><p>${esc(question.observacao)}</p></details>` : '';
+  const name = Number.isInteger(question.blueprintDomain) ? getCertification(question.certification).blueprint.domains[question.blueprintDomain]?.[0] : null;
+  const domain = name ? `<p class="muted question-domain">Domínio · ${esc(name)}</p>` : '';
+  const note = domain + (question.observacao ? `<details class="notice" lang="pt-BR"><summary>Observação do material enviado</summary><p>${esc(question.observacao)}</p></details>` : '');
   const context = question.contexto;
   if (!context) return note;
   const table = context.tabela;
