@@ -51,19 +51,26 @@ def question_bank(certification):
         raise ValueError(f'Question bank needs unique, stable IDs: {source}')
     if any(question.get('certification', certification) != certification for question in questions):
         raise ValueError(f'Question bank contains another certification: {source}')
-    return list(zip(identifiers, questions))
+    return [(identifier, question) for identifier, question in zip(identifiers, questions)
+            if question.get('audio_disponivel', True) is not False]
 
 
-async def main(certification='cis-df', concurrency=16):
+async def main(certification='cis-df', concurrency=16, refresh_ids=()):
     import edge_tts
 
     if concurrency < 1:
         raise ValueError('Concurrency must be at least 1.')
+    selected_banks = [(selected, question_bank(selected))
+                      for selected in CERTIFICATIONS if certification == 'all' or selected == certification]
+    refresh_ids = set(refresh_ids)
+    available_ids = {identifier for _, bank in selected_banks for identifier, _ in bank}
+    if refresh_ids - available_ids:
+        raise ValueError('Refresh IDs do not belong to the selected certification.')
     semaphore = asyncio.Semaphore(concurrency)
     async def generate(folder, identifier, question):
         async with semaphore:
             target = folder / f'{identifier}.mp3'
-            if target.exists() and target.stat().st_size > 1000:
+            if target.exists() and target.stat().st_size > 1000 and identifier not in refresh_ids:
                 return
             temporary = target.with_suffix('.mp3.part')
             for attempt in range(4):
@@ -80,8 +87,7 @@ async def main(certification='cis-df', concurrency=16):
                         raise
                     await asyncio.sleep(2 ** (attempt + 1))
     tasks = []
-    for selected in CERTIFICATIONS if certification == 'all' else (certification,):
-        bank = question_bank(selected)
+    for selected, bank in selected_banks:
         folder = ROOT / 'audio' if selected == 'cis-df' else ROOT / 'audio' / selected
         folder.mkdir(parents=True, exist_ok=True)
         if not bank:
@@ -98,5 +104,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate neural English recordings for a certification.')
     parser.add_argument('--certification', choices=(*CERTIFICATIONS, 'all'), default='cis-df')
     parser.add_argument('--concurrency', type=int, default=16, help='Maximum simultaneous voice requests; reduce after service errors.')
+    parser.add_argument('--refresh-id', action='append', default=[], help='Regenerate an existing recording by its stable question ID; may be repeated.')
     args = parser.parse_args()
-    asyncio.run(main(args.certification, args.concurrency))
+    asyncio.run(main(args.certification, args.concurrency, args.refresh_id))

@@ -6,14 +6,14 @@ import { resolve, extname, sep } from 'node:path';
 import assert from 'node:assert/strict';
 import { loadQuestionBank } from '../certification.js';
 import { createAttempt } from '../quiz.js';
-import { createStudy, createPractice, studyProgress } from '../study.js';
+import { createStudy, createPractice, isPracticeStudy, confirmStudyAnswer, studyProgress } from '../study.js';
 import { getMatchingQuestion } from '../matching.js';
 
 const { chromium } = await import(pathToFileURL(resolve(process.env.PLAYWRIGHT_PATH)).href);
 const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75 },
-  { id: 'cis-em', count: 118, examSize: 30 },
+  { id: 'cis-em', count: 137, examSize: 30 },
   { id: 'cis-cad', count: 151, examSize: 60 },
   { id: 'cis-csm', count: 240, examSize: 60 }
 ];
@@ -35,7 +35,7 @@ const url = `http://127.0.0.1:${server.address().port}/`;
 const localKey = certification => `${certification}-offline-progress-v1`;
 const saved = (page, key) => page.evaluate(key => JSON.parse(localStorage.getItem(key)), key);
 const progress = (page, course) => saved(page, localKey(course.id));
-const isPractice = record => record.state.variant === 'practice60';
+const isPractice = isPracticeStudy;
 const ongoingPractice = local => local.studies.find(record => !record.finished_at && isPractice(record));
 const ongoingFullStudy = local => local.studies.find(record => !record.finished_at && !isPractice(record));
 const errors = [];
@@ -63,9 +63,9 @@ async function selectAnswer(page, question, correct = true) {
   for (const index of selected) await page.locator(`[name="study-answer"][value="${index}"]`).check();
 }
 
-async function assertPracticeScreen(page) {
-  assert.equal(await page.locator('[data-study-jump]').count(), 60);
-  assert.match(await page.locator('.quiz-heading .tag').textContent(), /Treino.*60/);
+async function assertPracticeScreen(page, total) {
+  assert.equal(await page.locator('[data-study-jump]').count(), total);
+  assert.match(await page.locator('.quiz-heading .tag').textContent(), new RegExp(`Treino.*${total}`));
   assert.equal(await page.locator('time,[role="timer"],[data-timer],#timer,.timer').count(), 0, 'Practice has no clock');
 }
 
@@ -97,12 +97,13 @@ async function assertOfflinePractice() {
     await page.locator('#back').click();
     const before = await progress(page, course);
     await page.locator('#practice-start').click();
-    await assertPracticeScreen(page);
+    await assertPracticeScreen(page, course.examSize);
     let practice = ongoingPractice(await progress(page, course));
     assert.equal(practice.state.mode, 'study');
     assert.equal(practice.state.certification, course.id);
-    assert.equal(practice.total, 60);
-    assert.equal(new Set(practice.state.ids).size, 60);
+    assert.equal(practice.total, course.examSize);
+    assert.equal(practice.state.variant, 'practice');
+    assert.equal(new Set(practice.state.ids).size, course.examSize);
     for (const id of practice.state.ids) assert.deepEqual([...practice.state.orders[id]].sort((a, b) => a - b), maps[course.id][id].alternativas.map((_, index) => index));
     const first = maps[course.id][practice.state.ids[0]];
     await selectAnswer(page, first);
@@ -123,7 +124,7 @@ async function assertOfflinePractice() {
     await page.locator('[data-study-jump="0"]').click();
     assert.equal(await page.locator('#study-check').count(), 0, 'A confirmed answer cannot be counted twice');
     practice = ongoingPractice(await progress(page, course));
-    assert.deepEqual(studyProgress(practice, maps[course.id]), { answered: 2, correct: 1, wrong: 1, remaining: 58, accuracy: 50 });
+    assert.deepEqual(studyProgress(practice, maps[course.id]), { answered: 2, correct: 1, wrong: 1, remaining: course.examSize - 2, accuracy: 50 });
     const draftIndex = practice.state.ids.findIndex((id, index) => index > wrongIndex && !practice.state.confirmed[id]);
     assert.ok(draftIndex >= 0);
     await page.locator(`[data-study-jump="${draftIndex}"]`).click();
@@ -147,8 +148,8 @@ async function assertOfflinePractice() {
     const paused = snapshots[course.id], expected = ongoingPractice(paused);
     assert.deepEqual(await progress(page, course), paused, 'Offline course switching preserves all three modes');
     await page.locator('#practice-start').click();
-    await assertPracticeScreen(page);
-    assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), new RegExp(`Questão ${expected.state.cursor + 1} de 60`));
+    await assertPracticeScreen(page, course.examSize);
+    assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), new RegExp(`Questão ${expected.state.cursor + 1} de ${course.examSize}`));
     assert.deepEqual(ongoingPractice(await progress(page, course)), expected);
     if (course.id === 'cis-csm') {
       await page.setViewportSize({ width: 390, height: 844 });
@@ -158,18 +159,18 @@ async function assertOfflinePractice() {
     }
     await page.locator('#study-finish').click();
     await page.locator('#study-confirm-finish').click();
-    assert.match(await page.locator('.result-banner').textContent(), /60/);
+    assert.match(await page.locator('.result-banner').textContent(), new RegExp(`Treino de ${course.examSize}`));
     const finished = (await progress(page, course)).studies.find(record => record.id === expected.id);
     assert.ok(finished.finished_at);
     assert.equal(finished.score, 1);
-    assert.equal(finished.total, 60);
+    assert.equal(finished.total, course.examSize);
     assert.equal(studyProgress(finished, maps[course.id]).answered, 2, 'An unconfirmed draft is not graded');
     await page.locator('#study-back').click();
     assert.equal(await page.locator('[data-practice-review]').count(), 1);
     assert.equal(await page.locator('[data-study-review]').count(), 0, 'A practice result is absent from full-study history');
     assert.equal(await page.locator('[data-review]').count(), 0);
     await page.locator('[data-practice-review]').click();
-    assert.equal(await page.locator('#study-reviews .review-item').count(), 60);
+    assert.equal(await page.locator('#study-reviews .review-item').count(), course.examSize);
     await page.locator('#study-back').click();
     await page.locator('#study-start').click();
     assert.equal(await page.locator('[data-study-jump]').count(), course.count);
@@ -181,7 +182,7 @@ async function assertOfflinePractice() {
     assert.equal(await page.locator('[data-practice-review]').count(), 1);
     await page.locator('#practice-start').click();
     const fresh = ongoingPractice(await progress(page, course));
-    assert.equal(fresh.total, 60);
+    assert.equal(fresh.total, course.examSize);
     assert.notEqual(fresh.id, expected.id);
     assert.equal(Object.keys(fresh.state.confirmed).length, 0);
     await page.locator('#study-back').click();
@@ -193,6 +194,58 @@ async function assertOfflinePractice() {
   await context.close();
 }
 
+async function assertLegacyPracticeSizes() {
+  for (const course of courses.filter(item => item.examSize !== 60)) {
+    const questions = banks[course.id], legacy = createStudy(questions.slice(0, 60), 'offline-guest', course.id);
+    legacy.state.variant = 'practice60';
+    confirmStudyAnswer(legacy, maps[course.id][legacy.state.ids[0]], maps[course.id][legacy.state.ids[0]].alternativas.flatMap((answer, index) => answer.correta ? [index] : []));
+    legacy.state.cursor = 3;
+    const full = createStudy(questions, 'offline-guest', course.id), done = structuredClone(legacy);
+    done.id = `legacy-finished-${course.id}`; done.finished_at = new Date().toISOString(); done.score = 1;
+    const seed = { attempts: [], studies: [legacy, full, done] };
+    const context = await browser.newContext({ serviceWorkers: 'block' });
+    await context.route('https://**/*', route => route.abort());
+    await context.addInitScript(({ certification, seed }) => {
+      if (localStorage.getItem('__legacyPracticeSeeded')) return;
+      localStorage.setItem('__legacyPracticeSeeded', 'true');
+      localStorage.setItem(`${certification}-offline-progress-v1`, JSON.stringify(seed));
+    }, { certification: course.id, seed });
+    const page = await context.newPage();
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(`${url}?cert=${course.id}&mode=offline`);
+    await page.locator('#practice-start').waitFor();
+    assert.match(await page.locator('#practice-start').textContent(), new RegExp(`Começar treino de ${course.examSize}`));
+    assert.equal(await page.locator('[data-practice-resume]').count(), 1);
+    assert.equal(await page.locator('[data-practice-review]').count(), 1);
+    assert.equal(await page.locator('[data-study-review]').count(), 0);
+    await page.locator(`[data-practice-resume="${legacy.id}"]`).click();
+    await assertPracticeScreen(page, 60);
+    assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 4 de 60/);
+    await page.locator('#study-back').click();
+    assert.deepEqual((await progress(page, course)).studies.find(record => record.id === legacy.id), legacy);
+    await page.locator('#practice-start').click();
+    await assertPracticeScreen(page, course.examSize);
+    const fresh = (await progress(page, course)).studies.find(record => record.state.variant === 'practice' && !record.finished_at);
+    assert.equal(fresh.total, course.examSize);
+    assert.notEqual(fresh.id, legacy.id);
+    assert.deepEqual((await progress(page, course)).studies.find(record => record.id === full.id), full);
+    await page.locator('#study-back').click();
+    await page.reload();
+    await page.locator('#practice-start').waitFor();
+    assert.match(await page.locator('#practice-start').textContent(), new RegExp(`Continuar treino de ${course.examSize}`));
+    await page.locator(`[data-practice-resume="${legacy.id}"]`).click();
+    await page.locator('#study-finish').click();
+    await page.locator('#study-confirm-finish').click();
+    assert.match(await page.locator('.result-banner .eyebrow').textContent(), /Treino de 60 questões/);
+    assert.equal(await page.locator('#study-reviews .review-item').count(), 60);
+    await page.locator('#study-back').click();
+    assert.equal(await page.locator('[data-practice-resume]').count(), 0);
+    assert.equal(await page.locator('[data-practice-review]').count(), 2);
+    assert.equal((await progress(page, course)).studies.find(record => record.id === fresh.id).total, course.examSize);
+    await context.close();
+  }
+}
+
 async function assertAccountPractice() {
   const accountId = 'practice-account', fixtures = { attempts: [], study_sessions: [] }, pending = {}, guest = {};
   const ongoing = {};
@@ -201,6 +254,7 @@ async function assertAccountPractice() {
     const quiz = createAttempt(questions, accountId, course.id);
     fixtures.attempts.push(quiz);
     const full = createStudy(questions, accountId, course.id), practice = createPractice(questions, accountId, course.id);
+    if (course.examSize === 60) practice.state.variant = 'practice60';
     const finishedFull = createStudy(questions, accountId, course.id), finishedPractice = createPractice(questions, accountId, course.id);
     finishedFull.finished_at = finishedPractice.finished_at = new Date().toISOString();
     finishedFull.score = finishedPractice.score = 0;
@@ -235,11 +289,11 @@ async function assertAccountPractice() {
       },from(table){return {
         select(){return {async order(){return {data:JSON.parse(localStorage.getItem('__practiceRows-'+table)||'[]'),error:null};}};},
         async upsert(data){
-          if(data.state.variant==='practice60'&&localStorage.getItem('__practiceFail')==='true'){
+          if(['practice','practice60'].includes(data.state.variant)&&localStorage.getItem('__practiceFail')==='true'){
             localStorage.setItem('__practiceFailedConfirmed',String(Object.keys(data.state.confirmed).length>0));
             return {error:{message:'Simulated practice write failure'}};
           }
-          if(data.state.variant==='practice60'&&localStorage.getItem('__practiceHold')==='true')await new Promise(resolve=>{window.__practiceRelease=resolve;});
+          if(['practice','practice60'].includes(data.state.variant)&&localStorage.getItem('__practiceHold')==='true')await new Promise(resolve=>{window.__practiceRelease=resolve;});
           const rows=JSON.parse(localStorage.getItem('__practiceRows-'+table)||'[]');
           const index=rows.findIndex(row=>row.id===data.id);
           if(index<0)rows.push(data);else rows[index]=data;
@@ -270,8 +324,8 @@ async function assertAccountPractice() {
       assert.ok(await saved(page, `${other.id}-practice60-pending-${accountId}`));
     }
     await page.locator('#practice-start').click();
-    await assertPracticeScreen(page);
-    assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), new RegExp(`Questão ${index + 4} de 60`));
+    await assertPracticeScreen(page, course.examSize);
+    assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), new RegExp(`Questão ${index + 4} de ${course.examSize}`));
     await page.locator('#study-back').click();
     await page.locator('#study-start').click();
     assert.equal(await page.locator('[data-study-jump]').count(), course.count);
@@ -329,7 +383,7 @@ async function assertAccountPractice() {
     await page.locator('#practice-start').click();
     await page.waitForFunction(() => typeof window.__practiceRelease === 'function');
     const starting = await saved(page, pendingKey);
-    assert.equal(starting.state.variant, 'practice60');
+    assert.equal(starting.state.variant, 'practice');
     if (destination === 'memory') {
       await page.locator('#memory-start').click();
       await page.locator('[data-memory-reveal]').waitFor();
@@ -361,7 +415,7 @@ try {
   browser = await chromium.launch({ executablePath: process.env.BROWSER_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
   const scope = process.env.PRACTICE_BROWSER_SCOPE || 'all';
   assert.ok(['all', 'offline', 'account'].includes(scope));
-  if (scope !== 'account') await assertOfflinePractice();
+  if (scope !== 'account') { await assertOfflinePractice(); await assertLegacyPracticeSizes(); }
   if (scope !== 'offline') await assertAccountPractice();
   assert.deepEqual(errors, []);
   console.log(`PASS: practice browser checks (${scope}) for CIS-DF/CIS-EM/CAD/CIS-CSM`);

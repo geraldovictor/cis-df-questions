@@ -226,10 +226,13 @@ function renderStudyDashboard() {
 function renderPracticeDashboard() {
   const container = document.querySelector('#practice-dashboard');
   const practice = studies.filter(isPracticeStudy);
-  const ongoing = practice.find(attempt => !attempt.finished_at), done = practice.filter(attempt => attempt.finished_at);
-  container.innerHTML = `<div class="card study-entry practice-entry"><div><span class="eyebrow">Treino · Correção imediata</span><h2>60 questões para aprender na hora.</h2><p class="muted">60 questões aleatórias, sem repetição e sem cronômetro. Confirme cada resposta para ver o gabarito e as explicações disponíveis. Você pode pausar e continuar depois.</p></div><button id="practice-start" class="primary" ${studyError ? 'disabled' : ''}>${ongoing ? 'Continuar treino' : 'Começar treino de 60'} →</button></div>${studyError ? '<p class="notice">Não foi possível carregar os treinos. Use “Tentar carregar estudos” abaixo para tentar novamente.</p>' : ''}${done.length ? `<div class="section-head"><h2>Histórico de treinos de 60</h2><p>Resultados deste modo de prática</p></div><div class="card">${done.map(attempt => {
+  const sampleSize = certification.examSize;
+  const ongoing = practice.find(attempt => !attempt.finished_at && attempt.total === sampleSize);
+  const olderOngoing = practice.filter(attempt => !attempt.finished_at && attempt.total !== sampleSize);
+  const done = practice.filter(attempt => attempt.finished_at);
+  container.innerHTML = `<div class="card study-entry practice-entry"><div><span class="eyebrow">Treino · Correção imediata</span><h2>${sampleSize} questões para aprender na hora.</h2><p class="muted">${sampleSize} questões aleatórias, sem repetição e sem cronômetro. Confirme cada resposta para ver o gabarito e as explicações disponíveis. Você pode pausar e continuar depois.</p></div><button id="practice-start" class="primary" ${studyError ? 'disabled' : ''}>${ongoing ? `Continuar treino de ${sampleSize}` : `Começar treino de ${sampleSize}`} →</button></div>${studyError ? '<p class="notice">Não foi possível carregar os treinos. Use “Tentar carregar estudos” abaixo para tentar novamente.</p>' : ''}${olderOngoing.length ? `<section class="card"><h3>Treinos anteriores em andamento</h3>${olderOngoing.map(attempt => `<div class="history-row"><div class="date">Treino de ${attempt.total} questões<small>${date(attempt.started_at)}</small></div><button class="quiet" data-practice-resume="${esc(attempt.id)}" ${studyError?'disabled':''}>Continuar treino anterior de ${attempt.total} →</button></div>`).join('')}</section>` : ''}${done.length ? `<div class="section-head"><h2>Histórico de treinos</h2><p>Resultados deste modo de prática</p></div><div class="card">${done.map(attempt => {
     const progress = studyProgress(attempt, byId);
-    return `<div class="history-row"><span class="score">${progress.accuracy}%</span><div class="date">Treino de 60 · ${progress.correct}/${progress.answered} acertos nas respondidas<small>${date(attempt.finished_at)} · ${progress.answered}/${attempt.total} questões confirmadas</small></div><button class="quiet" data-practice-review="${esc(attempt.id)}">Ver treino →</button></div>`;
+    return `<div class="history-row"><span class="score">${progress.accuracy}%</span><div class="date">Treino de ${attempt.total} · ${progress.correct}/${progress.answered} acertos nas respondidas<small>${date(attempt.finished_at)} · ${progress.answered}/${attempt.total} questões confirmadas</small></div><button class="quiet" data-practice-review="${esc(attempt.id)}">Ver treino →</button></div>`;
   }).join('')}</div>` : ''}`;
   on('#practice-start', 'click', async event => {
     if (busy) return; busy = true; clearMessage();
@@ -248,7 +251,13 @@ function renderPracticeDashboard() {
     } catch (error) { if (user === owner && button.isConnected) fail(error); } finally { busy = false; }
   });
   container.querySelectorAll('[data-practice-review]').forEach(element => element.addEventListener('click', () => {
+    if (busy) return;
     active = practice.find(attempt => attempt.id === element.dataset.practiceReview); openStudy();
+  }));
+  container.querySelectorAll('[data-practice-resume]').forEach(element => element.addEventListener('click', () => {
+    if (busy) return;
+    clearMessage();
+    active = olderOngoing.find(attempt => attempt.id === element.dataset.practiceResume); openStudy();
   }));
 }
 

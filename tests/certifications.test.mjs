@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
 import { certifications, getCertification, certificationStorageKey, getRecordCertification, loadQuestionBank } from '../certification.js';
 import { createAttempt, scoreAttempt } from '../quiz.js';
-import { createStudy, confirmStudyAnswer, studyProgress } from '../study.js';
+import { createStudy, createPractice, isPracticeStudy, confirmStudyAnswer, studyProgress } from '../study.js';
 import { validateMemoryAids } from '../memorization.js';
 import { renderQuestionContext } from '../question-content.js';
 
@@ -12,7 +12,7 @@ const root = new URL('../', import.meta.url);
 const fetchFile = async url => ({ ok: true, json: async () => JSON.parse(await readFile(url, 'utf8')) });
 
 test('every certification loads its complete bank, valid memory aids and independent results', async () => {
-  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 118, 30], ['cis-cad', 151, 60], ['cis-csm', 240, 60]]) {
+  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 137, 30], ['cis-cad', 151, 60], ['cis-csm', 240, 60]]) {
     const questions = await loadQuestionBank(id, fetchFile);
     assert.equal(questions.length, size);
     assert.equal(new Set(questions.map(question => question.id)).size, size);
@@ -28,6 +28,11 @@ test('every certification loads its complete bank, valid memory aids and indepen
     assert.equal(quiz.state.certification, id);
     for (const questionId of quiz.state.ids) quiz.state.answers[questionId] = byId[questionId].alternativas.flatMap((answer, i) => answer.correta ? [i] : []);
     assert.equal(scoreAttempt(quiz, byId), examSize);
+    const practice = createPractice(questions, 'user', id);
+    assert.equal(practice.total, examSize);
+    assert.equal(practice.state.ids.length, examSize);
+    assert.equal(new Set(practice.state.ids).size, examSize);
+    assert.equal(isPracticeStudy(practice), true);
     const study = createStudy(questions, 'user');
     assert.equal(study.total, size);
     const first = byId[study.state.ids[0]];
@@ -35,6 +40,11 @@ test('every certification loads its complete bank, valid memory aids and indepen
     assert.equal(studyProgress(study, byId).correct, 1);
     if (id === 'cis-df') assert.ok(byId['2-50']);
   }
+});
+
+test('legacy sixty-question practices remain identifiable while full studies stay separate', () => {
+  assert.equal(isPracticeStudy({ state: { mode: 'study', variant: 'practice60' } }), true);
+  assert.equal(isPracticeStudy({ state: { mode: 'study' } }), false);
 });
 
 test('legacy results belong only to CIS-DF and storage keys retain user and mode boundaries', () => {

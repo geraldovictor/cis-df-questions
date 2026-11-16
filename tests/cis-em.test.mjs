@@ -12,13 +12,15 @@ const questions = JSON.parse(await readFile(new URL('data/cis-em/questions.json'
 const aids = JSON.parse(await readFile(new URL('data/cis-em/memory-aids.json', root), 'utf8'));
 const report = JSON.parse(await readFile(new URL('data/cis-em/import-report.json', root), 'utf8'));
 const supplemental = JSON.parse(await readFile(new URL('data/cis-em/supplemental-import-report.json', root), 'utf8'));
+const udemy = JSON.parse(await readFile(new URL('data/cis-em/udemy-import-report.json', root), 'utf8'));
+const enrichments = new Map(udemy.enrichments.map(entry => [entry.id, entry]));
 const previousQuestionsHash = 'ff8434b804a62f16a6e930afcc6ef0a58ba40d1226e1b47bb2aa5182c5e656b2';
 const previousMemoryHash = '4e5e2197c47a3e15dd953b7b895bb1f599c5335605e9f6aaa16b53406c06febd';
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 
-test('EM retains all 118 unique records and the supplied primary multiple-choice answers', () => {
-  assert.equal(questions.length, 118);
-  assert.equal(new Set(questions.map(q => q.id)).size, 118);
+test('EM retains all 137 unique records and the supplied primary multiple-choice answers', () => {
+  assert.equal(questions.length, 137);
+  assert.equal(new Set(questions.map(q => q.id)).size, 137);
   for (const q of questions) {
     assert.equal(q.certification, 'cis-em');
     assert.ok(q.id.startsWith('em-'));
@@ -30,7 +32,7 @@ test('EM retains all 118 unique records and the supplied primary multiple-choice
     assert.ok(isCorrect(q, expected), q.id);
     assert.equal(isCorrect(q, []), false, q.id);
   }
-  assert.equal(questions.filter(q => q.fonte.tipo === 'user_provided').length, 9);
+  assert.equal(questions.slice(0, 118).filter(q => q.fonte.tipo === 'user_provided').length, 9);
 });
 
 test('appending user questions 126 and 127 preserves all previous questions and memory aids', () => {
@@ -39,12 +41,13 @@ test('appending user questions 126 and 127 preserves all previous questions and 
   assert.equal(supplemental.resulting_total, 118);
   assert.equal(supplemental.previous_questions_sha256, previousQuestionsHash);
   assert.equal(supplemental.previous_memory_aids_sha256, previousMemoryHash);
-  const previousQuestions = questions.slice(0, 116);
+  const previousQuestions = questions.slice(0, 116).map(q => enrichments.get(q.id)?.before_question || q);
   const previousIds = new Set(previousQuestions.map(q => q.id));
-  const previousAids = Object.fromEntries(Object.entries(aids).filter(([id]) => previousIds.has(id)));
+  const previousAids = Object.fromEntries(Object.entries(aids).filter(([id]) => previousIds.has(id))
+    .map(([id, aid]) => [id, enrichments.get(id)?.before_memory_aid || aid]));
   assert.equal(hash(previousQuestions), previousQuestionsHash);
   assert.equal(hash(previousAids), previousMemoryHash);
-  assert.deepEqual(questions.slice(116).map(q => q.id), [
+  assert.deepEqual(questions.slice(116, 118).map(q => q.id), [
     'em-user-provided-126-alert-automation',
     'em-user-provided-127-pull-connector'
   ]);
@@ -88,9 +91,9 @@ test('the pull-connector question requires all four supplied answers and rejects
 });
 
 test('both appended questions have current memory aids and playable-size MP3 assets', async () => {
-  const added = questions.slice(116);
+  const added = questions.slice(116, 118);
   assert.equal(validateMemoryAids(aids, added), aids);
-  for (const q of added) {
+  for (const q of added.filter(question => question.audio_disponivel !== false)) {
     const bytes = await readFile(new URL(questionAudioPath(q), root));
     assert.ok(bytes.length > 1000, q.id);
     assert.ok(bytes.subarray(0, 3).toString() === 'ID3' || (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0), q.id);
@@ -124,14 +127,14 @@ test('all source figures are local PNGs and image questions have accessible text
   }
 });
 
-test('source disagreements and incomplete options remain explicit in both bank and memory aids', () => {
+test('historical source disagreements and missing options stay traceable while current aids retain current observations', () => {
   assert.deepEqual(report.gabaritos_divergentes_colecao, [19, 26, 56, 60, 63, 102, 104, 109]);
   for (const number of report.gabaritos_divergentes_colecao) {
     const q = questions[number - 1];
-    assert.match(q.observacao, /gabaritos divergentes/);
+    assert.match((enrichments.get(q.id)?.before_question || q).observacao, /gabaritos divergentes/);
     assert.equal(aids[q.id].observacao, q.observacao);
   }
-  const incomplete = questions[21];
+  const incomplete = enrichments.get(questions[21].id).before_question;
   assert.ok(incomplete.alternativas.slice(0, 2).every(option => /content absent/.test(option.texto)));
   assert.equal(incomplete.fonte.resposta, 'B');
   assert.match(incomplete.observacao, /não foi incluído/);

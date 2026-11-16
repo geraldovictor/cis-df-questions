@@ -40,17 +40,19 @@ export async function prepareOffline() {
 
 let downloading = false;
 export function renderOfflineTools(root, questions, preparation) {
-  root.innerHTML = `<div class="notice offline-notice"><strong>Estudo sem login</strong><p>Simulados, estudos e flashcards ficam neste navegador. Limpar os dados do site apaga o progresso local. Os resultados offline ficam separados da sua conta.</p><p data-offline-status role="status">Preparando as ${questions.length} questões para acesso sem internet…</p><button type="button" class="secondary" data-offline-audio>Salvar áudios para ouvir offline</button><p data-offline-audio-status role="status">Os áudios são opcionais e precisam ser salvos com internet.</p></div>`;
+  const available = questions.filter(question => question.audio_disponivel !== false);
+  root.innerHTML = `<div class="notice offline-notice"><strong>Estudo sem login</strong><p>Simulados, estudos e flashcards ficam neste navegador. Limpar os dados do site apaga o progresso local. Os resultados offline ficam separados da sua conta.</p><p data-offline-status role="status">Preparando as ${questions.length} questões para acesso sem internet…</p>${available.length ? '<button type="button" class="secondary" data-offline-audio>Salvar áudios para ouvir offline</button>' : ''}<p data-offline-audio-status role="status">${available.length ? `Os áudios são opcionais e precisam ser salvos com internet.${available.length < questions.length ? ` ${available.length} gravações disponíveis; áudio indisponível para ${questions.length - available.length} ${questions.length - available.length === 1 ? 'questão' : 'questões'}.` : ''}` : 'Áudio indisponível. Nenhuma gravação está disponível para download.'}</p></div>`;
   preparation.then(() => {
     root.querySelector('[data-offline-status]').textContent = `${questions.length} questões e o site estão prontos para abrir sem internet.`;
   }).catch(() => {
     root.querySelector('[data-offline-status]').textContent = 'Ainda não foi possível preparar o site offline. Conecte-se à internet e recarregue antes de sair.';
   });
+  if (!available.length) return;
   const button = root.querySelector('[data-offline-audio]');
   if ('caches' in window) caches.open(AUDIO_CACHE).then(async cache => {
     const saved = new Set((await cache.keys()).map(request => request.url));
-    const count = questions.filter(q => saved.has(new URL(questionAudioPath(q), import.meta.url).href)).length;
-    if (count && !downloading) root.querySelector('[data-offline-audio-status]').textContent = `${count} de ${questions.length} áudios disponíveis offline.`;
+    const count = available.filter(q => saved.has(new URL(questionAudioPath(q), import.meta.url).href)).length;
+    if (count && !downloading) root.querySelector('[data-offline-audio-status]').textContent = `${count} de ${available.length} áudios disponíveis offline.`;
   }).catch(()=>{});
   button.onclick = async () => {
     if (downloading) return;
@@ -61,16 +63,16 @@ export function renderOfflineTools(root, questions, preparation) {
       const cache = await caches.open(AUDIO_CACHE);
       let completed = 0, cursor = 0, stopped = false;
       const results = await Promise.allSettled(Array.from({length:3}, async () => {
-        while (!stopped && cursor < questions.length) {
-          const q = questions[cursor++];
+        while (!stopped && cursor < available.length) {
+          const q = available[cursor++];
           const url = new URL(questionAudioPath(q), import.meta.url).href;
           try { if (!await cache.match(url)) await cache.add(new Request(url, {cache:'reload'})); }
           catch(error) { stopped=true; throw error; }
-          status.textContent = `${++completed} de ${questions.length} áudios salvos…`;
+          status.textContent = `${++completed} de ${available.length} áudios salvos…`;
         }
       }));
       if (results.some(result => result.status === 'rejected')) throw new Error('Download incompleto');
-      status.textContent = `Todos os ${questions.length} áudios estão disponíveis offline.`;
+      status.textContent = `Todos os ${available.length} áudios estão disponíveis offline.`;
     } catch {
       status.textContent = 'Download incompleto. Verifique a conexão e o espaço disponível e tente novamente. Os áudios já salvos serão aproveitados.';
     } finally { downloading = false; button.disabled = false; }

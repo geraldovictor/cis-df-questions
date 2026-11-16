@@ -12,7 +12,7 @@ const { chromium } = await import(pathToFileURL(resolve(process.env.PLAYWRIGHT_P
 const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75, audio: 'audio/' },
-  { id: 'cis-em', count: 118, examSize: 30, audio: 'audio/cis-em/' },
+  { id: 'cis-em', count: 137, audioCount: 136, examSize: 30, audio: 'audio/cis-em/' },
   { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' },
   { id: 'cis-csm', count: 240, examSize: 60, audio: 'audio/cis-csm/' }
 ];
@@ -40,7 +40,7 @@ async function selectCourse(page, course) {
   await page.locator('#start').waitFor();
   assert.equal(new URL(page.url()).searchParams.get('cert'), course.id);
   assert.equal(await page.locator('#certifications [aria-current="page"]').getAttribute('data-certification'), course.id);
-  assert.equal(await page.locator('#audio-question option').count(), course.count);
+  assert.equal(await page.locator('#audio-question option').count(), course.audioCount ?? course.count);
 }
 
 async function answerCorrectly(page, course, mode) {
@@ -69,16 +69,21 @@ async function answerCorrectly(page, course, mode) {
 async function downloadCourseAudio(page, course) {
   await selectCourse(page, course);
   await page.locator('[data-offline-audio]').click();
-  await page.locator('[data-offline-audio-status]').filter({ hasText: `Todos os ${course.count} áudios` }).waitFor();
-  const missing = await page.evaluate(async certification => {
+  await page.locator('[data-offline-audio-status]').filter({ hasText: `Todos os ${course.audioCount ?? course.count} áudios` }).waitFor();
+  const cached = await page.evaluate(async certification => {
     const { loadQuestionBank } = await import('./certification.js');
     const { questionAudioPath } = await import('./question-content.js');
     const { AUDIO_CACHE } = await import('./offline.js');
     const questions = await loadQuestionBank(certification), cache = await caches.open(AUDIO_CACHE);
     const saved = new Set((await cache.keys()).map(request => request.url));
-    return questions.map(question => new URL(questionAudioPath(question), location.href).href).filter(url => !saved.has(url));
+    const audioURL = question => new URL(questionAudioPath(question), location.href).href;
+    return {
+      missing: questions.filter(question => question.audio_disponivel !== false).map(audioURL).filter(url => !saved.has(url)),
+      unavailable: questions.filter(question => question.audio_disponivel === false).map(audioURL).filter(url => saved.has(url))
+    };
   }, course.id);
-  assert.deepEqual(missing, [], `Every ${course.id} recording must be cached`);
+  assert.deepEqual(cached.missing, [], `Every available ${course.id} recording must be cached`);
+  assert.deepEqual(cached.unavailable, [], 'Unavailable recordings must be excluded from download');
 }
 
 async function assertOfflineAudio(page, course) {
@@ -300,7 +305,7 @@ async function assertEmSupplements(browser) {
   const addedIds = ['em-user-provided-126-alert-automation', 'em-user-provided-127-pull-connector'];
   const added = addedIds.map(id => questions.find(question => question.id === id));
   assert.ok(added.every(Boolean), 'Both supplied EM questions must be available');
-  const original = questions.filter(question => !addedIds.includes(question.id));
+  const original = questions.slice(0, 116);
   assert.equal(original.length, 116);
   const originalIds = original.map(question => question.id), knownId = original[0].id, lastOriginal = original.at(-1);
   const quiz = createAttempt(original, 'offline-guest', course.id), study = createStudy(original, 'offline-guest', course.id);
@@ -321,7 +326,7 @@ async function assertEmSupplements(browser) {
   await page.goto(`${url}?cert=cis-em&mode=offline`);
   await page.locator('#start').waitFor();
   assert.deepEqual(await saved(page, progressKey(course.id)), progress);
-  assert.equal(await page.locator('#audio-question option').count(), 118);
+  assert.equal(await page.locator('#audio-question option').count(), course.audioCount ?? course.count);
   await page.locator('#start').click();
   assert.match(await page.locator('.quiz-layout .eyebrow').first().textContent(), /Questão 3 de 30/);
   await page.locator('#back').click();
@@ -336,7 +341,7 @@ async function assertEmSupplements(browser) {
   assert.equal((await saved(page, progressKey(course.id))).studies[0].total, 116);
   await page.locator('#study-start').click();
   const expanded = (await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at);
-  assert.equal(expanded.total, 118);
+  assert.equal(expanded.total, course.count);
   assert.ok(addedIds.every(id => expanded.state.ids.includes(id)));
   const answers = [[0], [0, 1, 2, 5]];
   for (const [index, question] of added.entries()) {
@@ -374,7 +379,7 @@ async function assertEmSupplements(browser) {
   await page.locator('#memory-start').click();
   await page.locator('[data-memory-reveal]').waitFor();
   await page.locator(`[data-memory-jump] option[value="${addedIds[1]}"]`).waitFor({ state: 'attached' });
-  assert.equal(await page.locator('[data-memory-jump] option').count(), 118);
+  assert.equal(await page.locator('[data-memory-jump] option').count(), course.count);
   assert.equal(await page.locator('[data-memory-jump]').inputValue(), lastOriginal.id);
   for (const [index, question] of added.entries()) {
     await page.locator('[data-memory-jump]').selectOption(question.id);
@@ -386,7 +391,8 @@ async function assertEmSupplements(browser) {
   const memory = await saved(page, memoryKey(course.id));
   for (const id of [knownId, ...addedIds]) assert.equal(memory.marks[id], 'known');
   assert.deepEqual(memory.order.slice(0, 116), originalIds);
-  assert.deepEqual(memory.order.slice(116), addedIds);
+  assert.deepEqual(memory.order.slice(116, 118), addedIds);
+  assert.deepEqual(memory.order.slice(118), questions.slice(118).map(question => question.id));
   await page.locator('[data-memory-back]').click();
   await downloadCourseAudio(page, course);
   await context.setOffline(true);
@@ -534,6 +540,10 @@ try {
   }
 
   for (const course of courses.filter(item => item.id !== 'cis-df')) await downloadCourseAudio(page, course);
+  assert.equal(await page.evaluate(async () => {
+    const { AUDIO_CACHE } = await import('./offline.js');
+    return (await (await caches.open(AUDIO_CACHE)).keys()).filter(request => /\/audio\/cis-(em|cad|csm)\//.test(new URL(request.url).pathname)).length;
+  }), 527);
 
   // Full navigations must keep every bank and its progress usable without a network.
   await context.setOffline(true);
@@ -594,7 +604,7 @@ try {
   await assertCadSupplement(browser);
   await assertEmSupplements(browser);
   assert.deepEqual(errors, []);
-  console.log('PASS: CIS-DF/CIS-EM/CAD/CIS-CSM banks, navigation, independent quiz/study/history/flashcard/memory progress, 509 cached EM/CAD/CSM recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation, hotspot answer-image reveal and legacy progress after bank additions');
+  console.log('PASS: CIS-DF/CIS-EM/CAD/CIS-CSM banks, navigation, independent quiz/study/history/flashcard/memory progress, 527 cached EM/CAD/CSM recordings and offline playback/ranges, unavailable narration excluded, source images, mobile context, offline switching, mocked account history/resume/pending isolation, hotspot answer-image reveal and legacy progress after bank additions');
 } finally {
   await browser?.close();
   await new Promise(done => server.close(done));

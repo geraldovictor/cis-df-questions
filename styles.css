@@ -88,3 +88,5 @@ main>.study-metrics{position:sticky;top:8px;z-index:2;box-shadow:0 3px 12px #153
 @media(max-width:600px){.memory-entry{flex-direction:column;align-items:stretch;gap:20px}.memory-entry>button{width:100%}.memory-tools h1{font-size:27px}.memory-tools,.memory-card{padding:20px}.memory-title{font-size:23px}.memory-hook{padding:18px}.memory-mnemonic{font-size:20px}.memory-source-lists{grid-template-columns:minmax(0,1fr)}.memory-controls>button{width:100%}.memory-ratings button{flex:1 1 140px}.memory-card-heading .eyebrow{font-size:9px;letter-spacing:1.4px}.memory-card .quiz-actions button{padding:12px 15px}}
 
 .practice-entry{background:#f0f5e6;border-color:#cfdfbb}.practice-entry>div{flex:1}
+.question-context{min-width:0;overflow-wrap:anywhere}
+.question-context p,.option [lang=en]{white-space:pre-wrap;overflow-wrap:anywhere}

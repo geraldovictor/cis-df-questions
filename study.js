@@ -1,6 +1,6 @@
 import { shuffle, isCorrect } from './quiz.js';
 import { getMatchingQuestion, isMatchingComplete } from './matching.js';
-import { DEFAULT_CERTIFICATION } from './certification.js';
+import { DEFAULT_CERTIFICATION, getCertification } from './certification.js';
 
 export function createStudy(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
   if (!questions.length) throw new Error('Não há questões disponíveis.');
@@ -15,17 +15,18 @@ export function createStudy(questions, userId, certificationId = questions[0]?.c
 }
 
 export function createPractice(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
-  if (questions.length < 60) throw new Error('São necessárias pelo menos 60 questões para iniciar o treino.');
+  const total = getCertification(certificationId).examSize;
+  if (questions.length < total) throw new Error(`São necessárias pelo menos ${total} questões para iniciar o treino.`);
   if (new Set(questions.map(question => question.id)).size !== questions.length) {
     throw new Error('O banco de questões contém identificadores repetidos.');
   }
-  const practice = createStudy(shuffle(questions).slice(0, 60), userId, certificationId);
-  practice.state.variant = 'practice60';
+  const practice = createStudy(shuffle(questions).slice(0, total), userId, certificationId);
+  practice.state.variant = 'practice';
   return practice;
 }
 
 export function isPracticeStudy(record) {
-  return record?.state?.variant === 'practice60';
+  return ['practice', 'practice60'].includes(record?.state?.variant);
 }
 
 export function confirmStudyAnswer(attempt, question, selected) {

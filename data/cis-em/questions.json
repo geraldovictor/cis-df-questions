@@ -858,12 +858,12 @@
     "pergunta": "Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?",
     "alternativas": [
       {
-        "texto": "Anomaly A — content absent from the supplied file.",
+        "texto": "Anomaly A\n\nDescription: CPU Util for Cil value: 24.000000 exceeds the threshold range:[0.000000]-[36.869789] and has anomaly score: 9.047626\n\nMessage key: sa_920bc51e186113007144b91107733cba-dcdb055718e553007f44b91107733c05\n\nAdditional information:\n\n{ \"anomaly_score\" : \"9.047625541687012\",\n\n  \"metric_ lower_bound\": \"0.0\",\n\n  \"metric_ upper_bound\": \"36.869789123535156\",\n\n  \"metric_value\": \"24.0\",\n\n  \"promotion_parameter\": \"\",\n\n  \"source_metric_type\": \"CPU_Util\"           }",
         "correta": false,
         "explicacao": ""
       },
       {
-        "texto": "Anomaly B — content absent from the supplied file.",
+        "texto": "Anomaly B\n\nDescription: CPU_Util for C:\\ value: 100.000000 exceeds the threshold range:[0.000000]-[35.410248] and has anomaly score: 9.985986\n\nMessage key: sa_e1efd05c985213007f44ad63cf1b07fb-fd174d9498d213007f44a63cf1b07f7\n\nAdditional information:\n\n{ \"anomaly_score\": \"9.98598575592041\",\n\n  \"metric_lower_bound\": \"0.0\",\n\n  \"metric_upper_bound\": \"35.410247802734375\",\n\n  \"metric_value\" : \" 100.0\",\n\n  \"promotion_parameter\": \"\",\n\n  \"source_metric_type\": \"CPU_Util\"           }",
         "correta": true,
         "explicacao": ""
       },
@@ -899,9 +899,17 @@
       "respostas_comunidade": [
         "B (100%)"
       ],
-      "enunciado_original": "Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?\n//IMG//"
+      "enunciado_original": "Which the following alert promotion rule defined in your ServiceNow instance, which of the anomalies below would be automatically promoted into IT alerts on the Alert Console?\n//IMG//",
+      "complementos": [
+        {
+          "arquivo": "cim-em-udemy5.json",
+          "indice": 14,
+          "descricao": "Dados das anomalias A e B que faltavam no material anterior."
+        }
+      ]
     },
-    "observacao": "O conteúdo das alternativas Anomaly A e Anomaly B não foi incluído no arquivo de origem. A imagem mostra a regra, mas não os exemplos das anomalias. Os espaços vazios foram identificados explicitamente; o gabarito B fornecido foi preservado."
+    "observacao": "Os dados das anomalias A e B foram completados com a questão14 de cim-em-udemy5.json. Os quatro índices das alternativas e o gabarito B originais foram preservados.",
+    "audio_version": 2
   },
   {
     "id": "em-vMPYPcWcmiMmKARnJC7N",
@@ -2434,7 +2442,7 @@
       {
         "texto": "All alert management rules will run, from the lowest to the highest Order of execution numbers.",
         "correta": true,
-        "explicacao": ""
+        "explicacao": "Matching alert rules are evaluated from smaller Order values to larger ones. Additional matches run when continuing the search is enabled; the stop option ends that search."
       },
       {
         "texto": "All alert management rules will run, from the highest to the lowest Order of execution numbers.",
@@ -2451,9 +2459,17 @@
       "resposta_ET": "С",
       "respostas_comunidade": [
         "C (100%)"
-      ]
+      ],
+      "verificacao_resposta": {
+        "url": "https://www.servicenow.com/docs/r/it-operations-management/event-management/create-alert-management-rule.html",
+        "title": "Create an alert management rule",
+        "release": "Brazil",
+        "updated": "2026-09-10",
+        "consulted_at": "2026-11-16",
+        "finding": "Matching alert rules are evaluated by ascending Order. Continuing with further matches depends on the Multiple alert rules setting."
+      }
     },
-    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET С. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    "observacao": "O material anterior apresentava gabaritos divergentes. A documentação oficial confirma a ordem crescente de Order. Executar outras regras correspondentes depende de Search for additional rules; Stop search for additional rules interrompe a busca. A ordem de conclusão das ações pode variar."
   },
   {
     "id": "em-4qKGNi3IYahA52Wdzm5t",
@@ -4833,5 +4849,656 @@
       "variante_de_colecao": null
     },
     "observacao": "O enunciado enviado usa “M.0 Server”, enquanto as alternativas usam “MID Server”. Essa grafia e os demais textos do material foram preservados, assim como o gabarito fornecido."
+  },
+  {
+    "id": "em-udemy-c503c58b3715a6aba9db",
+    "certification": "cis-em",
+    "pergunta": "What type of configuration is used to classify primary and secondary alerts",
+    "alternativas": [
+      {
+        "texto": "Alert aggregation",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert group types",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert Correlation rules",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 1,
+      "resposta": "C"
+    },
+    "audio_disponivel": false
+  },
+  {
+    "id": "em-udemy-580381104ce1bc68a3bd",
+    "certification": "cis-em",
+    "pergunta": "Which alerts are classified as Urgent priority group?",
+    "alternativas": [
+      {
+        "texto": "Alerts with priority score above the value defined in evt_mgmt.top_priority_group_threshold property",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alerts with priority score below the value defined in evt_mgmt.top_priority_group_threshold property",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 4,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-de68a8a672817bc52bca",
+    "certification": "cis-em",
+    "pergunta": "In Operational Intelligence, what module allows for automatic Alert creation from an Anomaly Alert?",
+    "alternativas": [
+      {
+        "texto": "Alert correlation rule",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Task Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event Rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Alert promotion rule",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 6,
+      "resposta": "D"
+    }
+  },
+  {
+    "id": "em-udemy-75ef526684ca8b7da3f1",
+    "certification": "cis-em",
+    "pergunta": "What Event Management improvements are included in the Vancouver release or recently added? (Select four answers)",
+    "alternativas": [
+      {
+        "texto": "The display of relevant knowledge articles to operators using agent assist",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Enriched alerts with information using alert tags mapping from non-CMDB tables",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Increased agility and time to value with configurable domain separation for alerts.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Improved connector visibility with Event Connector Dashboard",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Improved user experience and correlation logic for tag-based alert clustering",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 8,
+      "resposta": "ABCE"
+    }
+  },
+  {
+    "id": "em-udemy-dc32ece66352b6d43449",
+    "certification": "cis-em",
+    "pergunta": "What three pieces are required to create a customized pull connector to retrieve events on behalf of an event source?",
+    "alternativas": [
+      {
+        "texto": "Connector instance",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "JavaScript",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Plugin",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Connector definition",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 10,
+      "resposta": "ABD"
+    }
+  },
+  {
+    "id": "em-udemy-c3de22fded4204ee334c",
+    "certification": "cis-em",
+    "pergunta": "What is the script that allows you to populate incident fields from an Alert?",
+    "alternativas": [
+      {
+        "texto": "EvtMgmtCustomIncidentPopulator",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "None of the above",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "EventtMgmtCustomIncidentPopulator",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "EvtMgmtIncidentPopulator",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 12,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-dd4288cb4a58bf7e6b5c",
+    "certification": "cis-em",
+    "pergunta": "Which features are incorporated with the Service Operations Workspace express list? (Choose four answers)",
+    "alternativas": [
+      {
+        "texto": "Real-time updates",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Preview pane",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Integrated remediation actions",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Source connector health status",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Dynamic filtering",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 13,
+      "resposta": "ABCE"
+    }
+  },
+  {
+    "id": "em-udemy-15e6ca755d3744a69cc5",
+    "certification": "cis-em",
+    "pergunta": "Where in ServiceNow application are the events recorded?",
+    "alternativas": [
+      {
+        "texto": "em_event table",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "None of the above",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "em_alert table",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 16,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-0fca46627408b59d4753",
+    "certification": "cis-em",
+    "pergunta": "Which of the following state is not part of an event lifecycle?",
+    "alternativas": [
+      {
+        "texto": "In progress",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Ready",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Transferred",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Error",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 19,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-0cc41df0d1e86eb42e94",
+    "certification": "cis-em",
+    "pergunta": "What is the default flap frequency threshold for event management?",
+    "alternativas": [
+      {
+        "texto": "10",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "15",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "5",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "20",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 20,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-b02b176ef802fd51a9c1",
+    "certification": "cis-em",
+    "pergunta": "If a metric source registration record is marked as inactive, is the source allowed to send metric data?",
+    "alternativas": [
+      {
+        "texto": "No",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Yes",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 22,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-c056afd14766afcd1c93",
+    "certification": "cis-em",
+    "pergunta": "What new feature is enabled by the event field mapping improvements?",
+    "alternativas": [
+      {
+        "texto": "Mapping values from reference tables",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Re-applying mapping rules when events are added to an existing alert",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Re-applying mapping rules when alerts are added to a group",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Mapping values from service graph connectors",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 23,
+      "resposta": "A"
+    }
+  },
+  {
+    "id": "em-udemy-358cd6dc861c76339c8d",
+    "certification": "cis-em",
+    "pergunta": "What is the default Cl Type attached to an Alert?",
+    "alternativas": [
+      {
+        "texto": "cmdb_ci_license",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "cmdb_ci_server",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "cmdb_ci",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "cmdb_ci_hardware",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 24,
+      "resposta": "D"
+    }
+  },
+  {
+    "id": "em-udemy-7ceffb022ef5a298d4eb",
+    "certification": "cis-em",
+    "pergunta": "What options are available when using the \"Quick response\" Ul Action on an Alert?",
+    "alternativas": [
+      {
+        "texto": "Launch Application",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Operator Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Run remediation",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 25,
+      "resposta": "AD"
+    }
+  },
+  {
+    "id": "em-udemy-677ba3018a80d411dd4c",
+    "certification": "cis-em",
+    "pergunta": "In metric intelligence, anomaly detection enhancements enable which tasks? (Choose 3 answers)",
+    "alternativas": [
+      {
+        "texto": "Mute anomaly detection during scheduled maintenance windows.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Detect anomalies on constantly flowing metrics",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Tag recurring anomalies for alert grouping",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Reduce the narrow metric bounds by extending the module bounds for recurring metrics.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Indicate anomaly recovery as soon as the metric returns to its normal state",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 26,
+      "resposta": "BDE"
+    }
+  },
+  {
+    "id": "em-udemy-34d84b54a10f46dbf6c2",
+    "certification": "cis-em",
+    "pergunta": "You have the following alert promotion rule defined in your ServiceNow instance. Two anomalies, anomaly A and anomaly B (below), occur in your system, but only anomaly B is promoted into an IT alert and logged on the alert console. What is the most likely cause of this behavior?",
+    "alternativas": [
+      {
+        "texto": "The anomaly_score of anomaly A was not high enough to trigger the promotion in to an IT alert.",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "The anomaly_score of anomaly A was not low enough to trigger the promotion in to an IT alert.",
+        "correta": false,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy4.json",
+      "indice": 28,
+      "resposta": "A",
+      "fontes_contexto": [
+        {
+          "id": "em-6HAXF1caPVZapUmb0tqD",
+          "arquivo": "data/cis-em/images/image10.png"
+        },
+        {
+          "arquivo": "cim-em-udemy5.json",
+          "indice": 14
+        }
+      ]
+    },
+    "contexto": {
+      "imagens": [
+        {
+          "src": "data/cis-em/images/image10.png",
+          "alt": "Alert promotion rule MetricOne, Active selected, Promotion Type MetricName, Minimal Score 9.5, Source MetricOne, MetricName CPU_Util."
+        }
+      ],
+      "paragrafos": [
+        "Image transcript: Alert promotion rule MetricOne. Active is selected. Promotion Type: MetricName. Minimal Score: 9.5. Source: MetricOne. MetricName: CPU_Util.",
+        "Anomaly A\n\nDescription: CPU Util for Cil value: 24.000000 exceeds the threshold range:[0.000000]-[36.869789] and has anomaly score: 9.047626\n\nMessage key: sa_920bc51e186113007144b91107733cba-dcdb055718e553007f44b91107733c05\n\nAdditional information:\n\n{ \"anomaly_score\" : \"9.047625541687012\",\n\n  \"metric_ lower_bound\": \"0.0\",\n\n  \"metric_ upper_bound\": \"36.869789123535156\",\n\n  \"metric_value\": \"24.0\",\n\n  \"promotion_parameter\": \"\",\n\n  \"source_metric_type\": \"CPU_Util\"           }",
+        "Anomaly B\n\nDescription: CPU_Util for C:\\ value: 100.000000 exceeds the threshold range:[0.000000]-[35.410248] and has anomaly score: 9.985986\n\nMessage key: sa_e1efd05c985213007f44ad63cf1b07fb-fd174d9498d213007f44a63cf1b07f7\n\nAdditional information:\n\n{ \"anomaly_score\": \"9.98598575592041\",\n\n  \"metric_lower_bound\": \"0.0\",\n\n  \"metric_upper_bound\": \"35.410247802734375\",\n\n  \"metric_value\" : \" 100.0\",\n\n  \"promotion_parameter\": \"\",\n\n  \"source_metric_type\": \"CPU_Util\"           }"
+      ]
+    },
+    "observacao": "O arquivo desta questão não contém as figuras mencionadas. O contexto usa a regra original já presente no banco e os dados das anomalias A e B fornecidos na questão14 de cim-em-udemy5.json. O gabarito enviado foi preservado."
+  },
+  {
+    "id": "em-udemy-191c1089090d5edf795d",
+    "certification": "cis-em",
+    "pergunta": "AlOps dashboards allow operators to perform which tasks? (Choose 3 answers)",
+    "alternativas": [
+      {
+        "texto": "Track service Health",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Monitor large language models supporting Al.",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Gain context on the overall IT environment",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Monitor key performance indicators",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy5.json",
+      "indice": 4,
+      "resposta": "ACD"
+    }
+  },
+  {
+    "id": "em-udemy-c68282245fc37db0344a",
+    "certification": "cis-em",
+    "pergunta": "Service Operations Workspace integrations launchpad capabilities include management of which key components? (Choose three answers)",
+    "alternativas": [
+      {
+        "texto": "Alert management rules",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Metric policies",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Log data inputs",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Event connectors",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy5.json",
+      "indice": 15,
+      "resposta": "BCD"
+    }
+  },
+  {
+    "id": "em-udemy-631ac06bd439f6befe14",
+    "certification": "cis-em",
+    "pergunta": "What new capabilities are introduced with AlOps Experience? (Choose 3 answers)",
+    "alternativas": [
+      {
+        "texto": "AlOps Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "AlOps dashboards",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Service Operations Workspace",
+        "correta": false,
+        "explicacao": ""
+      },
+      {
+        "texto": "Express list",
+        "correta": true,
+        "explicacao": ""
+      },
+      {
+        "texto": "Integration launchpad",
+        "correta": true,
+        "explicacao": ""
+      }
+    ],
+    "fonte": {
+      "tipo": "user_provided",
+      "lote": "udemy-2026-11-16",
+      "arquivo": "cim-em-udemy5.json",
+      "indice": 16,
+      "resposta": "BDE"
+    }
   }
 ]

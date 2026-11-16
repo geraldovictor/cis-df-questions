@@ -215,15 +215,15 @@
     "assinatura": "b160255b"
   },
   "em-6HAXF1caPVZapUmb0tqD": {
-    "gatilho": "Promoção MetricOne e anomalias ausentes",
-    "macete": "MetricOne 9.5: a origem marca Anomaly B.",
-    "conexao": "O arquivo só traz a regra MetricOne, CPU_Util e Minimal Score 9.5; os exemplos das anomalias estão ausentes. Use este cartão apenas para reconhecer o gabarito fornecido.",
-    "tecnica": "Observação de origem",
+    "gatilho": "MetricOne com Minimal Score 9.5: qual anomalia passa?",
+    "macete": "A fica em 9.047625541687012; B chega a 9.98598575592041. Só B ultrapassa 9.5.",
+    "conexao": "Compare anomaly_score com o Minimal Score 9.5 da regra: 9.047625541687012 < 9.5 < 9.98598575592041. A anomalia promovida é Anomaly B. Texto completo do gabarito enviado: Anomaly B\n\nDescription: CPU_Util for C:\\ value: 100.000000 exceeds the threshold range:[0.000000]-[35.410248] and has anomaly score: 9.985986\n\nMessage key: sa_e1efd05c985213007f44ad63cf1b07fb-fd174d9498d213007f44a63cf1b07f7\n\nAdditional information:\n\n{ \"anomaly_score\": \"9.98598575592041\",\n\n  \"metric_lower_bound\": \"0.0\",\n\n  \"metric_upper_bound\": \"35.410247802734375\",\n\n  \"metric_value\" : \" 100.0\",\n\n  \"promotion_parameter\": \"\",\n\n  \"source_metric_type\": \"CPU_Util\"           }",
+    "tecnica": "Comparação numérica",
     "respostas": [
       1
     ],
-    "assinatura": "f0ae0f56",
-    "observacao": "O conteúdo das alternativas Anomaly A e Anomaly B não foi incluído no arquivo de origem. A imagem mostra a regra, mas não os exemplos das anomalias. Os espaços vazios foram identificados explicitamente; o gabarito B fornecido foi preservado."
+    "assinatura": "cc07313d",
+    "observacao": "Os dados das anomalias A e B foram completados com a questão14 de cim-em-udemy5.json. Os quatro índices das alternativas e o gabarito B originais foram preservados."
   },
   "em-vMPYPcWcmiMmKARnJC7N": {
     "gatilho": "Binding padrão pelo Node",
@@ -618,7 +618,7 @@
       2
     ],
     "assinatura": "4ad5c170",
-    "observacao": "O arquivo contém gabaritos divergentes: resposta principal C; resposta ET С. A correção usa a resposta principal fornecida, sem validação técnica independente."
+    "observacao": "O material anterior apresentava gabaritos divergentes. A documentação oficial confirma a ordem crescente de Order. Executar outras regras correspondentes depende de Search for additional rules; Stop search for additional rules interrompe a busca. A ordem de conclusão das ações pode variar."
   },
   "em-4qKGNi3IYahA52Wdzm5t": {
     "gatilho": "Como os alertas são processados",
@@ -1218,5 +1218,213 @@
       5
     ],
     "assinatura": "0fed789f"
+  },
+  "em-udemy-c503c58b3715a6aba9db": {
+    "gatilho": "Separar alertas primários e secundários",
+    "macete": "Correlação organiza a família: Alert Correlation rules separam primário e secundário.",
+    "conexao": "A pista é a classificação entre alertas; guarde o nome da regra de correlação. Termos corretos do material enviado: Alert Correlation rules",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3a4a6a96"
+  },
+  "em-udemy-580381104ce1bc68a3bd": {
+    "gatilho": "Limiar do grupo Urgent",
+    "macete": "Urgent fica acima da régua: priority score maior que top_priority_group_threshold.",
+    "conexao": "Compare o score com o valor de evt_mgmt.top_priority_group_threshold; a resposta fornecida pede above. Termos corretos do material enviado: Alerts with priority score above the value defined in evt_mgmt.top_priority_group_threshold property",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1c476b1a"
+  },
+  "em-udemy-de68a8a672817bc52bca": {
+    "gatilho": "Promover Anomaly Alert a alerta automaticamente",
+    "macete": "A anomalia sobe de categoria pela Alert promotion rule.",
+    "conexao": "Associe criação automática de alerta a partir de anomalia ao termo promotion. Termos corretos do material enviado: Alert promotion rule",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "1ade839f"
+  },
+  "em-udemy-75ef526684ca8b7da3f1": {
+    "gatilho": "Quatro melhorias de Vancouver ou recentes",
+    "macete": "Agente encontra artigo; tags enriquecem; domínios separam; clusters por tags melhoram.",
+    "conexao": "Guarde as quatro frentes fornecidas: conhecimento no agent assist, dados não-CMDB nas tags, domain separation e tag-based alert clustering. Termos corretos do material enviado: The display of relevant knowledge articles to operators using agent assist • Enriched alerts with information using alert tags mapping from non-CMDB tables • Increased agility and time to value with configurable domain separation for alerts. • Improved user experience and correlation logic for tag-based alert clustering",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "assinatura": "b2ddc60c"
+  },
+  "em-udemy-dc32ece66352b6d43449": {
+    "gatilho": "Três peças do pull connector customizado",
+    "macete": "Conector precisa de definição, instância e JavaScript.",
+    "conexao": "A definição descreve, a instância configura e o JavaScript aparece como a terceira peça no gabarito enviado. Termos corretos do material enviado: Connector instance • JavaScript • Connector definition",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "132d5de5"
+  },
+  "em-udemy-c3de22fded4204ee334c": {
+    "gatilho": "Script que preenche campos de incident a partir de Alert",
+    "macete": "Preencher o incidente sob medida pede EvtMgmtCustomIncidentPopulator.",
+    "conexao": "Reconheça o nome completo: EvtMgmt, Custom, Incident e Populator, sem o t extra do distrator. Termos corretos do material enviado: EvtMgmtCustomIncidentPopulator",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f4867bc9"
+  },
+  "em-udemy-dd4288cb4a58bf7e6b5c": {
+    "gatilho": "Quatro recursos da express list",
+    "macete": "Atualiza ao vivo, mostra prévia, remedia e filtra dinamicamente.",
+    "conexao": "O conjunto correto combina Real-time updates, Preview pane, Integrated remediation actions e Dynamic filtering. Termos corretos do material enviado: Real-time updates • Preview pane • Integrated remediation actions • Dynamic filtering",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "assinatura": "8ecd3291"
+  },
+  "em-udemy-15e6ca755d3744a69cc5": {
+    "gatilho": "Tabela em que eventos são gravados",
+    "macete": "Evento se registra em em_event; o nome da tabela acompanha o registro.",
+    "conexao": "A pergunta pede o armazenamento dos eventos, então reconheça o termo em_event table do gabarito. Termos corretos do material enviado: em_event table",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "63340743"
+  },
+  "em-udemy-0fca46627408b59d4753": {
+    "gatilho": "Estado que não pertence ao ciclo do evento",
+    "macete": "Neste item negativo, In progress fica fora do ciclo.",
+    "conexao": "Separe o que o enunciado exclui: o gabarito seleciona In progress, sem trocar evento por alerta. Termos corretos do material enviado: In progress",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f179bd3c"
+  },
+  "em-udemy-0cc41df0d1e86eb42e94": {
+    "gatilho": "Threshold padrão da frequência de flapping",
+    "macete": "Flapping bate dez vezes na pista deste banco: 10.",
+    "conexao": "Ligue o pedido de default flap frequency threshold ao valor 10 fornecido no arquivo. Termos corretos do material enviado: 10",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "e448cdc6"
+  },
+  "em-udemy-b02b176ef802fd51a9c1": {
+    "gatilho": "Fonte de métricas marcada como inativa",
+    "macete": "Fonte inativa não envia: a resposta é No.",
+    "conexao": "Quando o metric source registration está inactive, a marcação fornecida responde No à permissão de enviar métricas. Termos corretos do material enviado: No",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ad64f861"
+  },
+  "em-udemy-c056afd14766afcd1c93": {
+    "gatilho": "Melhoria de event field mapping",
+    "macete": "O mapa ganhou consulta à referência: values from reference tables.",
+    "conexao": "A novidade pedida é mapear valores vindos de tabelas de referência; guarde o termo reference tables. Termos corretos do material enviado: Mapping values from reference tables",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a992f3e9"
+  },
+  "em-udemy-358cd6dc861c76339c8d": {
+    "gatilho": "CI Type padrão anexado ao Alert",
+    "macete": "O padrão deste item tem hardware no nome: cmdb_ci_hardware.",
+    "conexao": "Para esta pergunta de CI Type padrão, memorize o identificador completo fornecido, incluindo o sufixo hardware. Termos corretos do material enviado: cmdb_ci_hardware",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "1aacfd92"
+  },
+  "em-udemy-7ceffb022ef5a298d4eb": {
+    "gatilho": "Duas ações de Quick response no Alert",
+    "macete": "Resposta rápida abre aplicação ou executa remediação.",
+    "conexao": "O par marcado reúne Launch Application e Run remediation; lembre das duas ações completas. Termos corretos do material enviado: Launch Application • Run remediation",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "a309e1e1"
+  },
+  "em-udemy-677ba3018a80d411dd4c": {
+    "gatilho": "Três melhorias de detecção de anomalias",
+    "macete": "Fluxo contínuo, ajuste dos limites recorrentes e recuperação ao voltar ao normal.",
+    "conexao": "Guarde as três tarefas do gabarito: métricas continuamente fluindo, extensão dos limites para métricas recorrentes e indicação de recuperação. Termos corretos do material enviado: Detect anomalies on constantly flowing metrics • Reduce the narrow metric bounds by extending the module bounds for recurring metrics. • Indicate anomaly recovery as soon as the metric returns to its normal state",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "cbb965b1"
+  },
+  "em-udemy-34d84b54a10f46dbf6c2": {
+    "gatilho": "Por que somente a anomalia B foi promovida",
+    "macete": "A tem 9.047625541687012 e não alcança 9.5; B tem 9.98598575592041 e passa.",
+    "conexao": "Compare os dados apresentados com Minimal Score 9.5: a pontuação de Anomaly A é insuficiente, enquanto a de Anomaly B supera o limiar. Termos corretos do material enviado: The anomaly_score of anomaly A was not high enough to trigger the promotion in to an IT alert.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9f05a89a",
+    "observacao": "O arquivo desta questão não contém as figuras mencionadas. O contexto usa a regra original já presente no banco e os dados das anomalias A e B fornecidos na questão14 de cim-em-udemy5.json. O gabarito enviado foi preservado."
+  },
+  "em-udemy-191c1089090d5edf795d": {
+    "gatilho": "Três tarefas dos AIOps dashboards",
+    "macete": "Saúde do serviço, contexto do ambiente e indicadores: o trio do dashboard.",
+    "conexao": "As tarefas selecionadas acompanham service Health, overall IT environment e key performance indicators. Termos corretos do material enviado: Track service Health • Gain context on the overall IT environment • Monitor key performance indicators",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "060d54bc"
+  },
+  "em-udemy-c68282245fc37db0344a": {
+    "gatilho": "Três componentes gerenciados no integrations launchpad",
+    "macete": "No launchpad, decole com políticas de métricas, entradas de logs e conectores de eventos.",
+    "conexao": "Guarde o conjunto Metric policies, Log data inputs e Event connectors para a gestão de integrações no workspace. Termos corretos do material enviado: Metric policies • Log data inputs • Event connectors",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "6f048cc2"
+  },
+  "em-udemy-631ac06bd439f6befe14": {
+    "gatilho": "Três capacidades de AIOps Experience",
+    "macete": "A experiência traz painel, lista expressa e plataforma de integrações.",
+    "conexao": "Associe as três capacidades aos nomes fornecidos: AlOps dashboards, Express list e Integration launchpad. Termos corretos do material enviado: AlOps dashboards • Express list • Integration launchpad",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "1b590b57"
   }
 }

@@ -10,7 +10,7 @@ export function renderStudy({ app, attempt, byId, save, back, report }) {
   const state = attempt.state, id = state.ids[state.cursor], q = byId[id];
   const confirmed = Boolean(state.confirmed[id]), result = studyProgress(attempt, byId);
   const practice = isPracticeStudy(attempt);
-  const modeLabel = practice ? 'Treino de 60 questões' : 'Modo de estudo';
+  const modeLabel = practice ? `Treino de ${attempt.total} questões` : 'Modo de estudo';
   const matching = getMatchingQuestion(q);
   const count = q.alternativas.filter(a => a.correta).length;
   const selected = state.answers[id] || [];
