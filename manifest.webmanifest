@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Certificações · Sala de estudos",
   "short_name": "Certificações",
-  "description": "Estude CIS-DF, CIS-EM e CAD com questões, simulados, flashcards, decoreba e áudios disponíveis offline.",
+  "description": "Estude CIS-DF, CIS-EM, CAD e CIS-CSM com questões, simulados, flashcards, decoreba e áudios disponíveis offline.",
   "lang": "pt-BR",
   "start_url": "./?mode=offline",
   "scope": "./",

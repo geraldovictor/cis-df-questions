@@ -12,7 +12,7 @@ const root = new URL('../', import.meta.url);
 const fetchFile = async url => ({ ok: true, json: async () => JSON.parse(await readFile(url, 'utf8')) });
 
 test('every certification loads its complete bank, valid memory aids and independent results', async () => {
-  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 118, 30], ['cis-cad', 151, 60]]) {
+  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 118, 30], ['cis-cad', 151, 60], ['cis-csm', 240, 60]]) {
     const questions = await loadQuestionBank(id, fetchFile);
     assert.equal(questions.length, size);
     assert.equal(new Set(questions.map(question => question.id)).size, size);
@@ -41,7 +41,7 @@ test('legacy results belong only to CIS-DF and storage keys retain user and mode
   const records = [{ state: {} }, { state: { certification: 'cis-em' } }, { state: { certification: 'cis-cad' } }];
   assert.deepEqual(records.map(getRecordCertification), ['cis-df', 'cis-em', 'cis-cad']);
   const keys = certifications.flatMap(({ id }) => ['one', 'two'].flatMap(user => ['pending', 'study-pending', 'flashcards', 'memory-v1'].map(feature => certificationStorageKey(feature, id, user))));
-  assert.equal(new Set(keys).size, 24);
+  assert.equal(new Set(keys).size, certifications.length * 8);
   assert.equal(certificationStorageKey('pending', 'cis-df', 'one'), 'cis-df-pending-one');
   assert.throws(() => getCertification('other'));
   assert.throws(() => certificationStorageKey('pending', 'other', 'one'));

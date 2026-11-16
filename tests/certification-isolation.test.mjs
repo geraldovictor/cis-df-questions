@@ -13,7 +13,7 @@ const memoryStorage = () => {
   const items = new Map();
   return { getItem: key => items.get(key) ?? null, setItem: (key, value) => items.set(key, value) };
 };
-const examSizes = [['cis-df', 75], ['cis-em', 30], ['cis-cad', 60]];
+const examSizes = [['cis-df', 75], ['cis-em', 30], ['cis-cad', 60], ['cis-csm', 60]];
 
 test('new quiz and study records retain certification through serialization without changing scoring', () => {
   for (const [certification, examSize] of examSizes) {
@@ -95,7 +95,7 @@ test('30- and 60-question attempts preserve partial answers, cursor and final sc
 
 test('offline banks with identical question and record IDs save and resume independently', () => {
   const storage = memoryStorage();
-  for (const [index, certification] of ['cis-df', 'cis-em', 'cis-cad'].entries()) {
+  for (const [index, certification] of examSizes.map(([certification]) => certification).entries()) {
     const questions = bank(certification);
     const quiz = createAttempt(questions, GUEST_ID), study = createStudy(questions, GUEST_ID);
     quiz.id = 'same-quiz-id'; study.id = 'same-study-id';
@@ -103,7 +103,7 @@ test('offline banks with identical question and record IDs save and resume indep
     quiz.state.answers['1-1'] = [index % 2];
     saveLocalAttempt(quiz, storage); saveLocalAttempt(study, storage);
   }
-  for (const [index, certification] of ['cis-df', 'cis-em', 'cis-cad'].entries()) {
+  for (const [index, certification] of examSizes.map(([certification]) => certification).entries()) {
     const restored = readLocalProgress(storage, certification);
     assert.equal(restored.attempts.length, 1); assert.equal(restored.studies.length, 1);
     assert.equal(restored.attempts[0].state.certification, certification);

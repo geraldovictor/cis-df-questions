@@ -1,0 +1,2563 @@
+{
+  "csm-3wUZFDpUsSoWkjU33cur": {
+    "gatilho": "Criar artigo a partir de pergunta da Community",
+    "macete": "A frase proíbe agentes e managers: o banco marca True para essa proibição.",
+    "conexao": "A pista “Criar artigo a partir de pergunta da Community” deve puxar estes termos do gabarito enviado: True. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "e31407c5"
+  },
+  "csm-dgf30tPBhYmJCtk6HQyt": {
+    "gatilho": "Local do contrato de serviço do cliente",
+    "macete": "Contrato dentro de Knowledge? Neste enunciado, marque False.",
+    "conexao": "A pista “Local do contrato de serviço do cliente” deve puxar estes termos do gabarito enviado: False. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ba2a89f7"
+  },
+  "csm-qXrXItiBN2Ayswdc5SFu": {
+    "gatilho": "Três pontos de criação de case pelo agente",
+    "macete": "Aplicação, Account e Chat: três entradas para abrir o case.",
+    "conexao": "A pista “Três pontos de criação de case pelo agente” deve puxar estes termos do gabarito enviado: Customer Service Application • Account • Chat. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "3694d4b0"
+  },
+  "csm-A7m4DfyMoOgtCzwA96Uf": {
+    "gatilho": "Duas bases de uma matching rule",
+    "macete": "Atributo do case encontra recurso do agente mais adequado.",
+    "conexao": "A pista “Duas bases de uma matching rule” deve puxar estes termos do gabarito enviado: Agent resources best suited to work on a case • Specific case attributes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "f86698a4"
+  },
+  "csm-Eca0pVzcHQhJhcgv6yRC": {
+    "gatilho": "Como matching rules melhoram a atribuição",
+    "macete": "O melhor agente entra pela disponibilidade: availability.",
+    "conexao": "A pista “Como matching rules melhoram a atribuição” deve puxar estes termos do gabarito enviado: Matching best agent by availability. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "56ead350"
+  },
+  "csm-iYnw9aYKJTViC9udzgib": {
+    "gatilho": "Entidade de Special Handling por atributos específicos",
+    "macete": "A pista individual deste item é Contact.",
+    "conexao": "A pista “Entidade de Special Handling por atributos específicos” deve puxar estes termos do gabarito enviado: Contact. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "39fb1dc8"
+  },
+  "csm-mt0jw7pP5Ng1l4eu1T9D": {
+    "gatilho": "Prever valores de Case sem intervenção",
+    "macete": "Inteligência preditiva preenche a previsão sem a mão humana.",
+    "conexao": "A pista “Prever valores de Case sem intervenção” deve puxar estes termos do gabarito enviado: Predicting Case values without manual intervention. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c5cfc455"
+  },
+  "csm-QYk4gXlBsoKXjkT8D5KF": {
+    "gatilho": "Uma condição de matching rules",
+    "macete": "Para combinar o atendimento, comece pelos atributos específicos do case.",
+    "conexao": "A pista “Uma condição de matching rules” deve puxar estes termos do gabarito enviado: Specific case attributes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "b780173d"
+  },
+  "csm-Cv4dIKUSvtC3crME1CND": {
+    "gatilho": "Círculos azuis na timeline do case",
+    "macete": "Neste registro, azul na linha do tempo aponta para State.",
+    "conexao": "A pista “Círculos azuis na timeline do case” deve puxar estes termos do gabarito enviado: State. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "27129279",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 98, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-PZkH9ugG4CJwmj2OtHf8": {
+    "gatilho": "Duas decisões apoiadas por Predictive Intelligence",
+    "macete": "Classificar e priorizar: Categorization com Prioritization.",
+    "conexao": "A pista “Duas decisões apoiadas por Predictive Intelligence” deve puxar estes termos do gabarito enviado: Case Categorization • Case Prioritization. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "2f9aea4f"
+  },
+  "csm-X9BvCi34ej2RHuZQOxXx": {
+    "gatilho": "Business Rules da configuração baseline de CSM",
+    "macete": "Avalia e atualiza o direito: Auto Assessment e Update Case Entitlement.",
+    "conexao": "A pista “Business Rules da configuração baseline de CSM” deve puxar estes termos do gabarito enviado: Auto Assessment • Update Case Entitlement. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "8dd4855c"
+  },
+  "csm-GNCHxuKVYuNo4KLr94fZ": {
+    "gatilho": "Quatro fatores de sucesso da implementação",
+    "macete": "Dor, consistência, casos de uso e processo: as quatro bases do sucesso.",
+    "conexao": "A pista “Quatro fatores de sucesso da implementação” deve puxar estes termos do gabarito enviado: Define the Business Pain Points • Provide consistent service to customers • Have a clear understanding of the use cases • Implementation is only as good as the underlying process. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "assinatura": "52677f6c"
+  },
+  "csm-uAEoLiMil5AJdz53pkiW": {
+    "gatilho": "Três prioridades no desenho da solução",
+    "macete": "Customize menos, use o que já vem pronto e pense em escala.",
+    "conexao": "A pista “Três prioridades no desenho da solução” deve puxar estes termos do gabarito enviado: Minimize customizations • Focus Out-of-the-box functionality • Design for Scalability. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "9f59ef50"
+  },
+  "csm-XDZbkZYxMvGl54HDS4AE": {
+    "gatilho": "Papel do Engagement Manager antes do workshop",
+    "macete": "Antes da oficina, faz a ponte e ajuda nos requisitos técnicos.",
+    "conexao": "A pista “Papel do Engagement Manager antes do workshop” deve puxar estes termos do gabarito enviado: Acts as intermediary • Assists with technical requirements. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "433b6f4f"
+  },
+  "csm-XXEbyEpbIqKNYwIMRs3K": {
+    "gatilho": "Material de pré-engajamento",
+    "macete": "Antes de começar, delimite o caminho: Scoping Guide.",
+    "conexao": "A pista “Material de pré-engajamento” deve puxar estes termos do gabarito enviado: Scoping Guide. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "af70d8e1"
+  },
+  "csm-H8ZPejilmxfJBa4Uq4tV": {
+    "gatilho": "Três contribuições de artigos",
+    "macete": "Problemas conhecidos, respostas comuns e informações do produto.",
+    "conexao": "A pista “Três contribuições de artigos” deve puxar estes termos do gabarito enviado: Document current and known issues • Provide answers and responses to common issues or questions • Share product information. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "6aff269d"
+  },
+  "csm-E3LCtnVDDJ4yk0lsFQcX": {
+    "gatilho": "Cenários de Contextual Search",
+    "macete": "Busca contextual atende à pergunta no portal e ao Record Producer.",
+    "conexao": "A pista “Cenários de Contextual Search” deve puxar estes termos do gabarito enviado: Both portal question entry and Record Producer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0fe9af48"
+  },
+  "csm-w4gEZdZTrMHAgNtG7uOc": {
+    "gatilho": "Integração de conteúdo externo ao Knowledge",
+    "macete": "WebDAV faz a ligação; artigo importado chega como attachment.",
+    "conexao": "A pista “Integração de conteúdo externo ao Knowledge” deve puxar estes termos do gabarito enviado: Imported external articles appear as attachments in ServiceNow • Only applications that allow WebDAV connections can be integrated. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "04af14bb"
+  },
+  "csm-UEjRk9SSM1IJfEbyFNs8": {
+    "gatilho": "Restringir Knowledge por ativos e modelos de produto",
+    "macete": "Direito do produto com critério do usuário: Entitlements e User Criteria.",
+    "conexao": "A pista “Restringir Knowledge por ativos e modelos de produto” deve puxar estes termos do gabarito enviado: Knowledge Product Entitlements • User Criteria. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "796c1c9d"
+  },
+  "csm-2bd4dE1piHyrGK4PMq1t": {
+    "gatilho": "Três benefícios de Knowledge Product Entitlement",
+    "macete": "Menos chamadas, volume mais gerenciável e artigos dos produtos do cliente.",
+    "conexao": "A pista “Três benefícios de Knowledge Product Entitlement” deve puxar estes termos do gabarito enviado: Reduces call volume • Makes it easier for Agents to manage case volume • Allows access to Knowledge Articles that are related to products owned by a customer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "4c45b8a2"
+  },
+  "csm-tqO6PnjGE0qIx9qUABMU": {
+    "gatilho": "Características das categorias de Knowledge",
+    "macete": "Categoria sobe vários níveis, mas não passeia entre KBs.",
+    "conexao": "A pista “Características das categorias de Knowledge” deve puxar estes termos do gabarito enviado: Shareable across KBs: No ; Multi-Level: Yes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "fae7a246"
+  },
+  "csm-cTzTX16Pj050TCzYGG4L": {
+    "gatilho": "O que o proxy_contact cria em nome do cliente",
+    "macete": "Proxy representa o cliente em dois pedidos: cases e requests.",
+    "conexao": "A pista “O que o proxy_contact cria em nome do cliente” deve puxar estes termos do gabarito enviado: Create cases on behalf of customers • Create requests on behalf of customers. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "87c08cb8"
+  },
+  "csm-qDNniGqJuE5Z66YyRMdY": {
+    "gatilho": "Finalidade da variável de Catalog Item",
+    "macete": "Variável deixa o cliente qualificar sua resposta.",
+    "conexao": "A pista “Finalidade da variável de Catalog Item” deve puxar estes termos do gabarito enviado: Allows the customer or consumer to qualify their answer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "ea0a38ee"
+  },
+  "csm-Xe3UlyREOHISnIHgmzZB": {
+    "gatilho": "Etapa opcional na criação de Catalog workflow",
+    "macete": "Neste fluxo, aprovar o workflow é a parte opcional.",
+    "conexao": "A pista “Etapa opcional na criação de Catalog workflow” deve puxar estes termos do gabarito enviado: Approving the workflow. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "85767fbc"
+  },
+  "csm-OcSFT1ZjXOvKvhDOx2V4": {
+    "gatilho": "Módulo que cria Case Record Producers",
+    "macete": "Para produzir o registro de case, procure Record Producers.",
+    "conexao": "A pista “Módulo que cria Case Record Producers” deve puxar estes termos do gabarito enviado: Record Producers. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "cb38ddf9"
+  },
+  "csm-N0V0T87tYjbpDmklEpS4": {
+    "gatilho": "O que não é dependência do Customer Service Plugin",
+    "macete": "Na lista de dependências deste item, Communities fica de fora.",
+    "conexao": "A pista “O que não é dependência do Customer Service Plugin” deve puxar estes termos do gabarito enviado: Communities. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "1d6f6108"
+  },
+  "csm-0plrQfqfBeGyfjIvBbb9": {
+    "gatilho": "Guardar o perfil Twitter de um cliente",
+    "macete": "Perfil de rede social mora em Social Profile.",
+    "conexao": "A pista “Guardar o perfil Twitter de um cliente” deve puxar estes termos do gabarito enviado: Social Profile. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "1ef0690a"
+  },
+  "csm-yOwz1uyWDploD662sh5C": {
+    "gatilho": "Canal social que não vem pronto",
+    "macete": "A rede que o enunciado exclui é LinkedIn.",
+    "conexao": "A pista “Canal social que não vem pronto” deve puxar estes termos do gabarito enviado: LinkedIn. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "930bd199"
+  },
+  "csm-0ALLhbHGgXdm5ZpYHWb3": {
+    "gatilho": "OpenFrame sem nenhum grupo selecionado",
+    "macete": "Nenhum marcado equivale a todos os grupos neste gabarito.",
+    "conexao": "A pista “OpenFrame sem nenhum grupo selecionado” deve puxar estes termos do gabarito enviado: Selecting all the groups. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "dcd2302d"
+  },
+  "csm-tX9R1niTqfLxrn0PdHJy": {
+    "gatilho": "Quantidade de contas de e-mail de saída",
+    "macete": "Saída de e-mail tem uma conta: One.",
+    "conexao": "A pista “Quantidade de contas de e-mail de saída” deve puxar estes termos do gabarito enviado: One. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9128c249"
+  },
+  "csm-DdcjZLFpxI2cOXa1OMG8": {
+    "gatilho": "Quatro funcionalidades de CSM",
+    "macete": "Direitos, SLAs em tempo real, contratos e roteamento por habilidades.",
+    "conexao": "A pista “Quatro funcionalidades de CSM” deve puxar estes termos do gabarito enviado: Service Entitlements • Real-time SLAs • Service Contracts • Skills-based routing. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "assinatura": "5de53413"
+  },
+  "csm-aFrePAiRkUgQhpzU1qq2": {
+    "gatilho": "Três tipos de usuário de fórum",
+    "macete": "O fórum recebe Registered, Public e Custom.",
+    "conexao": "A pista “Três tipos de usuário de fórum” deve puxar estes termos do gabarito enviado: Registered • Public • Custom. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "e5cc9cc5"
+  },
+  "csm-kpsZKJQgViiBA91aN6V6": {
+    "gatilho": "Duas afirmações sobre Community Portal",
+    "macete": "Licença de Community dá acesso; a maior parte não pede System Administrator.",
+    "conexao": "A pista “Duas afirmações sobre Community Portal” deve puxar estes termos do gabarito enviado: It is available to any customer with a Community license • Most of the configuration does not require System Administrator role. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "7a771e62"
+  },
+  "csm-suID5q19gENmfhaMLF6j": {
+    "gatilho": "Uma denúncia basta para esconder conteúdo",
+    "macete": "Uma pessoa denunciou e o conteúdo some? A afirmação é False.",
+    "conexao": "A pista “Uma denúncia basta para esconder conteúdo” deve puxar estes termos do gabarito enviado: False. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f997ccaa"
+  },
+  "csm-o4jFMGThJlQy5NWvZKSk": {
+    "gatilho": "Tipos de case disponíveis",
+    "macete": "Os dois tipos marcados são Order e Product.",
+    "conexao": "A pista “Tipos de case disponíveis” deve puxar estes termos do gabarito enviado: Order • Product. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "c5e75466"
+  },
+  "csm-YrnbOwamDjaAe7px3Ew0": {
+    "gatilho": "Habilitar Follow the sun no formulário",
+    "macete": "Siga o sol em duas ações: propriedade true e campo no formulário.",
+    "conexao": "A pista “Habilitar Follow the sun no formulário” deve puxar estes termos do gabarito enviado: The value property on the form must be set to true and the field added to the case form. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "41bad512"
+  },
+  "csm-QeXB6Oius0Vy2u89D14l": {
+    "gatilho": "Sentido de asset management em CSM",
+    "macete": "Ativo no atendimento acompanha o produto ou serviço que o cliente usa.",
+    "conexao": "A pista “Sentido de asset management em CSM” deve puxar estes termos do gabarito enviado: Tracking products or services customers are using. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "138cec10"
+  },
+  "csm-jA7KxVnlOEvEdonA2i5z": {
+    "gatilho": "Role que não atualiza consumer",
+    "macete": "Neste item negativo, o agente genérico sn_customerservice_agent fica de fora.",
+    "conexao": "A pista “Role que não atualiza consumer” deve puxar estes termos do gabarito enviado: sn_customerservice_agent. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "534b6103"
+  },
+  "csm-XYJmkcUQpxYMndEUkpbW": {
+    "gatilho": "Capacidade usada por Major Issue Management",
+    "macete": "Grande problema pede comunicação direcionada: Targeted Communications.",
+    "conexao": "A pista “Capacidade usada por Major Issue Management” deve puxar estes termos do gabarito enviado: Targeted Communications. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e0fba04b"
+  },
+  "csm-Z11pnu4E6ZQPfM5vir9e": {
+    "gatilho": "Sincronizar campos do parent para child",
+    "macete": "Instale Major Issue Management e habilite as propriedades necessárias.",
+    "conexao": "A pista “Sincronizar campos do parent para child” deve puxar estes termos do gabarito enviado: Major Issue Management needs to be installed and certain properties enabled. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "bc57a156"
+  },
+  "csm-PggkJl0zA4I6OXzWOgZM": {
+    "gatilho": "Associar Account, Partner, Contact e Consumer",
+    "macete": "Conta agrupa; parceiro vende e apoia; contato pertence; consumidor usa pessoalmente.",
+    "conexao": "A pista “Associar Account, Partner, Contact e Consumer” deve puxar estes termos do gabarito enviado: A. Partner -> 2. A supported external customer that, sells and supports one or more customers.\nB. Account -> 1. A customer account, a partner account, or both.\nC. Contact -> 3. A member of an account.\nD. Consumer -> 4. A person who purchases goods and services for personal use.. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "60c434e1",
+    "observacao": "O HOTSPOT original não fornece alternativas nem gabarito textual. A associação e a correção foram transcritas das imagens do material enviado, sem acrescentar distratores. A imagem do gabarito pode ser consultada após a correção."
+  },
+  "csm-JFIsldEQ5KQQBwtrwr85": {
+    "gatilho": "Três ações de Field Service offline no celular",
+    "macete": "Sem rede: executar tarefas, fechar work orders e gerenciar ativos.",
+    "conexao": "A pista “Três ações de Field Service offline no celular” deve puxar estes termos do gabarito enviado: Execute assigned tasks • Close work orders • Manage assets. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      4
+    ],
+    "assinatura": "9dbe8d33"
+  },
+  "csm-zOudNXf8RAS31p7OZgiB": {
+    "gatilho": "Copiar Contact do Case para Incident",
+    "macete": "O contato que chega ao incidente vira Caller.",
+    "conexao": "A pista “Copiar Contact do Case para Incident” deve puxar estes termos do gabarito enviado: Caller. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f6eea641"
+  },
+  "csm-2rlfZorPi3IEbGo5JBvz": {
+    "gatilho": "Quantidade de configurações OpenFrame ativas",
+    "macete": "No OpenFrame, a quantidade de configurações ativas é Unlimited.",
+    "conexao": "A pista “Quantidade de configurações OpenFrame ativas” deve puxar estes termos do gabarito enviado: Unlimited. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "53c0d3b5"
+  },
+  "csm-UNIWGGCMTt2yJL3VenLK": {
+    "gatilho": "Dois dados comuns na migração de CSM",
+    "macete": "Na mudança para CSM, leve artigos de Knowledge e Accounts.",
+    "conexao": "A pista “Dois dados comuns na migração de CSM” deve puxar estes termos do gabarito enviado: Knowledge Article • Accounts. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "4dc4a86d"
+  },
+  "csm-WAPSN1K4ZJYctYNtIegd": {
+    "gatilho": "Três funções self-service do Customer Support Portal",
+    "macete": "A ajuda se apoia em três portas: Community, Knowledge Base e Service Catalog.",
+    "conexao": "A pista “Três funções self-service do Customer Support Portal” deve puxar estes termos do gabarito enviado: Community • Knowledge Base • Service Catalog. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "e15537e0"
+  },
+  "csm-WdyXSo4JX9LXJ37Bxhoc": {
+    "gatilho": "Dois canais de comunicação nesta pergunta",
+    "macete": "Web recebe no portal; Chat recebe na conversa.",
+    "conexao": "A pista “Dois canais de comunicação nesta pergunta” deve puxar estes termos do gabarito enviado: Web • Chat. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "60a3885b"
+  },
+  "csm-egKVRutl0o9u4tz1cQWK": {
+    "gatilho": "Ação que o portal consumer não permite por padrão",
+    "macete": "O consumer portal não abre Incident neste gabarito.",
+    "conexao": "A pista “Ação que o portal consumer não permite por padrão” deve puxar estes termos do gabarito enviado: Open an incident. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "cb3bfad1"
+  },
+  "csm-Ul52xN52mwrpGfJtAzKk": {
+    "gatilho": "Dois canais padrão do Customer Support Portal",
+    "macete": "O portal conversa por Chat e recebe por Email.",
+    "conexao": "A pista “Dois canais padrão do Customer Support Portal” deve puxar estes termos do gabarito enviado: Chat • Email. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "e0f4405e"
+  },
+  "csm-4cPQ1HcT2x1RnhC67Kfs": {
+    "gatilho": "Associar regras de cadastro no Self-Service",
+    "macete": "Submeteu: request message; lembrou código: Display rule; conta: Update; e-mail: validate_registration.",
+    "conexao": "A pista “Associar regras de cadastro no Self-Service” deve puxar estes termos do gabarito enviado: A. Display rule -> 2. Shows message to remind users to enter a correct registration code\nB. Display request message -> 1. After registration request submittal, shows info message to user\nC. validate_registration -> 4. Checks if the registration is valid based on the user's email address\nD. Update account based on reg code -> 3. Validates registration code and assigns account based on the registration code. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "1cee925c",
+    "observacao": "O HOTSPOT original não fornece alternativas nem gabarito textual. A associação e a correção foram transcritas das imagens do material enviado, sem acrescentar distratores. A imagem do gabarito pode ser consultada após a correção."
+  },
+  "csm-76FFHIHp30TeSj33AD9g": {
+    "gatilho": "Comunidades exclusivas de licença CSM",
+    "macete": "Dizer que Communities é exclusiva de licença CSM recebe False.",
+    "conexao": "A pista “Comunidades exclusivas de licença CSM” deve puxar estes termos do gabarito enviado: False. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "019c3253"
+  },
+  "csm-Qjm7Rhz1NfnEPgNQNSKH": {
+    "gatilho": "Mary com falta de luz e técnico na própria casa",
+    "macete": "Pessoa atendida em casa: o caso de Mary representa B2C.",
+    "conexao": "A pista “Mary com falta de luz e técnico na própria casa” deve puxar estes termos do gabarito enviado: B2C. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "adaf90a7"
+  },
+  "csm-zpXK0r2sxLLhaSjdhvQx": {
+    "gatilho": "Preparar instância com demo data para caminho de produção",
+    "macete": "Limpe a demo por HI Request ou faça clone de uma instância válida.",
+    "conexao": "A pista “Preparar instância com demo data para caminho de produção” deve puxar estes termos do gabarito enviado: Remove the Demo Data via a HI Request • Clone back to this instance from a valid instance. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "942dc8a5"
+  },
+  "csm-HFxnkcILHaJupkL3nD7Y": {
+    "gatilho": "Quando criar um novo case de entrada",
+    "macete": "Pergunta ou problema a resolver é a porta de entrada do case.",
+    "conexao": "A pista “Quando criar um novo case de entrada” deve puxar estes termos do gabarito enviado: When a customer has a question or issue to resolve. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "60a44a44"
+  },
+  "csm-le5MaABnIFIWHBlYthu3": {
+    "gatilho": "Modelo de cable modem: produto ou ativo",
+    "macete": "Modelo que se vende é Product, segundo a distinção deste item.",
+    "conexao": "A pista “Modelo de cable modem: produto ou ativo” deve puxar estes termos do gabarito enviado: Product. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "94e7e21f"
+  },
+  "csm-GZNSrQX2Bj4DkiDlnAfL": {
+    "gatilho": "Entitlement define nível de serviço",
+    "macete": "Direito de atendimento com nível de serviço: a frase é True.",
+    "conexao": "A pista “Entitlement define nível de serviço” deve puxar estes termos do gabarito enviado: True. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "6cdb4049"
+  },
+  "csm-7yWiwGqOU8ExWMVe5dSM": {
+    "gatilho": "Acesso de partner admin a contas",
+    "macete": "Partner admin alcança contas do parceiro e do cliente: True.",
+    "conexao": "A pista “Acesso de partner admin a contas” deve puxar estes termos do gabarito enviado: True. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7f226ba7"
+  },
+  "csm-39qkrNr8KR1cfykvr6by": {
+    "gatilho": "Duas práticas de importação de dados",
+    "macete": "Confira o tamanho dos campos; suba imagens dos artigos separadamente.",
+    "conexao": "A pista “Duas práticas de importação de dados” deve puxar estes termos do gabarito enviado: Ensure the field data lengths in ServiceNow are adequate for the imported data because ServiceNow does not automatically adjust the length. • Images embedded in Knowledge Articles should be uploaded separately.. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "53819b9c"
+  },
+  "csm-cPRgQ48GzPBxPhu2iJgc": {
+    "gatilho": "Custo dos cases no PA Content Pack",
+    "macete": "A afirmação inclui Cost Information; o gabarito a marca False.",
+    "conexao": "A pista “Custo dos cases no PA Content Pack” deve puxar estes termos do gabarito enviado: False. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "1d3976a4"
+  },
+  "csm-LPyrC9LCZIhhCBJ6EH0G": {
+    "gatilho": "Finalidade de Guided Decisions",
+    "macete": "Guia dinâmico ajuda o agente a resolver cases complexos.",
+    "conexao": "A pista “Finalidade de Guided Decisions” deve puxar estes termos do gabarito enviado: Dynamically guide agents to help resolve complex cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "62d5163f",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 228, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-gjaSapNbbsdty2zWzp5V": {
+    "gatilho": "Escolhas com várias dimensões de prioridade",
+    "macete": "O holofote destaca mais que um campo: Case Spotlight.",
+    "conexao": "A pista “Escolhas com várias dimensões de prioridade” deve puxar estes termos do gabarito enviado: Case Spotlight. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "20d9b915"
+  },
+  "csm-UPSwiUpkbwTCcPxQQbmC": {
+    "gatilho": "Estágio Now Create dos workshops",
+    "macete": "Workshop precisa de planejamento: Plan.",
+    "conexao": "A pista “Estágio Now Create dos workshops” deve puxar estes termos do gabarito enviado: Plan. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "552377c1"
+  },
+  "csm-aWUTSnJmH9yJVbFM8iw7": {
+    "gatilho": "Aplicação de check-in para agendamento futuro",
+    "macete": "Check-in de atendimento presencial lembra Walk-Up Experience.",
+    "conexao": "A pista “Aplicação de check-in para agendamento futuro” deve puxar estes termos do gabarito enviado: Walk-Up Experience. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "fe1d7d33"
+  },
+  "csm-ytLCmF135SF3CxP7RB9a": {
+    "gatilho": "Quatro fatores da estrutura de suporte",
+    "macete": "Habilidade, geografia, idioma e quantidade de agentes moldam a equipe.",
+    "conexao": "A pista “Quatro fatores da estrutura de suporte” deve puxar estes termos do gabarito enviado: Knowledge and skills required for agents • Geographical location of customer • Languages spoken by agents • Number of agents required. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "assinatura": "7e5cc63c"
+  },
+  "csm-IDCDiAgA6akc1ecpf3BB": {
+    "gatilho": "Canal padrão do case aberto pelo portal e catálogo",
+    "macete": "Entrou pelo portal, Channel recebe Web.",
+    "conexao": "A pista “Canal padrão do case aberto pelo portal e catálogo” deve puxar estes termos do gabarito enviado: Web. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "85356a81"
+  },
+  "csm-1IzCkkPpXeZTV2jA3FVO": {
+    "gatilho": "Case além de Product na demo de CSM",
+    "macete": "A demo faz pedido também: Order.",
+    "conexao": "A pista “Case além de Product na demo de CSM” deve puxar estes termos do gabarito enviado: Order. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9a3109cc",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 226, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-5fkptKGznCIoNa8W36T9": {
+    "gatilho": "Job Deactivate Special Handling Notes",
+    "macete": "Meia-noite confere a validade e troca alertas vencidos para Expired.",
+    "conexao": "A pista “Job Deactivate Special Handling Notes” deve puxar estes termos do gabarito enviado: Runs daily at midnight, checks all active alerts and sets the status to Expired for those that have reached their expiration dates. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "1d652b72"
+  },
+  "csm-vqealpjtV85g34cl8UBm": {
+    "gatilho": "Conversa privada entre agente e supervisor",
+    "macete": "Whisper é o cochicho que o requester não ouve.",
+    "conexao": "A pista “Conversa privada entre agente e supervisor” deve puxar estes termos do gabarito enviado: Lets agents and chat supervisors have a conversation without the requester knowing. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7e7ff5e5"
+  },
+  "csm-K4XYk034vsCzlVLgHrU3": {
+    "gatilho": "Registros criados pelo self-registration do consumidor",
+    "macete": "Cadastro do consumidor gera Consumer User e Consumer.",
+    "conexao": "A pista “Registros criados pelo self-registration do consumidor” deve puxar estes termos do gabarito enviado: Consumer User (csm_consumer-user) • Consumer (csm_consumer). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "f3875fbb"
+  },
+  "csm-RLRAxe3wInhc9fgagOdW": {
+    "gatilho": "Criar case a partir de discussão da Community",
+    "macete": "Agente e Proxy case creator são a dupla autorizada nesta pergunta.",
+    "conexao": "A pista “Criar case a partir de discussão da Community” deve puxar estes termos do gabarito enviado: Customer service agent (sn_customerservice_agent) • Proxy case creator (sn_customerservice.proxy_case_creator). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "71f03da7"
+  },
+  "csm-Qk1KJqHCcOL6V1OL0hiJ": {
+    "gatilho": "Três critérios do assignment workbench",
+    "macete": "Código, combinação simples e agregado: Scripted, Simple Match e Aggregate.",
+    "conexao": "A pista “Três critérios do assignment workbench” deve puxar estes termos do gabarito enviado: Scripted • Simple Match • Aggregate. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "ca7bd8f1"
+  },
+  "csm-2ljjQnTTTPFmYt9i8gyX": {
+    "gatilho": "Cinco classes de ativos",
+    "macete": "Hardware, instalações, licenças, software empresarial e consumíveis: cinco grupos.",
+    "conexao": "A pista “Cinco classes de ativos” deve puxar estes termos do gabarito enviado: Hardware assets • Facility assets • Software licenses assets • Enterprise Software assets • Consumables assets. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3,
+      4,
+      6
+    ],
+    "assinatura": "cfc7c05d"
+  },
+  "csm-wRYfM7n7RGjrquP2e7M4": {
+    "gatilho": "Tabela Asset em CSM e ITSM",
+    "macete": "A tabela é a mesma; o conjunto de campos usado por CSM é diferente.",
+    "conexao": "A pista “Tabela Asset em CSM e ITSM” deve puxar estes termos do gabarito enviado: ServiceNow uses the same Asset table for both CSM and ITSM, however CSM has a different subset of fields. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "8b581d26"
+  },
+  "csm-QHzVLnFxFYuFH2IXtnDC": {
+    "gatilho": "Ordem dos estados com informação e solução aceita",
+    "macete": "Novo abre, espera informação, abre de novo, resolve e fecha.",
+    "conexao": "A pista “Ordem dos estados com informação e solução aceita” deve puxar estes termos do gabarito enviado: New > Open > Awaiting Info > Open > Resolved > Closed. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Sequência",
+    "respostas": [
+      3
+    ],
+    "assinatura": "720ead6d"
+  },
+  "csm-0H3a9qjtyqidIq9nvtp4": {
+    "gatilho": "Quatro critérios de matching de Customer Service",
+    "macete": "Habilidades, último atribuído, cases atribuídos e disponibilidade de hoje.",
+    "conexao": "A pista “Quatro critérios de matching de Customer Service” deve puxar estes termos do gabarito enviado: Matching Skills • Last Assigned • Assigned Cases • Availability Today. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "assinatura": "575caebc"
+  },
+  "csm-r4joJwCbskkBT9f8N8v1": {
+    "gatilho": "Cliente externo que vende e apoia outros clientes",
+    "macete": "Quem atende o cliente do cliente é Partner.",
+    "conexao": "A pista “Cliente externo que vende e apoia outros clientes” deve puxar estes termos do gabarito enviado: Partner. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b7c70b1a"
+  },
+  "csm-zDqJYwn2VcYW3QOn5Q2V": {
+    "gatilho": "Trending Topics com Predictive Intelligence",
+    "macete": "Muitos cases semelhantes se juntam em clusters de problemas comuns.",
+    "conexao": "A pista “Trending Topics com Predictive Intelligence” deve puxar estes termos do gabarito enviado: Auto-generate clusters of cases that point to similar underlying issues. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "65d973a7"
+  },
+  "csm-v5zTmC7G3KJJ13gkWL9j": {
+    "gatilho": "Três integrações prontas com CSM nesta versão",
+    "macete": "Portfolio, Project e ITOM Event Management: trio desta questão.",
+    "conexao": "A pista “Três integrações prontas com CSM nesta versão” deve puxar estes termos do gabarito enviado: Service Portfolio Management • Project Management • ITOM Event Management. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      4
+    ],
+    "assinatura": "ca87e021"
+  },
+  "csm-F5Kbf7SvtG7ON8yVoVG4": {
+    "gatilho": "Três benefícios de comunidades",
+    "macete": "Custo cai, cliente participa e feedback de produto chega.",
+    "conexao": "A pista “Três benefícios de comunidades” deve puxar estes termos do gabarito enviado: Reduce support costs • Engagement with Customers • Get product feedback. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "51ff4410"
+  },
+  "csm-C1L6Aj00ApvByFjdLKBH": {
+    "gatilho": "Definição de case",
+    "macete": "Um registro individual para a pergunta ou o problema do cliente externo.",
+    "conexao": "A pista “Definição de case” deve puxar estes termos do gabarito enviado: An individual record that is used to identify and resolve a question or issue for an external customer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "28bd3beb"
+  },
+  "csm-DYaNh6pV2TuPJgYqP4LX": {
+    "gatilho": "Requisito de fontes externas de Knowledge",
+    "macete": "Todas as fontes passam pelo mesmo protocolo: WebDAV-compliant.",
+    "conexao": "A pista “Requisito de fontes externas de Knowledge” deve puxar estes termos do gabarito enviado: WebDAV-compliant. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "25b51507"
+  },
+  "csm-1v7Yv0MDSpe9HzgqWeLr": {
+    "gatilho": "Dois tipos de relacionamento de conta",
+    "macete": "Conta com conta; parceiro com conta: os dois enlaces.",
+    "conexao": "A pista “Dois tipos de relacionamento de conta” deve puxar estes termos do gabarito enviado: Account-to-account • Partner-to-account. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      4
+    ],
+    "assinatura": "14f62583"
+  },
+  "csm-XUEKnme3VDIxKn8Y50kr": {
+    "gatilho": "Onde aplicar User Criteria em Knowledge",
+    "macete": "O critério guarda a base e o artigo: Knowledge Base and Article.",
+    "conexao": "A pista “Onde aplicar User Criteria em Knowledge” deve puxar estes termos do gabarito enviado: Knowledge Base and Article. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "69a7daa1"
+  },
+  "csm-xQ3QP59wwyPKWrQ80AMj": {
+    "gatilho": "Duas configurações para usar NLU no Virtual Agent",
+    "macete": "Escolha o provedor de NLU e ligue NLU no Virtual Agent.",
+    "conexao": "A pista “Duas configurações para usar NLU no Virtual Agent” deve puxar estes termos do gabarito enviado: Choose the NLU service provider • Enable NLU in Virtual Agent. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "b65262a2"
+  },
+  "csm-JNud1DqRhW67ZjpGwY46": {
+    "gatilho": "Campos extras de entitlement com Proactive Operations",
+    "macete": "Instalação e venda entram no direito: Install base item e Sold product.",
+    "conexao": "A pista “Campos extras de entitlement com Proactive Operations” deve puxar estes termos do gabarito enviado: Install base item • Sold product. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3,
+      4
+    ],
+    "assinatura": "064dc2f8"
+  },
+  "csm-iV0rckKnYkDttroB2JjG": {
+    "gatilho": "Propriedade de controle de acesso de artigos",
+    "macete": "Artigo liberado para o produto que o cliente possui.",
+    "conexao": "A pista “Propriedade de controle de acesso de artigos” deve puxar estes termos do gabarito enviado: Allows access to knowledge articles that are related to products owned by a customer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "dcd49f1f"
+  },
+  "csm-LLVUPnAN6OjQAFOSLyVi": {
+    "gatilho": "Três tipos de Agent Affinity",
+    "macete": "Responsabilidade da equipe da conta, histórico e tarefa relacionada.",
+    "conexao": "A pista “Três tipos de Agent Affinity” deve puxar estes termos do gabarito enviado: Account team responsibility • Historical • Related task. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "0060619a"
+  },
+  "csm-fKKrHqrInoXdAwqKA32G": {
+    "gatilho": "Atalho de chat /r no workspace",
+    "macete": "R de resposta reutilizável: response templates entram como texto na conversa.",
+    "conexao": "A pista “Atalho de chat /r no workspace” deve puxar estes termos do gabarito enviado: Uses response templates to insert as text in a conversation. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "fffe8fa5"
+  },
+  "csm-wDbE95vTVUlAOvpUleH6": {
+    "gatilho": "Benefício de segurança de scoped applications",
+    "macete": "Scope cria limite de acesso entre aplicações.",
+    "conexao": "A pista “Benefício de segurança de scoped applications” deve puxar estes termos do gabarito enviado: Limits accessibility to other applications in the instance. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "c0d4ddad"
+  },
+  "csm-bXHzAW6hEgiyKSOxYjGQ": {
+    "gatilho": "Filtro de tabelas CSM por papéis sem lógica extra",
+    "macete": "A consulta conhece a persona: CSM Query Rules.",
+    "conexao": "A pista “Filtro de tabelas CSM por papéis sem lógica extra” deve puxar estes termos do gabarito enviado: CSM Query Rules. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b0582989"
+  },
+  "csm-A6U6lPpMJEwc4bI6q2JG": {
+    "gatilho": "Overflow de Advanced Work Assignment",
+    "macete": "Grupo lotou? O trabalho transborda para outro grupo.",
+    "conexao": "A pista “Overflow de Advanced Work Assignment” deve puxar estes termos do gabarito enviado: When one support group reaches capacity the work item is automatically routed to another group. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "2f4a91f3"
+  },
+  "csm-85GKAPwM6VNA2Vd4EaFv": {
+    "gatilho": "Role mínima de cliente B2B e B2C na instância",
+    "macete": "Cliente de fora começa como External: snc_external.",
+    "conexao": "A pista “Role mínima de cliente B2B e B2C na instância” deve puxar estes termos do gabarito enviado: External (snc_external). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d51db1ee"
+  },
+  "csm-cm5uDz7GF3qmg2SJNTmG": {
+    "gatilho": "Flow que fecha cases resolvidos sem resposta",
+    "macete": "O próprio nome entrega o fechamento: Auto Close Resolved Cases.",
+    "conexao": "A pista “Flow que fecha cases resolvidos sem resposta” deve puxar estes termos do gabarito enviado: Auto Close Resolved Cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "7fd525e2"
+  },
+  "csm-fdlgXJ80zyNA2yoD0CSg": {
+    "gatilho": "Role para empregado criar case em nome de cliente",
+    "macete": "Sem papel de fulfiller, a ponte é Proxy Contact.",
+    "conexao": "A pista “Role para empregado criar case em nome de cliente” deve puxar estes termos do gabarito enviado: Proxy Contact (sn_customservice.proxy_contact). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "00d00d34"
+  },
+  "csm-9cqMW41JZCSmfFoMbU9Y": {
+    "gatilho": "Três peças de Proactive Customer Service Operations",
+    "macete": "Base instalada consciente do serviço, Proactive Case e Service Monitoring.",
+    "conexao": "A pista “Três peças de Proactive Customer Service Operations” deve puxar estes termos do gabarito enviado: Service-Aware Install Base • Proactive Case • Service Monitoring. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      5
+    ],
+    "assinatura": "cbafedce"
+  },
+  "csm-NrDqLfceF7rTNZwLTaU1": {
+    "gatilho": "Duas roles externas",
+    "macete": "Administradores do cliente e do parceiro formam a dupla externa.",
+    "conexao": "A pista “Duas roles externas” deve puxar estes termos do gabarito enviado: Customer Admin (sn_customerservice.customer_admin) • Partner Admin (sn_customerservice.partner_admin). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "b490ea5c"
+  },
+  "csm-QY4pJJINWoYN0jwYxItC": {
+    "gatilho": "Após quantos dias o padrão fecha cases resolvidos",
+    "macete": "Sem flow ativado, o padrão não fecha automaticamente.",
+    "conexao": "A pista “Após quantos dias o padrão fecha cases resolvidos” deve puxar estes termos do gabarito enviado: Cases are not automatically closed by default. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d4776b6f"
+  },
+  "csm-I4Jt5XgGnhVmwhPJK9MN": {
+    "gatilho": "Círculos azuis na timeline, versão repetida",
+    "macete": "A segunda formulação traz o movimento: State changes.",
+    "conexao": "A pista “Círculos azuis na timeline, versão repetida” deve puxar estes termos do gabarito enviado: State changes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "d213c81e",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 9, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-NtEKeA8ofZD2dytYE3qn": {
+    "gatilho": "Quatro resource matching methods",
+    "macete": "Scripted, Advanced, Simple e Selection Criteria: os quatro modos.",
+    "conexao": "A pista “Quatro resource matching methods” deve puxar estes termos do gabarito enviado: Scripted • Advanced • Simple • Selection Criteria. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "assinatura": "558fe8e2",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 227, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-kfrwsP3TgbkxnsXPVomO": {
+    "gatilho": "Estados de child que impedem a sincronização",
+    "macete": "Resolvido, fechado ou cancelado: estados que barram a sincronização aqui.",
+    "conexao": "A pista “Estados de child que impedem a sincronização” deve puxar estes termos do gabarito enviado: Resolved • Closed • Cancelled. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      4,
+      5
+    ],
+    "assinatura": "b6289dd2"
+  },
+  "csm-oBOKWXINGEj3JfeEZxvG": {
+    "gatilho": "O que clientes aprovam pelo portal",
+    "macete": "No portal, aprovação fica com Change Records e Request Records.",
+    "conexao": "A pista “O que clientes aprovam pelo portal” deve puxar estes termos do gabarito enviado: Change Records and Request Records. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d774dc0a"
+  },
+  "csm-ixngPuSU2LcfsZqN6se5": {
+    "gatilho": "Três playbooks prontos de CSM",
+    "macete": "Receber, apoiar produto e tratar reclamação: Onboarding, Product Support e Complaints.",
+    "conexao": "A pista “Três playbooks prontos de CSM” deve puxar estes termos do gabarito enviado: Case playbook for Onboarding • Case playbook for Product Support • Case playbook for Complaints. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "227a79ff"
+  },
+  "csm-xg2515VtcN4ruR5c5obI": {
+    "gatilho": "Três atributos para Special Handling Notes",
+    "macete": "Produto, Account e Contact recebem a nota de atenção.",
+    "conexao": "A pista “Três atributos para Special Handling Notes” deve puxar estes termos do gabarito enviado: Product • Account • Contact. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "1b740e76"
+  },
+  "csm-Ij28tA1kiOeyZiJ3TXPn": {
+    "gatilho": "Como registrar uma knowledge gap no case",
+    "macete": "Faltou artigo? Registre a lacuna pelos Related Links do case.",
+    "conexao": "A pista “Como registrar uma knowledge gap no case” deve puxar estes termos do gabarito enviado: Use Related Links on the case form to report a knowledge gap. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "193cb75e"
+  },
+  "csm-1ZjTJaWcJnfbs5o6aObG": {
+    "gatilho": "Plugin de Product Model com Catalog Items",
+    "macete": "Catálogo se contextualiza pelos serviços assinados pelo cliente.",
+    "conexao": "A pista “Plugin de Product Model com Catalog Items” deve puxar estes termos do gabarito enviado: It provides a contextual service catalog based on the customer’s subscribed services. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "1a6e03ff"
+  },
+  "csm-ZreEDhsITnCBckwCPoPi": {
+    "gatilho": "Mudança de estado de registro ITSM associado",
+    "macete": "Mudou no ITSM, as work notes do case recebem atualização.",
+    "conexao": "A pista “Mudança de estado de registro ITSM associado” deve puxar estes termos do gabarito enviado: The case work notes are updated automatically. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cc51e81a"
+  },
+  "csm-6KZKh9WwyIvJmNjaGUzW": {
+    "gatilho": "Dois ganhos de segurança de Application Scoping",
+    "macete": "O scope limita acesso e contém os registros da aplicação.",
+    "conexao": "A pista “Dois ganhos de segurança de Application Scoping” deve puxar estes termos do gabarito enviado: Improves instance security by limiting access to other applications on the instance • Scoping hold the records and acts as a container for the desired CSM applications. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "953e8e79"
+  },
+  "csm-p95CnVKj2267gNbsbLfU": {
+    "gatilho": "Disponibilizar vários catálogos no portal",
+    "macete": "Coloque os catálogos na lista do registro Customer Service Portal.",
+    "conexao": "A pista “Disponibilizar vários catálogos no portal” deve puxar estes termos do gabarito enviado: Include them in the list of service catalogs on the Customer Service Portal record. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a40afd64"
+  },
+  "csm-pUWb6bnpzm82QVa4l02a": {
+    "gatilho": "Quantidade de fases e exit gates em Now Create",
+    "macete": "O caminho metodológico passa por Five: cinco fases sequenciais.",
+    "conexao": "A pista “Quantidade de fases e exit gates em Now Create” deve puxar estes termos do gabarito enviado: Five. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "7dc0f731"
+  },
+  "csm-SDiADOwLBoDPWqTCBWs7": {
+    "gatilho": "De onde o agente cria um case nesta pergunta",
+    "macete": "A conversa vira atendimento: Chat.",
+    "conexao": "A pista “De onde o agente cria um case nesta pergunta” deve puxar estes termos do gabarito enviado: Chat. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d4202bd8"
+  },
+  "csm-FXTuEdbIzv6y81NE8jJf": {
+    "gatilho": "Major candidate com consumidor aprovado",
+    "macete": "Nasce um novo major case; o candidato passa a ser child.",
+    "conexao": "A pista “Major candidate com consumidor aprovado” deve puxar estes termos do gabarito enviado: A new major case is created and the major case candidate is added as a child to the major case. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "95c08ff2"
+  },
+  "csm-MXICeDDFbs8F2hER6Xvx": {
+    "gatilho": "Dois tipos de escalation template",
+    "macete": "Escalone o case ou a conta: Case e Account.",
+    "conexao": "A pista “Dois tipos de escalation template” deve puxar estes termos do gabarito enviado: Case • Account. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "227d0bdd"
+  },
+  "csm-nq7FXsen8NjVZT60BcVE": {
+    "gatilho": "Três práticas dos workshops de implementação",
+    "macete": "Dê dados para decidir, entenda a organização e oriente boas práticas.",
+    "conexao": "A pista “Três práticas dos workshops de implementação” deve puxar estes termos do gabarito enviado: Give the customers the data they need so they can make an informed decision • Engage with customers to gain deep understanding of their organization • Guide the customer toward industry best practices. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3,
+      4
+    ],
+    "assinatura": "bda4e9f6"
+  },
+  "csm-j025e7bYJINTPJSegWIR": {
+    "gatilho": "Catalog Item que cria tarefas como cases",
+    "macete": "Quem produz registro de tarefa é Record Producer.",
+    "conexao": "A pista “Catalog Item que cria tarefas como cases” deve puxar estes termos do gabarito enviado: Record Producer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "be05fd0a"
+  },
+  "csm-DAXPwm2zUkVYQJA6kZxX": {
+    "gatilho": "Mecanismo padrão de transição de estados de case",
+    "macete": "O estado anda por State Flows.",
+    "conexao": "A pista “Mecanismo padrão de transição de estados de case” deve puxar estes termos do gabarito enviado: State Flows. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "9a9c0b78"
+  },
+  "csm-OdtF9cgZQIYBqsF2QD6m": {
+    "gatilho": "Dois benefícios de Customer Access Management",
+    "macete": "Acesso ao sold product automatiza acesso ao case e permite colaboração.",
+    "conexao": "A pista “Dois benefícios de Customer Access Management” deve puxar estes termos do gabarito enviado: It increases automation by automatically granting access to cases based on access to sold product • It improves the customer experience by enabling related parties to track and collaborate on cases.. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "1e565d3c",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 224, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-w9ZceSnksYPHfR62Q9ar": {
+    "gatilho": "Vantagens dos leading indicators",
+    "macete": "Indicador à frente é Prospective e Easy to influence.",
+    "conexao": "A pista “Vantagens dos leading indicators” deve puxar estes termos do gabarito enviado: Prospective • Easy to influence. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "6f75dcc6"
+  },
+  "csm-A9ZmVYGNn6yoVMSW8EDt": {
+    "gatilho": "Role para contato criar outros contatos",
+    "macete": "Administrar contatos da conta pede Customer admin.",
+    "conexao": "A pista “Role para contato criar outros contatos” deve puxar estes termos do gabarito enviado: Customer admin (sn_customerservice.customer_admln). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f3493f98"
+  },
+  "csm-48vtiJ0lWOrzf3QO4TDw": {
+    "gatilho": "O que é versionamento de artigo",
+    "macete": "Versão guarda a mudança: gerenciar e acompanhar atualizações.",
+    "conexao": "A pista “O que é versionamento de artigo” deve puxar estes termos do gabarito enviado: The ability to manage and track article updates. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f2086966"
+  },
+  "csm-vVvuJvyr28EfCrTy4gQK": {
+    "gatilho": "Cliente atendido por B2C",
+    "macete": "Business-to-Consumer aponta para Individuals.",
+    "conexao": "A pista “Cliente atendido por B2C” deve puxar estes termos do gabarito enviado: Individuals. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "b2898aa7"
+  },
+  "csm-WR12ZL70m0k0K7xi5iXG": {
+    "gatilho": "Quantidade de endereços de saída em e-mail",
+    "macete": "Uma saída configurada: One.",
+    "conexao": "A pista “Quantidade de endereços de saída em e-mail” deve puxar estes termos do gabarito enviado: One. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "cbd7a5c4"
+  },
+  "csm-JlUoegy9t0PFx0eMRZYc": {
+    "gatilho": "Roles para relacionar contato e conta",
+    "macete": "Quem cria a relação nesta questão: manager e admin.",
+    "conexao": "A pista “Roles para relacionar contato e conta” deve puxar estes termos do gabarito enviado: sn_customerservice_manager • admin. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3,
+      4
+    ],
+    "assinatura": "11169b23"
+  },
+  "csm-QBlTB96r3x0AvkEhxNeR": {
+    "gatilho": "Asset Management de CSM comparado a ITSM",
+    "macete": "No CSM, o rastreio segue produtos e serviços usados pelos clientes.",
+    "conexao": "A pista “Asset Management de CSM comparado a ITSM” deve puxar estes termos do gabarito enviado: Asset management has different use cases for tracking specific products or services customers are using. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "43e37edd"
+  },
+  "csm-ll12gw4l9gjwxX643hls": {
+    "gatilho": "Definição de KCS",
+    "macete": "Conhecimento com método: boas práticas documentadas para criar e manter.",
+    "conexao": "A pista “Definição de KCS” deve puxar estes termos do gabarito enviado: A documented methodology to provide a set of best practices for creating and maintaining knowledge. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "488ed5a9"
+  },
+  "csm-wFftCndGdotnu5GUGSD1": {
+    "gatilho": "Três usos das model categories em ativos",
+    "macete": "Agrupam ativos, ligam classes e definem a criação entre Asset e CI.",
+    "conexao": "A pista “Três usos das model categories em ativos” deve puxar estes termos do gabarito enviado: Define whether a Configuration Item (CI) is created when an Asset record is created or vice versa • Group assets together • Define a link between Asset classes and Configuration Item (CI) classes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      4
+    ],
+    "assinatura": "b61a013a"
+  },
+  "csm-AXfnUe7G6oZdG7yOPKaJ": {
+    "gatilho": "Duas vantagens de ver a install base no workspace",
+    "macete": "Veja configurações detalhadas e ligue a informação do case ao produto certo.",
+    "conexao": "A pista “Duas vantagens de ver a install base no workspace” deve puxar estes termos do gabarito enviado: See the detailed configurations of the products and services deployed for a customer to determine the action needed • Trace Information provided in a case to the right product or service to which it relates. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "607efc5d"
+  },
+  "csm-y1R8vy4jRdsxSLQn3KLX": {
+    "gatilho": "Dois resultados da operação proativa",
+    "macete": "Menos chamadas recebidas e menor MTTR.",
+    "conexao": "A pista “Dois resultados da operação proativa” deve puxar estes termos do gabarito enviado: Reduced inbound calls from customers • Reduced Mean Time To Resolve (MTTR). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "750983eb"
+  },
+  "csm-9U4XL2NuUDysAGNTRdlQ": {
+    "gatilho": "Três componentes do Customer Service Portal",
+    "macete": "Cabeçalho com atividades, busca em repositórios e links para fontes de informação.",
+    "conexao": "A pista “Três componentes do Customer Service Portal” deve puxar estes termos do gabarito enviado: Header with links for different customer activities such as creating a case • Search feature to get information from several repositories • Links to information sources such as the knowledge base, community and customer support. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "fa9decd9"
+  },
+  "csm-KggYlBVpFNqeZpYbn6HS": {
+    "gatilho": "Significado de NLU",
+    "macete": "A sigla entende a linguagem natural: Natural-Language Understanding.",
+    "conexao": "A pista “Significado de NLU” deve puxar estes termos do gabarito enviado: Natural-Language Understanding. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "895a9e0a"
+  },
+  "csm-taC9mWZqI2lHWk7tcz9Z": {
+    "gatilho": "Fechamento automático de cases no padrão",
+    "macete": "Nesta repetição, o padrão continua sem fechamento automático.",
+    "conexao": "A pista “Fechamento automático de cases no padrão” deve puxar estes termos do gabarito enviado: Cases are not automatically closed by default. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "8e4e4628"
+  },
+  "csm-ZKETw4Jz0OhtguekksOU": {
+    "gatilho": "Quando uma mudança é customization",
+    "macete": "Demanda fora do que vem pronto pede funcionalidade customizada.",
+    "conexao": "A pista “Quando uma mudança é customization” deve puxar estes termos do gabarito enviado: When there are business demands for custom functionality that is not offered out-of-the-box. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "6bbc2dad"
+  },
+  "csm-L0pIkYMdjxaL61lfmcJw": {
+    "gatilho": "Dashboard de breakdown em pop-up no case",
+    "macete": "Analytics dentro do formulário: In-form Analytics.",
+    "conexao": "A pista “Dashboard de breakdown em pop-up no case” deve puxar estes termos do gabarito enviado: In-form Analytics. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "331c10b6"
+  },
+  "csm-6fOw0po6sScS3acyizfz": {
+    "gatilho": "Duas comunicações em case digests",
+    "macete": "Resumo das ações e revisão posterior: Action Summaries e Post Case Reviews.",
+    "conexao": "A pista “Duas comunicações em case digests” deve puxar estes termos do gabarito enviado: Case Action Summaries • Post Case Reviews. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "f8ca2bba"
+  },
+  "csm-ynKPi7usdHvA96neBoH0": {
+    "gatilho": "Três itens visíveis ao customer no portal desta versão",
+    "macete": "Assets, Publications e Products: trio marcado neste registro.",
+    "conexao": "A pista “Três itens visíveis ao customer no portal desta versão” deve puxar estes termos do gabarito enviado: Assets • Publications • Products. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "ae011e29"
+  },
+  "csm-mfLTobGB1Oz1UjX9NzhC": {
+    "gatilho": "Mensagens reutilizáveis para case e task",
+    "macete": "Para responder de forma consistente, reutilize Response Templates.",
+    "conexao": "A pista “Mensagens reutilizáveis para case e task” deve puxar estes termos do gabarito enviado: Response Templates. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "903e6648"
+  },
+  "csm-F1x3Gqzs7ZjkQ2kRQzIn": {
+    "gatilho": "Definição de asset no atendimento ao cliente",
+    "macete": "O ativo é uma instância específica do produto apoiada para um cliente.",
+    "conexao": "A pista “Definição de asset no atendimento ao cliente” deve puxar estes termos do gabarito enviado: A specific product instance supported for a customer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b14d07e9"
+  },
+  "csm-60THe0zSJVozCBG2TN0U": {
+    "gatilho": "Duas ações do add-in de Outlook",
+    "macete": "Remetente vira contato; conteúdo do e-mail vira case.",
+    "conexao": "A pista “Duas ações do add-in de Outlook” deve puxar estes termos do gabarito enviado: Register the sender of an email as contact • Create cases using email content in Outlook for the customer contact. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "3a6af3bd"
+  },
+  "csm-clZHgzKAl5kFwhRlq7va": {
+    "gatilho": "Entidade de Special Handling com divergência de gabarito",
+    "macete": "Este registro marca Entitlement no campo principal; confira o aviso de divergência.",
+    "conexao": "A pista “Entidade de Special Handling com divergência de gabarito” deve puxar estes termos do gabarito enviado: Entitlement. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "303fef67",
+    "observacao": "O campo answer indica B, enquanto answer_ET indica A. A correção mantém o campo answer fornecido; a divergência não foi resolvida por verificação externa."
+  },
+  "csm-iD046fI84hvX2xJfq53d": {
+    "gatilho": "Dois catálogos prontos dos portais",
+    "macete": "Um para Customer Service e outro para Consumer Service.",
+    "conexao": "A pista “Dois catálogos prontos dos portais” deve puxar estes termos do gabarito enviado: Customer Service • Consumer Service. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "3eaa9a85"
+  },
+  "csm-l8aPzQQAOJ51M0Sdkkf3": {
+    "gatilho": "Acesso do partner admin nesta pergunta",
+    "macete": "Both resume os dois lados: partner accounts e customer accounts.",
+    "conexao": "A pista “Acesso do partner admin nesta pergunta” deve puxar estes termos do gabarito enviado: Both. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3f5ceb70"
+  },
+  "csm-LytEVOdpALXhNp3KVMdW": {
+    "gatilho": "Dois benefícios de scope na segurança",
+    "macete": "Limite entre aplicações e contêiner de registros: a dupla do scope.",
+    "conexao": "A pista “Dois benefícios de scope na segurança” deve puxar estes termos do gabarito enviado: Improves instance security by limiting accessibility to other applications on the instance • The scope holds the records and acts as a container for the desired Customer Service Management Applications. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "bc7680e7"
+  },
+  "csm-sybJmx6tVYPOO9NFWHDI": {
+    "gatilho": "Passo de AWA que escolhe o agente apropriado",
+    "macete": "Para decidir como atribuir, Define Assignment Rules.",
+    "conexao": "A pista “Passo de AWA que escolhe o agente apropriado” deve puxar estes termos do gabarito enviado: Define Assignment Rules (How to assign work items). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f05a13c8"
+  },
+  "csm-SLW5kv2Fh3pFbFLOio9K": {
+    "gatilho": "Ação exclusiva de Partner Admin comparado ao Partner",
+    "macete": "Admin do parceiro cria e atualiza contatos das contas dele.",
+    "conexao": "A pista “Ação exclusiva de Partner Admin comparado ao Partner” deve puxar estes termos do gabarito enviado: Can create and update contacts for their partner accounts. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "421d4874"
+  },
+  "csm-woufjyEXYpOMRz552nla": {
+    "gatilho": "Definição da entidade household",
+    "macete": "Consumidores na mesma casa usam serviços como grupo.",
+    "conexao": "A pista “Definição da entidade household” deve puxar estes termos do gabarito enviado: Group of consumers that usually share a common address and use services as a group. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "2cc2b3da"
+  },
+  "csm-HchsDlLOOQWdUOEBzR7m": {
+    "gatilho": "Por que entregar a função principal rapidamente",
+    "macete": "Entrega cedo realiza ROI no curto prazo.",
+    "conexao": "A pista “Por que entregar a função principal rapidamente” deve puxar estes termos do gabarito enviado: To realize near-term ROI (Return on Investment). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "08f23b66"
+  },
+  "csm-ny3nJIA2DzvGB1ZxzTQD": {
+    "gatilho": "Três critérios configuráveis do workbench",
+    "macete": "Cases atribuídos, disponibilidade de hoje e habilidades combinadas.",
+    "conexao": "A pista “Três critérios configuráveis do workbench” deve puxar estes termos do gabarito enviado: Assigned Cases • Availability Today • Matching Skills. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "e7005b33"
+  },
+  "csm-xjj3ZEwTnbMNNFDVqGCq": {
+    "gatilho": "Marcar role de Account Team como unique",
+    "macete": "Neste gabarito, unique impede usar a mesma role em contas diferentes.",
+    "conexao": "A pista “Marcar role de Account Team como unique” deve puxar estes termos do gabarito enviado: Prevent the same role being used on different customer accounts. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "bb249249"
+  },
+  "csm-ygzMB6OUuwX6NvBOnjN7": {
+    "gatilho": "Relação de CIs e assets",
+    "macete": "Alguns ativos são CIs; nem todos os assets entram como CI.",
+    "conexao": "A pista “Relação de CIs e assets” deve puxar estes termos do gabarito enviado: While the CMDB may track some assets as configuration items (CIs) not ALL assets are CIs. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "fb3170c8"
+  },
+  "csm-UBYo2NApJl3AX2TVIww6": {
+    "gatilho": "Uso de Contact Local Time no case",
+    "macete": "Veja o relógio do contato antes de entrar em contato.",
+    "conexao": "A pista “Uso de Contact Local Time no case” deve puxar estes termos do gabarito enviado: Agents can use the field to identify if it is the right time to contact customer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f4e3072f"
+  },
+  "csm-DueAGNWaXknMleXyY4xH": {
+    "gatilho": "Duas roles que atualizam consumer",
+    "macete": "Consumer Support Agent e Customer Service Manager atualizam o consumidor.",
+    "conexao": "A pista “Duas roles que atualizam consumer” deve puxar estes termos do gabarito enviado: Consumer Support Agent {sn_customerservice.consumer_agent) • Customer Service Manager (sn_customerservice_manager). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "d200c116"
+  },
+  "csm-osbeNxKIUUbI8LfOuGTY": {
+    "gatilho": "Ver registro no painel lateral sem trocar aba",
+    "macete": "O relacionado aparece ao lado: Dynamic Related Records.",
+    "conexao": "A pista “Ver registro no painel lateral sem trocar aba” deve puxar estes termos do gabarito enviado: Dynamic Related Records. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "eea557cf"
+  },
+  "csm-8mitxCqVPUdCTI1IOWbd": {
+    "gatilho": "Lembrete padrão no Auto Close Resolved Cases",
+    "macete": "O flow lembra depois de Five: 5 dias.",
+    "conexao": "A pista “Lembrete padrão no Auto Close Resolved Cases” deve puxar estes termos do gabarito enviado: After 5 days. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "03f74f87"
+  },
+  "csm-nqPssPQYsyJubf52te5a": {
+    "gatilho": "Quem cria o código de registro de cada conta",
+    "macete": "Código único do cadastro nasce com o System administrator.",
+    "conexao": "A pista “Quem cria o código de registro de cada conta” deve puxar estes termos do gabarito enviado: System administrator (admin). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "41f2c6a4"
+  },
+  "csm-9Jl4KFA1ybjh6BioBvqf": {
+    "gatilho": "Permissão para criar incident a partir de case",
+    "macete": "Para entrar no incidente, o agente precisa de itil.",
+    "conexao": "A pista “Permissão para criar incident a partir de case” deve puxar estes termos do gabarito enviado: They must be assigned with the itil role. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e2bd587e"
+  },
+  "csm-giJNL1HYY7OCZEGIyquF": {
+    "gatilho": "Dois sentidos do indicador vermelho no Action Status",
+    "macete": "Vermelho sinaliza bloqueio interno ou interno com cliente, segundo o banco.",
+    "conexao": "A pista “Dois sentidos do indicador vermelho no Action Status” deve puxar estes termos do gabarito enviado: Blocked internally and by customer • Blocked by internally. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "6dbc0040"
+  },
+  "csm-vcrJSx7SsSQjJgIzpywD": {
+    "gatilho": "Duas regras de sincronização parent e child",
+    "macete": "Parent gerencia vários children; administrador escolhe os campos sincronizados.",
+    "conexao": "A pista “Duas regras de sincronização parent e child” deve puxar estes termos do gabarito enviado: Multiple child cases can be managed from a parent case as in Major Issue Management • The Administrator can choose which fields to synchronize from parent to child cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "3c6aebaf"
+  },
+  "csm-zZK0kaG8hK86ycwcO0eq": {
+    "gatilho": "Onde ficam conversas de canal Social no case",
+    "macete": "O rastro da conversa social está em Social Logs.",
+    "conexao": "A pista “Onde ficam conversas de canal Social no case” deve puxar estes termos do gabarito enviado: Social Logs. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "02154973"
+  },
+  "csm-QAe3DZrMiKS0Oq5233JR": {
+    "gatilho": "Destino do case do cliente após major aprovado",
+    "macete": "O case do cliente desce um nível e vira child do major.",
+    "conexao": "A pista “Destino do case do cliente após major aprovado” deve puxar estes termos do gabarito enviado: The customer case becomes a child case of the major case. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "3d0289e1"
+  },
+  "csm-LlCg07aurBXskLy3Zzug": {
+    "gatilho": "Duas unidades de medida de entitlement",
+    "macete": "Direito de suporte conta Hours e Case.",
+    "conexao": "A pista “Duas unidades de medida de entitlement” deve puxar estes termos do gabarito enviado: Hours • Case. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "a495043a"
+  },
+  "csm-oCfUPzvZCXQY3nwOgpo6": {
+    "gatilho": "Duas embalagens das aplicações CSM prontas",
+    "macete": "A aplicação chega por Store Apps ou Plugins.",
+    "conexao": "A pista “Duas embalagens das aplicações CSM prontas” deve puxar estes termos do gabarito enviado: Store Apps • Plugins. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "d6a50fca"
+  },
+  "csm-HFIVK0e9JzChx3rcMdrw": {
+    "gatilho": "O que um product model pode conter",
+    "macete": "O modelo junta itens físicos e itens digitais, conforme este registro.",
+    "conexao": "A pista “O que um product model pode conter” deve puxar estes termos do gabarito enviado: Product models can contain both physical items and digital (logical) items in the same mode. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e34b2e4e"
+  },
+  "csm-M8AybrjBE4M8zWGoAAJG": {
+    "gatilho": "Onde existe create contact ou consumer no workspace",
+    "macete": "Criar contato por esse recurso pede CSM Configurable Workspace.",
+    "conexao": "A pista “Onde existe create contact ou consumer no workspace” deve puxar estes termos do gabarito enviado: The create contact (consumer) feature is only available in the CSM Configurable Workspace. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "46f84e28"
+  },
+  "csm-9m5Es8CdjFjOSLJQQ7kq": {
+    "gatilho": "Local dos secondary values no header configurável",
+    "macete": "Os valores secundários podem ir para o contextual side panel.",
+    "conexao": "A pista “Local dos secondary values no header configurável” deve puxar estes termos do gabarito enviado: The form header's secondary values can be displayed in the contextual side panel instead of above the ribbon components. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "646716d7"
+  },
+  "csm-3jxuBbJNS7gfJW0KYTnr": {
+    "gatilho": "Knowledge items que recebem User Criteria",
+    "macete": "Critério do usuário vale tanto na base quanto no artigo.",
+    "conexao": "A pista “Knowledge items que recebem User Criteria” deve puxar estes termos do gabarito enviado: Knowledge Base and Article. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "b1016a72"
+  },
+  "csm-vqEFGOfqmvwZVApRnjPl": {
+    "gatilho": "Três componentes da operação proativa",
+    "macete": "Monitorar serviço, conhecer install base e agir por Proactive Case.",
+    "conexao": "A pista “Três componentes da operação proativa” deve puxar estes termos do gabarito enviado: Service Monitoring • Service-Aware Install Base • Proactive Case. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3,
+      4
+    ],
+    "assinatura": "1b94fe1d"
+  },
+  "csm-1JAlyXiK3yN3NyvmdvSU": {
+    "gatilho": "Três playbooks padrão em outra formulação",
+    "macete": "Onboarding abre a jornada, Product Support ajuda e Complaints trata reclamações.",
+    "conexao": "A pista “Três playbooks padrão em outra formulação” deve puxar estes termos do gabarito enviado: Case playbook for Onboarding • Case playbook for Product Support • Case playbook for Complaints. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3,
+      4
+    ],
+    "assinatura": "10ec6c0f"
+  },
+  "csm-GiS1KdT1JvlYsVze5QP9": {
+    "gatilho": "Duas formas de instalar aplicações CSM prontas",
+    "macete": "Para instalar, escolha entre Plugins e Store Apps.",
+    "conexao": "A pista “Duas formas de instalar aplicações CSM prontas” deve puxar estes termos do gabarito enviado: Plugins • Store Apps. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "c390847e"
+  },
+  "csm-w9ILvwc6ekVp3bq7u4g2": {
+    "gatilho": "Três critérios de matching para atribuir cases",
+    "macete": "Habilidade combinada, cases atribuídos e disponibilidade hoje.",
+    "conexao": "A pista “Três critérios de matching para atribuir cases” deve puxar estes termos do gabarito enviado: Matching Skills • Assigned Cases • Availability Today. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      4,
+      5
+    ],
+    "assinatura": "256dc50b"
+  },
+  "csm-jtkx9uiRBVmEnFnASFlI": {
+    "gatilho": "Finalidade da sidebar do workspace",
+    "macete": "Na lateral, agentes e SMEs colaboram em tempo real para resolver mais rápido.",
+    "conexao": "A pista “Finalidade da sidebar do workspace” deve puxar estes termos do gabarito enviado: To enable agents to collaborate with other agents or Subject Matter Experts (SMEs) in real-time for faster case resolution. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f9845bf6"
+  },
+  "csm-uQ5u6VnOspJLJCnTNJqM": {
+    "gatilho": "Tipo de item para criar qualquer tarefa pelo catálogo",
+    "macete": "Produza a tarefa pelo Record Producer.",
+    "conexao": "A pista “Tipo de item para criar qualquer tarefa pelo catálogo” deve puxar estes termos do gabarito enviado: Record Producer. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "28b7ac61"
+  },
+  "csm-VWZuC8lU8K4CFC4R6N9Q": {
+    "gatilho": "E-mail de artigos relevantes ao criar case",
+    "macete": "Resposta automática com conhecimento: Auto-Responder.",
+    "conexao": "A pista “E-mail de artigos relevantes ao criar case” deve puxar estes termos do gabarito enviado: Auto-Responder. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e801b06e"
+  },
+  "csm-oLBupqqzYKtDsJm4NzJo": {
+    "gatilho": "Duas atribuições que usam matching rules",
+    "macete": "Matching abastece Assignment Workbench e Assignment Rules.",
+    "conexao": "A pista “Duas atribuições que usam matching rules” deve puxar estes termos do gabarito enviado: Assignment Workbench • Assignment Rules. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "83c829e9"
+  },
+  "csm-x4lnEwOOQRM7OcL6ZLTx": {
+    "gatilho": "Identificar outros clientes afetados por major",
+    "macete": "O alcance do grande problema segue Recipient lists.",
+    "conexao": "A pista “Identificar outros clientes afetados por major” deve puxar estes termos do gabarito enviado: Recipient lists. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "a211f6cf"
+  },
+  "csm-xlgp6wGMbShQlTzIsDWU": {
+    "gatilho": "Criação de case pelo canal social",
+    "macete": "Conforme o canal social usado, o case pode nascer automaticamente.",
+    "conexao": "A pista “Criação de case pelo canal social” deve puxar estes termos do gabarito enviado: Cases can be created automatically depending on which social channel is used. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "4dec549e"
+  },
+  "csm-KNbH4Gr6PBlNruIgeYmg": {
+    "gatilho": "Ação separada para integrar Request Management",
+    "macete": "Request pede seu plugin: Customer Service with Request Management.",
+    "conexao": "A pista “Ação separada para integrar Request Management” deve puxar estes termos do gabarito enviado: Activation of the Customer Service with Request Management plugin (com.sn_cs_sm_request). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "d409799a"
+  },
+  "csm-zTTLfNbeqcFgpfwmEtii": {
+    "gatilho": "Prefixo de novas case tasks",
+    "macete": "Tarefa de case começa com CSTASK.",
+    "conexao": "A pista “Prefixo de novas case tasks” deve puxar estes termos do gabarito enviado: CSTASK prefix. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a8f4a0e8"
+  },
+  "csm-kIlm0UkQUrv4OpYj0bKW": {
+    "gatilho": "Quando child recebe atualização do parent",
+    "macete": "Atualizou parent, children acompanham automaticamente.",
+    "conexao": "A pista “Quando child recebe atualização do parent” deve puxar estes termos do gabarito enviado: Automatically upon update of parent. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "09a2940f"
+  },
+  "csm-IC5j4Ek5TGIRupZ6MZ3L": {
+    "gatilho": "Duas funcionalidades exclusivas de CSM Workspaces",
+    "macete": "Lookup and verify e Agent assist distinguem o workspace da UI de plataforma.",
+    "conexao": "A pista “Duas funcionalidades exclusivas de CSM Workspaces” deve puxar estes termos do gabarito enviado: Lookup and verify • Agent assist. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "86c6f003"
+  },
+  "csm-eyBdYP9eQh5EF7zgeC56": {
+    "gatilho": "Três fontes padrão do Agent Assist",
+    "macete": "Artigos, catálogo e comunidades ajudam o agente.",
+    "conexao": "A pista “Três fontes padrão do Agent Assist” deve puxar estes termos do gabarito enviado: Knowledge articles • Service catalog • Communities. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "1d0caaa0"
+  },
+  "csm-FnnX1wrWVBWft6sN4jGF": {
+    "gatilho": "Unidades em que entitlements são contados",
+    "macete": "Na conta do direito entram horas e cases.",
+    "conexao": "A pista “Unidades em que entitlements são contados” deve puxar estes termos do gabarito enviado: Hours and cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c792a160"
+  },
+  "csm-qX2ZyVR2LcvOnU4RlxVT": {
+    "gatilho": "Três entidades da Service-aware Install Base",
+    "macete": "Installed Products, Install Base Items e Sold Products compõem a base.",
+    "conexao": "A pista “Três entidades da Service-aware Install Base” deve puxar estes termos do gabarito enviado: Installed Products • Install Base Items • Sold Products. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "7b7ac500"
+  },
+  "csm-sVSTYghcgY1VHHE7pkq1": {
+    "gatilho": "Saída principal do workshop de requisitos",
+    "macete": "Requisitos bem colhidos saem como Stories.",
+    "conexao": "A pista “Saída principal do workshop de requisitos” deve puxar estes termos do gabarito enviado: Stories. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "aafa8be1"
+  },
+  "csm-1o6kKYUx1ThzjaCp7VfZ": {
+    "gatilho": "Limite da sincronização entre case e work order",
+    "macete": "Mudança no Case form não se atualiza no Work Order form neste item.",
+    "conexao": "A pista “Limite da sincronização entre case e work order” deve puxar estes termos do gabarito enviado: If information changes on the Case form it is not updated on the Work Order form. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "72e458c8"
+  },
+  "csm-sVUi9T3TOyG5jG6L2LEC": {
+    "gatilho": "Três roles que propõem Major Case candidate",
+    "macete": "Manager, agente e Major issue manager podem indicar o candidato.",
+    "conexao": "A pista “Três roles que propõem Major Case candidate” deve puxar estes termos do gabarito enviado: Customer service manager (sn_customerservice_manager) • Customer service agent (sn_customerservice_agent) • Major issue manager (sn_majorissue_mgt.major_issue_manager). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "5e132229"
+  },
+  "csm-mTR3Gq8UphG4yRzLjdnG": {
+    "gatilho": "Campo obrigatório para fechar o case",
+    "macete": "O fechamento precisa deixar Resolution notes.",
+    "conexao": "A pista “Campo obrigatório para fechar o case” deve puxar estes termos do gabarito enviado: Resolution notes. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "394853f0"
+  },
+  "csm-CKXwqXTrEdKpLfu4SCT7": {
+    "gatilho": "Restrição de Knowledge por produto do cliente",
+    "macete": "O direito de produto protege artigos: Knowledge Product Entitlements.",
+    "conexao": "A pista “Restrição de Knowledge por produto do cliente” deve puxar estes termos do gabarito enviado: Knowledge Product Entitlements. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a36b484f"
+  },
+  "csm-cVe2IT92cvJeSnFylQwP": {
+    "gatilho": "Três benefícios do scope para a equipe CSM",
+    "macete": "Ritmo próprio, autonomia e proteção da lógica e dos dados.",
+    "conexao": "A pista “Três benefícios do scope para a equipe CSM” deve puxar estes termos do gabarito enviado: CSM teams can move at their desired pace, independent of IT • Provides CSM teams autonomy and control • CSM application data and business logic is protected from changes by other applications. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "0572ef1e"
+  },
+  "csm-p3tAznXcJWlu3b5a9zbU": {
+    "gatilho": "Duas razões para não conseguir escalar uma conta",
+    "macete": "Falta escalation requester ou a conta já tem escalation aberta.",
+    "conexao": "A pista “Duas razões para não conseguir escalar uma conta” deve puxar estes termos do gabarito enviado: The customer service agent is not assigned with the escalation requester role • The account already has an open escalation record. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "e221c7a8"
+  },
+  "csm-R6vjSGPuiwy58HUpGmNJ": {
+    "gatilho": "Job para buscar histórico diário de cases",
+    "macete": "Passado no PA pede Customer Service Historic Data Collection.",
+    "conexao": "A pista “Job para buscar histórico diário de cases” deve puxar estes termos do gabarito enviado: Customer Service Historic Data Collection. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "915c34ac"
+  },
+  "csm-GlkqcbGpPYcL9oiIOCbI": {
+    "gatilho": "Dois flows padrão de e-mail recebido",
+    "macete": "E-mail cria case; resposta atualiza case.",
+    "conexao": "A pista “Dois flows padrão de e-mail recebido” deve puxar estes termos do gabarito enviado: Create case from email • Update case using reply. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3,
+      4
+    ],
+    "assinatura": "196e3e3a"
+  },
+  "csm-wCcUqlaZo2aPbtYGZu3S": {
+    "gatilho": "O que define o processamento de escalation",
+    "macete": "O molde dita o processo: Escalation Template.",
+    "conexao": "A pista “O que define o processamento de escalation” deve puxar estes termos do gabarito enviado: Escalation Template. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "808ae591"
+  },
+  "csm-8M4ILCg2riks6Be739PV": {
+    "gatilho": "Gerenciar fases e tarefas de metas de melhoria",
+    "macete": "Melhorar de forma contínua pede Continual Improvement Management.",
+    "conexao": "A pista “Gerenciar fases e tarefas de metas de melhoria” deve puxar estes termos do gabarito enviado: Continual Improvement Management. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "b3a50d62"
+  },
+  "csm-QDSuIdAyiLADIt8fbbPe": {
+    "gatilho": "Duas roles que não se combinam por segurança",
+    "macete": "O banco contrapõe internal e external, mantendo a grafia original.",
+    "conexao": "A pista “Duas roles que não se combinam por segurança” deve puxar estes termos do gabarito enviado: snc_intemai and snc_external. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "240b29a2"
+  },
+  "csm-3iqb6IR5pMkuqYFVt5fG": {
+    "gatilho": "Uso de Special Handling Notes",
+    "macete": "A nota puxa a atenção do agente para informação importante do registro.",
+    "conexao": "A pista “Uso de Special Handling Notes” deve puxar estes termos do gabarito enviado: Bring important information about individual records to an agent's attention. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ff5a1f93"
+  },
+  "csm-XhlRNmgJekhtcJasmWee": {
+    "gatilho": "Critérios para limitar leitura e criação no Knowledge",
+    "macete": "O banco escolhe Can Read e Cannot Contribute; guarde os dois termos fornecidos.",
+    "conexao": "A pista “Critérios para limitar leitura e criação no Knowledge” deve puxar estes termos do gabarito enviado: Can Read user criteria • Cannot Contribute user criteria. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "d10fa297"
+  },
+  "csm-F1YjGPm4nCO75y7UIDXz": {
+    "gatilho": "Sincronização Parent Child com gabaritos divergentes",
+    "macete": "O campo principal escolhe gerar child ao preencher campos; leia o aviso antes de decorar.",
+    "conexao": "A pista “Sincronização Parent Child com gabaritos divergentes” deve puxar estes termos do gabarito enviado: Parent cases to automatically generate child cases when all fields are filled out thus synchronized auto-population. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "c7961da7",
+    "observacao": "O campo answer indica B, enquanto answer_ET indica A. A correção mantém o campo answer fornecido; a divergência não foi resolvida por verificação externa."
+  },
+  "csm-fdUk0qB4fLwOQaV57EsW": {
+    "gatilho": "Duas conversas prontas do Virtual Agent",
+    "macete": "Conferir o status do case e pedir ajuda com um pedido.",
+    "conexao": "A pista “Duas conversas prontas do Virtual Agent” deve puxar estes termos do gabarito enviado: Check Case Status • Get Help with an Order. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "54740225"
+  },
+  "csm-sqCkDb5PSsNkQfHgctZ2": {
+    "gatilho": "Estado depois de o cliente rejeitar a solução",
+    "macete": "Solução rejeitada reabre a conversa: Open.",
+    "conexao": "A pista “Estado depois de o cliente rejeitar a solução” deve puxar estes termos do gabarito enviado: Open. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "9701ed28"
+  },
+  "csm-2R3kpGMSfCwNvKULSA5r": {
+    "gatilho": "Duas características do partner perante o cliente",
+    "macete": "Partner ajuda a vender, entregar e apoiar; não é dono da relação nem do produto.",
+    "conexao": "A pista “Duas características do partner perante o cliente” deve puxar estes termos do gabarito enviado: A partner does not own the relationship with a customer. This relationship is owned by the organization they are partnering • A partner does not own any of the products or services provided by their partnering organization, instead they help to sell, deliver and support them on their behalf. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      4
+    ],
+    "assinatura": "23de46ad"
+  },
+  "csm-ZdXunaKej0bUWOtqMhBe": {
+    "gatilho": "Quatro critérios de roteamento automático em AWA",
+    "macete": "Skills, Availability, Shifts e Capacity: competência, presença, turno e capacidade.",
+    "conexao": "A pista “Quatro critérios de roteamento automático em AWA” deve puxar estes termos do gabarito enviado: Skills • Availability • Shifts • Capacity. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "assinatura": "53c8ebe6"
+  },
+  "csm-8ZZEDgK6APse0NmCgi4g": {
+    "gatilho": "Efeito de instalar o plugin CSM",
+    "macete": "Um plugin chega acompanhado: vários outros são ativados junto.",
+    "conexao": "A pista “Efeito de instalar o plugin CSM” deve puxar estes termos do gabarito enviado: Many other plugins at the same time. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "581db311"
+  },
+  "csm-F9GMjXiaCs4DcYihU9Rq": {
+    "gatilho": "Três lugares em que o agente abre case",
+    "macete": "Account, aplicação de atendimento e Chat oferecem a entrada.",
+    "conexao": "A pista “Três lugares em que o agente abre case” deve puxar estes termos do gabarito enviado: Account • Customer Service Application • Chat. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      4
+    ],
+    "assinatura": "c960e539"
+  },
+  "csm-Ra6ca74mrTfgPbiTHwdQ": {
+    "gatilho": "Tabela-base ao criar novo case type",
+    "macete": "Novo tipo herda de Case: sn_customerservice_case.",
+    "conexao": "A pista “Tabela-base ao criar novo case type” deve puxar estes termos do gabarito enviado: Case (sn_customerservice_case). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "58839fa8"
+  },
+  "csm-Um3yb5zY8SnO4QgEmLb9": {
+    "gatilho": "Dois benefícios de Conversation History",
+    "macete": "Menos tempo procurando informação, chamada mais curta e resolução mais rápida.",
+    "conexao": "A pista “Dois benefícios de Conversation History” deve puxar estes termos do gabarito enviado: Shorter calls for agents by reducing the time to search for information • Improved customer satisfaction as agents can respond to and resolve customer issues faster. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "07a4af48"
+  },
+  "csm-RJXzZV0f0qkZ2zHM3jwc": {
+    "gatilho": "Benefício da liberação em fases",
+    "macete": "Fase pequena entrega a funcionalidade principal rapidamente.",
+    "conexao": "A pista “Benefício da liberação em fases” deve puxar estes termos do gabarito enviado: Delivery of core functionality quickly. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "2cbf9fe8"
+  },
+  "csm-Qx0NCjWKrlVbIpgWg7CT": {
+    "gatilho": "Duas personas que veem work orders da hierarquia",
+    "macete": "Partner admin e Customer admin acompanham as ordens da empresa.",
+    "conexao": "A pista “Duas personas que veem work orders da hierarquia” deve puxar estes termos do gabarito enviado: Partner admin • Customer admin. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "ec26d55d"
+  },
+  "csm-qeUX67V0kagr0lVRrSi0": {
+    "gatilho": "Jeito eficiente de fechar cases após alguns dias",
+    "macete": "Ative o flow Auto Close Resolved Cases.",
+    "conexao": "A pista “Jeito eficiente de fechar cases após alguns dias” deve puxar estes termos do gabarito enviado: Activate the Auto Close Resolved Cases flow. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f38fef57"
+  },
+  "csm-PcQsNis5gKmSrL9jappE": {
+    "gatilho": "Duas roles que definem skills e mandatory skills",
+    "macete": "Manager e agente de Customer Service especificam as habilidades.",
+    "conexao": "A pista “Duas roles que definem skills e mandatory skills” deve puxar estes termos do gabarito enviado: Customer service manager (sn_customerservice_manager) • Customer service agent (sn_customerservice_agent). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1
+    ],
+    "assinatura": "d43a215e"
+  },
+  "csm-YnC2SazNLhc7LIz4HoKW": {
+    "gatilho": "Quantidade de contas associadas a um contato",
+    "macete": "Nesta definição, um contato se associa a One account.",
+    "conexao": "A pista “Quantidade de contas associadas a um contato” deve puxar estes termos do gabarito enviado: One. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "8acc5d5e"
+  },
+  "csm-3NHI4qTUprxjcQU1OWzp": {
+    "gatilho": "Três aprovadores do self-registration com código",
+    "macete": "Admin de sistema, de cliente e de parceiro aprovam o pedido.",
+    "conexao": "A pista “Três aprovadores do self-registration com código” deve puxar estes termos do gabarito enviado: System administrator (admin) • Customer administrator (sn_customerservice.customer_admin) • Partner administrator [sn_customerservice.partner_admon]. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "843eb07b"
+  },
+  "csm-JB2DmIYKziWmVvsIKsp7": {
+    "gatilho": "Dois ganhos da integração com Field Service",
+    "macete": "Case cria work order; cliente acompanha detalhes e tarefas da ordem.",
+    "conexao": "A pista “Dois ganhos da integração com Field Service” deve puxar estes termos do gabarito enviado: Work orders can be created from a case • Customer can access work order details and tasks created for their case. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "bb6bdec3"
+  },
+  "csm-60oFzHbPomPXFqJspiUO": {
+    "gatilho": "O que é uma decision tree de Guided Decisions",
+    "macete": "Árvore de decisão encadeia perguntas, respostas e orientação em várias etapas.",
+    "conexao": "A pista “O que é uma decision tree de Guided Decisions” deve puxar estes termos do gabarito enviado: A multi-step process consisting of a series of questions answers, and guidance. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "441324f7"
+  },
+  "csm-BMMon9IGuT07TnAjxQWM": {
+    "gatilho": "Indicador azul no Action Status",
+    "macete": "Azul pede atenção: Needs attention.",
+    "conexao": "A pista “Indicador azul no Action Status” deve puxar estes termos do gabarito enviado: Needs attention. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9ac4d089"
+  },
+  "csm-dBxFETjUqD2WPvkYI1TK": {
+    "gatilho": "Quatro responsabilidades do customer service agent",
+    "macete": "Ajuda, cria cases, propõe majors e trabalha nos cases.",
+    "conexao": "A pista “Quatro responsabilidades do customer service agent” deve puxar estes termos do gabarito enviado: Assist customers with questions, issues and problems • Create cases • Propose major cases • View, edit, and work on cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "assinatura": "c8e0810f"
+  },
+  "csm-dj8iDgNpfrQSXsaaFO4C": {
+    "gatilho": "Efeito do add-in de Outlook na experiência",
+    "macete": "Menos espera: resolução e resposta mais rápidas no gabarito fornecido.",
+    "conexao": "A pista “Efeito do add-in de Outlook na experiência” deve puxar estes termos do gabarito enviado: It can lead to taster resolution of customer issues and faster response to customer inquiries. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0efd43ec"
+  },
+  "csm-ZKapXAKtoaLKTHEho2rY": {
+    "gatilho": "Definição de interaction",
+    "macete": "Pedido de ajuda em conversa: chat, telefone ou walk-up.",
+    "conexao": "A pista “Definição de interaction” deve puxar estes termos do gabarito enviado: A request for assistance made through a chat, phone call, or walk-up. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "fed77173"
+  },
+  "csm-8pJYLlRlUjPlNpsBXeYt": {
+    "gatilho": "Dois acessos do customer no portal",
+    "macete": "Pesquisa e cases da própria conta, mais os ativos pertencentes a ela.",
+    "conexao": "A pista “Dois acessos do customer no portal” deve puxar estes termos do gabarito enviado: Can research questions issues, or problems, and create view and edit cases for only their own accounts • Can view assets belonging to their account. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "cde31172"
+  },
+  "csm-rM7tEFOyp1eZDvOkPUeq": {
+    "gatilho": "Dois destinatários de targeted communications",
+    "macete": "A comunicação mira Contacts e Internal users.",
+    "conexao": "A pista “Dois destinatários de targeted communications” deve puxar estes termos do gabarito enviado: Contacts • Internal users. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "f2d238f3"
+  },
+  "csm-0WzJgIwL6QnhHM9ABKSX": {
+    "gatilho": "Duas utilidades de visualizar install base",
+    "macete": "Enxergue a configuração e ache o produto certo a partir do case.",
+    "conexao": "A pista “Duas utilidades de visualizar install base” deve puxar estes termos do gabarito enviado: See the detailed configurations of the products and services deployed for a customer to determine me action needed • Trace information provided m a case to the right product or service to which it relates. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "944b07e9"
+  },
+  "csm-15AXzkkbksryi3EmG551": {
+    "gatilho": "Etapa de AWA que acerta o agente",
+    "macete": "A regra da atribuição decide: Define Assignment Rules.",
+    "conexao": "A pista “Etapa de AWA que acerta o agente” deve puxar estes termos do gabarito enviado: Define Assignment Rules. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "96205c89"
+  },
+  "csm-A6UlXpJ5YT6dN8ugG23L": {
+    "gatilho": "Nível mais baixo da hierarquia de case type",
+    "macete": "A ponta da árvore é Leaf-level.",
+    "conexao": "A pista “Nível mais baixo da hierarquia de case type” deve puxar estes termos do gabarito enviado: Leaf-level. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "26ddc90f"
+  },
+  "csm-8zAWcuej8SO9F2AL9n6i": {
+    "gatilho": "Duas roles que mantêm membros de Account Team",
+    "macete": "Admin de sistema e Customer Service Manager mantêm a equipe.",
+    "conexao": "A pista “Duas roles que mantêm membros de Account Team” deve puxar estes termos do gabarito enviado: System Administrator [admin] • Customer Service Manager [sn_customerservice_manager]. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2,
+      3
+    ],
+    "assinatura": "4a1634c9"
+  },
+  "csm-pkRv81ekYvjVmvAr1S8C": {
+    "gatilho": "Três acessos padrão do customer no portal desta versão",
+    "macete": "Cases, Assets e Sold products: guarde o trio deste registro.",
+    "conexao": "A pista “Três acessos padrão do customer no portal desta versão” deve puxar estes termos do gabarito enviado: Cases • Assets • Sold products. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      4
+    ],
+    "assinatura": "ef1767a1"
+  },
+  "csm-fnYbCLPRjbd2XywUswuD": {
+    "gatilho": "Dois benefícios de Customer Access Management, variante",
+    "macete": "Acesso ao produto vendido libera case e deixa partes relacionadas colaborarem.",
+    "conexao": "A pista “Dois benefícios de Customer Access Management, variante” deve puxar estes termos do gabarito enviado: It increases security by automatically granting access to cases based on access to sold product. • It improves the customer experience by enabling related parties to track and collaborate on cases.. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "78efb849",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 116, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-vbX8Ars1ezSsJTSFqXZl": {
+    "gatilho": "Três produtos integrados com CSM nesta formulação",
+    "macete": "ITOM Event, Strategic Portfolio e Financial Management: trio desta variante.",
+    "conexao": "A pista “Três produtos integrados com CSM nesta formulação” deve puxar estes termos do gabarito enviado: ITOM Event Management • Strategic Portfolio Management • Financial Management. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      2,
+      4
+    ],
+    "assinatura": "867894e3"
+  },
+  "csm-hmynLm53O2EqufEtVaUu": {
+    "gatilho": "Tipo de case da demo além de Product, repetição",
+    "macete": "Product tem companhia na demo: Order.",
+    "conexao": "A pista “Tipo de case da demo além de Product, repetição” deve puxar estes termos do gabarito enviado: Order. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "9a3109cc",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 66, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-ADdB1lWEUaMDlkAQbr6W": {
+    "gatilho": "Quatro métodos do Matching Rule form, repetição",
+    "macete": "Simple seleciona, Advanced aprofunda, Scripted programa e Selection Criteria filtra.",
+    "conexao": "A pista “Quatro métodos do Matching Rule form, repetição” deve puxar estes termos do gabarito enviado: Simple • Advanced • Selection Criteria • Scripted. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "assinatura": "b79b8d78",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 99, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-1bHcrEG9jZYzuvKngMbB": {
+    "gatilho": "Finalidade de Guided Decisions, repetição",
+    "macete": "Decisão guiada dá ajuda dinâmica ao agente em cases complexos.",
+    "conexao": "A pista “Finalidade de Guided Decisions, repetição” deve puxar estes termos do gabarito enviado: Dynamically help agents to resolve complex cases. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "e6bd0395",
+    "observacao": "O banco fornecido também contém o enunciado equivalente na questão de origem 60, com outro registro de origem. Os registros foram preservados separadamente, junto com suas alternativas e seus gabaritos."
+  },
+  "csm-zbmeVZFzMt4ToX3pQv5m": {
+    "gatilho": "Funcionário pedindo suporte próprio ou para cliente",
+    "macete": "Contributor Users contribuem com pedidos para si e clientes externos.",
+    "conexao": "A pista “Funcionário pedindo suporte próprio ou para cliente” deve puxar estes termos do gabarito enviado: Contributor Users. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "17a3ba76"
+  },
+  "csm-8DeC8j0X6E2A5ZYa2grO": {
+    "gatilho": "Funcionalidade para fechar resolvidos sem resposta",
+    "macete": "Flow Designer executa Auto Close Resolved Cases.",
+    "conexao": "A pista “Funcionalidade para fechar resolvidos sem resposta” deve puxar estes termos do gabarito enviado: Auto Close Resolved Cases Flow Designer Flow. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "b8889583"
+  },
+  "csm-FoBN52njpaZUMcsoxV2X": {
+    "gatilho": "Três critérios de AWA nesta outra pergunta",
+    "macete": "Skills, Schedule e Workload: habilidade, agenda e carga.",
+    "conexao": "A pista “Três critérios de AWA nesta outra pergunta” deve puxar estes termos do gabarito enviado: Skills • Schedule • Workload. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "954f8cf2"
+  },
+  "csm-tv6UKqhoK3NWmAasHkCy": {
+    "gatilho": "Integração configurável com CRM e ERP terceiros",
+    "macete": "O centro das ligações externas é Integration Hub.",
+    "conexao": "A pista “Integração configurável com CRM e ERP terceiros” deve puxar estes termos do gabarito enviado: Integration Hub. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c8b2c929"
+  },
+  "csm-CIDnVHJ1lU4ATN6VB97c": {
+    "gatilho": "Tabela que Account estende",
+    "macete": "Conta é empresa: customer_account estende Company, core_company.",
+    "conexao": "A pista “Tabela que Account estende” deve puxar estes termos do gabarito enviado: Company (core_company). Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a3f1bf29"
+  },
+  "csm-1Hk8Ts8pp9nWI5kpmDTs": {
+    "gatilho": "Combinação de roles restrita com divergência",
+    "macete": "O principal une snc_internal e partner_admin como par restrito; veja o aviso.",
+    "conexao": "A pista “Combinação de roles restrita com divergência” deve puxar estes termos do gabarito enviado: snc_internal and sn_customerservice.partner_admin. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "a5aba7b2",
+    "observacao": "O campo answer indica B, enquanto answer_ET indica A. A correção mantém o campo answer fornecido; a divergência não foi resolvida por verificação externa."
+  },
+  "csm-rKnUz0LhMEUcwlX9tCwO": {
+    "gatilho": "Configurar outro workflow de aprovação de escalation",
+    "macete": "Troque o processo pelo Escalation Template.",
+    "conexao": "A pista “Configurar outro workflow de aprovação de escalation” deve puxar estes termos do gabarito enviado: Escalation Template. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "601a16a4"
+  },
+  "csm-YFgw4hmobMqQ5j0GwF06": {
+    "gatilho": "Entidade de versões específicas de produtos vendidos",
+    "macete": "A versão específica do produto vive em Product Models.",
+    "conexao": "A pista “Entidade de versões específicas de produtos vendidos” deve puxar estes termos do gabarito enviado: Product Models. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      2
+    ],
+    "assinatura": "9c5e630e"
+  },
+  "csm-AS72NgLcq42paZK34Vyq": {
+    "gatilho": "Passo obrigatório após escolher assignment group",
+    "macete": "Depois do grupo, Define Assignment Rules para escolher o agente.",
+    "conexao": "A pista “Passo obrigatório após escolher assignment group” deve puxar estes termos do gabarito enviado: Define Assignment Rules. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      3
+    ],
+    "assinatura": "aeb79d7c"
+  },
+  "csm-seeU3ND90vttouJU5tvb": {
+    "gatilho": "Duas decisões de Predictive Intelligence, outra versão",
+    "macete": "Prioridade e categoria continuam juntas: Case Prioritization e Case Categorization.",
+    "conexao": "A pista “Duas decisões de Predictive Intelligence, outra versão” deve puxar estes termos do gabarito enviado: Case Prioritization • Case Categorization. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "d7ae58d9"
+  },
+  "csm-Si3IP2nVjZJCgRvPgjvP": {
+    "gatilho": "Acordo formal com expectativa de tempo de serviço",
+    "macete": "A promessa de prazo tem nome: Service Level Agreement.",
+    "conexao": "A pista “Acordo formal com expectativa de tempo de serviço” deve puxar estes termos do gabarito enviado: Service Level Agreement. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      0
+    ],
+    "assinatura": "de6fbcf8"
+  },
+  "csm-fp0LpETNPG0NH25feVS9": {
+    "gatilho": "Entidade que define CIs acessíveis ao cliente",
+    "macete": "Na base orientada a serviço, o CI acessível se liga ao Install Base Item.",
+    "conexao": "A pista “Entidade que define CIs acessíveis ao cliente” deve puxar estes termos do gabarito enviado: Install Base Item. Guarde o conteúdo completo, pois a posição das alternativas pode mudar.",
+    "tecnica": "Associação",
+    "respostas": [
+      1
+    ],
+    "assinatura": "8166cbf4"
+  }
+}

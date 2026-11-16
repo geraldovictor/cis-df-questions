@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 FILES = ['questoes-1-corrigida (1).json', 'questoes-2-corrigida-v2 (1).json', 'questoes-3-corrigida-v2 (1).json']
-CERTIFICATIONS = ('cis-df', 'cis-em', 'cis-cad')
+CERTIFICATIONS = ('cis-df', 'cis-em', 'cis-cad', 'cis-csm')
 VOICE = 'en-US-AndrewMultilingualNeural'
 
 
@@ -54,10 +54,12 @@ def question_bank(certification):
     return list(zip(identifiers, questions))
 
 
-async def main(certification='cis-df'):
+async def main(certification='cis-df', concurrency=16):
     import edge_tts
 
-    semaphore = asyncio.Semaphore(16)
+    if concurrency < 1:
+        raise ValueError('Concurrency must be at least 1.')
+    semaphore = asyncio.Semaphore(concurrency)
     async def generate(folder, identifier, question):
         async with semaphore:
             target = folder / f'{identifier}.mp3'
@@ -85,11 +87,16 @@ async def main(certification='cis-df'):
         if not bank:
             print(f'{selected}: awaiting questions; no recordings generated.', flush=True)
         tasks.extend(generate(folder, identifier, question) for identifier, question in bank)
-    await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    failures = [result for result in results if isinstance(result, Exception)]
+    if failures:
+        raise RuntimeError(f'{len(failures)} recording(s) failed; run again to retry missing files.') from failures[0]
     print(f'Complete: {len(tasks)} neural recordings, voice {VOICE}', flush=True)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate neural English recordings for a certification.')
     parser.add_argument('--certification', choices=(*CERTIFICATIONS, 'all'), default='cis-df')
-    asyncio.run(main(parser.parse_args().certification))
+    parser.add_argument('--concurrency', type=int, default=16, help='Maximum simultaneous voice requests; reduce after service errors.')
+    args = parser.parse_args()
+    asyncio.run(main(args.certification, args.concurrency))

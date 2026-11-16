@@ -15,7 +15,13 @@ export const certifications = Object.freeze([
     blueprint: { updated: 'janeiro de 2026', verified: '2026-11-14', durationMinutes: 90,
       url: 'https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498',
       domains: [['Designing and Creating an Application', 20], ['Application User Interface', 20], ['Security and Restricting Access', 20],
-        ['Application Automation', 20], ['Working with External Data', 10], ['Managing Applications', 10]] } }
+        ['Application Automation', 20], ['Working with External Data', 10], ['Managing Applications', 10]] } },
+  { id: 'cis-csm', label: 'CIS-CSM', name: 'Customer Service Management', examSize: 60,
+    files: ['data/cis-csm/questions.json'], memoryAids: 'data/cis-csm/memory-aids.json',
+    blueprint: { updated: 'novembro de 2025', verified: '2026-11-16', durationMinutes: 90,
+      url: 'https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011529',
+      domains: [['CSM foundational data model', 27], ['CSM configuration', 38], ['Case management', 17],
+        ['CSM Workspace, Portals, Service Catalog, Analytics, and Reporting', 8], ['CSM Best Practices and Knowledge Management', 10]] } }
 ]);
 
 export function getCertification(id = DEFAULT_CERTIFICATION) {

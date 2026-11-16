@@ -1,6 +1,6 @@
 # Certificações ServiceNow · Sala de estudos
 
-Uma sala de estudos para **CIS-DF**, **CIS-EM** e **CAD** (identificado internamente como `cis-cad`). Use os cartões no topo para trocar de certificação. A última seleção é lembrada neste navegador; os links diretos são `?cert=cis-df`, `?cert=cis-em` e `?cert=cis-cad`.
+Uma sala de estudos para **CIS-DF**, **CIS-EM**, **CAD** (identificado internamente como `cis-cad`) e **CIS-CSM**. Use os cartões no topo para trocar de certificação. A última seleção é lembrada neste navegador; os links diretos são `?cert=cis-df`, `?cert=cis-em`, `?cert=cis-cad` e `?cert=cis-csm`.
 
 ## Busca diária de fontes
 
@@ -15,10 +15,13 @@ Para executar localmente: `node scripts/question-source-watch.mjs`. A saída fic
 | CIS-DF · Data Foundations | 205 | 205 | 75 |
 | CIS-EM · Event Management | 118 | 118 | 30 |
 | CAD · Application Developer | 151 | 151 | 60 |
+| CIS-CSM · Customer Service Management | 240 | 240 | 60 |
 
 As quantidades de CIS-EM e CAD seguem os blueprints oficiais atualizados em janeiro de 2026: [CIS-EM: 30 questões e 60 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011604) e [CAD: 60 questões e 90 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498). O CIS-DF mantém o formato existente de 75 questões. As perguntas são sorteadas do banco selecionado sem reposição na mesma tentativa; o sorteio não aplica pesos por domínio do blueprint.
 
-As três usam os mesmos recursos: login, simulados, estudo com correção imediata, histórico, retomada, flashcards, decoreba, áudio e acesso offline/PWA. Simulados, estudos, gravações pendentes, marcações e posição do áudio são separados por certificação. A troca salva a tentativa aberta antes de navegar. Os IDs, URLs de áudio e chaves locais anteriores do CIS-DF foram preservados.
+As quatro usam os mesmos recursos: login, simulados, treino de 60 questões, estudo com correção imediata, histórico, retomada, flashcards, decoreba, áudio e acesso offline/PWA. Simulados, estudos, treinos, gravações pendentes, marcações e posição do áudio são separados por certificação. A troca salva a tentativa aberta antes de navegar. Os IDs, URLs de áudio e chaves locais anteriores do CIS-DF foram preservados.
+
+O banco CIS-CSM de 16/11/2026 contém os 240 registros enviados, incluindo duas associações com imagens locais e macetes individuais. O gabarito principal enviado foi preservado; divergências com o gabarito alternativo e enunciados repetidos estão indicados nos itens afetados e em `data/cis-csm/import-report.json`. O [blueprint oficial CIS-CSM](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011529), atualizado em novembro de 2025 e consultado em 16/11/2026, define 60 questões e 90 minutos.
 
 Os novos bancos e macetes ficam em `data/cis-em/` e `data/cis-cad/`; `certification.js` define as fontes. Os gabaritos enviados foram preservados. Os relatórios `import-report.json` registram a origem, adaptações e inconsistências: faltam explicações nos dois novos bancos, existem alternativas incompletas no CAD e no CIS-EM e há divergências entre gabaritos no CIS-EM. Os itens afetados têm uma observação recolhida junto ao enunciado. As seis imagens do CIS-EM são locais e ficam disponíveis offline; a sequência HOTSPOT usa associação interativa, com a imagem-resposta disponível depois da correção.
 
@@ -32,15 +35,19 @@ Os números de questões nos recursos abaixo variam conforme a certificação se
 
 ## Modo de estudo
 
+O **Treino de 60 questões** está disponível nas quatro certificações. Cada tentativa sorteia 60 questões sem repetição, embaralha as alternativas e não tem cronômetro. Use **Confirmar e ver resposta** para receber a correção imediatamente; confirmar novamente não soma outro acerto. O treino pode ser pausado, retomado e encerrado antecipadamente. Seu histórico e suas gravações pendentes são separados do estudo completo e dos simulados. O estado usa `mode: "study"` e `variant: "practice60"` na tabela existente `study_sessions`; não é necessária outra migração se as migrações 001 e 002 já foram aplicadas.
+
 Além do simulado com a quantidade definida para cada certificação, o modo de estudo usa todas as questões da certificação selecionada em ordem aleatória, sem repetição. Ao selecionar e confirmar as alternativas, a correção e as explicações disponíveis aparecem imediatamente. A resposta confirmada fica travada e só é contabilizada uma vez; seleções ainda não confirmadas são rascunhos.
 
 O painel mostra acertos, erros, questões restantes e aproveitamento entre respostas confirmadas. É possível pausar, retomar e encerrar antecipadamente; o resultado distingue questões não respondidas de erros. O histórico dos estudos é separado dos simulados.
 
+`node tests/practice-browser.mjs` verifica o treino nas quatro certificações, com correção, retomada offline, históricos separados e sincronização com conta simulada. Use `PLAYWRIGHT_PATH` para o `index.mjs` de `playwright-core` e, opcionalmente, `BROWSER_PATH` para Chrome/Edge. O teste não grava dados em contas reais.
+
 **Ativação em projeto existente ou novo:** execute `migrations/001-study-sessions.sql` no SQL Editor do Supabase. O script pode ser repetido e cria uma tabela separada com RLS por usuário; não modifica `attempts` nem resultados antigos. Sem essa tabela, somente o novo modo fica indisponível. As cópias locais de gravações pendentes também são separadas por modo e usuário.
 
-Execute `npm test` para validar os dois modos. O banco de questões e o cálculo no cliente continuam sendo destinados a estudo pessoal.
+Execute `npm test` para validar os modos. O banco de questões e o cálculo no cliente continuam sendo destinados a estudo pessoal.
 
-Site responsivo de preparação para certificações ServiceNow, sem etapa de build. Usa os três JSONs originais do CIS-DF e os bancos normalizados de CIS-EM e CAD, com 75, 30 ou 60 perguntas por simulado, respectivamente, e alternativas embaralhadas. Uma questão pode reaparecer em outro simulado.
+Site responsivo de preparação para certificações ServiceNow, sem etapa de build. Usa os três JSONs originais do CIS-DF e os bancos normalizados de CIS-EM, CAD e CIS-CSM, com 75, 30, 60 e 60 perguntas por simulado, respectivamente, e alternativas embaralhadas. Uma questão pode reaparecer em outro simulado.
 
 Inclui login/cadastro por e-mail e senha, recuperação de senha, progresso sincronizado por conta, retomada, histórico, média, melhor resultado e revisão com explicações. Questões com múltiplas respostas exigem o conjunto exato de alternativas corretas; questões em branco contam como erro. O texto e o gabarito originais foram preservados.
 
@@ -80,7 +87,9 @@ Documentação: [Supabase Auth](https://supabase.com/docs/guides/auth), [Row Lev
 
 O painel inclui Ouvir questões com gravações em inglês de todas as questões do banco selecionado: pergunta e todas as alternativas corretas. Há seleção de questão, reprodução contínua, repetição, velocidade e download. A última questão escolhida é lembrada por certificação neste navegador. Os MP3s usam a voz neural en-US-AndrewMultilingualNeural e só são carregados quando utilizados.
 
-Para regenerar os arquivos, instale `requirements-audio.txt` em um ambiente Python e execute `python generate-audio.py --certification all`, ou escolha `cis-df`, `cis-em` ou `cis-cad`. Sem argumento, o gerador mantém o comportamento original do CIS-DF. A geração usa o serviço online de voz da Microsoft via edge-tts; os arquivos prontos são servidos pelo próprio site. Os novos áudios ficam em `audio/cis-em/` e `audio/cis-cad/`, com IDs estáveis do banco. Regenere os arquivos afetados ao alterar perguntas, contextos ou respostas.
+Para regenerar os arquivos, instale `requirements-audio.txt` em um ambiente Python e execute `python generate-audio.py --certification all`, ou escolha `cis-df`, `cis-em`, `cis-cad` ou `cis-csm`. Sem argumento, o gerador mantém o comportamento original do CIS-DF. A geração usa o serviço online de voz da Microsoft via edge-tts; os arquivos prontos são servidos pelo próprio site. Os novos áudios ficam em `audio/cis-em/`, `audio/cis-cad/` e `audio/cis-csm/`, com IDs estáveis do banco. Regenere os arquivos afetados ao alterar perguntas, contextos ou respostas.
+
+Se o serviço de voz falhar, reduza as requisições simultâneas com `--concurrency 4` e execute novamente. O gerador termina as demais gravações mesmo quando uma falha e reaproveita os arquivos completos na próxima execução.
 
 ## Flashcards
 
@@ -98,9 +107,9 @@ O conteúdo fica no arquivo `memory-aids.json` de cada banco, com uma entrada po
 
 ## Modo offline sem login
 
-Na tela inicial, use Estudar offline · Sem login. O site salva automaticamente os arquivos e todas as questões das três certificações no navegador. Aguarde a indicação de que o site está pronto antes de desconectar. Depois, o mesmo endereço abre sem internet e o modo local é retomado, sem depender do login ou do Supabase.
+Na tela inicial, use Estudar offline · Sem login. O site salva automaticamente os arquivos e todas as questões das quatro certificações no navegador. Aguarde a indicação de que o site está pronto antes de desconectar. Depois, o mesmo endereço abre sem internet e o modo local é retomado, sem depender do login ou do Supabase.
 
-Simulados, estudos, histórico e flashcards funcionam no modo local. O progresso fica no armazenamento persistente deste navegador, separado dos resultados da conta, e não é enviado ao servidor. Limpar os dados do site ou usar outro navegador/dispositivo não preserva esses resultados. O navegador precisa permitir armazenamento local e service workers (HTTPS ou localhost).
+Simulados, estudos, treinos de 60 questões, histórico e flashcards funcionam no modo local. O progresso fica no armazenamento persistente deste navegador, separado dos resultados da conta, e não é enviado ao servidor. Limpar os dados do site ou usar outro navegador/dispositivo não preserva esses resultados. O navegador precisa permitir armazenamento local e service workers (HTTPS ou localhost).
 
 Para ouvir sem internet, clique em Salvar áudios para ouvir offline enquanto estiver conectado. O download mostra o progresso e aproveita os arquivos já salvos em uma nova tentativa. Os áudios são opcionais; questões e flashcards não dependem desse download.
 

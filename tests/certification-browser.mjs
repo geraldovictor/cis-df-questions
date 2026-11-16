@@ -13,7 +13,8 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75, audio: 'audio/' },
   { id: 'cis-em', count: 118, examSize: 30, audio: 'audio/cis-em/' },
-  { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' }
+  { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' },
+  { id: 'cis-csm', count: 240, examSize: 60, audio: 'audio/cis-csm/' }
 ];
 const server = createServer(async (req, res) => {
   const path = resolve(root, '.' + decodeURIComponent(new URL(req.url, 'http://localhost').pathname));
@@ -107,7 +108,7 @@ async function assertContextImages(page, course) {
     const questions = await loadQuestionBank(certification);
     return questions.filter(question => /\.png/i.test(JSON.stringify(question.contexto || {}))).map(question => question.id);
   }, course.id);
-  assert.ok(imageQuestions.length > 0, 'CIS-EM should retain its source screenshots');
+  assert.ok(imageQuestions.length > 0, `${course.id} should retain its source screenshots`);
   await page.locator('#study-start').click();
   const state = (await saved(page, progressKey(course.id))).studies[0].state;
   for (const id of imageQuestions) {
@@ -122,7 +123,7 @@ async function assertContextImages(page, course) {
   }
   await page.setViewportSize({ width: 390, height: 844 });
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true, 'Mobile context should fit its viewport');
-  await page.screenshot({ path: resolve(root, 'test-results/certification-em-context.png'), fullPage: true });
+  await page.screenshot({ path: resolve(root, `test-results/certification-${course.id.replace('cis-', '')}-context.png`), fullPage: true });
   await page.setViewportSize({ width: 1280, height: 960 });
   await page.locator('[data-study-jump="1"]').click();
   await page.locator('#study-back').click();
@@ -399,10 +400,10 @@ async function assertEmSupplements(browser) {
   await context.close();
 }
 
-async function assertHotspotAnswerVisibility(browser) {
-  const course = courses.find(item => item.id === 'cis-em');
+async function assertHotspotAnswerVisibility(browser, certificationId, questionId) {
+  const course = courses.find(item => item.id === certificationId);
   const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
-  const question = questions.find(item => item.fonte?.imagens_resposta?.some(path => path.endsWith('/image19.png')));
+  const question = questions.find(item => item.id === questionId);
   assert.ok(question, 'The source hotspot needs its original answer screenshot');
   const study = createStudy(questions, 'offline-guest', course.id);
   const quiz = createAttempt(questions, 'offline-guest', course.id);
@@ -411,23 +412,25 @@ async function assertHotspotAnswerVisibility(browser) {
   quiz.state.orders = Object.fromEntries(questions.map(item => [item.id, item.alternativas.map((_, index) => index)]));
   const context = await browser.newContext({ serviceWorkers: 'block', viewport: { width: 1280, height: 960 } });
   await context.addInitScript(({ study, quiz, questionId }) => {
-    localStorage.setItem('cis-em-offline-progress-v1', JSON.stringify({ attempts: [quiz], studies: [study] }));
-    localStorage.setItem('cis-em-flashcards-offline-guest', JSON.stringify({ marks: {}, currentId: questionId }));
-    localStorage.setItem('cis-em-memory-v1-offline-guest', JSON.stringify({ marks: {}, currentId: questionId, mode: 'test' }));
+    const certification = study.state.certification;
+    localStorage.setItem(`${certification}-offline-progress-v1`, JSON.stringify({ attempts: [quiz], studies: [study] }));
+    localStorage.setItem(`${certification}-flashcards-offline-guest`, JSON.stringify({ marks: {}, currentId: questionId }));
+    localStorage.setItem(`${certification}-memory-v1-offline-guest`, JSON.stringify({ marks: {}, currentId: questionId, mode: 'test' }));
   }, { study, quiz, questionId: question.id });
   await context.route('https://**/*', route => route.abort());
   const page = await context.newPage();
   page.on('pageerror', error => errors.push(error.message));
-  const promptImage = page.locator('img[src$="/image18.png"]');
-  const answerImage = page.locator('img[src$="/image19.png"]');
+  const promptImage = page.locator(`img[src="${question.contexto.imagens[0].src}"]`);
+  const answerImage = page.locator(`img[src="${question.fonte.imagens_resposta[0]}"]`);
   const expandAnswer = async () => {
-    assert.equal(await page.locator('.question-answer-image').count(), 1);
+    const answerDetails = page.locator('.question-answer-image').filter({ has: answerImage });
+    assert.equal(await answerDetails.count(), 1);
     assert.equal(await answerImage.isVisible(), false, 'The original answer image starts collapsed');
-    await page.locator('.question-answer-image > summary').click();
+    await answerDetails.locator(':scope > summary').click();
     assert.equal(await answerImage.isVisible(), true);
     assert.equal(await answerImage.evaluate(image => image.complete && image.naturalWidth > 0 || image.decode().then(() => image.naturalWidth > 0)), true);
   };
-  await page.goto(`${url}?cert=cis-em&mode=offline`);
+  await page.goto(`${url}?cert=${course.id}&mode=offline`);
   await page.locator('#study-start').click();
   assert.equal(await promptImage.isVisible(), true);
   assert.equal(await answerImage.count(), 0, 'An unanswered study must not include the answer image');
@@ -512,7 +515,7 @@ try {
     assert.match(await page.locator('.study-feedback').textContent(), /Você acertou/);
     await page.locator('#study-next').click();
     await page.locator('#study-back').click();
-    if (course.id === 'cis-em') await assertContextImages(page, course);
+    if (['cis-em', 'cis-csm'].includes(course.id)) await assertContextImages(page, course);
 
     await page.locator('#start').click();
     assert.equal(await page.locator('[data-jump]').count(), course.examSize);
@@ -553,7 +556,7 @@ try {
     assert.match(await page.locator('[data-memory-stats]').textContent(), new RegExp(`${index + 1} ainda confundo`));
     assert.equal(await page.locator('[data-memory-jump]').inputValue(), snapshots[course.id].memory.currentId);
     await page.locator('[data-memory-back]').click();
-    if (course.id === 'cis-em') await assertContextImages(page, course);
+    if (['cis-em', 'cis-csm'].includes(course.id)) await assertContextImages(page, course);
   }
 
   // Completed histories appear only in their own certification.
@@ -584,11 +587,14 @@ try {
   assert.deepEqual(errors, []);
   await context.close();
   await assertAccountIsolation(browser);
-  await assertHotspotAnswerVisibility(browser);
+  for (const course of courses.filter(item => ['cis-em', 'cis-csm'].includes(item.id))) {
+    const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
+    for (const question of questions.filter(item => item.fonte?.imagens_resposta?.length)) await assertHotspotAnswerVisibility(browser, course.id, question.id);
+  }
   await assertCadSupplement(browser);
   await assertEmSupplements(browser);
   assert.deepEqual(errors, []);
-  console.log('PASS: CIS-DF/CIS-EM/CAD banks, navigation, independent quiz/study/history/flashcard/memory progress, 269 cached EM/CAD recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation, hotspot answer-image reveal and legacy progress after bank additions');
+  console.log('PASS: CIS-DF/CIS-EM/CAD/CIS-CSM banks, navigation, independent quiz/study/history/flashcard/memory progress, 509 cached EM/CAD/CSM recordings and offline playback/ranges, source images, mobile context, offline switching, mocked account history/resume/pending isolation, hotspot answer-image reveal and legacy progress after bank additions');
 } finally {
   await browser?.close();
   await new Promise(done => server.close(done));

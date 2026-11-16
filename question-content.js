@@ -7,7 +7,7 @@ export function renderQuestionContext(question) {
   const context = question.contexto;
   if (!context) return note;
   const table = context.tabela;
-  const images = (context.imagens || []).filter(item => /^data\/cis-(em|cad)\/images\/[a-zA-Z0-9_.-]+\.(png|jpg|webp)$/.test(item.src));
+  const images = (context.imagens || []).filter(item => /^data\/cis-(em|cad|csm)\/images\/[a-zA-Z0-9_.-]+\.(png|jpg|webp)$/.test(item.src));
   return `${note}<div class="question-context" lang="en">${context.introducao ? `<p>${esc(context.introducao)}</p>` : ''}${table ? `<table><caption>${esc(table.titulo)}</caption><thead><tr>${table.colunas.map(column => `<th scope="col">${esc(column)}</th>`).join('')}</tr></thead><tbody>${table.linhas.map(row => `<tr>${row.map(cell => `<td>${esc(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}${(context.paragrafos || []).map(paragraph => `<p>${esc(paragraph)}</p>`).join('')}${images.map(item => `<figure class="question-image"><img src="${esc(item.src)}" alt="${esc(item.alt)}" loading="lazy"><figcaption>${esc(item.alt)}</figcaption></figure>`).join('')}</div>`;
 }
 
@@ -20,7 +20,7 @@ export function questionPlainText(question) {
 }
 
 export function renderAnswerImages(question) {
-  const paths = (question.fonte?.imagens_resposta || []).filter(path => /^data\/cis-(em|cad)\/images\/[a-zA-Z0-9_.-]+\.(png|jpg|webp)$/.test(path));
+  const paths = (question.fonte?.imagens_resposta || []).filter(path => /^data\/cis-(em|cad|csm)\/images\/[a-zA-Z0-9_.-]+\.(png|jpg|webp)$/.test(path));
   if (!paths.length) return '';
   return `<details class="question-answer-image"><summary>Ver imagem do gabarito original</summary>${paths.map(path => `<figure class="question-image"><img src="${esc(path)}" alt="Gabarito da questão no material enviado" loading="lazy"></figure>`).join('')}</details>`;
 }

@@ -14,6 +14,20 @@ export function createStudy(questions, userId, certificationId = questions[0]?.c
   };
 }
 
+export function createPractice(questions, userId, certificationId = questions[0]?.certification || DEFAULT_CERTIFICATION) {
+  if (questions.length < 60) throw new Error('São necessárias pelo menos 60 questões para iniciar o treino.');
+  if (new Set(questions.map(question => question.id)).size !== questions.length) {
+    throw new Error('O banco de questões contém identificadores repetidos.');
+  }
+  const practice = createStudy(shuffle(questions).slice(0, 60), userId, certificationId);
+  practice.state.variant = 'practice60';
+  return practice;
+}
+
+export function isPracticeStudy(record) {
+  return record?.state?.variant === 'practice60';
+}
+
 export function confirmStudyAnswer(attempt, question, selected) {
   if (attempt.finished_at || attempt.state.confirmed[question.id]) return false;
   const matching = getMatchingQuestion(question);

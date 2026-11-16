@@ -2,7 +2,7 @@ import { renderAudioStudy } from './audio-study.js';
 import { renderFlashcards } from './flashcards.js';
 import { renderMemorization } from './memorization.js';
 import { GUEST_ID, readLocalProgress, saveLocalAttempt, prepareOffline, renderOfflineTools } from './offline.js';
-import { createStudy, studyProgress } from './study.js';
+import { createStudy, createPractice, isPracticeStudy, studyProgress } from './study.js';
 import { renderStudy } from './study-view.js';
 import { config } from './config.js';
 import { createAttempt, isCorrect, scoreAttempt } from './quiz.js';
@@ -127,6 +127,8 @@ function renderDashboard() {
   if (sourceWarnings) document.querySelector('.welcome').insertAdjacentHTML('afterend', `<p class="bank-note">${sourceWarnings} questões deste banco têm observações sobre o material enviado. Elas aparecem junto ao enunciado; o gabarito fornecido foi preservado.</p>`);
   document.querySelector('.hero').insertAdjacentHTML('afterend', '<section id="study-dashboard"></section>');
   renderStudyDashboard();
+  document.querySelector('#study-dashboard').insertAdjacentHTML('beforebegin', '<section id="practice-dashboard"></section>');
+  renderPracticeDashboard();
   document.querySelector('#study-dashboard').insertAdjacentHTML('afterend', '<div id="audio-dashboard"></div>');
   renderAudioStudy(document.querySelector('#audio-dashboard'), questions, certification.id);
   document.querySelector('#audio-dashboard').insertAdjacentHTML('beforebegin', '<div id="flashcards-dashboard"></div>');
@@ -151,10 +153,10 @@ function renderDashboard() {
 
 function renderBlueprint() {
   const blueprint = certification.blueprint;
-  return `<details class="card blueprint"><summary>Blueprint oficial · ${certification.label} · ${certification.examSize} questões</summary><p>${blueprint.durationMinutes} minutos de prova · Atualizado em ${blueprint.updated} · Consultado em 14/11/2026.</p><table><caption>Domínios da prova oficial</caption><thead><tr><th scope="col">Domínio</th><th scope="col">Peso</th></tr></thead><tbody>${blueprint.domains.map(([name, weight]) => `<tr><td lang="en">${esc(name)}</td><td>${weight}%</td></tr>`).join('')}</tbody></table><p class="muted">Os percentuais descrevem a prova oficial. Este simulado sorteia questões do banco disponível.</p><a href="${esc(blueprint.url)}" target="_blank" rel="noopener noreferrer">Consultar blueprint na ServiceNow ↗</a></details>`;
+  return `<details class="card blueprint"><summary>Blueprint oficial · ${certification.label} · ${certification.examSize} questões</summary><p>${blueprint.durationMinutes} minutos de prova · Atualizado em ${blueprint.updated} · Consultado em ${blueprint.verified.split('-').reverse().join('/')}.</p><table><caption>Domínios da prova oficial</caption><thead><tr><th scope="col">Domínio</th><th scope="col">Peso</th></tr></thead><tbody>${blueprint.domains.map(([name, weight]) => `<tr><td lang="en">${esc(name)}</td><td>${weight}%</td></tr>`).join('')}</tbody></table><p class="muted">Os percentuais descrevem a prova oficial. Este simulado sorteia questões do banco disponível.</p><a href="${esc(blueprint.url)}" target="_blank" rel="noopener noreferrer">Consultar blueprint na ServiceNow ↗</a></details>`;
 }
 
-function studyCacheKey() { return certificationStorageKey('study-pending', certification.id, user.id); }
+function studyCacheKey(practice = false) { return certificationStorageKey(practice ? 'practice60-pending' : 'study-pending', certification.id, user.id); }
 
 function renderMemoryDashboard() {
   document.querySelector('#memory-dashboard').innerHTML = `<div class="card memory-entry"><div><span class="eyebrow">Novo · Decoreba</span><h2>Uma pista. Uma resposta na memória.</h2><p>${questions.length} macetes em português, um para cada questão. Aprenda a associação, teste sua memória e separe o que ainda confunde.</p></div><button type="button" id="memory-start" class="primary">Abrir decoreba →</button></div>`;
@@ -180,13 +182,15 @@ async function loadStudies() {
   studyError = null; studies = [];
   if (offlineMode) { studies = readLocalProgress(undefined,certification.id).studies; return; }
   try {
-    const pendingKey=studyCacheKey();
-    const pending = JSON.parse(localStorage.getItem(pendingKey) || 'null');
-    if (pending && pending.user_id === user.id && getRecordCertification(pending)===certification.id) {
-      const {error} = await client.from('study_sessions').upsert(pending);
-      if (error) throw error;
-      if (user !== owner) return;
-      localStorage.removeItem(pendingKey);
+    for (const practice of [false, true]) {
+      const pendingKey=studyCacheKey(practice);
+      const pending = JSON.parse(localStorage.getItem(pendingKey) || 'null');
+      if (pending && pending.user_id === user.id && getRecordCertification(pending)===certification.id && isPracticeStudy(pending)===practice) {
+        const {error} = await client.from('study_sessions').upsert(pending);
+        if (error) throw error;
+        if (user !== owner) return;
+        localStorage.removeItem(pendingKey);
+      }
     }
     const {data,error} = await client.from('study_sessions').select('*').order('started_at',{ascending:false});
     if (user !== owner) return;
@@ -202,9 +206,10 @@ function openStudy() {
 
 function renderStudyDashboard() {
   const container = document.querySelector('#study-dashboard');
-  const ongoing = studies.find(a=>!a.finished_at), done = studies.filter(a=>a.finished_at);
+  const fullStudies = studies.filter(attempt => !isPracticeStudy(attempt));
+  const ongoing = fullStudies.find(a=>!a.finished_at), done = fullStudies.filter(a=>a.finished_at);
   container.innerHTML = `<div class="card study-entry"><div><span class="eyebrow">Novo · Modo de estudo</span><h2>Aprenda uma questão por vez.</h2><p class="muted">Todas as ${questions.length} questões em ordem aleatória. Correção e explicações na hora, com seus acertos acompanhados ao vivo.</p></div><button id="study-start" class="primary" ${studyError?'disabled':''}>${ongoing?'Continuar estudo':'Começar estudo'} →</button></div>${studyError?`<div class="notice">${studyError.code==='PGRST205'?'O modo de estudo aguarda a criação da tabela de resultados pelo administrador. Os simulados continuam disponíveis.':'Não foi possível carregar os estudos. Verifique sua conexão e tente novamente.'} <button id="study-retry" class="quiet">Tentar carregar estudos</button></div>`:''}${done.length?`<div class="section-head"><h2>Histórico de estudos</h2><p>Separado dos resultados dos simulados</p></div><div class="card">${done.map(a=>{const p=studyProgress(a,byId);return `<div class="history-row"><span class="score">${p.accuracy}%</span><div class="date">Modo de estudo · ${p.correct}/${p.answered} acertos nas respondidas<small>${date(a.finished_at)} · ${p.answered}/${a.total} questões confirmadas</small></div><button class="quiet" data-study-review="${esc(a.id)}">Ver estudo →</button></div>`;}).join('')}</div>`:''}`;
-  on('#study-retry','click',async()=>{await loadStudies();renderStudyDashboard();});
+  on('#study-retry','click',async()=>{await loadStudies();renderStudyDashboard();renderPracticeDashboard();});
   on('#study-start','click',async()=>{
     if (busy) return; busy=true; clearMessage();
     try {
@@ -218,13 +223,42 @@ function renderStudyDashboard() {
   }));
 }
 
+function renderPracticeDashboard() {
+  const container = document.querySelector('#practice-dashboard');
+  const practice = studies.filter(isPracticeStudy);
+  const ongoing = practice.find(attempt => !attempt.finished_at), done = practice.filter(attempt => attempt.finished_at);
+  container.innerHTML = `<div class="card study-entry practice-entry"><div><span class="eyebrow">Treino · Correção imediata</span><h2>60 questões para aprender na hora.</h2><p class="muted">60 questões aleatórias, sem repetição e sem cronômetro. Confirme cada resposta para ver o gabarito e as explicações disponíveis. Você pode pausar e continuar depois.</p></div><button id="practice-start" class="primary" ${studyError ? 'disabled' : ''}>${ongoing ? 'Continuar treino' : 'Começar treino de 60'} →</button></div>${studyError ? '<p class="notice">Não foi possível carregar os treinos. Use “Tentar carregar estudos” abaixo para tentar novamente.</p>' : ''}${done.length ? `<div class="section-head"><h2>Histórico de treinos de 60</h2><p>Resultados deste modo de prática</p></div><div class="card">${done.map(attempt => {
+    const progress = studyProgress(attempt, byId);
+    return `<div class="history-row"><span class="score">${progress.accuracy}%</span><div class="date">Treino de 60 · ${progress.correct}/${progress.answered} acertos nas respondidas<small>${date(attempt.finished_at)} · ${progress.answered}/${attempt.total} questões confirmadas</small></div><button class="quiet" data-practice-review="${esc(attempt.id)}">Ver treino →</button></div>`;
+  }).join('')}</div>` : ''}`;
+  on('#practice-start', 'click', async event => {
+    if (busy) return; busy = true; clearMessage();
+    const owner = user, button = event.currentTarget;
+    try {
+      const practiceAttempt = ongoing || createPractice(questions, owner.id, certification.id);
+      active = practiceAttempt;
+      if (!ongoing) {
+        await persist();
+        if (user !== owner) return;
+        studies.unshift(practiceAttempt);
+      }
+      if (user !== owner || !button.isConnected) return;
+      active = practiceAttempt;
+      openStudy();
+    } catch (error) { if (user === owner && button.isConnected) fail(error); } finally { busy = false; }
+  });
+  container.querySelectorAll('[data-practice-review]').forEach(element => element.addEventListener('click', () => {
+    active = practice.find(attempt => attempt.id === element.dataset.practiceReview); openStudy();
+  }));
+}
+
 function persist() {
   const snapshot=JSON.parse(JSON.stringify(active));
   if (offlineMode) {
     try { saveLocalAttempt(snapshot); saveError=null; return Promise.resolve(); }
     catch(error) { saveError=error; message('Não foi possível salvar neste navegador. Verifique o espaço disponível e as permissões de armazenamento.'); return Promise.reject(error); }
   }
-  const storageKey = snapshot.state.mode === 'study' ? studyCacheKey() : cacheKey();
+  const storageKey = snapshot.state.mode === 'study' ? studyCacheKey(isPracticeStudy(snapshot)) : cacheKey();
   const table = snapshot.state.mode === 'study' ? 'study_sessions' : 'attempts';
   try {localStorage.setItem(storageKey,JSON.stringify(snapshot));} catch(error) {message('O navegador não permitiu salvar uma cópia local. Mantenha a conexão ativa.');}
   const pending=saveQueue.then(async()=>{
