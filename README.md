@@ -14,8 +14,10 @@ Para executar localmente: `node scripts/question-source-watch.mjs`. A saída fic
 | --- | ---: | ---: | ---: |
 | CIS-DF · Data Foundations | 205 | 205 | 75 |
 | CIS-EM · Event Management | 137 | 137 | 30 |
-| CAD · Application Developer | 151 | 151 | 60 |
+| CAD · Application Developer | 278 | 278 | 60 |
 | CIS-CSM · Customer Service Management | 240 | 240 | 60 |
+
+O complemento CAD `servicenow_cad_questoes.json`, recebido em 16/11/2026, contém 272 registros: 127 foram acrescentados, totalizando 278 questões. A comparação considera enunciados, respostas e contexto; os 151 IDs e gabaritos anteriores foram preservados. O relatório `data/cis-cad/udemy-import-report.json` registra cada decisão e o conteúdo original. Os novos itens têm dicas de associação aos termos do gabarito e não têm gravações. A imagem de ACL recuperada na ServiceNow Community foi vinculada à questão anterior correspondente; a divergência de resposta entre os materiais está indicada junto ao enunciado. Os outros dois links de imagens retornaram HTTP403, e seus cenários já possuem contexto textual no banco.
 
 As quantidades de CIS-EM e CAD seguem os blueprints oficiais atualizados em janeiro de 2026: [CIS-EM: 30 questões e 60 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011604) e [CAD: 60 questões e 90 minutos](https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011498). O CIS-DF mantém o formato existente de 75 questões. As perguntas são sorteadas do banco selecionado sem reposição na mesma tentativa; o sorteio não aplica pesos por domínio do blueprint.
 

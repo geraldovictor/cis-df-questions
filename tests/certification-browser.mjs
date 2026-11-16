@@ -13,7 +13,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75, audio: 'audio/' },
   { id: 'cis-em', count: 137, audioCount: 136, examSize: 30, audio: 'audio/cis-em/' },
-  { id: 'cis-cad', count: 151, examSize: 60, audio: 'audio/cis-cad/' },
+  { id: 'cis-cad', count: 278, audioCount: 151, examSize: 60, audio: 'audio/cis-cad/' },
   { id: 'cis-csm', count: 240, examSize: 60, audio: 'audio/cis-csm/' }
 ];
 const server = createServer(async (req, res) => {
@@ -224,7 +224,7 @@ async function assertCadSupplement(browser) {
   const course = courses.find(item => item.id === 'cis-cad');
   const questions = await loadQuestionBank(course.id, async file => new Response(await readFile(fileURLToPath(file))));
   const added = questions.find(question => question.id === 'cad-srNSvJT2oarIvswoZGsi');
-  const original = questions.filter(question => question.id !== added.id), lastOriginal = original.at(-1);
+  const original = questions.slice(0,150), lastOriginal = original.at(-1);
   assert.equal(original.length, 150);
   const quiz = createAttempt(original, 'offline-guest', course.id), study = createStudy(original, 'offline-guest', course.id);
   quiz.state.cursor = 2; study.state.cursor = 3;
@@ -257,7 +257,7 @@ async function assertCadSupplement(browser) {
   await page.locator('#study-back').click();
   await page.locator('#study-start').click();
   const expanded = (await saved(page, progressKey(course.id))).studies.find(item => !item.finished_at);
-  assert.equal(expanded.total, 151);
+  assert.equal(expanded.total, 278);
   assert.ok(expanded.state.ids.includes(added.id));
   await page.locator(`[data-study-jump="${expanded.state.ids.indexOf(added.id)}"]`).click();
   assert.equal(await page.locator('.question-title').textContent(), added.pergunta);
@@ -277,7 +277,7 @@ async function assertCadSupplement(browser) {
   assert.equal((await saved(page, flashKey(course.id))).marks[added.id], 'known');
   await page.locator('#memory-start').click();
   await page.locator('[data-memory-jump]').waitFor();
-  assert.equal(await page.locator('[data-memory-jump] option').count(), 151);
+  assert.equal(await page.locator('[data-memory-jump] option').count(), 278);
   assert.equal(await page.locator('[data-memory-jump]').inputValue(), lastOriginal.id);
   await page.locator('[data-memory-jump]').selectOption(added.id);
   await page.locator('[data-memory-reveal]').click();
@@ -286,7 +286,7 @@ async function assertCadSupplement(browser) {
   const memory = await saved(page, memoryKey(course.id));
   assert.equal(memory.marks[knownId], 'known');
   assert.equal(memory.marks[added.id], 'known');
-  assert.equal(memory.order.at(-1), added.id);
+  assert.equal(memory.order[150], added.id);
   await page.locator('[data-memory-back]').click();
   await page.locator('#audio-question').selectOption(String(questions.indexOf(added)));
   assert.ok((await page.locator('#question-audio').getAttribute('src')).endsWith(`/audio/cis-cad/${added.id}.mp3`));

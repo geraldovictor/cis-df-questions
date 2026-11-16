@@ -12,7 +12,7 @@ const root = new URL('../', import.meta.url);
 const fetchFile = async url => ({ ok: true, json: async () => JSON.parse(await readFile(url, 'utf8')) });
 
 test('every certification loads its complete bank, valid memory aids and independent results', async () => {
-  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 137, 30], ['cis-cad', 151, 60], ['cis-csm', 240, 60]]) {
+  for (const [id, size, examSize] of [['cis-df', 205, 75], ['cis-em', 137, 30], ['cis-cad', 278, 60], ['cis-csm', 240, 60]]) {
     const questions = await loadQuestionBank(id, fetchFile);
     assert.equal(questions.length, size);
     assert.equal(new Set(questions.map(question => question.id)).size, size);

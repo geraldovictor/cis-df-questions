@@ -1,10 +1,11 @@
-const SHELL_CACHE = 'cis-df-shell-v12';
+const SHELL_CACHE = 'cis-df-shell-v13';
 const AUDIO_CACHE = 'cis-df-audio-v1';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './config.js', './quiz.js', './matching.js', './matching-view.js', './question-content.js', './memorization.js', './memory-aids.json', './study.js', './study-view.js', './flashcards.js', './audio-study.js', './offline.js', './pwa.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/icon-maskable-512.png', './icons/apple-touch-icon.png', './questoes-1-corrigida (1).json', './questoes-2-corrigida-v2 (1).json', './questoes-3-corrigida-v2 (1).json'];
 ASSETS.push('./certification.js', './data/cis-cad/questions.json', './data/cis-cad/memory-aids.json', './data/cis-em/questions.json', './data/cis-em/memory-aids.json',
   ...[4, 10, 18, 19, 21, 31].map(number => `./data/cis-em/images/image${number}.png`));
 ASSETS.push('./data/cis-csm/questions.json', './data/cis-csm/memory-aids.json',
   ...[1, 2, 3, 4].map(number => `./data/cis-csm/images/image-${String(number).padStart(3, '0')}.png`));
+ASSETS.push('./data/cis-cad/images/acl-community.png');
 const base = self.registration.scope;
 const shellURLs = new Set(ASSETS.map(path => new URL(path, base).href));
 

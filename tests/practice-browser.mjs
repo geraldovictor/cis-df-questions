@@ -14,7 +14,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const courses = [
   { id: 'cis-df', count: 205, examSize: 75 },
   { id: 'cis-em', count: 137, examSize: 30 },
-  { id: 'cis-cad', count: 151, examSize: 60 },
+  { id: 'cis-cad', count: 278, examSize: 60 },
   { id: 'cis-csm', count: 240, examSize: 60 }
 ];
 const banks = Object.fromEntries(await Promise.all(courses.map(async course => [course.id,

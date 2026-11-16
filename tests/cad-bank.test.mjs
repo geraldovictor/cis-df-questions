@@ -8,8 +8,8 @@ const read = async name => JSON.parse(await readFile(new URL('../data/cis-cad/' 
 const [questions, aids, report, supplement] = await Promise.all(['questions.json', 'memory-aids.json', 'import-report.json', 'supplemental-import-report.json'].map(read));
 
 test('CAD imports all 150 stable records and preserves supplied text and answer sets', () => {
-  assert.equal(questions.length, 151);
-  assert.equal(new Set(questions.map(q => q.id)).size, 151);
+  assert.equal(questions.length, 278);
+  assert.equal(new Set(questions.map(q => q.id)).size, 278);
   assert.equal(report.original_records.length, 150);
   for (const original of report.original_records) {
     const q = questions.find(q => q.source_id === original.u_number);
@@ -38,8 +38,8 @@ test('CAD explicitly reports incomplete source options and contradictory choose 
 });
 
 test('CAD has an individual usable Portuguese memory aid tied to every imported answer', () => {
-  assert.equal(Object.keys(aids).length, 151);
-  assert.equal(new Set(Object.values(aids).map(aid => aid.macete)).size, 151);
+  assert.equal(Object.keys(aids).length, 278);
+  assert.equal(new Set(Object.values(aids).map(aid => aid.macete)).size, 278);
   assert.equal(validateMemoryAids(aids, questions), aids);
   for (const q of questions) {
     const aid = aids[q.id];
@@ -52,24 +52,25 @@ test('CAD has an individual usable Portuguese memory aid tied to every imported 
   }
 });
 
-test('CAD supplement adds only its missing question and retains all original records and memory aids', () => {
+test('CAD supplement adds only its missing question and retains all original records and memory aids', async () => {
   const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
   assert.equal(supplement.source.records_supplied, 146);
   assert.equal(supplement.previous_total, 150);
   assert.equal(supplement.added_total, 1);
   assert.equal(supplement.duplicate_total, 145);
-  assert.equal(supplement.resulting_total, questions.length);
+  assert.equal(supplement.resulting_total, 151);
   assert.equal(supplement.decisions.length, 146);
   assert.equal(new Set(supplement.decisions.map(item => item.source_id)).size, 146);
-  const originals = questions.slice(0, 150);
+  const latest = await read('udemy-import-report.json');
+  const originals = questions.slice(0, 150).map(q => latest.enrichments.find(e=>e.id===q.id)?.before_question || q);
   assert.equal(hash(originals), supplement.previous_questions_sha256);
   const originalIds = new Set(originals.map(question => question.id));
-  const originalAids = Object.fromEntries(Object.entries(aids).filter(([id]) => originalIds.has(id)));
+  const originalAids = Object.fromEntries(Object.entries(aids).filter(([id]) => originalIds.has(id)).map(([id,aid])=>[id,latest.enrichments.find(e=>e.id===id)?.before_memory_aid || aid]));
   assert.equal(hash(originalAids), supplement.previous_memory_aids_sha256);
   const added = supplement.decisions.filter(item => item.action === 'added');
   assert.equal(added.length, 1);
   assert.equal(added[0].source_number, 5);
-  const question = questions.at(-1);
+  const question = questions[150];
   assert.equal(question.id, 'cad-srNSvJT2oarIvswoZGsi');
   assert.equal(question.id, added[0].added_id);
   assert.equal(question.pergunta, added[0].original_question);

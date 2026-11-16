@@ -696,7 +696,8 @@
     "respostas": [
       1
     ],
-    "assinatura": "acc47909"
+    "assinatura": "d49bb1f3",
+    "observacao": " Imagem recuperada da ServiceNow Community. O novo arquivo marca All fields except field3; o gabarito anterior foi preservado e a divergência fica registrada."
   },
   "cad-QST0001101": {
     "gatilho": "Fontes externas de dados para aplicação",
@@ -1568,5 +1569,1317 @@
       1
     ],
     "assinatura": "bd02eb8b"
+  },
+  "cad-udemy-177291427": {
+    "gatilho": "What is the maximum number of test cases that can be added to a suite in ATF?",
+    "macete": "What is the maximum number of test cases that can be added to a suite in ATF? → There is no such limit. You can have one suite with many test cases.",
+    "conexao": "O gabarito fornecido associa este cenário a: There is no such limit. You can have one suite with many test cases.. Explicação do material: We do not have a limitation on the number of Test Cases in the Test Suite/Test Suite Collection\n\nReference: ServiceNow Test your apps with the ATF",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7fdd1d9f"
+  },
+  "cad-udemy-177291433": {
+    "gatilho": "Which of the following statements is true for the Form Designer? (Choose three.)",
+    "macete": "Which of the following statements is true for the Form Designer? (Choose three.) → To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form. + To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button. + To create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field",
+    "conexao": "O gabarito fornecido associa este cenário a: To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.; To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.; To create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field. Explicação do material: To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.\n\nTo remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.\n\nTo create a new field on a form's table, drag the appropriate data type from the Field Types tab to the form and then configure the new field\n\nNote: The following GIF shows how you would use Form Designer to add and then delete a form section\n\nReference:\n\n- Using the form designer (ServiceNow Docs)\n\n- Accessing Form Builder (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      1,
+      3
+    ],
+    "assinatura": "8675e335"
+  },
+  "cad-udemy-177291445": {
+    "gatilho": "Which method call in client side returns true only if the currently logged in user has the catalog_admin role and in no other case?",
+    "macete": "Which method call in client side returns true only if the currently logged in user has the catalog_admin role and in no other case? → g_user.hasRoleExactly('catalog_admin')",
+    "conexao": "O gabarito fornecido associa este cenário a: g_user.hasRoleExactly('catalog_admin'). Explicação do material: Reference: GlideUser (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "0056a441"
+  },
+  "cad-udemy-177291455": {
+    "gatilho": "How to see what scripts, reports, and other application artifacts will be present in a published application:",
+    "macete": "How to see what scripts, reports, and other application artifacts will be present in a published application: → Examine the Application Files Related List in the application to be published",
+    "conexao": "O gabarito fornecido associa este cenário a: Examine the Application Files Related List in the application to be published. Explicação do material: Application files\n\nApplication files are configuration records that allow developers to extend application functionality.\n\nApplication developers create application files when they add configuration records for application logic such as business rules, workflows, and script includes. Scoped applications do not own these tables, but they do own the records (files) within these tables. For example, adding a business rule to check for available rooms from the Conference Room table adds an application file to the Business Rule [sys_script] table. Application developers can view the complete list of application files from the custom application record.\n\n-> B. is correct\n\nReference: Application files (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3b401373"
+  },
+  "cad-udemy-177291459": {
+    "gatilho": "What are some of the considerations to document as part of the business process?",
+    "macete": "What are some of the considerations to document as part of the business process? → Business problem, data input/output, users/stakeholders, and process steps",
+    "conexao": "O gabarito fornecido associa este cenário a: Business problem, data input/output, users/stakeholders, and process steps. Explicação do material: Business problem - If you are not solving a business problem, you do not need an application.\n\nStakeholders - Requestor and Fulfiller, Application Administrator, Management.\n\nUsers - Personas largely equate to Roles in ServiceNow.\n\nInputs - can take many forms such as Users, spreadsheets, and web services.\n\nOutputs - can also take many forms such as dashboards, reports, and email.\n\nProcess Steps - There are many strategies for defining a process, such as SIPOC (Six Sigma), ASME Standard for Process Charts, and others. Choose a strategy that works well for you.\n\n-> A. is correct\n\nReference: Business Process Overview (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "7e8dcb94"
+  },
+  "cad-udemy-177291461": {
+    "gatilho": "Which of the following features are available to Global applications? (Choose three.)",
+    "macete": "Which of the following features are available to Global applications? (Choose three.) → Automated Test Framework + Source Control + Flow Designer",
+    "conexao": "O gabarito fornecido associa este cenário a: Automated Test Framework; Source Control; Flow Designer. Explicação do material: Automated Test Framework,  Source Control and Flow Designer are supported in Global. Delegated Development is not supported in Global scope.\n\nGlobal apps gained source control integration in the Paris release.\n\nThe delegated developer feature only works with true-scoped apps, not global.\n\n-> A. C. and D. are correct\n\nReference:\n\n- Building applications with ServiceNow Studio (ServiceNow Docs)\n\n- ServiceNow GLOBAL APP SOURCE CONTROL\n\n- ServiceNow Globally Scoped Apps and Delegated Developers",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      2,
+      3
+    ],
+    "assinatura": "251160f1"
+  },
+  "cad-udemy-177291389": {
+    "gatilho": "How do I make my accept solution widget conditional on page load in Service Portal?",
+    "macete": "How do I make my accept solution widget conditional on page load in Service Portal? → Use ng-if",
+    "conexao": "O gabarito fornecido associa este cenário a: Use ng-if. Explicação do material: You can use \"ng-if\" to make my accept solution widget conditional on page load in Service Portal\n\nng-if, actually removes the element from the DOM when the condition is false and only adds the element back once the condition turns true.\n\nBelow is some example of using the ng-if\n\nHTML\n\n<div>\n  <button class=\"btn btn-default m-b\" ng-if=\"data.u_business == '2'\" ng-click=\"c.click()\">\n    Show Templates\n  </button>\n  <br>\n</div>\n\nReference: ServiceNow How to use \"ng-if\" to show a widget on a record producer in Service Portal",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "597673c2"
+  },
+  "cad-udemy-177291401": {
+    "gatilho": "Which one of the following returns true if the currently logged in user has the admin role in a server side script?",
+    "macete": "Which one of the following returns true if the currently logged in user has the admin role in a server side script? → gs.hasRole('admin')",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.hasRole('admin'). Explicação do material: Business Rule is server-side, so it uses the GlideSystem API. So the gs.hasRoleExactly,  g_form.hasRole and g_form.hasRoleExactly doesn't exist\n\nTo be more detailed in explanation, please refer to Uses of hasRole() Methods (client and server side)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "d04bb12d"
+  },
+  "cad-udemy-177291415": {
+    "gatilho": "Which one of the following is NOT true for the Weight field?",
+    "macete": "Which one of the following is NOT true for the Weight field? → A Weight value of zero means that no email should be sent",
+    "conexao": "O gabarito fornecido associa este cenário a: A Weight value of zero means that no email should be sent. Explicação do material: According to ServiceNow Create an email notification, then Weight means:\n\nWhen multiple Notifications are simultaneously triggered for the same record and addressed to the same recipient(s), the Weight field value determines which notification(s) to send and which to skip. Use the Weight field to prevent recipients from receiving multiple or conflicting notifications for the same target table record or event.\n\nNotifications with a Weight value of zero are always sent.\n\nIf notifications have non-zero Weight  values, only the notification with the highest Weight value is sent.\n\nIf multiple notifications have the same non-zero Weight  value and that value is the highest, all notifications with that value are sent.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "29ad0ded"
+  },
+  "cad-udemy-177291463": {
+    "gatilho": "When creating a Utilities Script Include. Identify the step that does not belong?",
+    "macete": "When creating a Utilities Script Include. Identify the step that does not belong? → Identify the table",
+    "conexao": "O gabarito fornecido associa este cenário a: Identify the table. Explicação do material: Utilities Script Include:\n\nAlthough not required, many applications have one or more Script Includes to store the majority of the application's server-side logic. If there is a single Script Include for an application, it is often named <App Name>Utils. For example, NeedItUtils. If a Script Include becomes long and hard to manage, consider breaking it up into multiple Script Includes based on functionality or logical groupings.\n\nUtilities Script Includes typically define a new class and therefore use the automatically inserted script template.\n\nThe initialize function is automatically invoked when JavaScript objects are instantiated from the Script Include. Any variable defined as part of the this object in the initialize function is known to all other functions in the Script Include.\n\nTo use a Utils Script Include in other server-side scripts, instantiate the Script Include. Any script which instantiates the Script Include has access to the methods and non-method properties from the class.\n\n-> Identify the table is not included in the creating a Utilities Script Include\n\n-> A. is correct\n\nReference: ServiceNow Utilities Script Include",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "efb7c1ee"
+  },
+  "cad-udemy-177291465": {
+    "gatilho": "Which one of the following is a list of Link types?",
+    "macete": "Which one of the following is a list of Link types? → Assessment, List of Records, Separator, Timeline Page",
+    "conexao": "O gabarito fornecido associa este cenário a: Assessment, List of Records, Separator, Timeline Page. Explicação do material: All Link Type options are:\n\n- Content Page                              - Documentation Link\n\n- HTML (from Arguments:)       - List Filter\n\n- List of Records                            - Map Page\n\n- New Record                                  - Run a Report\n\n- Script (from Arguments:)       - Search Screen\n\n- Seperator                                       - Single Record\n\n- Survey                                              - Timeline Page\n\n- URL (from Arguments:)\n\nReference: Application Navigator category (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "0001b3ac"
+  },
+  "cad-udemy-177291467": {
+    "gatilho": "Which of the following writes a message to the system log but NOT to the syslog table unless debug has been activated?",
+    "macete": "Which of the following writes a message to the system log but NOT to the syslog table unless debug has been activated? → gs.print(\"Hello World\");",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.print(\"Hello World\");. Explicação do material: print: Writes a message to the system log. This method does not write the message to the syslog table unless debug has been activated.\n\nvar rec = new GlideRecord('incident');\nrec.addQuery('active', false);\nrec.query();\nwhile (rec.next()) {\n    gs.print('Inactive incident ' + rec.number + ' deleted');\n    rec.deleteRecord();\n}\n\nReference: Scripting alert, info, and error messages (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f7885290"
+  },
+  "cad-udemy-177291487": {
+    "gatilho": "How should Application Access be configured to prevent all other private application scopes from creating configuration records on an application's data tables?",
+    "macete": "How should Application Access be configured to prevent all other private application scopes from creating configuration records on an application's data tables? → Set the Accessible from field value to This application scope only",
+    "conexao": "O gabarito fornecido associa este cenário a: Set the Accessible from field value to This application scope only. Explicação do material: In ServiceNow, the Application Access settings allow you to define which other application scopes can interact with your application’s tables.\n\nTo prevent other application scopes from creating (or modifying) records in your table, you must restrict cross-scope access.\n\nSetting the Accessible from field to “This application scope only” will:\n\nRestrict all other private or global scopes from interacting with your table\n\nPrevent creation, reading, updating, and deletion of records from other scopes\n\nProtect the table from being misused by apps that don't own it\n\n✅ This is the simplest and most effective way to prevent all external scopes from creating configuration records.\n\nReference: Creation restrictions across application scopes (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "37805a10"
+  },
+  "cad-udemy-177291489": {
+    "gatilho": "What is the output of below code snippet?\n\nvar count = new GlideAggregate('incident');\ncount.addAggregate('MIN','sys_mod_count');\ncount.addAggregate('MAX','sys_mod_count');\ncount.addAggregate('AVG','sys_mod_count');\ncount.groupBy('category');\ncount.query();\nwhile(count.next()){\nvar min = count.getAggregate('MIN','sys_mod_count');\nvar max = count.getAggregate('MAX','sys_mod_count');\nvar avg = count.getAggregate('AVG','sys_mod_count');\nvar category = count.category.getDisplayValue();\ngs.log(category +\" Update counts: MIN = \"+ min +\" MAX = \"+ max +\" AVG = \"+ avg);\n}",
+    "macete": "What is the output of below code snippet?\n\nvar count = new GlideAggregate('incident');\ncount.addAggregate('MIN','sys_mod_count');\ncount.addAggregate('MAX','sys_mod_count');\ncount.addAggregate('AVG','sys_mod_count');\ncount.groupBy('category');\ncount.query();\nwhile(count.next()){\nvar min = count.getAggregate('MIN','sys_mod_count');\nvar max = count.getAggregate('MAX','sys_mod_count');\nvar avg = count.getAggregate('AVG','sys_mod_count');\nvar category = count.category.getDisplayValue();\ngs.log(category +\" Update counts: MIN = \"+ min +\" MAX = \"+ max +\" AVG = \"+ avg);\n} → Result is total number of times records have been modified using the MIN, MAX, and AVG values",
+    "conexao": "O gabarito fornecido associa este cenário a: Result is total number of times records have been modified using the MIN, MAX, and AVG values. Explicação do material: The result is total number of times records have been modified using the MIN, MAX, and AVG values\n\nReference: UNDERSTANDING GLIDEAGGREGATE (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a21031ea"
+  },
+  "cad-udemy-177291491": {
+    "gatilho": "When configuring an Access Control rule which has no condition or script, which one of the following statements is NOT true?",
+    "macete": "When configuring an Access Control rule which has no condition or script, which one of the following statements is NOT true? → table.id will grant access to a specific record on the table",
+    "conexao": "O gabarito fornecido associa este cenário a: table.id will grant access to a specific record on the table. Explicação do material: To grant access to the User table and not the Business approver field.\n\nIn the Name field on the ACL new record screen, choose your table. (If you want to limit access to a particular field, you'll specify the field in the right column after choosing your table; if you want them to access all fields, choose the *.\n\nReference:\n\n- ServiceNow Access control list rules\n\n- ServiceNow Exploring Access Control Lists",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "4bf4331e"
+  },
+  "cad-udemy-177291503": {
+    "gatilho": "In what order are ServiceNow Access Controls evaluated?",
+    "macete": "In what order are ServiceNow Access Controls evaluated? → table, field",
+    "conexao": "O gabarito fornecido associa este cenário a: table, field. Explicação do material: Access Controls always first evaluate at Table-Level then at the Field-Level.\n\nReference: ServiceNow Exploring Access Control List Rules",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "70515e08"
+  },
+  "cad-udemy-179087717": {
+    "gatilho": "When ServiceNow receives an inbound email it attempts to match the sender to a user record. Which one of the following is NOT true?",
+    "macete": "When ServiceNow receives an inbound email it attempts to match the sender to a user record. Which one of the following is NOT true? → If no match is found the email is sent to the Inbox Junk folder",
+    "conexao": "O gabarito fornecido associa este cenário a: If no match is found the email is sent to the Inbox Junk folder. Explicação do material: If a match is found:\n\nThe matched user is added to the User ID field of the Email record\n\nServiceNow impersonates the user when taking action in response to the email\n\nInbound Email flows have access to the user's information through the User Record data pill\n\nIf no match is found:\n\nThe sender's email address is added to the Email record's User field\n\nThe User record is created automatically and then impersonated if automatic user creation is enabled\n\nThe user Guest is impersonated if automatic user creation is disabled\n\n-> \"If no match is found the email will not be sent to the Inbox Junk folder.\" is NOT TRUE\n\n-> B. is correct\n\nReference: ServiceNow Developer Notifications in Flow Designer - Identifying the Sender",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "f89e61de"
+  },
+  "cad-udemy-179087721": {
+    "gatilho": "Which of the following statements is true for managing applications purchased from the Store?",
+    "macete": "Which of the following statements is true for managing applications purchased from the Store? → Applications that belong to other organizations can be customized.",
+    "conexao": "O gabarito fornecido associa este cenário a: Applications that belong to other organizations can be customized.. Explicação do material: Applications purchased from the Store belong to the publisher/owner organization.\n\nYou cannot directly modify the base application delivered by another organization.\n\nHowever, ServiceNow provides Application Customizations, allowing customers to create and manage their own customizations on top of Store applications.\n\nThe correct answer: B. Applications that belong to other organizations can be customized.\n\nServiceNow explicitly states that you can:\n\nCreate and manage your company's customizations\n\nFor applications that belong to other organizations (Store apps)\n\nWithout modifying the original application itself.\n\nWhy the other options are incorrect\n\nA. Customizations cannot revert back to the base system application.\n\nIncorrect. Application customizations can be managed separately from the base application and are not a one-way change.\n\nC. There are separate entitlements for application-customizations.\n\nIncorrect. ServiceNow documentation explicitly states:\n\n\"There are no separate entitlements for application-customizations.\"\n\nD. Applications that belong to other organizations can be changed.\n\nIncorrect. You cannot change the actual Store application owned by another organization; you can only customize it.\n\nReference: \n\n- Manage customizations to applications (ServiceNow Docs)\n\n- Accessing unpurchased recommended apps on ServiceNow Store (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "4a3b4fc2"
+  },
+  "cad-udemy-179087723": {
+    "gatilho": "Which of the below is the best practice for adding instructions to a form?",
+    "macete": "Which of the below is the best practice for adding instructions to a form? → Form Annotations",
+    "conexao": "O gabarito fornecido associa este cenário a: Form Annotations. Explicação do material: In ServiceNow, Form Annotations are the recommended way to provide guidance, instructions, or helpful information directly on a form.\n\nThey allow administrators to display instructional text without modifying the underlying data model or cluttering the form with unnecessary fields.\n\nThe correct answer: C. Form Annotations\n\nForm Annotations are specifically designed to:\n\nDisplay instructions and guidance to users\n\nProvide contextual help directly on the form\n\nAvoid storing instructional text as data\n\nThey are easy to maintain and follow ServiceNow UI best practices.\n\nReference: Create form annotations in Table Builder (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "0e9d80ba"
+  },
+  "cad-udemy-179087725": {
+    "gatilho": "What does the code search feature do in the studio? (Choose three.)",
+    "macete": "What does the code search feature do in the studio? (Choose three.) → Searching in your application + Searching in all applications + Searching in a business rule",
+    "conexao": "O gabarito fornecido associa este cenário a: Searching in your application; Searching in all applications; Searching in a business rule. Explicação do material: Search within application files:\n\nStudio allows application developers to search within application files for matching record values.\n\nReference: Search within application files (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "64c94476"
+  },
+  "cad-udemy-179087727": {
+    "gatilho": "What debugging method you use in the server side scripting in a scoped application?",
+    "macete": "What debugging method you use in the server side scripting in a scoped application? → gs.info()",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.info(). Explicação do material: gs.print() and gs.log() are not available in scoped applications, whereas gs.debug() and gs.info() work in both scoped applications and global and are often used instead.\n\nReference: Debugging Best Practices (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "90ac6056"
+  },
+  "cad-udemy-179087729": {
+    "gatilho": "Which of the following pops out a special field messages?",
+    "macete": "Which of the following pops out a special field messages? → g_form.showFieldMsg()",
+    "conexao": "O gabarito fornecido associa este cenário a: g_form.showFieldMsg(). Explicação do material: Display field messages:\n\nRather than use JavaScript alert(), for a cleaner look, you can display an error on the form itself. The methods showFieldMsg() and hideFieldMsg() can be used to display a message just below the field itself.\n\nshowFieldMsg and hideFieldMsg are methods that can be used with the g_form object.\n\nReference: Client-side script use cases (ServiceNow Docs).",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "29b3ca86"
+  },
+  "cad-udemy-179087731": {
+    "gatilho": "Which Script Debugger feature helps filter debugging searches to quickly narrow down script problems?",
+    "macete": "Which Script Debugger feature helps filter debugging searches to quickly narrow down script problems? → Script Tracer",
+    "conexao": "O gabarito fornecido associa este cenário a: Script Tracer. Explicação do material: Script Tracer and debugging scripts:\n\nThe Script Tracer can help you filter your debugging search to quickly narrow down script problems.\n\nYou can identify lines of scripts in the Glide record that have undergone change during execution.\n\nFinding those specific lines of scripts rather than doing a wide search helps save time and improves productivity.\n\nReference: ServiceNow Script Tracer and debugging scripts.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "14350fbb"
+  },
+  "cad-udemy-179087733": {
+    "gatilho": "Which of the following actions is not supported by Studio?",
+    "macete": "Which of the following actions is not supported by Studio? → Download only the required session logs.",
+    "conexao": "O gabarito fornecido associa este cenário a: Download only the required session logs.. Explicação do material: ServiceNow Studio is a development environment used for building and managing applications within ServiceNow. Here's a breakdown of the options:\n\n✅ D. Format code indentation with JS Beautify\n\nSupported — Studio includes the ability to beautify JavaScript code for better readability.\n\n✅ B. Enable context menu options to modify data\n\nSupported — Studio provides context menus for actions like creating or modifying application files and metadata.\n\n✅ C. Integrate with source control\n\nSupported — Studio allows integration with Git-based source control systems for versioning and collaboration.\n\n❌ A. Download only the required session logs\n\nNot supported — Studio does not provide a built-in feature to selectively download specific session logs. Log handling is done through other areas in the platform (like the System Logs module), not Studio.\n\nReference: ServiceNow Studio",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "2c8526cd"
+  },
+  "cad-udemy-179087735": {
+    "gatilho": "Which module creates a user for a Automated Test Framework?",
+    "macete": "Which module creates a user for a Automated Test Framework? → Create a User",
+    "conexao": "O gabarito fornecido associa este cenário a: Create a User. Explicação do material: The module Create a User is used to create various types of users for different applications.\n\n-> C. is correct\n\nReference: ServiceNow Create a user",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "24e98127"
+  },
+  "cad-udemy-179087737": {
+    "gatilho": "Which of the following modules enables security rule debugging?",
+    "macete": "Which of the following modules enables security rule debugging? → System Security > Debugging > Debug Security Rules",
+    "conexao": "O gabarito fornecido associa este cenário a: System Security > Debugging > Debug Security Rules. Explicação do material: Enabling Debugging:\n\nTo enable Access Control debugging, use the All menu in the main ServiceNow browser window (not Studio) to open System Security > Debugging > Debug Security Rules.\n\nReference: ServiceNow Developer Enabling Debugging.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f988c14d"
+  },
+  "cad-udemy-179087739": {
+    "gatilho": "Which of the following scripts do not always run on the server side?",
+    "macete": "Which of the following scripts do not always run on the server side? → UI Action",
+    "conexao": "O gabarito fornecido associa este cenário a: UI Action. Explicação do material: Reference: ServiceNow Server-side scripting",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "8b1e5339"
+  },
+  "cad-udemy-179087741": {
+    "gatilho": "When managing global application files, you can NOT:",
+    "macete": "When managing global application files, you can NOT: → Move application files into or out of scoped application",
+    "conexao": "O gabarito fornecido associa este cenário a: Move application files into or out of scoped application. Explicação do material: In ServiceNow, global application files can be managed and moved between applications, but there are restrictions when scoped applications are involved.\n\nThe correct answer option(s): Move application files into or out of scoped application\n\nApplication files in the global scope can be moved between global applications.\n\nHowever, global application files cannot be moved into or out of a scoped application using the same application-file management functionality.\n\nScoped applications have their own application scope and restrictions to protect application boundaries and dependencies.\n\nReference (Official ServiceNow Docs):\n\nLegacy - Global application file management (ServiceNow Docs)\n\nServiceNow application repository",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "931a8d1e"
+  },
+  "cad-udemy-179087743": {
+    "gatilho": "Which of the following would not be good fit for an application to run on the ServiceNow instance?",
+    "macete": "Which of the following would not be good fit for an application to run on the ServiceNow instance? → Virtual Reality Gaming application",
+    "conexao": "O gabarito fornecido associa este cenário a: Virtual Reality Gaming application. Explicação do material: Overview\n\nThe Now Platform is a highly versatile, scalable cloud solution enterprise for IT, operations, and business management, and process automation.\n\n-> A. is correct\n\nReference: ServiceNow How the Now Platform works",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a50fa652"
+  },
+  "cad-udemy-179087745": {
+    "gatilho": "In Form Designer, when you edit the label of a field on a child table, the label is updated on?",
+    "macete": "In Form Designer, when you edit the label of a field on a child table, the label is updated on? → Child table",
+    "conexao": "O gabarito fornecido associa este cenário a: Child table. Explicação do material: In Form Designer:\n\nWhen you edit the label of a field on a Child table -> the label is updated on the Child table only\n\nWhen you edit the label of a field from the Parent table -> It changes where all of it is reflected.\n\n-> A. is correct\n\nReference:\n\n- ServiceNow Child Table form\n\n- ServiceNow Using the form designer",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f3a04622"
+  },
+  "cad-udemy-179087747": {
+    "gatilho": "An application has a table named MyTable with the following three fields: field1, field2, field3.\n\nTable.none is set for READ for the Admin and Itil roles.\n\nTable.field3 is set for the READ by the Admin role only.\n\nWhat with the Itil role be able to read? (select one.)",
+    "macete": "An application has a table named MyTable with the following three fields: field1, field2, field3.\n\nTable.none is set for READ for the Admin and Itil roles.\n\nTable.field3 is set for the READ by the Admin role only.\n\nWhat with the Itil role be able to read? (select one.) → field1, field2",
+    "conexao": "O gabarito fornecido associa este cenário a: field1, field2. Explicação do material: The itil role be able to read field1, field2 and NOT field3\n\nReference:\n\n- ServiceNow Access control list rules\n\n- ServiceNow Exploring Access Control Lists",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "04ae4c72"
+  },
+  "cad-udemy-179087749": {
+    "gatilho": "Which protects applications by identifying and restricting access to application files and data?",
+    "macete": "Which protects applications by identifying and restricting access to application files and data? → Application Scope",
+    "conexao": "O gabarito fornecido associa este cenário a: Application Scope. Explicação do material: Application scope:\n\nApplication scoping protects applications by identifying and restricting access to application files and data.\n\nAdministrators can specify what parts of an application are accessible to other applications from:\n\nThe Custom application record\n\nEach application Table record\n\nReference: ServiceNow Application scope",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "c7781a6a"
+  },
+  "cad-udemy-179087751": {
+    "gatilho": "What is the name of the guided application creator plugin?",
+    "macete": "What is the name of the guided application creator plugin? → com.glide.sn-guided-app-creator",
+    "conexao": "O gabarito fornecido associa este cenário a: com.glide.sn-guided-app-creator. Explicação do material: Guided Application Creator - Activation information:\n\nGuided Application Creator is enabled via the Guided Application Creator (com.glide.sn-guided-app-creator) plugin\n\n-> A. is correct\n\nReference: ServiceNow Guided Application Creator",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c99e1a65"
+  },
+  "cad-udemy-179087753": {
+    "gatilho": "Which of the following is NOT report type in ServiceNow reports?",
+    "macete": "Which of the following is NOT report type in ServiceNow reports? → Chart",
+    "conexao": "O gabarito fornecido associa este cenário a: Chart. Explicação do material: There is NO Chart type report in ServiceNow.\n\n-> D. is correct\n\nReference: ServiceNow Report types - Please check all the report types in the link",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "0fe87d45"
+  },
+  "cad-udemy-179087755": {
+    "gatilho": "Which one of the following best describes what a flow is?",
+    "macete": "Which one of the following best describes what a flow is? → A sequence of actions to automate processes on the platform",
+    "conexao": "O gabarito fornecido associa este cenário a: A sequence of actions to automate processes on the platform. Explicação do material: What is a Flow?\n\nA flow is a sequence of actions to automate processes on the Now Platform.\n\nA flow consists of a trigger and one or more actions.\n\n-> A. is correct\n\nReference: Using Flow Designer - What is a Flow (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "478fc409"
+  },
+  "cad-udemy-179087759": {
+    "gatilho": "What are the core activities of a Workflow?",
+    "macete": "What are the core activities of a Workflow? → Notifications + Utilities + Conditions + Approvals + Subflows + Timers",
+    "conexao": "O gabarito fornecido associa este cenário a: Notifications; Utilities; Conditions; Approvals; Subflows; Timers. Explicação do material: Core activities provided in the base system:\n\nApproval and rollback workflow activities\n\nCondition Workflow activities\n\nNotification workflow activity\n\nNotify workflow activities\n\nWorkflows used as subflows\n\nTask workflow activities\n\nTimer workflow activities\n\nUtility workflow activities\n\nReference: ServiceNow Workflow activities",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "assinatura": "5f86816e"
+  },
+  "cad-udemy-179087761": {
+    "gatilho": "When debugging a script a developer can log breakpoints or conditional log points to log messages to the console at specific lines, and remove log points when they are done debugging them. Which system property must be set to true to enable log points?",
+    "macete": "When debugging a script a developer can log breakpoints or conditional log points to log messages to the console at specific lines, and remove log points when they are done debugging them. Which system property must be set to true to enable log points? → glide.debug.log_point",
+    "conexao": "O gabarito fornecido associa este cenário a: glide.debug.log_point. Explicação do material: Set or remove logpoints:\n\nSet breakpoints or conditional logpoints to log messages to the console at specific lines, and remove logpoints when you are done debugging them.\n\nBefore you begin\n\nSet the glide.debug.log_point system property to true. See Available system properties for more information.\n\nRole required: admin or script_debugger\n\nAbout this task\n\nLogpoints belong to the developer who sets them. Developers must set and remove their own logpoints.\n\nNote: At a specific line, you can set either a logpoint or breakpoint but not both.\n\nReference: ServiceNow Set or remove logpoints",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "c0cf34a6"
+  },
+  "cad-udemy-179087763": {
+    "gatilho": "As it relates ServiceNow reporting, which of the following statements describes what a metric can do?",
+    "macete": "As it relates ServiceNow reporting, which of the following statements describes what a metric can do? → A metric is used to measure and evaluate the effectiveness of IT service management processes",
+    "conexao": "O gabarito fornecido associa este cenário a: A metric is used to measure and evaluate the effectiveness of IT service management processes. Explicação do material: Metrics:\n\nA metric measures and evaluates the effectiveness of IT service management processes.\n\n-> C. is correct\n\nReference: ServiceNow Metrics",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "eb39610c"
+  },
+  "cad-udemy-179087765": {
+    "gatilho": "Which of the following can be used to place a report on a Homepage?",
+    "macete": "Which of the following can be used to place a report on a Homepage? → Gauge",
+    "conexao": "O gabarito fornecido associa este cenário a: Gauge. Explicação do material: In ServiceNow, reports can be displayed on a Homepage by using a Gauge. A gauge is a visual component that can display reports, lists, charts, and other information on a homepage.\n\nThe correct answer option(s): Gauge\n\nA Gauge is a homepage component that can be used to display a report or other data visualization.\n\nUsers can add gauges to a homepage to provide quick access to important information and metrics.\n\nThis allows reports to be displayed directly on the homepage rather than requiring users to navigate to the Reports application.\n\nReference: Gauge Visualization Overview (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3e670a2f"
+  },
+  "cad-udemy-179087767": {
+    "gatilho": "Identify the way(s) an application can respond to an Event: (choose two.)",
+    "macete": "Identify the way(s) an application can respond to an Event: (choose two.) → Script Action + Email Notification",
+    "conexao": "O gabarito fornecido associa este cenário a: Script Action; Email Notification. Explicação do material: Responding to Events:\n\nThere are two possible ways to respond to events:\n\nEmail Notification\n\nScript Action\n\nThis module focuses on Script Actions. For information about Email Notifications, check out the Notifications module that is part of the Automating Application Logic course.\n\n-> B. and C. are correct\n\nReference: Responding to Events (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "61738bf0"
+  },
+  "cad-udemy-179087769": {
+    "gatilho": "Which of the following are steps in the generalized process for working with events? (choose three.)",
+    "macete": "Which of the following are steps in the generalized process for working with events? (choose three.) → Generate the event + Add an event to the Event Registry + Respond to the event",
+    "conexao": "O gabarito fornecido associa este cenário a: Generate the event; Add an event to the Event Registry; Respond to the event. Explicação do material: Although you could use a Business Rule or Scheduled Script Execution to generate the event, any server-side script can do that. Business Rules and Scheduled Script Executions are not part of the generalized process for working with events.\n\n-> A. B. and C. are correct\n\nReference: Test Your Scheduled Script Execution and Events Knowledge (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "b3363660"
+  },
+  "cad-udemy-179087771": {
+    "gatilho": "What is the main purpose of Integration Hub in ServiceNow?",
+    "macete": "What is the main purpose of Integration Hub in ServiceNow? → Enables execution of third-party APIs as part of a flow when a specific event occurs in ServiceNow",
+    "conexao": "O gabarito fornecido associa este cenário a: Enables execution of third-party APIs as part of a flow when a specific event occurs in ServiceNow. Explicação do material: What is IntegrationHub?\n\nIntegrationHub is a framework used to interact with third-party platforms in ServiceNow. Developers can use IntegrationHub to build integration actions to execute commands against external platforms.\n\nReference: Exploring Integration Hub (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "076e66f8"
+  },
+  "cad-udemy-179087773": {
+    "gatilho": "Which of the following is NOT an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
+    "macete": "Which of the following is NOT an example of when an application might use a Scheduled Script Execution (Scheduled Job)? → The application needs to run a client-side script at the same time every day",
+    "conexao": "O gabarito fornecido associa este cenário a: The application needs to run a client-side script at the same time every day. Explicação do material: Scheduled scripts are server-side scripts, thus running a client-side script simultaneously daily cannot be accomplished with scheduled script execution. The application needs to run a client-side script simultaneously every day.\n\n-> B. is correct\n\nReference: What is a Scheduled Script Execution? (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "b42efd62"
+  },
+  "cad-udemy-179087775": {
+    "gatilho": "Which of the following objects does a BEFORE business rule have access to?",
+    "macete": "Which of the following objects does a BEFORE business rule have access to? → All the above",
+    "conexao": "O gabarito fornecido associa este cenário a: All the above. Explicação do material: Display Business Rules run on the server when a record is being prepared for display (before the form is sent to the client). They are typically used to populate g_scratchpad or make last-minute changes to the current record that the client script can consume.\n\nA Display Business Rule has access to:\n\ncurrent: the GlideRecord for the record being displayed.\n\nGlideSystem: server API for logging, date/time, etc.\n\ng_scratchpad: a map used to pass data from the server (Display BR) to client scripts.\n\nprevious is not available to Display Business Rules because previous represents the prior state of a record and is only provided for update-type business rules where a prior value exists.\n\nReference:\n\n- ServiceNow Classic Business rules\n\n- ServiceNow Business Rules",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e31c44c0"
+  },
+  "cad-udemy-179087779": {
+    "gatilho": "Which API provides methods to translate text into multiple languages in real life?",
+    "macete": "Which API provides methods to translate text into multiple languages in real life? → Dynamic Translation",
+    "conexao": "O gabarito fornecido associa este cenário a: Dynamic Translation. Explicação do material: DynamicTranslation API:\n\nYou can use the DynamicTranslation API to translate text in real time into multiple languages using translation service providers.\n\nThis API is available as part of Server APIs, Client APIs, and Service Portal APIs to interact with translation service providers. See DynamicTranslation - Scoped and DynamicTranslation - Client.\n\n-> C. is correct\n\nReference: ServiceNow DynamicTranslation API",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "deb2af30"
+  },
+  "cad-udemy-179087781": {
+    "gatilho": "Which utility is used to determine if field names in an Import Set match the field names on the target table when importing data into ServiceNow?",
+    "macete": "Which utility is used to determine if field names in an Import Set match the field names on the target table when importing data into ServiceNow? → Auto Map Matching Fields",
+    "conexao": "O gabarito fornecido associa este cenário a: Auto Map Matching Fields. Explicação do material: Automatic Mapping Utility:\n\nThe simplest mapping method is where all of the field names of the import sets match the names of the fields on the production tables onto which the data will be transformed. In this case, simply click Auto map matching fields in the related list in the Table Transform Map form and confirm proper matching.\n\nIf there are any discrepancies in terms of how fields were automatically matched, use the mapping assist utility to correct them. When all fields are matched properly, click the Transform related link to begin transforming data onto the destination table.\n\n-> C. is correct\n\nReference: ServiceNow Mapping options",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "22a9997d"
+  },
+  "cad-udemy-179087783": {
+    "gatilho": "Which of the following API methods are used when working with datetime in a privately scoped application?",
+    "macete": "Which of the following API methods are used when working with datetime in a privately scoped application? → GlideDateTime",
+    "conexao": "O gabarito fornecido associa este cenário a: GlideDateTime. Explicação do material: GlideDateTime\n\nThe scoped GlideDateTime class provides methods for performing operations on GlideDateTime objects, such as instantiating GlideDateTime objects or working with glide_date_time fields.\n\nUse the GlideDateTime methods to perform date-time operations, such as instantiating a GlideDateTime object, performing date-time calculations, formatting a date-time, or converting between date-time formats.\n\n-> D. is correct\n\nReference: ServiceNow Developer GlideDateTime",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "46fe5aee"
+  },
+  "cad-udemy-179087785": {
+    "gatilho": "Which method is used in emulating mobile for testing?",
+    "macete": "Which method is used in emulating mobile for testing? → $m.do",
+    "conexao": "O gabarito fornecido associa este cenário a: $m.do. Explicação do material: We use $m.do method is used in emulating mobile for testing\n\n-> A. is correct\n\nReference: ServiceNow Mobile App Builder",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "f9ed0604"
+  },
+  "cad-udemy-179087787": {
+    "gatilho": "What is true about homepages on mobile?",
+    "macete": "What is true about homepages on mobile? → There are no homepages on mobile",
+    "conexao": "O gabarito fornecido associa este cenário a: There are no homepages on mobile. Explicação do material: There are no homepages on mobile\n\n-> D. is correct\n\nReference: ServiceNow Mobile App Builder",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "4fecae15"
+  },
+  "cad-udemy-179087789": {
+    "gatilho": "While debugging security rules, what does the blue color code indicate?",
+    "macete": "While debugging security rules, what does the blue color code indicate? → Indicates the ACL is already in the cache and does not need to be re-evaluated",
+    "conexao": "O gabarito fornecido associa este cenário a: Indicates the ACL is already in the cache and does not need to be re-evaluated. Explicação do material: A blue checkmark, x, or empty circle\n\nIndicates that the ACL was taken from a cached result of a previous ACL check. The icons mean the same as the above.\n\n-> E. is correct\n\nReference: ServiceNow ACL debugging tools",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      4
+    ],
+    "assinatura": "538ab107"
+  },
+  "cad-udemy-179087791": {
+    "gatilho": "Which of the following is NOT a type of authentication used by REST APIs?",
+    "macete": "Which of the following is NOT a type of authentication used by REST APIs? → CIM + JDBC",
+    "conexao": "O gabarito fornecido associa este cenário a: CIM; JDBC. Explicação do material: In ServiceNow, REST APIs support several authentication methods, including Basic Authentication, OAuth 2.0, and Mutual Authentication using protocol profiles.\n\nThe correct answer option(s): CIM and JDBC\n\nC. CIM\nIncorrect as a REST API authentication method. CIM (Common Information Model) is a data/modeling standard used to represent and manage information, not an authentication mechanism for REST APIs.\n\nE. JDBC\nIncorrect as a REST API authentication method. JDBC (Java Database Connectivity) is a Java API used to connect to and interact with databases. It is not an authentication method for REST APIs.\n\nReference: ServiceNow REST APIs - CIM and JDBC were not been mentioned.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2,
+      4
+    ],
+    "assinatura": "167e188b"
+  },
+  "cad-udemy-179087793": {
+    "gatilho": "What are the 2 core base tables from which all other tables are extended in ServiceNow?",
+    "macete": "What are the 2 core base tables from which all other tables are extended in ServiceNow? → task and cmdb_ci",
+    "conexao": "O gabarito fornecido associa este cenário a: task and cmdb_ci. Explicação do material: In ServiceNow, task and cmdb_ci are considered the core tables. This might be because most of the applications use these tables. If you consider incidents, changes, problems, etc; all these are extended from the task table.\n\nReference: ServiceNow Table extension and classes",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "fdc10a6e"
+  },
+  "cad-udemy-179087795": {
+    "gatilho": "Which of the following statements must evaluate to true to grant a user access to application table's record? (Choose three.)",
+    "macete": "Which of the following statements must evaluate to true to grant a user access to application table's record? (Choose three.) → Conditions configured in the access controls must evaluate to true + Scripts configured in the access control must evaluate to true + The user has one of the roles specified in the required roles related list",
+    "conexao": "O gabarito fornecido associa este cenário a: Conditions configured in the access controls must evaluate to true; Scripts configured in the access control must evaluate to true; The user has one of the roles specified in the required roles related list. Explicação do material: ACL evaluation process:\n\nAn ACL rule only grants a user access to an object if the user meets all permissions required by the matching ACL rule.\n\nThe condition must evaluate to true.\n\nThe script must evaluate to true or return an answer variable with the value of true.\n\nThe user must have one of the roles in the required roles list. If the list is empty, this condition evaluates to true.\n\n[Record ACL rules only] The matching table-level and field-level ACL rules must both evaluate to true.\n\nReference:\n\n- ServiceNow Exploring Access Control Lists\n\n- Securing Table Records (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "8c2d5d82"
+  },
+  "cad-udemy-179087797": {
+    "gatilho": "Which of the following function is NOT available in the ServiceNow REST API?",
+    "macete": "Which of the following function is NOT available in the ServiceNow REST API? → COPY",
+    "conexao": "O gabarito fornecido associa este cenário a: COPY. Explicação do material: Supported HTTP request methods\n\nGET\n\nDELETE\n\nHEAD\n\nPATCH\n\nPOST\n\nPUT\n\nFor details on these methods, refer to the RFC-2616 Hypertext Transfer Protocol\n\n-> F. is correct\n\nReference: ServiceNow REST APIs",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      5
+    ],
+    "assinatura": "7fac6b49"
+  },
+  "cad-udemy-179087799": {
+    "gatilho": "Which of the following are NOT methods from the GlideRecord API?",
+    "macete": "Which of the following are NOT methods from the GlideRecord API? → addOrQuery() + addAndQuery()",
+    "conexao": "O gabarito fornecido associa este cenário a: addOrQuery(); addAndQuery(). Explicação do material: addOrQuery()and addAndQuery() are not methods from the GlideRecord API. If a script contains multiple statements that use the addQuery() method the queries are ANDed. To explicitly AND or OR a condition in a query, use the methods from the GlideQueryCondition class\n\nReference: Server-side Scripting (ServiceNow Developer).",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      4
+    ],
+    "assinatura": "551368bd"
+  },
+  "cad-udemy-179087801": {
+    "gatilho": "Which of the following variables are NOT available in all Business Rules? (Select All That Apply)",
+    "macete": "Which of the following variables are NOT available in all Business Rules? (Select All That Apply) → previous + g_scratchpad",
+    "conexao": "O gabarito fornecido associa este cenário a: previous; g_scratchpad. Explicação do material: previous and g_scratchpad are NOT available in all Business Rules\n\nReference: ServiceNow Classic Business rules.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "c4768c42"
+  },
+  "cad-udemy-179087803": {
+    "gatilho": "What is not true about email notifications?",
+    "macete": "What is not true about email notifications? → How",
+    "conexao": "O gabarito fornecido associa este cenário a: How. Explicação do material: According to the ServiceNow Create an email notification, the doc does NOT mention \"How\".",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "6f407409"
+  },
+  "cad-udemy-179087805": {
+    "gatilho": "You are writing an Async Business Rule for a table in a different scope than the Business Rule record. Which one of the following database operations CANNOT be part of the Async Business Rule's configuration?",
+    "macete": "You are writing an Async Business Rule for a table in a different scope than the Business Rule record. Which one of the following database operations CANNOT be part of the Async Business Rule's configuration? → Query",
+    "conexao": "O gabarito fornecido associa este cenário a: Query. Explicação do material: Business rules on specific tables\n\nYou can create a rule where When is async with any of the following options:\n\nInsert, Update, and Delete database operations. You cannot select Query.\n\nSet field values actions and scripts (the Script field).\n\nReference: ServiceNow Classic Business rules",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3fc05227"
+  },
+  "cad-udemy-179087807": {
+    "gatilho": "Application files in a ServiceNow application are:",
+    "macete": "Application files in a ServiceNow application are: → Artifacts comprising the ServiceNow application",
+    "conexao": "O gabarito fornecido associa este cenário a: Artifacts comprising the ServiceNow application. Explicação do material: According to the ServiceNow Application files,\n\n\"Application files are configuration records that allow developers to extend application functionality.\"\n\n-> In other words, are artifacts comprising the ServiceNow application.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "241b21d8"
+  },
+  "cad-udemy-179087809": {
+    "gatilho": "How is access to Application menus and modules controlled?",
+    "macete": "How is access to Application menus and modules controlled? → Roles",
+    "conexao": "O gabarito fornecido associa este cenário a: Roles. Explicação do material: Securing Applications and Modules:\n\nAccess to an application in the All menu is controlled by the application's User role. Application access does not need to be restricted, if roles are applied to modules.\n\n-> C. is correct\n\nReference: Developer Securing Applications and Modules (ServiceNow Developer).",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "a0543c1b"
+  },
+  "cad-udemy-179087811": {
+    "gatilho": "When creating an application via Guided Application Creator, which of the following is NOT a user experience options?",
+    "macete": "When creating an application via Guided Application Creator, which of the following is NOT a user experience options? → Workplace + Portal",
+    "conexao": "O gabarito fornecido associa este cenário a: Workplace; Portal. Explicação do material: -> A. and C. are correct\n\nReference: Select user experiences in Guided Application Creator (ServiceNow Docs).",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "62df1c6c"
+  },
+  "cad-udemy-179087815": {
+    "gatilho": "Which of the following is NOT a type of annotation?",
+    "macete": "Which of the following is NOT a type of annotation? → Info Box Yellow",
+    "conexao": "O gabarito fornecido associa este cenário a: Info Box Yellow. Explicação do material: In Annotation Details, select the type of annotation.\n\nThe available types of annotations include Info Box Blue, Info Box Red, Line Separator (any text you add appears beneath the line), Section Details, Section Separator, and Text.\n\n-> E. is correct\n\nReference: ServiceNow Set up form annotations.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      4
+    ],
+    "assinatura": "16fdd6cc"
+  },
+  "cad-udemy-179087817": {
+    "gatilho": "How can a developer extract data from the response body after calling a REST web service?",
+    "macete": "How can a developer extract data from the response body after calling a REST web service? → Use the XMLDocument2 API to extract data from XML formatted responses. + Use the JSON API to convert JSON formatted responses to a JavaScript object",
+    "conexao": "O gabarito fornecido associa este cenário a: Use the XMLDocument2 API to extract data from XML formatted responses.; Use the JSON API to convert JSON formatted responses to a JavaScript object. Explicação do material: Developer extract data from the response body after calling a REST web service due to:\n\n- Use the JSON API to convert JSON formatted responses to a JavaScript object\n\n- Use the XMLDocument2 API to extract data from XML formatted responses.\n\nReference: ServiceNow Developer Parsing a REST Response.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      4
+    ],
+    "assinatura": "1a6a2274"
+  },
+  "cad-udemy-179087819": {
+    "gatilho": "What one of the following is the correct syntax for adding dynamic content to a notification's HTML message field?",
+    "macete": "What one of the following is the correct syntax for adding dynamic content to a notification's HTML message field? → ${short_description}",
+    "conexao": "O gabarito fornecido associa este cenário a: ${short_description}. Explicação do material: Using Dynamic Content\n\nThe Subject, SMS Alternate, and Message HTML fields can use dynamic content.\n\nTo dynamically reference a field value from the record that triggered the Notification, enclose the field name in ${ }: ${<field_name>}.\n\nUse dot-walking to reference field values on related records: ${<field name containing related record>.<field name>}.\n\nTo reference the event parameters parm1 or parm2, use this syntax: ${event.parm1} or ${event.parm2}. (Only for notifications fired by events.)\n\n-> E. is correct\n\nReference: ServiceNow Developer What It Will Contain.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      4
+    ],
+    "assinatura": "63b6b964"
+  },
+  "cad-udemy-179087821": {
+    "gatilho": "Which method is used to retrieve system property?",
+    "macete": "Which method is used to retrieve system property? → gs.getProperty()",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.getProperty(). Explicação do material: Use Application Properties\n\nUse the Scoped GlideSystem getProperty() method to retrieve Application Property values. Pass the Application Property name to the method.\n\nvar daysNotice = gs.getProperty(\"x_snc_employee_spe.daysNotice\");\n\n-> B. is correct\n\nReference: ServiceNow Developer Use Application Properties.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "100848a5"
+  },
+  "cad-udemy-179087823": {
+    "gatilho": "How are flow variables access in the flow designer data panel?",
+    "macete": "How are flow variables access in the flow designer data panel? → Data pills",
+    "conexao": "O gabarito fornecido associa este cenário a: Data pills. Explicação do material: Using Flow Variables:\n\nTriggers and actions create and populate variables. Use the Data panel to see the variables and variable data types for a flow. The visual representation of a variable in the Flow Designer user interface is a data pill. Each variable has its own data pill that developers can use to add the variable to action inputs.\n\n-> C. is correct\n\nReference: ServiceNow Developer Using Flow Variables.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "137b9049"
+  },
+  "cad-udemy-179087825": {
+    "gatilho": "The option in Table configuration that allows this table to be extended from?",
+    "macete": "The option in Table configuration that allows this table to be extended from? → Extensible",
+    "conexao": "O gabarito fornecido associa este cenário a: Extensible. Explicação do material: Extends Table:\n\nSelect the table to extend. Extending a base table incorporates all the fields of the original table and creates system fields for the new table. If they are in the same scope or if they can be configured from other scopes, you can extend tables that are marked as extensible.\n\nThis option isn’t available if you select the Scriptable Table check box to designate that this table is scriptable.\n\n-> B. is correct\n\nReference:\n\n- ServiceNow Create a table\n\n- ServiceNow Table extension and classes",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "47fa42ed"
+  },
+  "cad-udemy-179087829": {
+    "gatilho": "What are the UX (user experience) options available in Guided Application Creator?",
+    "macete": "What are the UX (user experience) options available in Guided Application Creator? → Mobile + Classic",
+    "conexao": "O gabarito fornecido associa este cenário a: Mobile; Classic. Explicação do material: Reference: ServiceNow Select user experiences in Guided Application Creator.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      4
+    ],
+    "assinatura": "2d6bf8d9"
+  },
+  "cad-udemy-179087831": {
+    "gatilho": "What is the name of the intuitive development interface for building applications?",
+    "macete": "What is the name of the intuitive development interface for building applications? → Guided Application Creator",
+    "conexao": "O gabarito fornecido associa este cenário a: Guided Application Creator. Explicação do material: Guided Application Creator\n\nGuided Application Creator is an intuitive development interface for building applications on the Now Platform®. It provides a step-by-step process to guide you through your initial application construction.\n\nReference: ServiceNow Guided Application Creator.\n\n***Note: Guided Application Creator will be supported until the Australia release in Q1 2026. Try building and editing apps in the new version of ServiceNow Studio instead. For more information, see Building applications with ServiceNow Studio",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "68f57ca4"
+  },
+  "cad-udemy-179087833": {
+    "gatilho": "Which role is required to access Guide Application Creator?",
+    "macete": "Which role is required to access Guide Application Creator? → sn_g_app_creator.app_creator",
+    "conexao": "O gabarito fornecido associa este cenário a: sn_g_app_creator.app_creator. Explicação do material: Define roles in Guided Application Creator:\n\nCreate or select roles in Guided Application Creator for the members of your organization who use your custom application.\n\nBefore you begin\n\nComplete the steps in Create an application record in Guided Application Creator.\n\nRole required: sn_g_app_creator.app_creator or admin\n\n-> B. is correct\n\nReference: ServiceNow Define roles in Guided Application Creator.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "3c1ca6f4"
+  },
+  "cad-udemy-179087835": {
+    "gatilho": "The getCurrentDomainID() method is part of which scoped class?",
+    "macete": "The getCurrentDomainID() method is part of which scoped class? → Scoped GlideSession",
+    "conexao": "O gabarito fornecido associa este cenário a: Scoped GlideSession. Explicação do material: ScopedSessionDomain - Client\n\nThe ScopedSessionDomain API is a script include that contains client-side methods that provide functionality related to the current session domain.\n\nThis API is only available if the Domain Support - Domain Extensions Installer plugin (com.glide.domain.msp_extensions) plugin has been activated in the instance. In addition, the caller must have the admin role to access this API.\n\nScopedSessionDomain - getCurrentDomainID()\n\nReturns the sys_id of the current domain for the logged-in user session.\n\nReference: ServiceNow ScopedSessionDomain - Client.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e63902fc"
+  },
+  "cad-udemy-181445265": {
+    "gatilho": "Short form of the GlideForm?",
+    "macete": "Short form of the GlideForm? → g_form",
+    "conexao": "O gabarito fornecido associa este cenário a: g_form. Explicação do material: According to the The GlideForm (g_form) Class (Se‌rviceNow Developer). The short form of GlideForm is g_form.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ebc3b052"
+  },
+  "cad-udemy-181445217": {
+    "gatilho": "Which one of the following is NOT a GlideUser (g_user) method?",
+    "macete": "Which one of the following is NOT a GlideUser (g_user) method? → userName()",
+    "conexao": "O gabarito fornecido associa este cenário a: userName(). Explicação do material: The GlideUser API has properties and methods to:\n\nGlideUser API has a property called userName. The userName property's value is the currently logged in user's user name. The example script shows the difference between the firstName, lastName, userName, and userID property values.\n\nalert(\"g_user.firstName = \" + g_user.firstName \n     + \", \\n g_user.lastName = \" + g_user.lastName \n     + \", \\n g_user.userName = \" + g_user.userName \n     + \", \\n g_user.userID = \" + g_user.userID);\n\nThe GlideUser API also has methods for determining if a user has a specific role:\n\ng_user.hasRole('client_script_admin');\n\ng_user.hasRoleExactly('client_script_admin');\n\ng_user.getFullName();\n\n-> userName() is a property -> D. is correct\n\nReference: The GlideUser (g_user) Class (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "287ea835"
+  },
+  "cad-udemy-181445219": {
+    "gatilho": "Which of the below is not a valid state for a scheduled job in ServiceNow instance?",
+    "macete": "Which of the below is not a valid state for a scheduled job in ServiceNow instance? → Waiting for approval",
+    "conexao": "O gabarito fornecido associa este cenário a: Waiting for approval. Explicação do material: No such thing as the \"Waiting for approval\" state for a scheduled job in ServiceNow instance.\n\nA scheduled job can be in any one of the following states:\n\n- Ready\n\n- Running\n\n- Queued\n\n- Error\n\nReference: Scheduled jobs (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "36e5eed4"
+  },
+  "cad-udemy-181445221": {
+    "gatilho": "Which one of the following is true about the Client side scripted security?",
+    "macete": "Which one of the following is true about the Client side scripted security? → Client side scripts have access to the GlideUser(g_user) user methods",
+    "conexao": "O gabarito fornecido associa este cenário a: Client side scripts have access to the GlideUser(g_user) user methods. Explicação do material: The GlideUser methods and properties are accessed through a global object (g_user) that is only available in client scripts\n\nReference: GlideUser - Client (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6398788c"
+  },
+  "cad-udemy-181445223": {
+    "gatilho": "In a business rule which of the following returns the sys_id of the current logged in user?",
+    "macete": "In a business rule which of the following returns the sys_id of the current logged in user? → gs.getUserID()",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.getUserID(). Explicação do material: Scoped GlideSystem - getUserID(): Gets the sys_id of the current user.\n\nReference: GlideSystem - Scoped (ServiceNow Docs)\n\nExample\n\nThe following example shows how to unassign all active Incident records assigned to the current user.\n\nvar incidentGR = new GlideRecord('incident');\nincidentGR.addActiveQuery();\n\n// Filter results to incidents assigned to the current user\nvar currentUserSysId = gs.getUserID();\nincidentGR.addQuery('assigned_to', currentUserSysId);\nincidentGR.query();\n\nwhile (incidentGR.next()) {\n    incidentGR.setValue('assigned_to', 'NULL');\n    incidentGR.update();\n    gs.info(\n        'Unassigned Incident: {0}: {1}',\n        incidentGR.number.toString(),\n        incidentGR.short_description.toString()\n    );\n}",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "7dcdf662"
+  },
+  "cad-udemy-181445229": {
+    "gatilho": "When creating an application with Guided Application Creator, which of the following is not an option for creating a table?",
+    "macete": "When creating an application with Guided Application Creator, which of the following is not an option for creating a table? → Create table from template",
+    "conexao": "O gabarito fornecido associa este cenário a: Create table from template. Explicação do material: Create a table in Guided Application Creator:\n\nCreate table from template is NOT the option for creating a table\n\nBelow is all the options that you can select to create a table:\n\nReference: Create a table in Guided Application Creator (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "058ec801"
+  },
+  "cad-udemy-181445233": {
+    "gatilho": "What records is used to track cross-scoped applications and scripts that request access to an application, application resources, event?",
+    "macete": "What records is used to track cross-scoped applications and scripts that request access to an application, application resources, event? → Restricted caller access records",
+    "conexao": "O gabarito fornecido associa este cenário a: Restricted caller access records. Explicação do material: Restricted caller access [sys_restricted_caller_access] records track cross-scope applications or scripts that request access to an application, application resource, or event\n\nReference:\n\n- Define cross-scope access to an application resource (ServiceNow Docs)\n\n- Restricted caller access privilege settings (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "7444f9f0"
+  },
+  "cad-udemy-181445235": {
+    "gatilho": "When configuring a email notification, which syntax should be used to reference a property of an event triggering the notification?",
+    "macete": "When configuring a email notification, which syntax should be used to reference a property of an event triggering the notification? → ${event.<property_name>}",
+    "conexao": "O gabarito fornecido associa este cenário a: ${event.<property_name>}. Explicação do material: Reference: Notifications - What It Will Contain (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "4c3f1482"
+  },
+  "cad-udemy-181445237": {
+    "gatilho": "When configuring and debugging notification, where do you navigate to see if an email was sent in response to an event?",
+    "macete": "When configuring and debugging notification, where do you navigate to see if an email was sent in response to an event? → Systems Logs > Email",
+    "conexao": "O gabarito fornecido associa este cenário a: Systems Logs > Email. Explicação do material: Email FAQs and troubleshooting notification emails\n\nLogs and diagnostics are provided to help determine whether notification emails are being sent and received successfully, what any issues are, and who receives the email and users can check it in Systems Logs > Email\n\nReference: ServiceNow Troubleshooting notification emails",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "637fdf5e"
+  },
+  "cad-udemy-181445239": {
+    "gatilho": "What is the purpose of the coalesce field?",
+    "macete": "What is the purpose of the coalesce field? → To determine if a record matches an existing record or is a new record",
+    "conexao": "O gabarito fornecido associa este cenário a: To determine if a record matches an existing record or is a new record. Explicação do material: Use the Coalesce option in a Transform Map Field Map to determine if a row in the staging table matches a record in the target table. The Coalesce option makes a field a record's unique key. Set the Coalesce value to true to use a field to check for collisions.\n\nReference: ServiceNow Coalescing",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d4d05e8b"
+  },
+  "cad-udemy-181445335": {
+    "gatilho": "Which of the following accurately describes the features of a Record Producer in ServiceNow? (Choose two.)",
+    "macete": "Which of the following accurately describes the features of a Record Producer in ServiceNow? (Choose two.) → Field behavior on the Record Producer form can be controlled using Catalog Client Scripts + Descriptive prompts can be configured to guide users instead of showing technical field labels",
+    "conexao": "O gabarito fornecido associa este cenário a: Field behavior on the Record Producer form can be controlled using Catalog Client Scripts; Descriptive prompts can be configured to guide users instead of showing technical field labels. Explicação do material: ✅B. Field behavior on the Record Producer form can be controlled using Catalog Client Scripts\n\nRecord Producers use Catalog Client Scripts and Catalog UI Policies (just like other catalog items) to manage dynamic behavior on the form, such as showing/hiding fields, setting values, or making fields mandatory based on conditions.\n\n✅D. Descriptive prompts can be configured to guide users instead of showing technical field labels\n\nRecord Producers allow form fields to use \"Question Text\" instead of raw field labels. This lets you ask user-friendly questions (e.g., “What issue are you experiencing?”) rather than showing database field names like short_description.\n\nReference:\n\n- Record Producer (ServiceNow Docs)\n\n- Configuring a Record Producer (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      3
+    ],
+    "assinatura": "8e06bc96"
+  },
+  "cad-udemy-181445245": {
+    "gatilho": "How can an application developer control which page a user is redirected to after submitting a Record Producer form?",
+    "macete": "How can an application developer control which page a user is redirected to after submitting a Record Producer form? → Add a script to the Record Producer’s Script field: producer.redirect = \"<URL>\";",
+    "conexao": "O gabarito fornecido associa este cenário a: Add a script to the Record Producer’s Script field: producer.redirect = \"<URL>\";. Explicação do material: In ServiceNow, when using a Record Producer, developers can control what happens after the user submits the form by writing a script inside the Script field of the Record Producer.\n\nTo redirect the user after submission, you use the following line in that script:\n\nproducer.redirect = \"<target_URL>\";\n\nThis tells ServiceNow to navigate the user to the specified page once the record has been created.\n\n- Common use cases for redirection:\n\nRedirecting users to a specific catalog item, dashboard, or custom page.\n\nTaking users to a confirmation page or back to the Service Portal homepage.\n\nReference: Populate record producer data and redirect users (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "f5bcbda1"
+  },
+  "cad-udemy-181445247": {
+    "gatilho": "Which component is handled by client-side scripts rather than server-side scripts?",
+    "macete": "Which component is handled by client-side scripts rather than server-side scripts? → Field behavior on forms",
+    "conexao": "O gabarito fornecido associa este cenário a: Field behavior on forms. Explicação do material: Client-side scripts in ServiceNow run in the browser and are used to control the user experience on the form, such as:\n\nShowing or hiding fields\n\nMaking fields read-only or mandatory\n\nPopulating fields dynamically\n\nValidating input before submission\n\nDisplaying messages or performing calculations on the client side\n\nCommon client-side scripting types in ServiceNow include:\n\nClient Scripts (onLoad, onChange, onSubmit, onCellEdit)\n\nUI Policies\n\nUI Scripts\n\nThese scripts do not interact directly with the database or manage access control; they modify how the form behaves and looks for the user.\n\nReference: Client-side Scripting (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "ddc064a7"
+  },
+  "cad-udemy-176678799": {
+    "gatilho": "Identify the way(s) an application can respond to an Event generated by the gs.eventQueue() method.\n\na. Script Action\nb. Scheduled Script Execution (Scheduled Job)\nc. UI Policy\nd. Email Notification",
+    "macete": "Identify the way(s) an application can respond to an Event generated by the gs.eventQueue() method.\n\na. Script Action\nb. Scheduled Script Execution (Scheduled Job)\nc. UI Policy\nd. Email Notification → a and d",
+    "conexao": "O gabarito fornecido associa este cenário a: a and d. Explicação do material: Responding to Events:\n\nThere are two possible ways to respond to events:\n\nEmail Notification\n\nScript Action\n\nRelated to the ServiceNow Developer Responding to Events.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "3f4e01f3"
+  },
+  "cad-udemy-176678821": {
+    "gatilho": "What do client-side scripts primarily control?",
+    "macete": "What do client-side scripts primarily control? → Forms and Form Fields",
+    "conexao": "O gabarito fornecido associa este cenário a: Forms and Form Fields. Explicação do material: Client-side scripting design and processing:\n\nWell-designed client scripts can reduce the amount of time it takes users to complete a form.\n\nProper client-side processing depends on the form loading first. Making record updates prior to form load can produce unexpected results that bypass client-side processing.\n\nIf you create client scripts to control field values on a form, you must use another method to control these field values in a list. You can:\n\nDisable list editing for the table.\n\nCreate appropriate business rules or access controls for list editing.\n\nCreate data policies.\n\nCreate a separate onCellEdit client script\n\nReference:\n\n- Client-side scripting (ServiceNow Docs)\n\n- Client-side scripting design and processing (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "bc735c22"
+  },
+  "cad-udemy-176678827": {
+    "gatilho": "Which condition would cause an ACL to be considered invalid?",
+    "macete": "Which condition would cause an ACL to be considered invalid? → ACLs with a security attribute that does not exist",
+    "conexao": "O gabarito fornecido associa este cenário a: ACLs with a security attribute that does not exist. Explicação do material: Deny by default behavior\n\nBy default the ACL engine completely denies access if an ACL is empty or invalid. Empty ACLs are defined as ACLs without one or more of these components:\n\nDefined role\n\nSecurity attribute\n\nData condition\n\nScript\n\nInvalid ACLs are defined as:\n\nACLs with roles that do not exist (e.g. have no row in the database)\n\nACLs with Security Attributes that do not exist (e.g. have no row in the database)\n\nACLs with a script that contains \"answer=true\" or \"true\"\n\nIf the system detects the user creating an ACL it will prompt the user to select a role or an existing security attribute.\n\n-> ACLs with a security attribute that does not exist is correct\n\nReference: Exploring Access Control Lists",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "4a783d0b"
+  },
+  "cad-udemy-176678829": {
+    "gatilho": "What is the default action of the ACL engine if it encounters an empty or invalid ACL?",
+    "macete": "What is the default action of the ACL engine if it encounters an empty or invalid ACL? → The system denies access",
+    "conexao": "O gabarito fornecido associa este cenário a: The system denies access. Explicação do material: ACL evaluate conditions:\n\nThe default action of the ACL engine if it encounters an empty or invalid ACL then the System will deny Users Access to the object\n\n-> The system denies access is correct\n\nReference: ServiceNow Exploring Access Control Lists",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6d632465"
+  },
+  "cad-udemy-176678831": {
+    "gatilho": "What is the role of a formatter in Form Builder?",
+    "macete": "What is the role of a formatter in Form Builder? → To display information that is not a field in the selected table record.",
+    "conexao": "O gabarito fornecido associa este cenário a: To display information that is not a field in the selected table record.. Explicação do material: Add formatters in Table Builder\n\nYou can add form elements that display non-field information to users by adding a formatter in Table Builder.\n\nFor example, you may want to display a Comments field where users can add comments to a displayed form.\n\n-> To display information that is not a field in the selected table record. is correct\n\nReference:\n\n- ServiceNow Add formatters in Table Builder\n\n- ServiceNow Accessing Table Builder",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "64374502"
+  },
+  "cad-udemy-176678833": {
+    "gatilho": "What is the function of an embedded list in Form Builder?",
+    "macete": "What is the function of an embedded list in Form Builder? → To allow users to view or edit related lists without navigating away from the form",
+    "conexao": "O gabarito fornecido associa este cenário a: To allow users to view or edit related lists without navigating away from the form. Explicação do material: Add embedded lists in Table Builder\n\nAdd an embedded list using Table Builder to display data for a selected related list on your form.\n\nA related list shows the records in the tables that have relationships to the current record.\n\n-> To allow users to view or edit related lists without navigating away from the form is correct\n\nReference: ServiceNow Add embedded lists in Table Builder",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "ddb6b718"
+  },
+  "cad-udemy-176678835": {
+    "gatilho": "Why is important that Deny-Unless ACLs are evaluated before Allow-If ACLs?",
+    "macete": "Why is important that Deny-Unless ACLs are evaluated before Allow-If ACLs? → To restrict access by default and ensure security",
+    "conexao": "O gabarito fornecido associa este cenário a: To restrict access by default and ensure security. Explicação do material: Deny-Unless ACL\n\nDeny-Unless ACLs block access unless everything checks out. If they fail, no other rules are checked, and the user is denied access.\n\nHow Does It Work?\n\nIf the user meets all requirements (role, condition, and script), the ACL passes, and other rules (Allow-If ACLs) decide if access is allowed.\n\nIf any requirement fails, the ACL fails, and access is blocked immediately.\n\nWhich Comes First?\n\nDeny-Unless ACLs are always checked before Allow-If ACLs. If the Deny-Unless fails, access is blocked—no further rules are checked.\n\n>User doesn’t have the required role\n\nFail: Access is denied immediately.\nUser has the role but the record is inactive\n\nFail: One rule is not met, so access is blocked.\n\nReference: ServiceNow Deny-Unless ACL",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e21b89c8"
+  },
+  "cad-udemy-176678839": {
+    "gatilho": "In a privately-scoped application, which methods are used for logging messages in server-side scripts? (Choose three.)",
+    "macete": "In a privately-scoped application, which methods are used for logging messages in server-side scripts? (Choose three.) → gs.info() + gs.error() + gs.debug()",
+    "conexao": "O gabarito fornecido associa este cenário a: gs.info(); gs.error(); gs.debug(). Explicação do material: In privately-scoped applications, you can use several logging methods on the gs (GlideSystem) object for server-side scripting.\n\n✅ gs.debug(message)\n\nLogs a debug-level message.\n\nOnly visible if debug logging is enabled for the instance or session.\n\nUseful for development and troubleshooting.\n\n✅ gs.info(message)\n\nLogs an info-level message.\n\nCommonly used to track execution points or values.\n\n✅ gs.error(message)\n\nLogs an error-level message, great for identifying issues in scripts.\n\n- Why these are not correct in a scoped app:\n\n❌ gs.logError()\n\n❌ gs.log()\n\nOnly works in global scope.\n\nDeprecated for privately-scoped applications.\n\nReference: Debugging Widgets (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2,
+      3,
+      4
+    ],
+    "assinatura": "4cc4fdfc"
+  },
+  "cad-udemy-176678841": {
+    "gatilho": "When creating an application through the Guided Application Creator, what are the options for creating a table? (Choose three.)",
+    "macete": "When creating an application through the Guided Application Creator, what are the options for creating a table? (Choose three.) → Create a table from scratch + Upload a spreadsheet + Extend a table",
+    "conexao": "O gabarito fornecido associa este cenário a: Create a table from scratch; Upload a spreadsheet; Extend a table. Explicação do material: In the Guided Application Creator (GAC), when you're prompted to define a data model (create a table), you’re given the following valid options:\n\n✅ Create a table from scratch\n\nGives you a blank slate to define your own fields and table configuration manually.\n\n✅ Upload a spreadsheet\n\nNewer releases (e.g., San Diego and later, including Yokohama) allow you to upload an Excel/CSV file directly within GAC to automatically create a table based on the data structure in the sheet. This is a fast way to define both the table and its data model.\n\n✅ Extend a table\n\nYou can extend an existing table such as Task, CMDB CI, etc., to inherit fields and behaviors. This is a common way to build on ServiceNow’s core tables.\n\nReference:\n\n- Guided Application Creator (ServiceNow Docs)\n\n- Create a table in Guided Application Creator (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3,
+      4,
+      5
+    ],
+    "assinatura": "e6f6225d"
+  },
+  "cad-udemy-176678843": {
+    "gatilho": "Which one of the following database operations can be controlled with Application Access? (Choose three.)",
+    "macete": "Which one of the following database operations can be controlled with Application Access? (Choose three.) → Update + Create + Delete",
+    "conexao": "O gabarito fornecido associa este cenário a: Update; Create; Delete. Explicação do material: In ServiceNow, Application Access controls what other application scopes can do with a table from a privately-scoped application. It’s configured in the Application Access tab of the table definition.\n\n✅ Here are the database operations that can be controlled through Application Access:\n\nCan Read\n\nCan Create\n\nCan Update\n\nCan Delete\n\nReference: Application Access (ServiceNow Developer)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      2,
+      3
+    ],
+    "assinatura": "894baec3"
+  },
+  "cad-udemy-176678845": {
+    "gatilho": "What data types of Flow Variables are supported to store record data? (Choose three.)",
+    "macete": "What data types of Flow Variables are supported to store record data? (Choose three.) → Date + Integer + String",
+    "conexao": "O gabarito fornecido associa este cenário a: Date; Integer; String. Explicação do material: In ServiceNow Flow Designer, Flow Variables can be used to store and pass data between actions. When you're defining a flow variable, you must assign it a data type.\n\nHere are the supported variable data types that can store record-related data:\n\nDate/Time\n\nDecimal\n\nFloating-point number\n\nInteger\n\nJSON\n\nReference\n\nString\n\nTrue/False\n\nThese types are available when creating flow variables and allow you to store and pass values between steps within a flow\n\nReference: Flow variables (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      3,
+      4
+    ],
+    "assinatura": "64e96456"
+  },
+  "cad-udemy-176678847": {
+    "gatilho": "What is the ServiceNow App Repository?",
+    "macete": "What is the ServiceNow App Repository? → A database containing ServiceNow apps",
+    "conexao": "O gabarito fornecido associa este cenário a: A database containing ServiceNow apps. Explicação do material: The ServiceNow App Repository is a centralized storage system where applications developed on ServiceNow (especially custom scoped applications) are published and stored. It is mainly used to:\n\nPublish apps from one instance (e.g., development)\n\nInstall them into other instances (e.g., test, prod)\n\nManage versioning of scoped applications\n\nDeploy updates securely without relying on update sets\n\nIt is often used in conjunction with Studio when publishing scoped apps.\n\nReference: ServiceNow application repository (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "e210ae19"
+  },
+  "cad-udemy-176678849": {
+    "gatilho": "Which are valid caller access field options? (Choose three.)",
+    "macete": "Which are valid caller access field options? (Choose three.) → Caller Tracking + None + Caller Restriction",
+    "conexao": "O gabarito fornecido associa este cenário a: Caller Tracking; None; Caller Restriction. Explicação do material: The Caller Access field in ServiceNow is part of the Application Restricted Caller Access framework, which helps limit what scripts or flows can access certain application APIs or tables. The field determines how accessible a particular script or API is to outside callers.\n\nHere are the valid options:\n\n✅ Caller Tracking:\n\nThis option allows ServiceNow to log which users or applications are accessing a specific resource, providing an audit trail.\n\n✅ Caller Restriction:\n\nThis option limits access to the resource, allowing only specified callers or applications to invoke it.\n\n✅ None:\n\nThis option means no specific caller restrictions are applied, and the resource is accessible as defined by other security settings.\n\nReference: Restricted caller access privilege settings (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      2,
+      4
+    ],
+    "assinatura": "129cb122"
+  },
+  "cad-udemy-176678853": {
+    "gatilho": "Which items are valid UI Action types in ServiceNow? (Choose three.)",
+    "macete": "Which items are valid UI Action types in ServiceNow? (Choose three.) → List banner button + Form button + Record navigation button",
+    "conexao": "O gabarito fornecido associa este cenário a: List banner button; Form button; Record navigation button. Explicação do material: In ServiceNow, UI Actions determine where a button or link appears in the interface. The valid types include:\n\nForm button - Appears on a record form (top-right buttons like \"Resolve\" or \"Close\").\n\nList banner button - Appears in the list view header.\n\nRecord navigation button - Appears next to individual records in list views.\n\nReference: UI actions (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "afd7f4fa"
+  },
+  "cad-udemy-176678855": {
+    "gatilho": "Which method can be used to install an application on a ServiceNow instance? (Choose three.)",
+    "macete": "Which method can be used to install an application on a ServiceNow instance? (Choose three.) → Download and install a third-party application from the ServiceNow Store + Install an application from the Application Repository + Import an application from an XML file",
+    "conexao": "O gabarito fornecido associa este cenário a: Download and install a third-party application from the ServiceNow Store; Install an application from the Application Repository; Import an application from an XML file. Explicação do material: Here’s how each of those works:\n\nServiceNow Store:\n\nThis is a common method for installing pre-built applications. You can browse and install applications directly from the ServiceNow Store.\n\nApplication Repository:\n\nThis method allows for installing applications that have been published to the instance's Application Repository. It's a recommended approach for moving applications between instances.\n\nUpdate Sets:\n\nUpdate Sets are used to move changes, including applications, between instances. While not the primary method for initial installation, they can be used for transferring applications that have already been installed.\n\nXML Import:\n\nIn some cases, applications can be imported as XML files, especially for custom applications.\n\nPlugins:\n\nServiceNow applications often rely on plugins. These can be installed from the instance, but some plugins require subscription and activation through NOW Support.\n\nReference: Install a ServiceNow Store application (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2,
+      4,
+      5
+    ],
+    "assinatura": "0ecb59e5"
+  },
+  "cad-udemy-176678857": {
+    "gatilho": "What occurs when an existing table is extended in ServiceNow?",
+    "macete": "What occurs when an existing table is extended in ServiceNow? → The new table inherits the functionality built into the parent table",
+    "conexao": "O gabarito fornecido associa este cenário a: The new table inherits the functionality built into the parent table. Explicação do material: When a table is extended in ServiceNow:\n\nThe child (extended) table inherits:\n\nAll fields from the parent table.\n\nBusiness rules, scripts, and Access Controls (which can be overridden).\n\nForm and list layouts as a starting point (can be customized later).\n\nWorkflows and lifecycle behaviors defined at the parent level.\n\nThis helps reduce duplication and ensures consistency across similar table types (like how Incident, Problem, and Change all extend the Task table).\n\n- Why the others are incorrect:\n\n❌ Access Controls from the parent are not ignored, they’re inherited unless explicitly overridden.\n\n❌ The new table does inherit fields from the parent.\n\n❌ You don’t have to script everything from scratch inheritance handles a lot.\n\nReference: Table extension and classes (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "bdc6c579"
+  },
+  "cad-udemy-176678859": {
+    "gatilho": "An application called My App has a table, MyAppTable, with this Application Access configuration:\n\nAccessible from: All application scopes\nCan read: Selected -\nCan delete: Not selected -\nAllow configuration: Selected -\n\nWhich of the following is true based on this configuration?",
+    "macete": "An application called My App has a table, MyAppTable, with this Application Access configuration:\n\nAccessible from: All application scopes\nCan read: Selected -\nCan delete: Not selected -\nAllow configuration: Selected -\n\nWhich of the following is true based on this configuration? → An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table",
+    "conexao": "O gabarito fornecido associa este cenário a: An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable table. Explicação do material: Let’s break down the Application Access settings for MyAppTable:\n\nAccessible from\n\nValue: All application scopes\n\nCan read\n\nValue: Selected (controlled by role or access config)\n\nCan delete\n\nValue: Not selected (this blocks external scope delete access)\n\nAllow configuration\n\nValue: Selected (allows other scopes to write scripts,...)\n\nWhat this means:\n\n✅ Within the same scope (My App):\n\nYou can read, write, delete, and configure as needed.\n\n-> An application developer working in the My App scope can write a Business Rule for the MyAppTable table which successfully deletes all records from the MyAppTable tableis true.\n\n❌ From other scopes:\n\nEven though “Allow configuration” is enabled (so other scopes can create scripts referencing this table),\n\n“Can delete” is not selected, meaning other scopes cannot delete records from this table.\n\n❌ No Business Rule can be written which successfully deletes all records is incorrect because deletions can happen from within the same app scope.\n\nSummary:\n\nOnly developers working inside the My App scope can delete from MyAppTable. External apps can script against it if \"Allow configuration\" is checked, but can't delete without \"Can delete\" being selected.",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "a3bbe15e"
+  },
+  "cad-udemy-176678861": {
+    "gatilho": "Which is an example of when an application might use a Scheduled Script Execution (Scheduled Job)?",
+    "macete": "Which is an example of when an application might use a Scheduled Script Execution (Scheduled Job)? → The application needs to query the database every day to look for unassigned records.",
+    "conexao": "O gabarito fornecido associa este cenário a: The application needs to query the database every day to look for unassigned records.. Explicação do material: A Scheduled Script Execution (Scheduled Job) in ServiceNow is used to run server-side logic on a time-based schedule (daily, weekly, monthly,...).\n\nA common example is automating background tasks such as checking for records, sending reminders, or performing clean-up activities.\n\nMain knowledge to remember\n\nScheduled Jobs = Server-side automation, run on a schedule (query/update/send emails).\n\nClient scripts/UI policies = Run in the browser for user interactions.\n\nBusiness rules = Run on the server but triggered by database operations, not time.\n\nReference: Scheduled jobs (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "4205407d"
+  },
+  "cad-udemy-176678863": {
+    "gatilho": "What field type would you select if you want to query records from another table on a form?",
+    "macete": "What field type would you select if you want to query records from another table on a form? → Use the Reference field type.",
+    "conexao": "O gabarito fornecido associa este cenário a: Use the Reference field type.. Explicação do material: If you want to query records from another table and display them on a form, you use the Reference field type. A reference field creates a relationship between the current table and another table by storing the sys_id of a record in the target table.\n\nOn the form, it displays as a field where you can search and select values from that related table.\n\nMain knowledge to remember\n\nReference field = Points to records in another table (links by sys_id).\n\nUsed to create relationships like \"Caller\" (reference to sys_user) on the Incident table.\n\nOther field types (Date, String, Phone) store simple data, not record references.\n\nReference: Reference field type (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "9059240e"
+  },
+  "cad-udemy-176678865": {
+    "gatilho": "What happens to the List view when a new field is added to an existing table?",
+    "macete": "What happens to the List view when a new field is added to an existing table? → The new field is not added to the List view",
+    "conexao": "O gabarito fornecido associa este cenário a: The new field is not added to the List view. Explicação do material: When you add a new field to an existing table in ServiceNow, the field becomes part of the table schema, but it is not automatically displayed in existing list views.\n\nTo display the new field in a list, an administrator or user with the appropriate permissions must personalize the list or modify the List Layout to include the field.\n\nThe correct answer option(s): The new field is not added to the List view.\n\nAdding a field updates the table definition.\n\nExisting list layouts remain unchanged.\n\nThe field must be manually added to the list layout if you want it to appear.\n\nReference: Configure the list layout (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "ad257496"
+  },
+  "cad-udemy-176678867": {
+    "gatilho": "Which options are strategies for debugging client-side scripts? (Choose two.)",
+    "macete": "Which options are strategies for debugging client-side scripts? (Choose two.) → g_form.addInfoMessage() + jslog()",
+    "conexao": "O gabarito fornecido associa este cenário a: g_form.addInfoMessage(); jslog(). Explicação do material: When debugging client-side scripts (scripts that run in the user’s browser like Client Scripts or UI Policies), you only have access to browser-side tools and APIs such as g_form and jslog().\n\n✅ g_form.addInfoMessage() → Displays a message directly on the form.\nUseful for checking variable values or script behavior visually on the UI.\n\n✅ jslog() → Sends log output to the browser console.\nExcellent for debugging since you can check logs in real-time using browser developer tools (F12 → Console).\n\nIncorrect options:\n\ngs.addErrorMessage() → Used in server-side scripts (Business Rules, Script Includes). Not available on the client side.\n\ngs.log() → Also server-side only; writes messages to system logs, not the browser console.\n\nSummary:\n\nClient-side debugging → g_form.addInfoMessage() and jslog()\n\nServer-side debugging → gs.addErrorMessage() and gs.log()\n\nReference:\n\n- Debugging Widgets (ServiceNow Developer)\n\n- GlideForm (g_form) (ServiceNow Developer)\n\n- Writing to the debug log (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      3
+    ],
+    "assinatura": "a53d3004"
+  },
+  "cad-udemy-176678869": {
+    "gatilho": "Which of the following objects does a Before Business Rule have access to in a script?",
+    "macete": "Which of the following objects does a Before Business Rule have access to in a script? → All of the above",
+    "conexao": "O gabarito fornecido associa este cenário a: All of the above. Explicação do material: In ServiceNow, a Before Business Rule runs after a user submits a form but before the data is actually committed to the database. Because of this specific timing, the script has access to several powerful global objects to validate or modify data.\n\n1. Current\n\nThe current object is a GlideRecord that contains the record as it exists in the buffer, including the changes made by the user on the form.\n\nUsage: You use current to modify field values before they are saved.\n\nExample:\n\ncurrent.short_description = \"Updated by BR: \" + current.short_description;\n\n2. Previous\n\nThe previous object is a read-only GlideRecord containing the values of the record exactly as they exist in the database before the current update.\n\nUsage: It is primarily used for comparison logic to see if a specific field was changed.\n\nExample:\n\nif (current.assignment_group != previous.assignment_group) { // do something }\n\n3. GlideRecord\n\nThe GlideRecord API is the standard way to interact with the ServiceNow database. While current and previous are specific instances of a GlideRecord, you can also initialize new GlideRecord objects within your script to look up data in other tables.\n\nUsage: Querying related records or performing validation against different tables.\n\nExample:\n\nvar gr = new GlideRecord('sys_user');\n\nReference: Abort a database action (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "b5bdb1b2"
+  },
+  "cad-udemy-176678871": {
+    "gatilho": "Exportitem table is extended from Item Table with the additional column of ItemCountry added. The Item table contains the columns ItemName and ItemQty.\n\nWhich fields are available in the ExportItem Table?",
+    "macete": "Exportitem table is extended from Item Table with the additional column of ItemCountry added. The Item table contains the columns ItemName and ItemQty.\n\nWhich fields are available in the ExportItem Table? → ItemName, ItemQty, and ItemCountry",
+    "conexao": "O gabarito fornecido associa este cenário a: ItemName, ItemQty, and ItemCountry. Explicação do material: In ServiceNow, when a table is extended from another table, it inherits all fields and functionality from its parent table.\nThis means that the ExportItem table automatically includes all columns from the Item table, plus any additional fields defined on itself.\n\nSo:\n\nParent Table (Item) → has ItemName, ItemQty.\n\nChild Table (ExportItem) → inherits ItemName, ItemQty and adds its own field ItemCountry.\n\nTherefore, the ExportItem table has ItemName, ItemQty, and ItemCountry.\n\nMain knowledge to remember:\n\nTables in ServiceNow are hierarchical.\n\nA child table inherits all fields and scripts from its parent table.\n\nYou can add extra fields only to the child table, but it always keeps the parent’s fields.\n\nReference: Table extension and classes (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "0f8fd27c"
+  },
+  "cad-udemy-176678873": {
+    "gatilho": "Which one of the following is the correct Link Type to select when creating a module which opens the Record Producer UI for a user rather than the ServiceNow form UI?",
+    "macete": "Which one of the following is the correct Link Type to select when creating a module which opens the Record Producer UI for a user rather than the ServiceNow form UI? → URL (from Arguments:)",
+    "conexao": "O gabarito fornecido associa este cenário a: URL (from Arguments:). Explicação do material: When you create a module in ServiceNow that should open a Record Producer UI, you need to use a URL (from Arguments:) link type.\n\nThis is because Record Producers are accessed via a catalog URL (they live within the Service Catalog), not through a standard form view.\nSo instead of pointing to a table form, the module points directly to the Record Producer’s URL in the format:\n\ncatalog_item.do?sys_id=<record_producer_sys_id>\n\nor\n\ncom.glideapp.servicecatalog_cat_item_view.do?v=1&sys_id=<sys_id>\n\nThis ensures users are redirected to the Record Producer UI — the catalog-based form designed for user-friendly record creation.\n\nMain knowledge to remember:\n\nRecord Producers use the Service Catalog UI, not standard forms.\n\nUse Link Type = URL (from Arguments:) and provide the proper catalog item URL.\n\nThe goal is to give users a guided form experience, not direct access to database records.\n\nReference:\n\n- Create a module for a template (ServiceNow Docs)\n\n- Invoke the Schedule page and view a calendar (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "a1bc37f5"
+  },
+  "cad-udemy-176678875": {
+    "gatilho": "Which one of the following is a debugging strategy for client-side scripts? (Choose 2)",
+    "macete": "Which one of the following is a debugging strategy for client-side scripts? (Choose 2) → g_form.addInfoMessage() + jslog()",
+    "conexao": "O gabarito fornecido associa este cenário a: g_form.addInfoMessage(); jslog().",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      2
+    ],
+    "assinatura": "8ab5a412"
+  },
+  "cad-udemy-179081197": {
+    "gatilho": "What is displayed to delegated developers to package changes for deployment in ServiceNow Studio?",
+    "macete": "What is displayed to delegated developers to package changes for deployment in ServiceNow Studio? → Publish Button",
+    "conexao": "O gabarito fornecido associa este cenário a: Publish Button. Explicação do material: When delegated developers use ServiceNow Studio to prepare their application for deployment, they use the Publish button.\n\nWhat the Publish button does:\n\nPackages all application changes into a single deployable version\n\nCreates an application update that can be:\n\nMoved through release or deployment processes\n\nShared via the instance’s application repository\n\nKeeps all changes within the correct application scope\n\nPreserves important application metadata\n\nMain takeaway:\n\nDelegated developers use the Publish button in Studio to package application changes for deployment, instead of using Update Sets.\n\nReference: Working with update sets in ServiceNow Studio (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "6cb62510"
+  },
+  "cad-udemy-179081199": {
+    "gatilho": "Which table in ServiceNow stores the details of customizations included in an update set?",
+    "macete": "Which table in ServiceNow stores the details of customizations included in an update set? → Customer Update [sys_update_xml]",
+    "conexao": "O gabarito fornecido associa este cenário a: Customer Update [sys_update_xml]. Explicação do material: In ServiceNow, the Customer Update [sys_update_xml] table stores the detailed records of individual customizations that are captured in an update set.\n\nEach time a configuration change is made (such as creating or modifying a business rule, client script, UI policy, or form layout), ServiceNow creates a Customer Update record that contains:\n\nThe XML representation of the change\n\nThe target table and record information\n\nThe update set the change belongs to\n\nAn update set itself is simply a container. The actual customization details are stored as individual records in sys_update_xml\n\nReference: Customer Updates table (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "92c08b57"
+  },
+  "cad-udemy-179081201": {
+    "gatilho": "What is a function of an update set in ServiceNow Studio?",
+    "macete": "What is a function of an update set in ServiceNow Studio? → To group configuration changes for transfer between instances",
+    "conexao": "O gabarito fornecido associa este cenário a: To group configuration changes for transfer between instances. Explicação do material: In ServiceNow, an update set is used to collect and group configuration changes so they can be moved from one instance to another, such as from development to test or production.\n\nUpdate sets capture changes like:\n\nBusiness rules\n\nClient scripts\n\nUI policies\n\nForm and list configurations\n\nOnce captured, update sets allow these changes to be safely transferred and applied to another instance, supporting controlled development and deployment.\n\nReference: Working with update sets in ServiceNow Studio (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "e981c222"
+  },
+  "cad-udemy-179081203": {
+    "gatilho": "How can Administrators expand the list of supported file types for code search in ServiceNow Studio?",
+    "macete": "How can Administrators expand the list of supported file types for code search in ServiceNow Studio? → By creating a new code search group",
+    "conexao": "O gabarito fornecido associa este cenário a: By creating a new code search group. Explicação do material: In ServiceNow Studio, Code Search is organized by Search Groups. Each group acts as a \"container\" for a set of tables and fields that the engine is instructed to index.\n\nThe Default Limitation: The platform comes with a default search group (often named sn_devstudio.Studio Search Group). Because this is a system-defined record in a private application scope, administrators cannot simply \"edit\" it to add new tables.\n\nThe Expansion Method: To add more file types (tables) to the search, an Administrator must create a new Code Search Group. Once the new group is created, they can add Search Metadata records to it, which define the new tables (e.g., a custom table or a specific UI metadata table) and the specific \"script\" or \"XML\" fields within those tables to be scanned.\n\nReference: ServiceNow Studio supported file types using code search (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "82146dbd"
+  },
+  "cad-udemy-179081237": {
+    "gatilho": "A custom table x_teddybear_project extends the Task table.\nThe following ACLs are configured:\n\nTable ACL:\n\nx_teddybear_project | read\n\nRole required: itil\n\nField ACLs:\n\nx_teddybear_project.field1 | read\n\nNo specific roles required (inherits table access)\n\nx_teddybear_project.field2 | read\n\nNo field-level ACL defined\n\nx_teddybear_project.field3 | read\n\nRole required: admin\n\nNo other ACLs exist on this table or fields.\n\nWhich field or fields can a user with the itil role read?",
+    "macete": "A custom table x_teddybear_project extends the Task table.\nThe following ACLs are configured:\n\nTable ACL:\n\nx_teddybear_project | read\n\nRole required: itil\n\nField ACLs:\n\nx_teddybear_project.field1 | read\n\nNo specific roles required (inherits table access)\n\nx_teddybear_project.field2 | read\n\nNo field-level ACL defined\n\nx_teddybear_project.field3 | read\n\nRole required: admin\n\nNo other ACLs exist on this table or fields.\n\nWhich field or fields can a user with the itil role read? → All fields except field3",
+    "conexao": "O gabarito fornecido associa este cenário a: All fields except field3. Explicação do material: The correct answer is All fields except field3.\n\nTo understand why, we have to look at how ServiceNow processes Access Control Lists (ACLs) using a \"top-down\" approach, moving from the general (table level) to the specific (field level).\n\nThe ACL Evaluation Process\n\nIn ServiceNow, for a user to see a field, they must pass two gates:\n\nGate 1 (Table Level): Does the user have permission to see the table?\n\nGate 2 (Field Level): Does the user have permission to see the specific field?\n\nBreaking Down the Access for the ITIL User\n\nTable Access: The user has the itil role. Since the Table ACL for x_teddybear_project requires the itil role, the user passes Gate 1. They can now access the records in the table.\n\nfield1 Access: There is a field-level ACL, but it doesn't list any specific roles. In ServiceNow, if a field ACL exists without specific roles, it essentially inherits the table-level requirement. Since the user passed the table-level check, they can read field1.\n\nfield2 Access: There is no field-level ACL defined at all. When no field-level ACL exists, the system defaults to the table-level result. Since the user is allowed to read the table, they are granted access to all fields on that table that don't have their own specific restrictions. Therefore, they can read field2.\n\nfield3 Access: There is a specific field-level ACL that requires the admin role. This is an \"explicit\" restriction. Even though the ITIL user passed the table-level check, they do not have the admin role required by this specific field-level gate. Therefore, they cannot read field3.\n\nReference: Configure security (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "c88f4dcb"
+  },
+  "cad-udemy-179081209": {
+    "gatilho": "What are the benefits of storing the majority of an Application’s server-side script logic in a Script Include?\n\na. This makes execution faster.\n\nb. Only run when called from a script.\n\nc. The script logic can be hidden when the Application is installed from the ServiceNow Store.\n\nd. For some changes to application logic there is only one place to make edits.",
+    "macete": "What are the benefits of storing the majority of an Application’s server-side script logic in a Script Include?\n\na. This makes execution faster.\n\nb. Only run when called from a script.\n\nc. The script logic can be hidden when the Application is installed from the ServiceNow Store.\n\nd. For some changes to application logic there is only one place to make edits. → b, c, and d",
+    "conexao": "O gabarito fornecido associa este cenário a: b, c, and d. Explicação do material: In ServiceNow, Script Includes are used to store reusable server-side logic. The correct benefits of storing the majority of an application’s server-side logic in a Script Include are:\n\nOnly run when called from a script\n\nScript Includes do not execute automatically. They run only when another script explicitly calls them, which improves control and avoids unnecessary execution.\n\nThe script logic can be hidden when the Application is installed from the ServiceNow Store\n\nScript Includes can be marked as protected, preventing customers from viewing or modifying the code after installation. This is especially important for applications distributed through the ServiceNow Store.\n\nFor some changes to application logic there is only one place to make edits\n\nCentralizing logic in a Script Include improves maintainability and reuse. When business logic changes, developers update it in one location instead of multiple scripts.\n\nMain takeaway:\n\nScript Includes provide controlled execution, code protection, and centralized logic management.\nThey are a best practice for organizing server-side logic but do not guarantee faster performance.\n\nReference: Script includes (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f336ea6b"
+  },
+  "cad-udemy-179081225": {
+    "gatilho": "Which fields are available in the ExportItem Table?",
+    "macete": "Which fields are available in the ExportItem Table? → ItemName, ItemQty, and ItemCountry",
+    "conexao": "O gabarito fornecido associa este cenário a: ItemName, ItemQty, and ItemCountry. Explicação do material: This question likely refers to a specific lab or build-along exercise within the ServiceNow Application Developer curriculum (often found in the \"Build the Needit Application\" or similar training modules).\n\nTable Schema: When creating a custom table to track items for export, these three fields represent the core data required for a functional record: the identity of the item (Name), the amount being moved (Quantity), and the destination (Country).\n\nData Types: In a real-world scenario, ItemName would be a String, ItemQty an Integer, and ItemCountry would ideally be a Reference field to the core_country table or a Choice list.\n\nReference: Create a table (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "a93208f4"
+  },
+  "cad-udemy-179081227": {
+    "gatilho": "What functionality is supported by Flow Designer?",
+    "macete": "What functionality is supported by Flow Designer? → Call a subflow from a flow",
+    "conexao": "O gabarito fornecido associa este cenário a: Call a subflow from a flow. Explicação do material: Flow Designer Functionality\n\nFlow Designer is a ServiceNow Center of Excellence (CoE) for automating processes. It uses natural language to build logic without requiring complex scripting.\n\nThe Correct Answer Call a subflow from a flow\n\nKey Breakdown\n\nModular Automation: Flow Designer explicitly supports the ability to call subflows. This allows developers to build reusable chunks of logic (e.g., \"Create AD User\" or \"Send Slack Notification\") that can be triggered by multiple parent flows.\n\nEfficiency: Using subflows reduces redundancy and makes maintenance easier, as a change to the subflow automatically updates all parent flows using it.\n\nReference: Flows, subflows, and actions reference (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "f4267218"
+  },
+  "cad-udemy-179081229": {
+    "gatilho": "What is a characteristic of Modules?",
+    "macete": "What is a characteristic of Modules? → Every Module must be part of an Application Menu",
+    "conexao": "O gabarito fornecido associa este cenário a: Every Module must be part of an Application Menu. Explicação do material: Characteristics of Modules\n\nIn the ServiceNow Classic UI, Modules are the navigation links located within the Application Navigator (the left-hand sidebar). They act as the primary way for users to access different parts of the platform.\n\nThe Correct Answer: Every Module must be part of an Application Menu\n\nKey Breakdown\n\nHierarchical Structure: In the navigation pane, an Application Menu acts as the parent folder (e.g., \"Incident\"), and Modules are the specific links nested underneath it (e.g., \"Create New,\" \"Open,\" \"Assigned to me\").\n\nNavigation Logic: A module cannot exist \"floating\" on its own in the sidebar; it must be assigned to an Application Menu to be visible and accessible to users.\n\nReference: Enable or disable an application menu or module (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "4d6027f4"
+  },
+  "cad-udemy-179081245": {
+    "gatilho": "In your data model, there is a relationship between the Assigned To user and their Manager. Breakdown Relations use this relationship that is current as of?",
+    "macete": "In your data model, there is a relationship between the Assigned To user and their Manager. Breakdown Relations use this relationship that is current as of? → When the Data Collector is executed.",
+    "conexao": "O gabarito fornecido associa este cenário a: When the Data Collector is executed.. Explicação do material: Breakdown Relations and Data Collection\n\nIn Performance Analytics, Breakdown Relations allow you to navigate through hierarchical data (like an organizational structure) by defining a relationship between two breakdown elements (e.g., Assigned To and Manager).\n\nThe Correct Answer When the Data Collector is executed.\n\nKey Breakdown\n\nSnapshot in Time: Performance Analytics is designed to capture a \"snapshot\" of data. When the Data Collector job runs, it queries the current state of the records (including the Assigned To and their Manager) and stores that specific relationship in the scores table.\n\nPoint-of-Collection: If a user’s manager changes after the data collector has finished its run, that change will not be reflected in the existing scores for that day. The system uses the relationship that was active at the exact moment the data was \"collected.\"\n\nConsistency: This ensures that historical trending remains accurate to what the organizational structure actually looked like on the day the data was recorded.\n\nReference: View the data collection job logs (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "d2d64f81"
+  },
+  "cad-udemy-179081247": {
+    "gatilho": "When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?",
+    "macete": "When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them? → Impersonate the user",
+    "conexao": "O gabarito fornecido associa este cenário a: Impersonate the user. Explicação do material: User Impersonation\n\nIn ServiceNow, Impersonation is the standard administrative feature used to view the instance exactly as another user sees it. This is the most effective way to troubleshoot visibility issues, such as missing modules, hidden fields, or restricted records.\n\nThe Correct Answer: Impersonate the user\n\nKey Breakdown\n\nValidation: By impersonating the user, you can verify if their Roles or Access Control Lists (ACLs) are correctly allowing them to see specific Application Menus and Modules.\n\nSecurity: This does not require knowing the user's password. It is a built-in platform capability granted to administrators (or those with the impersonator role).\n\nAudit Trail: Every impersonation session is logged in the system (sys_user_logon) to ensure accountability.\n\nReference: Impersonate a user (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "d19d0cd9"
+  },
+  "cad-udemy-179081249": {
+    "gatilho": "Which ServiceNow capability provides assistance to help other users obtain information, make decisions, and perform common work tasks via a messaging interface?",
+    "macete": "Which ServiceNow capability provides assistance to help other users obtain information, make decisions, and perform common work tasks via a messaging interface? → Virtual Agent",
+    "conexao": "O gabarito fornecido associa este cenário a: Virtual Agent. Explicação do material: ServiceNow Virtual Agent\n\nThe Virtual Agent is a conversational platform that enables users to obtain information, make decisions, and perform common work tasks through a messaging interface. It serves as a 24/7 automated \"first line of support\" that can handle routine requests without human intervention.\n\nThe Correct Answer: Virtual Agent\n\nKey Breakdown\n\nConversational Interface: It provides a chat-based experience (Natural Language Understanding/NLU) where users can type in plain language (e.g., \"I need a new laptop\" or \"My VPN is down\").\n\nDecision Support: The bot can ask clarifying questions to help the user make a choice or troubleshoot an issue (e.g., \"Is this for a Mac or PC?\").\n\nTask Automation: Unlike a simple FAQ bot, the Virtual Agent is integrated with Workflows and Flow Designer. It can actually do work, such as resetting a password, updating a record, or ordering an item from the Service Catalog.\n\nMulti-Channel: It can be embedded in the Service Portal, Microsoft Teams, Slack, or ServiceNow’s mobile apps.\n\nReference: Overview tab (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      2
+    ],
+    "assinatura": "2eafe57f"
+  },
+  "cad-udemy-179081251": {
+    "gatilho": "Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?",
+    "macete": "Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations? → Flows",
+    "conexao": "O gabarito fornecido associa este cenário a: Flows. Explicação do material: In the ServiceNow Flow Designer, a Flow is the primary automated process used to execute business logic. It consists of a Trigger (which tells the flow when to start) and one or more Actions (which tell the flow what to do).\n\nAutomation Capabilities: Flows are designed to replace legacy tools like Workflow Editor for most use cases. They can handle approvals, send notifications, create or update records, and even integrate with external systems via IntegrationHub.\n\nLow-Code/No-Code: The main benefit of Flows is that they allow process owners and developers to build complex logic using a natural language interface rather than writing complex JavaScript.\n\nReference: Flow Designer (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0
+    ],
+    "assinatura": "fae19da7"
+  },
+  "cad-udemy-179081253": {
+    "gatilho": "From a form, what would you click to add additional fields to the form? (Choose two.)",
+    "macete": "From a form, what would you click to add additional fields to the form? (Choose two.) → Context Menu > Configure > Form Layout + Context Menu > Configure > Form Design",
+    "conexao": "O gabarito fornecido associa este cenário a: Context Menu > Configure > Form Layout; Context Menu > Configure > Form Design. Explicação do material: When you are viewing a record in ServiceNow and need to modify the UI (add, remove, or rearrange fields), you use the Context Menu (the three lines or \"hamburger\" icon in the header, or a right-click on the header).\n\nForm Layout: This is the classic interface. It uses a \"Slushbucket\" (two columns) where you move fields from the \"Available\" side to the \"Selected\" side. It is very fast for simply adding existing fields or creating a few new ones quickly.\n\nForm Design: This is the modern, drag-and-drop visual editor. It allows you to see a live representation of the form, organize fields into sections, and add new fields by dragging them from a sidebar. It is generally preferred for complex layouts.\n\nReference: Configuring the form layout (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1,
+      2
+    ],
+    "assinatura": "c0597b60"
+  },
+  "cad-udemy-179081255": {
+    "gatilho": "What is the name of the table relationship, where two or more tables are related in a bi-directional relationship, so that the related records are visible from both tables in a related list?",
+    "macete": "What is the name of the table relationship, where two or more tables are related in a bi-directional relationship, so that the related records are visible from both tables in a related list? → Many to Many",
+    "conexao": "O gabarito fornecido associa este cenário a: Many to Many. Explicação do material: In ServiceNow, a Many-to-Many (M2M) relationship allows multiple records in one table to be associated with multiple records in another table. This is achieved by using a \"junction\" or \"intersection\" table that sits between the two primary tables.\n\nBi-directional visibility: Because of the junction table, you can add a Related List to both tables. For example, in a relationship between Users and Groups, a User record shows all the Groups they belong to, and a Group record shows all the Users who are members.\n\nThe Junction Table: When you create a Many-to-Many relationship (via the sys_m2m table), ServiceNow automatically generates this third table to track the pairs of related sys_ids.\n\nReference: Create a many-to-many table relationship (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "437855e1"
+  },
+  "cad-udemy-179081257": {
+    "gatilho": "Group records are stored in which table?",
+    "macete": "Group records are stored in which table? → Group [sys_user_group]",
+    "conexao": "O gabarito fornecido associa este cenário a: Group [sys_user_group]. Explicação do material: In ServiceNow, user groups are a fundamental part of the platform's security and task management architecture. They are stored in the sys_user_group table.\n\nTable Naming Convention: In ServiceNow, \"System\" tables (core platform tables) almost always begin with the sys_ prefix. Because user and group management is a core platform function, the table name follows this standard.\n\nPurpose of Groups: Groups are used to:\n\nAssign Tasks: Tickets like Incidents or Changes are assigned to an \"Assignment Group\" (sys_user_group).\n\nGrant Permissions: Roles are assigned to groups rather than individual users to simplify administration.\n\nSubscription/Notifications: Groups can be added to a \"Watch List\" to receive collective updates.\n\nReference: Create a user group (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      1
+    ],
+    "assinatura": "cc8a4e93"
+  },
+  "cad-udemy-179081231": {
+    "gatilho": "Which of the following are configured in an Email Notification? (Choose three.)",
+    "macete": "Which of the following are configured in an Email Notification? (Choose three.) → Who will receive the notification + What content will be in the notification + When to send the notification",
+    "conexao": "O gabarito fornecido associa este cenário a: Who will receive the notification; What content will be in the notification; When to send the notification. Explicação do material: In ServiceNow, an Email Notification is configured using a specific record that defines the logic for outbound communication. These three components form the core tabs of the Notification configuration form.\n\nWhen to send: This defines the \"Trigger.\" It can be based on a specific event (like incident.inserted) or a change in a record's conditions (e.g., Priority changes to 1 - Critical).\n\nWho will receive: This defines the \"Audience.\" You can specify hard-coded users/groups, or use dynamic fields from the record, such as the Assigned to, Caller, or Watch list.\n\nWhat it will contain: This defines the \"Message.\" You can use Email Templates, hard-coded text, or HTML with dynamic variables (e.g., Short Description: ${short_description}) to personalize the email for the recipient.\n\nReference: Create an email notification (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      0,
+      1,
+      2
+    ],
+    "assinatura": "03b258ef"
+  },
+  "cad-udemy-179081259": {
+    "gatilho": "What are the available Link types that can be assigned to a module in ServiceNow?",
+    "macete": "What are the available Link types that can be assigned to a module in ServiceNow? → Assessment, List of Records, Separator, Timeline Page",
+    "conexao": "O gabarito fornecido associa este cenário a: Assessment, List of Records, Separator, Timeline Page. Explicação do material: In ServiceNow, Modules are the individual links within the Application Navigator (the left-hand sidebar). Each module is configured with a specific Link type that determines what happens when a user clicks on it—whether it opens a table, a dashboard, or a specialized interface.\n\nThe Correct Answer: Assessment, List of Records, Separator, Timeline Page\n\nKey Breakdown:\n\nAssessment: Opens a list of assessments or surveys assigned to the user.\n\nList of Records: The most common type; it opens a filtered list of records for a specific table (\"All Open Incidents\").\n\nSeparator: This isn't a clickable link, but a label or a line used to visually group other modules within an application (the \"Administration\" header).\n\nTimeline Page: Opens a timeline visualization, often used in Project Management or Change Management to see schedules.\n\nAdditional Common Link Types Include:\n\nRun a Report: Directly opens a specific report.\n\nNew Record: Opens a blank form to create a new entry in a table.\n\nURL (from arguments:) : Allows you to link to an external website or a specific page within ServiceNow using a relative URL.\n\nSingle Record: Opens one specific, pre-defined record.\n\nReference: Application Navigator category (ServiceNow Docs)",
+    "tecnica": "Associação de termos",
+    "respostas": [
+      3
+    ],
+    "assinatura": "55306818"
   }
 }
